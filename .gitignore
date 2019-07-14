@@ -1,0 +1,12 @@
+# Windows
+# thumbnails
+Thumbs.db
+
+# Mac OS X
+# metadata
+.DS_Store
+# thumbnails
+._*
+
+# Visual Studio Code
+.vscode/
