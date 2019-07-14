@@ -35,125 +35,165 @@
    - the terms of any one of the MPL, the GPL or the LGPL.
    - 
    - ***** END LICENSE BLOCK ***** -->
-<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-progress.dtd" >
+<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-progress.dtd">
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<window class="dialog"
-	id="AEDialog"
-	title="&attachmentextractor.progress.windowtitle;"
-	onload="aewindow.init();"
-	onunload="aewindow.uninit();"
-	orient="vertical"
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-	windowtype="mail:AEDialog"
-	resizeable="no"
-	persist="screenX screenY">
-	
+<window class="dialog" 
+  id="AEDialog" 
+  title="&attachmentextractor.progress.windowtitle;" 
+  onload="aewindow.init();" 
+  onunload="aewindow.uninit();" 
+  orient="vertical" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  windowtype="mail:AEDialog" 
+  resizeable="no" 
+  persist="screenX screenY">
 
-<stringbundleset id="extensionsSet">
-    <stringbundle id="strbundle" src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-</stringbundleset>
 
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_progresstracker.js"></script>
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_window.js"></script>
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_messenger.js"></script>
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_attachmentFileMaker.js"></script>
+  <stringbundleset id="extensionsSet">
+    <stringbundle id="strbundle" 
+      src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
+  </stringbundleset>
 
-<script type="application/x-javascript">
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_progresstracker.js"></script>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_window.js"></script>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_messenger.js"></script>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_attachmentFileMaker.js"></script>
 
-  <![CDATA[
-	function updateCounts(m_index,m_count,a_index,a_count) {
-		if (m_index!=-1) {
-			var dmessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(m_index+1)).replace("%2$s",m_count);
-			document.getElementById("progress_message").setAttribute('mode','determined');
-			document.getElementById("progress_message").setAttribute('value',((m_index+1)/m_count)*100);
-			document.getElementById("status2").setAttribute('value',dmessage);
-		}
-		var amessage="";
-		if (a_index!=-1) {
-			amessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(a_index+1)).replace("%2$s",a_count);
-			//document.getElementById("progress_attachment").setAttribute('mode','determined');
-			document.getElementById("progress_attachment").setAttribute('value',((a_index+1)/a_count)*100);
-		}
-		else document.getElementById("progress_attachment").setAttribute('value',0);
-		//dump("amessage: "+amessage);
-		document.getElementById("status3").setAttribute('value',amessage);
-	}
-	
-	function updateSubject(subject) {
-		document.getElementById("subjecttext").setAttribute('value',"("+subject+")");
-	}
-	
-	function updateFilename(filename) {
-		document.getElementById("filenametext").setAttribute('value',"("+filename+")");
-	}
-	
-	function toggleText(show) {
-		if (show) {
-			document.getElementById("subjecthbox").removeAttribute('hidden');
-			document.getElementById("filenamehbox").removeAttribute('hidden');
-		}
-		else {
-			document.getElementById("subjecthbox").setAttribute('hidden','true');
-			document.getElementById("filenamehbox").setAttribute('hidden','true');
-		}
-	}
-	
-	var fileProgressBar,fileProgressLabelString,fileProgressLabel;
-	
-	function setupFileProgress() {
-		fileProgressBar=document.getElementById("progress_file");
-		fileProgressLabelString=document.getElementById("strbundle").getString("ProgressDialogProgressTextFile");
-		fileProgressLabel=document.getElementById("status4");
-		
-		fileProgressLabel.setAttribute('value',fileProgressLabelString.replace("%1$s","?").replace("%2$s","?"));
-	}
-	
-	function updateFileProgress(val,maxv) {
-		if (val==-1&&maxv==-1) {
-			fileProgressBar.setAttribute('mode','undetermined');
-			return;
-		}
-		fileProgressBar.setAttribute('mode','determined');
-		fileProgressBar.setAttribute('value',(val/maxv)*100);
-		fileProgressLabel.setAttribute('value',fileProgressLabelString.replace("%1$s",Math.round(val/1024)).replace("%2$s",Math.round(maxv/1024)));
-	}
-  ]]>
-</script>
+  <script type="application/x-javascript">
 
-<groupbox align="center" orient="vertical">
-<hbox align="center">
-<text id="status1" value="&attachmentextractor.progress.status1.text;" style="font-weight: bold; font-size: x-large;"/>
-<image src="chrome://attachmentextractor_cont/skin/animation.gif" minwidth="150px" minheight="50px"/>
-</hbox>
-<separator class="thin"/>
-<vbox>
-    <hbox>
-	  	<description id="status_message" value="&attachmentextractor.progress.status.message.text;"/>
-  		<progressmeter flex="1" id="progress_message" mode="undetermined" value="50"/>
-  		<description id="status2" value="&attachmentextractor.progress.status2.text;"/>
-  	</hbox>
-  	<hbox id="subjecthbox" pack="center">
-		<description id="subjecttext" value="" crop="end"/>
-	</hbox>
-	
-	<hbox>
-  		<description id="status_attachment" value="&attachmentextractor.progress.status.attachment.text;"/>
-  		<progressmeter  flex="1" id="progress_attachment" mode="determined" value="0"/>
-  		<description id="status3" value=""/>
-	</hbox>
-	<hbox  id="filenamehbox" pack="center">
-		<description id="filenametext" value="" crop="end"/>
-	</hbox>
-	<hbox id="status_file_hbox" hidden="true">
-  		<description id="status_file" value="&attachmentextractor.progress.status.file.text;"/>
-  		<progressmeter  flex="1" id="progress_file" mode="undetermined" value="0"/>
-  		<description id="status4" value=""/>
-	</hbox>
-	
-</vbox>
-</groupbox>
+    <![CDATA[
+      function updateCounts(m_index,m_count,a_index,a_count) {
+        if (m_index!=-1) {
+          var dmessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(m_index+1)).replace("%2$s",m_count);
+          document.getElementById("progress_message").setAttribute('mode','determined');
+          document.getElementById("progress_message").setAttribute('value',((m_index+1)/m_count)*100);
+          document.getElementById("status2").setAttribute('value',dmessage);
+        }
+        var amessage="";
+        if (a_index!=-1) {
+          amessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(a_index+1)).replace("%2$s",a_count);
+          //document.getElementById("progress_attachment").setAttribute('mode','determined');
+          document.getElementById("progress_attachment").setAttribute('value',((a_index+1)/a_count)*100);
+        }
+        else document.getElementById("progress_attachment").setAttribute('value',0);
+        //dump("amessage: "+amessage);
+          document.getElementById("status3").setAttribute('value',amessage);
+        }
+        
+        function updateSubject(subject) {
+          document.getElementById("subjecttext").setAttribute('value',"("+subject+")");
+        }
+        
+        function updateFilename(filename) {
+          document.getElementById("filenametext").setAttribute('value',"("+filename+")");
+        }
+        
+        function toggleText(show) {
+        if (show) {
+          document.getElementById("subjecthbox").removeAttribute('hidden');
+          document.getElementById("filenamehbox").removeAttribute('hidden');
+        }
+        else {
+          document.getElementById("subjecthbox").setAttribute('hidden','true');
+          document.getElementById("filenamehbox").setAttribute('hidden','true');
+        }
+      }
+      
+      var fileProgressBar,fileProgressLabelString,fileProgressLabel;
+      
+      function setupFileProgress() {
+        fileProgressBar=document.getElementById("progress_file");
+        fileProgressLabelString=document.getElementById("strbundle").getString("ProgressDialogProgressTextFile");
+        fileProgressLabel=document.getElementById("status4");
+        
+        fileProgressLabel.setAttribute('value',fileProgressLabelString.replace("%1$s","?").replace("%2$s","?"));
+      }
+      
+      function updateFileProgress(val,maxv) {
+        if (val==-1&&maxv==-1) {
+          fileProgressBar.setAttribute('mode','undetermined');
+          return;
+        }
+        fileProgressBar.setAttribute('mode','determined');
+        fileProgressBar.setAttribute('value',(val/maxv)*100);
+        fileProgressLabel.setAttribute('value',fileProgressLabelString.replace("%1$s",Math.round(val/1024)).replace("%2$s",Math.round(maxv/1024)));
+      }
+    ]]>
+  </script>
 
-<browser id="aemessagepane" minheight="0" minwidth="0" name="messagepane" type="content-primary" src="about:blank" disablehistory="true" disablesecurity="true" />
+  <groupbox align="center" 
+    orient="vertical">
+    <hbox align="center">
+      <text id="status1" 
+        value="&attachmentextractor.progress.status1.text;" 
+        style="font-weight: bold; font-size: x-large;"/>
+      <image src="chrome://attachmentextractor_cont/skin/animation.gif" 
+        minwidth="150px" 
+        minheight="50px"/>
+    </hbox>
+    <separator class="thin"/>
+    <vbox>
+      <hbox>
+        <description id="status_message" 
+          value="&attachmentextractor.progress.status.message.text;"/>
+        <progressmeter flex="1" 
+          id="progress_message" 
+          mode="undetermined" 
+          value="50"/>
+        <description id="status2" 
+          value="&attachmentextractor.progress.status2.text;"/>
+      </hbox>
+      <hbox id="subjecthbox" 
+        pack="center">
+        <description id="subjecttext" 
+          value="" 
+          crop="end"/>
+      </hbox>
+
+      <hbox>
+        <description id="status_attachment" 
+          value="&attachmentextractor.progress.status.attachment.text;"/>
+        <progressmeter flex="1" 
+          id="progress_attachment" 
+          mode="determined" 
+          value="0"/>
+        <description id="status3" 
+          value=""/>
+      </hbox>
+      <hbox id="filenamehbox" 
+        pack="center">
+        <description id="filenametext" 
+          value="" 
+          crop="end"/>
+      </hbox>
+      <hbox id="status_file_hbox" 
+        hidden="true">
+        <description id="status_file" 
+          value="&attachmentextractor.progress.status.file.text;"/>
+        <progressmeter flex="1" 
+          id="progress_file" 
+          mode="undetermined" 
+          value="0"/>
+        <description id="status4" 
+          value=""/>
+      </hbox>
+
+    </vbox>
+  </groupbox>
+
+  <browser id="aemessagepane" 
+    minheight="0" 
+    minwidth="0" 
+    name="messagepane" 
+    type="content-primary" 
+    src="about:blank" 
+    disablehistory="true" 
+    disablesecurity="true" />
 </window>

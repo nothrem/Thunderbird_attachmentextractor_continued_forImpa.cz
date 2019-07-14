@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ***** BEGIN LICENSE BLOCK *****
    - Version: MPL 1.1/GPL 2.0/LGPL 2.1
    -
@@ -40,56 +40,73 @@
 <?xml-stylesheet href="chrome://attachmentextractor_cont/skin/aec_dialogs.css" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd" >
+<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd">
 
-<prefwindow
-  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  type="child"
-  id="attachmentextractorPreferencesReport"
-  title="&attachmentextractor.settings.reporttab.label;"
-  persist="screenX screenY width height"
-  windowtype="attachmentextractor:preferences:sub"
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  type="child" 
+  id="attachmentextractorPreferencesReport" 
+  title="&attachmentextractor.settings.reporttab.label;" 
+  persist="screenX screenY width height" 
+  windowtype="attachmentextractor:preferences:sub" 
   dlgbuttons="accept,cancel">
-  
-  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/settings/aec_prefs.js"/>
-  
-  <prefpane id="ReportDialogPane">
-	<preferences>
-		<preference id="pref_reportgenthumbnail" name="extensions.attachmentextractor_cont.reportgen.thumbnail" type="bool"/>
-		<preference id="pref_reportgenembedcss"  name="extensions.attachmentextractor_cont.reportgen.embedcss" type="bool"/>
-		<preference id="pref_reportgenreportname" name="extensions.attachmentextractor_cont.reportgen.reportname" type="string"/>
-		<preference id="pref_reportgencssfile" name="extensions.attachmentextractor_cont.reportgen.cssfile" type="file"/>  
-		</preferences>
-	<stringbundleset id="extensionsSet">
-    	<stringbundle id="aestrbundle" src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-	</stringbundleset>
 
-	<groupbox>
-		<caption label="&attachmentextractor.settings.reportgen.caption;" />
-		
-		<hbox align="center">
-			<label value="&attachmentextractor.settings.reportgen.reportname2.label;"/>
-			<textbox id="reportname" preftype="char"  flex="1" preference="pref_reportgenreportname"/>
-		</hbox>
-		<checkbox id="reportgenthumbnail" 
-			preference="pref_reportgenthumbnail" 
-			label="&attachmentextractor.settings.reportgen.thumbnail.label;"
-		  	accesskey="&attachmentextractor.settings.reportgen.thumbnail.accesskey;" />
-		<groupbox>
-			<caption label="&attachmentextractor.settings.reportgen.cssfile.caption;"/>
-			<hbox>
-				<textbox id="reportgencssfile" flex="1" size="50" readonly="true" preference="pref_reportgencssfile" onsyncfrompreference="return syncFromFilePref('pref_reportgencssfile');"/>
-				<button type="button" 
-					oncommand="browseForCss('pref_reportgencssfile');" 
-					id="browsebutton"
-					label="&attachmentextractor.settings.savefolder.browsebutton;"/>
-			</hbox>
-			<checkbox id="reportgenembedcss" 
-				preference="pref_reportgenembedcss" 
-				label="&attachmentextractor.settings.reportgen.embedcss.label;"
-			  	accesskey="&attachmentextractor.settings.reportgen.embedcss.accesskey;" />
-		</groupbox>
-	</groupbox>
-    
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs.js"/>
+
+  <prefpane id="ReportDialogPane">
+    <preferences>
+      <preference id="pref_reportgenthumbnail" 
+        name="extensions.attachmentextractor_cont.reportgen.thumbnail" 
+        type="bool"/>
+      <preference id="pref_reportgenembedcss" 
+        name="extensions.attachmentextractor_cont.reportgen.embedcss" 
+        type="bool"/>
+      <preference id="pref_reportgenreportname" 
+        name="extensions.attachmentextractor_cont.reportgen.reportname" 
+        type="string"/>
+      <preference id="pref_reportgencssfile" 
+        name="extensions.attachmentextractor_cont.reportgen.cssfile" 
+        type="file"/>
+    </preferences>
+    <stringbundleset id="extensionsSet">
+      <stringbundle id="aestrbundle" 
+        src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
+    </stringbundleset>
+
+    <groupbox>
+      <caption label="&attachmentextractor.settings.reportgen.caption;" />
+
+      <hbox align="center">
+        <label value="&attachmentextractor.settings.reportgen.reportname2.label;"/>
+        <textbox id="reportname" 
+          preftype="char" 
+          flex="1" 
+          preference="pref_reportgenreportname"/>
+      </hbox>
+      <checkbox id="reportgenthumbnail" 
+        preference="pref_reportgenthumbnail" 
+        label="&attachmentextractor.settings.reportgen.thumbnail.label;" 
+        accesskey="&attachmentextractor.settings.reportgen.thumbnail.accesskey;" />
+      <groupbox>
+        <caption label="&attachmentextractor.settings.reportgen.cssfile.caption;"/>
+        <hbox>
+          <textbox id="reportgencssfile" 
+            flex="1" 
+            size="50" 
+            readonly="true" 
+            preference="pref_reportgencssfile" 
+            onsyncfrompreference="return syncFromFilePref('pref_reportgencssfile');"/>
+          <button type="button" 
+            oncommand="browseForCss('pref_reportgencssfile');" 
+            id="browsebutton" 
+            label="&attachmentextractor.settings.savefolder.browsebutton;"/>
+        </hbox>
+        <checkbox id="reportgenembedcss" 
+          preference="pref_reportgenembedcss" 
+          label="&attachmentextractor.settings.reportgen.embedcss.label;" 
+          accesskey="&attachmentextractor.settings.reportgen.embedcss.accesskey;" />
+      </groupbox>
+    </groupbox>
+
   </prefpane>
 </prefwindow>

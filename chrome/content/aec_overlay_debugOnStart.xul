@@ -36,28 +36,29 @@
    -
    - ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE overlay [
-<!ENTITY % aemainDTD SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor.dtd" >
-%aemainDTD; 
+  <!ENTITY % aemainDTD SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor.dtd">
+  %aemainDTD; 
 ]>
 
-<overlay id="aec_menusOverlay"
-         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="aec_menusOverlay" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 // This imports our javascript.
-<script type="application/x-javascript">
-<![CDATA[
-	try{
-	  var aepfs=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
-	  aepfs.setBoolPref("extensions.attachmentextractor_cont.debug",aepfs.getBoolPref("extensions.attachmentextractor_cont.debugonstart"));
-	  aepfs=null;
-}catch (e) {}
-]]>
-</script>
+  <script type="application/x-javascript">
+    <![CDATA[
+      try {
+        var aepfs=Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+        aepfs.setBoolPref("extensions.attachmentextractor_cont.debug",aepfs.getBoolPref("extensions.attachmentextractor_cont.debugonstart"));
+        aepfs=null;
+      } catch (e) {}
+    ]]>
+  </script>
 
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
-<script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_attachmentextractor.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_attachmentextractor.js"/>
 
-<script type="application/x-javascript"><![CDATA[ attachmentextractor.init(); ]]></script>
+  <script type="application/x-javascript"><![CDATA[ attachmentextractor.init(); ]]></script>
 
 </overlay>
-

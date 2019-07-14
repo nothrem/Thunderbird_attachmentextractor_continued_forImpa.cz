@@ -1,24 +1,22 @@
-
 prefwindow#attachmentextractorPreferences {
-	max-height: 50em !important;
-	height: 50em !important;
+  max-height: 50em !important;
+  height: 50em !important;
 }
 
-button.tokens {
-	
-}
+button.tokens {}
 
-#filenamepattern_examplegenerated, 
-#filenamepattern_examplegenerated2, #filenamepattern {
-	/*-moz-appearance: none;*/
-	background:#FFFF99 !important;
-	
+#filenamepattern_examplegenerated,
+#filenamepattern_examplegenerated2,
+#filenamepattern {
+  /*-moz-appearance: none;*/
+  background: #FFFF99 !important;
+
 }
 
 dialog#attachmentextractorFilenamePatternDialog {
-	width: 30em;
+  width: 30em;
 }
 
 textbox#filenamepattern {
-	width: 25em;
+  width: 25em;
 }

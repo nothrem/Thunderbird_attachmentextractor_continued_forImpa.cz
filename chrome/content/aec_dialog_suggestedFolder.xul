@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ***** BEGIN LICENSE BLOCK *****
    - Version: MPL 1.1/GPL 2.0/LGPL 2.1
    -
@@ -40,53 +40,55 @@
 <?xml-stylesheet href="chrome://attachmentextractor_cont/skin/aec_dialogs.css" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor.dtd" >
+<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor.dtd">
 
-<dialog
-  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  id="attachmentextractorSuggestedFolderDialog"
-  title="&attachmentextractor.suggestedFolderDialog.title;"
-  onload="onload();"
-  ondialogaccept="ondialogaccept()"
-  ondialogextra1="ondialogextra1()"
-  persist="screenX screenY"
-  buttons="accept,cancel,extra1"
-  buttonlabelextra1="&attachmentextractor.mrubrowsetext;"
-  buttonlabelaccept="&attachmentextractor.suggestedFolderDialog.acceptbutton;"
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  id="attachmentextractorSuggestedFolderDialog" 
+  title="&attachmentextractor.suggestedFolderDialog.title;" 
+  onload="onload();" 
+  ondialogaccept="ondialogaccept()" 
+  ondialogextra1="ondialogextra1()" 
+  persist="screenX screenY" 
+  buttons="accept,cancel,extra1" 
+  buttonlabelextra1="&attachmentextractor.mrubrowsetext;" 
+  buttonlabelaccept="&attachmentextractor.suggestedFolderDialog.acceptbutton;" 
   windowtype="attachmentextractor:suggestedFolderDialog">
-  
-<script>
-<![CDATA[ 
 
-  function onload() {
-    var matches=window.arguments[0];
-    var folderlist=document.getElementById('folderlist'); 
-    if (folderlist.selectedItem!=null) return;  //sometimes triggers twice. dont know why but stop it anyway.
-	if (matches.length==0) document.documentElement.getButton("accept").disabled = true;  
-    for (var i=0;i < matches.length;i++) {
-	  folderlist.appendItem("["+matches[i].ct+"] "+matches[i].f.path,matches[i].f).crop="center";
-	}
-	folderlist.selectedIndex=0;
-	setTimeout( function() {sizeToContent();}, 0);
-    /*addEventListener("resize", function(){ removeEventListener("resize", arguments.callee, false); sizeToContent(); }, false);*/
-  }
-  function ondialogaccept() {
-    var folderlist=document.getElementById('folderlist');
-    window.arguments[1].selectedIndex=folderlist.selectedIndex;
-  }
-  function ondialogextra1() {
-    window.arguments[1].browse=true;
-	window.close();
-  }
-]]>
-</script>
+  <script>
+    <![CDATA[ 
+      function onload() {
+        var matches=window.arguments[0];
+        var folderlist=document.getElementById('folderlist'); 
+        if (folderlist.selectedItem!=null) return;  //sometimes triggers twice. dont know why but stop it anyway.
+        if (matches.length==0) document.documentElement.getButton("accept").disabled = true;  
+        for (var i=0;i < matches.length;i++) {
+          folderlist.appendItem("["+matches[i].ct+"] "+matches[i].f.path,matches[i].f).crop="center";
+        }
+        folderlist.selectedIndex=0;
+        setTimeout( function() {sizeToContent();}, 0);
+        /*addEventListener("resize", function(){ removeEventListener("resize", arguments.callee, false); sizeToContent(); }, false);*/
+      }
+      function ondialogaccept() {
+        var folderlist=document.getElementById('folderlist');
+        window.arguments[1].selectedIndex=folderlist.selectedIndex;
+      }
+      function ondialogextra1() {
+        window.arguments[1].browse=true;
+        window.close();
+      }
+    ]]>
+  </script>
 
-<vbox align="center" flex="1">	
-	  
-	  <label value="&attachmentextractor.suggestedFolderDialog.label;"/>
-	  <listbox id="folderlist" rows="5" flex="1" style="min-width:40em">
-      </listbox>
-	  
-</vbox>
+  <vbox align="center" 
+    flex="1">
+
+    <label value="&attachmentextractor.suggestedFolderDialog.label;"/>
+    <listbox id="folderlist" 
+      rows="5" 
+      flex="1" 
+      style="min-width:40em">
+    </listbox>
+
+  </vbox>
 
 </dialog>

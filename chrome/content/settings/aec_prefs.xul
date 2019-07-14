@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ***** BEGIN LICENSE BLOCK *****
    - Version: MPL 1.1/GPL 2.0/LGPL 2.1
    -
@@ -41,44 +41,45 @@
 <?xml-stylesheet href="chrome://attachmentextractor_cont/skin/aec_dialogs.css" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<!DOCTYPE prefwindow SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd" >
-  
-<prefwindow type="prefwindow"
-        id="attachmentextractorPreferences"
-        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-		windowtype="attachmentextractor:preferences"
-        title="&attachmentextractor.settings.windowtitle;"
-		style = "width:&attachmentextractor.settings.width;"
-		persist="screenX screenY width height">
+<!DOCTYPE prefwindow SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd">
 
-<stringbundleset id="extensionsSet">
-    <stringbundle id="aestrbundle" src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-</stringbundleset>
+<prefwindow type="prefwindow" 
+  id="attachmentextractorPreferences" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  windowtype="attachmentextractor:preferences" 
+  title="&attachmentextractor.settings.windowtitle;"
+  style="width:&attachmentextractor.settings.width;" 
+  persist="screenX screenY width height">
+
+  <stringbundleset id="extensionsSet">
+    <stringbundle id="aestrbundle" 
+      src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
+  </stringbundleset>
 
   <prefpane id="paneGeneral" 
-  	label="&attachmentextractor.settings.generaltab.label;" 
-	image="chrome://attachmentextractor_cont/skin/attachmentextractor.png"
-	src="chrome://attachmentextractor_cont/content/settings/aec_prefs_general.xul"/>
-    
+    label="&attachmentextractor.settings.generaltab.label;" 
+    image="chrome://attachmentextractor_cont/skin/attachmentextractor.png" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs_general.xul"/>
+
 
   <prefpane id="paneFilename" 
-  	label="&attachmentextractor.settings.filenametab.label;"
-	image="chrome://attachmentextractor_cont/skin/filename.png"
-	src="chrome://attachmentextractor_cont/content/settings/aec_prefs_filename.xul"/>
+    label="&attachmentextractor.settings.filenametab.label;" 
+    image="chrome://attachmentextractor_cont/skin/filename.png" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs_filename.xul"/>
 
   <prefpane id="panePost" 
-  	label="&attachmentextractor.settings.posttab.label;"
-	image="chrome://attachmentextractor_cont/skin/after.png"
-	src="chrome://attachmentextractor_cont/content/settings/aec_prefs_post.xul"/>
-	
+    label="&attachmentextractor.settings.posttab.label;" 
+    image="chrome://attachmentextractor_cont/skin/after.png" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs_post.xul"/>
+
   <prefpane id="paneAuto" 
-  	label="&attachmentextractor.settings.autotab.label;"
-	image="chrome://attachmentextractor_cont/skin/auto.png"
-	src="chrome://attachmentextractor_cont/content/settings/aec_prefs_auto.xul"/>
+    label="&attachmentextractor.settings.autotab.label;" 
+    image="chrome://attachmentextractor_cont/skin/auto.png" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs_auto.xul"/>
 
   <prefpane id="paneAdvanced" 
-  	label="&attachmentextractor.settings.advancedtab.label;"
-	image="chrome://attachmentextractor_cont/skin/advanced.png"
-	src="chrome://attachmentextractor_cont/content/settings/aec_prefs_advanced.xul"/>
+    label="&attachmentextractor.settings.advancedtab.label;" 
+    image="chrome://attachmentextractor_cont/skin/advanced.png" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs_advanced.xul"/>
 
 </prefwindow>

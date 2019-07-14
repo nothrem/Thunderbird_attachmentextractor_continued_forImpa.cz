@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ***** BEGIN LICENSE BLOCK *****
    - Version: MPL 1.1/GPL 2.0/LGPL 2.1
    -
@@ -41,65 +41,83 @@
 <?xml-stylesheet href="chrome://attachmentextractor_cont/skin/aec_dialogs.css" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd" >
+<!DOCTYPE dialog SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd">
 
-<prefwindow
-  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  type="child"
-  id="attachmentextractorPreferencesSuggestFolders"
-  title="&attachmentextractor.settings.suggestfolder.dialogtitle;"
-  persist="screenX screenY "
-  windowtype="attachmentextractor:preferences:sub"
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  type="child" 
+  id="attachmentextractorPreferencesSuggestFolders" 
+  title="&attachmentextractor.settings.suggestfolder.dialogtitle;" 
+  persist="screenX screenY " 
+  windowtype="attachmentextractor:preferences:sub" 
   dlgbuttons="accept,cancel" 
-  onload="setTimeout( function() {sizeToContent();}, 0);"
-  >
-  
-  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/settings/aec_prefs.js"/>
-  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
-  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_js_attachmentextractor.js"/>
+  onload="setTimeout( function() {sizeToContent();}, 0);">
 
-<script>
-<![CDATA[ 
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/settings/aec_prefs.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_attachmentextractor.js"/>
 
-
-]]> 
-</script>
+  <script>
+    <![CDATA[ ]]>
+  </script>
 
   <prefpane id="SuggestFoldersDialogPane">
-	<preferences id="SuggestFoldersPreferences">
-      <preference id="pref_suggestfolderdisregardduplicates" name="extensions.attachmentextractor_cont.suggestfolder.disregardduplicates" type="bool"/>   
-	  <preference id="pref_suggestfolderparent" name="extensions.attachmentextractor_cont.suggestfolder.parent" type="bool"/>   
-	  <preference id="pref_suggestfolderexcludedkeywords" name="extensions.attachmentextractor_cont.suggestfolder.excludekeywords" type="string"/>   
+    <preferences id="SuggestFoldersPreferences">
+      <preference id="pref_suggestfolderdisregardduplicates" 
+        name="extensions.attachmentextractor_cont.suggestfolder.disregardduplicates" 
+        type="bool"/>
+      <preference id="pref_suggestfolderparent" 
+        name="extensions.attachmentextractor_cont.suggestfolder.parent" 
+        type="bool"/>
+      <preference id="pref_suggestfolderexcludedkeywords" 
+        name="extensions.attachmentextractor_cont.suggestfolder.excludekeywords" 
+        type="string"/>
     </preferences>
 
-<stringbundleset id="extensionsSet">
-    <stringbundle id="aestrbundle" src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-</stringbundleset>
+    <stringbundleset id="extensionsSet">
+      <stringbundle id="aestrbundle" 
+        src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
+    </stringbundleset>
 
     <vbox>
       <groupbox>
-	  	<caption label="&attachmentextractor.settings.suggestfolder.parents.label;" />
-	    <hbox>
-		  <textbox id="parent1" flex="1" size="50" readonly="true" onsyncfrompreference="return syncFromFilePref(document.getElementById('parent1'));"/>
-		  <button id="parentbutton" type="button" disabled="true"
-			oncommand="addEntry(this,document.getElementById('folderlist'));" 
-			label="&attachmentextractor.settings.savefolder.browsebutton;"/>
-		  <button id="parentresetbutton" type="button" disabled="true"
-			oncommand="removeEntry(this,document.getElementById('folderlist'))" 
-			label="&attachmentextractor.settings.suggestfolder.clearbutton.label;"/>
-		</hbox>
-		<listbox id="folderlist" rows="5" preference="pref_suggestfolderparent" onsyncfrompreference="fillParentFolderList(document.getElementById('folderlist'));" onselect="updateEditBox(this)">
+        <caption label="&attachmentextractor.settings.suggestfolder.parents.label;" />
+        <hbox>
+          <textbox id="parent1" 
+            flex="1" 
+            size="50" 
+            readonly="true" 
+            onsyncfrompreference="return syncFromFilePref(document.getElementById('parent1'));"/>
+          <button id="parentbutton" 
+            type="button" 
+            disabled="true" 
+            oncommand="addEntry(this,document.getElementById('folderlist'));" 
+            label="&attachmentextractor.settings.savefolder.browsebutton;"/>
+          <button id="parentresetbutton" 
+            type="button" 
+            disabled="true" 
+            oncommand="removeEntry(this,document.getElementById('folderlist'))" 
+            label="&attachmentextractor.settings.suggestfolder.clearbutton.label;"/>
+        </hbox>
+        <listbox id="folderlist" 
+          rows="5" 
+          preference="pref_suggestfolderparent" 
+          onsyncfrompreference="fillParentFolderList(document.getElementById('folderlist'));" 
+          onselect="updateEditBox(this)">
         </listbox>
-	  </groupbox>
-	  
-	  <checkbox id="suggestfolderdisregardduplicates"   
-			  label="&attachmentextractor.settings.suggestfolder.disregardduplicates.label;"
-			  accesskey="&attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey;" 
-			  preference="pref_suggestfolderdisregardduplicates" />
-	  <hbox>
-	  			<label value="&attachmentextractor.settings.suggestfolder.excludedkeywords.label;"/>
-	  			<textbox preference="pref_suggestfolderexcludedkeywords" flex="1"/>
-	  </hbox>
+      </groupbox>
+
+      <checkbox id="suggestfolderdisregardduplicates" 
+        label="&attachmentextractor.settings.suggestfolder.disregardduplicates.label;" 
+        accesskey="&attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey;" 
+        preference="pref_suggestfolderdisregardduplicates" />
+      <hbox>
+        <label value="&attachmentextractor.settings.suggestfolder.excludedkeywords.label;"/>
+        <textbox preference="pref_suggestfolderexcludedkeywords" 
+          flex="1"/>
+      </hbox>
     </vbox>
   </prefpane>
 </prefwindow>
