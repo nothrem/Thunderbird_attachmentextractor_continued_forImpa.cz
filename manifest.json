@@ -11,6 +11,7 @@
       "strict_min_version": "67.0"
     }
   },
+  "default_locale": "en",
   "icons": {
     "32": "chrome/skin/aec_icon_32.png",
     "64": "chrome/skin/aec_icon_64.png"

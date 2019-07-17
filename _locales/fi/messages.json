@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Tiedostonimimallin luominen:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Klikkaa lisätäksesi merkki"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Malli, jolla luodaan tiedostonimet:"
   },

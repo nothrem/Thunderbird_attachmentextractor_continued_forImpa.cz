@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Criar padrão do nome do ficheiro:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Clique para adicionar um Token"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Padrão usado para criar nomes de ficheiros"
   },

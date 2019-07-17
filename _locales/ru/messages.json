@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Шаблон создания имен файлов:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Нажмите, чтобы добавить Лексему"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Шаблон используемый для создания имен файлов:"
   },

@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Generering af filnavn"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Tilføj et element"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Mønster til at generere filnavne:"
   },

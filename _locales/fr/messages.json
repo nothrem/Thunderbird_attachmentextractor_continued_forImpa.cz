@@ -569,9 +569,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Modèle de création de noms de fichier :"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Cliquer pour ajouter un jeton"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Modèle utilisé pour générer les noms de fichiers :"
   },

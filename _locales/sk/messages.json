@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Vzor vytvárania názvu súboru:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Kliknúť na Pridať znak"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Vzor použitý na generovanie názvu súborov:"
   },

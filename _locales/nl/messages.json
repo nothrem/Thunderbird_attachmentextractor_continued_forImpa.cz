@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Bestandsnaampatroon generatie:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Klik om een token toe te voegen"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Gebruikt patroon voor het aanmaken van bestandsnamen:"
   },

@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Patrón de generación de nombres de archivos"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Pulse para añadir un elemento"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Patrón usado para generar los nombres de archivos:"
   },

@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Създаване на шаблон за име:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Избор на признак"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Използван шаблон за създаване на имена:"
   },

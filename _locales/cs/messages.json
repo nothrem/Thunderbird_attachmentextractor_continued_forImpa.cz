@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Šablona jmen souborů:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Přidat příznak"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Šablona pro generování jmen souborů:"
   },

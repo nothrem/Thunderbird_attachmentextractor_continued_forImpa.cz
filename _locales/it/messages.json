@@ -294,8 +294,7 @@
     "message": "Ultime cartelle da conservare:"
   },
   "attachmentextractor.settings.savepathmru.count.label2": {
-    "message": "": {
-    "message": "
+    "message": " "
   },
   "attachmentextractor.settings.savepathmru.accesskey": {
     "message": "u"
@@ -439,8 +438,7 @@
     "message": "Foglio di stile da utilizzare per il resoconto:"
   },
   "attachmentextractor.settings.reportgen.reportname2.label": {
-    "message": "Nome del file del resoconto:": {
-    "message": "
+    "message": "Nome del file del resoconto:"
   },
   "attachmentextractor.settings.reportgen.button.label": {
     "message": "Opzioni del generatore di resoconti…"
@@ -479,8 +477,7 @@
     "message": "Salva gli allegati solo se maggiori dei seguenti byte:"
   },
   "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "": {
-    "message": "
+    "message": " "
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
     "message": "Impostando un numero maggiore di 0 l&apos;estrazione verrà rallentata"
@@ -553,9 +550,6 @@
   },
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Generazione del modello"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Fare clic per aggiungere un token"
   },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Modello utilizzato per generare nomi di file:"

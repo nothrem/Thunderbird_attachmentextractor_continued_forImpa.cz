@@ -551,9 +551,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Dateinamenmuster:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Weiteres Dateinamenmerkmal hinzufügen"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Verwendetes Muster zum Erzeugen von Dateinamen:"
   },

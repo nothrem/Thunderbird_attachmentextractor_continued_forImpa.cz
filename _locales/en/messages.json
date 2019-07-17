@@ -553,9 +553,6 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Filename Pattern Generation:"
   },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Click To Add A Token"
-  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Pattern used to generate filenames:"
   },
