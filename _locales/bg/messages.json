@@ -1,0 +1,842 @@
+{
+  "extensionName": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "extensionDescription": {
+    "message": "Extracts all attachments from selected messages and then can delete, detach and more"
+  },
+  "attachmentextractor.menu.label": {
+    "message": "Извличане на прикачени файлове"
+  },
+  "attachmentextractor.menu.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.extracttodefault.label": {
+    "message": "Извличане от избрани съобщения"
+  },
+  "attachmentextractor.extracttodefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.extracttofolder.label": {
+    "message": "Извличане от избрани съобщения в…"
+  },
+  "attachmentextractor.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.extracttosuggest.label": {
+    "message": "Извличане в предложена папка"
+  },
+  "attachmentextractor.extracttosuggest.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.extractalldefault.label": {
+    "message": "Извличане от всички избрани съобщения в папка"
+  },
+  "attachmentextractor.extractalldefault.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.extractallfolder.label": {
+    "message": "Извличане от всички избрани съобщения в папка в…"
+  },
+  "attachmentextractor.extractallfolder.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.extractdeepdefault.label": {
+    "message": "Извличане от всички избрани съобщения в папка и подпапки"
+  },
+  "attachmentextractor.extractdeepdefault.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.extractdeepfolder.label": {
+    "message": "Извличане от всички избрани съобщения в папка и подпапки в…"
+  },
+  "attachmentextractor.extractdeepfolder.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.extractalltosuggest.label": {
+    "message": "Извличане от всички писма в предложена папка"
+  },
+  "attachmentextractor.extractalltosuggest.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.extractpattern.label": {
+    "message": "Извличане по шаблон за име на файл"
+  },
+  "attachmentextractor.extractpattern.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.extractpatternfolder.label": {
+    "message": "Извличане по шаблон за име на файл в…"
+  },
+  "attachmentextractor.extractpatternfolder.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Само изтриване на прикачени файлове от избрани писма"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Само изтриване на прикачени файлове от всички писма в папка"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.menusettingsdialog.label": {
+    "message": "AttachmentExtractor Continued Настройки"
+  },
+  "attachmentextractor.menusettingsdialog.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractalldefault.label": {
+    "message": "Извличане на всички прикачени файлове"
+  },
+  "attachmentextractor.context.extractalldefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.context.extractallfolder.label": {
+    "message": "Извличане на всички прикачени файлове в…"
+  },
+  "attachmentextractor.context.extractallfolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.context.extractdeepdefault.label": {
+    "message": "Извличане на всички вкл. в подпапките"
+  },
+  "attachmentextractor.context.extractdeepdefault.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractdeepfolder.label": {
+    "message": "Извличане на всички вкл. в подпапките в…"
+  },
+  "attachmentextractor.context.extractdeepfolder.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.context.extractalltosuggest.label": {
+    "message": "Извличане на всички в предложена папка"
+  },
+  "attachmentextractor.context.extractalltosuggest.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.attachment.extracttodefault.label": {
+    "message": "Извличане (AE) на всички"
+  },
+  "attachmentextractor.attachment.extracttodefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.attachment.extracttofolder.label": {
+    "message": "Извличане (AE) на всички в…"
+  },
+  "attachmentextractor.attachment.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.attachment.extractindtodefault.label": {
+    "message": "Извличане (AE)"
+  },
+  "attachmentextractor.attachment.extractindtodefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.attachment.extractindtofolder.label": {
+    "message": "Извличане (AE) в…"
+  },
+  "attachmentextractor.attachment.extractindtofolder.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "Извличане (AE)"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Извличане на прикачени файлове от избрани писма"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "Извличане (AE)"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Извличане на прикачени файлове от избрани писма"
+  },
+  "attachmentextractor.mrubrowsetext": {
+    "message": "Преглед…"
+  },
+  "attachmentextractor.mru.default.label": {
+    "message": "По подразбиране"
+  },
+  "attachmentextractor.mru.default.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Шаблон за име на файл"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Промяна на шаблона за име на прикачен файл"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Шаблонът да е по подразбиране отсега нататък"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Добавяне на признак"
+  },
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor Continued - предложени папки:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Предложени папки, базирани на темата на избраните писма"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Използване на избраната папка"
+  },
+  "attachmentextractor.imagetoolbar.label": {
+    "message": "Вкл./изкл. на избрано"
+  },
+  "attachmentextractor.imagetoolbar.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.context.extracttodefault.label": {
+    "message": "Извличане на избрани прикачени файлове"
+  },
+  "attachmentextractor.context.extracttofolder.label": {
+    "message": "Извличане на избрани прикачени файлове в…"
+  },
+  "attachmentextractor.context.extracttodefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.context.extracttofolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor Continued Настройки"
+  },
+  "attachmentextractor.settings.width": {
+    "message": "50em"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Страницата на AttachmentExtractor Continued и описание на възможностите:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Общи"
+  },
+  "attachmentextractor.settings.normal.caption": {
+    "message": "Извличане на прикачени файлове"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Къде да се записват прикачените?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Какво да се прави при намиране на файл със същото име като прикачения файл?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Винаги да се замества съществуващият с новия прикачен файл"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Винаги да се пази съществуващият без извличане на прикачения файл"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Да се запише под ново име прикаченият, за да се запазят и двата"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Със запитване всеки път"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.suggestfolder.button.label": {
+    "message": "Настройки за предложени папки…"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Предложени папки"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "Може да бъде предложена папка за извличане на основата на ключови думи в темите на избраните писма."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Да се пренебрегват ли дублирани ключови думи при определяне на предложени папки?"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Папки с възможни подпапки за извличане:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Ключови думи за изключване: (разделител «,»)"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Изчистване"
+  },
+  "attachmentextractor.settings.fixdetachedimages.label": {
+    "message": "Прилагане на поправка за показване на откачените изображения като вложени."
+  },
+  "attachmentextractor.settings.fixdetachedimages.linktext": {
+    "message": "Налична документация"
+  },
+  "attachmentextractor.settings.fixdetachedimages.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Последно използвани папки"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Със списък последно използвани папки."
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Помнене на последните"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "папки."
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Изчистване"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Път за запис по подразбиране:"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Преглед…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "След извличане"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "След извличане на прикачените файлове да се:"
+  },
+  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
+    "message": "Thunderbird действия"
+  },
+  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
+    "message": "Външни действия"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Изтрие ли писмото?"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Маркира ли писмото като прочетено?"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Изтрие ли прикаченият файл от писмото?"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.label": {
+    "message": "Изтрие по нормалния начин на Thunderbird."
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.label": {
+    "message": "Изтрие по метода на AE (експериментално)."
+  },
+  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.label": {
+    "message": "Откачи по метода на AE (експериментално)."
+  },
+  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "С известие след извличане на всички прикачени файлове."
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Запис на текста в писмо във файл. (забележка: еднакъв шаблон за нормално и авто-извличане)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.after-launch.label": {
+    "message": "Зареждане на всеки прикачен файл (поотделно) със съответстващото му приложение."
+  },
+  "attachmentextractor.settings.after-launch.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.after-endlaunch.label": {
+    "message": "Зареждане на всички прикачени файлове с указано външно приложение:"
+  },
+  "attachmentextractor.settings.after-endlaunch.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Обратни разписки…"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Обратни разписки"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor Continued може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Изпращане на обратна разписка, ако се изисква"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Заявки за обратни разписки:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Да се следват настройките на Thunderbird за обратни разписки"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Вместо настройката за &apos;запитване&apos; да се изпращат обратни разписки със запитване"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "Доклади"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "HTML Генератор на доклади"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Генериране на доклад при всяко използване на AttachmentExtractor Continued."
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "С миниатюри за прикрепените файлове, където е възможно."
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Влагане на стилова информация в доклада, вместо връзка към стиловата подложка."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Стилова подложка за доклада:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Име (или абсолютен път) на доклада:"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Настройки на генератора на доклади…"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Разширени"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "Още"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Запис на прикачени файлове"
+  },
+  "attachmentextractor.settings.extract.tbextract.label": {
+    "message": "Извличане на прикрепени файлове по нормалния метод на Thunderbird."
+  },
+  "attachmentextractor.settings.extract.tbextract.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.extract.aeextract2.label": {
+    "message": "Извличане на прикачени файлове по вътрешния метод на AE."
+  },
+  "attachmentextractor.settings.extract.aeextract2.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Без запис на прикачени файлове."
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Ограничение за размер"
+  },
+  "attachmentextractor.settings.extract.minimumsize-start.label": {
+    "message": "Запис само на прикачени файлове, ако са по-големи от:"
+  },
+  "attachmentextractor.settings.extract.minimumsize-end.label": {
+    "message": "байта."
+  },
+  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
+    "message": "При настройка повече от 0 байта AttachmentExtractor Continued ще е по-бавен донякъде."
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Извличания на опашка"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "Старт на AttachmentExtractor Continued моментално при заявка за извличане."
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Изчакване с натрупване на заявките в случай, че AE вече обработва."
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Установяване на дата/час на прикачения файл да са датата/часът на получаване на писмото."
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "С извличане също и на вложени (&apos;inline&apos;) изображения"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Отстраняване на неизправности"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "С режим на отстраняване на неизправности след рестарт. Съобщенията се регистрират в конзолата и записват в &apos;aec_debug.txt&apos; в папката на профила."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Показване на диалог за развитие по време на извличане."
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Показване на тема и име на прикачени файлове в писмото в диалога за развитие."
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Правило за филтриране на имена:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Извличане на всички файлове без тези, съдържащи в името:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Извличане само на тези файлове, съдържащи в името:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Файлове"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Създаване на шаблон за име:"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Избор на признак"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Използван шаблон за създаване на имена:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Шаблон за дублирани имена (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Да?"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Базирано на писмо получено със следните свойства:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "Тема на писмото (#subject#) е:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Тема след премахване на &apos;re:&apos; и т.н:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Получено на (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Дата/час след прилагане на шаблона:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "От автор (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "Име на прикачен файл (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Ще генерира първо:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Следвано от:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "В пощенска папка (#folder#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Шаблон за дати (#date#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Справка за кодове за форматиране за #date#:"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Редакция на шаблон за дата"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "Настройка на #Date# шаблон"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Авто-извличане"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Автоматично извличане на прикачени файлове при получаване на писмо"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Път за запис на прикачени файлове:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Преглед…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Авто-извличане само след като е приложен съответен етикет върху ново писмо."
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Извличане, ако етикетът съответства на:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Премахване на етикет от писмата?"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Изчакване за сваляне на всички писма преди старт на авто-извличане."
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Стартиране на авто-извличане с писма, които имат прикачени файлове"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "o"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "За продукта"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Изисква TB да се рестартира за прилагане)."
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Пропускане на файлове с еднакъв размер"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor Continued работи"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Извличане…"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Изчакване…"
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Писма"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Прикачени файлове"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Развитие"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Готово"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Завършено извличане."
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "С постоянно напомняне."
+  },
+  "OverwriteDialogTitle": {
+    "message": "Съществуващ файл!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% вече съществува. Да бъде ли:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "Пропуснат този прикачен файл"
+  },
+  "OverwriteDialogReplace": {
+    "message": "Презаписан съществуващият файл"
+  },
+  "OverwriteDialogRename": {
+    "message": "Създадено ново име"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Без напомняне, винаги да се прави това."
+  },
+  "ProgressDialogProgressText": {
+    "message": "Писмо [%1$s] от [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Прикачен файл [%1$s] от [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] от [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$sKB of %2$sKB"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Шаблон за име на файл"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Промяна на шаблона за име на прикачен файл:"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Шаблон по подразбиране отсега нататък"
+  },
+  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
+    "message": "Извличане на всички прикачени файлове от избраните писма."
+  },
+  "ConfirmDetachDialogTitle": {
+    "message": "Потвърждение за откачане"
+  },
+  "ConfirmDetachDialogMessage": {
+    "message": "Избрано е откачане на прикачени файлове по експериментален вътрешен метод. Няма да има запитвания за потвърждение оттук нататък и всеки прикачен файл ще бъде изтрит от избраните писма. Веднъж изтрити, няма възстановяване. Да се изпълни ли?"
+  },
+  "ConfirmDetachSettingDialogTitle": {
+    "message": "Внимание!"
+  },
+  "ConfirmDetachSettingDialogMessage": {
+    "message": "Да се има предвид, че този метод е експериментален и може да не работи правилно винаги. \nПри грешка може да се загуби прикаченият файл, писмото или и двете. Ако това се случи, няма лесен начин за възстановяване на изгубеното. Не се препоръчва използването му при важни писма. \nДа се използва на собствен риск."
+  },
+  "ConfirmAutoDetachSettingDialogMessage": {
+    "message": "При включено откачане/изтриване прикачените файлове ще се премахват от всички входящи писма отговарящи на указаните критерии (или всички писма) без НИКАКВО потвърждение. \nПри грешка може да се загуби прикаченият файл, писмото или и двете. Да не се включва, ако не се допуска риск за загуба на данни."
+  },
+  "CSSFileFilterDescription": {
+    "message": "CSS стилови подложки"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Избор на стилова подложка за ползване"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Избор на приложение за ползване"
+  },
+  "GenericErrorDialog": {
+    "message": "Проблем!"
+  },
+  "GenericErrorMessage2": {
+    "message": "Нещо ненормално се случи с AttachmentExtractor Continued. Ако това се случва често, да се докладва неизправност на страницата (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) с подробностите за грешката от конзолата на Thunderbird."
+  },
+  "StatusTextStarting": {
+    "message": "Старт на AE извличане с избраните прикачени файлове"
+  },
+  "StatusTextEnded": {
+    "message": "AE извличането е готово"
+  },
+  "StatusTextAttachment": {
+    "message": "AE извличане: прикачен файл [%1$s] от [%2$s]"
+  },
+  "StatusTextTidying": {
+    "message": "AE извличане: завършен прикачен файл%1$s, приключване…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor Continued: да се изтриели извлеченият файл?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "AttachmentExtractor Continued вече е използван за извличане на прикачени файлове от това писмо. Да се изтрият ли извлечените файлове и от компютъра?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Избор на папка за използване"
+  },
+  "EmptyLineText": {
+    "message": "-- празно --"
+  },
+  "FileNamePatternFixTitle": {
+    "message": "Предложена поправка"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "Шаблонът за име на файла или брой, който е въведен, е грешен и може да прекрати AttachmentExtractor Continued.\nДа се промени ли на:\n %1$s?"
+  },
+  "ExtractionStarted": {
+    "message": "Започнато извличане [на Дата/Час: %S]"
+  },
+  "ExtractionEnded": {
+    "message": "Завършено извличане [на Дата/Час: %S]"
+  },
+  "ReportTitle": {
+    "message": "AE Генериран Доклад"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Continued Доклад"
+  },
+  "Subject": {
+    "message": "Тема"
+  },
+  "From": {
+    "message": "От"
+  },
+  "To": {
+    "message": "До"
+  },
+  "DateTime": {
+    "message": "Дата/Час"
+  },
+  "ExtractionStarted": {
+    "message": "Започнато извличане [на Дата/Час: %S]"
+  },
+  "ExtractionEnded": {
+    "message": "Завършено извличане [на Дата/Час: %S]"
+  },
+  "ReportTitle": {
+    "message": "AE Генериран Доклад"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Continued Доклад"
+  },
+  "Subject": {
+    "message": "Тема"
+  },
+  "From": {
+    "message": "От"
+  },
+  "To": {
+    "message": "До"
+  },
+  "DateTime": {
+    "message": "Дата/Час"
+  }
+}

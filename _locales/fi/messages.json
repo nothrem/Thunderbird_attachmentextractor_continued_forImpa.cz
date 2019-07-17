@@ -1,0 +1,818 @@
+{
+  "extensionName": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "extensionDescription": {
+    "message": "Extracts all attachments from selected messages and then can delete, detach and more"
+  },
+  "attachmentextractor.menu.label": {
+    "message": "Poimi liitetiedostot"
+  },
+  "attachmentextractor.menu.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.extracttodefault.label": {
+    "message": "Poimi valituista viesteistä"
+  },
+  "attachmentextractor.extracttodefault.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.extracttofolder.label": {
+    "message": "Poimi valituista viesteistä kohteeseen…"
+  },
+  "attachmentextractor.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.extracttosuggest.label": {
+    "message": "Poimi ehdotettuun tiedostokansioon"
+  },
+  "attachmentextractor.extracttosuggest.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.extractalldefault.label": {
+    "message": "Poimi kaikista viesteistä kansiossa"
+  },
+  "attachmentextractor.extractalldefault.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.extractallfolder.label": {
+    "message": "Poimi kaikista viesteistä kansiossa kohteeseen…"
+  },
+  "attachmentextractor.extractallfolder.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.extractdeepdefault.label": {
+    "message": "Poimi kaikista viesteistä kansiossa ja alikansiossa"
+  },
+  "attachmentextractor.extractdeepdefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.extractdeepfolder.label": {
+    "message": "Poimi kaikista viesteistä kansiossa ja alikansioissa kohteeseen…"
+  },
+  "attachmentextractor.extractdeepfolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.extractalltosuggest.label": {
+    "message": "Poimi kaikista viesteistä ehdotettuun tiedostokansioon"
+  },
+  "attachmentextractor.extractalltosuggest.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.extractpattern.label": {
+    "message": "Poimi tiedostonimimallilla"
+  },
+  "attachmentextractor.extractpattern.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.extractpatternfolder.label": {
+    "message": "Poimi tiedostonimimallilla kohteeseen…"
+  },
+  "attachmentextractor.extractpatternfolder.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Ainoastaan poista liitteet valituista viesteistä"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Ainoastaan poista liitteet kaikista viesteistä kansiossa"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.menusettingsdialog.label": {
+    "message": "AttachmentExtractor Continuedin asetukset"
+  },
+  "attachmentextractor.menusettingsdialog.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractalldefault.label": {
+    "message": "Poimi kaikki liitetiedostot"
+  },
+  "attachmentextractor.context.extractalldefault.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.context.extractallfolder.label": {
+    "message": "Poimi kaikki liitetiedostot kohteeseen…"
+  },
+  "attachmentextractor.context.extractallfolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.context.extractdeepdefault.label": {
+    "message": "Poimi kaikki mukaanlukien alikansiot"
+  },
+  "attachmentextractor.context.extractdeepdefault.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.context.extractdeepfolder.label": {
+    "message": "Poimi kaikki mukaanlukien alikansiot kohteeseen…"
+  },
+  "attachmentextractor.context.extractdeepfolder.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.context.extractalltosuggest.label": {
+    "message": "Poimi kaikki ehdotettuun tiedostokansioon"
+  },
+  "attachmentextractor.context.extractalltosuggest.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.attachment.extracttodefault.label": {
+    "message": "AE poimi kaikki"
+  },
+  "attachmentextractor.attachment.extracttodefault.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.attachment.extracttofolder.label": {
+    "message": "AE poimi kaikki kohteeseen…"
+  },
+  "attachmentextractor.attachment.extracttofolder.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.attachment.extractindtodefault.label": {
+    "message": "AE poimi"
+  },
+  "attachmentextractor.attachment.extractindtodefault.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.attachment.extractindtofolder.label": {
+    "message": "AE poimi kohteeseen…"
+  },
+  "attachmentextractor.attachment.extractindtofolder.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "AE Poimi"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Poimi liitteet valituista viesteistä"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "AE Poimi"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Poimi liitteet valituista viesteistä"
+  },
+  "attachmentextractor.mrubrowsetext": {
+    "message": "Selaa…"
+  },
+  "attachmentextractor.mru.default.label": {
+    "message": "Oletus"
+  },
+  "attachmentextractor.mru.default.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Tiedostonimimallin syöttö"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Muokkaa liitteen tiedostonimimallia:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Aseta malli oletukseksi tästä lähtien"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Klikkaa lisätäksesi merkki"
+  },
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor Continued - Ehdotetut kansiot:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Valittujen viestien otsikkoriveille perustuvat ehdotetut kansiot:"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Käytä valittua kansiota"
+  },
+  "attachmentextractor.imagetoolbar.label": {
+    "message": "Käännä valinta vastakkaiseen asentoon."
+  },
+  "attachmentextractor.imagetoolbar.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.context.extracttodefault.label": {
+    "message": "Poimi valitut liitetiedostot"
+  },
+  "attachmentextractor.context.extracttofolder.label": {
+    "message": "Poimi valitut liitetiedostot kohteeseen…"
+  },
+  "attachmentextractor.context.extracttodefault.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.context.extracttofolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor Continuedin asetukset"
+  },
+  "attachmentextractor.settings.width": {
+    "message": "50em"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "AttachmentExtractor Continuedin kotisivu ja ominaisuuksien kuvaus:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Yleiset"
+  },
+  "attachmentextractor.settings.normal.caption": {
+    "message": "Liitetiedostojen poiminta"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Minne liitteet tulisi tallentaa?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Mitä tehdään, kun löydetään tiedosto, jolla on sama nimi kuin liitetiedostolla?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Korvaa aina olemassaoleva tiedosto uudella liitetiedostolla"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Säilytä aina olemassaoleva tiedosto, älä poimi liitetiedostoa"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Anna uusi nimi liitetiedostolle, jotta molemmat voidaan säilyttää"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Kysy joka kerta"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.suggestfolder.button.label": {
+    "message": "Ehdotettujen kansioiden asetukset …"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Ehdotetut kansiot"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "Kansiota voidaan ehdottaa poiminnan kohteeksi valitsemiesi viestien otsikkorivien avainsanojen pohjalta."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Hylkää avainsanojen duplikaatit, kun ehdotettuja kansioita arvotetaan?"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Kansiot, jotka sisältävät mahdollisia purkamisen alikansioita:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Poissuljettavat avainsanat: (pilkulla erotettuina)"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Tyhjennä"
+  },
+  "attachmentextractor.settings.fixdetachedimages.label": {
+    "message": "Ota käyttöön irrotettujen kuvien näyttäminen."
+  },
+  "attachmentextractor.settings.fixdetachedimages.linktext": {
+    "message": "Dokumentaatio saatavilla"
+  },
+  "attachmentextractor.settings.fixdetachedimages.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Viimeksi käytetyt kansiot"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Ota käyttöön viimeksi käytettyjen kansioiden lista."
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Tallenna viimeiset"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "kansiota."
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Tyhjennä nyt"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Tallennuksen oletuspolku:"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Selaa…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "Poiminnan jälkeen"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "Mitä tehdään liitetiedostojen poiminnan jälkeen:"
+  },
+  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
+    "message": "Thunderbird-toimenpiteet"
+  },
+  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
+    "message": "Ulkoiset toimenpiteet"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Poista viesti"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Merkitse viesti luetuksi"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Poista liitetiedosto viestistä"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.label": {
+    "message": "Poista tavallisella Thunderbird-koodilla."
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.label": {
+    "message": "Poista AE:n sisäisellä (kokeellisella) rutiinilla."
+  },
+  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.label": {
+    "message": "Irrota AE:n sisäisellä (kokeellisella) rutiinilla."
+  },
+  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "Ilmoita, kun kaikki liitetiedostot on poimittu"
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Tallenna viestiteksti tiedostoon. (huomaa: sama malli normaalille ja automaattiselle poiminnalle)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.after-launch.label": {
+    "message": "Lataa jokainen liite (itsenäisesti) omalla oletussovelluksellaan."
+  },
+  "attachmentextractor.settings.after-launch.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.after-endlaunch.label": {
+    "message": "Lataa kaikki liitteet määritellyllä ulkoisella sovelluksella:"
+  },
+  "attachmentextractor.settings.after-endlaunch.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Vastaanottokuittaukset …"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Vastaanottokuittaukset"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor Continued voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Lähetä vastaanottokuittaukset jos sellaista pyydetään"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Vastaanottokuittausten pyynnöt:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Noudata Thunderbirdin vastaannottokuittausasetuksia"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Ohita &apos;kysy minulta&apos;-asetus ja lähetä vastaanottokuittaukset kehoitteen kera"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "ReportGen"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "HTML-raporttikehitin"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Kehitä raportti aina kun AttachmentExtractor Continued ajetaan."
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "Käytä liitetiedostojen pienoiskuvia, kun se on mahdollista."
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Upota tyylitiedot raporttiin - älä käytä linkitettyä tyylitiedostoa."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Raportille käytettävä tyylitiedosto:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Tiedostonimi (tai absoluuttinen polku) raportille:"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Raporttikehittimen asetukset …"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Lisäasetukset"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "Lisää"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Liitetiedostojen tallennus"
+  },
+  "attachmentextractor.settings.extract.tbextract.label": {
+    "message": "Poimi liitetiedostot tavallisella Thunderbird-koodilla."
+  },
+  "attachmentextractor.settings.extract.tbextract.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.extract.aeextract2.label": {
+    "message": "Poimi liitteet AE:n sisäisellä rutiinilla."
+  },
+  "attachmentextractor.settings.extract.aeextract2.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Poista käytöstä liitetiedostojen tallennus."
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Minimikokotarkistus"
+  },
+  "attachmentextractor.settings.extract.minimumsize-start.label": {
+    "message": "Tallenna liitteet vain jos ne ovat suurempia kuin:"
+  },
+  "attachmentextractor.settings.extract.minimumsize-end.label": {
+    "message": "Tavua."
+  },
+  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
+    "message": "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractor Continuedia."
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Odottavat poiminnat"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "Käynnistä AttachmentExtractor Continued heti joka kerta kun poimintaa pyydetään."
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Odota, ja aseta jonoon, kaikki poimintapyynnöt, jotka tehdään AE:n ollessa jo ajossa."
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Aseta liitetiedoston muokkausaika viestin vastaanottohetken ajan mukaan."
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "Poimi myös upotetut (&apos;inline&apos;) kuvat"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Debuggaus"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "Ota käyttöön Debug-tila käynnistettäessä uudelleen. Viestit lokitetaan konsoliin ja kirjoitetaan &apos;aec_debug.txt&apos;-tiedostoon profiilikansioosi."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Näytä suoritusdialogi poiminnan aikana."
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Näytä viestien aiheet ja liitteiden nimet edistymisikkunassa."
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Tiedostonimisuodatuksen käytäntö:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Poimi kaikki tiedostot, paitsi ne, joiden tiedostonimi sisältää:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Poimi vain tiedostot, joiden tiedostonimi sisältää:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Tiedostonimet"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Tiedostonimimallin luominen:"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Klikkaa lisätäksesi merkki"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Malli, jolla luodaan tiedostonimet:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Tiedostonimiduplikaateille käytettävä malli (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Käytä?"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Perustuu vastaanotettavalle sähköpostiviestille seuraavin ominaisuuksin:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "Sähköpostin otsikko (#subject#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Otsikko &apos;re:&apos; ym. liitteiden poistamisen jälkeen:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Vastaanotettu (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Päiväys/aika mallin käyttämisen jälkeen:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "Kirjoittajalta (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "Liitetiedosto, jonka nimi on (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Generoisi ensin:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Jota seuraa:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "Postikansiossa (#folder#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Päiväyksille käytettävä malli (#date#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Opas muotoilukoodeille #date#:"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Muokkaa päiväysmallia"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "#Date# mallin asetus"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Auto-Poimi"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Poimi automaattisesti liitteet sähköpostin kuittausviestissä"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Liitetiedostojen tallennuspolku:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Selaa…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Auto-Poimi vain, kun uusi viesti on merkitty sopivalla tagilla."
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Poimi viestit jos niiden tagi on:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Tyhjennä tagit viesteistä?"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "Y"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Odota, kunnes kaikki viestit on ladattu, ennen kuin aloitetaan Auto-Poiminta."
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Käynnistä Auto-Poimi vain viesteille, joissa näyttää olevan liitteitä"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "Tietoja"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Vaatii Thunderbirdin uudelleenkäynnistyksen.)"
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Ohita samankokoiset tiedostot"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor Continued työskentelee"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Poimitaan…"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Odota."
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Viestit"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Liitteet"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Edistyminen"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Valmis"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Poiminta valmis!"
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "Näytä ilmoitukset."
+  },
+  "OverwriteDialogTitle": {
+    "message": "Tiedosto on jo olemassa!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% on jo olemassa.  Haluatko:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "Ohita tämä liitetiedosto"
+  },
+  "OverwriteDialogReplace": {
+    "message": "Korvaa olemassaoleva tiedosto"
+  },
+  "OverwriteDialogRename": {
+    "message": "Luo uusi tiedostonimi"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Älä kysy tätä minulta uudelleen vaan tee toiminto aina."
+  },
+  "ProgressDialogProgressText": {
+    "message": "Viesti [%1$s] / [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Liitetiedosto [%1$s] / [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] / [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$s Kt / %2$s Kt"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Tiedostonimimallin syöttö"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Muokkaa liitetiedostonimen mallia:"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Aseta malli oletukseksi tästä lähtien"
+  },
+  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
+    "message": "Poimii kaikki liitetiedostot valituista viesteistä."
+  },
+  "ConfirmDetachDialogTitle": {
+    "message": "Vahvista poiminta"
+  },
+  "ConfirmDetachDialogMessage": {
+    "message": "Olet valinnut liitetiedostojen poimintaan kokeellisen sisäisen poimintarutiinin.  Tämän jälkeen ei näytetä enempää varmistusviestejä, ja kaikki liitetiedostot poistetaan valituista sähköposteista.  Toimintoa ei voi peruuttaa.  Jatketaanko?"
+  },
+  "ConfirmDetachSettingDialogTitle": {
+    "message": "Varoitus!"
+  },
+  "ConfirmDetachSettingDialogMessage": {
+    "message": "Tämä menetelmä on kokeellinen eikä välttämättä toimi kaikissa tapauksissa.  \nJos tapahtuu virhe, joko liitetiedosto, sähköpostiviesti tai molemmat voidaan menettää.  Jos näin tapahtuu, ei ole olemassa helppoa tapaa palauttaa menetettyjä tietoja, joten ei ole suositeltavaa käyttää tätä tärkeille sähköpostiviesteille.  \nKäytä omalla vastuulla."
+  },
+  "ConfirmAutoDetachSettingDialogMessage": {
+    "message": "Liitetiedostojen irrottamisen/poistamisen ottaminen käyttöön poistaa liitetiedostot kaikista saapuvista sähköposteista, jotka sopivat määrittämiisi kriteereihin (mahdollisesti kaikkiin sähköposteihin), ilman MITÄÄN varmistusta. \nJos tapahtuu virhe, se voi aiheuttaa kaikkien liitetiedostojen tai sähköpostien häviämisen.\nÄlä ota käyttöön tätä toimintoa jos et halua vaarantaa liitetiedostojen tai saapuvien sähköpostien säilymistä."
+  },
+  "CSSFileFilterDescription": {
+    "message": "CSS-tyylitiedostot"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Valitse käytettävä tyylitiedosto"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Valitse käytettävä sovellus"
+  },
+  "GenericErrorDialog": {
+    "message": "Hups!"
+  },
+  "GenericErrorMessage2": {
+    "message": "AttachmentExtractor Continuedissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
+  },
+  "StatusTextStarting": {
+    "message": "Käynnistetään AE poiminta valituille liitteille"
+  },
+  "StatusTextEnded": {
+    "message": "AE poiminta valmis"
+  },
+  "StatusTextAttachment": {
+    "message": "AE poiminta: Poimitaan liite [%1$s] / [%2$s]"
+  },
+  "StatusTextTidying": {
+    "message": "AE poiminta: poiminta valmis liite %1$s, lopetetaan…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor Continued: Poista poimimasi tiedosto?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "Käytit AttachmentExtractor Continuedia poimimaan liitteet tästä viestistä. Haluatko poistaa ne myös tietokoneeltasi?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Valitse käytettävä kansio"
+  },
+  "EmptyLineText": {
+    "message": "-- tyhjä --"
+  },
+  "FileNamePatternFixTitle": {
+    "message": "Ehdotettu korjaus"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "Syöttämäsi malli on virheellinen, ja saattaa rikkoa AttachmentExtractor Continuedin.\nMuutetaanko muotoon:\n %1$s?"
+  },
+  "ExtractionStarted": {
+    "message": "Poiminta alkoi [%S]"
+  },
+  "ExtractionEnded": {
+    "message": "Poiminta päättyi [%S]"
+  },
+  "ReportTitle": {
+    "message": "AE ReportGen -raportti"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Continued -raportti"
+  },
+  "Subject": {
+    "message": "Sähköposti"
+  },
+  "From": {
+    "message": "Lähettäjä"
+  },
+  "To": {
+    "message": "Vastaanottaja"
+  },
+  "DateTime": {
+    "message": "Päivä/Aika"
+  }
+}

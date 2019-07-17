@@ -1,0 +1,818 @@
+{
+  "extensionName": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "extensionDescription": {
+    "message": "Trennt Dateianhänge aus gewählten Nachrichten teilautomatisiert ab und kann diese speichern, löschen und mehr"
+  },
+  "attachmentextractor.menu.label": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "attachmentextractor.menu.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.extracttodefault.label": {
+    "message": "Abtrennen aus ausgewählten Nachrichten"
+  },
+  "attachmentextractor.extracttodefault.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.extracttofolder.label": {
+    "message": "Abtrennen aus ausgewählten Nachrichten nach…"
+  },
+  "attachmentextractor.extracttofolder.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.extracttosuggest.label": {
+    "message": "Abtrennen in den vorgeschlagenen Datenordner"
+  },
+  "attachmentextractor.extracttosuggest.accesskey": {
+    "message": "v"
+  },
+  "attachmentextractor.extractalldefault.label": {
+    "message": "Abtrennen aus allen Nachrichten des Ordners"
+  },
+  "attachmentextractor.extractalldefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.extractallfolder.label": {
+    "message": "Abtrennen aus allen Nachrichten des Ordners nach…"
+  },
+  "attachmentextractor.extractallfolder.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.extractdeepdefault.label": {
+    "message": "Abtrennen aus allen Nachrichten in Ordner und Unterordner"
+  },
+  "attachmentextractor.extractdeepdefault.accesskey": {
+    "message": "u"
+  },
+  "attachmentextractor.extractdeepfolder.label": {
+    "message": "Abtrennen aus allen Nachrichten in Ordner und Unterordner nach…"
+  },
+  "attachmentextractor.extractdeepfolder.accesskey": {
+    "message": "n"
+  },
+  "attachmentextractor.extractalltosuggest.label": {
+    "message": "Abtrennen aus allen Nachrichten in den vorgeschlagenen Datenordner"
+  },
+  "attachmentextractor.extractalltosuggest.accesskey": {
+    "message": "l"
+  },
+  "attachmentextractor.extractpattern.label": {
+    "message": "Abtrennen mit eigenem Dateinamenmuster"
+  },
+  "attachmentextractor.extractpattern.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.extractpatternfolder.label": {
+    "message": "Abtrennen mit eigenem Dateinamenmuster nach…"
+  },
+  "attachmentextractor.extractpatternfolder.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Anhänge ausgewählter Nachrichten löschen"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Anhänge aller Nachrichten des Ordners löschen"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.menusettingsdialog.label": {
+    "message": "AttachmentExtractor Continued - Einstellungen…"
+  },
+  "attachmentextractor.menusettingsdialog.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractalldefault.label": {
+    "message": "Alle Anhänge abtrennen"
+  },
+  "attachmentextractor.context.extractalldefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.context.extractallfolder.label": {
+    "message": "Alle Anhänge abtrennen nach…"
+  },
+  "attachmentextractor.context.extractallfolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.context.extractdeepdefault.label": {
+    "message": "Alle Anhänge abtrennen einschl. Unterordner"
+  },
+  "attachmentextractor.context.extractdeepdefault.accesskey": {
+    "message": "u"
+  },
+  "attachmentextractor.context.extractdeepfolder.label": {
+    "message": "Alle Anhänge abtrennen einschl. Unterordner nach…"
+  },
+  "attachmentextractor.context.extractdeepfolder.accesskey": {
+    "message": "n"
+  },
+  "attachmentextractor.context.extractalltosuggest.label": {
+    "message": "Alle abtrennen in den vorgeschlagenen Datenordner"
+  },
+  "attachmentextractor.context.extractalltosuggest.accesskey": {
+    "message": "d"
+  },
+  "attachmentextractor.attachment.extracttodefault.label": {
+    "message": "Alle abtrennen"
+  },
+  "attachmentextractor.attachment.extracttodefault.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.attachment.extracttofolder.label": {
+    "message": "Alle abtrennen nach…"
+  },
+  "attachmentextractor.attachment.extracttofolder.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.attachment.extractindtodefault.label": {
+    "message": "Abtrennen"
+  },
+  "attachmentextractor.attachment.extractindtodefault.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.attachment.extractindtofolder.label": {
+    "message": "Abtrennen nach…"
+  },
+  "attachmentextractor.attachment.extractindtofolder.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "Anhänge abtrennen"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Anhänge von ausgewählten Nachrichten abtrennen"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "Anhänge abtrennen"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Anhänge von dieser Nachricht abtrennen"
+  },
+  "attachmentextractor.mrubrowsetext": {
+    "message": "Durchsuchen…"
+  },
+  "attachmentextractor.mru.default.label": {
+    "message": "Standard"
+  },
+  "attachmentextractor.mru.default.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Dateinamenmuster eingegeben"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Dateinamenmuster der angehängten Datei bearbeiten:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Dateinamenmuster als Standard festlegen"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Weiteres Dateinamenmerkmal hinzufügen"
+  },
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor Continued - Ordnervorschläge:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Ausgewählten Ordner verwenden"
+  },
+  "attachmentextractor.imagetoolbar.label": {
+    "message": "Auswahl umkehren"
+  },
+  "attachmentextractor.imagetoolbar.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.context.extracttodefault.label": {
+    "message": "Ausgewählte Anhänge abtrennen"
+  },
+  "attachmentextractor.context.extracttofolder.label": {
+    "message": "Ausgewählte Anhänge abtrennen nach…"
+  },
+  "attachmentextractor.context.extracttodefault.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.context.extracttofolder.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor Continued - Einstellungen"
+  },
+  "attachmentextractor.settings.width": {
+    "message": "50em"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Homepage von &quot;AttachmentExtractor Continued&quot; und Beschreibung der Funktionen:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Allgemein"
+  },
+  "attachmentextractor.settings.normal.caption": {
+    "message": "Abtrennen von Anhängen"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Speicherort für Anhänge"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Vorgabe für den Fall, dass bereits eine Datei gleichen Namens besteht:"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Die bestehende Datei immer mit dem neuen Anhang überschreiben"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Die bestehende Datei immer erhalten, Anhang nicht abtrennen"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Neuen Namen für den Anhang vergeben, um beide Dateien zu behalten"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Jedes Mal fragen"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.suggestfolder.button.label": {
+    "message": "Ordnervorschläge…"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Ordnervorschläge"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "Ordnervorschläge für abzutrennenden Dateien die auf Schlüsselwörter der Betreffzeile der ausgewählten Nachrichten basieren."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Doppelte Schlüsselwörter ignorieren, falls Ordnervorschläge verfügbar"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Ordner, welche Unterordner für abzutrennende Dateien enthalten können:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Auszuschließende Schlüsselwörter (durch Komma getrennt):"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Löschen"
+  },
+  "attachmentextractor.settings.fixdetachedimages.label": {
+    "message": "Korrektur anwenden, um abgetrennte Grafiken eingebettet anzuzeigen"
+  },
+  "attachmentextractor.settings.fixdetachedimages.linktext": {
+    "message": "Dokumentation (engl.)"
+  },
+  "attachmentextractor.settings.fixdetachedimages.accesskey": {
+    "message": "k"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Zuletzt verwendete Ordner"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Liste der zuletzt verwendeten Ordner verwenden"
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Die letzten"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "Ordner merken"
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Ordnerliste jetzt löschen"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Standard-Speicherpfad:"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Durchsuchen…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "Nach Abtrennung"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "Vorgänge nach dem Abtrennen:"
+  },
+  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
+    "message": "Thunderbird-Aktion"
+  },
+  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
+    "message": "Externe Aktion"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Nachricht löschen"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Nachricht als gelesen markieren"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Anhang aus der Nachricht löschen"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.label": {
+    "message": "Löschen mit normaler Thunderbird-Routine"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.label": {
+    "message": "Löschen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.label": {
+    "message": "Abtrennen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
+    "message": "e"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden"
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Nachrichtentext in eine Datei speichern. (Gilt für Allgemein- wie für den Automatikmodus)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.after-launch.label": {
+    "message": "Jeden Anhang mit der ihr zugeordneten Standardanwendung öffnen"
+  },
+  "attachmentextractor.settings.after-launch.accesskey": {
+    "message": "z"
+  },
+  "attachmentextractor.settings.after-endlaunch.label": {
+    "message": "Alle Anhänge mit folgender Anwendung öffnen:"
+  },
+  "attachmentextractor.settings.after-endlaunch.accesskey": {
+    "message": "w"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Empfangsbestätigungen…"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Empfangsbestätigungen"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor Continued kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde."
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Empfangsbestätigung nach Aufforderung senden"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Bei Aufforderung zum Senden einer Empfangsbestätigung:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Einstellungen zum Senden einer Empfangsbestätigung von Thunderbird nutzen"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Einstellungen zum Nachfragen beim Senden von Empfangsbestätigungen übergehen und mit Benachrichtigung versenden"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "Protokoll"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "HTML-Protokollgenerator"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Jede Ausführung von &quot;AttachmentExtractor Continued&quot; protokollieren"
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "Wenn möglich Bildminiaturen für Anhänge verwenden"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Für das Protokoll zu verwendendes Stylesheet:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Dateiname (oder absolute Pfadangabe) für die Reportdatei:"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Protokollgenerator…"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Erweitert"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "Weitere"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Speichern von Anhangdateien"
+  },
+  "attachmentextractor.settings.extract.tbextract.label": {
+    "message": "Anhänge mit normaler Thunderbird-Routine abtrennen"
+  },
+  "attachmentextractor.settings.extract.tbextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.extract.aeextract2.label": {
+    "message": "Anhänge mit interner Routine von &quot;AttachmentExtractor Continued&quot; abtrennen"
+  },
+  "attachmentextractor.settings.extract.aeextract2.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Speichern von Anhängen deaktivieren"
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Mindestgröße des Anhangs"
+  },
+  "attachmentextractor.settings.extract.minimumsize-start.label": {
+    "message": "Nur Anhänge speichern, die größer sind als"
+  },
+  "attachmentextractor.settings.extract.minimumsize-end.label": {
+    "message": "Bytes"
+  },
+  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
+    "message": "Bei Werten größer 0 wird der &quot;AttachmentExtractor Continued&quot; etwas verlangsamt."
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Abtrennen mit Warteschlange"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "&quot;AttachmentExtractor Continued&quot; bei jedem Abtrennbefehl sofort ausführen"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor Continued&quot; noch läuft"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Eingangsdatum und -uhrzeit der Nachricht für den Anhang verwenden"
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "Eingebettete Grafiken ebenfalls abtrennen"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Debug-Modus"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "Debug-Modus nach Neustart aktivieren.  Meldungen werden protokolliert und in die Datei &quot;aec_debug.txt&quot; in Ihrem Profil-Ordner geschrieben."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Fortschrittsanzeige während des Abtrennens einblenden."
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Nachrichten-Betreff und Anhangnamen in der Fortschrittsanzeige einblenden"
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Filter für Dateinamen:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Dateien nicht abtrennen, deren Name Folgendes enthält:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Nur Dateien abtrennen, deren Name Folgendes enthält:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Dateinamen"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Dateinamenmuster:"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Weiteres Dateinamenmerkmal hinzufügen"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Verwendetes Muster zum Erzeugen von Dateinamen:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Muster für doppelte Dateinamen (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Aktivieren"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "a"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Basierend auf einer empfangenen Nachricht mit den folgenden Merkmalen:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "Verwendeter Nachrichten-Betreff (#subject#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Betreff nach Entfernen von &quot;re:&quot; usw.:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Erhalten am (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Zeitstempel nach Modifikation:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "Von Absender (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "Verwendeter Anhangname (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Erzeugter Anhangname:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Erzeugter Anhangname mit Zähler für doppelte Dateinamen:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "Im Nachrichtenordner (#folder#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Muster für Datumsangaben (#date#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Hinweise zu den Formatierungscodes für #date#:"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Zeitstempel bearbeiten"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "Muster für Zeitstempel #Date# festlegen"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Abtrennautomatik"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Anhänge automatisch beim Empfangen von Nachrichten abtrennen"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Speicherpfad für Anhänge:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Durchsuchen…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Anhänge nur automatisch abtrennen bei Nachrichten mit passendem Schlagwort"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Anhang abtrennen bei folgendem Schlagwort:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Schlagwort der Nachricht entfernen"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Automatisches Abtrennen erst beginnen nachdem alle Nachrichten heruntergeladen wurden"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "b"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Die Abtrennautomatik nur bei Nachrichten mit Anhängen ausführen"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "n"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "Über…"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Erfordert Neustart von TB.)"
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Dateien gleicher Größe überspringen?"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor Continued - Abtrennvorgang gestartet"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Abtrennvorgang wird ausgeführt…"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Bitte warten."
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Nachricht"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Anhang"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Fortschritt"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Fertig!"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Abtrennvorgang abgeschlossen!"
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "Erneut benachrichtigen."
+  },
+  "OverwriteDialogTitle": {
+    "message": "Datei ist bereits vorhanden!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% ist bereits vorhanden. Möchten Sie:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "diesen Anhang überspringen"
+  },
+  "OverwriteDialogReplace": {
+    "message": "bestehende Datei überschreiben"
+  },
+  "OverwriteDialogRename": {
+    "message": "Dateiname modifizieren"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Diese Aktion ohne nachzufragen immer ausführen."
+  },
+  "ProgressDialogProgressText": {
+    "message": "Nachricht [%1$s] von [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Anhang [%1$s] von [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] von [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$sKB von  %2$sKB"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Eingabe des Dateinamenmusters"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Ändern des Dateinamenmusters des Anhangs:"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Dieses Dateinamenmuster als Standard verwenden."
+  },
+  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
+    "message": "Ermöglicht das massenweise und (teil-)automatisierte Abtrennen von Anhängen aus Nachrichten"
+  },
+  "ConfirmDetachDialogTitle": {
+    "message": "Abtrennen bestätigen"
+  },
+  "ConfirmDetachDialogMessage": {
+    "message": "Sie möchten Anhänge mit Hilfe der internen Versuchsroutine abtrennen. Es wird anschließend keine weitere Bestätigungsmeldung ausgegeben, und jeder Anhang wird aus den ausgewählten Nachrichten gelöscht. Der Löschvorgang kann nicht rückgängig gemacht werden. Vorgang dennoch ausführen?"
+  },
+  "ConfirmDetachSettingDialogTitle": {
+    "message": "Achtung!"
+  },
+  "ConfirmDetachSettingDialogMessage": {
+    "message": "Bitte bedenken Sie, dass diese Methode sich noch im Versuchsstadium befindet und möglicherweise nicht in allen Fällen ordnungsgemäß funktioniert. \nEventuell können der Anhang oder der Nachrichten-Inhalt oder beides verloren gehen. Dies kann nicht so einfach rückgängig gemacht werden, so dass wir bei wichtigen Nachrichten von der Verwendung abraten. Die Verwendung erfolgt auf eigene Gefahr."
+  },
+  "ConfirmAutoDetachSettingDialogMessage": {
+    "message": "Das Abtrennen bzw. Löschen von Anhängen entfernt die Anhänge aller eingehenden Nachrichten, die den von Ihnen angegebenen Kriterien entsprechen (möglicherweise bei allen Nachrichten), ohne dass eine Bestätigungsmeldung erscheint. \nEventuell können der Anhang oder der Nachrichten-Inhalt oder beides verloren gehen. \nAktivieren Sie diese Funktion nicht, wenn Sie das Risiko, Anhänge Ihrer eingehenden Nachrichten zu verlieren, nicht eingehen möchten."
+  },
+  "CSSFileFilterDescription": {
+    "message": "CSS Stylesheets"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Zu verwendendes Stylesheet auswählen"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Zu verwendende Anwendung auswählen…"
+  },
+  "GenericErrorDialog": {
+    "message": "Hoppla!"
+  },
+  "GenericErrorMessage2": {
+    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, wenden Sie sich bitte über die Webseite (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) an den Autor und teilen Sie ihm alle Fehlermeldungen und Details die in der Fehler-Konsole von Thunderbird angezeigt werden mit."
+  },
+  "StatusTextStarting": {
+    "message": "AE: Abtrennen der markierten Anhänge gestartet"
+  },
+  "StatusTextEnded": {
+    "message": "AE: Abtrennung abgeschlossen"
+  },
+  "StatusTextAttachment": {
+    "message": "AE Abtrennung: [%1$s] von [%2$s] Angängen abgetrennt"
+  },
+  "StatusTextTidying": {
+    "message": "AE Abtrennung: Abtrennung von %1$s Anhängen abgeschlossen…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor Continued: Abgetrennte Datei wirklich löschen?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "Anhänge dieser Nachricht wurden schon mit AttachmentExtractor Continued abgetrennt. Sollen diese auch auf Ihrem Computer gelöscht werden?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Ordner auswählen der genutzt werden soll…"
+  },
+  "EmptyLineText": {
+    "message": "-- leer --"
+  },
+  "FileNamePatternFixTitle": {
+    "message": "Korrekturvorschlag"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "Eingegebener Dateiname oder Zählungsmuster ist ungültig und könnte zum Programmabbruch von AttachmentExtractor Continued führen.\nÄndern in:\n %1$s?"
+  },
+  "ExtractionStarted": {
+    "message": "Abtrennvorgang gestartet [Datum/Uhrzeit: %S]"
+  },
+  "ExtractionEnded": {
+    "message": "Abtrennvorgang beendet [Datum/Uhrzeit: %S]"
+  },
+  "ReportTitle": {
+    "message": "AE-Protokoll"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Continued-Protokoll"
+  },
+  "Subject": {
+    "message": "Nachricht"
+  },
+  "From": {
+    "message": "Von"
+  },
+  "To": {
+    "message": "An"
+  },
+  "DateTime": {
+    "message": "Datum/Uhrzeit"
+  }
+}

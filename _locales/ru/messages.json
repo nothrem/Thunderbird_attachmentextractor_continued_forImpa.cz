@@ -1,0 +1,818 @@
+{
+  "extensionName": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "extensionDescription": {
+    "message": "Extracts all attachments from selected messages and then can delete, detach and more"
+  },
+  "attachmentextractor.menu.label": {
+    "message": "Извлечь вложения"
+  },
+  "attachmentextractor.menu.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.extracttodefault.label": {
+    "message": "Извлечь из выбранных сообщений"
+  },
+  "attachmentextractor.extracttodefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.extracttofolder.label": {
+    "message": "Извлечь из выбранных сообщений в…"
+  },
+  "attachmentextractor.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.extracttosuggest.label": {
+    "message": "Извлечь в предложенную папку"
+  },
+  "attachmentextractor.extracttosuggest.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.extractalldefault.label": {
+    "message": "Извлечь из всех сообщений в папке"
+  },
+  "attachmentextractor.extractalldefault.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.extractallfolder.label": {
+    "message": "Извлечь из всех сообщений в папке в…"
+  },
+  "attachmentextractor.extractallfolder.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.extractdeepdefault.label": {
+    "message": "Извлечь из всех сообщений в папке и всех подпапок"
+  },
+  "attachmentextractor.extractdeepdefault.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.extractdeepfolder.label": {
+    "message": "Извлечь из всех сообщений в папке и всех подпапок в…"
+  },
+  "attachmentextractor.extractdeepfolder.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.extractalltosuggest.label": {
+    "message": "Извлечь из всех сообщений в предложенную папку"
+  },
+  "attachmentextractor.extractalltosuggest.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.extractpattern.label": {
+    "message": "Извлечь с особым шаблоном имени файла"
+  },
+  "attachmentextractor.extractpattern.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.extractpatternfolder.label": {
+    "message": "Извлечь с особым шаблоном имени файла в…"
+  },
+  "attachmentextractor.extractpatternfolder.accesskey": {
+    "message": "P"
+  },
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Просто удалить вложения из выбранных сообщений"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Просто удалить вложения из всех сообщений в папке"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.menusettingsdialog.label": {
+    "message": "Настройки AttachmentExtractor Continued"
+  },
+  "attachmentextractor.menusettingsdialog.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractalldefault.label": {
+    "message": "Извлечь все вложения"
+  },
+  "attachmentextractor.context.extractalldefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.context.extractallfolder.label": {
+    "message": "Извлечь все вложения в…"
+  },
+  "attachmentextractor.context.extractallfolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.context.extractdeepdefault.label": {
+    "message": "Извлечь Всё включая подпапки"
+  },
+  "attachmentextractor.context.extractdeepdefault.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extractdeepfolder.label": {
+    "message": "Извлечь Всё включая подпапки в…"
+  },
+  "attachmentextractor.context.extractdeepfolder.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.context.extractalltosuggest.label": {
+    "message": "Извлечь Всё в предложенную папку"
+  },
+  "attachmentextractor.context.extractalltosuggest.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.attachment.extracttodefault.label": {
+    "message": "Извлечь Всё с AE"
+  },
+  "attachmentextractor.attachment.extracttodefault.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.attachment.extracttofolder.label": {
+    "message": "Извлечь Всё с AE в…"
+  },
+  "attachmentextractor.attachment.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.attachment.extractindtodefault.label": {
+    "message": "Извлечение с AE"
+  },
+  "attachmentextractor.attachment.extractindtodefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.attachment.extractindtofolder.label": {
+    "message": "Извлечение с AE"
+  },
+  "attachmentextractor.attachment.extractindtofolder.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "Извлечение с AE"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Извлечь вложения из выбранных вложений"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "Извлечение с AE"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Извлечь вложения из выбранных вложений"
+  },
+  "attachmentextractor.mrubrowsetext": {
+    "message": "Обзор…"
+  },
+  "attachmentextractor.mru.default.label": {
+    "message": "По умолчанию"
+  },
+  "attachmentextractor.mru.default.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Введите шаблон имени файла"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Изменить шаблон имен файлов вложений:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Установить в качестве шаблона по умолчанию теперь"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Нажмите, чтобы добавить знак"
+  },
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor Continued - предложенные папки"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Предложенные папки основаны на полях темы выбранного сообщения(й):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Использовать выбранную папку"
+  },
+  "attachmentextractor.imagetoolbar.label": {
+    "message": "Переключить выбор"
+  },
+  "attachmentextractor.imagetoolbar.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.context.extracttodefault.label": {
+    "message": "-- НЕ ЗАДЕЙСТВОВАНО --"
+  },
+  "attachmentextractor.context.extracttofolder.label": {
+    "message": "-- НЕ ЗАДЕЙСТВОВАНО --"
+  },
+  "attachmentextractor.context.extracttodefault.accesskey": {
+    "message": "*"
+  },
+  "attachmentextractor.context.extracttofolder.accesskey": {
+    "message": "*"
+  },
+  "attachmentextractor.settings.windowtitle": {
+    "message": "Настройки AttachmentExtractor Continued"
+  },
+  "attachmentextractor.settings.width": {
+    "message": "50ть"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Домашняя страница AttachmentExtractor Continued и описание возможностей:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Общие"
+  },
+  "attachmentextractor.settings.normal.caption": {
+    "message": "-- НЕ ЗАДЕЙСТВОВАНО --"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Где должны быть сохранены вложения?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Что нужно делать, когда будет обнаружен уже существующий файл с тем же именем, что и вложение?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Всегда заменять существующий файл новым вложением"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Всегда сохранять существующий файл, не извлекать вложение"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Создать новое имя для вложения, будут сохранены оба"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Спрашивать меня каждый раз"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.suggestfolder.button.label": {
+    "message": "Настройки предложенной папки…"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Предложенные папки"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "Может быть предложена папка, основываясь на ключевых словах в полях тема, Выбранных вами сообщений."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Игнорировать одинаковые ключевые файлы, расставляя предложенные папки?"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Папки, содержащие потенциальные подпапки, извлекать в:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Исключающие ключевые слова(разделять запятой):"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Очистить"
+  },
+  "attachmentextractor.settings.fixdetachedimages.label": {
+    "message": "Применить фикс для отображения отделенных изображений внутри."
+  },
+  "attachmentextractor.settings.fixdetachedimages.linktext": {
+    "message": "Доступна документация"
+  },
+  "attachmentextractor.settings.fixdetachedimages.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Наиболее часто используемые папки"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Активировать список наиболее часто используемых папок"
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Хранить последние"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "папки."
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Теперь очистить"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Путь для сохранения по умолчанию:"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Обзор…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "После извлечения"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "После извлечения вложений необходимо:"
+  },
+  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
+    "message": "--НЕ ИСПОЛЬЗОВАНО--"
+  },
+  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
+    "message": "--НЕ ИСПОЛЬЗОВАНО--"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Удалить сообщение?"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Пометить сообщение как Прочитанное?"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Удалить вложение из сообщения?"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.label": {
+    "message": "Удалять с обычным Thunderbird кодом"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.label": {
+    "message": "Удалять с внутренним (экспериментальным) кодом AE"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.label": {
+    "message": "Отделять с внутренним (экспериментальным) кодом AE"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "Сообщать мне когда все вложения будут извлечены"
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Сохранить текст сообщения в файл. (примечание: тот же шаблон для обычного и авто-извлечения)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.after-launch.label": {
+    "message": "Открывать каждое вложение (индивидуально) его приложением по умолчанию"
+  },
+  "attachmentextractor.settings.after-launch.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.after-endlaunch.label": {
+    "message": "Открывать все вложения указанным внешним приложением:"
+  },
+  "attachmentextractor.settings.after-endlaunch.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Подтверждение о получении…"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Подтверждение о получении"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor Continued может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Отсылать подтверждение о получении, если одно затребуется"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Подтверждение о получении затребуются:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Следовать настройкам Thunderbirdа о подтверждении получения"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Отменить (спросить меня) настройки и отправить подтверждение о доставке с подсказкой"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "Генератор отчетов"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "HTML генератор отчетов"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Создавать отчет каждый раз, когда работает AttachmentExtractor Continued"
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "Использовать эскизы изображений, где это возможно для вложений."
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Включать информацию о стиле в отчет, вместо присоединения к таблице стилей."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Таблица стилей для использования в отчете:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Имя файла (или абсолютный путь) к отчету"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Настройки Генератора Отчетов …"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Расширенные"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "Больше"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Сохранение файла вложения"
+  },
+  "attachmentextractor.settings.extract.tbextract.label": {
+    "message": "Извлекать вложения обычным кодом Thunderbird."
+  },
+  "attachmentextractor.settings.extract.tbextract.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.extract.aeextract2.label": {
+    "message": "Извлекать вложения внутренним кодом AE"
+  },
+  "attachmentextractor.settings.extract.aeextract2.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Отключить сохранение вложений."
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Проверка минимального размера"
+  },
+  "attachmentextractor.settings.extract.minimumsize-start.label": {
+    "message": "Сохранять вложения только, если они больше чем:"
+  },
+  "attachmentextractor.settings.extract.minimumsize-end.label": {
+    "message": "Байт."
+  },
+  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
+    "message": "--НЕ ЗАДЕЙСТВОВАНО--"
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Очередь извлечений"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "Принудительно запускать AttachmentExtractor Continued каждый раз, когда затребовано извлечение."
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Ждать, в очередь, все сделанные запросы на извлечения, пока AE уже работает."
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Установить дату/время изменения файла вложения к дате/времени полученного сообщения."
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "Извлекать также внедренные (&apos;в строке&apos;)  изображения"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Отладка"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "Включить режим отладки при перезапуске. Сообщения регистрируются в консоли и записуются в &apos;aec_debug.txt&apos; в Вашей профайл папке."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Показывать диалог прогресса в течение извлечения."
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Показывать тему сообщений и имена вложений на диалоге прогресса."
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Правило фильтрации по имени файла:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Извлекать все файлы, исключая те, чьё имя содержит:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Извлекать только файлы, чьё имя содержит:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Имена файлов"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Шаблон создания имен файлов:"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Нажмите, чтобы добавить Лексему"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Шаблон используемый для создания имен файлов:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Шаблон использованный для повторяемых имен файлов (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Использовать?"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Основываясь на сообщениях, полученных со следующими свойствами:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "Тема сообщения (#subject#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Тема после удаления &apos;re:&apos;и т.д.:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Получено (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Дата/Время после примененного шаблона:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "От автора (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "Вложение названо (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Первым создать:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Следующий за ним:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "В почтовой папке (#folder#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Шаблон использованный для дат (#date#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Руководство по кодам форматирования для #date#:"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Редактирование шаблона даты"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "Настройки шаблона#Date#"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Авто-извлечение"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Автоматически извлекать вложения при получении письма"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Путь для сохранения вложений:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Обзор…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Авто-извлечение, только если сообщение помечено соответствующим тегом"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Извлекать сообщения, если тег соответствует:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Убрать тег с сообщений?"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Ждать пока сообщения загрузятся перед запуском Auto-Extract."
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Запускать только Auto-Extract для сообщений, в которых есть вложения"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "o"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "О"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Требуется перезапуск TB для получения эффекта)"
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Пропускать файлы одинакового размера"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor Continued в работе"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Извлечение"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Пожалуйста ждите."
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Сообщения"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Вложения"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Прогресс"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Готово"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Извлечение завершено!"
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "Продолжать уведомлять меня."
+  },
+  "OverwriteDialogTitle": {
+    "message": "Файл уже существует!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% уже существует. Вы хотите:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "Пропустить это вложение"
+  },
+  "OverwriteDialogReplace": {
+    "message": "Перезаписать существующий файл"
+  },
+  "OverwriteDialogRename": {
+    "message": "Создать новое имя файла"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Больше меня не спрашивать, всегда так делать"
+  },
+  "ProgressDialogProgressText": {
+    "message": "Сообщение [%1$s] из [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Вложение [%1$s] из [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] из [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$s Кб из %2$s Кб"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Ввод шаблона имени файла"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Изменение шаблона имени файла вложений"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Установить в качестве шаблона по умолчанию теперь"
+  },
+  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
+    "message": "Извлечение вложений из выбранных сообщений"
+  },
+  "ConfirmDetachDialogTitle": {
+    "message": "Подтверждать отделение"
+  },
+  "ConfirmDetachDialogMessage": {
+    "message": "Вы решили отделять вложения с использованием метода экспериментального внутреннего отделения. Теперь не будет больше сообщения на подтверждение, и после этого все вложения будут удалены из выбранных сообщений электронной почты. Действие по удалению не может быть отменено. Продолжить?"
+  },
+  "ConfirmDetachSettingDialogTitle": {
+    "message": "Внимание!"
+  },
+  "ConfirmDetachSettingDialogMessage": {
+    "message": "Пожалуйста отдавайте себе отчет что этот метод все еще экспириментальный и не может работать правильно во всех случаях.\nЕсли будет ошибка, она может привести к потере вложения или содержанию писем, или даже оба. Если это случается, то нет простого способ вернуть, что потеряно, поэтому нецелесообразно использовать его с важными письмами.\nИспользуйте его на свой страх и риск."
+  },
+  "ConfirmAutoDetachSettingDialogMessage": {
+    "message": "Включение отделения/удаления вложений будет удалять вложения со всех входящих писем, соответствующих указанными вами критериям (потенциально все письма), без ЛЮБЫХ подтверждений.\nЕсли произойдет сбой, это может привести или к потере вложения или содержания письма, или оба.\nНе активируйте это, если боитесь риска потери вложений Вашей входящей почты."
+  },
+  "CSSFileFilterDescription": {
+    "message": "CSS таблицы стилей"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Выберите таблицу стилей"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Выберите приложение"
+  },
+  "GenericErrorDialog": {
+    "message": "От блин!"
+  },
+  "GenericErrorMessage2": {
+    "message": "Что-то случилось плохое с AttachmentExtractor Continued. Если это происходит регулярно, пожалуйста оставьте запись на багтрекере на моем сайте(https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) с деталями об ошибке, отображенными в консоли ошибок Thunderbird."
+  },
+  "StatusTextStarting": {
+    "message": "Запуск AE извлечения с выбранным вложением(ми)."
+  },
+  "StatusTextEnded": {
+    "message": "AE извлечение завершено"
+  },
+  "StatusTextAttachment": {
+    "message": "AE Extract: Извлечение вложения [%1$s] из [%2$s]"
+  },
+  "StatusTextTidying": {
+    "message": "AE Extract: Завершение извлечения вложения %1$ть, все готово…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor Continued: Удалить извлеченный Вами файл?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "Вы ранее использовали AttachmentExtractor Continued для извлечения вложения из этого сообщения. Вы хотите удалить их с Вашего компьютера, а?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Выберите папку"
+  },
+  "EmptyLineText": {
+    "message": "--пусто--"
+  },
+  "FileNamePatternFixTitle": {
+    "message": "Предлагаемое исправление"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "имя файла или шаблон счета введенный Вами неверный и может прервать AttachmentExtractor Continued.\nИзменить на:\n %1$ть?"
+  },
+  "ExtractionStarted": {
+    "message": "Извлечение начато [Дата/Время: %S]"
+  },
+  "ExtractionEnded": {
+    "message": "Извлечение завершено [Дата/Время: %S]"
+  },
+  "ReportTitle": {
+    "message": "AE ReportGen отчет"
+  },
+  "Heading": {
+    "message": "Отчет AttachmentExtractor Continued"
+  },
+  "Subject": {
+    "message": "Тема"
+  },
+  "From": {
+    "message": "От"
+  },
+  "To": {
+    "message": "Кому"
+  },
+  "DateTime": {
+    "message": "Дата/Время"
+  }
+}

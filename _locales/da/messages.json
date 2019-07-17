@@ -1,0 +1,819 @@
+{
+  "extensionName": {
+    "message": "AttachmentExtractor Continued"
+  },
+  "extensionDescription": {
+    "message": "Extracts all attachments from selected messages and then can delete, detach and more"
+  },
+  "attachmentextractor.menu.label": {
+    "message": "Gem vedhæftede filer"
+  },
+  "attachmentextractor.menu.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.extracttodefault.label": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder"
+  },
+  "attachmentextractor.extracttodefault.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.extracttofolder.label": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder i…"
+  },
+  "attachmentextractor.extracttofolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.extracttosuggest.label": {
+    "message": "Gem vedhæftede filer i den foreslåede folder"
+  },
+  "attachmentextractor.extracttosuggest.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.extractalldefault.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder"
+  },
+  "attachmentextractor.extractalldefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.extractallfolder.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder i…"
+  },
+  "attachmentextractor.extractallfolder.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.extractdeepdefault.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder og underfoldere"
+  },
+  "attachmentextractor.extractdeepdefault.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.extractdeepfolder.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder og underfoldere i…"
+  },
+  "attachmentextractor.extractdeepfolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.extractalltosuggest.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den foreslåede folder"
+  },
+  "attachmentextractor.extractalltosuggest.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.extractpattern.label": {
+    "message": "Gem med alternativt mønster til filnavn"
+  },
+  "attachmentextractor.extractpattern.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.extractpatternfolder.label": {
+    "message": "Gem med alternativt mønster til filnavn i…"
+  },
+  "attachmentextractor.extractpatternfolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Slet de vedhæftede filer fra de valgte beskeder"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Slet de vedhæftede filer fra alle beskeder i den aktuelle folder"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.menusettingsdialog.label": {
+    "message": "Indstillinger"
+  },
+  "attachmentextractor.menusettingsdialog.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.context.extractalldefault.label": {
+    "message": "Gem alle vedhæftede filer"
+  },
+  "attachmentextractor.context.extractalldefault.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.context.extractallfolder.label": {
+    "message": "Gem alle vedhæftede filer i…"
+  },
+  "attachmentextractor.context.extractallfolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.context.extractdeepdefault.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder og underfoldere"
+  },
+  "attachmentextractor.context.extractdeepdefault.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.context.extractdeepfolder.label": {
+    "message": "Gem vedhæftede filer fra alle beskeder i den valgte folder og underfoldere i…"
+  },
+  "attachmentextractor.context.extractdeepfolder.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.context.extractalltosuggest.label": {
+    "message": "Gem vedhæftede filer i den foreslåede folder"
+  },
+  "attachmentextractor.context.extractalltosuggest.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.attachment.extracttodefault.label": {
+    "message": "(AE) Gem alle"
+  },
+  "attachmentextractor.attachment.extracttodefault.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.attachment.extracttofolder.label": {
+    "message": "(AE) Gem alle til…"
+  },
+  "attachmentextractor.attachment.extracttofolder.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.attachment.extractindtodefault.label": {
+    "message": "(AE) Gem"
+  },
+  "attachmentextractor.attachment.extractindtodefault.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.attachment.extractindtofolder.label": {
+    "message": "(AE) Gem til…"
+  },
+  "attachmentextractor.attachment.extractindtofolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "Gem filer"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "Gem filer"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder"
+  },
+  "attachmentextractor.mrubrowsetext": {
+    "message": "Gennemse…"
+  },
+  "attachmentextractor.mru.default.label": {
+    "message": "Standard"
+  },
+  "attachmentextractor.mru.default.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Indtast mønster til filnavn"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Rediger mønsteret til navnet på den vedhæftede fil:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Gør mønsteret til standard"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Klik for at tilføj et token"
+  },
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor Continued - foreslåede foldere:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Foreslåede folder baseret på emnet i de valgte beskeder:"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Brug valgt folder"
+  },
+  "attachmentextractor.imagetoolbar.label": {
+    "message": "Skift valg"
+  },
+  "attachmentextractor.imagetoolbar.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.context.extracttodefault.label": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder"
+  },
+  "attachmentextractor.context.extracttofolder.label": {
+    "message": "Gem vedhæftede filer fra de valgte beskeder i…"
+  },
+  "attachmentextractor.context.extracttodefault.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.context.extracttofolder.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.windowtitle": {
+    "message": "Indstillinger for AttachmentExtractor Continued"
+  },
+  "attachmentextractor.settings.width": {
+    "message": "60em"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Website for AttachmentExtractor Continued"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Generelt"
+  },
+  "attachmentextractor.settings.normal.caption": {
+    "message": "Gemning af vedhæftede filer"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Hvor skal de vedhæftede filer gemmes?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Hvad skal der ske hvis filnavnet allerede eksisterer?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Overskriv altid den eksisterende fil med den vedhæftede"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Behold altid den eksisterende fil og spring den vedhæftede over"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Generer et nyt navn for den vedhæftede fil, så begge kan beholdes"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Spørg mig hver gang"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.suggestfolder.button.label": {
+    "message": "Indstillinger for foreslåede foldere…"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Foreslåede foldere"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "En folder at gemme til kan blive foreslået baseret på nøgleord i emne linien på de beskeder du vælger."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Ignorer dobbelt forekomster af nøgleord når foreslåede foldere rangeres?"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Folder der kan indeholde underfoldere skal gemme til:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Nøgleord der skal ses bort fra: (adskilt med komma)"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Ryd"
+  },
+  "attachmentextractor.settings.fixdetachedimages.label": {
+    "message": "Brug løsning til at vise fjernede billeder."
+  },
+  "attachmentextractor.settings.fixdetachedimages.linktext": {
+    "message": "Dokumentation tilgængelig"
+  },
+  "attachmentextractor.settings.fixdetachedimages.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Oftest brugte foldere"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Gem liste over brugte foldere."
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Gem den seneste"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "foldere."
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Slet liste"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Standard placering"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Søg…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "Efter processering"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "Efter de vedhæftede filer er gemt skal:"
+  },
+  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
+    "message": "Handlinger for Thunderbird"
+  },
+  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
+    "message": "Handlinger for eksterne programmer"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Beskeden slettes"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Beskeden markeres som læst"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "L"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Den vedhæftede fil fjernes fra beskeden"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.label": {
+    "message": "Slet med Thunderbirds egen metode."
+  },
+  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.after-detach.aedelete.label": {
+    "message": "Slet med AEs (eksperimentelle) metode."
+  },
+  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.after-detach.aedetach.label": {
+    "message": "Fjern med AEs (eksperimentelle) metode."
+  },
+  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "Underret mig når alle de vedhæftede filer er blevet gemt."
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Gem beskedens tekst. (Samme mønster bruges til normal kørsel og automatisk processering)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.after-launch.label": {
+    "message": "Indlæs hver enkel fil med standard programmet."
+  },
+  "attachmentextractor.settings.after-launch.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.after-endlaunch.label": {
+    "message": "Indlæs alle filer med det specificerede program:"
+  },
+  "attachmentextractor.settings.after-endlaunch.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Kvitteringer…"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Kvitteringer"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor Continued kan sende kvitteringer automatisk når en besked markeres som læst"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Send kvitteringer hvis ønsket"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Ønske om kvittering:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Brug Thunderbirds indstillinger angående kvitteringer"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Omgør &quot;Spørg mig&quot; indstillinger og send kvittering efter prompt"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "Rapport Generator"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "Generation af HTML rapporter"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Generer en rapport hver gang AttachmentExtractor Continued arbejder."
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "Brug miniaturer når det er muligt."
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Brug internt style sheet til rapporten."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Style sheet til rapport:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Filnavn eller komplet path til rapport:"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Indstillinger for generering af rapport"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Avanceret"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "Mere"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Gemning af filer"
+  },
+  "attachmentextractor.settings.extract.tbextract.label": {
+    "message": "Gem vedhæftede filer med Thunderbirds metode"
+  },
+  "attachmentextractor.settings.extract.tbextract.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.extract.aeextract2.label": {
+    "message": "Gem de vedhæftede filer med AEs interne metode"
+  },
+  "attachmentextractor.settings.extract.aeextract2.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Deaktiver gemning af vedhæftede filer"
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Check af filstørrelse"
+  },
+  "attachmentextractor.settings.extract.minimumsize-start.label": {
+    "message": "Gem kun filer større end:"
+  },
+  "attachmentextractor.settings.extract.minimumsize-end.label": {
+    "message": "bytes."
+  },
+  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
+    "message": "Indtastning af denne værdi til større end 0 bytes vil nedsætte hastigheden på AE."
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Kø indstillinger"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "Start AE med det samme hver gang den aktiveres"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Vent og sæt kald i kø der foretages mens AE kører"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Sæt tidspunkt for ændring af den vedhæftede fil som tidspunkt for modtagelse af beskeden."
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "Gem indsatte billeder"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Debugging"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "Start i debug tilstand ved genstart. Beskeder bliver logget i fejlkonsolen og skrevet til filen &quot;aec_debug.txt&quot; i din profil folder."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Vis dialogboks med status mens de vedhæftede filer gemmes"
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Vis emne og navne på vedhæftede filer i dialogboks med status."
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Filtreringspolitik for filnavne"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Gem alle vedhæftede filer undtagen hvis filnavnet indeholder:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Gem kun vedhæftede filer hvis filnavnet indeholder"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Filnavne"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Generering af filnavn"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Tilføj et element"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Mønster til at generere filnavne:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Mønster for tæller ved eksisterende filnavn (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Brug?"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Baseret på en e-mail modtaget med følgende egenskaber:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "Emne (#subject#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Emne efter fjernelse af &quot;Re:&quot; og lignende:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Modtaget (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Dato/tid efter mønsteret er blevet brugt:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "Fra (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "Navn på vedhæftet fil (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Ville generere først:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Efterfulgt af:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "I folder (#folder#)"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Mønster brugt til datoer (#date#)"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Oversigt over formatteringskoder til #date#"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Rediger dato mønster"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "#date# mønster indstillinger"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Gem automatisk"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Gem vedhæftede filer ved modtagelse af beskeder"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Gem filer i:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Gennemse…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Gem kun automatisk når beskeden er blevet mærket."
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Gem filer hvis dens mærkat passer:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Fjern mærkater fra beskeder?"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Vent på at alle beskeder er blevet downloadet før vedhæftede filer gemmes."
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "V"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Start kun Automatisk gemning med beskeder der ser ud til at have vedhæftede filer"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "Om"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Kræver genstart)"
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Ignorer filer med samme størrelse"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor Continued arbejder"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Gemmer…"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Vent venligst."
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Beskeder"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Vedhæftede filer"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Status"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Færdig"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Færdig med at gemme de vedhæftede filer!"
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "Bliv ved med at underrette mig."
+  },
+  "OverwriteDialogTitle": {
+    "message": "Filen eksisterer allerede!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% eksisterer allerede. Vil du:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "Springe denne vedhæftede fil over"
+  },
+  "OverwriteDialogReplace": {
+    "message": "Overskrive den eksisterende fil"
+  },
+  "OverwriteDialogRename": {
+    "message": "Generere et nyt filnavn"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Spørg mig ikke igen, gør altid dette."
+  },
+  "ProgressDialogProgressText": {
+    "message": "Besked [%1$s] af [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Vedhæftet fil [%1$s] af [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] af [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$sKiB at %2$sKiB"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Indtast mønster til filnavn"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Rediger mønster til filnavn"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Gør mønsteret til standard"
+  },
+  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
+    "message": "Gem alle vedhæftede filer fra de valgte beskeder."
+  },
+  "ConfirmDetachDialogTitle": {
+    "message": "Bekræft fjernelse"
+  },
+  "ConfirmDetachDialogMessage": {
+    "message": "Du har valgt at fjerne de vedhæftede filer med en eksperimental metode. Du vil ikke modtage yderligere advarsler efter denne og alle de vedhæftede filer vil blive fjernet fra de valgte beskeder. Når de vedhæftede filer er fjernet kan du ikke vælge at fortryde. Ønsker du fortsat at gøre dette?"
+  },
+  "ConfirmDetachSettingDialogTitle": {
+    "message": "Advarsel!"
+  },
+  "ConfirmDetachSettingDialogMessage": {
+    "message": "Husk på at metoden til at fjerne de vedhæftede filer stadig er eksperimentel og måske ikke virker i alle tilfælde.\n Hvis der sker en fejl kan det resultere i at du mister de(n) vedhæftede fil(er) eller beskeden. Hvis dette sker kan det tabte ikke genskabes så det anbefales ikke at bruge metoden på vigtige beskeder.\n Brug på egen risiko."
+  },
+  "ConfirmAutoDetachSettingDialogMessage": {
+    "message": "Aktivering af fjernelse/slettelse af vedhæftede filer vil fjerne/slette vedhæftede filer fra alle indkomne meddelelser der stemmer overens med den givne kriterier, potentielt alle meddelelser, uden nogen bekræftelse.\n Hvis der opstår en fejl kan det betyde at meddelelsen, den vedhæftede fil eller begge dele går tabt.\n Lad være med at aktivere denne mulighed hvis du ikke kan tåle denne risiko."
+  },
+  "CSSFileFilterDescription": {
+    "message": "Style sheets"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Vælg style sheet"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Vælg program"
+  },
+  "GenericErrorDialog": {
+    "message": "Ups!"
+  },
+  "GenericErrorMessage2": {
+    "message": "Noget er gået galt med AttachmentExtractor Continued. Hvis dette sker regelmæssigt så send en fejlrapport på hjemmesiden http://www.eviljeff.com/?page": {
+    "message": "bugtracker med de detaljer om fejlen der vises i fejlkonsolen i Thunderbird."
+  },
+  "StatusTextStarting": {
+    "message": "Starter AE for de(n) valgte fil(er)"
+  },
+  "StatusTextEnded": {
+    "message": "AE er færdig med at arbejde"
+  },
+  "StatusTextAttachment": {
+    "message": "AE: Gemmer fil [%1$s] af [%2$s]"
+  },
+  "StatusTextTidying": {
+    "message": "AE: Fil %1$s er blevet gemt, færdiggør processen…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor Continued: Vil du slette den tidligere gemte fil?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "Du har tidligere brugt AttachmentExtractor Continued til at gemme filer fra denne besked. Vil du også slette disse filer fra din computer?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Vælg folder"
+  },
+  "EmptyLineText": {
+    "message": "-- tom --"
+  },
+  "FileNamePatternFixTitle": {
+    "message": "Foreslået løsning"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "Det indtastede filnavn eller mønster er ugyldigt og kan medføre at AttachmentExtractor Continued holder op med at virker.\nSkift til:\n %1$s?"
+  },
+  "ExtractionStarted": {
+    "message": "Proces begyndt: %S"
+  },
+  "ExtractionEnded": {
+    "message": "Proces afsluttet: %S"
+  },
+  "ReportTitle": {
+    "message": "AE rapport fil"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Continued Rapport"
+  },
+  "Subject": {
+    "message": "E-mail"
+  },
+  "From": {
+    "message": "Fra"
+  },
+  "To": {
+    "message": "Til"
+  },
+  "DateTime": {
+    "message": "Dato/tidspunkt"
+  }
+}
