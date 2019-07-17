@@ -18,7 +18,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Ordnervorschläge für abzutrennenden Dateien die auf Schlüsselwörter der Betreffzeile der ausgewählten Nachrichten basieren.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Doppelte Schlüsselwörter ignorieren, falls Ordnervorschläge verfügbar">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
-<!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Ordner, welche Unterordner für abzutrennende Dateien enthalten kann:">
+<!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Ordner, welche Unterordner für abzutrennende Dateien enthalten können:">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Auszuschließende Schlüsselwörter (durch Komma getrennt):">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Löschen">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.label "Korrektur anwenden, um abgetrennte Grafiken eingebettet anzuzeigen">
