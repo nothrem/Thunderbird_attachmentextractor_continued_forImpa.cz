@@ -63,11 +63,9 @@
         preference="pref_datepattern" 
         flex="1" />
     </hbox>
-    <!--
-  <hbox>
-      <label value="&attachmentextractor.settings.filenamepatterndate.homepage.label;"/>
-      <label value="www.eviljeff.com/?page=ae_ref" class="text-link" href="http://www.eviljeff.com/?page=ae_ref#date"/>
-  </hbox>
--->
+    <hbox>
+        <label value="&attachmentextractor.settings.filenamepatterndate.homepage.label;"/>
+        <label value="Attachment Extractor #Date# timestamp codes" class="text-link" href="https://www.thunderbird-mail.de/lexicon/entry/230-attachmentextractor-continued-add-on-to-semi-automatically-remove-attachments-fr/#4-Reference"/>
+    </hbox>
   </prefpane>
 </prefwindow>

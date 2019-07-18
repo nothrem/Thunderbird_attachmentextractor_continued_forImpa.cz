@@ -756,8 +756,7 @@
     "message": "Ups!"
   },
   "GenericErrorMessage2": {
-    "message": "Noget er gået galt med AttachmentExtractor Continued. Hvis dette sker regelmæssigt så send en fejlrapport på hjemmesiden http://www.eviljeff.com/?page": {
-    "message": "bugtracker med de detaljer om fejlen der vises i fejlkonsolen i Thunderbird."
+    "message": "Noget er gået galt med AttachmentExtractor Continued. Hvis dette sker regelmæssigt så send en fejlrapport på hjemmesiden https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues med de detaljer om fejlen der vises i fejlkonsolen i Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Starter AE for de(n) valgte fil(er)"
