@@ -8,7 +8,8 @@
   "applications": {
     "gecko": {
       "id": "attachmentextractor_cont@thunderbird-mail.de",
-      "strict_min_version": "67.0"
+      "strict_min_version": "68.0b1",
+      "strict_max_version": "74.0"
     }
   },
   "default_locale": "en",
@@ -18,8 +19,8 @@
   },
   "legacy": {
     "options": {
-      "open_in_tab": false,
-      "page": "chrome://attachmentextractor_cont/content/settings/aec_prefs.xul"
+      "open_in_tab": true,
+      "page": "chrome://attachmentextractor_cont/content/settings/aec_options.xul"
     }
   }
 }

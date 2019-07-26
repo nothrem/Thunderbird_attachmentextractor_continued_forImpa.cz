@@ -1,0 +1,16 @@
+#wdw_aecConfigurationWindow prefpane {
+  font-size: 1.25em;
+}
+
+#wdw_aecConfigurationWindow h1 {
+/*  margin: 0 0 8px; */
+  font-size: 1.46em;
+  font-weight: 300;
+/*  line-height: 1.3em; */
+}
+
+#wdw_aecConfigurationWindow .subcategory:not([hidden]) ~ .subcategory {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--in-content-border-color);
+}

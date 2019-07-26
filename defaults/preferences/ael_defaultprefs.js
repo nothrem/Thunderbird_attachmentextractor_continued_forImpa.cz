@@ -62,7 +62,7 @@ pref("extensions.attachmentextractor_cont.filenamepattern","#namepart##count##ex
 pref("extensions.attachmentextractor_cont.filenamepattern.countpattern","-%");
 pref("extensions.attachmentextractor_cont.filenamepattern.datepattern","D M d Y");
 pref("extensions.attachmentextractor_cont.filenamepattern.cleansubject",false);
-pref("extensions.attachmentextractor_cont.filenamepattern.cleansubject.strings","re: ,fw: ,fwd: ");
+pref("extensions.attachmentextractor_cont.filenamepattern.cleansubject.strings","aw: ,re: ,fw: ,fwd: ");
 pref("extensions.attachmentextractor_cont.filenamepattern.savemessage","#subject##count#.html");
 pref("extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern","-%");
 
