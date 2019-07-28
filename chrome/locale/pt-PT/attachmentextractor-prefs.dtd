@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Pastas que contêm sub-pastas potencias para onde extrair:">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palavras chave a excluir:(separadas por vírgulas)">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Adicionar…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Limpar">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.label "Aplicar reparação para mostrar imagens em linha separadas.">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Documentação disponível">

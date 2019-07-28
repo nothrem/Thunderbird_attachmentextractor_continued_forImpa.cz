@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Adresáře obsahující potencionální podadresáře:">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ignorovat klíčová slova: (oddělená čárkou)">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Přidat…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Smazat">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.label "Použít opravu k označení vyjmutých obrázků v přílohách.">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Dokumentace k dispozici">

@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Cartelle e sottocartelle nelle quali estrarre gli allegati">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Parole chiave da escludere (separate da virgola):">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Inserisci…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Elimina">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.label "Rendi possibile visualizzare le immagini incorporate separate">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Ulteriori informazioni">

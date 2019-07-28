@@ -17,14 +17,17 @@
 <?xml-stylesheet type="text/css" href="chrome://attachmentextractor_cont/skin/aec_options.css"?>
 <?xml-stylesheet type="text/css" href="chrome://attachmentextractor_cont-os/skin/aec_options_os.css" type="text/css"?>
 
-<!DOCTYPE window SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd">
+<!DOCTYPE window [
+	<!ENTITY % aecConfigurationDTD SYSTEM "chrome://attachmentextractor_cont/locale/attachmentextractor-prefs.dtd"> %aecConfigurationDTD;
+	<!ENTITY % aecCustomHeadersDTD SYSTEM "chrome://messenger/locale/CustomHeaders.dtd"> %aecCustomHeadersDTD;
+]>
 
 <preftab xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
   xmlns:xhtml="http://www.w3.org/1999/xhtml" 
   xmlns:html="http://www.w3.org/1999/xhtml" 
-  id="wdw_aecConfigurationWindow" 
+  id="wdw_aecOptionsWindow" 
   title="&attachmentextractor.settings.windowtitle;" 
-  onload="wdw_aecConfiguration.aecInitConfiguration();">
+  onload="wdw_aecOptions.init();">
 
   <stringbundleset id="extensionsSet">
     <stringbundle id="aestrbundle" 
@@ -36,10 +39,10 @@
       <vbox id="aec-pref-category-box">
         <radiogroup id="aec-selector" orient="vertical" class="paneSelector chromeclass-toolbar" role="listbox" flex="1"> <!-- Expose to accessibility APIs as a listbox -->
 
-          <radio pane="aec-generalPane" value="aec-generalPane" label="&attachmentextractor.settings.generaltab.label;" oncommand='wdw_aecConfiguration.showPane("aec-generalPane");'/>
-          <radio pane="aec-autoPane" value="aec-autoPane" label="&attachmentextractor.settings.autotab.label;" oncommand='wdw_aecConfiguration.showPane("aec-autoPane");'/>
-          <radio pane="aec-filenamePane" value="aec-filenamePane" label="&attachmentextractor.settings.filenametab.label;" oncommand='wdw_aecConfiguration.showPane("aec-filenamePane");'/>
-          <radio pane="aec-advancedPane" value="aec-advancedPane" label="&attachmentextractor.settings.advancedtab.label;" oncommand='wdw_aecConfiguration.showPane("aec-advancedPane");'/>
+          <radio pane="aec-generalPane" value="aec-generalPane" label="&attachmentextractor.settings.generaltab.label;" oncommand='wdw_aecOptions.showPane("aec-generalPane");'/>
+          <radio pane="aec-autoPane" value="aec-autoPane" label="&attachmentextractor.settings.autotab.label;" oncommand='wdw_aecOptions.showPane("aec-autoPane");'/>
+          <radio pane="aec-filenamePane" value="aec-filenamePane" label="&attachmentextractor.settings.filenametab.label;" oncommand='wdw_aecOptions.showPane("aec-filenamePane");'/>
+          <radio pane="aec-advancedPane" value="aec-advancedPane" label="&attachmentextractor.settings.advancedtab.label;" oncommand='wdw_aecOptions.showPane("aec-advancedPane");'/>
 
         </radiogroup>
         <spacer flex="1"/>
@@ -61,9 +64,9 @@
                       size="50" 
                       readonly="true" 
                       preference="extensions.attachmentextractor_cont.defaultsavepath" 
-                      onsyncfrompreference="return wdw_aecConfiguration.getComplexPref('extensions.attachmentextractor_cont.defaultsavepath');"/>
+                      onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.defaultsavepath');"/>
                     <button type="button" 
-                      oncommand="wdw_aecConfiguration.browseForFolder('extensions.attachmentextractor_cont.defaultsavepath');" 
+                      oncommand="wdw_aecOptions.browseForFolder('extensions.attachmentextractor_cont.defaultsavepath');" 
                       label="&attachmentextractor.settings.savefolder.browsebutton;"/>
                   </hbox>
                 </groupbox>
@@ -98,13 +101,13 @@
                       label="&attachmentextractor.settings.savepathmru.label;" 
                       accesskey="&attachmentextractor.settings.savepathmru.accesskey;" 
                       preference="extensions.attachmentextractor_cont.savepathmru"
-                      oncommand="wdw_aecConfiguration.enableField(this,'savepathmrucount')"/>
+                      oncommand="wdw_aecOptions.enableField(this,'savepathmrucount')"/>
                     <hbox align="center" class="indent">
                       <label value="&attachmentextractor.settings.savepathmru.count.label1;" />
                       <menulist id="savepathmrucount" 
                         disabled="true" 
                         preference="extensions.attachmentextractor_cont.savepathmru.count" 
-                        onsyncfrompreference="wdw_aecConfiguration.fillcountlist()">
+                        onsyncfrompreference="wdw_aecOptions.fillcountlist()">
                         <menupopup />
                       </menulist>
                       <label value="&attachmentextractor.settings.savepathmru.count.label2;" />
@@ -121,30 +124,28 @@
                 <groupbox>
                   <label><html:h2>&attachmentextractor.settings.suggestfolder.dialogtitle;</html:h2></label> 
                   <label flex="1">&attachmentextractor.settings.suggestfolder.description;</label>
+                  <separator class="thin"/>
+                  <separator class="thin"/>
                   <groupbox>
                     <label flex="1">&attachmentextractor.settings.suggestfolder.parents.label;</label>
-                    <hbox align="center">
-                      <textbox id="parent1" 
-                        flex="1" 
-                        size="50" 
-                        readonly="true" 
-                        onsyncfrompreference="return wdw_aecConfiguration.getComplexPref(document.getElementById('parent1'));"/>
-                      <button id="parentbutton" 
-                        type="button" 
-                        oncommand="addEntry(this,document.getElementById('folderlist'));" 
-                        label="&attachmentextractor.settings.savefolder.browsebutton;"/>
-                      <button id="parentresetbutton" 
-                        type="button" 
-                        disabled="true" 
-                        oncommand="removeEntry(this,document.getElementById('folderlist'))" 
-                        label="&attachmentextractor.settings.suggestfolder.clearbutton.label;"/>
+                    <hbox>
+                      <richlistbox id="suggestfolderlist" 
+                        style="height: 10em;"
+                        flex="1"
+                        onselect="wdw_aecOptions.onSelectFolder">
+                      </richlistbox>
+                      <vbox>
+                        <button id="addFolderButton" 
+                          oncommand="wdw_aecOptions.addFolder();" 
+                          label="&addButton.label;"
+                          accesskey="&addButton.accesskey;"/>
+                        <button id="removeFolderButton" 
+                          disabled="true" 
+                          oncommand="wdw_aecOptions.removeFolder();" 
+                          label="&removeButton.label;"
+                          accesskey="&removeButton.accesskey;"/>
+                      </vbox>
                     </hbox>
-                    <richlistbox id="folderlist" style="height: 10em;"
-                      rows="5" 
-                      preference="extensions.attachmentextractor_cont.suggestfolder.parent" 
-                      onsyncfrompreference="fillParentFolderList(document.getElementById('folderlist'));" 
-                      onselect="updateEditBox(this)">
-                    </richlistbox>
                   </groupbox>
 
                   <checkbox id="suggestfolderdisregardduplicates" 
@@ -175,7 +176,7 @@
                     label="&attachmentextractor.settings.after-detach.label;" 
                     accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
                     preference="extensions.attachmentextractor_cont.actionafterextract.detach" 
-                    oncommand="wdw_aecConfiguration.enableField(this,'afterextractpolicydetachmode')"/>
+                    oncommand="wdw_aecOptions.enableField(this,'afterextractpolicydetachmode')"/>
                   <box class="indent">
                     <radiogroup id="afterextractpolicydetachmode" 
                       preference="extensions.attachmentextractor_cont.actionafterextract.detach.mode">
@@ -185,11 +186,11 @@
                       <radio value="1" 
                         label="&attachmentextractor.settings.after-detach.aedelete.label;" 
                         accesskey="&attachmentextractor.settings.after-detach.aedelete.accesskey;" 
-                        oncommand="wdw_aecConfiguration.showDetachWarning(this)"/>
+                        oncommand="wdw_aecOptions.showDetachWarning(this)"/>
                       <radio value="2" 
                         label="&attachmentextractor.settings.after-detach.aedetach.label;" 
                         accesskey="&attachmentextractor.settings.after-detach.aedetach.accesskey;" 
-                        oncommand="wdw_aecConfiguration.showDetachWarning(this)"/>
+                        oncommand="wdw_aecOptions.showDetachWarning(this)"/>
                     </radiogroup>
                   </box>
                   <checkbox id="notifywhendonepolicy" 
@@ -199,7 +200,7 @@
                   <checkbox id="afterextractsavemessage" 
                     label="&attachmentextractor.settings.after-savemessage.label;" 
                     accesskey="&attachmentextractor.settings.after-savemessage.accesskey;" 
-                    oncommand="wdw_aecConfiguration.enableField(this,['fnpsavemessage','fnpsavemessagecountpattern']);" 
+                    oncommand="wdw_aecOptions.enableField(this,['fnpsavemessage','fnpsavemessagecountpattern']);" 
                     preference="extensions.attachmentextractor_cont.actionafterextract.savemessage" />
                   <hbox align="center" 
                      class="indent">
@@ -208,7 +209,7 @@
                       preftype="unichar" 
                       preference="extensions.attachmentextractor_cont.filenamepattern.savemessage" 
                       flex="1" 
-                      onchange="wdw_aecConfiguration.check_filenamepattern(this,false);"/>
+                      onchange="wdw_aecOptions.check_filenamepattern(this,false);"/>
                   </hbox>
                   <hbox align="center" 
                      class="indent">
@@ -217,7 +218,7 @@
                       preftype="unichar" 
                       flex="1" 
                       preference="extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern" 
-                      onchange="wdw_aecConfiguration.check_filenamepattern(this,true);"/>
+                      onchange="wdw_aecOptions.check_filenamepattern(this,true);"/>
                   </hbox>
                   <checkbox id="afterextractlaunch" 
                     label="&attachmentextractor.settings.after-launch.label;" 
@@ -227,17 +228,17 @@
                     label="&attachmentextractor.settings.after-endlaunch.label;" 
                     accesskey="&attachmentextractor.settings.after-endlaunch.accesskey;" 
                     preference="extensions.attachmentextractor_cont.actionafterextract.endlaunch" 
-                    oncommand="wdw_aecConfiguration.enableField(document.getElementById('afterextractendlaunch'),['afterextractendlaunchapplication','afterextractendlaunchapplicationbutton']);" />
+                    oncommand="wdw_aecOptions.enableField(document.getElementById('afterextractendlaunch'),['afterextractendlaunchapplication','afterextractendlaunchapplicationbutton']);" />
                   <hbox align="center" class="indent">
                     <textbox id="afterextractendlaunchapplication" 
                       flex="1" 
                       size="50" 
                       readonly="true" 
                       preference="extensions.attachmentextractor_cont.actionafterextract.endlaunch.application" 
-                      onsyncfrompreference="return wdw_aecConfiguration.getComplexPref('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');"/>
+                      onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');"/>
                     <button id="afterextractendlaunchapplicationbutton" 
                       type="button" 
-                      oncommand="wdw_aecConfiguration.browseForExecutable('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');" 
+                      oncommand="wdw_aecOptions.browseForExecutable('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');" 
                       label="&attachmentextractor.settings.savefolder.browsebutton;"/>
                   </hbox>
                 </groupbox>
@@ -260,47 +261,47 @@
                       <menupopup >
                         <menuitem label="#namepart#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);"/>
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
                         <menuitem label="#extpart#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);"/>
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
                         <menuitem label="#count#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="%" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="#date#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="#subject#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="#from#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="#fromemail#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                         <menuitem label="#folder#" 
                           class="tokens" 
-                          oncommand="wdw_aecConfiguration.add_to_pattern(this,filenamepatternbox);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this,filenamepatternbox);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
                       </menupopup>
                     </button>
                   </hbox>
                   <textbox id="filenamepattern" 
                     preftype="char" 
                     preference="extensions.attachmentextractor_cont.filenamepattern" 
-                    oninput="wdw_aecConfiguration.updateexamplefilename(this)" 
-                    onchange="wdw_aecConfiguration.check_filenamepattern(this,false);wdw_aecConfiguration.updateexamplefilename(this);"/>
+                    oninput="wdw_aecOptions.updateexamplefilename(this)" 
+                    onchange="wdw_aecOptions.check_filenamepattern(this,false);wdw_aecOptions.updateexamplefilename(this);"/>
                   <hbox align="center">
                     <label value="&attachmentextractor.settings.filenamepatterncount.label;"/>
                     <textbox id="filenamepatterncount" 
                       preftype="char" 
                       flex="1" 
                       preference="extensions.attachmentextractor_cont.filenamepattern.countpattern" 
-                      oninput="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
-                      onchange="wdw_aecConfiguration.check_filenamepattern(this,true);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);"/>
+                      oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
                   </hbox>
                   <hbox align="center">
                     <label value="&attachmentextractor.settings.filenamepatterndate.label;"/>
@@ -308,8 +309,8 @@
                       preftype="char" 
                       preference="extensions.attachmentextractor_cont.filenamepattern.datepattern" 
                       flex="1" 
-                      oninput="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
-                      onchange="wdw_aecConfiguration.check_filenamepattern(this,true);wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);"/>
+                      oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
                   </hbox>
 
                   <separator class="thin"/>
@@ -351,7 +352,7 @@
                             <label value="&attachmentextractor.settings.filenamepattern.explanation.withsubject;"/>
                             <textbox id="filenamepattern_examplesubject" 
                               flex="1" 
-                              oninput="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
+                              oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
                               value="[Fwd: Re: Important Mail]"/>
                           </row>
                           <row align="center">
@@ -362,7 +363,7 @@
                             <checkbox id="filenamepatterncleansubject" 
                               label="&attachmentextractor.settings.filenamepatterncleansubjectq.label;" 
                               accesskey="&attachmentextractor.settings.filenamepatterncleansubjectq.accesskey;" 
-                              oncommand="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
+                              oncommand="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
                               preference="extensions.attachmentextractor_cont.filenamepattern.cleansubject" />
                           </row>
                         </rows>
@@ -399,7 +400,7 @@
                       <label value="&attachmentextractor.settings.filenamepattern.explanation.fromauthor2;"/>
                       <textbox id="filenamepattern_exampleauthor" 
                         flex="1" 
-                        oninput="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
+                        oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
                         value="John Smith &lt;john.smith@example.org&gt;"/>
                     </hbox>
                     <hbox align="center">
@@ -413,7 +414,7 @@
                       <label value="&attachmentextractor.settings.filenamepattern.explanation.mailfolder;"/>
                       <textbox id="filenamepattern_examplefolder" 
                         flex="1" 
-                        oninput="wdw_aecConfiguration.updateexamplefilename(filenamepatternbox)" 
+                        oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
                         value="Inbox"/>
                     </hbox>
                   </groupbox>
@@ -430,7 +431,7 @@
                   <checkbox id="autoextract" 
                     label="&attachmentextractor.settings.autoextract.label;" 
                     accesskey="&attachmentextractor.settings.autoextract.accesskey;" 
-                    oncommand="wdw_aecConfiguration.enableAutoPaneFields();" 
+                    oncommand="wdw_aecOptions.enableAutoPaneFields();" 
                     preference="extensions.attachmentextractor_cont.autoextract" />
 
                   <separator class="thin"/>
@@ -456,9 +457,9 @@
                           size="50" 
                           readonly="true" 
                           preference="extensions.attachmentextractor_cont.autoextract.savepath" 
-                          onsyncfrompreference="return wdw_aecConfiguration.getComplexPref('extensions.attachmentextractor_cont.autoextract.savepath');"/>
+                          onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.autoextract.savepath');"/>
                         <button type="button" 
-                          oncommand="wdw_aecConfiguration.browseForFolder('extensions.attachmentextractor_cont.autoextract.savepath');" 
+                          oncommand="wdw_aecOptions.browseForFolder('extensions.attachmentextractor_cont.autoextract.savepath');" 
                           id="browsebutton" 
                           label="&attachmentextractor.settings.autoextract.savefolder.browsebutton;"/>
                       </hbox>
@@ -466,7 +467,7 @@
                     <checkbox id="autotriggeronly" 
                       label="&attachmentextractor.settings.autoextract.ontriggeronly.label;" 
                       accesskey="&attachmentextractor.settings.autoextract.ontriggeronly.accesskey;" 
-                      oncommand="wdw_aecConfiguration.enableField(this,'autotriggertag');" 
+                      oncommand="wdw_aecOptions.enableField(this,'autotriggertag');" 
                       preference="extensions.attachmentextractor_cont.autoextract.ontriggeronly" />
                     <hbox align="center" 
                       class="indent">
@@ -474,7 +475,7 @@
                       <menulist id="autotriggertag" 
                         flex="1" 
                         preference="extensions.attachmentextractor_cont.autoextract.triggertag" 
-                        onsyncfrompreference="wdw_aecConfiguration.filltaglist()">
+                        onsyncfrompreference="wdw_aecOptions.filltaglist()">
                         <menupopup />
                       </menulist>
                     </hbox>
@@ -514,7 +515,7 @@
                         label="&attachmentextractor.settings.after-detach.label;" 
                         accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
                         preference="extensions.attachmentextractor_cont.autoextract.detach" 
-                        oncommand="wdw_aecConfiguration.enableField(this,'autodetachmode');wdw_aecConfiguration.showAutoDetachWarning(this);"/>
+                        oncommand="wdw_aecOptions.enableField(this,'autodetachmode');wdw_aecOptions.showAutoDetachWarning(this);"/>
                       <box  class="indent">
                         <radiogroup id="autodetachmode" 
                           preference="extensions.attachmentextractor_cont.autoextract.detach.mode">
@@ -533,7 +534,7 @@
                       <checkbox id="autosavemessage" 
                         label="&attachmentextractor.settings.after-savemessage.label;" 
                         accesskey="&attachmentextractor.settings.after-savemessage.accesskey;" 
-                        oncommand="wdw_aecConfiguration.enableField(this,['autofnpsavemessage','autofnpsavemessagecountpattern']);" 
+                        oncommand="wdw_aecOptions.enableField(this,['autofnpsavemessage','autofnpsavemessagecountpattern']);" 
                         preference="extensions.attachmentextractor_cont.autoextract.savemessage" />
                       <hbox align="center" 
                         class="indent">
@@ -542,7 +543,7 @@
                           preftype="unichar" 
                           preference="extensions.attachmentextractor_cont.filenamepattern.savemessage" 
                           flex="1" 
-                          onchange="wdw_aecConfiguration.check_filenamepattern(this,false);"/>
+                          onchange="wdw_aecOptions.check_filenamepattern(this,false);"/>
                       </hbox>
                       <hbox align="center" 
                         class="indent">
@@ -551,7 +552,7 @@
                           preftype="unichar" 
                           flex="1" 
                           preference="extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern" 
-                          onchange="wdw_aecConfiguration.check_filenamepattern(this,true);"/>
+                          onchange="wdw_aecOptions.check_filenamepattern(this,true);"/>
                       </hbox>
                       <checkbox id="autolaunch" 
                         label="&attachmentextractor.settings.after-launch.label;" 
@@ -561,17 +562,17 @@
                         label="&attachmentextractor.settings.after-endlaunch.label;" 
                         accesskey="&attachmentextractor.settings.after-endlaunch.accesskey;" 
                         preference="extensions.attachmentextractor_cont.autoextract.endlaunch" 
-                        oncommand="wdw_aecConfiguration.enableField(document.getElementById('autoendlaunch'),['autoendlaunchapplication','autoendlaunchapplicationbutton']);" />
+                        oncommand="wdw_aecOptions.enableField(document.getElementById('autoendlaunch'),['autoendlaunchapplication','autoendlaunchapplicationbutton']);" />
                       <hbox align="center" class="indent">
                         <textbox id="autoendlaunchapplication" 
                           flex="1" 
                           size="50" 
                           readonly="true" 
                           preference="extensions.attachmentextractor_cont.autoextract.endlaunch.application" 
-                          onsyncfrompreference="return wdw_aecConfiguration.getComplexPref('extensions.attachmentextractor_cont.autoextract.endlaunch.application');"/>
+                          onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.autoextract.endlaunch.application');"/>
                         <button id="autoendlaunchapplicationbutton" 
                           type="button" 
-                          oncommand="wdw_aecConfiguration.browseForExecutable('extensions.attachmentextractor_cont.autoextract.endlaunch.application');" 
+                          oncommand="wdw_aecOptions.browseForExecutable('extensions.attachmentextractor_cont.autoextract.endlaunch.application');" 
                           label="&attachmentextractor.settings.savefolder.browsebutton;"/>
                       </hbox>
                     </groupbox>
@@ -601,7 +602,7 @@
                           value="0" 
                           label="&attachmentextractor.settings.includeexcludepolicy2-false.label;" 
                           accesskey="&attachmentextractor.settings.includeexcludepolicy2-false.accesskey;" 
-                          oncommand="wdw_aecConfiguration.enableField(document.getElementById('iep0false'),'excludepatterns');wdw_aecConfiguration.enableField(document.getElementById('iep1true'),'includepatterns');"/>
+                          oncommand="wdw_aecOptions.enableField(document.getElementById('iep0false'),'excludepatterns');wdw_aecOptions.enableField(document.getElementById('iep1true'),'includepatterns');"/>
                         <textbox id="excludepatterns" 
                           flex="1"
                           preference="extensions.attachmentextractor_cont.excludepatterns4"/>
@@ -611,7 +612,7 @@
                           value="1" 
                           label="&attachmentextractor.settings.includeexcludepolicy2-true.label;" 
                           accesskey="&attachmentextractor.settings.includeexcludepolicy2-true.accesskey;" 
-                          oncommand="wdw_aecConfiguration.enableField(document.getElementById('iep1true'),'includepatterns');wdw_aecConfiguration.enableField(document.getElementById('iep0false'),'excludepatterns');"/>
+                          oncommand="wdw_aecOptions.enableField(document.getElementById('iep1true'),'includepatterns');wdw_aecOptions.enableField(document.getElementById('iep0false'),'excludepatterns');"/>
                         <textbox id="includepatterns" 
                           flex="1"
                           preference="extensions.attachmentextractor_cont.includepatterns4"/>
@@ -630,16 +631,16 @@
                       <radio value="-1" 
                         label="&attachmentextractor.settings.noextract.label;" 
                         accesskey="&attachmentextractor.settings.noextract.accesskey;" 
-                        oncommand="wdw_aecConfiguration.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
+                        oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
                       <radio value="0" 
                         label="&attachmentextractor.settings.extract.tbextract.label;" 
                         accesskey="&attachmentextractor.settings.extract.tbextract.accesskey;" 
-                        oncommand="wdw_aecConfiguration.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
+                        oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
                       <radio value="1" 
                         id="extractmode1" 
                         label="&attachmentextractor.settings.extract.aeextract2.label;" 
                         accesskey="&attachmentextractor.settings.extract.aeextract2.accesskey;" 
-                        oncommand="wdw_aecConfiguration.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
+                        oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
                       <vbox  class="indent">
                       <checkbox id="setdatetoemail" 
                         label="&attachmentextractor.settings.setdatetoemail.label;" 
@@ -671,7 +672,7 @@
                       label="&attachmentextractor.settings.returnreceipts.enabled.label;" 
                       accesskey="&attachmentextractor.settings.returnreceipts.enabled.accesskey;" 
                       preference="extensions.attachmentextractor_cont.returnreceipts" 
-                      oncommand="wdw_aecConfiguration.enableField(document.getElementById('sentreturnreceipt'),['override']);"/>
+                      oncommand="wdw_aecOptions.enableField(document.getElementById('sentreturnreceipt'),['override']);"/>
                     <groupbox class="indent">
                       <radiogroup id="override" 
                         preference="extensions.attachmentextractor_cont.returnreceipts.override">
@@ -728,7 +729,7 @@
                         label="&attachmentextractor.settings.reportgen.label;" 
                         flex="1" 
                         accesskey="&attachmentextractor.settings.reportgen.accesskey;" 
-                        oncommand="wdw_aecConfiguration.enableField(document.getElementById('reportgen'),['reportname','reportgenthumbnail','reportgencssfile','reportgencssfilebutton','reportgenembedcss']);"/>
+                        oncommand="wdw_aecOptions.enableField(document.getElementById('reportgen'),['reportname','reportgenthumbnail','reportgencssfile','reportgencssfilebutton','reportgenembedcss']);"/>
                     </hbox>
                     <groupbox class="indent">
                       <hbox align="center">
@@ -748,10 +749,10 @@
                           flex="1"
                           readonly="true" 
                           preference="extensions.attachmentextractor_cont.reportgen.cssfile" 
-                          onsyncfrompreference="return wdw_aecConfiguration.getComplexPref('extensions.attachmentextractor_cont.reportgen.cssfile');"/>
+                          onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.reportgen.cssfile');"/>
                         <button type="button" 
                           id="reportgencssfilebutton" 
-                          oncommand="wdw_aecConfiguration.browseForCss('extensions.attachmentextractor_cont.reportgen.cssfile');" 
+                          oncommand="wdw_aecOptions.browseForCss('extensions.attachmentextractor_cont.reportgen.cssfile');" 
                           label="&attachmentextractor.settings.savefolder.browsebutton;"/>
                       </hbox>
                       <checkbox id="reportgenembedcss"  flex="1"

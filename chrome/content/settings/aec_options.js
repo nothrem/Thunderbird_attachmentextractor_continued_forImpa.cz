@@ -9,7 +9,7 @@ var AECprefs = Cc["@mozilla.org/preferences-service;1"]
 // global var filenamepatternbox to be frequently used in aec_options.xul
 var filenamepatternbox = document.getElementById('filenamepattern');
 
-if ("undefined" == typeof(wdw_aecConfiguration)) {
+if ("undefined" == typeof(wdw_aecOptions)) {
   var {
     MailServices
   } = ChromeUtils.import("resource:///modules/MailServices.jsm");
@@ -22,50 +22,56 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
     var exampleDate = new Date();
   } catch (e) {}
 
-  var wdw_aecConfiguration = {
+  var wdw_aecOptions = {
 
-    aecInitConfiguration: function() {
-      wdw_aecConfiguration.loadInitialPane();
+    mFolderListBox:  null,
+    limitSuggestFolders: 1000,
+
+    init: function() {
+      wdw_aecOptions.loadInitialPane();
 
       // enableFields in general pane
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'afterextractpolicydetach'), 'afterextractpolicydetachmode');
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'savepathmru'), 'savepathmrucount');
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'afterextractendlaunch'), ['afterextractendlaunchapplication',
         'afterextractendlaunchapplicationbutton'
       ]);
 
+      wdw_aecOptions.mFolderListBox = document.getElementById("suggestfolderlist");
+      wdw_aecOptions.buildFolderList();
+      
       // enableFields in filenamepattern pane
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'afterextractsavemessage'), ['fnpsavemessage',
         'fnpsavemessagecountpattern'
       ]);
 
       // enableFields in auto pane
       // the different elements have to be en-/disabled in the following function
-      wdw_aecConfiguration.enableAutoPaneFields();
+      wdw_aecOptions.enableAutoPaneFields();
 
       // enableFields in advanced pane
-      wdw_aecConfiguration.enableField(document.getElementById('iep0false'),
+      wdw_aecOptions.enableField(document.getElementById('iep0false'),
         'excludepatterns');
-      wdw_aecConfiguration.enableField(document.getElementById('iep1true'),
+      wdw_aecOptions.enableField(document.getElementById('iep1true'),
         'includepatterns');
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'extractmode1'), ['setdatetoemail', 'minimumsize']);
-      wdw_aecConfiguration.enableField(document.getElementById(
+      wdw_aecOptions.enableField(document.getElementById(
         'sentreturnreceipt'), ['override']);
-      wdw_aecConfiguration.enableField(document.getElementById('reportgen'),
+      wdw_aecOptions.enableField(document.getElementById('reportgen'),
         ['reportname', 'reportgenthumbnail', 'reportgencssfile',
           'reportgencssfilebutton', 'reportgenembedcss'
         ]);
 
       document.getElementById('filenamepattern_exampledate').value =
         exampleDate.toLocaleString();
-      wdw_aecConfiguration.updateexamplefilename(filenamepatternbox);
+      wdw_aecOptions.updateexamplefilename(filenamepatternbox);
 
-      wdw_aecConfiguration.showTab();
+      wdw_aecOptions.showTab();
     },
 
     enableAutoPaneFields: function() {
@@ -79,22 +85,22 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
         for (let i = 0; i < nodeList.length; i++) {
           // we can only en-/disable node elements with an ID
           if (nodeList[i].id) {
-            wdw_aecConfiguration.enableField(document.getElementById(
+            wdw_aecOptions.enableField(document.getElementById(
               'autoextract'), nodeList[i].id);
           }
         }
       }
       // enable or disable different child elements if autoextract option is enabled
       if (autoextract.checked) {
-        wdw_aecConfiguration.enableField(document.getElementById(
+        wdw_aecOptions.enableField(document.getElementById(
           'autotriggeronly'), 'autotriggertag');
-        wdw_aecConfiguration.enableField(document.getElementById(
+        wdw_aecOptions.enableField(document.getElementById(
           'autodetach'), 'autodetachmode');
-        wdw_aecConfiguration.enableField(document.getElementById(
+        wdw_aecOptions.enableField(document.getElementById(
           'autosavemessage'), ['autofnpsavemessage',
           'autofnpsavemessagecountpattern'
         ]);
-        wdw_aecConfiguration.enableField(document.getElementById(
+        wdw_aecOptions.enableField(document.getElementById(
           'autoendlaunch'), ['autoendlaunchapplication',
           'autoendlaunchapplicationbutton'
         ]);
@@ -117,7 +123,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
         if (field.localName == "radiogroup") field.disabled = true;
         field.setAttribute("disabled", "true");
       }
-      if (fieldID instanceof Array) wdw_aecConfiguration.enableField(
+      if (fieldID instanceof Array) wdw_aecOptions.enableField(
         aCheckbox, fieldID);
     },
 
@@ -152,17 +158,17 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
 
     loadInitialPane: function() {
       if (document.documentElement.hasAttribute("lastSelected")) {
-        wdw_aecConfiguration.showPane(document.documentElement.getAttribute(
+        wdw_aecOptions.showPane(document.documentElement.getAttribute(
           "lastSelected"));
       } else {
-        wdw_aecConfiguration.showPane("aec-generalPane");;
+        wdw_aecOptions.showPane("aec-generalPane");;
       }
     },
 
     showTab: function() {
       if (window.arguments) {
         if (window.arguments[0].showTab) {
-          wdw_aecConfiguration.showPane(window.arguments[0].showTab);
+          wdw_aecOptions.showPane(window.arguments[0].showTab);
         }
       }
     },
@@ -203,7 +209,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
     },
 
     browseForFolder: function(prefname) {
-      let pref = wdw_aecConfiguration.getComplexPref(prefname);
+      let pref = wdw_aecOptions.getComplexPref(prefname);
       let nsIFilePicker = Ci.nsIFilePicker;
       let fp = Cc["@mozilla.org/filepicker;1"].
         createInstance(nsIFilePicker);
@@ -226,39 +232,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
           if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
-          wdw_aecConfiguration.setComplexPref(prefname, fp.file.path);
-        });
-      } catch (e) {
-        aedump(e, 0);
-      }
-    },
-
-    browseForSuggestfolder(pref_el_id) {
-      let pref = document.getElementById(pref_el_id);
-      let nsIFilePicker = Ci.nsIFilePicker;
-      let fp = Cc["@mozilla.org/filepicker;1"]
-      .createInstance(nsIFilePicker);
-      let windowTitle =
-        document.getElementById("aestrbundle").getString(
-          "FolderPickerDialogTitle");
-      try {
-        fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
-        try {
-          if (pref) {
-            let localFile = Cc["@mozilla.org/file/local;1"].createInstance(Ci
-              .nsIFile);
-            localFile.initWithPath(pref);
-            fp.displayDirectory = localFile;
-          }
-        } catch (e) {
-          aedump(e, 1);
-        }
-        fp.open(r => {
-          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
-            return;
-          }
-          //wdw_aecConfiguration.setComplexPref(prefname, fp.file.path);
-          return fp.file.path;
+          wdw_aecOptions.setComplexPref(prefname, fp.file.path);
         });
       } catch (e) {
         aedump(e, 0);
@@ -266,7 +240,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
     },
 
     browseForExecutable: function(prefname) {
-      let pref = wdw_aecConfiguration.getComplexPref(prefname);
+      let pref = wdw_aecOptions.getComplexPref(prefname);
       let nsIFilePicker = Ci.nsIFilePicker;
       let fp = Cc["@mozilla.org/filepicker;1"]
         .createInstance(nsIFilePicker);
@@ -292,7 +266,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
           if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
-          wdw_aecConfiguration.setComplexPref(prefname, fp.file.path);
+          wdw_aecOptions.setComplexPref(prefname, fp.file.path);
         });
       } catch (e) {
         aedump(e, 0);
@@ -300,7 +274,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
     },
 
     browseForCss: function(prefname) {
-      let pref = wdw_aecConfiguration.getComplexPref(prefname);
+      let pref = wdw_aecOptions.getComplexPref(prefname);
       let nsIFilePicker = Ci.nsIFilePicker;
       let fp = Cc["@mozilla.org/filepicker;1"]
         .createInstance(nsIFilePicker);
@@ -326,7 +300,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
           if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
-          wdw_aecConfiguration.setComplexPref(prefname, fp.file.path);
+          wdw_aecOptions.setComplexPref(prefname, fp.file.path);
         });
       } catch (e) {
         aedump(e, 0);
@@ -359,6 +333,7 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
       return;
     },
 
+    /************** filenamepattern functions *********************/
     check_filenamepattern: function(element, countpattern) {
       if ((!countpattern && filemaker.isValidFilenamePattern(element
         .value)) || (
@@ -389,14 +364,12 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
       let countpattern = document.getElementById('filenamepatterncount')
         .value;
       let datepattern = document.getElementById('filenamepatterndate')
-      .value;
+        .value;
       let docleansubject = document.getElementById(
           'filenamepatterncleansubject')
         .checked;
       let exname = document.getElementById('filenamepattern_examplename')
         .value;
-      //      let cleansubjectstrings = document.getElementById('filenamepattern_examplesubject').value.toLowerCase().split(',');
-
       let cleansubjectstrings = AECprefs.getStringPref(
           "extensions.attachmentextractor_cont.filenamepattern.cleansubject.strings"
           )
@@ -449,99 +422,121 @@ if ("undefined" == typeof(wdw_aecConfiguration)) {
       fnpbox.setSelectionRange(postindex, postindex);
     },
 
-  }
-}
-
-
-function appendPrefEntry(listbox, prefid, emptytext) {
-  let entry = listbox.appendItem(".", prefid);
-  let tb2idfix = listbox.itemCount ? null : listbox.id + listbox.childNodes
-    .length; //bloody tb2 ! "this" doesnt resolve properly within onsyncfrompreference in tb2 so workaround.
-  entry.setAttribute("preference", prefid);
-  if (tb2idfix) entry.setAttribute("id", tb2idfix);
-  entry.setAttribute("onsyncfrompreference", "let l=syncFromFilePref('" +
-    prefid + "');" + (tb2idfix ? "document.getElementById('" + tb2idfix +
-      "')" : "this") + ".setAttribute('label',(l==''?'" + emptytext + "':l))");
-  return entry;
-}
-
-function fillParentFolderList(folderlist) {
-  //aedump(folderlist.nodeName+",");
-  if (folderlist.childNodes.length != 0) return;
-  let emptytext = document.getElementById("aestrbundle").getString(
-    "EmptyLineText");
-  let prefid = folderlist.getAttribute("preference");
-  //aedump(prefid+"\n");
-  let pref = document.getElementById(prefid);
-  if (pref && pref.name) {
-    for (let i = 1; i <= 100; i++) {
-      let entryid = prefid + "_" + i;
-      if (!document.getElementById(entryid)) {
-        let newpref = document.createElement("preference");
-        newpref.setAttribute("id", entryid);
-        newpref.setAttribute("name", pref.name + "." + i);
-        newpref.setAttribute("type", "file");
-        /*newpref.setAttribute("onchange","removeBlanks(document.getElementById('"+folderlist.id+"'));");*/
-        pref.preferences.appendChild(newpref);
-        //if (newpref.value==null) break; /*newpref=document.getElementById(entryid);*/
-      } else {
-        if (!document.getElementById(entryid)) break;
-        appendPrefEntry(folderlist, entryid, emptytext);
-        if (i == 1) folderlist.selectedIndex = 0;
-        if (!document.getElementById(entryid).value) break;
+    /************** suggestfolder functions *********************/
+    browseForSuggestfolder(prefname,i) {
+      let nsIFilePicker = Ci.nsIFilePicker;
+      let fp = Cc["@mozilla.org/filepicker;1"]
+      .createInstance(nsIFilePicker);
+      let windowTitle =
+        document.getElementById("aestrbundle").getString(
+          "FolderPickerDialogTitle");
+      try {
+        fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
+        fp.open(r => {
+          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
+            return;
+          }
+          wdw_aecOptions.setComplexPref(prefname, fp.file.path);
+          this.appendFolderItem(fp.file.path, i);
+        });
+      } catch (e) {
+        aedump(e, 0);
       }
-    }
-  }
-}
+    },
 
-function removeEntry(button, folderlist) {
-  //aedump("*");
-  let resetpref = document.getElementById(button.getAttribute('_preference'));
-  /*for (f in resetpref) aedump(f+":"+resetpref[f]+"\n") */
-  if (!resetpref.value) return;
-  else resetpref.reset();
-  let prefid = folderlist.getAttribute("preference");
-  let pref = document.getElementById(prefid);
-  if (!pref) return;
-  for (let i = 1; i < 100; i++) {
-    let cpref = document.getElementById(prefid + "_" + i);
-    let npref = document.getElementById(prefid + "_" + (i + 1));
-    if (!cpref || !npref) break;
-    //aedump(i+") cval: "+(cpref.value?cpref.value.leafName:cpref.value)+"; nval: "+(npref.value?npref.value.leafName:npref.value)+"\n");
-    if (!cpref.value && npref.value) {
-      cpref.value = npref.value;
-      npref.reset();
-      //continue;
-    }
-  }
-  folderlist.removeItemAt(folderlist.childNodes.length - 1);
-}
+    appendFolderItem: function (aFolderName, aKey) {
+      let item = this.mFolderListBox.appendItem(aFolderName, aKey);
+      return item;
+    },
+  
+    buildFolderList: function () {
+      let i = 0;
+      let moreloops = true;
+      do {
+        i += 1;
+        try {
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+          this.appendFolderItem(pref, i);
+        } catch {
+          moreloops = false; 
+        }
+      } while (moreloops && i < this.limitSuggestFolders);
+    },
+  
+    removeFolder: function () {
+      let index = this.mFolderListBox.selectedIndex;
 
-function addEntry(button, folderlist) {
-  let prefid = button.getAttribute('_preference');
-  wdw_aecConfiguration.browseForSuggestfolder(prefid);
-  let addpref = document.getElementById(prefid);
-  //aedump(prefid+"="+addpref.value+"\n");
-  if (!addpref) return;
-  //aedump('*');
-  if (folderlist.getItemAtIndex(folderlist.childNodes.length - 1).getAttribute(
-      'preference') == prefid) {
-    let clearpref = folderlist.getAttribute("preference") + "_" + (folderlist
-      .childNodes.length + 1);
-    appendPrefEntry(folderlist, clearpref, document.getElementById(
-      "aestrbundle").getString("EmptyLineText"));
-    document.getElementById(clearpref).updateElements();
-  }
-}
+      if (index >= 0) {
+        let itemToRemove = this.mFolderListBox.getItemAtIndex(index);
+        let itemToRemoveKey = index+1;
 
-function updateEditBox(ele) {
-  let pref = ele.selectedItem.getAttribute("preference");
-  //aedump(pref+";\n");
-  document.getElementById("parent1").setAttribute("preference", pref);
-  document.getElementById(pref).updateElements();
-  document.getElementById("parentbutton").setAttribute("_preference", pref);
-  document.getElementById("parentbutton").removeAttribute("disabled");
-  document.getElementById("parentresetbutton").setAttribute("_preference",
-    pref);
-  document.getElementById("parentresetbutton").removeAttribute("disabled");
+        // move all following prefs to close the resulting gap
+        let i = itemToRemoveKey;
+        let n = i+1;
+        let moreloops = true;
+        do {
+          var cpref = "";
+          var npref = "";
+          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+          // console.log('AEC ' + i + ': ' + cpref);
+          try {
+            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+n);
+            // console.log('AEC ' + n + ': ' + npref);
+          } catch {
+            moreloops = false;
+            // console.log('AEC no more npref');
+            AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+            console.log('AEC clear last cpref' + i);
+          }
+          if (npref) {
+            AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i, npref);
+            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i));
+          }
+          i += 1;
+          n += 1;
+        } while (moreloops && i < this.limitSuggestFolders);
+
+        itemToRemove.remove();
+        var numItemsInListBox = this.mFolderListBox.getRowCount();
+        this.mFolderListBox.selectedIndex = index < numItemsInListBox ? index : numItemsInListBox - 1;
+      }
+    },
+
+    addFolder: function () {
+      let i = 0;
+      let moreloops = true;
+      do {
+        i += 1;
+        try {
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+        } catch {
+          moreloops = false; 
+        }
+      } while (moreloops && i < this.limitSuggestFolders);
+
+      this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+
+      /******** Focus isn't working this way *******
+      let item = this.mFolderListBox.getItemAtIndex(i);
+      console.log(item);
+      console.log(i);
+      this.mFolderListBox.ensureIndexIsVisible(item);
+      this.mFolderListBox.selectItem(item);
+      this.mFolderListBox.focus();
+      */
+    },
+  
+    onSelectFolder: function () {
+      let btnRemove = document.getElementById("removeFolderButton");
+      let listBox = document.getElementById("suggestfolderlist");
+  
+      if (listBox.selectedCount > 0)
+      btnRemove.disabled = false;
+      else
+      btnRemove.disabled = true;
+  
+      document.getElementById("removeFolderButton").disabled = btnRemove.disabled;
+    },
+
+  };
 }

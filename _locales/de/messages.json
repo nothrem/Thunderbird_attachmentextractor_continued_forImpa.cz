@@ -258,10 +258,10 @@
     "message": "Ordnervorschläge"
   },
   "attachmentextractor.settings.suggestfolder.description": {
-    "message": "Ordnervorschläge für abzutrennenden Dateien die auf Schlüsselwörter der Betreffzeile der ausgewählten Nachrichten basieren."
+    "message": "Ordnervorschläge basieren auf Schlüsselwörtern der Betreffzeilen der ausgewählten Nachrichten."
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
-    "message": "Doppelte Schlüsselwörter ignorieren, falls Ordnervorschläge verfügbar"
+    "message": "Doppelte Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren"
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
     "message": "I"

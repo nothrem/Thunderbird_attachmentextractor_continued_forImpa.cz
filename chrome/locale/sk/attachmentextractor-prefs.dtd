@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Priečinky obsahujúce potenciálne podpriečinky pre oddelenie do:">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Vylúčiť kľúčové slová: (oddelené čiarkou)">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "pridať…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Vyčistiť">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.label "Potvrdiť opravu na zobrazenie oddelených obrázkov v rade.">
 <!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Dokumentácia dostupná">
