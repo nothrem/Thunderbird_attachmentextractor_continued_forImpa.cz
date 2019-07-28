@@ -531,11 +531,9 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let listBox = document.getElementById("suggestfolderlist");
   
       if (listBox.selectedCount > 0)
-      btnRemove.disabled = false;
+        btnRemove.removeAttribute("disabled");
       else
-      btnRemove.disabled = true;
-  
-      document.getElementById("removeFolderButton").disabled = btnRemove.disabled;
+        btnRemove.setAttribute("disabled", "true");
     },
 
   };

@@ -132,7 +132,7 @@
                       <richlistbox id="suggestfolderlist" 
                         style="height: 10em;"
                         flex="1"
-                        onselect="wdw_aecOptions.onSelectFolder">
+                        onselect="wdw_aecOptions.onSelectFolder();">
                       </richlistbox>
                       <vbox>
                         <button id="addFolderButton" 
