@@ -130,7 +130,7 @@
                     <label flex="1">&attachmentextractor.settings.suggestfolder.parents.label;</label>
                     <hbox>
                       <richlistbox id="suggestfolderlist" 
-                        style="height: 10em;"
+                        style="height: 11em;"
                         flex="1"
                         onselect="wdw_aecOptions.setButtonStatus();">
                       </richlistbox>
