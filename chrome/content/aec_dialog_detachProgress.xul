@@ -16,7 +16,8 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
   windowtype="mail:AEDialog" 
   resizeable="no" 
-  persist="screenX screenY">
+  persist="screenX screenY"
+  style="margin: 30px;">
 
   <script type="application/x-javascript" 
     src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
@@ -34,14 +35,14 @@
     <![CDATA[
       function updateCounts(m_index,m_count,a_index,a_count) {
         if (m_index!=-1) {
-          var dmessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(m_index+1)).replace("%2$s",m_count);
+          var dmessage=aewindow.aeStringBundle.GetStringFromName("ProgressDialogProgressOf").replace("%1$s",(m_index+1)).replace("%2$s",m_count);
           document.getElementById("progress_message").setAttribute('mode','determined');
           document.getElementById("progress_message").setAttribute('value',((m_index+1)/m_count)*100);
           document.getElementById("status2").setAttribute('value',dmessage);
         }
         var amessage="";
         if (a_index!=-1) {
-          amessage=document.getElementById("strbundle").getString("ProgressDialogProgressOf").replace("%1$s",(a_index+1)).replace("%2$s",a_count);
+          amessage=aewindow.aeStringBundle.GetStringFromName("ProgressDialogProgressOf").replace("%1$s",(a_index+1)).replace("%2$s",a_count);
           //document.getElementById("progress_attachment").setAttribute('mode','determined');
           document.getElementById("progress_attachment").setAttribute('value',((a_index+1)/a_count)*100);
         }
@@ -73,7 +74,7 @@
       
       function setupFileProgress() {
         fileProgressBar=document.getElementById("progress_file");
-        fileProgressLabelString=document.getElementById("strbundle").getString("ProgressDialogProgressTextFile");
+        fileProgressLabelString=aewindow.aeStringBundle.GetStringFromName("ProgressDialogProgressTextFile");
         fileProgressLabel=document.getElementById("status4");
         
         fileProgressLabel.setAttribute('value',fileProgressLabelString.replace("%1$s","?").replace("%2$s","?"));

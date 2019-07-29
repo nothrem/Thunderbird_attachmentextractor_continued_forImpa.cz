@@ -28,6 +28,12 @@ if ("undefined" == typeof(wdw_aecOptions)) {
     limitSuggestFolders: 1000,
 
     init: function() {
+      wdw_aecOptions.strBundleService = (Cc["@mozilla.org/intl/stringbundle;1"]
+      .getService()).QueryInterface(Ci.nsIStringBundleService);
+
+      wdw_aecOptions.aeStringBundle = wdw_aecOptions.strBundleService.createBundle(
+        "chrome://attachmentextractor_cont/locale/attachmentextractor.properties");
+
       wdw_aecOptions.loadInitialPane();
 
       // enableFields in general pane
@@ -175,14 +181,14 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
     showDetachWarning: function(radiobox) {
       if (!radiobox.selected) return;
-      let amessage = document.getElementById("aestrbundle").getString(
+      let amessage = this.aeStringBundle.GetStringFromName(
         "ConfirmDetachSettingDialogMessage");
       alert(amessage);
     },
 
     showAutoDetachWarning: function(checkbox) {
       if (!checkbox.checked) return;
-      let amessage = document.getElementById("aestrbundle").getString(
+      let amessage = this.aeStringBundle.GetStringFromName(
         "ConfirmAutoDetachSettingDialogMessage");
       alert(amessage);
     },
@@ -214,7 +220,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let fp = Cc["@mozilla.org/filepicker;1"].
         createInstance(nsIFilePicker);
       let windowTitle =
-        document.getElementById("aestrbundle").getString(
+        this.aeStringBundle.GetStringFromName(
           "FolderPickerDialogTitle");
       try {
         fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
@@ -245,7 +251,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let fp = Cc["@mozilla.org/filepicker;1"]
         .createInstance(nsIFilePicker);
       let windowTitle =
-        document.getElementById("aestrbundle").getString(
+        this.aeStringBundle.GetStringFromName(
           "ExecutableFilePickerDialogTitle");
       try {
         fp.init(window, windowTitle, Ci.nsIFilePicker.modeOpen);
@@ -279,11 +285,11 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let fp = Cc["@mozilla.org/filepicker;1"]
         .createInstance(nsIFilePicker);
       let windowTitle =
-        document.getElementById("aestrbundle").getString(
+        this.aeStringBundle.GetStringFromName(
           "CSSFilePickerDialogTitle");
       try {
         fp.init(window, windowTitle, Ci.nsIFilePicker.modeOpen);
-        fp.appendFilter(document.getElementById("aestrbundle").getString(
+        fp.appendFilter(this.aeStringBundle.GetStringFromName(
           "CSSFileFilterDescription"), "*.css");
         try {
           if (pref) {
@@ -428,7 +434,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let fp = Cc["@mozilla.org/filepicker;1"]
       .createInstance(nsIFilePicker);
       let windowTitle =
-        document.getElementById("aestrbundle").getString(
+        this.aeStringBundle.GetStringFromName(
           "FolderPickerDialogTitle");
       try {
         fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
