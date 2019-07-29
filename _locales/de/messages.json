@@ -753,7 +753,7 @@
     "message": "Hoppla!"
   },
   "GenericErrorMessage2": {
-    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, wenden Sie sich bitte über die Webseite (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) an den Autor und teilen Sie ihm alle Fehlermeldungen und Details die in der Fehler-Konsole von Thunderbird angezeigt werden mit."
+    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, wenden Sie sich bitte per https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues an den Autor und teilen Sie ihm alle Fehlermeldungen und Details die in der Fehler-Konsole von Thunderbird angezeigt werden mit."
   },
   "StatusTextStarting": {
     "message": "AE: Abtrennen der markierten Anhänge gestartet"

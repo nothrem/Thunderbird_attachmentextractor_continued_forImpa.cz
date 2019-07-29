@@ -753,7 +753,7 @@
     "message": "Chyba!"
   },
   "GenericErrorMessage2": {
-    "message": "Rozšíření AttachmentExtractor Continued způsobilo chybu programu. Pokud se to stává pravidelně, oznamte to prosím na stránkách https://www.thunderbird-mail.de/forum/board/10-erweiterungen/ s výpisem chyb z chybové konzole aplikace Thunderbird."
+    "message": "Rozšíření AttachmentExtractor Continued způsobilo chybu programu. Pokud se to stává pravidelně, oznamte to prosím na stránkách https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues s výpisem chyb z chybové konzole aplikace Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Příprava ukládání příloh"

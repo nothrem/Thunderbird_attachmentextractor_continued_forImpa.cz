@@ -753,7 +753,7 @@
     "message": "Hups!"
   },
   "GenericErrorMessage2": {
-    "message": "AttachmentExtractor Continuedissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
+    "message": "AttachmentExtractor Continuedissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
   },
   "StatusTextStarting": {
     "message": "Käynnistetään AE poiminta valituille liitteille"

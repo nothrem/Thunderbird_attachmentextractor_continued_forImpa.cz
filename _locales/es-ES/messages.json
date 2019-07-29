@@ -753,7 +753,7 @@
     "message": "Error"
   },
   "GenericErrorMessage2": {
-    "message": "Se ha producido un error en el uso de AttachmentExtractor Continued. Si esto ocurre con frecuencia, por favor, añada un bug en mi página web (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) con el detalle de error mostrado en la consola de errores de Thunderbird."
+    "message": "Se ha producido un error en el uso de AttachmentExtractor Continued. Si esto ocurre con frecuencia, por favor, añada un bug en https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues con el detalle de error mostrado en la consola de errores de Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Iniciando la extracción de los adjuntos seleccionados"

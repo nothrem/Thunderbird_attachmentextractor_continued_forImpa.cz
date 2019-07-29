@@ -753,7 +753,7 @@
     "message": "아이고!"
   },
   "GenericErrorMessage2": {
-    "message": "무언가 AttachmentExtractor Continued에 문제를 일으켰습니다. 만약 일정하게 발생하는 경우 제 웹사이트(https://www.thunderbird-mail.de/forum/board/10-erweiterungen/)를 내 bugtracker에 버그를 Thunderbird의 오류 콘솔에 보여진 오류 상세와 함께 남겨주세요."
+    "message": "무언가 AttachmentExtractor Continued에 문제를 일으켰습니다. 만약 일정하게 발생하는 경우 제 웹사이트(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues)를 내 bugtracker에 버그를 Thunderbird의 오류 콘솔에 보여진 오류 상세와 함께 남겨주세요."
   },
   "StatusTextStarting": {
     "message": "선택된 첨부 파일에 대해 AE 추출 시작"

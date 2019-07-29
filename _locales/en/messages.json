@@ -755,7 +755,7 @@
     "message": "Whoops!"
   },
   "GenericErrorMessage2": {
-    "message": "Something has gone wrong with AttachmentExtractor Continued.  If this happens regularly please log a bug on the bugtracker on my website (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) with the error details shown in Thunderbird's Error Console."
+    "message": "Something has gone wrong with AttachmentExtractor Continued.  If this happens regularly please log a bug on the bugtracker on https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues with the error details shown in Thunderbird's Error Console."
   },
   "StatusTextStarting": {
     "message": "Starting AE Extract with selected attachment(s)"

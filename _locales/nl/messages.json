@@ -753,7 +753,7 @@
     "message": "Oeps!"
   },
   "GenericErrorMessage2": {
-    "message": "Er is iets misgegaan met AttachmentExtractor Continued. Als dit vaker gebeurt maak dan een foutmelding op de bugtracker op mijn website (https://www.thunderbird-mail.de/forum/board/10-erweiterungen/) met de foutdetails zoals weergegeven in de foutconsole van Thunderbird."
+    "message": "Er is iets misgegaan met AttachmentExtractor Continued. Als dit vaker gebeurt maak dan een foutmelding op de bugtracker op https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues met de foutdetails zoals weergegeven in de foutconsole van Thunderbird."
   },
   "StatusTextStarting": {
     "message": "AE uitpakken wordt gestart voor geselecteerde bijlage(n)"
