@@ -18,12 +18,6 @@
   resizeable="no" 
   persist="screenX screenY">
 
-
-  <stringbundleset id="extensionsSet">
-    <stringbundle id="strbundle" 
-      src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-  </stringbundleset>
-
   <script type="application/x-javascript" 
     src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
   <script type="application/x-javascript" 

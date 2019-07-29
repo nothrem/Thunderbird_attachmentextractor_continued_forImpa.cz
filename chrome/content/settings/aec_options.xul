@@ -29,11 +29,6 @@
   title="&attachmentextractor.settings.windowtitle;" 
   onload="wdw_aecOptions.init();">
 
-  <stringbundleset id="extensionsSet">
-    <stringbundle id="aestrbundle" 
-      src="chrome://attachmentextractor_cont/locale/attachmentextractor.properties"/>
-  </stringbundleset>
-
   <stack flex="1">
     <hbox id="aec-prefBox" flex="1">
       <vbox id="aec-pref-category-box">
