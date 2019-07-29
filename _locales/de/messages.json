@@ -363,7 +363,7 @@
     "message": "M"
   },
   "attachmentextractor.settings.after-savemessage.label": {
-    "message": "Nachrichtentext in eine Datei speichern. (Gilt für Allgemein- wie für den Automatikmodus)"
+    "message": "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)"
   },
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"

@@ -51,7 +51,7 @@
 <!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "e">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
-<!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Gilt für Allgemein- wie für den Automatikmodus)">
+<!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.after-launch.label "Jeden Anhang mit der ihr zugeordneten Standardanwendung öffnen">
 <!ENTITY attachmentextractor.settings.after-launch.accesskey "z">
