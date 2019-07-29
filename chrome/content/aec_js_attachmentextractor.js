@@ -20,18 +20,15 @@ if (typeof AttachmentExtractor == "undefined") {
     this.prefs = new AEPrefs();
 
     /* services */
-    this.strBundleService = (Cc["@mozilla.org/intl/stringbundle;1"]
-    .getService()).QueryInterface(Ci.nsIStringBundleService);
     this.promptService = Cc["@mozilla.org/embedcomp/prompt-service;1"]
       .getService(Ci.nsIPromptService);
     this.windowWatcherService = Cc['@mozilla.org/embedcomp/window-watcher;1']
       .getService().QueryInterface(Ci.nsIWindowWatcher);
 
     /* bundles */
-    this.aeStringBundle = this.strBundleService.createBundle(
-      "chrome://attachmentextractor_cont/locale/attachmentextractor.properties"
-      );
-    this.messengerStringBundle = this.strBundleService.createBundle(
+    this.aeStringBundle = Services.strings.createBundle(
+      "chrome://attachmentextractor_cont/locale/attachmentextractor.properties");
+    this.messengerStringBundle = Services.strings.createBundle(
       "chrome://messenger/locale/messenger.properties");
   }
 

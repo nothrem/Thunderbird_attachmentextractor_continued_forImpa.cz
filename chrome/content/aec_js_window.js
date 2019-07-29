@@ -110,13 +110,10 @@ aewindow.init = function() {
   aewindow._fileStatusHbox = document.getElementById("status_file_hbox")
   aewindow.promptService = Cc["@mozilla.org/embedcomp/prompt-service;1"]
     .getService(Ci.nsIPromptService);
-  aewindow.strBundleService = (Cc["@mozilla.org/intl/stringbundle;1"]
-    .getService()).QueryInterface(Ci.nsIStringBundleService);
 
-  aewindow.aeStringBundle = aewindow.strBundleService.createBundle(
-    "chrome://attachmentextractor_cont/locale/attachmentextractor.properties"
-    );
-  aewindow.messengerStringBundle = aewindow.strBundleService.createBundle(
+  aewindow.aeStringBundle = Services.strings.createBundle(
+    "chrome://attachmentextractor_cont/locale/attachmentextractor.properties");
+  aewindow.messengerStringBundle = Services.strings.createBundle(
     "chrome://messenger/locale/messenger.properties");
 
   aewindow.startTime = (new Date()).getTime();

@@ -28,10 +28,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
     limitSuggestFolders: 1000,
 
     init: function() {
-      wdw_aecOptions.strBundleService = (Cc["@mozilla.org/intl/stringbundle;1"]
-      .getService()).QueryInterface(Ci.nsIStringBundleService);
-
-      wdw_aecOptions.aeStringBundle = wdw_aecOptions.strBundleService.createBundle(
+      wdw_aecOptions.aeStringBundle = Services.strings.createBundle(
         "chrome://attachmentextractor_cont/locale/attachmentextractor.properties");
 
       wdw_aecOptions.loadInitialPane();
