@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Gør mønsteret til standard"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Gem alle vedhæftede filer fra de valgte beskeder."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Bekræft fjernelse"
   },

@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Définir ce schéma par défaut"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Extrait les pièces jointes des messages sélectionnés"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirmation d'extraction"
   },

@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Imposta il modello come predefinito d'ora in poi"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Permette di estrarre tutti gli allegati dai messaggi selezionati"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Conferma prima di separare"
   },

@@ -79,8 +79,6 @@ pref("extensions.attachmentextractor_cont.savepathmru.count",5);
 pref("extensions.attachmentextractor_cont.setdatetoemail",false);
 pref("extensions.attachmentextractor_cont.queuerequests",true);
 
-pref("extensions.attachmentextractor_cont@thunderbird-mail.de.description","chrome://attachmentextractor_cont/locale/attachmentextractor.properties");
-
 pref("extensions.attachmentextractor_cont.skipidentical",false);
 pref("extensions.attachmentextractor_cont.suggestfolder",false);
 pref("extensions.attachmentextractor_cont.suggestfolder.parent",true);

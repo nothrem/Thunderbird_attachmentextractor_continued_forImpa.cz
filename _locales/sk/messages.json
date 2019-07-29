@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Nastaviť vzor naďalej ako pôvodný"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Uložiť všetky prílohy z vybraných správ"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Potvrdiť oddelenie"
   },

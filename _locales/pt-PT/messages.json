@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Aplicar o padrão como pré-definido a partir de agora"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Extrair todos os anexos das mensagens seleccionadas."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirmar Separação"
   },

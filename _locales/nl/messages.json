@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Dit patroon als standaard instellen vanaf nu"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Pakt alle bijlages uit van geselecteerde berichten."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Ontkoppelen bevestigen"
   },

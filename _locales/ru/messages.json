@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Установить в качестве шаблона по умолчанию теперь"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Извлечение вложений из выбранных сообщений"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Подтверждать отделение"
   },

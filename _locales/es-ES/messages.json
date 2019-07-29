@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Establecer el patrón por defecto a partir de ahora"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Permite extraer todos los adjuntos de los mensajes seleccionados."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirmar la separación"
   },

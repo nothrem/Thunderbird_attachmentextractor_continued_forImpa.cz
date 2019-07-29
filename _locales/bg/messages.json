@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Шаблон по подразбиране отсега нататък"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Извличане на всички прикачени файлове от избраните писма."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Потвърждение за откачане"
   },

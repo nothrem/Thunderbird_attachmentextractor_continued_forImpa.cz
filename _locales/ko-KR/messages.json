@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "이후 기본 형식으로 지정"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "선택한 메세지 내 모든 첨부 추출"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "첨부 파일 분리의 확인"
   },

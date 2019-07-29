@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Používat tuto šablonu jako výchozí"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Ukládá přílohy z vybraných zpráv."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Potvrzení vyčlenění"
   },

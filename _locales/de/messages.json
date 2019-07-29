@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Dieses Dateinamenmuster als Standard verwenden."
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Ermöglicht das massenweise und (teil-)automatisierte Abtrennen von Anhängen aus Nachrichten"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Abtrennen bestätigen"
   },

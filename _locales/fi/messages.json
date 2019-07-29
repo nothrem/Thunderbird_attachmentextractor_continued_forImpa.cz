@@ -725,9 +725,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Aseta malli oletukseksi tästä lähtien"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Poimii kaikki liitetiedostot valituista viesteistä."
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Vahvista poiminta"
   },

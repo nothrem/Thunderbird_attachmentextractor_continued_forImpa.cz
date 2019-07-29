@@ -727,9 +727,6 @@
   "FileNamePatternDialogQuestion": {
     "message": "Set the pattern as default from now on"
   },
-  "extensions.attachmentextractor_cont@thunderbird-mail.de.description": {
-    "message": "Enables mass and (partially) automated detachment of attachments from messages"
-  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirm Detaching"
   },
