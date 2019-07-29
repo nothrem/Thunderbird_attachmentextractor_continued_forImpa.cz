@@ -446,6 +446,14 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
     appendFolderItem: function (aFolderName, aKey) {
       let item = this.mFolderListBox.appendItem(aFolderName, aKey);
+
+      // focus on the new appended item
+      this.mFolderListBox.ensureIndexIsVisible(item);
+      this.mFolderListBox.selectItem(item);
+      this.mFolderListBox.focus();
+
+      this.setButtonStatus();
+
       return item;
     },
   
@@ -486,7 +494,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
             moreloops = false;
             // console.log('AEC no more npref');
             AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
-            console.log('AEC clear last cpref' + i);
+            // console.log('AEC clear last cpref without a following npref');
           }
           if (npref) {
             AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i, npref);
@@ -499,10 +507,18 @@ if ("undefined" == typeof(wdw_aecOptions)) {
         itemToRemove.remove();
         var numItemsInListBox = this.mFolderListBox.getRowCount();
         this.mFolderListBox.selectedIndex = index < numItemsInListBox ? index : numItemsInListBox - 1;
+
+        this.setButtonStatus();
       }
     },
 
     addFolder: function () {
+      /************************************************
+       * This would loop through prefs to count existing 
+       * suggest folders. As an advantage, in case of a 
+       * (theoretically nonexistent) gap in the 
+       * suggest folders prefs numbers, the gap would 
+       * be filled.
       let i = 0;
       let moreloops = true;
       do {
@@ -513,28 +529,37 @@ if ("undefined" == typeof(wdw_aecOptions)) {
           moreloops = false; 
         }
       } while (moreloops && i < this.limitSuggestFolders);
+      *************************************************/
+      /************************************************
+       * Using the simple richlistbox.count function to
+       * get the existing suggest folders number.
+       * **********************************************/
+      i = this.mFolderListBox.itemCount;
+      n = i + 1;
 
-      this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
-
-      /******** Focus isn't working this way *******
-      let item = this.mFolderListBox.getItemAtIndex(i);
-      console.log(item);
-      console.log(i);
-      this.mFolderListBox.ensureIndexIsVisible(item);
-      this.mFolderListBox.selectItem(item);
-      this.mFolderListBox.focus();
-      */
+      if (i < this.limitSuggestFolders) {
+        this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.'+n);
+      } else {
+        //console.log("AEC: There are a maximum of " + this.limitSuggestFolders + " suggest folders allowed by an internal setting in var limitSuggestFolders.");
+      }
     },
   
-    onSelectFolder: function () {
-      let btnRemove = document.getElementById("removeFolderButton");
-      let listBox = document.getElementById("suggestfolderlist");
+    setButtonStatus: function () {
+      let btnRemove = document.getElementById("removeSuggestfolderButton");
+      let btnAdd = document.getElementById("addSuggestfolderButton");
   
-      if (listBox.selectedCount > 0)
+      if (this.mFolderListBox.selectedCount > 0)
         btnRemove.removeAttribute("disabled");
       else
         btnRemove.setAttribute("disabled", "true");
-    },
+
+      if (this.mFolderListBox.itemCount < this.limitSuggestFolders) {
+        btnAdd.removeAttribute("disabled");
+      }
+      else {
+        btnAdd.setAttribute("disabled", "true");
+      }
+      },
 
   };
 }

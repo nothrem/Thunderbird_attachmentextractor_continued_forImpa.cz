@@ -132,14 +132,15 @@
                       <richlistbox id="suggestfolderlist" 
                         style="height: 10em;"
                         flex="1"
-                        onselect="wdw_aecOptions.onSelectFolder();">
+                        onselect="wdw_aecOptions.setButtonStatus();">
                       </richlistbox>
                       <vbox>
-                        <button id="addFolderButton" 
+                        <button id="addSuggestfolderButton" 
+                          disabled="true" 
                           oncommand="wdw_aecOptions.addFolder();" 
                           label="&addButton.label;"
                           accesskey="&addButton.accesskey;"/>
-                        <button id="removeFolderButton" 
+                        <button id="removeSuggestfolderButton" 
                           disabled="true" 
                           oncommand="wdw_aecOptions.removeFolder();" 
                           label="&removeButton.label;"
