@@ -103,4 +103,8 @@ function AEPrefs() {
     return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).prefHasUserValue(pref);
   };
+  this.clearUserPref = function clearUserPref(pref, branch) {
+    return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
+      .getBranch(branch)).clearUserPref(pref);
+  };
 };

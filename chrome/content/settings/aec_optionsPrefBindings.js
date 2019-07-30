@@ -212,7 +212,7 @@ Preferences.addAll([{
 },
 {
   id: "extensions.attachmentextractor_cont.suggestfolder.parent",
-  type: "bool"
+  type: "string"
 },
 {
   id: "extensions.attachmentextractor_cont.suggestfolder.excludekeywords",
@@ -220,11 +220,11 @@ Preferences.addAll([{
 },
 {
   id: "extensions.attachmentextractor_cont.reportgen.thumbnail",
-  type: "string"
+  type: "bool"
 },
 {
   id: "extensions.attachmentextractor_cont.reportgen.embedcss",
-  type: "string"
+  type: "bool"
 },
 {
   id: "extensions.attachmentextractor_cont.reportgen.reportname",
