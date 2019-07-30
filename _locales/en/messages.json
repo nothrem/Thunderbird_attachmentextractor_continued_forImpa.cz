@@ -278,11 +278,9 @@
   "attachmentextractor.settings.fixdetachedimages.label": {
     "message": "Apply fix to show Detached Images Inline."
   },
- 
   "attachmentextractor.settings.fixdetachedimages.linktext": {
     "message": "Documentation Available"
   },
- 
   "attachmentextractor.settings.fixdetachedimages.accesskey": {
     "message": "D"
   },

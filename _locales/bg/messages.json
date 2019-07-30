@@ -808,29 +808,5 @@
   },
   "DateTime": {
     "message": "Дата/Час"
-  },
-  "ExtractionStarted": {
-    "message": "Започнато извличане [на Дата/Час: %S]"
-  },
-  "ExtractionEnded": {
-    "message": "Завършено извличане [на Дата/Час: %S]"
-  },
-  "ReportTitle": {
-    "message": "AE Генериран Доклад"
-  },
-  "Heading": {
-    "message": "AttachmentExtractor Continued Доклад"
-  },
-  "Subject": {
-    "message": "Тема"
-  },
-  "From": {
-    "message": "От"
-  },
-  "To": {
-    "message": "До"
-  },
-  "DateTime": {
-    "message": "Дата/Час"
   }
 }
