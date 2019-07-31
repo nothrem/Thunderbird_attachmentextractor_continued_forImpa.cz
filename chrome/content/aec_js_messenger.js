@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 var {
-  MailServices
-} = ChromeUtils.import("resource:///modules/MailServices.jsm");
-var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
+var {
+  MailServices
+} = ChromeUtils.import("resource:///modules/MailServices.jsm");
 
 function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   mDetachedFileUris, aewindow) {
