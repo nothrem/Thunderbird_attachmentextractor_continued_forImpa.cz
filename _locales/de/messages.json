@@ -423,7 +423,7 @@
     "message": "P"
   },
   "attachmentextractor.settings.reportgen.thumbnail.label": {
-    "message": "Wenn möglich Bildminiaturen für Anhänge im Report integrieren (Hinweis: sehr langsam)"
+    "message": "Wenn möglich Bildminiaturen für Anhänge im Report integrieren"
   },
   "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
     "message": "B"
