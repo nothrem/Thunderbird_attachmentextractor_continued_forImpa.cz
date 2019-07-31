@@ -369,7 +369,7 @@
     "message": "S"
   },
   "attachmentextractor.settings.after-launch.label": {
-    "message": "Jeden Anhang mit der ihr zugeordneten Standardanwendung öffnen"
+    "message": "Jeden Anhang mit der zugeordneten Standardanwendung öffnen"
   },
   "attachmentextractor.settings.after-launch.accesskey": {
     "message": "z"
@@ -621,7 +621,7 @@
     "message": "Durchsuchen…"
   },
   "attachmentextractor.settings.autoextract.ontriggeronly.label": {
-    "message": "Anhänge nur automatisch abtrennen bei Nachrichten mit passendem Schlagwort"
+    "message": "Anhänge nur bei Nachrichten mit passendem Schlagwort automatisch abtrennen"
   },
   "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
     "message": "O"
@@ -753,7 +753,7 @@
     "message": "Hoppla!"
   },
   "GenericErrorMessage2": {
-    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, wenden Sie sich bitte per https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues an den Autor und teilen Sie ihm alle Fehlermeldungen und Details die in der Fehler-Konsole von Thunderbird angezeigt werden mit."
+    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, erstellen Sie bitte ein Fehlerticket auf GitLab (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) und teilen Sie dem Autor alle Fehlermeldungen und Details mit, die in der Fehler-Konsole von Thunderbird angezeigt werden."
   },
   "StatusTextStarting": {
     "message": "AE: Abtrennen der markierten Anhänge gestartet"

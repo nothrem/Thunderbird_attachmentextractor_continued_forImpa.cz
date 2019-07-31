@@ -53,7 +53,7 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Jeden Anhang mit der ihr zugeordneten Standardanwendung öffnen">
+<!ENTITY attachmentextractor.settings.after-launch.label "Jeden Anhang mit der zugeordneten Standardanwendung öffnen">
 <!ENTITY attachmentextractor.settings.after-launch.accesskey "z">
 <!ENTITY attachmentextractor.settings.after-endlaunch.label "Alle Anhänge mit folgender Anwendung öffnen:">
 <!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "w">
@@ -138,7 +138,7 @@
 <!ENTITY attachmentextractor.settings.autoextract.accesskey "A">
 <!ENTITY attachmentextractor.settings.autoextract.savefolder.label "Speicherpfad für Anhänge:">
 <!ENTITY attachmentextractor.settings.autoextract.savefolder.browsebutton "Durchsuchen…">
-<!ENTITY attachmentextractor.settings.autoextract.ontriggeronly.label "Anhänge nur automatisch abtrennen bei Nachrichten mit passendem Schlagwort">
+<!ENTITY attachmentextractor.settings.autoextract.ontriggeronly.label "Anhänge nur bei Nachrichten mit passendem Schlagwort automatisch abtrennen">
 <!ENTITY attachmentextractor.settings.autoextract.ontriggeronly.accesskey "O">
 <!ENTITY attachmentextractor.settings.autoextract.triggertag.label "Anhang abtrennen bei folgendem Schlagwort:">
 <!ENTITY attachmentextractor.settings.autoextract.cleartriggertag.label "Schlagwort der Nachricht entfernen">
