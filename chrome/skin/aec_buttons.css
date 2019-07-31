@@ -4,8 +4,8 @@
 
 #attachmentextractor-toolbarbutton .toolbarbutton-icon,
 .hdrAEButton .toolbarbutton-icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   min-width: unset;
   min-height: unset;
 }
@@ -16,5 +16,5 @@
 
 #attachmentextractor-toolbarbutton,
 .hdrAEButton {
-  list-style-image: url("chrome://attachmentextractor_cont/skin/aec_icon_color.svg");
+  list-style-image: url("chrome://attachmentextractor_cont/skin/aec_icon_contextfill.svg");
 }

@@ -423,6 +423,9 @@
                 <hbox>
                   <html:h1 class="subcategory">&attachmentextractor.settings.autotab.label;</html:h1>
                 </hbox>
+
+                <separator class="thin"/>
+
                 <groupbox>
                   <checkbox id="autoextract" 
                     label="&attachmentextractor.settings.autoextract.label;" 
