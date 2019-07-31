@@ -73,8 +73,8 @@
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "P">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Wenn möglich Bildminiaturen für Anhänge im Report integrieren">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "B">
-<!ENTITY attachmentextractor.settings.reportgen.embedcss.label "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden">
-<!ENTITY attachmentextractor.settings.reportgen.embedcss.accesskey "F">
+<!ENTITY attachmentextractor.settings.reportgen.embedcss.label "Stylesheet aus der CSS-Datei direkt in das Protokoll einbinden, anstatt die CSS-Datei zu verknüpfen">
+<!ENTITY attachmentextractor.settings.reportgen.embedcss.accesskey "y">
 <!ENTITY attachmentextractor.settings.reportgen.cssfile.caption "Für das Protokoll zu verwendendes Stylesheet:">
 <!ENTITY attachmentextractor.settings.reportgen.reportname2.label "Dateiname (oder absolute Pfadangabe) für die Reportdatei:">
 <!ENTITY attachmentextractor.settings.reportgen.button.label "Protokollgenerator…">

@@ -429,10 +429,10 @@
     "message": "B"
   },
   "attachmentextractor.settings.reportgen.embedcss.label": {
-    "message": "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden"
+    "message": "Stylesheet aus der CSS-Datei direkt in das Protokoll einbinden, anstatt die CSS-Datei zu verknüpfen"
   },
   "attachmentextractor.settings.reportgen.embedcss.accesskey": {
-    "message": "F"
+    "message": "y"
   },
   "attachmentextractor.settings.reportgen.cssfile.caption": {
     "message": "Für das Protokoll zu verwendendes Stylesheet:"
