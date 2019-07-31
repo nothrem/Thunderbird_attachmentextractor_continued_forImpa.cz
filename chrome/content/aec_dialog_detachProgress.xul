@@ -14,10 +14,12 @@
   onunload="aewindow.uninit();" 
   orient="vertical" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+  xmlns:html="http://www.w3.org/1999/xhtml" 
   windowtype="mail:AEDialog" 
   resizeable="no" 
   persist="screenX screenY"
-  style="margin: 30px;">
+  style="margin: 20px;">
 
   <script type="application/x-javascript" 
     src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
@@ -94,61 +96,74 @@
 
   <groupbox align="center" 
     orient="vertical">
-    <hbox align="center">
-      <text id="status1" 
-        value="&attachmentextractor.progress.status1.text;" 
-        style="font-weight: bold; font-size: x-large;"/>
+    <vbox align="center">
       <image src="chrome://attachmentextractor_cont/skin/animation.gif" 
         minwidth="150px" 
         minheight="50px"/>
-    </hbox>
+      <separator class="thin"/>
+      <text id="status1" 
+        value="&attachmentextractor.progress.status1.text;" 
+        style="font-weight: bold; font-size: large;"/>
+    </vbox>
     <separator class="thin"/>
-    <vbox>
-      <hbox>
-        <description id="status_message" 
-          value="&attachmentextractor.progress.status.message.text;"/>
-        <progressmeter flex="1" 
-          id="progress_message" 
-          mode="undetermined" 
-          value="50"/>
-        <description id="status2" 
-          value="&attachmentextractor.progress.status2.text;"/>
-      </hbox>
-      <hbox id="subjecthbox" 
-        pack="center">
-        <description id="subjecttext" 
-          value="" 
-          crop="end"/>
-      </hbox>
+    <separator class="thin"/>
+    <separator class="thin"/>
+    <vbox align="center">
+      <vbox>
+        <hbox>
+          <description id="status_message" 
+            style="min-width: 6em;"
+            value="&attachmentextractor.progress.status.message.text;"/>
+          <html:progress max="100" 
+            flex="1" 
+            id="progress_message" 
+            mode="undetermined" 
+            value="50"/>
+          <description id="status2" 
+            value="&attachmentextractor.progress.status2.text;"/>
+        </hbox>
+        <hbox id="subjecthbox" 
+          pack="center">
+          <description id="subjecttext" 
+            value="" 
+            crop="end"/>
+        </hbox>
 
-      <hbox>
-        <description id="status_attachment" 
-          value="&attachmentextractor.progress.status.attachment.text;"/>
-        <progressmeter flex="1" 
-          id="progress_attachment" 
-          mode="determined" 
-          value="0"/>
-        <description id="status3" 
-          value=""/>
-      </hbox>
-      <hbox id="filenamehbox" 
-        pack="center">
-        <description id="filenametext" 
-          value="" 
-          crop="end"/>
-      </hbox>
-      <hbox id="status_file_hbox" 
-        hidden="true">
-        <description id="status_file" 
-          value="&attachmentextractor.progress.status.file.text;"/>
-        <progressmeter flex="1" 
-          id="progress_file" 
-          mode="undetermined" 
-          value="0"/>
-        <description id="status4" 
-          value=""/>
-      </hbox>
-
+        <hbox>
+          <description id="status_attachment" 
+            style="min-width: 6em;"
+            value="&attachmentextractor.progress.status.attachment.text;"/>
+          <html:progress max="100" 
+            flex="1" 
+            id="progress_attachment" 
+            mode="determined" 
+            value="0"/>
+          <description id="status3" 
+            value=""/>
+        </hbox>
+        <hbox id="filenamehbox"
+          pack="center">
+          <description id="filenametext" 
+            value="" 
+            crop="end"/>
+        </hbox>
+        <hbox id="status_file_hbox" 
+          hidden="true">
+          <description id="status_file" 
+            value="&attachmentextractor.progress.status.file.text;"/>
+          <html:progress max="100" 
+            flex="1" 
+            id="progress_file" 
+            mode="undetermined" 
+            value="0"/>
+          <hbox id="filetexthbox"
+            pack="center">
+            <description id="status4" 
+            value="" 
+            crop="end"/>
+          </hbox>
+        </hbox>
+      </vbox>
     </vbox>
   </groupbox>
 
