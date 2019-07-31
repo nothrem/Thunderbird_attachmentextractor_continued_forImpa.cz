@@ -423,13 +423,13 @@
     "message": "P"
   },
   "attachmentextractor.settings.reportgen.thumbnail.label": {
-    "message": "Wenn möglich Bildminiaturen für Anhänge verwenden"
+    "message": "Wenn möglich Bildminiaturen für Anhänge im Report integrieren (Hinweis: sehr langsam)"
   },
   "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
     "message": "B"
   },
   "attachmentextractor.settings.reportgen.embedcss.label": {
-    "message": "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden."
+    "message": "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden"
   },
   "attachmentextractor.settings.reportgen.embedcss.accesskey": {
     "message": "F"

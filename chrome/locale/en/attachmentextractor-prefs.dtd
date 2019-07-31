@@ -73,7 +73,7 @@
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML Report Generator">
 <!ENTITY attachmentextractor.settings.reportgen.label "Generate a report every time AttachmentExtractor Continued is run.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
-<!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Use Image thumbnails where possible for attachments.">
+<!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Use Image thumbnails where possible for attachments (Note: very slow).">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "I">
 <!ENTITY attachmentextractor.settings.reportgen.embedcss.label "Embed the style information in the report, rather than linking to the stylesheet.">
 <!ENTITY attachmentextractor.settings.reportgen.embedcss.accesskey "E">

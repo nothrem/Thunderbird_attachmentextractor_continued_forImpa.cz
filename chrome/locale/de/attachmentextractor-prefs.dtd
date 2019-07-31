@@ -71,9 +71,9 @@
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML-Protokollgenerator">
 <!ENTITY attachmentextractor.settings.reportgen.label "Jede Ausführung von &quot;AttachmentExtractor Continued&quot; protokollieren">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "P">
-<!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Wenn möglich Bildminiaturen für Anhänge verwenden">
+<!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Wenn möglich Bildminiaturen für Anhänge im Report integrieren (Hinweis: sehr langsam)">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "B">
-<!ENTITY attachmentextractor.settings.reportgen.embedcss.label "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden.">
+<!ENTITY attachmentextractor.settings.reportgen.embedcss.label "Im Protokoll Formatierungsinformationen anstelle einer Verknüpfung mit dem Stylesheet verwenden">
 <!ENTITY attachmentextractor.settings.reportgen.embedcss.accesskey "F">
 <!ENTITY attachmentextractor.settings.reportgen.cssfile.caption "Für das Protokoll zu verwendendes Stylesheet:">
 <!ENTITY attachmentextractor.settings.reportgen.reportname2.label "Dateiname (oder absolute Pfadangabe) für die Reportdatei:">

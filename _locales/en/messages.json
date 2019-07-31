@@ -423,7 +423,7 @@
     "message": "G"
   },
   "attachmentextractor.settings.reportgen.thumbnail.label": {
-    "message": "Use Image thumbnails where possible for attachments."
+    "message": "Use Image thumbnails where possible for attachments (Note: very slow)."
   },
   "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
     "message": "I"
