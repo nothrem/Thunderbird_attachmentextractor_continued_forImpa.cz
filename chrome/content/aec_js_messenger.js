@@ -2,6 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+var {
+  MailServices
+} = ChromeUtils.import("resource:///modules/MailServices.jsm");
+var {
+  Services
+} = ChromeUtils.import("resource://gre/modules/Services.jsm");
+
 function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   mDetachedFileUris, aewindow) {
   var mMessageService = mMessenger.messageServiceFromURI(
@@ -523,11 +530,11 @@ var aeMessenger = {
         ":")) + "\n");
     }
     var startupUrl = obj.createInstance(this.Ci.nsIURI);
-    aedump('{function:aeMessenger.createStartupUrl: (before mutuate) ' +
+    aedump('{function:aeMessenger.createStartupUrl: (before mutate) ' +
       startupUrl + ' }\n', 2);
     //	startupUrl.spec=uri;
     startupUrl = startupUrl.mutate().setSpec(uri).finalize();
-    aedump('{function:aeMessenger.createStartupUrl: (after mutuate) ' +
+    aedump('{function:aeMessenger.createStartupUrl: (after mutate) ' +
       startupUrl + ' }\n', 2);
     return startupUrl;
 
@@ -747,7 +754,18 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
       /*var args= new Array(afterFunc,10);
       for (var i=0;i<afterFuncArgs.length;i++) args.push(afterFuncArgs[i]);
       setTimeout.apply(null,args);*/
-      eval(afterEval);
+
+      // console.log("AEC afterEval / eval is called");
+      // console.log("AEC afterEval: " + afterEval);
+
+      // eval(afterEval);
+      // try to replace eval() with the following 3 lines
+      // not sure if it is working because of an other error 
+      // we don't arrive here at this development status
+      let aeSandbox = new Components.utils.Sandbox();
+      aeSandbox.afterEval = afterEval;
+      Components.utils.evalInSandbox(afterEval, aeSandbox);
+
       afterEval = null;
     }
   }
