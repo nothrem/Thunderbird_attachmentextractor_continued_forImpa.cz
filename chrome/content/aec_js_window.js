@@ -161,6 +161,7 @@ aewindow.consumeAETask = function() {
   aewindow.aedump('current task: ' + aewindow.currentTask + "\n", 2);
   if (!aewindow.currentTask) {
     aewindow.aedump("// AEDialog close.\n", 2);
+    console.log("AEC: window.close - if this is working/called again, then remove the window.close command in line 440");
     window.close();
     //aewindow.aedump("// timespent: "+(((new Date).getTime())-aewindow.startTime)+" \n");
     return null;
@@ -418,7 +419,11 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
         }
       }
     }
-    setTimeout(aewindow.consumeAETask, 1);
+    // console.log("setTimeout");
+    // seems to be working okay
+    setTimeout(function() {
+      aewindow.consumeAETask
+    }, 1);
     if (that.isNotifywhendoneEnabled && aewindow.remainingTasks == 0 && !
       aewindow.taskWaiting)
       aewindow.currentTask.alertCheck(
@@ -430,7 +435,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
           "DoneExtractingDialogNotifyAgain"),
         'notifywhendone',
         true);
-    //window.close();
+    // the following line was commented out in the original Addon
+    window.close();
   };
 
   this.tidyUp = function() {
@@ -967,9 +973,11 @@ if (typeof AEMessage == "undefined") {
         .filemaker.lastMadeAppendage;
       if (needsTimeout) {
         aewindow.currentMessage.saveAtt_cleanUpFilter(attachmentindex);
-        this.zerofileTimeout = setTimeout(
-          "aewindow.currentMessage.saveAtt_cleanUp(" + attachmentindex +
-          ",false)", 5000);
+        console.log("setTimeout");
+        // not yet proofed
+        this.zerofileTimeout = setTimeout(function() {
+          aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, false)
+        }, 5000);
       }
     } else aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
   };
@@ -979,9 +987,13 @@ if (typeof AEMessage == "undefined") {
     if (sfile == null || (sfile.exists() && sfile.fileSize >
         0 /*aewindow.downloadManager.activeDownloadCount==0*/ )) {
       aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, false);
-    } else this.cleanUpFilterTimeout = setTimeout(
-      "aewindow.currentMessage.saveAtt_cleanUpFilter(" + attachmentindex +
-      ")", 5);
+    } else {
+      console.log("setTimeout");
+      // not yet proofed
+      this.cleanUpFilterTimeout = setTimeout(function() {
+          aewindow.currentMessage.saveAtt_cleanUpFilter(attachmentindex)
+        }, 5);        
+    }
   };
 
   AEMessage.prototype.saveAtt_cleanUp = function(attachmentindex, failure) {
@@ -1012,12 +1024,18 @@ if (typeof AEMessage == "undefined") {
     aewindow.progress_tracker.stopping_attachment(attachmentindex);
     attachmentindex++;
     if (attachmentindex >= this.attachments_ct.length) {
-      setTimeout("aewindow.currentMessage.doAfterActions(" + aewindow
-        .progress_tracker.message_states.MARKREAD + ")",
-        this.prefs.get("nextattachmentdelay"));
+      // console.log("setTimeout");
+      // seems to be working okay
+      setTimeout(function() {
+        aewindow.currentMessage.doAfterActions(aewindow
+          .progress_tracker.message_states.MARKREAD)
+        }, this.prefs.get("nextattachmentdelay"));
     } else {
-      setTimeout("aewindow.currentMessage.saveAtt(" + attachmentindex + ")",
-        this.prefs.get("nextattachmentdelay"));
+      // console.log("setTimeout");
+      // seems to be working okay
+      setTimeout(function() {
+        aewindow.currentMessage.saveAtt(attachmentindex)
+      }, this.prefs.get("nextattachmentdelay"));
     }
   };
 
@@ -1043,133 +1061,141 @@ if (typeof AEMessage == "undefined") {
               thistask.filemaker.makeSaveMessage(this.headerDataCache));
             break;
           }
-          case states.CLEARTAG:
-            if (thistask.isCleartagEnabled && !this.isNewsMessage()) {
-              aewindow.aedump('{function:AEMessage.doCleartag}\n', 2);
-              var uriarray = aewindow.nsIArray;
-              var triggerTag = this.prefs.get("autoextract.triggertag");
-              var hdr = thistask.getMessageHeader();
-              if (uriarray.appendElement) uriarray.appendElement(hdr,
-              false); //tb3
-              else uriarray.AppendElement(hdr); // tb2
-              try {
-                if (hdr.folder.removeKeywordsFromMessages) hdr.folder
-                  .removeKeywordsFromMessages(uriarray, triggerTag); //tb3
-                else hdr.folder.removeKeywordFromMessages(uriarray,
-                  triggerTag); //tb2
-              } catch (e) {
-                aewindow.aedump(
-                  "// removeKeywordFromMessages throws error: " + e + "\n",
-                  1);
-              }
+        case states.CLEARTAG:
+          if (thistask.isCleartagEnabled && !this.isNewsMessage()) {
+            aewindow.aedump('{function:AEMessage.doCleartag}\n', 2);
+            var uriarray = aewindow.nsIArray;
+            var triggerTag = this.prefs.get("autoextract.triggertag");
+            var hdr = thistask.getMessageHeader();
+            if (uriarray.appendElement) uriarray.appendElement(hdr,
+            false); //tb3
+            else uriarray.AppendElement(hdr); // tb2
+            try {
+              if (hdr.folder.removeKeywordsFromMessages) hdr.folder
+                .removeKeywordsFromMessages(uriarray, triggerTag); //tb3
+              else hdr.folder.removeKeywordFromMessages(uriarray,
+                triggerTag); //tb2
+            } catch (e) {
+              aewindow.aedump(
+                "// removeKeywordFromMessages throws error: " + e + "\n",
+                1);
             }
-            case states.DETACH:
-              if (thistask.isDetachEnabled && !this.isNewsMessage() && !this
-                .isRSSMessage()) {
-                aewindow.aedump('{function:AEMessage.doDetach}\n', 2);
-                aewindow.progress_tracker.state = states.DETACH;
-                thistask.listeningforMessageId = thistask.getMessageHeader()
-                  .messageId;
-                var acl = aewindow.arraycompact(this.attachments_ct);
-                if (acl.length > 0) {
-                  if (thistask.detachMode != 0) {
-                    var deleteAtt = (thistask.detachMode == 1) || !thistask
-                      .isExtractEnabled;
-                    var savedfiles = (deleteAtt) ? null : aewindow
-                      .arraycompact(this.attachments_savedfile);
-                    this.detachTempFile = aeMessenger.detachAttachments(
-                      aewindow.messenger, aewindow.msgWindow, acl,
-                      aewindow.arraycompact(this.attachments_url),
-                      aewindow.arraycompact(this.attachments_display),
-                      aewindow.arraycompact(this.attachments_uri),
-                      savedfiles);
-                  } else {
-                    aewindow.messenger.detachAllAttachments(acl.length, acl,
-                      aewindow.arraycompact(this.attachments_url),
-                      aewindow.arraycompact(this.attachments_display),
-                      aewindow.arraycompact(this.attachments_uri),
-                      false);
-                  }
-                  thistask.detachCancellationTimeout = setTimeout(
-                    "aewindow.currentMessage.doAfterActions(" + states
-                    .DELTEMPFILE + ")", 5000);
-                  break;
-                }
+          }
+        case states.DETACH:
+          if (thistask.isDetachEnabled && !this.isNewsMessage() && !this
+            .isRSSMessage()) {
+            aewindow.aedump('{function:AEMessage.doDetach}\n', 2);
+            aewindow.progress_tracker.state = states.DETACH;
+            thistask.listeningforMessageId = thistask.getMessageHeader()
+              .messageId;
+            var acl = aewindow.arraycompact(this.attachments_ct);
+            if (acl.length > 0) {
+              if (thistask.detachMode != 0) {
+                var deleteAtt = (thistask.detachMode == 1) || !thistask
+                  .isExtractEnabled;
+                var savedfiles = (deleteAtt) ? null : aewindow
+                  .arraycompact(this.attachments_savedfile);
+                this.detachTempFile = aeMessenger.detachAttachments(
+                  aewindow.messenger, aewindow.msgWindow, acl,
+                  aewindow.arraycompact(this.attachments_url),
+                  aewindow.arraycompact(this.attachments_display),
+                  aewindow.arraycompact(this.attachments_uri),
+                  savedfiles);
+              } else {
+                aewindow.messenger.detachAllAttachments(acl.length, acl,
+                  aewindow.arraycompact(this.attachments_url),
+                  aewindow.arraycompact(this.attachments_display),
+                  aewindow.arraycompact(this.attachments_uri),
+                  false);
               }
-              case states.DELTEMPFILE:
-                if (this.detachTempFile) {
-                  aewindow.aedump(
-                    '{function:AEMessage.deleteDetachTempfile}\n', 2);
-                  try {
-                    this.detachTempFile.remove(false);
-                  } catch (e) {
-                    aewindow.aedump(e);
-                  }
-                  this.detachTempFile = null;
-                }
-                case states.SAVEMETADATA:
-                  if (thistask.isExtractEnabled) {
-                    thistask.getMessageHeader().setStringProperty(
-                      "AEMetaData.savepath", thistask.filemaker.destFolder
-                      .path);
-                    var Cc = Components.classes;
-                    var Ci = Components.interfaces;
+              // console.log("setTimeout");
+              // seems to be working okay
+              thistask.detachCancellationTimeout = setTimeout(function() {
+                aewindow.currentMessage.doAfterActions(states
+                .DELTEMPFILE)
+              }, 5000);
+              break;
+            }
+          }
+        case states.DELTEMPFILE:
+          if (this.detachTempFile) {
+            aewindow.aedump(
+              '{function:AEMessage.deleteDetachTempfile}\n', 2);
+            try {
+              this.detachTempFile.remove(false);
+            } catch (e) {
+              aewindow.aedump(e);
+            }
+            this.detachTempFile = null;
+          }
+        case states.SAVEMETADATA:
+          if (thistask.isExtractEnabled) {
+            thistask.getMessageHeader().setStringProperty(
+              "AEMetaData.savepath", thistask.filemaker.destFolder
+              .path);
+            var Cc = Components.classes;
+            var Ci = Components.interfaces;
 
-                    var fileHandler = Cc["@mozilla.org/network/io-service;1"]
-                      .getService(Ci.nsIIOService).getProtocolHandler("file")
-                      .QueryInterface(Ci.nsIFileProtocolHandler);
-                    var meta = null;
-                    var savedfiles = aewindow.arraycompact(this
-                      .attachments_savedfile);
-                    for (var u = 0; u < savedfiles.length; ++u) {
-                      meta = (meta) ? meta + "," : meta = "";
-                      meta += fileHandler.getURLSpecFromFile(savedfiles[u])
-                        .replace(/,/g, "%2C");
-                    }
-                    if (meta) thistask.getMessageHeader().setStringProperty(
-                      "AEMetaData.savedfiles", meta);
-                  }
-                  case states.DELETE:
-                    thistask.listeningforMessageId = "";
-                    if (this.deleted) break;
-                    else this.deleted = true;
+            var fileHandler = Cc["@mozilla.org/network/io-service;1"]
+              .getService(Ci.nsIIOService).getProtocolHandler("file")
+              .QueryInterface(Ci.nsIFileProtocolHandler);
+            var meta = null;
+            var savedfiles = aewindow.arraycompact(this
+              .attachments_savedfile);
+            for (var u = 0; u < savedfiles.length; ++u) {
+              meta = (meta) ? meta + "," : meta = "";
+              meta += fileHandler.getURLSpecFromFile(savedfiles[u])
+                .replace(/,/g, "%2C");
+            }
+            if (meta) thistask.getMessageHeader().setStringProperty(
+              "AEMetaData.savedfiles", meta);
+          }
+        case states.DELETE:
+          thistask.listeningforMessageId = "";
+          if (this.deleted) break;
+          else this.deleted = true;
 
-                    aewindow.progress_tracker.stopping_message(this
-                      .messageIndex);
-                    if (thistask.isDeleteEnabled && !this.isNewsMessage()) {
-                      aewindow.aedump('{function:AEMessage.doDelete}\n', 2);
-                      /*aewindow.gDBView.doCommand(7); // 7 = deleteMsg
-                      aewindow.gDBView.onDeleteCompleted(true);*/
-                      var messageArray = aewindow.nsIArray;
-                      var hdr = thistask.getMessageHeader();
-                      if (messageArray.appendElement) messageArray
-                        .appendElement(hdr, false); //tb3
-                      else messageArray.AppendElement(hdr); // tb2
-                      function DCopyListener(aewindow, delay) {
-                        this.OnStartCopy = function() {}
-                        this.OnProgress = function(aProgress, aProgressMax) {}
-                        this.GetMessageId = function() {
-                          return null
-                        }
-                        this.SetMessageKey = function(aKey) {}
-                        this.OnStopCopy = function(aStatus) {
-                          setTimeout(
-                            "aewindow.currentTask.selectNextMessage()",
-                            delay);
-                        }
-                      };
-                      var dCopyListener = new DCopyListener(aewindow, this
-                        .prefs.get("nextmessagedelay"));
-                      hdr.folder.deleteMessages(messageArray, aewindow
-                        .msgWindow, false, false, dCopyListener, true);
-                      break;
-                    }
-                    setTimeout("aewindow.currentTask.selectNextMessage()",
-                      this.prefs.get("nextmessagedelay"));
-                    break;
-                  default:
-                    aewindow.aedump('{function:AEMessage.doAfterActions(' +
-                      startWithAction + ')}\n', 2);
+          aewindow.progress_tracker.stopping_message(this
+            .messageIndex);
+          if (thistask.isDeleteEnabled && !this.isNewsMessage()) {
+            aewindow.aedump('{function:AEMessage.doDelete}\n', 2);
+            /*aewindow.gDBView.doCommand(7); // 7 = deleteMsg
+            aewindow.gDBView.onDeleteCompleted(true);*/
+            var messageArray = aewindow.nsIArray;
+            var hdr = thistask.getMessageHeader();
+            if (messageArray.appendElement) messageArray
+              .appendElement(hdr, false); //tb3
+            else messageArray.AppendElement(hdr); // tb2
+            function DCopyListener(aewindow, delay) {
+              this.OnStartCopy = function() {}
+              this.OnProgress = function(aProgress, aProgressMax) {}
+              this.GetMessageId = function() {
+                return null
+              }
+              this.SetMessageKey = function(aKey) {}
+              this.OnStopCopy = function(aStatus) {
+                console.log("setTimeout");
+                // not yet proofed
+                setTimeout(function() {
+                  aewindow.currentTask.selectNextMessage()
+                }, delay);
+              }
+            };
+            var dCopyListener = new DCopyListener(aewindow, this
+              .prefs.get("nextmessagedelay"));
+            hdr.folder.deleteMessages(messageArray, aewindow
+              .msgWindow, false, false, dCopyListener, true);
+            break;
+          }
+          // console.log("setTimeout");
+          // seems to be working okay
+          setTimeout(function() {
+            aewindow.currentTask.selectNextMessage()
+          }, this.prefs.get("nextmessagedelay"));
+          break;
+        default:
+          aewindow.aedump('{function:AEMessage.doAfterActions(' +
+            startWithAction + ')}\n', 2);
     }
   };
 
