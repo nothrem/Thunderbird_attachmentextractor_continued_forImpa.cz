@@ -2,6 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");

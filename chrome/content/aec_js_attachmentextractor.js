@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-var {
-  Services
-} = ChromeUtils.import("resource://gre/modules/Services.jsm");
-
 try {
   if (typeof Cc == "undefined") var Cc = Components.classes;
   if (typeof Ci == "undefined") var Ci = Components.interfaces;
   if (typeof Cr == "undefined") var Cr = Components.results;
 } catch (e) {}
+
+var {
+  Services
+} = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
 if (typeof AttachmentExtractor == "undefined") {
   function AttachmentExtractor() {
@@ -348,8 +348,6 @@ if (typeof AttachmentExtractor == "undefined") {
   }
 
   AttachmentExtractor.prototype.getSaveFolder = function(pref, updatepref) {
-    var Cc = Components.classes;
-    var Ci = Components.interfaces;
     var fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
     var windowTitle = this.aeStringBundle.GetStringFromName(
       "FolderPickerDialogTitle");
@@ -371,7 +369,7 @@ if (typeof AttachmentExtractor == "undefined") {
         rv = result;
         done = true;
       });
-      let thread = Components.classes["@mozilla.org/thread-manager;1"]
+      let thread = Cc["@mozilla.org/thread-manager;1"]
         .getService().currentThread;
       while (!done) {
         thread.processNextEvent(true);
@@ -823,9 +821,9 @@ if (typeof AttachmentExtractor == "undefined") {
 							   
 		var mail;
 		try{
-			mail=item.QueryInterface(Components.interfaces.nsIMsgDBHdr);}
+			mail=item.QueryInterface(Ci.nsIMsgDBHdr);}
 		catch (e) {return;}
-		var folder=parentItem.QueryInterface(Components.interfaces.nsIMsgFolder); 
+		var folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
 		if (!(!mail.isRead && (mail.flags & 0x10000))) {
 			//aedump("// not a new mail so don't extract\n",3);
 			return; 
@@ -855,7 +853,7 @@ if (typeof AttachmentExtractor == "undefined") {
       return;
         var folder;
         try {
-          folder = item.QueryInterface(Components.interfaces.nsIMsgFolder);
+          folder = item.QueryInterface(Ci.nsIMsgFolder);
         } catch (e) {
           return;
         }
@@ -872,8 +870,8 @@ if (typeof AttachmentExtractor == "undefined") {
 		
 		var mail,folder;
 		try{
-			mail=item.QueryInterface(Components.interfaces.nsIMsgDBHdr);
-			folder=parentItem.QueryInterface(Components.interfaces.nsIMsgFolder); 
+			mail=item.QueryInterface(Ci.nsIMsgDBHdr);
+			folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
 		}catch (e) {return;}
 		if (!folder.getFlag( 0x0100) ) return;
 		aedump("{function:OnItemRemoved("+folder.prettyName+","+mail.subject+","+mail.folder.prettyName+")}\n",4);
@@ -893,7 +891,7 @@ if (typeof AttachmentExtractor == "undefined") {
         //aedump("{function:aefolderlistener.itemAdded}\n",3);
         var mail;
         try {
-          mail = item.QueryInterface(Components.interfaces.nsIMsgDBHdr);
+          mail = item.QueryInterface(Ci.nsIMsgDBHdr);
         } catch (e) {
           return;
         }
@@ -944,9 +942,9 @@ if (typeof AttachmentExtractor == "undefined") {
         
         var mail,folder;
         try{
-        	try{folder=item.QueryInterface(Components.interfaces.nsIMsgFolder); }catch (ee){}
+        	try{folder=item.QueryInterface(Ci.nsIMsgFolder); }catch (ee){}
         	if (!folder) {
-        		mail=item.QueryInterface(Components.interfaces.nsIMsgDBHdr);
+        		mail=item.QueryInterface(Ci.nsIMsgDBHdr);
         		folder=mail.folder; 
         	}
         }catch (e) {aedump(e);aedump(item);return;}

@@ -314,9 +314,8 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let taglist = document.getElementById('autotriggertag');
       if (taglist.selectedItem != null)
         return; //sometimes triggers twice. don't know why but stop it anyway.
-      let tagService = Components.classes[
-          "@mozilla.org/messenger/tagservice;1"]
-        .getService(Components.interfaces.nsIMsgTagService);
+      let tagService = Cc["@mozilla.org/messenger/tagservice;1"]
+        .getService(Ci.nsIMsgTagService);
       let tagArray = tagService.getAllTags({});
       if (tagArray) {
         for (let tagInfo of tagArray) {

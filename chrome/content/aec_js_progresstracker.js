@@ -2,6 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
@@ -116,8 +122,8 @@ var progress_tracker = {
     return (this.state == this.message_states.SAVING);
   },
 
-  windowManager: Components.classes['@mozilla.org/appshell/window-mediator;1']
-    .getService().QueryInterface(Components.interfaces.nsIWindowMediator),
+  windowManager: Cc['@mozilla.org/appshell/window-mediator;1']
+    .getService().QueryInterface(Ci.nsIWindowMediator),
 
   getWindowByType: function(type) {
     return this.windowManager.getMostRecentWindow(type);
@@ -161,9 +167,6 @@ var progress_tracker = {
 
 function AE_Reportgen() {
   var prefs = aewindow.prefs;
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
-  var Cr = Components.results;
 
   var aerg_document;
   var aerg_currentmessage;

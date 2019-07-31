@@ -2,6 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
@@ -51,17 +57,16 @@ var aewindow = {
     return (this._tasks.length > 0) ? this._tasks[0].currentMessage : null;
   },
 
-  _filecomponent: Components.classes["@mozilla.org/file/local;1"],
-  _fileinterface: Components.interfaces.nsIFile,
+  _filecomponent: Cc["@mozilla.org/file/local;1"],
+  _fileinterface: Ci.nsIFile,
   get fileObject() {
     return this._filecomponent.createInstance(this._fileinterface);
   },
 
-  _supportsarraycomponent: Components.classes[
-    '@mozilla.org/supports-array;1'],
-  _supportsarrayinterface: Components.interfaces.nsISupportsArray,
-  _arraycomponent: Components.classes['@mozilla.org/array;1'],
-  _mutablearrayinterface: Components.interfaces.nsIMutableArray,
+  _supportsarraycomponent: Cc['@mozilla.org/supports-array;1'],
+  _supportsarrayinterface: Ci.nsISupportsArray,
+  _arraycomponent: Cc['@mozilla.org/array;1'],
+  _mutablearrayinterface: Ci.nsIMutableArray,
   get nsIArray() {
     return (this.tb3) ? this._arraycomponent.createInstance(this
         ._mutablearrayinterface) :
@@ -102,8 +107,6 @@ aewindow.init = function() {
   aewindow.aedump = aedump;
   aewindow.AEMessage = AEMessage;
   window.onerror = aewindow.errorCatcher;
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
 
   aewindow.messenger = Cc["@mozilla.org/messenger;1"].createInstance()
     .QueryInterface(Ci.nsIMessenger);
@@ -219,9 +222,6 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   //private vars
   /* var membername=value */
   var that = this;
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
-  var Cr = Components.results;
   var currentviewpref = null;
   var downloadwindowpref = null;
   var downloadwindowdelay = null;
@@ -554,8 +554,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
 
   this.OnItemAdded = function(parentItem, item) {
     if (that.listeningforMessageId == "") return;
-    var mail = item.QueryInterface(Components.interfaces.nsIMsgDBHdr);
-    var folder = parentItem.QueryInterface(Components.interfaces
+    var mail = item.QueryInterface(Ci.nsIMsgDBHdr);
+    var folder = parentItem.QueryInterface(Ci
       .nsIMsgFolder);
     if (mail.messageId == that.listeningforMessageId) {
       var vindex = aewindow.gDBView.findIndexFromKey(mail.messageKey, true);
@@ -731,9 +731,6 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   //private vars
   /* var membername=value */
   var that = this;
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
-  var Cr = Components.results;
   var downloadwindowpref = prefs.get(aewindow
     .DOWNLOADMANAGER_RETENTION_PREFNAME, "");
   var downloadwindowdelay = prefs.get(aewindow
@@ -1133,8 +1130,6 @@ if (typeof AEMessage == "undefined") {
             thistask.getMessageHeader().setStringProperty(
               "AEMetaData.savepath", thistask.filemaker.destFolder
               .path);
-            var Cc = Components.classes;
-            var Ci = Components.interfaces;
 
             var fileHandler = Cc["@mozilla.org/network/io-service;1"]
               .getService(Ci.nsIIOService).getProtocolHandler("file")
@@ -1261,8 +1256,6 @@ if (typeof AEMessage == "undefined") {
       mimeHdr.extractHeader("Return-Receipt-To", false)) return;
 
     // Everything looks good so far, let's generate the MDN response.
-    var Ci = Components.interfaces;
-    var Cr = Components.results;
     var mdnGenerator = Cc["@mozilla.org/messenger-mdn/generator;1"]
       .createInstance(Ci.nsIMsgMdnGenerator);
 
@@ -1344,13 +1337,12 @@ aewindow.AEMsgDBViewCommandUpdater.prototype = {
   displayMessageChanged: function(aFolder, aSubject, aKeywords) {},
   updateNextMessageAfterDelete: function() {},
   QueryInterface: function(iid) {
-    if ((iid == Components.interfaces.nsIMsgDBViewCommandUpdater) ||
-      (iid == Components.interfaces.nsISupports)) return this;
-    throw Components.results.NS_NOINTERFACE;
+    if ((iid == Ci.nsIMsgDBViewCommandUpdater) ||
+      (iid == Ci.nsISupports)) return this;
+    throw Cr.NS_NOINTERFACE;
   }
 }
 
-// 
 function AEMsgWindowCommands(task) {
   this.SelectFolder = function(folderUri) {
     return task.SelectFolder(folderUri);

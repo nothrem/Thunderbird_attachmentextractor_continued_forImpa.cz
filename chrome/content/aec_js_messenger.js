@@ -2,12 +2,23 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 var {
   MailServices
 } = ChromeUtils.import("resource:///modules/MailServices.jsm");
+/*
+var {
+  OSFile
+} = ChromeUtils.import("resource://gre/modules/osfile.jsm");
+*/
 
 function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   mDetachedFileUris, aewindow) {
@@ -23,9 +34,6 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   var mMsgFileStream; // temporary stream (processed mail)
   var mNewMessageKey = Number.MAX_VALUE; // new message key
 
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
-  var Cr = Components.results;
   var that = this;
 
   var m_state_enum = {
@@ -257,8 +265,6 @@ function getAttachmentPartId(aAttachmentUrl) {
 }
 
 var aeMessenger = {
-  Cc: Components.classes,
-  Ci: Components.interfaces,
 
   compareAttachmentPartId: function(aAttachUrlLeft, aAttachUrlRight) {
     // part ids are numbers separated by periods, like "1.2.3.4".
@@ -519,8 +525,9 @@ var aeMessenger = {
     aedump('{function:aeMessenger.createStartupUrl: ' + uri + ' }\n', 2);
     var obj;
     if (uri.substr(0, 4) == "imap") {
-      obj = Components.classesByID[
-      "{21a89611-dc0d-11d2-806c-006008128c4e}"];
+      let cid = "{21a89611-dc0d-11d2-806c-006008128c4e}";
+      if (!(cid in Components.classesByID) == true) aedump('Components.classesByID - cid is not existing\n');
+      obj = Components.classesByID[cid];
     } else if (uri.substr(0, 7) == "mailbox") {
       obj = this.Cc["@mozilla.org/messenger/mailboxurl;1"];
     } else if (uri.substr(0, 4) == "news") {
@@ -537,16 +544,11 @@ var aeMessenger = {
     aedump('{function:aeMessenger.createStartupUrl: (after mutate) ' +
       startupUrl + ' }\n', 2);
     return startupUrl;
-
-
   }
 };
 
 function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
   aewindow, minFileSize) {
-  var Cc = Components.classes;
-  var Ci = Components.interfaces;
-  var Cr = Components.results;
   var aedump = aewindow.aedump;
 
   var mProgress = 0;

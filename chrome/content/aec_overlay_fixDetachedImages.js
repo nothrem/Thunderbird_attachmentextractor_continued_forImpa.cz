@@ -1,3 +1,9 @@
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var fixDetachedImages=function fixDetachedImages(aEvent) {
   if (!attachmentextractor.prefs.get("fixdetachedimages")) return;
   var messagePane=document.getElementById("messagepane");
@@ -19,9 +25,9 @@ var fixDetachedImages=function fixDetachedImages(aEvent) {
   messageMatches.reverse();
   
   var ioService = 
-    Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+    Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
   var resProt = 
-    ioService.getProtocolHandler("resource").QueryInterface(Components.interfaces.nsIResProtocolHandler);
+    ioService.getProtocolHandler("resource").QueryInterface(Ci.nsIResProtocolHandler);
   var setResources=new Array();
   attachments.forEach(function (att,i,a) {
     if (!att.isExternalAttachment) return;

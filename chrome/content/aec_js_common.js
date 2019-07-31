@@ -2,6 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+try {
+  if (typeof Cc == "undefined") var Cc = Components.classes;
+  if (typeof Ci == "undefined") var Ci = Components.interfaces;
+  if (typeof Cr == "undefined") var Cr = Components.results;
+} catch (e) {}
+ 
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
@@ -9,14 +15,14 @@ var {
 var aedebug = false;
 var aedebugFile = null;
 try {
-  aedebug = Components.classes["@mozilla.org/preferences-service;1"].
-  getService(Components.interfaces.nsIPrefBranch).getBoolPref(
+  aedebug = Cc["@mozilla.org/preferences-service;1"].
+  getService(Ci.nsIPrefBranch).getBoolPref(
     "extensions.attachmentextractor_cont.debug");
   if (aedebug) {
-    aedebug = Components.classes['@mozilla.org/network/file-output-stream;1'].
-    createInstance(Components.interfaces.nsIFileOutputStream);
-    aedebugFile = Components.classes["@mozilla.org/file/directory_service;1"].
-    getService(Components.interfaces.nsIProperties).get("ProfD", Components
+    aedebug = Cc['@mozilla.org/network/file-output-stream;1'].
+    createInstance(Ci.nsIFileOutputStream);
+    aedebugFile = Cc["@mozilla.org/file/directory_service;1"].
+    getService(Ci.nsIProperties).get("ProfD", Components
       .interfaces.nsIFile);
     aedebugFile.append('aec_debug.txt');
   }
@@ -51,11 +57,11 @@ var aedump = (aedebug) ? function() {
 
 /* shortcut object to get & set ae's preferences.*/
 function AEPrefs() {
-  this.aeBranch = Components.classes["@mozilla.org/preferences-service;1"].
-  getService(Components.interfaces.nsIPrefService).getBranch(
+  this.aeBranch = Cc["@mozilla.org/preferences-service;1"].
+  getService(Ci.nsIPrefService).getBranch(
     "extensions.attachmentextractor_cont.");
-  this.prefService = Components.classes["@mozilla.org/preferences-service;1"]
-    .getService(Components.interfaces.nsIPrefService);
+  this.prefService = Cc["@mozilla.org/preferences-service;1"]
+    .getService(Ci.nsIPrefService);
   this.get = function get(pref, branch) {
     var ps = (typeof branch == "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch);
@@ -95,8 +101,8 @@ function AEPrefs() {
     return this.setComplex(pref, value, branch);
   }
   this.setRelFile = function setRelFile(pref, value, key, branch) {
-    var relFile = Components.classes["@mozilla.org/pref-relativefile;1"]
-      .createInstance(Components.interfaces.nsIRelativeFilePref);
+    var relFile = Cc["@mozilla.org/pref-relativefile;1"]
+      .createInstance(Ci.nsIRelativeFilePref);
     var oldValue = (this.hasUserValue(pref, branch)) ? this.getComplex(pref,
       branch) : null;
     relFile.relativeToKey = key ? key : oldValue.relativeToKey;
