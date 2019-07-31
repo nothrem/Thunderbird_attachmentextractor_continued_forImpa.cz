@@ -2,6 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+var {
+  Services
+} = ChromeUtils.import("resource://gre/modules/Services.jsm");
+
 var progress_tracker = {
   /* variables */
   message_states: {
@@ -174,7 +178,7 @@ function AE_Reportgen() {
     absolutereport = true;
   }
 
-  var strBundle = aewindow.strBundleService.createBundle(
+  var strBundle = Services.strings.createBundle(
     "chrome://attachmentextractor_cont/locale/attachmentextractor-reportgen.properties"
     );
   var fileHandler = Cc["@mozilla.org/network/io-service;1"].getService(Ci
