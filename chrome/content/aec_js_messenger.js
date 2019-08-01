@@ -16,6 +16,9 @@ var {
 } = ChromeUtils.import("resource:///modules/MailServices.jsm");
 /*
 var {
+  XPCOMUtils
+} = ChromeUtils.import("resource://gre/modules/XPCOMUtils.jsm");
+var {
   OSFile
 } = ChromeUtils.import("resource://gre/modules/osfile.jsm");
 */
@@ -370,7 +373,7 @@ var aeMessenger = {
     else return null;
   },
 
-  // simplied version of this function.
+  // simplified version of this function.
   saveAttachment: function(file, url, messageUri, contentType,
     attachmentindex) {
     aewindow.aedump("{function:aeMessenger.saveAttachment}\n", 2);
@@ -445,7 +448,12 @@ var aeMessenger = {
     var saveListener = new aeSaveMsgListener(file, aewindow.messenger, "",
       "aewindow.currentTask.currentMessage.doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)",
       aewindow, 0);
-    messageUri.spec = messageUri.spec + "?header=saveas";
+    // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
+    // messageUri.spec = messageUri.spec + "?header=saveas";
+    if (Ci.nsIURIMutator) {
+      aedump('Ci.nsIURIMutator is available \n', 2);
+      messageUri = messageUri.mutate().setSpec(messageUri.spec + "?header=saveas").finalize();
+    }
     saveListener.m_channel = Cc["@mozilla.org/network/input-stream-channel;1"]
       .createInstance(Ci.nsIInputStreamChannel);
     var url = {};
@@ -523,13 +531,10 @@ var aeMessenger = {
   },
 
   createStartupUrl: function(uri) {
-    aedump('{function:aeMessenger.createStartupUrl: ' + uri + ' }\n', 2);
+    aedump('{function:aeMessenger.createStartupUrl} (uri): ' + uri + '\n', 2);
     var obj;
     if (uri.substr(0, 4) == "imap") {
-      let cid = "{21a89611-dc0d-11d2-806c-006008128c4e}";
-      if (!(cid in Components.classesByID) == true)
-        aedump('Components.classesByID - cid is not existing\n');
-      obj = Components.classesByID[cid];
+      obj = Components.classesByID["{21a89611-dc0d-11d2-806c-006008128c4e}"];
     } else if (uri.substr(0, 7) == "mailbox") {
       obj = Cc["@mozilla.org/messenger/mailboxurl;1"];
     } else if (uri.substr(0, 4) == "news") {
@@ -539,12 +544,19 @@ var aeMessenger = {
         ":")) + "\n");
     }
     var startupUrl = obj.createInstance(Ci.nsIURI);
-    aedump('{function:aeMessenger.createStartupUrl: (before mutate) ' +
-      startupUrl + ' }\n', 2);
-    //	startupUrl.spec=uri;
-    startupUrl = startupUrl.mutate().setSpec(uri).finalize();
-    aedump('{function:aeMessenger.createStartupUrl: (after mutate) ' +
-      startupUrl + ' }\n', 2);
+
+    aedump('{function:aeMessenger.createStartupUrl}: (before mutate) ' +
+      startupUrl + '\n', 2);
+
+    // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
+    // startupUrl.spec = uri;
+    if (Ci.nsIURIMutator) {
+      aedump('Ci.nsIURIMutator is available \n', 2);
+      startupUrl = startupUrl.mutate().setSpec(uri).finalize();
+    }
+    aedump('{function:aeMessenger.createStartupUrl}: (after mutate) ' +
+      startupUrl + '\n', 2);
+
     return startupUrl;
   }
 };

@@ -8,7 +8,6 @@ function onload() {
   }
   folderlist.selectedIndex=0;
   setTimeout( function() {sizeToContent();}, 0);
-  /*addEventListener("resize", function(){ removeEventListener("resize", arguments.callee, false); sizeToContent(); }, false);*/
 }
 
 function ondialogaccept() {
@@ -20,3 +19,16 @@ function ondialogextra1() {
   window.arguments[1].browse=true;
   window.close();
 }
+
+window.addEventListener("load", function (event) {
+  onload();
+});
+
+document.addEventListener("dialogaccept", function (event) {
+  ondialogaccept();
+	event.preventDefault();
+});
+
+document.addEventListener("dialogextra1", function (event) {
+  ondialogextra1();
+});

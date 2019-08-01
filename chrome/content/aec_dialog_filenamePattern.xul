@@ -13,8 +13,6 @@
 <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
   id="attachmentextractorFilenamePatternDialog" 
   title="&attachmentextractor.filenamepatterndialog.title;" 
-  ondialogaccept="onaccept();" 
-  onload="onload();" 
   persist="screenX screenY width height" 
   windowtype="attachmentextractor:fnpdialog">
 
