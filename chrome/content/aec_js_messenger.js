@@ -380,8 +380,10 @@ var aeMessenger = {
         url = url.replace("?type=application/x-message-display", "")
           .replace('&', '?');
       }
+      aewindow.aedump("URL before replacement: "+url+"\n",2);
       url = url.replace("/;section", "?section");
-
+      aewindow.aedump("URL after replacement:  "+url+"\n",2);
+  
       var saveListener = new aeSaveMsgListener(
         file, aewindow.messenger, contentType,
         "aewindow.currentTask.currentMessage.saveAtt_cleanUp(" +
@@ -392,10 +394,12 @@ var aeMessenger = {
         messageUri);
       var fetchService = messageService.QueryInterface(this.Ci
         .nsIMsgMessageFetchPartService);
-      if (
-        fetchService) { // if the message service has a fetch part service then we know we can fetch mime parts...
+      // if the message service has a fetch part service then we know we can fetch mime parts...
+      if (fetchService) { 
         aedump("// message has a fetch service.\n", 3);
-        messageUri += url.substring(url.indexOf("?section"), url.length);
+        // section versus part in the next line - which one is correct?
+        // messageUri += url.substring(url.indexOf("?section"), url.length);
+        messageUri += url.substring(url.indexOf("?part"), url.length);
       }
 
       var convertedListener = saveListener.QueryInterface(this.Ci
@@ -647,7 +651,9 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
           m_outputStream = appleFileDecoder;
         }
       } else if (mimeinfo && mimeinfo.macType && mimeinfo.macCreator) {
-        var macFile = m_file.QueryInterface(Ci.nsIFileMac);
+        // nsILocalFile has been replaced by nsIFile, but nsILocalFileMac seems still to be okay ?
+        // var macFile = m_file.QueryInterface(Ci.nsIFileMac);
+        var macFile = m_file.QueryInterface(Ci.nsILocalFileMac);
         if (macFile) {
           macFile.setFileCreator(mimeinfo.macCreator);
           macFile.setFileType(mimeinfo.macType);
@@ -661,6 +667,7 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
 
     if (!m_outputStream) {
       mCanceled = true;
+      aedump("AEC: mCanceled=true {function:aeSaveMsgListener.OnStartRequest}\n",2);
       m_messenger.alert(aewindow.messengerStringBundle.GetStringFromName(
         "saveAttachmentFailed"));
     } else {

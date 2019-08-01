@@ -854,7 +854,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
         return c.url;
       }) +
       ", filenamepattern: " + filenamepattern +
-      ", detachmode: " + this.getDetachMode;
+      ", detachmode: " + this.detachMode;
   };
   this.toString = toString;
 }
