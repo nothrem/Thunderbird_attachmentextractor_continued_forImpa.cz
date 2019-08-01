@@ -338,9 +338,9 @@ var aeMessenger = {
   detachAttachments: function(aMessenger, aMsgWindow, aContentTypeArray,
     aUrlArray, aDisplayNameArray, aMessageUriArray, saveFiles) {
     var saveFileUris = (saveFiles) ? new Array(saveFiles.length) : null;
-    var fileHandler = this.Cc["@mozilla.org/network/io-service;1"]
-      .getService(this.Ci.nsIIOService).getProtocolHandler("file")
-      .QueryInterface(this.Ci.nsIFileProtocolHandler);
+    var fileHandler = Cc["@mozilla.org/network/io-service;1"]
+      .getService(Ci.nsIIOService).getProtocolHandler("file")
+      .QueryInterface(Ci.nsIFileProtocolHandler);
     for (var u = 0; u < aMessageUriArray.length; ++u) {
       // ensure all of the message URI are the same, we cannot process attachments from different messages
       if (u > 0 && aMessageUriArray[0] != aMessageUriArray[u]) return null;
@@ -363,7 +363,7 @@ var aeMessenger = {
   saveAttachmentToFolder: function(contentType, url, displayName, messageUri,
     aDestFolder, attachmentindex) {
     var out = aDestFolder.clone();
-    out = out.QueryInterface(this.Ci.nsIFile);
+    out = out.QueryInterface(Ci.nsIFile);
     out.append(displayName);
     if (this.saveAttachment(out, url, messageUri, contentType,
         attachmentindex)) return out;
@@ -392,8 +392,8 @@ var aeMessenger = {
 
       var messageService = aewindow.messenger.messageServiceFromURI(
         messageUri);
-      var fetchService = messageService.QueryInterface(this.Ci
-        .nsIMsgMessageFetchPartService);
+      var fetchService = messageService.QueryInterface(
+        Ci.nsIMsgMessageFetchPartService);
       // if the message service has a fetch part service then we know we can fetch mime parts...
       if (fetchService) { 
         aedump("// message has a fetch service.\n", 3);
@@ -402,21 +402,20 @@ var aeMessenger = {
         messageUri += url.substring(url.indexOf("?part"), url.length);
       }
 
-      var convertedListener = saveListener.QueryInterface(this.Ci
-        .nsIStreamListener);
+      var convertedListener = saveListener.QueryInterface(
+        Ci.nsIStreamListener);
       if (navigator.appVersion.indexOf("Macintosh") == -1) {
         // if the content type is binhex we are going to do a hokey hack and make sure we decode the binhex when saving an attachment
         if (contentType == "application/mac-binhex40") {
           aedump(
             "// not a mac but got a binhex att so using an additional convertor.\n",
             3);
-          var streamConverterService = this.Cc[
-            "@mozilla.org/streamConverters;1"].getService(this.Ci
-            .nsIStreamConverterService);
+          var streamConverterService = Cc["@mozilla.org/streamConverters;1"]
+            .getService(Ci.nsIStreamConverterService);
           convertedListener = streamConverterService.asyncConvertData(
             "application/mac-binhex40",
             "*" + "/" + "*", convertedListener, saveListener.m_channel
-            .QueryInterface(this.Ci.nsISupports));
+            .QueryInterface(Ci.nsISupports));
         }
       }
       var openAttArgs = new Array(contentType, file.leafName, url,
@@ -447,18 +446,17 @@ var aeMessenger = {
       "aewindow.currentTask.currentMessage.doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)",
       aewindow, 0);
     messageUri.spec = messageUri.spec + "?header=saveas";
-    saveListener.m_channel = this.Cc[
-      "@mozilla.org/network/input-stream-channel;1"].createInstance(this
-      .Ci.nsIInputStreamChannel);
+    saveListener.m_channel = Cc["@mozilla.org/network/input-stream-channel;1"]
+      .createInstance(Ci.nsIInputStreamChannel);
     var url = {};
     //url=this.createStartupUrl(messageUri);
     //msgService.GetUrlForUri(messageUri,url,null);
-    url = this.Cc["@mozilla.org/network/io-service;1"].getService(this.Ci
-      .nsIIOService).newURI(messageUri, null, null);
+    url = Cc["@mozilla.org/network/io-service;1"].getService(
+      Ci.nsIIOService).newURI(messageUri, null, null);
     aedump("// messageUri: " + messageUri + ", url: " + url.spec + "\n");
     saveListener.m_channel.setURI(url);
-    var streamConverterService = this.Cc["@mozilla.org/streamConverters;1"]
-      .getService(this.Ci.nsIStreamConverterService);
+    var streamConverterService = Cc["@mozilla.org/streamConverters;1"]
+      .getService(Ci.nsIStreamConverterService);
     var convertedListener = streamConverterService.asyncConvertData(
       "message/rfc822", "text/html", saveListener, saveListener.m_channel);
     if (aewindow.currentTask.isExtractEnabled) saveListener.postFunc =
@@ -472,16 +470,15 @@ var aeMessenger = {
   saveExternalAttachment: function(uri, file, attachmentindex) {
     aedump = aewindow.aedump;
     //aedump(">> "+uri+"\n");
-    uri = this.Cc["@mozilla.org/network/io-service;1"].getService(this.Ci
-      .nsIIOService).newURI(uri, null, null);
+    uri = Cc["@mozilla.org/network/io-service;1"].getService(
+      Ci.nsIIOService).newURI(uri, null, null);
     if (uri.schemeIs(
       "file")) { //make sure file exists or saveUri below fails.
-      if (!(uri.QueryInterface(this.Ci.nsIFileURL).file).exists())
+      if (!(uri.QueryInterface(Ci.nsIFileURL).file).exists())
       return null;
     }
-    var persist = this.Cc[
-        "@mozilla.org/embedding/browser/nsWebBrowserPersist;1"]
-      .createInstance(this.Ci.nsIWebBrowserPersist);
+    var persist = Cc["@mozilla.org/embedding/browser/nsWebBrowserPersist;1"]
+      .createInstance(Ci.nsIWebBrowserPersist);
     persist.progressListener = {
       index: attachmentindex,
       ptracker: aewindow.progress_tracker,
@@ -530,17 +527,18 @@ var aeMessenger = {
     var obj;
     if (uri.substr(0, 4) == "imap") {
       let cid = "{21a89611-dc0d-11d2-806c-006008128c4e}";
-      if (!(cid in Components.classesByID) == true) aedump('Components.classesByID - cid is not existing\n');
+      if (!(cid in Components.classesByID) == true)
+        aedump('Components.classesByID - cid is not existing\n');
       obj = Components.classesByID[cid];
     } else if (uri.substr(0, 7) == "mailbox") {
-      obj = this.Cc["@mozilla.org/messenger/mailboxurl;1"];
+      obj = Cc["@mozilla.org/messenger/mailboxurl;1"];
     } else if (uri.substr(0, 4) == "news") {
-      obj = this.Cc["@mozilla.org/messenger/nntpurl;1"];
+      obj = Cc["@mozilla.org/messenger/nntpurl;1"];
     } else {
       throw new Error("unusable type of uri: " + uri.substr(0, uri.indexOf(
         ":")) + "\n");
     }
-    var startupUrl = obj.createInstance(this.Ci.nsIURI);
+    var startupUrl = obj.createInstance(Ci.nsIURI);
     aedump('{function:aeMessenger.createStartupUrl: (before mutate) ' +
       startupUrl + ' }\n', 2);
     //	startupUrl.spec=uri;
