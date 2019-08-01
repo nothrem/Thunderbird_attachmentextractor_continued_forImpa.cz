@@ -97,7 +97,7 @@ function AEPrefs() {
     return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).setStringPref(pref, value);
   };
-  this.setFile = function getFile(pref, value, branch) {
+  this.setFile = function setFile(pref, value, branch) {
     return this.setComplex(pref, value, branch);
   }
   this.setRelFile = function setRelFile(pref, value, key, branch) {
