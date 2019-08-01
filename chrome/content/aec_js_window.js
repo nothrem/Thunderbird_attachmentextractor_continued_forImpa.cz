@@ -974,7 +974,7 @@ if (typeof AEMessage == "undefined") {
         // not yet proofed
         this.zerofileTimeout = setTimeout(function() {
           aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, false)
-        }, 5000);
+        }, 2000);
       }
     } else aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
   };
@@ -1110,7 +1110,7 @@ if (typeof AEMessage == "undefined") {
               thistask.detachCancellationTimeout = setTimeout(function() {
                 aewindow.currentMessage.doAfterActions(states
                 .DELTEMPFILE)
-              }, 5000);
+              }, 2000);
               break;
             }
           }
@@ -1261,27 +1261,26 @@ if (typeof AEMessage == "undefined") {
 
     // 
     if (this.prefs.get("returnreceipts.override")) {
-      var currentotherreturnpref = prefs.get("mail.mdn.report.other", "");
-      var currentoutsidereturnpref = prefs.get(
-        "mail.mdn.report.outside_domain", "");
-      var currentnotreturnpref = prefs.get("mail.mdn.report.not_in_to_cc",
-      "");
-      if (currentotherreturnpref == 2) prefs.set("mail.mdn.report.other", 1,
-        "");
-      if (currentoutsidereturnpref == 2) prefs.set(
-        "mail.mdn.report.outside_domain", 1, "");
-      if (currentnotreturnpref == 2) prefs.set("mail.mdn.report.not_in_to_cc",
-        1, "");
+      var currentotherreturnpref = this.prefs.get("report.other", "mail.mdn.");
+      var currentoutsidereturnpref = this.prefs.get("report.outside_domain", "mail.mdn.");
+      var currentnotreturnpref = this.prefs.get("report.not_in_to_cc",
+      "mail.mdn.");
+      if (currentotherreturnpref == 2) this.prefs.set("report.other", 1,
+        "mail.mdn.");
+      if (currentoutsidereturnpref == 2) this.prefs.set(
+        "report.outside_domain", 1, "mail.mdn.");
+      if (currentnotreturnpref == 2) this.prefs.set("report.not_in_to_cc",
+        1, "mail.mdn.");
     }
     try {
       mdnGenerator.process(0, aewindow.msgWindow, aewindow.currentTask
         .currentUrl.folder, msgHdr.messageKey, mimeHdr, true);
     } catch (e) {}
     if (this.prefs.get("returnreceipts.override")) {
-      prefs.set("mail.mdn.report.other", currentotherreturnpref, "");
-      prefs.set("mail.mdn.report.outside_domain", currentoutsidereturnpref,
-        "");
-      prefs.set("mail.mdn.report.not_in_to_cc", currentnotreturnpref, "");
+      this.prefs.set("report.other", currentotherreturnpref, "mail.mdn.");
+      this.prefs.set("report.outside_domain", currentoutsidereturnpref,
+        "mail.mdn.");
+      this.prefs.set("report.not_in_to_cc", currentnotreturnpref, "mail.mdn.");
     }
 
     // Reset mark msg MDN "Sent" and "Not Needed".
