@@ -17,6 +17,7 @@ function onaccept() {
   window.arguments[0].value=document.getElementById('filenamepattern').value; 
   window.arguments[1].value=document.getElementById('savecheck').checked; 
   window.arguments[2].value=true;
+  window.close();
 }
 
 window.addEventListener("load", function (event) {

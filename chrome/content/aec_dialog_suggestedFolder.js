@@ -13,6 +13,7 @@ function onload() {
 function ondialogaccept() {
   let folderlist=document.getElementById('folderlist');
   window.arguments[1].selectedIndex=folderlist.selectedIndex;
+  window.close();
 }
 
 function ondialogextra1() {
