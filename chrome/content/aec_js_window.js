@@ -1259,12 +1259,13 @@ if (typeof AEMessage == "undefined") {
     var mdnGenerator = Cc["@mozilla.org/messenger-mdn/generator;1"]
       .createInstance(Ci.nsIMsgMdnGenerator);
 
-    // Save the original apps MDN settings
     if (this.prefs.get("returnreceipts.override")) {
+      // Save the original apps MDN settings
       var currentotherreturnpref = this.prefs.get("report.other", "mail.mdn.");
       var currentoutsidereturnpref = this.prefs.get("report.outside_domain", "mail.mdn.");
       var currentnotreturnpref = this.prefs.get("report.not_in_to_cc",
       "mail.mdn.");
+      // Manipulate the MDN settings to force MDN sending 
       if (currentotherreturnpref == 2) this.prefs.set("report.other", 1,
         "mail.mdn.");
       if (currentoutsidereturnpref == 2) this.prefs.set(
@@ -1277,7 +1278,7 @@ if (typeof AEMessage == "undefined") {
       mdnGenerator.process(0, aewindow.msgWindow, aewindow.currentTask
         .currentUrl.folder, msgHdr.messageKey, mimeHdr, true);
     } catch (e) {}
-    // Write back the original apps MDN settings
+    // Revert back to the original apps MDN settings
     if (this.prefs.get("returnreceipts.override")) {
       this.prefs.set("report.other", currentotherreturnpref, "mail.mdn.");
       this.prefs.set("report.outside_domain", currentoutsidereturnpref,
