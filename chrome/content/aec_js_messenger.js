@@ -383,14 +383,11 @@ var aeMessenger = {
         url = url.replace("?type=application/x-message-display", "")
           .replace('&', '?');
       }
-      aewindow.aedump("URL before replacement: "+url+"\n",2);
       url = url.replace("/;section", "?section");
-      aewindow.aedump("URL after replacement:  "+url+"\n",2);
   
       var saveListener = new aeSaveMsgListener(
         file, aewindow.messenger, contentType,
-        "aewindow.currentTask.currentMessage.saveAtt_cleanUp(" +
-        attachmentindex + ",false)",
+        "saveAtt_cleanUp", attachmentindex,
         aewindow, aewindow.prefs.get("extract.minimumsize"));
 
       var messageService = aewindow.messenger.messageServiceFromURI(
@@ -446,7 +443,7 @@ var aeMessenger = {
     var messageUri = message.folder.getUriForMsg(message);
     var msgService = aewindow.messenger.messageServiceFromURI(messageUri);
     var saveListener = new aeSaveMsgListener(file, aewindow.messenger, "",
-      "aewindow.currentTask.currentMessage.doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)",
+      "doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)", null,
       aewindow, 0);
     // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
     // messageUri.spec = messageUri.spec + "?header=saveas";
@@ -470,8 +467,8 @@ var aeMessenger = {
     if (aewindow.currentTask.isExtractEnabled) saveListener.postFunc =
       aewindow.currentTask.currentMessage.postProcessMessage;
     var o = new Object();
-    msgService.DisplayMessage(messageUri, convertedListener, aewindow
-      .msgWindow, saveListener, false, o);
+    msgService.DisplayMessage(messageUri, convertedListener, 
+      aewindow.msgWindow, saveListener, false, o);
     //aedump("//"+msgService.streamMessage(messageUri, saveListener, aewindow.msgWindow, saveListener, false,"saveas").spec+"\n");
   },
 
@@ -561,7 +558,7 @@ var aeMessenger = {
   }
 };
 
-function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
+function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afterActionAttachmentindex,
   aewindow, minFileSize) {
   var aedump = aewindow.aedump;
 
@@ -713,11 +710,11 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
     this.finish();
   }
 
-  this.onDataAvailable = function(request, aSupport, inStream, srcOffset,
-  count) {
+  this.onDataAvailable = 
+    function(request, aSupport, inStream, srcOffset, count) {
     //aedump("{function:aeSaveMsgListener.OnDataAvailable}\n",4);
-    if (mCanceled) request.cancel(
-    2); // then go cancel our underlying channel too.  NS_BINDING_ABORTED =2 apparently.
+    if (mCanceled) request.cancel(2); // then go cancel our underlying channel too.  
+                                      // NS_BINDING_ABORTED =2 apparently.
     if (!mInitialized) initializeDownload(request, count);
     try {
       if (m_outputStream) {
@@ -769,25 +766,30 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterEval,
           realFileName + "; " + e + "\n");
       }
     }
-    if (afterEval) {
-      /*var args= new Array(afterFunc,10);
-      for (var i=0;i<afterFuncArgs.length;i++) args.push(afterFuncArgs[i]);
-      setTimeout.apply(null,args);*/
-
-      // console.log("AEC afterEval / eval is called");
-      // console.log("AEC afterEval: " + afterEval);
+    if (afterAction) {
+      aedump("AEC afterAction: " + afterAction + "\n");
 
       // eval(afterEval);
       // try to replace eval() with the following 3 lines
       // not sure if it is working because of an other error 
       // we don't arrive here at this development status
-      let aeSandbox = new Components.utils.Sandbox();
-      aeSandbox.afterEval = afterEval;
-      Components.utils.evalInSandbox(afterEval, aeSandbox);
+      /*
+        let aeSandbox = new Components.utils.Sandbox("https://www.example.com/");
+        aeSandbox.afterEval = afterEval;
+        aeSandbox.aewindow = aewindow;
+        Components.utils.evalInSandbox(afterEval, aeSandbox);
+      */
 
-      afterEval = null;
+      switch (afterAction) {
+        case "doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)":
+          aewindow.currentTask.currentMessage.doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)
+          break;
+        case "saveAtt_cleanUp":
+          aewindow.currentTask.currentMessage.saveAtt_cleanUp(afterActionAttachmentindex,false)
+          break;
+      }
+
+      afterAction = null;
     }
   }
 }
-
-// 
