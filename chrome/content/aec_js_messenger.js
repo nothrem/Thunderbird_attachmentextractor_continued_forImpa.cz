@@ -397,9 +397,10 @@ var aeMessenger = {
       // if the message service has a fetch part service then we know we can fetch mime parts...
       if (fetchService) { 
         aedump("// message has a fetch service.\n", 3);
-        // section versus part in the next line - which one is correct?
+        // ?section versus ?part in the next line - which one is correct?
+        // ?section is used in the original C++ function in Thunderbirds own code
         // messageUri += url.substring(url.indexOf("?section"), url.length);
-        messageUri += url.substring(url.indexOf("?part"), url.length);
+        messageUri += url.substring(url.indexOf("?section"), url.length);
       }
 
       var convertedListener = saveListener.QueryInterface(
