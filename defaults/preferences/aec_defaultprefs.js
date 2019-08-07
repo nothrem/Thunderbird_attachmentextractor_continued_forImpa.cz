@@ -23,6 +23,9 @@ pref("extensions.attachmentextractor_cont.actionafterextract.savemessage",false)
 
 pref("extensions.attachmentextractor_cont.actionafterextract.delete",false);
 pref("extensions.attachmentextractor_cont.actionafterextract.detach",false);
+pref("extensions.attachmentextractor_cont.actionafterextract.withoutconfirm",false);
+
+
 pref("extensions.attachmentextractor_cont.actionafterextract.detach.mode",0);
 pref("extensions.attachmentextractor_cont.actionafterextract.detach.confirm",true);
 
@@ -50,7 +53,9 @@ pref("extensions.attachmentextractor_cont.autoextract.overwritepolicy",2);
 pref("extensions.attachmentextractor_cont.autoextract.markread",false);
 pref("extensions.attachmentextractor_cont.autoextract.delete",false);
 pref("extensions.attachmentextractor_cont.autoextract.detach",false);
+pref("extensions.attachmentextractor_cont.autoextract.withoutconfirm",false);
 pref("extensions.attachmentextractor_cont.autoextract.detach.mode",1);
+
 pref("extensions.attachmentextractor_cont.autoextract.cleartag",false);
 
 pref("extensions.attachmentextractor_cont.autoextract.savemessage",false);

@@ -57,6 +57,10 @@ Preferences.addAll([{
   type: "bool"
 },
 {
+  id: "extensions.attachmentextractor_cont.actionafterextract.withoutconfirm",
+  type: "bool"
+},
+{
   id: "extensions.attachmentextractor_cont.actionafterextract.detach.mode",
   type: "int"
 },
@@ -135,6 +139,10 @@ Preferences.addAll([{
 },
 {
   id: "extensions.attachmentextractor_cont.autoextract.detach",
+  type: "bool"
+},
+{
+  id: "extensions.attachmentextractor_cont.autoextract.withoutconfirm",
   type: "bool"
 },
 {

@@ -34,7 +34,6 @@
 <!ENTITY attachmentextractor.settings.savepathmru.clearbutton.label "Clear Now">
 <!ENTITY attachmentextractor.settings.savefolder.label "Default Save Path:">
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Browse…">
-
 <!ENTITY attachmentextractor.settings.posttab.label "After Extraction">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "After extracting the attachments should we:">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "-- NOT USED --">
@@ -45,6 +44,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "Delete the attachment from the message?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete Attachments without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Delete with normal Thunderbird code.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Delete with AE&apos;s internal (experimental) routine.">
@@ -80,8 +81,6 @@
 <!ENTITY attachmentextractor.settings.reportgen.cssfile.caption "Stylesheet to use for report:">
 <!ENTITY attachmentextractor.settings.reportgen.reportname2.label "Filename (or absolute path) of the report:">
 <!ENTITY attachmentextractor.settings.reportgen.button.label "Report Generator Settings …">
-
-
 <!ENTITY attachmentextractor.settings.advancedtab.label "Advanced">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "More">
 <!ENTITY attachmentextractor.settings.extract.caption "Attachment File Saving">
