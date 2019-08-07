@@ -1088,6 +1088,7 @@ if (typeof AEMessage == "undefined") {
             var acl = aewindow.arraycompact(this.attachments_ct);
             if (acl.length > 0) {
               if (thistask.detachMode != 0) {
+                aewindow.aedump('>>>> thistask.detachMode != 0 \n', 2);
                 var deleteAtt = (thistask.detachMode == 1) || !thistask
                   .isExtractEnabled;
                 var savedfiles = (deleteAtt) ? null : aewindow
@@ -1099,18 +1100,20 @@ if (typeof AEMessage == "undefined") {
                   aewindow.arraycompact(this.attachments_uri),
                   savedfiles);
               } else {
+                aewindow.aedump('>>>> else >>> aewindow.messenger.detachAllAttachments \n', 2);
                 aewindow.messenger.detachAllAttachments(acl.length, acl,
                   aewindow.arraycompact(this.attachments_url),
                   aewindow.arraycompact(this.attachments_display),
                   aewindow.arraycompact(this.attachments_uri),
-                  false);
+                  false,  // false = do not save(?) or ask for destination folder (?)
+                  true);  // true = delete without warning
               }
               // console.log("setTimeout");
               // seems to be working okay
               thistask.detachCancellationTimeout = setTimeout(function() {
                 aewindow.currentMessage.doAfterActions(states
                 .DELTEMPFILE)
-              }, 2000);
+              }, 5000);
               break;
             }
           }
@@ -1303,8 +1306,8 @@ if (typeof AEMessage == "undefined") {
   }
 
   AEMessage.prototype.isRSSMessage = function() {
-    return (this.msgHdr.folder.baseMessageURI.indexOf('rss') ==
-    0); // ?? does this even work?
+    // ?? does this even work?
+    return (this.msgHdr.folder.baseMessageURI.indexOf('rss') == 0); 
   }
 
   AEMessage.prototype.addAttachment = function(contentType, url, displayName,
