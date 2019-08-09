@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "A">
 <!ENTITY attachmentextractor.settings.after-detach.label "Borrar los adjuntos del mensaje">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Borrar usando el código normal de Thunderbird.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Borrar usando la rutina interna de AE (en desarrollo).">

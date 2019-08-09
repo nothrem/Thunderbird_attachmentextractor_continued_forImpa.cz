@@ -42,9 +42,9 @@
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-read.label "Mark the message as Read?">
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
-<!ENTITY attachmentextractor.settings.after-detach.label "Delete the attachment from the message?">
+<!ENTITY attachmentextractor.settings.after-detach.label "Delete attachments from the message?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete Attachments without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Delete with normal Thunderbird code.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">

@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "메세지로 부터 첨부를 삭제합니까?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "일반 Thunderbird 코드로 삭제.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "AE의 내부(시험중)루틴으로 삭제.">

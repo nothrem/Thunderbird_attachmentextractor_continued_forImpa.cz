@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "Poista liitetiedosto viestistä">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Poista tavallisella Thunderbird-koodilla.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Poista AE:n sisäisellä (kokeellisella) rutiinilla.">

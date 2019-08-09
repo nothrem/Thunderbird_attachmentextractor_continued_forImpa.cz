@@ -338,6 +338,12 @@
   "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
     "message": "Actions externes"
   },
+  "attachmentextractor.settings.after-detach.confirm.label": {
+    "message": "Delete without confirmation"
+  },
+  "attachmentextractor.settings.after-detach.confirm.accesskey": {
+    "message": "w"
+  },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Supprimer le message"
   },

@@ -321,22 +321,28 @@
     "message": "-- NOT USED --"
   },
   "attachmentextractor.settings.after-delete.label": {
-    "message": "Delete the message?"
+    "message": "Delete the message"
   },
   "attachmentextractor.settings.after-delete.accesskey": {
     "message": "D"
   },
   "attachmentextractor.settings.after-read.label": {
-    "message": "Mark the message as Read?"
+    "message": "Mark the message as Read"
   },
   "attachmentextractor.settings.after-read.accesskey": {
     "message": "E"
   },
   "attachmentextractor.settings.after-detach.label": {
-    "message": "Delete the attachment from the message?"
+    "message": "Delete attachments from the message"
   },
   "attachmentextractor.settings.after-detach.accesskey": {
     "message": "F"
+  },
+  "attachmentextractor.settings.after-detach.confirm.label": {
+    "message": "Delete without confirmation"
+  },
+  "attachmentextractor.settings.after-detach.confirm.accesskey": {
+    "message": "w"
   },
   "attachmentextractor.settings.after-detach.tbdelete.label": {
     "message": "Delete with normal Thunderbird code."

@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "K">
 <!ENTITY attachmentextractor.settings.after-detach.label "Vyčleniť prílohy zo správ?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Zmazať s normálnym Thunderbird kódom.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "Z">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Zmazať s vnútornou AE (experimentálnou) rutinou.">

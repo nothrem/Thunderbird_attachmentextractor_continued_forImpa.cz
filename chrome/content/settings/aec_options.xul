@@ -167,7 +167,7 @@
                   <checkbox id="afterextractpolicydelete" 
                     label="&attachmentextractor.settings.after-delete.label;" 
                     accesskey="&attachmentextractor.settings.after-delete.accesskey;" 
-                    preference="extensions.attachmentextractor_cont.actionafterextract.delete" />
+                    preference="extensions.attachmentextractor_cont.actionafterextract.deletemessage" />
                   <checkbox id="afterextractpolicydetach" 
                     label="&attachmentextractor.settings.after-detach.label;" 
                     accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
@@ -180,7 +180,8 @@
                     <checkbox id="afterextractpolicydetachconfirm" 
                       label="&attachmentextractor.settings.after-detach.confirm.label;" 
                       accesskey="&attachmentextractor.settings.after-detach.confirm.accesskey;" 
-                      preference="extensions.attachmentextractor_cont.actionafterextract.withoutconfirm" />
+                      oncommand="wdw_aecOptions.showDetachWarning(this)" 
+                      preference="extensions.attachmentextractor_cont.actionafterextract.detach.withoutconfirm" />
 <!--
                     <radiogroup id="afterextractpolicydetachmode" 
                       preference="extensions.attachmentextractor_cont.actionafterextract.detach.mode">
@@ -518,7 +519,7 @@
                       <checkbox id="autodelete" 
                         label="&attachmentextractor.settings.after-delete.label;" 
                         accesskey="&attachmentextractor.settings.after-delete.accesskey;" 
-                        preference="extensions.attachmentextractor_cont.autoextract.delete" />
+                        preference="extensions.attachmentextractor_cont.autoextract.deletemessage" />
                       <checkbox id="autodetach" 
                         label="&attachmentextractor.settings.after-detach.label;" 
                         accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
@@ -531,7 +532,8 @@
                         <checkbox id="autoextractpolicydetachconfirm" 
                           label="&attachmentextractor.settings.after-detach.confirm.label;" 
                           accesskey="&attachmentextractor.settings.after-detach.confirm.accesskey;" 
-                          preference="extensions.attachmentextractor_cont.autoextract.withoutconfirm" />
+                          oncommand="wdw_aecOptions.showAutoDetachWarning(this);" 
+                          preference="extensions.attachmentextractor_cont.autoextract.detach.withoutconfirm" />
 <!--
                         <radiogroup id="autodetachmode" 
                           preference="extensions.attachmentextractor_cont.autoextract.detach.mode">

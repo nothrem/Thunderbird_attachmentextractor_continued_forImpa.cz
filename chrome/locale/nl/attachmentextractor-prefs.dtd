@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "Z">
 <!ENTITY attachmentextractor.settings.after-detach.label "De bijlage uit het bericht worden verwijderd?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "W">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Verwijderen met normale Thunderbird code.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Verwijderen met de interne (experimentele) routine van AE.">

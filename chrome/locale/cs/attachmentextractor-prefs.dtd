@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "P">
 <!ENTITY attachmentextractor.settings.after-detach.label "Vyčlenit přílohy ze zpráv">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Mazat přílohy standardní funkcí aplikace Thunderbird.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "S">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Mazat přílohy zabudovanou experimentální metodou.">

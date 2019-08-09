@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "l">
 <!ENTITY attachmentextractor.settings.after-detach.label "Elimina l&apos;allegato dal messaggio">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "n">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Utilizza la procedura incorporata in Thunderbird per eliminare">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "U">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Utilizza la procedura sperimentale dell&apos;estensione per eliminare">

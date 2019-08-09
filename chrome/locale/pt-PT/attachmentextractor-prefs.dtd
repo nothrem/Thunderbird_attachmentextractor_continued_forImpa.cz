@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-detach.label "Apagar o anexo da mensagem?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "g">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Apagar com o código normal do Thunderbird.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "p">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Apagar com a rotina AE interna (experimental)">

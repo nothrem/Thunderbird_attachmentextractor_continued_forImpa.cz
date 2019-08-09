@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-detach.label "Supprimer les pièces jointes du message">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "P">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Supprimer avec le code normal de Thunderbird">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Supprimer avec les routines d&apos;AttachmentExtractor Continued (expérimental).">

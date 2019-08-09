@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "Удалить вложение из сообщения?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Удалять с обычным Thunderbird кодом">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Удалять с внутренним (экспериментальным) кодом AE">

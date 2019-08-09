@@ -338,6 +338,12 @@
   "attachmentextractor.settings.after-detach.accesskey": {
     "message": "U"
   },
+  "attachmentextractor.settings.after-detach.confirm.label": {
+    "message": "Ohne Rückfrage löschen"
+  },
+  "attachmentextractor.settings.after-detach.confirm.accesskey": {
+    "message": "R"
+  },
   "attachmentextractor.settings.after-detach.tbdelete.label": {
     "message": "Löschen mit normaler Thunderbird-Routine"
   },

@@ -43,6 +43,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "L">
 <!ENTITY attachmentextractor.settings.after-detach.label "Den vedhæftede fil fjernes fra beskeden">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Slet med Thunderbirds egen metode.">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Slet med AEs (eksperimentelle) metode.">

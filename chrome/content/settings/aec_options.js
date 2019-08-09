@@ -35,6 +35,8 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
       // enableFields in general pane
       wdw_aecOptions.enableField(document.getElementById(
+        'afterextractpolicydetach'), 'afterextractpolicydetachconfirm');
+      wdw_aecOptions.enableField(document.getElementById(
         'afterextractpolicydetach'), 'afterextractpolicydetachmode');
       wdw_aecOptions.enableField(document.getElementById(
         'savepathmru'), 'savepathmrucount');
@@ -97,6 +99,8 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       if (autoextract.checked) {
         wdw_aecOptions.enableField(document.getElementById(
           'autotriggeronly'), 'autotriggertag');
+        wdw_aecOptions.enableField(document.getElementById(
+          'autodetach'), 'autoextractpolicydetachconfirm');
         wdw_aecOptions.enableField(document.getElementById(
           'autodetach'), 'autodetachmode');
         wdw_aecOptions.enableField(document.getElementById(
@@ -176,8 +180,8 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       }
     },
 
-    showDetachWarning: function(radiobox) {
-      if (!radiobox.selected) return;
+    showDetachWarning: function(checkbox) {
+      if (!checkbox.checked) return;
       let amessage = this.aeStringBundle.GetStringFromName(
         "ConfirmDetachSettingDialogMessage");
       alert(amessage);

@@ -195,7 +195,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.isExtractEnabled = (!justDeleteAttachments && (isBackground || (prefs
     .get("extract.mode") != -1)));
   this.isDeleteEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
-    "autoextract.delete" : "actionafterextract.delete"));
+    "autoextract.deletemessage" : "actionafterextract.deletemessage"));
   this.isMarkreadEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
     "autoextract.markread" : "actionafterextract.markread"));
   this.isSaveMessageEnabled = (!justDeleteAttachments && prefs.get(
@@ -214,10 +214,14 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     "actionafterextract.endlaunch"));
   this.overwritePolicy = (prefs.get(isBackground ?
     "autoextract.overwritepolicy" : "overwritepolicy"));
-  this.detachMode = (justDeleteAttachments ? 1 : prefs.get(isBackground ?
-    "autoextract.detach.mode" : "actionafterextract.detach.mode"));
+  //override detach mode until it is fixed / working again
+  //this.detachMode = (justDeleteAttachments ? 1 : prefs.get(isBackground ?
+  //  "autoextract.detach.mode" : "actionafterextract.detach.mode"));
+  this.detachMode = 0;
+  this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
+    prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : "actionafterextract.detach.withoutconfirm"));
   this.confirmDetach = (!isBackground && this.isDetachEnabled && (this
-    .detachMode != 0) && prefs.get("actionafterextract.detach.confirm"));
+    .detachMode != 0) && prefs.get("actionafterextract.detach.warning"));
 
   //private vars
   /* var membername=value */
@@ -724,9 +728,13 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isLaunchEnabled = prefs.get("actionafterextract.launch");
   this.isEndLaunchEnabled = prefs.get("actionafterextract.endlaunch");
   this.overwritePolicy = prefs.get("overwritepolicy");
-  this.detachMode = prefs.get("actionafterextract.detach.mode");
+  //override detach mode until it is fixed / working again
+  //this.detachMode = prefs.get("actionafterextract.detach.mode");
+  this.detachMode = 0;
+  this.detachWithoutConfirm = prefs.get("actionafterextract.detach.withoutconfirm");
+
   this.confirmDetach = (this.isDetachEnabled && (this.detachMode != 0) &&
-    prefs.get("actionafterextract.detach.confirm"));
+    prefs.get("actionafterextract.detach.warning"));
 
   //private vars
   /* var membername=value */
@@ -854,7 +862,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
         return c.url;
       }) +
       ", filenamepattern: " + filenamepattern +
-      ", detachmode: " + this.detachMode;
+      ", detachMode: " + this.detachMode;
   };
   this.toString = toString;
 }
@@ -1099,21 +1107,22 @@ if (typeof AEMessage == "undefined") {
                   aewindow.arraycompact(this.attachments_display),
                   aewindow.arraycompact(this.attachments_uri),
                   savedfiles);
-              } else {
-                aewindow.aedump('>>>> else >>> aewindow.messenger.detachAllAttachments \n', 2);
+                } else {
+                aewindow.aedump('>>>> thistask.detachMode == 0 \n', 2);
                 aewindow.messenger.detachAllAttachments(acl.length, acl,
                   aewindow.arraycompact(this.attachments_url),
                   aewindow.arraycompact(this.attachments_display),
                   aewindow.arraycompact(this.attachments_uri),
                   false,  // false = do not save(?) or ask for destination folder (?)
-                  true);  // true = delete without warning
+                  thistask.detachWithoutConfirmation  // if true = delete without warning
+                ); 
               }
               // console.log("setTimeout");
               // seems to be working okay
               thistask.detachCancellationTimeout = setTimeout(function() {
                 aewindow.currentMessage.doAfterActions(states
                 .DELTEMPFILE)
-              }, 5000);
+              }, 2000);
               break;
             }
           }

@@ -49,7 +49,7 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.delete",
+  id: "extensions.attachmentextractor_cont.actionafterextract.deletemessage",
   type: "bool"
 },
 {
@@ -57,7 +57,7 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.withoutconfirm",
+  id: "extensions.attachmentextractor_cont.actionafterextract.detach.withoutconfirm",
   type: "bool"
 },
 {
@@ -134,7 +134,7 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.delete",
+  id: "extensions.attachmentextractor_cont.autoextract.deletemessage",
   type: "bool"
 },
 {
@@ -142,7 +142,7 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.withoutconfirm",
+  id: "extensions.attachmentextractor_cont.autoextract.detach.withoutconfirm",
   type: "bool"
 },
 {

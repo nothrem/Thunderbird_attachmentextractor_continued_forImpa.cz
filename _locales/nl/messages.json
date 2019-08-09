@@ -338,6 +338,12 @@
   "attachmentextractor.settings.after-detach.accesskey": {
     "message": "W"
   },
+  "attachmentextractor.settings.after-detach.confirm.label": {
+    "message": "Delete without confirmation"
+  },
+  "attachmentextractor.settings.after-detach.confirm.accesskey": {
+    "message": "w"
+  },
   "attachmentextractor.settings.after-detach.tbdelete.label": {
     "message": "Verwijderen met normale Thunderbird code."
   },
