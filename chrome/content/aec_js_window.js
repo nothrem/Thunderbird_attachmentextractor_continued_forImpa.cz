@@ -894,7 +894,6 @@ if (typeof AEMessage == "undefined") {
       .DIRECTORY_TYPE, 0600);
     //aewindow.aedump(attachment.uri+"\n"+attachment.url+"\n"+attachment);
 
-    var needsTimeout = false; //basically only TB2 needs this.
     if (file) {
       if (attachment.isExternalAttachment) {
         try {
@@ -916,29 +915,19 @@ if (typeof AEMessage == "undefined") {
               file.parent,
               attachmentindex);
           } else {
-            if (aewindow.messenger.saveAttachmentToFile) {
-              var listener = {
-                OnStartRunningUrl: function(url) {},
-                OnStopRunningUrl: function(url, exitcode) {
-                  aewindow.currentMessage.saveAtt_cleanUp(attachmentindex,
-                    (exitcode != 0));
-                }
-              };
-              aewindow.messenger.saveAttachmentToFile(
-                file,
-                attachment.url,
-                attachment.uri,
-                attachment.contentType,
-                listener); // tb3 only
-            } else {
-              file = aewindow.messenger.saveAttachmentToFolder(
-                attachment.contentType,
-                attachment.url,
-                encodeURIComponent(file.leafName),
-                attachment.uri,
-                file.parent); //tb2
-              needsTimeout = true;
-            }
+            var listener = {
+              OnStartRunningUrl: function(url) {},
+              OnStopRunningUrl: function(url, exitcode) {
+                aewindow.currentMessage.saveAtt_cleanUp(attachmentindex,
+                  (exitcode != 0));
+              }
+            };
+            aewindow.messenger.saveAttachmentToFile(
+              file,
+              attachment.url,
+              attachment.uri,
+              attachment.contentType,
+              listener);
           }
         } catch (e) {
           aewindow.aedump(e + "\n");
@@ -950,14 +939,6 @@ if (typeof AEMessage == "undefined") {
       this.attachments_savedfile[attachmentindex] = file;
       this.attachments_appendage[attachmentindex] = aewindow.currentTask
         .filemaker.lastMadeAppendage;
-      if (needsTimeout) {
-        aewindow.currentMessage.saveAtt_cleanUpFilter(attachmentindex);
-        console.log("setTimeout");
-        // not yet proofed
-        this.zerofileTimeout = setTimeout(function() {
-          aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, false)
-        }, 2000);
-      }
     } else aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
   };
 
