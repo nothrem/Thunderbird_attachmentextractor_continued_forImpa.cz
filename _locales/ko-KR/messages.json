@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "청소"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "분리된 이미지 인라인을 표시하기 위한 수정을 적용"
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "문서화 가능"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "가장 최근에 사용된 폴더"
   },

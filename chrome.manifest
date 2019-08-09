@@ -12,7 +12,6 @@ overlay    chrome://messenger/content/customizeToolbar.xul     chrome://attachme
 overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_buttons.xul              appversion>=64.0b4
 overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_menus.xul                appversion>=64.0b4
 overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_commandsets.xul          appversion>=64.0b4
-overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_fixDetachedImages.xul    appversion>=64.0b4
 overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_debugOnStart.xul
 overlay    chrome://messenger/content/messenger.xul            chrome://attachmentextractor_cont/content/aec_overlay_attachmentViewMenus.xul
 

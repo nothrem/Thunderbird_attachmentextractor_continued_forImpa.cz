@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Elimina"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Rendi possibile visualizzare le immagini incorporate separate"
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Ulteriori informazioni"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Cartelle più recentemente utilizzate"
   },

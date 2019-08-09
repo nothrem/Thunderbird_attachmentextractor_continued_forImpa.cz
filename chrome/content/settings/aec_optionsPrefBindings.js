@@ -19,11 +19,6 @@ Preferences.addAll([{
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.fixdetachedimages",
-  type: "bool"
-},
-
-{
   id: "extensions.attachmentextractor_cont.filenamepattern",
   type: "unichar"
 },

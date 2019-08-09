@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Исключающие ключевые слова(разделять запятой):">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "добавлять…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Очистить">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Применить фикс для отображения отделенных изображений внутри.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Доступна документация">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Наиболее часто используемые папки">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Активировать список наиболее часто используемых папок">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Хранить последние">

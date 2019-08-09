@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Mot-clés à exclure (séparés par des virgules) :">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Ajouter…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Effacer">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Appliquer la correction pour afficher les images détachées en ligne.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "E">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Dossiers récemment utilisés">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Activer une liste des dossiers récemment utilisés">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Garder les">

@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Очистить"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Применить фикс для отображения отделенных изображений внутри."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Доступна документация"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Наиболее часто используемые папки"
   },

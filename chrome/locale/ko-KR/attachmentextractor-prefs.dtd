@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "제외할 키워드:(쉼표로 구분)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "더하다…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "청소">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "분리된 이미지 인라인을 표시하기 위한 수정을 적용">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "문서화 가능">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "가장 최근에 사용된 폴더">
 <!ENTITY attachmentextractor.settings.savepathmru.label "가장 최근에 사용된 폴더 목록 사용.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "마지막">

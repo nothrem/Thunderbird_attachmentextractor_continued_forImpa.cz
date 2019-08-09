@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ignorovat klíčová slova: (oddělená čárkou)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Přidat…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Smazat">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Použít opravu k označení vyjmutých obrázků v přílohách.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Dokumentace k dispozici">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Poslední cesty ukládání">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Pamatovat si poslední cesty ukládání.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Pamatovat si posledních">

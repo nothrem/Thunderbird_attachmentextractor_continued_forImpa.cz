@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Vyčistiť"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Potvrdiť opravu na zobrazenie oddelených obrázkov v rade."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Dokumentácia dostupná"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Najčastejšie používané priečinky"
   },

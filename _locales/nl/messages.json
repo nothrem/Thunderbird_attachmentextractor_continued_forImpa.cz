@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Wissen"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Oplossing toepassen om ontkoppelde afbeeldingen inline weer te geven."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Documentatie beschikbaar"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Meest recent gebruikte mappen"
   },

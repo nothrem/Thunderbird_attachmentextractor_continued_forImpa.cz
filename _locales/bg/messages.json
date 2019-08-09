@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Изчистване"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Прилагане на поправка за показване на откачените изображения като вложени."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Налична документация"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Последно използвани папки"
   },

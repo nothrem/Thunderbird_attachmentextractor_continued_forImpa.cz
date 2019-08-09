@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palabras clave a excluir: (separadas por comas)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Añadir…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Limpiar">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Aplicar corrección para mostrar las imágenes separadas incorporadas.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Documentación disponible">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Carpetas usadas más recientemente">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Habilitar la lista de carpetas usadas más recientemente">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Guardar las últimas">

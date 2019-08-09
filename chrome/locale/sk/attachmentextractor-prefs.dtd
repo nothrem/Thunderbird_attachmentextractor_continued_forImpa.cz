@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Vylúčiť kľúčové slová: (oddelené čiarkou)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "pridať…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Vyčistiť">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Potvrdiť opravu na zobrazenie oddelených obrázkov v rade.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Dokumentácia dostupná">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Najčastejšie používané priečinky">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Zapnúť zoznam najčastejšie používaných priečinkov">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Uložiť posledné">

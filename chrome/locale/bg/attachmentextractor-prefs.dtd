@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ключови думи за изключване: (разделител «,»)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Добави…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Изчистване">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Прилагане на поправка за показване на откачените изображения като вложени.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Налична документация">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Последно използвани папки">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Със списък последно използвани папки.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Помнене на последните">

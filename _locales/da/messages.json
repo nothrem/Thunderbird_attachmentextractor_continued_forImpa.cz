@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Ryd"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Brug løsning til at vise fjernede billeder."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Dokumentation tilgængelig"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Oftest brugte foldere"
   },

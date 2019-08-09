@@ -80,7 +80,6 @@ pref("extensions.attachmentextractor_cont.queuerequests",true);
 
 pref("extensions.attachmentextractor_cont.progressdialog.showtext",true);
 pref("extensions.attachmentextractor_cont.extractinlinetoo",false);
-pref("extensions.attachmentextractor_cont.fixdetachedimages",false);
 
 pref("extensions.attachmentextractor_cont.reportgen",false);
 pref("extensions.attachmentextractor_cont.reportgen.cssfile", "");

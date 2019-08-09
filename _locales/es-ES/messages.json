@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Limpiar"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Aplicar corrección para mostrar las imágenes separadas incorporadas."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Documentación disponible"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Carpetas usadas más recientemente"
   },

@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Smazat"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Použít opravu k označení vyjmutých obrázků v přílohách."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Dokumentace k dispozici"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Poslední cesty ukládání"
   },

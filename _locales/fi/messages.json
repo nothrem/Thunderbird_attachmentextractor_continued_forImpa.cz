@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Tyhjennä"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Ota käyttöön irrotettujen kuvien näyttäminen."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Dokumentaatio saatavilla"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Viimeksi käytetyt kansiot"
   },

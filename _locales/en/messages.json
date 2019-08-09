@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Clear"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Apply fix to show Detached Images Inline."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Documentation Available"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Most Recently Used Folders"
   },

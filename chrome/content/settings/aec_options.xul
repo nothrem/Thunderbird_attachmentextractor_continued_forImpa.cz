@@ -686,10 +686,6 @@
                       label="&attachmentextractor.settings.progressdialogtext.label;" 
                       accesskey="&attachmentextractor.settings.progressdialogtext.accesskey;" 
                       preference="extensions.attachmentextractor_cont.progressdialog.showtext" />
-                    <checkbox id="fixdetachedimages" 
-                      label="&attachmentextractor.settings.fixdetachedimages.label;" 
-                      accesskey="&attachmentextractor.settings.fixdetachedimages.accesskey;" 
-                      preference="extensions.attachmentextractor_cont.fixdetachedimages" />
                     <checkbox id="inlinepolicy" 
                       label="&attachmentextractor.settings.inlinepolicy.label;" 
                       accesskey="&attachmentextractor.settings.inlinepolicy.accesskey;" 

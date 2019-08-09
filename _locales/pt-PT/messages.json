@@ -275,15 +275,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Limpar"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Aplicar reparação para mostrar imagens em linha separadas."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "Documentação disponível"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Pastas usadas Recentemente"
   },

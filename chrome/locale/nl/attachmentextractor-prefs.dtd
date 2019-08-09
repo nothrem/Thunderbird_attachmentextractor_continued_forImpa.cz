@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Uit te sluiten sleutelwoorden: (gescheiden door komma’s)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Toevoegen…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Wissen">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Oplossing toepassen om ontkoppelde afbeeldingen inline weer te geven.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Documentatie beschikbaar">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Meest recent gebruikte mappen">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Lijst met meest recent gebruikte mappen inschakelen.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Laatste">

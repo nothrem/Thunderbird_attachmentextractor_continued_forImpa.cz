@@ -23,9 +23,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Keywords to exclude: (comma-seperated)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Add…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Delete">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Apply fix to show Detached Images Inline."> 
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Documentation Available"> 
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Most Recently Used Folders">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Enable a Most Recently Used Folders list.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Store the last">

@@ -293,15 +293,6 @@
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Effacer"
   },
-  "attachmentextractor.settings.fixdetachedimages.label": {
-    "message": "Appliquer la correction pour afficher les images détachées en ligne."
-  },
-  "attachmentextractor.settings.fixdetachedimages.linktext": {
-    "message": "E"
-  },
-  "attachmentextractor.settings.fixdetachedimages.accesskey": {
-    "message": "D"
-  },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Dossiers récemment utilisés"
   },

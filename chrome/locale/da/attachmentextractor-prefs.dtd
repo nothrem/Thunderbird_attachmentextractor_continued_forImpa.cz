@@ -22,9 +22,6 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Nøgleord der skal ses bort fra: (adskilt med komma)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Tilføje…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Ryd">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.label "Brug løsning til at vise fjernede billeder.">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.linktext "Dokumentation tilgængelig">
-<!ENTITY attachmentextractor.settings.fixdetachedimages.accesskey "D">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Oftest brugte foldere">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Gem liste over brugte foldere.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Gem den seneste">
