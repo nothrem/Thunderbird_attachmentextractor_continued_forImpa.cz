@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "T"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Lataa jokainen liite (itsenäisesti) omalla oletussovelluksellaan."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Lataa kaikki liitteet määritellyllä ulkoisella sovelluksella:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "M"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Vastaanottokuittaukset …"
   },

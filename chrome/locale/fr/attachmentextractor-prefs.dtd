@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "A">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Sauver le texte du message dans un fichier. (note : même modèle pour normal et extraction automatique)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Charger chaque pièce jointe (individuellement) avec l&apos;application par défaut">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Charger toutes les pièces jointes avec l&apos;application externe suivante :">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Accepter l&apos;accusé de réception…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Permet de d&apos;accepter les accusés de réception.">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued peut envoyer des accusés de réception automatiquement lorsqu&apos;un message est marqué comme Lu">

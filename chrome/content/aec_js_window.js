@@ -201,17 +201,12 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.isSaveMessageEnabled = (!justDeleteAttachments && prefs.get(
     isBackground ? "autoextract.savemessage" :
     "actionafterextract.savemessage"));
-  this.isLaunchEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
-    "autoextract.launch" : "actionafterextract.launch"));
   this.isDetachEnabled = (justDeleteAttachments || prefs.get(isBackground ?
     "autoextract.detach" : "actionafterextract.detach"));
   this.isCleartagEnabled = (isBackground && (prefs.get(
     "autoextract.ontriggeronly") && prefs.get("autoextract.cleartag")));
   this.isNotifywhendoneEnabled = (!isBackground && (selectedMsgs.length > 1 &&
     prefs.get("notifywhendone")));
-  this.isEndLaunchEnabled = (!justDeleteAttachments && prefs.get(
-    isBackground ? "autoextract.endlaunch" :
-    "actionafterextract.endlaunch"));
   this.overwritePolicy = (prefs.get(isBackground ?
     "autoextract.overwritepolicy" : "overwritepolicy"));
   //override detach mode until it is fixed / working again
@@ -340,8 +335,6 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.selectNextMessage = function() {
     //try {
     aewindow.aedump('{function:AETask.selectNextMessage}\n', 2);
-    if (currentindex > -1 && that.isEndLaunchEnabled) that
-  .storeSavedFiles();
     currentindex++;
     if (currentindex == selectedMsgs.length) {
       that.endAttachmentextraction();
@@ -406,23 +399,6 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     if (!that.active) return;
     that.active = false;
 
-    if (that.isEndLaunchEnabled) {
-      var pref = (isBackground ? "autoextract" : "actionafterextract") +
-        ".endlaunch.application";
-      if (prefs.hasUserValue(pref) && savedFiles.length > 0) {
-        try {
-          var exec = prefs.getFile(pref);
-          var process = Cc["@mozilla.org/process/util;1"].createInstance(Ci
-            .nsIProcess);
-          aewindow.aedump("// Launching external App ... '" + exec
-            .leafName + "' with '" + savedFiles + "'\n", 3);
-          process.init(exec);
-          process.run(false, savedFiles, savedFiles.length);
-        } catch (e) {
-          aewindow.aedump(e);
-        }
-      }
-    }
     // console.log("setTimeout");
     // seems to be working okay
     setTimeout(function() {
@@ -725,8 +701,6 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isSaveMessageEnabled = false;
   this.isExtractEnabled = (prefs.get("extract.mode") != -1);
   this.isDetachEnabled = prefs.get("actionafterextract.detach");
-  this.isLaunchEnabled = prefs.get("actionafterextract.launch");
-  this.isEndLaunchEnabled = prefs.get("actionafterextract.endlaunch");
   this.overwritePolicy = prefs.get("overwritepolicy");
   //override detach mode until it is fixed / working again
   //this.detachMode = prefs.get("actionafterextract.detach.mode");
@@ -1015,16 +989,6 @@ if (typeof AEMessage == "undefined") {
       this.attachments_savedfile[attachmentindex] = undefined;
       this.attachments_appendage[attachmentindex] = undefined;
       this.attachments_external[attachmentindex] = undefined;
-    }
-    try {
-      if (aewindow.currentTask.isLaunchEnabled &&
-        this.attachments_savedfile[attachmentindex] != null &&
-        this.attachments_savedfile[attachmentindex].exists()) {
-        aewindow.aedump('{function:AEMessage.doLaunch}\n', 2);
-        this.attachments_savedfile[attachmentindex].launch();
-      }
-    } catch (e) {
-      aewindow.aedump(e + "\n");
     }
     aewindow.progress_tracker.stopping_attachment(attachmentindex);
     attachmentindex++;

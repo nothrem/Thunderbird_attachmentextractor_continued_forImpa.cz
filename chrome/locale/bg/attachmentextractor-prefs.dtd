@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Запис на текста в писмо във файл. (забележка: еднакъв шаблон за нормално и авто-извличане)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Зареждане на всеки прикачен файл (поотделно) със съответстващото му приложение.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Зареждане на всички прикачени файлове с указано външно приложение:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Обратни разписки…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Обратни разписки">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено">

@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "G"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Indlæs hver enkel fil med standard programmet."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Indlæs alle filer med det specificerede program:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "S"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Kvitteringer…"
   },

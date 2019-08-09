@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "G"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Carregar cada anexo (individualmente) com a sua aplicação pré-definida."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "C"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Carregar todos os Anexos com a aplicação externa especificada:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "a"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Recibos de leitura…"
   },

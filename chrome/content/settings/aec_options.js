@@ -40,10 +40,6 @@ if ("undefined" == typeof(wdw_aecOptions)) {
         'afterextractpolicydetach'), 'afterextractpolicydetachmode');
       wdw_aecOptions.enableField(document.getElementById(
         'savepathmru'), 'savepathmrucount');
-      wdw_aecOptions.enableField(document.getElementById(
-        'afterextractendlaunch'), ['afterextractendlaunchapplication',
-        'afterextractendlaunchapplicationbutton'
-      ]);
 
       wdw_aecOptions.mFolderListBox = document.getElementById("suggestfolderlist");
       wdw_aecOptions.buildFolderList();
@@ -106,10 +102,6 @@ if ("undefined" == typeof(wdw_aecOptions)) {
         wdw_aecOptions.enableField(document.getElementById(
           'autosavemessage'), ['autofnpsavemessage',
           'autofnpsavemessagecountpattern'
-        ]);
-        wdw_aecOptions.enableField(document.getElementById(
-          'autoendlaunch'), ['autoendlaunchapplication',
-          'autoendlaunchapplicationbutton'
         ]);
       }
     },

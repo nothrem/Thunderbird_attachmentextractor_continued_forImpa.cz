@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "U"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Načítať každú prílohu (individuálne) s ich pôvodnou aplikáciou."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Načítať každú prílohu so špecifickou externou aplikáciou:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "a"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Potvrdiť príjem…"
   },

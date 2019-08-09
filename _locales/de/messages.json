@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Jeden Anhang mit der zugeordneten Standardanwendung öffnen"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "z"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Alle Anhänge mit folgender Anwendung öffnen:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "w"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Empfangsbestätigungen…"
   },

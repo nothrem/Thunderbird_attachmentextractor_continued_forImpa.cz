@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "o">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Salva il messaggio di testo in un file (nota: stesso modello per estrazione normale ed autoestrazione)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "m">
-<!ENTITY attachmentextractor.settings.after-launch.label "Apri ogni singolo allegato con l&apos;applicazione predefinita">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "f">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Apri tutti gli allegati con l&apos;applicazione esterna specificata:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "r">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Ricevute di ritorno…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Ricevute di ritorno">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "Marcando un messaggio come letto le ricevute di ritorno verranno inviate automaticamente con AE">

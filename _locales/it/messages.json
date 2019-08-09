@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "m"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Apri ogni singolo allegato con l&apos;applicazione predefinita"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "f"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Apri tutti gli allegati con l&apos;applicazione esterna specificata:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "r"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Ricevute di ritorno…"
   },

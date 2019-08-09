@@ -28,10 +28,6 @@ pref("extensions.attachmentextractor_cont.actionafterextract.detach.warning",tru
 pref("extensions.attachmentextractor_cont.actionafterextract.savemessage",false);
 pref("extensions.attachmentextractor_cont.notifywhendone",true);
 
-pref("extensions.attachmentextractor_cont.actionafterextract.launch",false);
-pref("extensions.attachmentextractor_cont.actionafterextract.endlaunch",false);
-pref("extensions.attachmentextractor_cont.actionafterextract.endlaunch.application","");
-
 /* Auto pane */
 pref("extensions.attachmentextractor_cont.autoextract",false);
 
@@ -58,11 +54,6 @@ pref("extensions.attachmentextractor_cont.autoextract.cleartag",false);
 
 pref("extensions.attachmentextractor_cont.autoextract.savemessage",false);
 pref("extensions.attachmentextractor_cont.autoextract.filenamepattern","");
-
-
-pref("extensions.attachmentextractor_cont.autoextract.launch",false);
-pref("extensions.attachmentextractor_cont.autoextract.endlaunch",false);
-pref("extensions.attachmentextractor_cont.autoextract.endlaunch.application","");
 
 /* Filename pattern pane */
 pref("extensions.attachmentextractor_cont.filenamepattern","#namepart##count##extpart#");

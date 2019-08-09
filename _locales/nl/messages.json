@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "O"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Elke (individuele) bijlage laden met standaardtoepassing."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Alle bijlagen laden met opgegeven externe toepassing:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Ontvangstbevestigingen…"
   },

@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "T"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Otevřít všechny přílohy (jednotlivě) v jejich výchozí aplikaci."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Otevřít všechny přílohy v externí aplikaci:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Potvrzení o přečtení…"
   },

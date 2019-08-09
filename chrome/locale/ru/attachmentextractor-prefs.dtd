@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Сохранить текст сообщения в файл. (примечание: тот же шаблон для обычного и авто-извлечения)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Открывать каждое вложение (индивидуально) его приложением по умолчанию">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Открывать все вложения указанным внешним приложением:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Подтверждение о получении…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Подтверждение о получении">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное">

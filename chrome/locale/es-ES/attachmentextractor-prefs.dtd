@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Guardar el texto del mensaje a un archivo. (nota: mismo patrón para la extracción normal y automática)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
-<!ENTITY attachmentextractor.settings.after-launch.label "Cargar cada adjunto en su aplicación por defecto">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "C">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Cargar todos los adjuntos con la siguiente aplicación externa:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "t">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Acuse de recibo …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Acuse de recibo">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued puede enviar automáticamente acuses de recibo cuando se marque un mensaje como leído">

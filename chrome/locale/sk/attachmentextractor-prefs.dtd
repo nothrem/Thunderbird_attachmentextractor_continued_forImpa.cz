@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložiť textovú správu do súboru. (pozn.: rovnaký vzor pre normálne a auto-uloženie)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "U">
-<!ENTITY attachmentextractor.settings.after-launch.label "Načítať každú prílohu (individuálne) s ich pôvodnou aplikáciou.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Načítať každú prílohu so špecifickou externou aplikáciou:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "a">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Potvrdiť príjem…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Potvrdiť príjem">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued môže odoslať potvrdenie prijatia automaticky ak je správa označená ako prečítaná.">

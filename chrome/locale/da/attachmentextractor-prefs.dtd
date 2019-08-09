@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "U">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Gem beskedens tekst. (Samme mønster bruges til normal kørsel og automatisk processering)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
-<!ENTITY attachmentextractor.settings.after-launch.label "Indlæs hver enkel fil med standard programmet.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Indlæs alle filer med det specificerede program:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Kvitteringer…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Kvitteringer">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued kan sende kvitteringer automatisk når en besked markeres som læst">

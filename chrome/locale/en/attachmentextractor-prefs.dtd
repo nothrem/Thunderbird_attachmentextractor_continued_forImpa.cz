@@ -56,10 +56,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Save message txt to file. (note: same pattern for normal and auto-extract)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Load each attachment (Individually) with their default application.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Load all attachments with specified external application:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Return Receipts …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Return Receipts">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued can send return receipts automatically when a message is marked as Read">

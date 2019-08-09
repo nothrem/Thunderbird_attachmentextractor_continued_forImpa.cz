@@ -81,18 +81,6 @@ Preferences.addAll([{
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.launch",
-  type: "bool"
-},
-{
-  id: "extensions.attachmentextractor_cont.actionafterextract.endlaunch",
-  type: "bool"
-},
-{
-  id: "extensions.attachmentextractor_cont.actionafterextract.endlaunch.application",
-  type: "string"
-},
-{
   id: "extensions.attachmentextractor_cont.returnreceipts",
   type: "bool"
 },
@@ -156,18 +144,6 @@ Preferences.addAll([{
 {
   id: "extensions.attachmentextractor_cont.autoextract.savemessage",
   type: "bool"
-},
-{
-  id: "extensions.attachmentextractor_cont.autoextract.launch",
-  type: "bool"
-},
-{
-  id: "extensions.attachmentextractor_cont.autoextract.endlaunch",
-  type: "bool"
-},
-{
-  id: "extensions.attachmentextractor_cont.autoextract.endlaunch.application",
-  type: "string"
 },
 {
   id: "extensions.attachmentextractor_cont.autoextract.onattachmentsonly",

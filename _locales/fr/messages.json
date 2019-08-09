@@ -392,18 +392,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Charger chaque pièce jointe (individuellement) avec l&apos;application par défaut"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Charger toutes les pièces jointes avec l&apos;application externe suivante :"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Accepter l&apos;accusé de réception…"
   },

@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "Jeden Anhang mit der zugeordneten Standardanwendung öffnen">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "z">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Alle Anhänge mit folgender Anwendung öffnen:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "w">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Empfangsbestätigungen…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Empfangsbestätigungen">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde.">

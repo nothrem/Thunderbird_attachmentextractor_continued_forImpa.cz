@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Зареждане на всеки прикачен файл (поотделно) със съответстващото му приложение."
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Зареждане на всички прикачени файлове с указано външно приложение:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Обратни разписки…"
   },

@@ -226,27 +226,6 @@
                       preference="extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern" 
                       onchange="wdw_aecOptions.check_filenamepattern(this,true);"/>
                   </hbox>
-                  <checkbox id="afterextractlaunch" 
-                    label="&attachmentextractor.settings.after-launch.label;" 
-                    accesskey="&attachmentextractor.settings.after-launch.accesskey;" 
-                    preference="extensions.attachmentextractor_cont.actionafterextract.launch" />
-                  <checkbox id="afterextractendlaunch" 
-                    label="&attachmentextractor.settings.after-endlaunch.label;" 
-                    accesskey="&attachmentextractor.settings.after-endlaunch.accesskey;" 
-                    preference="extensions.attachmentextractor_cont.actionafterextract.endlaunch" 
-                    oncommand="wdw_aecOptions.enableField(document.getElementById('afterextractendlaunch'),['afterextractendlaunchapplication','afterextractendlaunchapplicationbutton']);" />
-                  <hbox align="center" class="indent">
-                    <textbox id="afterextractendlaunchapplication" 
-                      flex="1" 
-                      size="50" 
-                      readonly="true" 
-                      preference="extensions.attachmentextractor_cont.actionafterextract.endlaunch.application" 
-                      onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');"/>
-                    <button id="afterextractendlaunchapplicationbutton" 
-                      type="button" 
-                      oncommand="wdw_aecOptions.browseForExecutable('extensions.attachmentextractor_cont.actionafterextract.endlaunch.application');" 
-                      label="&attachmentextractor.settings.savefolder.browsebutton;"/>
-                  </hbox>
                 </groupbox>
               </vbox>
             </prefpane>
@@ -572,27 +551,6 @@
                           flex="1" 
                           preference="extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern" 
                           onchange="wdw_aecOptions.check_filenamepattern(this,true);"/>
-                      </hbox>
-                      <checkbox id="autolaunch" 
-                        label="&attachmentextractor.settings.after-launch.label;" 
-                        accesskey="&attachmentextractor.settings.after-launch.accesskey;" 
-                        preference="extensions.attachmentextractor_cont.autoextract.launch" />
-                      <checkbox id="autoendlaunch" 
-                        label="&attachmentextractor.settings.after-endlaunch.label;" 
-                        accesskey="&attachmentextractor.settings.after-endlaunch.accesskey;" 
-                        preference="extensions.attachmentextractor_cont.autoextract.endlaunch" 
-                        oncommand="wdw_aecOptions.enableField(document.getElementById('autoendlaunch'),['autoendlaunchapplication','autoendlaunchapplicationbutton']);" />
-                      <hbox align="center" class="indent">
-                        <textbox id="autoendlaunchapplication" 
-                          flex="1" 
-                          size="50" 
-                          readonly="true" 
-                          preference="extensions.attachmentextractor_cont.autoextract.endlaunch.application" 
-                          onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.autoextract.endlaunch.application');"/>
-                        <button id="autoendlaunchapplicationbutton" 
-                          type="button" 
-                          oncommand="wdw_aecOptions.browseForExecutable('extensions.attachmentextractor_cont.autoextract.endlaunch.application');" 
-                          label="&attachmentextractor.settings.savefolder.browsebutton;"/>
                       </hbox>
                     </groupbox>
                   </groupbox>

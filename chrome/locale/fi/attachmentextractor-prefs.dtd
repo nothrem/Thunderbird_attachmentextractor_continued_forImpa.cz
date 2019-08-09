@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "I">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Tallenna viestiteksti tiedostoon. (huomaa: sama malli normaalille ja automaattiselle poiminnalle)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-launch.label "Lataa jokainen liite (itsenäisesti) omalla oletussovelluksellaan.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Lataa kaikki liitteet määritellyllä ulkoisella sovelluksella:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "M">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Vastaanottokuittaukset …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Vastaanottokuittaukset">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi">

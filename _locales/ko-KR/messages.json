@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "기본 응용프로그램으로 각 첨부파일을 (독립적으로) 로드"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "모든 첨부파일을 지정된 외부 응용프로그램을 통해 열기"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "수령증 발급…"
   },

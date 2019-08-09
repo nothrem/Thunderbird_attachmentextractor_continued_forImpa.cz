@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Открывать каждое вложение (индивидуально) его приложением по умолчанию"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Открывать все вложения указанным внешним приложением:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "E"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Подтверждение о получении…"
   },

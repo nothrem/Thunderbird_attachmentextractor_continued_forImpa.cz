@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložit zprávu do souboru TXT. (stejná syntaxe pro ruční i pro automatické ukládání)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-launch.label "Otevřít všechny přílohy (jednotlivě) v jejich výchozí aplikaci.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Otevřít všechny přílohy v externí aplikaci:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Potvrzení o přečtení…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Potvrzení o přečtení">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "Rozšíření AttachmentExtractor Continued umí odesílat automaticky potvrzení o přečtení, během označování zpráv jako přečtených.">

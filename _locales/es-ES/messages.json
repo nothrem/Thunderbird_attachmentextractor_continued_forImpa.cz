@@ -374,18 +374,6 @@
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "G"
   },
-  "attachmentextractor.settings.after-launch.label": {
-    "message": "Cargar cada adjunto en su aplicación por defecto"
-  },
-  "attachmentextractor.settings.after-launch.accesskey": {
-    "message": "C"
-  },
-  "attachmentextractor.settings.after-endlaunch.label": {
-    "message": "Cargar todos los adjuntos con la siguiente aplicación externa:"
-  },
-  "attachmentextractor.settings.after-endlaunch.accesskey": {
-    "message": "t"
-  },
   "attachmentextractor.settings.returnreceipts.button.label": {
     "message": "Acuse de recibo …"
   },

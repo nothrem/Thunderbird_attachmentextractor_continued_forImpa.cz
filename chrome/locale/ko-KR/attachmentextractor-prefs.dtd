@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "메세지 글을 파일로 저장.(주의:일반 및 자동추출을 위한 동일 패턴)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-launch.label "기본 응용프로그램으로 각 첨부파일을 (독립적으로) 로드">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "모든 첨부파일을 지정된 외부 응용프로그램을 통해 열기">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "수령증 발급…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "수령증 발급">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued는 메세지가 읽음 처리가 되면 자동으로 수령증을 보낼 수 있습니다">

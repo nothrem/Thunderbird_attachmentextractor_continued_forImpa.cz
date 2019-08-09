@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "o">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Guardar mensagem txt para ficheiro. (nota:Mesmo padrão para normal e auo-extracção)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
-<!ENTITY attachmentextractor.settings.after-launch.label "Carregar cada anexo (individualmente) com a sua aplicação pré-definida.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "C">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Carregar todos os Anexos com a aplicação externa especificada:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "a">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Recibos de leitura…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Recibos de leitura">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "O AttachmentExtractor Continued pode enviar recibos de leitura automaticamente quando uma mensagem é marcada como lida">

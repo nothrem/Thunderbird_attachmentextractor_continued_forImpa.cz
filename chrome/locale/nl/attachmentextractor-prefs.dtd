@@ -55,10 +55,6 @@
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Berichttekst in bestand opslaan (opmerking: identiek patroon voor normaal en automatisch uitpakken).">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-launch.label "Elke (individuele) bijlage laden met standaardtoepassing.">
-<!ENTITY attachmentextractor.settings.after-launch.accesskey "I">
-<!ENTITY attachmentextractor.settings.after-endlaunch.label "Alle bijlagen laden met opgegeven externe toepassing:">
-<!ENTITY attachmentextractor.settings.after-endlaunch.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Ontvangstbevestigingen…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Ontvangstbevestigingen">
 <!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued kan automatisch ontvangstbevestigingen versturen wanneer een bericht als gelezen wordt gemarkeerd">
