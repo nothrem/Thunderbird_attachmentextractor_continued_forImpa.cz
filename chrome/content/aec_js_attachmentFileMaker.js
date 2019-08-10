@@ -3,20 +3,20 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-if (typeof AttachmentFileMaker == "undefined") {
+if (typeof AttachmentFileMaker === "undefined") {
   dump("##AttachmentFileMaker Prototype Definition start##\n");
 
   function AttachmentFileMaker(currentfilenamepattern, folder, aewindow) {
-    if ((typeof folder) == "string" || folder instanceof String) {
+    if ((typeof folder) === "string" || folder instanceof String) {
       this.destFolder = aewindow.fileObject;
       this.destFolder.initWithPath(folder);
     } else this.destFolder = folder;
@@ -56,7 +56,7 @@ if (typeof AttachmentFileMaker == "undefined") {
       .replace(/#count#/g, ""), this.destFolder, filename, 0, metacache);
     proposedfileobject.appendRelativePath(proposedappendage);
 
-    if (aewindow.currentTask.overwritePolicy == this
+    if (aewindow.currentTask.overwritePolicy === this
       .OVERWRITEPOLICY_REPLACE) {
       aewindow.aedump(">> '" + proposedappendage +
         "' - replace so no need to check.  proceed\n", 1);
@@ -69,12 +69,12 @@ if (typeof AttachmentFileMaker == "undefined") {
         "' doesn't exist so proceed\n", 1);
       this.lastMadeAppendage = proposedappendage;
       return proposedfileobject;
-    } else if (aewindow.currentTask.overwritePolicy == this
+    } else if (aewindow.currentTask.overwritePolicy === this
       .OVERWRITEPOLICY_IGNORE) {
       aewindow.aedump(">> '" + proposedappendage +
         "' exists and policy is to skip so abort extraction\n", 1);
       return false;
-    } else if (aewindow.currentTask.overwritePolicy == this
+    } else if (aewindow.currentTask.overwritePolicy === this
       .OVERWRITEPOLICY_ASK) {
       var flags = aewindow.promptService.BUTTON_TITLE_IS_STRING * aewindow
         .promptService.BUTTON_POS_0 +
@@ -95,19 +95,19 @@ if (typeof AttachmentFileMaker == "undefined") {
         aewindow.aeStringBundle.GetStringFromName(
           "OverwriteDialogDontAskAgain"),
         checkedstate);
-      if (checkedstate.value == true) {
+      if (checkedstate.value === true) {
         this.prefs.set("overwritepolicy", selectedbutton + 1);
       }
-      if (selectedbutton == 0) {
+      if (selectedbutton === 0) {
         this.lastMadeAppendage = proposedappendage;
         return proposedfileobject;
       }
-      if (selectedbutton == 1) {
+      if (selectedbutton === 1) {
         return this.iterativegenerator(this.destFolder, filename,
           proposedfileobject, this.currentfilenamepattern.replace(
             /#count#/g, count_pattern), 1, metacache);
       }
-      if (selectedbutton == 2) {
+      if (selectedbutton === 2) {
         return false;
       }
       return false;
@@ -172,7 +172,7 @@ if (typeof AttachmentFileMaker == "undefined") {
           out += this.FULLDAYS[date.getDay()];
           break;
         case "N":
-          out += (tmp = date.getDay()) == 0 ? 7 : tmp;
+          out += (tmp = date.getDay()) === 0 ? 7 : tmp;
           break;
         case "S":
           out += this.DAYSUFFIX[date.getDate()];
@@ -209,13 +209,13 @@ if (typeof AttachmentFileMaker == "undefined") {
           out += this.AMPM[(date.getHours() < 12 ? 0 : 1)];
           break;
         case "g":
-          out += (tmp = date.getHours() % 12) == 0 ? 12 : tmp;
+          out += (tmp = date.getHours() % 12) === 0 ? 12 : tmp;
           break;
         case "G":
           out += date.getHours();
           break;
         case "h":
-          out += (tmp = ((tmp = date.getHours() % 12) == 0 ? 12 : tmp)) < 10 ?
+          out += (tmp = ((tmp = date.getHours() % 12) === 0 ? 12 : tmp)) < 10 ?
             "0" + tmp : tmp;
           break;
         case "H":
@@ -248,7 +248,7 @@ if (typeof AttachmentFileMaker == "undefined") {
       proposedfileobject.appendRelativePath(proposedappendage);
       count++;
     } while (proposedfileobject.exists())
-    if (file != "") aewindow.aedump(">> '" + proposedappendage +
+    if (file !== "") aewindow.aedump(">> '" + proposedappendage +
       "' doesn't exist so proceed\n", 1);
     this.lastMadeAppendage = proposedappendage;
     return proposedfileobject;
@@ -336,17 +336,17 @@ if (typeof AttachmentFileMaker == "undefined") {
 
   AttachmentFileMaker.prototype.cleanSubjectLine = function(subject, starts) {
     var morework;
-    if (subject == null) return "";
+    if (subject === null) return "";
     do {
       morework = false;
-      if (subject.length == 0) break;
-      if (subject.charAt(0) == '[' && subject.charAt(subject.length - 1) ==
+      if (subject.length === 0) break;
+      if (subject.charAt(0) === '[' && subject.charAt(subject.length - 1) ===
         ']') {
         subject = subject.substring(1, subject.length - 1);
         morework = true;
       }
       for (let i = 0; i < starts.length && !morework; i++) {
-        if (subject.toLowerCase().indexOf(starts[i]) == 0) {
+        if (subject.toLowerCase().indexOf(starts[i]) === 0) {
           subject = subject.substring(starts[i].length);
           morework = true;
         }
@@ -356,20 +356,20 @@ if (typeof AttachmentFileMaker == "undefined") {
   };
 
   AttachmentFileMaker.prototype.isValidFilenamePattern = function(fnp) {
-    return (fnp && (fnp.indexOf("%") != -1 || fnp.indexOf("#count#") != -1));
+    return (fnp && (fnp.indexOf("%") !== -1 || fnp.indexOf("#count#") !== -1));
   };
 
   AttachmentFileMaker.prototype.fixFilenamePattern = function(fnp) {
     if (!fnp || this.isValidFilenamePattern(fnp)) return fnp;
     var expi = fnp.lastIndexOf("#extpart#");
-    if (expi == -1) expi = fnp.lastIndexOf(".");
-    if (expi != -1) return fnp.substring(0, expi) + "#count#" + fnp.substring(
+    if (expi === -1) expi = fnp.lastIndexOf(".");
+    if (expi !== -1) return fnp.substring(0, expi) + "#count#" + fnp.substring(
       expi, fnp.length);
     else return fnp + "#count#";
   };
 
   AttachmentFileMaker.prototype.isValidCountPattern = function(cp) {
-    return (cp && (cp.indexOf("%") != -1));
+    return (cp && (cp.indexOf("%") !== -1));
   };
 
   AttachmentFileMaker.prototype.fixCountPattern = function(cp) {
@@ -428,13 +428,13 @@ if (typeof AttachmentFileMaker == "undefined") {
     }
 
     count = "" + count;
-    if (navigator.appVersion.indexOf("Windows") != -1) {
+    if (navigator.appVersion.indexOf("Windows") !== -1) {
       aFileName = aFileName.replace(/[\"]+/g, "'") /*  " = '			*/
         .replace(/[\*\:\?\t\v]+/g, " ") /*  * : ? tab vtab = 	*/
         .replace(/[\<]+/g, "(") /*  < = (			*/
         .replace(/[\>]+/g, ")") /*  > = )			*/
         .replace(/[\/\|]+/g, "_"); /*  /| = _ 		    */
-      var comp = (folder == null || folder.path == null ? "" : folder.path) +
+      var comp = (folder === null || folder.path === null ? "" : folder.path) +
         "\\" + aFileName;
       comp = comp.replace(/\\/g, "");
       var len1 = comp.length;
@@ -454,13 +454,13 @@ if (typeof AttachmentFileMaker == "undefined") {
               this.countOccurrences(splits[i], "#extpart#", extpart));
 
             splits[i] = splits[i].replace(/%|#extpart#/g, "");
-            cd = (i == splits.length - 1) ? remainToDelete : Math.min(Math
+            cd = (i === splits.length - 1) ? remainToDelete : Math.min(Math
               .ceil((splits[i].length - 1) / totlen * charsToDelete),
               splits[i].length - 1);
             remainToDelete -= cd;
             splits[i] = this.reconstructString(splits[i].substring(0, splits[
               i].length - cd), arr);
-            newfn += (i == 0 ? "" : "\\") + splits[i];
+            newfn += (i === 0 ? "" : "\\") + splits[i];
           }
           aFileName = newfn;
         }
@@ -468,7 +468,7 @@ if (typeof AttachmentFileMaker == "undefined") {
         extpart.replace(this.tokenregexs.dollars, "$$$$"));
       aFileName = aFileName.replace(/[\. ]+\\/g, "\\");
     } else {
-      if (navigator.appVersion.indexOf("Macintosh") != -1) aFileName =
+      if (navigator.appVersion.indexOf("Macintosh") !== -1) aFileName =
         aFileName.replace(/[\:]+/g, "_"); /*   : = _ 	*/
       aFileName = aFileName.replace(/%/g, count).replace(/#extpart#/g, extpart
         .replace(this.tokenregexs.dollars, "$$$$"));

@@ -9,7 +9,7 @@ var AECprefs = Cc["@mozilla.org/preferences-service;1"]
 // global var filenamepatternbox to be frequently used in aec_options.xul
 var filenamepatternbox = document.getElementById('filenamepattern');
 
-if ("undefined" == typeof(wdw_aecOptions)) {
+if (typeof (wdw_aecOptions) === "undefined") {
   var {
     MailServices
   } = ChromeUtils.import("resource:///modules/MailServices.jsm");
@@ -114,12 +114,12 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       } else field = document.getElementById(fieldID);
       if (!field) return;
 
-      if ((aCheckbox.localName == "radio" && aCheckbox.selected) ||
-        (aCheckbox.localName == "checkbox" && aCheckbox.checked)) {
-        if (field.localName == "radiogroup") field.disabled = false;
+      if ((aCheckbox.localName === "radio" && aCheckbox.selected) ||
+        (aCheckbox.localName === "checkbox" && aCheckbox.checked)) {
+        if (field.localName === "radiogroup") field.disabled = false;
         field.removeAttribute("disabled");
       } else {
-        if (field.localName == "radiogroup") field.disabled = true;
+        if (field.localName === "radiogroup") field.disabled = true;
         field.setAttribute("disabled", "true");
       }
       if (fieldID instanceof Array) wdw_aecOptions.enableField(
@@ -140,7 +140,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       let currentlySelected = document.getElementById("aec-paneDeck")
         .querySelector("#aec-paneDeck > prefpane[selected]");
       if (currentlySelected) {
-        if (currentlySelected == pane) {
+        if (currentlySelected === pane) {
           return;
         }
         currentlySelected.removeAttribute("selected");
@@ -228,7 +228,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
           aedump(e, 1);
         }
         fp.open(r => {
-          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
+          if (r !== Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
           wdw_aecOptions.setComplexPref(prefname, fp.file.path);
@@ -262,7 +262,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
           aedump(e, 1);
         }
         fp.open(r => {
-          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
+          if (r !== Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
           wdw_aecOptions.setComplexPref(prefname, fp.file.path);
@@ -296,7 +296,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
           aedump(e, 1);
         }
         fp.open(r => {
-          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
+          if (r !== Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
           wdw_aecOptions.setComplexPref(prefname, fp.file.path);
@@ -308,7 +308,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
     filltaglist: function() {
       let taglist = document.getElementById('autotriggertag');
-      if (taglist.selectedItem != null)
+      if (taglist.selectedItem !== null)
         return; //sometimes triggers twice. don't know why but stop it anyway.
       let tagService = Cc["@mozilla.org/messenger/tagservice;1"]
         .getService(Ci.nsIMsgTagService);
@@ -323,7 +323,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
     fillcountlist: function() {
       let countlist = document.getElementById('savepathmrucount');
-      if (countlist.selectedItem != null)
+      if (countlist.selectedItem !== null)
         return; //sometimes triggers twice. don't know why but stop it anyway.
       for (let i = 1; i <= attachmentextractor.MRUMAXCOUNT; i++) {
         countlist.appendItem(i + "", i);
@@ -352,7 +352,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
           "",
           "",
           "",
-          null, {}) == 0) {
+          null, {}) === 0) {
         element.value = fixed;
       }
     },
@@ -431,7 +431,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       try {
         fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
         fp.open(r => {
-          if (r != Ci.nsIFilePicker.returnOK || !fp.file) {
+          if (r !== Ci.nsIFilePicker.returnOK || !fp.file) {
             return;
           }
           wdw_aecOptions.setComplexPref(prefname, fp.file.path);

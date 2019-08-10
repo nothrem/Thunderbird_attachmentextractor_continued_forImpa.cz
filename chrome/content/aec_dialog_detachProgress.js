@@ -1,7 +1,7 @@
 let fileProgressBar, fileProgressLabelString, fileProgressLabel;
 
 function updateCounts(m_index, m_count, a_index, a_count) {
-  if (m_index != -1) {
+  if (m_index !== -1) {
     let dmessage = aewindow.aeStringBundle
       .GetStringFromName("ProgressDialogProgressOf")
       .replace("%1$s", (m_index + 1)).replace("%2$s", m_count);
@@ -12,7 +12,7 @@ function updateCounts(m_index, m_count, a_index, a_count) {
     document.getElementById("status2").setAttribute('value', dmessage);
   }
   let amessage = "";
-  if (a_index != -1) {
+  if (a_index !== -1) {
     amessage = aewindow.aeStringBundle
       .GetStringFromName("ProgressDialogProgressOf")
       .replace("%1$s", (a_index + 1)).replace("%2$s", a_count);
@@ -58,7 +58,7 @@ function setupFileProgress() {
 }
 
 function updateFileProgress(val, maxv) {
-  if (val == -1 && maxv == -1) {
+  if (val === -1 && maxv === -1) {
     fileProgressBar.setAttribute('mode', 'undetermined');
     return;
   }

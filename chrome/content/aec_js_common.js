@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
  
 var {
@@ -63,16 +63,16 @@ function AEPrefs() {
   this.prefService = Cc["@mozilla.org/preferences-service;1"]
     .getService(Ci.nsIPrefService);
   this.get = function get(pref, branch) {
-    var ps = (typeof branch == "undefined") ? this.aeBranch : this.prefService
+    var ps = (typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch);
     var type = ps.getPrefType(pref);
-    if (type == ps.PREF_BOOL) return ps.getBoolPref(pref);
-    if (type == ps.PREF_INT) return ps.getIntPref(pref);
-    if (type == ps.PREF_STRING) return ps.getCharPref(pref);
+    if (type === ps.PREF_BOOL) return ps.getBoolPref(pref);
+    if (type === ps.PREF_INT) return ps.getIntPref(pref);
+    if (type === ps.PREF_STRING) return ps.getCharPref(pref);
     return null;
   };
   this.getComplex = function getComplex(pref, branch) {
-    return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
+    return ((typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).getStringPref(pref);
   };
   this.getFile = function getFile(pref, branch) {
@@ -85,16 +85,16 @@ function AEPrefs() {
     return this.getComplex(pref, branch).relativeToKey;
   };
   this.set = function set(pref, value, branch) {
-    var ps = (typeof branch == "undefined") ? this.aeBranch : this.prefService
+    var ps = (typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch);
     var type = ps.getPrefType(pref);
-    if (type == ps.PREF_BOOL) return ps.setBoolPref(pref, value);
-    if (type == ps.PREF_INT) return ps.setIntPref(pref, value);
-    if (type == ps.PREF_STRING) return ps.setCharPref(pref, value);
+    if (type === ps.PREF_BOOL) return ps.setBoolPref(pref, value);
+    if (type === ps.PREF_INT) return ps.setIntPref(pref, value);
+    if (type === ps.PREF_STRING) return ps.setCharPref(pref, value);
     return null;
   };
   this.setComplex = function setComplex(pref, value, branch) {
-    return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
+    return ((typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).setStringPref(pref, value);
   };
   this.setFile = function setFile(pref, value, branch) {
@@ -110,11 +110,11 @@ function AEPrefs() {
     return this.setComplex(pref, relFile, branch);
   };
   this.hasUserValue = function hasUserValue(pref, branch) {
-    return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
+    return ((typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).prefHasUserValue(pref);
   };
   this.clearUserPref = function clearUserPref(pref, branch) {
-    return ((typeof branch == "undefined") ? this.aeBranch : this.prefService
+    return ((typeof branch === "undefined") ? this.aeBranch : this.prefService
       .getBranch(branch)).clearUserPref(pref);
   };
 };

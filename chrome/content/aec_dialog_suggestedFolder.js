@@ -1,9 +1,9 @@
 function onload() {
   let matches = window.arguments[0];
   let folderlist = document.getElementById('folderlist');
-  if (folderlist.selectedItem != null)
+  if (folderlist.selectedItem !== null)
     return; //sometimes triggers twice. dont know why but stop it anyway.
-  if (matches.length == 0) document.documentElement.getButton("accept")
+  if (matches.length === 0) document.documentElement.getButton("accept")
     .disabled = true;
   for (let i = 0; i < matches.length; i++) {
     folderlist.appendItem("[" + matches[i].ct + "] " + matches[i].f.path,

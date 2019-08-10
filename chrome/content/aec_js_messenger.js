@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 var {
@@ -95,12 +95,12 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   this.OnStopRunningUrl = function(aUrl, aExitCode) {
     aedump("{function:AEDelAttachListener.OnStopRunningUrl(" + aUrl.spec +
       "," + aExitCode + ")}\n", 2);
-    if (mOriginalMessage && mMsgUri.indexOf("imap-message") == 0) {
-      if (m_state == m_state_enum.eUpdatingFolder)
+    if (mOriginalMessage && mMsgUri.indexOf("imap-message") === 0) {
+      if (m_state === m_state_enum.eUpdatingFolder)
       return deleteOriginalMessage();
     }
     // check if we've deleted the original message, and we know the new msg id.
-    else if (m_state == m_state_enum.eDeletingOldMessage && mMsgWindow) {
+    else if (m_state === m_state_enum.eDeletingOldMessage && mMsgWindow) {
       selectNewMessage();
     }
     return undefined;
@@ -130,7 +130,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
     // delete the original message
     if (aStatus) return aStatus;
     // check if we've deleted the original message, and we know the new msg id.
-    if (m_state == m_state_enum.eDeletingOldMessage && mMsgWindow)
+    if (m_state === m_state_enum.eDeletingOldMessage && mMsgWindow)
       selectNewMessage();
     // do this for non-imap messages - for imap, we'll do the delete in
     // OnStopRunningUrl. For local messages, we won't get an OnStopRunningUrl
@@ -140,7 +140,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
     // update will think we need to download the header...If we do it
     // in OnStopRunningUrl, we'll issue the delete before we do the
     // update....all nasty stuff.
-    if (mOriginalMessage && mMsgUri.indexOf("imap-message:") == -1)
+    if (mOriginalMessage && mMsgUri.indexOf("imap-message:") === -1)
     return deleteOriginalMessage();
     else m_state = m_state_enum.eUpdatingFolder;
     return 0;
@@ -151,7 +151,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
     aedump("{function:AEDelAttachListener.selectNewMessage}\n", 2);
     var displayUri = mMessenger.lastDisplayedMessageUri;
     var newMsgURI = mMessageFolder.generateMessageURI(mNewMessageKey);
-    if (displayUri == mMsgUri && mMsgWindow) {
+    if (displayUri === mMsgUri && mMsgWindow) {
       if (mMsgWindow.SelectMessage) mMsgWindow.SelectMessage(newMsgURI);
       else if (mMsgWindow.selectMessage) mMsgWindow.selectMessage(newMsgURI);
       else aewindow.currentTask.selectMessage(newMsgURI);
@@ -181,7 +181,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
 
   this.startProcessing = function() {
     aedump("{function:AEDelAttachListener.startProcessing}\n", 2);
-    var detaching = (mDetachedFileUris != null);
+    var detaching = (mDetachedFileUris !== null);
     // ensure that we can store and delete messages in this folder, if we can't then we can't do attachment deleting
     if (!mMessageFolder.canDeleteMessages || !mMessageFolder.canFileMessages)
       return null;
@@ -224,7 +224,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
       }
       partId = getAttachmentPartId(mAttachUrls[u]);
       var nextField = (!partId) ? -1 : partId.indexOf('&');
-      if (nextField != -1) sHeader += partId.substr(0, nextField);
+      if (nextField !== -1) sHeader += partId.substr(0, nextField);
       else sHeader += partId;
       if (detaching) detachToHeader += mDetachedFileUris[u];
     }
@@ -244,11 +244,11 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   }
 
   this.QueryInterface = function(iid) {
-    if ((iid == Ci.nsIStreamListener) ||
-      (iid == Ci.nsIUrlListener) ||
-      (iid == Ci.nsIRequestObserver) ||
-      (iid == Ci.nsISupports) ||
-      (iid == Ci.nsIMsgCopyServiceListener))
+    if ((iid === Ci.nsIStreamListener) ||
+      (iid === Ci.nsIUrlListener) ||
+      (iid === Ci.nsIRequestObserver) ||
+      (iid === Ci.nsISupports) ||
+      (iid === Ci.nsIMsgCopyServiceListener))
       return this;
     throw Cr.NS_NOINTERFACE;
   };
@@ -263,7 +263,7 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
 function getAttachmentPartId(aAttachmentUrl) {
   var partIdPrefix = "part=";
   var index = aAttachmentUrl.indexOf(partIdPrefix);
-  if (index == -1) return null;
+  if (index === -1) return null;
   else return aAttachmentUrl.substring(index + partIdPrefix.length);
 }
 
@@ -276,7 +276,7 @@ var aeMessenger = {
     // return values:
     //  -2  left is a parent of right
     //  -1  left is less than right
-    //   0  left == right
+    //   0  left === right
     //   1  right is greater than left
     //   2  right is a parent of left
 
@@ -292,14 +292,14 @@ var aeMessenger = {
     var i = 0;
     do {
       // if at least of the part ids are incomplete check if one or both.
-      if (i == idLeftArray.length || i == idRightArray.length) {
-        // if both part ids are complete (partIdLeft == partIdRight) then they are equal
-        if (idLeftArray.length == idRightArray.length) return 0;
+      if (i === idLeftArray.length || i === idRightArray.length) {
+        // if both part ids are complete (partIdLeft === partIdRight) then they are equal
+        if (idLeftArray.length === idRightArray.length) return 0;
         // if one part id is complete but the other isn't, then the shortest one is first (parents before children)
         else return (idLeftArray.length < idRightArray.length) ? -2 : 2;
       }
       // if the part numbers are different then the numerically smaller one is first
-      if (idLeftArray[i] != idRightArray[i]) return (idLeftArray[i] <
+      if (idLeftArray[i] !== idRightArray[i]) return (idLeftArray[i] <
         idRightArray[i]) ? -1 : 1;
 
       i++;
@@ -329,7 +329,7 @@ var aeMessenger = {
       var nCompare = this.compareAttachmentPartId(urlArray[u - 1], urlArray[
         u]);
       //dump("{"+nCompare+"}\n");
-      if (nCompare == 0 || nCompare == -
+      if (nCompare === 0 || nCompare === -
         2) // [u-1] is the same as or a parent of [u]
       {
         urlArray.splice(u - 1, 1);
@@ -346,9 +346,9 @@ var aeMessenger = {
       .QueryInterface(Ci.nsIFileProtocolHandler);
     for (var u = 0; u < aMessageUriArray.length; ++u) {
       // ensure all of the message URI are the same, we cannot process attachments from different messages
-      if (u > 0 && aMessageUriArray[0] != aMessageUriArray[u]) return null;
+      if (u > 0 && aMessageUriArray[0] !== aMessageUriArray[u]) return null;
       // ensure that we don't have deleted messages in this list
-      if (aContentTypeArray[u] == "text/x-moz-deleted") return undefined;
+      if (aContentTypeArray[u] === "text/x-moz-deleted") return undefined;
       // convert savefiles into uris
       if (saveFiles) saveFileUris[u] = fileHandler.getURLSpecFromFile(
         saveFiles[u]).replace(/,/g, "%2C");
@@ -379,7 +379,7 @@ var aeMessenger = {
     aewindow.aedump("{function:aeMessenger.saveAttachment}\n", 2);
     try {
       // strip out ?type=application/x-message-display because it confuses libmime
-      if (url.indexOf("?type=application/x-message-display") != -1) {
+      if (url.indexOf("?type=application/x-message-display") !== -1) {
         url = url.replace("?type=application/x-message-display", "")
           .replace('&', '?');
       }
@@ -405,9 +405,9 @@ var aeMessenger = {
 
       var convertedListener = saveListener.QueryInterface(
         Ci.nsIStreamListener);
-      if (navigator.appVersion.indexOf("Macintosh") == -1) {
+      if (navigator.appVersion.indexOf("Macintosh") === -1) {
         // if the content type is binhex we are going to do a hokey hack and make sure we decode the binhex when saving an attachment
-        if (contentType == "application/mac-binhex40") {
+        if (contentType === "application/mac-binhex40") {
           aedump(
             "// not a mac but got a binhex att so using an additional convertor.\n",
             3);
@@ -544,7 +544,7 @@ var aeMessenger = {
               aedump(e);
             }
           }
-          if (typeof aewindow == "object") aewindow.currentTask
+          if (typeof aewindow === "object") aewindow.currentTask
             .currentMessage.saveAtt_cleanUp(this.index, false);
         }
       },
@@ -623,12 +623,12 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
   var that = this;
 
   this.QueryInterface = function(iid) {
-    if ((iid == Ci.nsIStreamListener) ||
-      (iid == Ci.nsIUrlListener) ||
-      (iid == Ci.nsICancelable) ||
-      (iid == Ci.nsISupports) ||
-      (iid == Ci.nsIMsgCopyServiceListener) ||
-      (iid == Ci.nsIRequestObserver))
+    if ((iid === Ci.nsIStreamListener) ||
+      (iid === Ci.nsIUrlListener) ||
+      (iid === Ci.nsICancelable) ||
+      (iid === Ci.nsISupports) ||
+      (iid === Ci.nsIMsgCopyServiceListener) ||
+      (iid === Ci.nsIRequestObserver))
       return this;
     throw Cr.NS_NOINTERFACE;
   };
@@ -647,7 +647,7 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         m_outputStream.flush();
         m_outputStream.close();
       }
-      if (exitCode != 0) {
+      if (exitCode !== 0) {
         if (m_file) m_file.remove(false);
         alert(aewindow.messengerStringBundle.GetStringFromName(
           "saveMessageFailed"));
@@ -678,19 +678,19 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
   function initializeDownload(aRequest, aBytesDownloaded) {
     aedump("{function:aeSaveMsgListener.initializeDownload}\n", 2);
     mInitialized = true;
-    if (that.postFunc) aedump("// AE: using a post-save function\n", 4);
+    if (that.postFunc) aedump("// using a post-save function\n", 4);
     var channel = aRequest.QueryInterface(Ci.nsIChannel);
     if (!channel) return;
-    //aedump("// ae: channel contentLength: "+channel.contentLength+"\n",3);
+    //aedump("// channel contentLength: "+channel.contentLength+"\n",3);
 
-    if (mContentLength == -1) mContentLength = channel.contentLength;
-    if (!m_contentType || m_contentType == "") return;
+    if (mContentLength === -1) mContentLength = channel.contentLength;
+    if (!m_contentType || m_contentType === "") return;
 
     // if we are saving an appledouble or applesingle attachment, we need to use an Apple File Decoder 
-    if (navigator.appVersion.indexOf("Macintosh") != -1) {
+    if (navigator.appVersion.indexOf("Macintosh") !== -1) {
       var mimeinfo = Cc["@mozilla.org/mime;1"].getService(Ci.nsIMIMEService)
         .getFromTypeAndExtension(m_contentType, "");
-      if (m_contentType == "application/applefile" || m_contentType ==
+      if (m_contentType === "application/applefile" || m_contentType ===
         "multipart/appledouble") {
         var appleFileDecoder = Cc["@mozilla.org/applefiledecoder;1"]
           .createInstance(Ci.nsIAppleFileDecoder);

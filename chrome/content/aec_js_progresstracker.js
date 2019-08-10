@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 var {
@@ -42,7 +42,7 @@ var progress_tracker = {
         this.reportgen = new AE_Reportgen();
       } catch (ee) {
         aedump(
-          '//ae: tried creating reportgen, but failed, aborting report\n');
+          '// tried creating reportgen, but failed, aborting report\n');
       }
       if (this.reportgen) this.reportgen.start_write();
     }
@@ -111,7 +111,7 @@ var progress_tracker = {
   },
 
   get is_detaching() {
-    return (this.state == this.message_states.DETACH);
+    return (this.state === this.message_states.DETACH);
   },
 
   starting_markread: function() {
@@ -119,7 +119,7 @@ var progress_tracker = {
   },
 
   get attachment_busy() {
-    return (this.state == this.message_states.SAVING);
+    return (this.state === this.message_states.SAVING);
   },
 
   windowManager: Cc['@mozilla.org/appshell/window-mediator;1']
@@ -131,7 +131,7 @@ var progress_tracker = {
 
   set_status_text: function(entry, param) {
     try {
-      if (this.statusFeedback && entry && entry != "") {
+      if (this.statusFeedback && entry && entry !== "") {
         var txt = (param) ? aewindow.aeStringBundle.formatStringFromName(
             entry, param, param.length) :
           aewindow.aeStringBundle.GetStringFromName(entry);
@@ -222,7 +222,7 @@ function AE_Reportgen() {
       inputStream.init(reportFile, 1, 0, false);
       aerg_document = parser.parseFromStream(inputStream, null, -1, "text/xml");
       inputStream.close();
-      if (get_bodyElem() == null) throw new Error(
+      if (get_bodyElem() === null) throw new Error(
         "empty or invalid existing report file");
     } catch (e) {
       aedump(e);
@@ -324,7 +324,7 @@ function AE_Reportgen() {
       serializer.serializeToStream(aerg_document, foStream, "");
       foStream.close();
     } catch (e) {
-      aedump('//ae: error when writing report: ' + e + '\n');
+      aedump('// error when writing report: ' + e + '\n');
     }
   };
 
@@ -363,7 +363,7 @@ function AE_Reportgen() {
 
   function imagetype_check(mimetype) {
     var imagemime = "image/";
-    return (mimetype.substr(0, imagemime.length) == imagemime);
+    return (mimetype.substr(0, imagemime.length) === imagemime);
 
   };
 

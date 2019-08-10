@@ -1,7 +1,7 @@
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 try {

@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 var {
@@ -17,7 +17,7 @@ var aewindow = {
   _tasks: new Array(),
   get currentTask() {
     /*aedump("[l:"+this._tasks.length+","+arguments.callee.caller.name+"]");*/
-    return this._tasks.length == 0 ? null : this._tasks[0];
+    return this._tasks.length === 0 ? null : this._tasks[0];
   },
   get remainingTasks() {
     return this._tasks.length - 1;
@@ -47,7 +47,7 @@ var aewindow = {
 
   /* useful get functions */
   get tb3() {
-    return this.messenger.saveAttachmentToFile != null;
+    return this.messenger.saveAttachmentToFile !== null;
   },
   get taskWaiting() {
     return (window.opener && window.opener.attachmentextractor) ? window
@@ -185,7 +185,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   /* this.membername=value */
   if (isBackground && !filenamepattern) filenamepattern = prefs.get(
     "autoextract.filenamepattern");
-  if (!filenamepattern || filenamepattern == "") filenamepattern = prefs.get(
+  if (!filenamepattern || filenamepattern === "") filenamepattern = prefs.get(
     "filenamepattern");
   this.currentMessage = null;
   this.currentUrl = null;
@@ -193,7 +193,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.listeningforMessageId = "";
 
   this.isExtractEnabled = (!justDeleteAttachments && (isBackground || (prefs
-    .get("extract.mode") != -1)));
+    .get("extract.mode") !== -1)));
   this.isDeleteEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
     "autoextract.deletemessage" : "actionafterextract.deletemessage"));
   this.isMarkreadEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
@@ -216,7 +216,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
     prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : "actionafterextract.detach.withoutconfirm"));
   this.confirmDetach = (!isBackground && this.isDetachEnabled && (this
-    .detachMode != 0) && prefs.get("actionafterextract.detach.warning"));
+    .detachMode !== 0) && prefs.get("actionafterextract.detach.warning"));
 
   //private vars
   /* var membername=value */
@@ -237,7 +237,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     this.filemaker = (justDeleteAttachments ? null : new AttachmentFileMaker(
       filenamepattern, savefolder, aewindow));
 
-    if (!selectedMsgs || selectedMsgs.length == 0) {
+    if (!selectedMsgs || selectedMsgs.length === 0) {
       aewindow.aedump("// ae aborted because no messages selected.\n", 0);
       return false;
     }
@@ -309,8 +309,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     // just check the first uri.  if its rss then show the third progress bar.
     //aewindow.aedump(selectedMsgs+selectedMsgs[0]+"\n");
     aewindow.fileStatusVisible = (selectedMsgs[0].folder && selectedMsgs[0]
-      .folder.server.type == "rss");
-    //aewindow.fileStatusVisible=(aewindow.messenger.msgHdrFromURI(selectedURIs[0]).folder.server.type=="rss");
+      .folder.server.type === "rss");
+    //aewindow.fileStatusVisible=(aewindow.messenger.msgHdrFromURI(selectedURIs[0]).folder.server.type==="rss");
     return true;
   }
   this.initialize = initialize;
@@ -336,7 +336,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     //try {
     aewindow.aedump('{function:AETask.selectNextMessage}\n', 2);
     currentindex++;
-    if (currentindex == selectedMsgs.length) {
+    if (currentindex === selectedMsgs.length) {
       that.endAttachmentextraction();
     } else {
       try {
@@ -346,7 +346,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
         aewindow.progress_tracker.starting_message(currentindex,
           selectedMsgs.length);
         //var changeFolder=isBackground;
-        //var changeFolder=(aewindow.gDBView.searchSession==null)
+        //var changeFolder=(aewindow.gDBView.searchSession===null)
         var changeFolder = true;
         try {
           var a = aewindow.gDBView.QueryInterface(Ci
@@ -358,8 +358,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
         }
 
         //aewindow.aedump("// current Folder: "+aewindow.gDBView.msgFolder.name+"\n");
-        if (changeFolder && aewindow.gDBView.msgFolder != msg.folder) {
-          aewindow.aedump("// ae: folder different so open new folder\n",
+        if (changeFolder && aewindow.gDBView.msgFolder !== msg.folder) {
+          aewindow.aedump("// folder different so open new folder\n",
           3);
           var msgDb = (msg.folder.msgDatabase) ? msg.folder.msgDatabase :
             msg.folder.getMsgDatabase(aewindow.msgWindow);
@@ -372,7 +372,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
           var count = new Object();
           aewindow.gDBView.open(msg.folder, sortType, sortOrder, viewFlags,
             count);
-        } else aewindow.aedump("// ae: folder same so no need to open\n",
+        } else aewindow.aedump("// folder same so no need to open\n",
         3);
 
         var msgkey = msg.messageKey;
@@ -404,7 +404,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     setTimeout(function() {
       aewindow.consumeAETask
     }, 1);
-    if (that.isNotifywhendoneEnabled && aewindow.remainingTasks == 0 && !
+    if (that.isNotifywhendoneEnabled && aewindow.remainingTasks === 0 && !
       aewindow.taskWaiting)
       aewindow.currentTask.alertCheck(
         aewindow.aeStringBundle.GetStringFromName(
@@ -467,7 +467,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     	aewindow.aedump(displayName+" is external attachment so ignore\n",1);
     	return;
     }*/
-    if (contentType == "text/x-moz-deleted") {
+    if (contentType === "text/x-moz-deleted") {
       aewindow.aedump(displayName + " failed contentType check\n", 1);
       return;
     }
@@ -491,7 +491,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
       return;
     }
     if ((!aewindow.progress_tracker.attachment_busy) &&
-      (selectedMsgs[currentindex] == that.currentMessage.msgHdr)) {
+      (selectedMsgs[currentindex] === that.currentMessage.msgHdr)) {
       that.currentMessage.attachmentextraction();
     }
   };
@@ -533,18 +533,18 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   /* to implement nsIFolderListener */
 
   this.OnItemAdded = function(parentItem, item) {
-    if (that.listeningforMessageId == "") return;
+    if (that.listeningforMessageId === "") return;
     var mail = item.QueryInterface(Ci.nsIMsgDBHdr);
     var folder = parentItem.QueryInterface(Ci
       .nsIMsgFolder);
-    if (mail.messageId == that.listeningforMessageId) {
+    if (mail.messageId === that.listeningforMessageId) {
       var vindex = aewindow.gDBView.findIndexFromKey(mail.messageKey, true);
       var newuri = folder.getUriForMsg(mail);
       aewindow.aedump("{function:AETask.OnItemAdded()}: view index: " +
         vindex + ", oldURI: " + aewindow.currentMessage.msgHdr.folder
         .getUriForMsg(aewindow.currentMessage.msgHdr) + ", newURI: " +
         newuri + "\n", 2);
-      if (vindex == 0xFFFFFFFF) {
+      if (vindex === 0xFFFFFFFF) {
         aewindow.aedump(
           "// try loading URI directly because can't find vindex\n", 3)
         try {
@@ -572,12 +572,12 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
 
   /* should support all interfaces we support */
   this.QueryInterface = function(iid) {
-    if ((iid == Ci.nsIMsgWindowCommands) ||
-      (aewindow.tb3 ? false : (iid == Ci.nsIMsgMessagePaneController)) ||
+    if ((iid === Ci.nsIMsgWindowCommands) ||
+      (aewindow.tb3 ? false : (iid === Ci.nsIMsgMessagePaneController)) ||
       // only in tb2, in tb3 clearMsgPane is in nsIMsgWindowCommands
-      (iid == Ci.nsIMsgHeaderSink) ||
-      (iid == Ci.nsIFolderListener) ||
-      (iid == Ci.nsISupports))
+      (iid === Ci.nsIMsgHeaderSink) ||
+      (iid === Ci.nsIFolderListener) ||
+      (iid === Ci.nsISupports))
       return this;
     throw Cr.NS_NOINTERFACE;
   };
@@ -598,7 +598,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   //private methods
 
   function strToReg(value, index, array) {
-    if (value.charAt(0) == '/') {
+    if (value.charAt(0) === '/') {
       var expr = value.substring(1, value.lastIndexOf('/'));
       var flags = value.substring(value.lastIndexOf('/') + 1);
       aewindow.aedump("//directly specificed reg-ex: /" + expr + "/" + flags +
@@ -611,14 +611,14 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
 
   function include_exclude_check2(filename) {
     filename = filename.replace(/'/g, "\'");
-    if (includeexcludearray == null) {
-      includeexcludearray = prefs.get((prefs.get("includeenabled") == 1) ?
+    if (includeexcludearray === null) {
+      includeexcludearray = prefs.get((prefs.get("includeenabled") === 1) ?
         "includepatterns4" : "excludepatterns4").split(';');
       includeexcludearray = includeexcludearray.map(strToReg);
       aewindow.aedump("//includeexcludearray: " + includeexcludearray + "\n",
         3);
     }
-    if (prefs.get("includeenabled") == 1) {
+    if (prefs.get("includeenabled") === 1) {
       var test = function(element) {
         return element.test(filename);
       };
@@ -699,7 +699,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isMarkreadEnabled = false;
   this.isNotifywhendoneEnabled = false;
   this.isSaveMessageEnabled = false;
-  this.isExtractEnabled = (prefs.get("extract.mode") != -1);
+  this.isExtractEnabled = (prefs.get("extract.mode") !== -1);
   this.isDetachEnabled = prefs.get("actionafterextract.detach");
   this.overwritePolicy = prefs.get("overwritepolicy");
   //override detach mode until it is fixed / working again
@@ -707,7 +707,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.detachMode = 0;
   this.detachWithoutConfirm = prefs.get("actionafterextract.detach.withoutconfirm");
 
-  this.confirmDetach = (this.isDetachEnabled && (this.detachMode != 0) &&
+  this.confirmDetach = (this.isDetachEnabled && (this.detachMode !== 0) &&
     prefs.get("actionafterextract.detach.warning"));
 
   //private vars
@@ -779,7 +779,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
         " failed include/exclude filename check\n", 1);
       return;
     }
-    if (contentType == "text/x-moz-deleted") {
+    if (contentType === "text/x-moz-deleted") {
       aewindow.aedump(displayName + " failed contentType check\n", 1);
       return;
     }
@@ -795,7 +795,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   //private methods
 
   function strToReg(value, index, array) {
-    if (value.charAt(0) == '/') {
+    if (value.charAt(0) === '/') {
       var expr = value.substring(1, value.lastIndexOf('/'));
       var flags = value.substring(value.lastIndexOf('/') + 1);
       aewindow.aedump("//directly specificed reg-ex: /" + expr + "/" + flags +
@@ -809,14 +809,14 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   function include_exclude_check2(filename) {
     aewindow.aedump("//filename: " + filename + "\n");
     filename = filename.replace(/'/g, "\'");
-    if (includeexcludearray == null) {
-      includeexcludearray = prefs.get((prefs.get("includeenabled") == 1) ?
+    if (includeexcludearray === null) {
+      includeexcludearray = prefs.get((prefs.get("includeenabled") === 1) ?
         "includepatterns4" : "excludepatterns4").split(';');
       includeexcludearray = includeexcludearray.map(strToReg);
       aewindow.aedump("//includeexcludearray: " + includeexcludearray + "\n",
         3);
     }
-    if (prefs.get("includeenabled") == 1) {
+    if (prefs.get("includeenabled") === 1) {
       var test = function(element) {
         return element.test(filename);
       };
@@ -843,7 +843,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
 
 /* ******************************** AEMessage ******************************************************* */
 
-if (typeof AEMessage == "undefined") {
+if (typeof AEMessage === "undefined") {
 
   function AEMessage(msghdr, messageIndex, aewindow) {
     this.attachments_ct = new Array();
@@ -906,7 +906,7 @@ if (typeof AEMessage == "undefined") {
         }
       } else {
         try {
-          if (this.prefs.get("extract.mode") != 0) {
+          if (this.prefs.get("extract.mode") !== 0) {
             file = aeMessenger.saveAttachmentToFolder(
               attachment.contentType,
               attachment.url,
@@ -919,7 +919,7 @@ if (typeof AEMessage == "undefined") {
               OnStartRunningUrl: function(url) {},
               OnStopRunningUrl: function(url, exitcode) {
                 aewindow.currentMessage.saveAtt_cleanUp(attachmentindex,
-                  (exitcode != 0));
+                  (exitcode !== 0));
               }
             };
             aewindow.messenger.saveAttachmentToFile(
@@ -944,8 +944,8 @@ if (typeof AEMessage == "undefined") {
 
   AEMessage.prototype.saveAtt_cleanUpFilter = function(attachmentindex) {
     var sfile = this.attachments_savedfile[attachmentindex];
-    if (sfile == null || (sfile.exists() && sfile.fileSize >
-        0 /*aewindow.downloadManager.activeDownloadCount==0*/ )) {
+    if (sfile === null || (sfile.exists() && sfile.fileSize >
+        0 /*aewindow.downloadManager.activeDownloadCount===0*/ )) {
       aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, false);
     } else {
       console.log("setTimeout");
@@ -991,7 +991,7 @@ if (typeof AEMessage == "undefined") {
 
   AEMessage.prototype.doAfterActions = function(startWithAction) {
     var thistask = aewindow.currentTask;
-    if (startWithAction != -1) aewindow.progress_tracker.state =
+    if (startWithAction !== -1) aewindow.progress_tracker.state =
       startWithAction;
 
     var states = aewindow.progress_tracker.message_states;
@@ -1040,9 +1040,9 @@ if (typeof AEMessage == "undefined") {
               .messageId;
             var acl = aewindow.arraycompact(this.attachments_ct);
             if (acl.length > 0) {
-              if (thistask.detachMode != 0) {
-                aewindow.aedump('>>>> thistask.detachMode != 0 \n', 2);
-                var deleteAtt = (thistask.detachMode == 1) || !thistask
+              if (thistask.detachMode !== 0) {
+                aewindow.aedump('>>>> thistask.detachMode !== 0 \n', 2);
+                var deleteAtt = (thistask.detachMode === 1) || !thistask
                   .isExtractEnabled;
                 var savedfiles = (deleteAtt) ? null : aewindow
                   .arraycompact(this.attachments_savedfile);
@@ -1053,7 +1053,7 @@ if (typeof AEMessage == "undefined") {
                   aewindow.arraycompact(this.attachments_uri),
                   savedfiles);
                 } else {
-                aewindow.aedump('>>>> thistask.detachMode == 0 \n', 2);
+                aewindow.aedump('>>>> thistask.detachMode === 0 \n', 2);
                 aewindow.messenger.detachAllAttachments(acl.length, acl,
                   aewindow.arraycompact(this.attachments_url),
                   aewindow.arraycompact(this.attachments_display),
@@ -1161,7 +1161,7 @@ if (typeof AEMessage == "undefined") {
       //aewindow.aedump(dn+"\n");
       for (let i = 0; i < aewindow.currentMessage.attachments_display
         .length; i++) {
-        if (aewindow.currentMessage.attachments_display[i] == dn) {
+        if (aewindow.currentMessage.attachments_display[i] === dn) {
           if (aewindow.currentMessage.attachments_savedfile[i]) return p1 +
             encodeURIComponent(aewindow.currentMessage
               .attachments_appendage[i]) + p3;
@@ -1185,7 +1185,7 @@ if (typeof AEMessage == "undefined") {
     var isJunk = false;
     try {
       var junkScore = msgHdr.getStringProperty("junkscore");
-      isJunk = ((junkScore != "") && (junkScore != "0"));
+      isJunk = ((junkScore !== "") && (junkScore !== "0"));
     } catch (e) {}
     if (isJunk) return;
 
@@ -1199,7 +1199,7 @@ if (typeof AEMessage == "undefined") {
     // If we didn't get the message id when we downloaded the message header, we cons up an md5: message id. 
     // If we've done that, we'll try to extract the message id out of the mime headers for the whole message.
     var msgId = msgHdr.messageId;
-    if (msgId.split(":")[0] == "md5") {
+    if (msgId.split(":")[0] === "md5") {
       var mimeMsgId = mimeHdr.extractHeader("Message-Id", false);
       if (mimeMsgId) msgHdr.messageId = mimeMsgId;
     }
@@ -1223,11 +1223,11 @@ if (typeof AEMessage == "undefined") {
       var currentnotreturnpref = this.prefs.get("report.not_in_to_cc",
       "mail.mdn.");
       // Manipulate the MDN settings to force MDN sending 
-      if (currentotherreturnpref == 2) this.prefs.set("report.other", 1,
+      if (currentotherreturnpref === 2) this.prefs.set("report.other", 1,
         "mail.mdn.");
-      if (currentoutsidereturnpref == 2) this.prefs.set(
+      if (currentoutsidereturnpref === 2) this.prefs.set(
         "report.outside_domain", 1, "mail.mdn.");
-      if (currentnotreturnpref == 2) this.prefs.set("report.not_in_to_cc",
+      if (currentnotreturnpref === 2) this.prefs.set("report.not_in_to_cc",
         1, "mail.mdn.");
     }
     // Send the MDN
@@ -1256,19 +1256,19 @@ if (typeof AEMessage == "undefined") {
   }
 
   AEMessage.prototype.isNewsMessage = function() {
-    return (this.msgHdr.folder.baseMessageURI.indexOf('news') == 0);
+    return (this.msgHdr.folder.baseMessageURI.indexOf('news') === 0);
   }
 
   AEMessage.prototype.isRSSMessage = function() {
     // ?? does this even work?
-    return (this.msgHdr.folder.baseMessageURI.indexOf('rss') == 0); 
+    return (this.msgHdr.folder.baseMessageURI.indexOf('rss') === 0); 
   }
 
   AEMessage.prototype.addAttachment = function(contentType, url, displayName,
     uri, isExternalAttachment) {
     if (this.started) {
       if (aewindow && aewindow.aedump) aewindow.aedump(
-        "// AE: Extraction already started but TB adding more attachments.  Ignoring. \n",
+        "// Extraction already started but TB adding more attachments.  Ignoring. \n",
         1);
       return;
     }
@@ -1296,8 +1296,8 @@ aewindow.AEMsgDBViewCommandUpdater.prototype = {
   displayMessageChanged: function(aFolder, aSubject, aKeywords) {},
   updateNextMessageAfterDelete: function() {},
   QueryInterface: function(iid) {
-    if ((iid == Ci.nsIMsgDBViewCommandUpdater) ||
-      (iid == Ci.nsISupports)) return this;
+    if ((iid === Ci.nsIMsgDBViewCommandUpdater) ||
+      (iid === Ci.nsISupports)) return this;
     throw Cr.NS_NOINTERFACE;
   }
 }

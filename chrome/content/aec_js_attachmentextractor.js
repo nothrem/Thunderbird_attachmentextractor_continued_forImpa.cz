@@ -3,16 +3,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 try {
-  if (typeof Cc == "undefined") var Cc = Components.classes;
-  if (typeof Ci == "undefined") var Ci = Components.interfaces;
-  if (typeof Cr == "undefined") var Cr = Components.results;
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
 } catch (e) {}
 
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-if (typeof AttachmentExtractor == "undefined") {
+if (typeof AttachmentExtractor === "undefined") {
   function AttachmentExtractor() {
     /* constants */
     this.MRUMAXCOUNT = 20;
@@ -102,7 +102,7 @@ if (typeof AttachmentExtractor == "undefined") {
     savelocation, all, fnp) {
     var folder = null;
     savelocation = savelocation + "";
-    var messages = (all) ? this.collectMessagesFromFolder((all == 2)) : this
+    var messages = (all) ? this.collectMessagesFromFolder((all === 2)) : this
       .getSelectedMessages();
     aedump("messages: " + messages + "\n");
     //aedump("//ae: saveselect: "+saveselect+" all: "+all+"\n");
@@ -203,7 +203,7 @@ if (typeof AttachmentExtractor == "undefined") {
         windowtype = win.document.documentElement.getAttribute(
         'windowtype');
       } catch (e) {}
-      if (windowtype != "mail:AEDialog") return;
+      if (windowtype !== "mail:AEDialog") return;
       if (attachmentextractor.queuedTasks.length > 0) {
         var l = attachmentextractor.queuedTasks.shift();
         if (l) attachmentextractor.openAEDialog(l[0], l[1], l[2], l[3], l[
@@ -246,7 +246,7 @@ if (typeof AttachmentExtractor == "undefined") {
           return c;
         },
         QueryInterface: function(iid) {
-          if ((iid == Ci.nsISimpleEnumerator) || (iid == Ci.nsISupports))
+          if ((iid === Ci.nsISimpleEnumerator) || (iid === Ci.nsISupports))
             return this;
           throw Cr.NS_NOINTERFACE;
         }
@@ -255,7 +255,7 @@ if (typeof AttachmentExtractor == "undefined") {
 
     function getAllMessages_sub(folder, msgs, deep) {
       var enumr;
-      if (view.msgFolder == folder) {
+      if (view.msgFolder === folder) {
         var treeView = view.QueryInterface(Ci.nsITreeView);
         var msgdb = null;
         try {
@@ -288,7 +288,7 @@ if (typeof AttachmentExtractor == "undefined") {
       }
     }
 
-    var folders = (typeof gFolderTreeView == "function") ? gFolderTreeView
+    var folders = (typeof gFolderTreeView === "function") ? gFolderTreeView
       .getSelectedFolders() : GetSelectedMsgFolders();
     var msgs = new Array();
     var view = gDBView;
@@ -313,10 +313,10 @@ if (typeof AttachmentExtractor == "undefined") {
   }
 
   AttachmentExtractor.prototype.getSelectedMessages = function() {
-    if (typeof gFolderDisplay != "undefined") return gFolderDisplay
+    if (typeof gFolderDisplay !== "undefined") return gFolderDisplay
       .selectedMessages; //tb3
     var uris = GetSelectedMessages(); //tb2 have to mock it up
-    if (uris.length == 0) return null;
+    if (uris.length === 0) return null;
     var hdrs = new Array(uris.length);
     for (let i = 0; i < hdrs.length; i++) {
       hdrs[i] = messenger.msgHdrFromURI(uris[i]);
@@ -327,25 +327,25 @@ if (typeof AttachmentExtractor == "undefined") {
 
   AttachmentExtractor.prototype.getContextAttachment = function() {
     function compareURL(urlA, urlB) {
-      if (urlA == urlB) return true;
+      if (urlA === urlB) return true;
       //aedump("AE: Comparing1: "+urlA+" and "+urlB+"\n",3);
       var partsA = urlA.split('&').filter(function(p) {
-        return (p.indexOf("mailbox") == 0) || (p.indexOf("part") == 0);
+        return (p.indexOf("mailbox") === 0) || (p.indexOf("part") === 0);
       });
       partsA.sort();
       var partsB = urlB.split('&').filter(function(p) {
-        return (p.indexOf("mailbox") == 0) || (p.indexOf("part") == 0);
+        return (p.indexOf("mailbox") === 0) || (p.indexOf("part") === 0);
       });
       partsB.sort();
-      if (partsA.length == 0 || partsB.length == 0) return false;
+      if (partsA.length === 0 || partsB.length === 0) return false;
       //aedump("AE: Comparing2: "+decodeURIComponent(partsA.join('&'))+" and "+decodeURIComponent(partsB.join('&'))+"\n",3);
-      return (decodeURIComponent(partsA.join('&')) == decodeURIComponent(
+      return (decodeURIComponent(partsA.join('&')) === decodeURIComponent(
         partsB.join('&')));
     }
     for (let i = 0; i < currentAttachments.length; i++) {
       //aedump("AE: Comparing0: "+gContextMenu.imageURL+" and "+currentAttachments[i].resource+"\n",3);
-      if (gContextMenu.imageURL.indexOf("resource") == 0 &&
-        currentAttachments[i].resource && (gContextMenu.imageURL ==
+      if (gContextMenu.imageURL.indexOf("resource") === 0 &&
+        currentAttachments[i].resource && (gContextMenu.imageURL ===
           currentAttachments[i].resource)) return [currentAttachments[i]];
       if (compareURL(gContextMenu.imageURL, currentAttachments[i].url))
       return [currentAttachments[i]];
@@ -412,9 +412,9 @@ if (typeof AttachmentExtractor == "undefined") {
         "").split(/[ \-\_]/g);
       if (!excludedwords) excludedwords = new Array();
       return out.filter(function(element, index, array) {
-        return (element != "" && excludedwords.indexOf(element) == -1 && (
-          !nodupes || index == 0 || array.lastIndexOf(element, index -
-            1) == -1));
+        return (element !== "" && excludedwords.indexOf(element) === -1 && (
+          !nodupes || index === 0 || array.lastIndexOf(element, index -
+            1) === -1));
       });
     }
 
@@ -426,9 +426,9 @@ if (typeof AttachmentExtractor == "undefined") {
       var numMatches = 0;
       for (let i = 0; i < folderwords.length; i++) {
         var wordmatch = 0;
-        while (wordmatch != -1) {
+        while (wordmatch !== -1) {
           wordmatch = keywords.indexOf(folderwords[i], wordmatch);
-          if (wordmatch != -1) {
+          if (wordmatch !== -1) {
             numMatches++;
             if (nodupes) wordmatch = -1;
             else wordmatch++;
@@ -531,7 +531,7 @@ if (typeof AttachmentExtractor == "undefined") {
       return this.addToMRUList(this.getSaveFolder("messenger.save.dir",
       true));
     }
-    if (out.selectedIndex != -1) {
+    if (out.selectedIndex !== -1) {
       return matchedFolders[out.selectedIndex].f;
     }
     return false;
@@ -643,12 +643,12 @@ if (typeof AttachmentExtractor == "undefined") {
       if (!children[i]) continue;
 
       if ((chattr = children[i].getAttribute("ae_image_menuitem"))) {
-        if ((onImage && chattr == "IMAGE") || (!onImage && chattr ==
+        if ((onImage && chattr === "IMAGE") || (!onImage && chattr ===
             "NONIMAGE")) {
           /*children[i].hidden=false;*/
           children[i].removeAttribute('hidden');
           //aedump("// unhiding "+children[i].id+"\n");
-        } else if ((onImage && chattr == "NONIMAGE") || (!onImage && chattr ==
+        } else if ((onImage && chattr === "NONIMAGE") || (!onImage && chattr ===
             "IMAGE")) {
           /*children[i].hidden=true;*/
           children[i].setAttribute('hidden', true);
@@ -658,10 +658,10 @@ if (typeof AttachmentExtractor == "undefined") {
       }
 
       if ((chattr = children[i].getAttribute("ae_mru_menuitem"))) {
-        if ((mru && chattr == "MRU") || (!mru && chattr == "NONMRU")) {
+        if ((mru && chattr === "MRU") || (!mru && chattr === "NONMRU")) {
           children[i].removeAttribute('hidden');
           //aedump("// unhiding "+children[i].id+"\n");
-        } else if ((mru && chattr == "NONMRU") || (!mru && chattr == "MRU")) {
+        } else if ((mru && chattr === "NONMRU") || (!mru && chattr === "MRU")) {
           children[i].setAttribute('hidden', true);
           //aedump("// hiding "+children[i].id+"\n");
         }
@@ -676,15 +676,15 @@ if (typeof AttachmentExtractor == "undefined") {
 
     var children = parent.childNodes;
     var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
-      "paramPattern") == "true") ? "Pattern" : "");
-    if (parent.getAttribute("paramIndividual") == "true") oncommand +=
+      "paramPattern") === "true") ? "Pattern" : "");
+    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
       "IndividualAttachmentextraction('#'," + parent.getAttribute(
       "paramAll") + ");"
     else oncommand += "Attachmentextraction(event,'#'," + parent.getAttribute(
       "paramAll") + ");"
 
     for (let i = children.length - 1; i >= 0; i--) {
-      if (children[i].getAttribute("ae_mru_menuitem") == "GENERATED") parent
+      if (children[i].getAttribute("ae_mru_menuitem") === "GENERATED") parent
         .removeChild(children[i]);
     }
     var count = ps.getIntPref("savepathmru.count");
@@ -695,12 +695,12 @@ if (typeof AttachmentExtractor == "undefined") {
       menuitem.setAttribute("command", "");
       menuitem.setAttribute("ae_mru_menuitem", "GENERATED");
       menuitem.setAttribute("oncommand", oncommand.replace(/#/, i));
-      if (i == 0) menuitem.setAttribute("label", "(0) " + parent.getAttribute(
+      if (i === 0) menuitem.setAttribute("label", "(0) " + parent.getAttribute(
         "browseText"));
       else {
         var pv = (ps.prefHasUserValue("savepathmru." + i)) ? ps.getStringPref(
           "savepathmru." + i) : null;
-        if (!pv || pv == "") pv = "< ... >";
+        if (!pv || pv === "") pv = "< ... >";
         if (i < 10) pv = "(" + i + ") " + pv;
         menuitem.setAttribute('label', pv);
       }
@@ -714,7 +714,7 @@ if (typeof AttachmentExtractor == "undefined") {
 
     var canOpen = false;
     if (document.getElementById('context-saveAttachment').getAttribute(
-        'disabled') != "true") {
+        'disabled') !== "true") {
       for (let i = 0; i < attachmentList.selectedItems.length && !
         canOpen; i++) {
         canOpen = !attachmentList.selectedItems[i].attachment
@@ -736,7 +736,7 @@ if (typeof AttachmentExtractor == "undefined") {
     var count = ps.getIntPref("savepathmru.count");
     var old = (ps.prefHasUserValue("savepathmru.1")) ? ps.getStringPref(
       "savepathmru.1") : null;
-    if (old && (added == old)) return added;
+    if (old && (added === old)) return added;
     ps.setStringPref("savepathmru.1", added);
     if (!old) return added;
     var prev = old;
@@ -745,7 +745,7 @@ if (typeof AttachmentExtractor == "undefined") {
       old = (ps.prefHasUserValue("savepathmru." + i)) ? ps.getStringPref(
         "savepathmru." + i) : null;
       ps.setStringPref("savepathmru." + i, prev);
-      if (!old || (added == old)) break;
+      if (!old || (added === old)) break;
       prev = old;
     }
     return added;
@@ -843,7 +843,7 @@ if (typeof AttachmentExtractor == "undefined") {
 		var triggerTag=attachmentextractor.prefs.get("autoextract.triggertag");
 		//aedump("[tags array: "+mail.getStringProperty("keywords")+"]\n",0);
 		//aedump("[trigger tag: "+attachmentextractor.prefs.get("autoextract.triggertag")+"]\n",0);
-		if (attachmentextractor.prefs.get("autoextract.ontriggeronly") && (tagsArray.indexOf(triggerTag)==-1) ) {
+		if (attachmentextractor.prefs.get("autoextract.ontriggeronly") && (tagsArray.indexOf(triggerTag)===-1) ) {
 			aedump("// only tagged emails and tag doesn't match\n",3);
 			return;
 		}
@@ -865,7 +865,7 @@ if (typeof AttachmentExtractor == "undefined") {
         }
         aedump("{function:OnItemPropertyChanged(" + folder.prettyName +
           "," + property + oldValue + "," + newValue + ")}\n", 2);
-        if (newValue > oldValue && attachmentextractor.autoMsgs.length !=
+        if (newValue > oldValue && attachmentextractor.autoMsgs.length !==
           0) {
           attachmentextractor.doBackgroundAttachmentextraction();
         }
@@ -881,7 +881,7 @@ if (typeof AttachmentExtractor == "undefined") {
 		}catch (e) {return;}
 		if (!folder.getFlag( 0x0100) ) return;
 		aedump("{function:OnItemRemoved("+folder.prettyName+","+mail.subject+","+mail.folder.prettyName+")}\n",4);
-		//if (mail.getStringProperty("AEMetaData.savedfiles")!="") attachmentextractor.deleteLinkedFile(mail);
+		//if (mail.getStringProperty("AEMetaData.savedfiles")!=="") attachmentextractor.deleteLinkedFile(mail);
 	  },*/
 
       /*
@@ -932,7 +932,7 @@ if (typeof AttachmentExtractor == "undefined") {
         var tagsArray = mail.getStringProperty("keywords").split(" ");
         var triggerTag = prefs.get("autoextract.triggertag");
         if (prefs.get("autoextract.ontriggeronly") && (tagsArray.indexOf(
-            triggerTag) == -1)) {
+            triggerTag) === -1)) {
           aedump("// only tagged emails and tag doesn't match\n", 3);
           return;
         }
@@ -967,8 +967,8 @@ if (typeof AttachmentExtractor == "undefined") {
   AttachmentExtractor.prototype.prefObserver = {
     observe: function(subject, topic, data) {
       //aedump("// "+topic+","+data+"\n");
-      if (topic != "nsPref:changed") return;
-      if (data == "savepathmru" || data == "savepathmru.count") {
+      if (topic !== "nsPref:changed") return;
+      if (data === "savepathmru" || data === "savepathmru.count") {
         if (attachmentextractor.prefs.get("savepathmru")) {
           attachmentextractor.clearMRU(attachmentextractor.MRUMAXCOUNT,
             attachmentextractor.prefs.get("savepathmru.count") + 1
@@ -976,7 +976,7 @@ if (typeof AttachmentExtractor == "undefined") {
         }
         return
       }
-      if (data == "defaultsavepath" || data ==
+      if (data === "defaultsavepath" || data ===
         "defaultsavepath.relative.key") {
         if (attachmentextractor.prefs.hasUserValue(
             "defaultsavepath.relative.key")) {
@@ -988,7 +988,7 @@ if (typeof AttachmentExtractor == "undefined") {
         }
         return;
       }
-      if (data == "autoextract.savepath" || data ==
+      if (data === "autoextract.savepath" || data ===
         "autoextract.savepath.relative.key") {
         if (attachmentextractor.prefs.hasUserValue(
             "autoextract.savepath.relative.key")) {
