@@ -30,7 +30,7 @@ try {
 
 var argexpand = (aedebug) ? function(args) {
   var str = "";
-  for (var i = 0; i < args.length; i++) {
+  for (let i = 0; i < args.length; i++) {
     if (i > 0) str += ",";
     str += args[i] + "";
   }

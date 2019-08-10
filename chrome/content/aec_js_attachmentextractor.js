@@ -261,7 +261,7 @@ if (typeof AttachmentExtractor == "undefined") {
         try {
           msgdb = mail.folder.getMsgDatabase(null);
         } catch (e) {} // only needed for TB2 - will fail in TB3
-        for (var i = 0; i < treeView.rowCount; i++) {
+        for (let i = 0; i < treeView.rowCount; i++) {
           var hdr = (view.getMsgHdrAt) ? view.getMsgHdrAt(i) : msgdb
             .GetMsgHdrForKey(view.getKeyAt(i));
           msgs.push(hdr);
@@ -304,7 +304,7 @@ if (typeof AttachmentExtractor == "undefined") {
     var selectedAttachments = document.getElementById('attachmentList')
       .selectedItems;
     var atts = new Array(selectedAttachments.length);
-    for (var i = 0; i < selectedAttachments.length; i++) {
+    for (let i = 0; i < selectedAttachments.length; i++) {
       atts[i] = selectedAttachments[i].attachment;
       if (!atts[i].uri) atts[i].uri = atts[i]
       .messageUri; //not used in tb3 - tb2 uses messageUri rather than uri.
@@ -318,7 +318,7 @@ if (typeof AttachmentExtractor == "undefined") {
     var uris = GetSelectedMessages(); //tb2 have to mock it up
     if (uris.length == 0) return null;
     var hdrs = new Array(uris.length);
-    for (var i = 0; i < hdrs.length; i++) {
+    for (let i = 0; i < hdrs.length; i++) {
       hdrs[i] = messenger.msgHdrFromURI(uris[i]);
     }
     return hdrs;
@@ -342,7 +342,7 @@ if (typeof AttachmentExtractor == "undefined") {
       return (decodeURIComponent(partsA.join('&')) == decodeURIComponent(
         partsB.join('&')));
     }
-    for (var i = 0; i < currentAttachments.length; i++) {
+    for (let i = 0; i < currentAttachments.length; i++) {
       //aedump("AE: Comparing0: "+gContextMenu.imageURL+" and "+currentAttachments[i].resource+"\n",3);
       if (gContextMenu.imageURL.indexOf("resource") == 0 &&
         currentAttachments[i].resource && (gContextMenu.imageURL ==
@@ -424,7 +424,7 @@ if (typeof AttachmentExtractor == "undefined") {
       aedump("{function matchKeywords} nodupes:  " + nodupes + "\n");
       var folderwords = extractKeywords(leafName, true, null);
       var numMatches = 0;
-      for (var i = 0; i < folderwords.length; i++) {
+      for (let i = 0; i < folderwords.length; i++) {
         var wordmatch = 0;
         while (wordmatch != -1) {
           wordmatch = keywords.indexOf(folderwords[i], wordmatch);
@@ -452,7 +452,7 @@ if (typeof AttachmentExtractor == "undefined") {
     var excludedwords = this.prefs.get("suggestfolder.excludekeywords").split(
       ",");
     var subjects = "";
-    for (var i = 0; i < messages.length; i++) {
+    for (let i = 0; i < messages.length; i++) {
       subjects += messages[i].mime2DecodedSubject + " ";
     }
     var keywords = extractKeywords(subjects, nodupes, excludedwords);
@@ -639,7 +639,7 @@ if (typeof AttachmentExtractor == "undefined") {
 
     var children = event.target.childNodes;
     var chattr;
-    for (var i = 0; i < children.length; i++) {
+    for (let i = 0; i < children.length; i++) {
       if (!children[i]) continue;
 
       if ((chattr = children[i].getAttribute("ae_image_menuitem"))) {
@@ -683,12 +683,12 @@ if (typeof AttachmentExtractor == "undefined") {
     else oncommand += "Attachmentextraction(event,'#'," + parent.getAttribute(
       "paramAll") + ");"
 
-    for (var i = children.length - 1; i >= 0; i--) {
+    for (let i = children.length - 1; i >= 0; i--) {
       if (children[i].getAttribute("ae_mru_menuitem") == "GENERATED") parent
         .removeChild(children[i]);
     }
     var count = ps.getIntPref("savepathmru.count");
-    for (var i = 0; i <= count; i++) {
+    for (let i = 0; i <= count; i++) {
       var menuitem = document.createElement("menuitem");
       menuitem.setAttribute("crop", "center");
       if (i < 10) menuitem.setAttribute("accesskey", "" + i);
@@ -715,7 +715,7 @@ if (typeof AttachmentExtractor == "undefined") {
     var canOpen = false;
     if (document.getElementById('context-saveAttachment').getAttribute(
         'disabled') != "true") {
-      for (var i = 0; i < attachmentList.selectedItems.length && !
+      for (let i = 0; i < attachmentList.selectedItems.length && !
         canOpen; i++) {
         canOpen = !attachmentList.selectedItems[i].attachment
           .isExternalAttachment;
@@ -765,7 +765,7 @@ if (typeof AttachmentExtractor == "undefined") {
     if (!max || max > this.MRUMAXCOUNT) max = this.MRUMAXCOUNT;
     var ps = this.prefs.prefService.getBranch(
       "extensions.attachmentextractor_cont.");
-    for (var i = min; i <= max; i++) {
+    for (let i = min; i <= max; i++) {
       if (ps.prefHasUserValue("savepathmru." + i)) ps.clearUserPref(
         "savepathmru." + i);
     }
@@ -777,7 +777,7 @@ if (typeof AttachmentExtractor == "undefined") {
       var branch = attachmentextractor.prefs.aeBranch;
       var children = branch.getChildList("", {});
       var out = null;
-      for (var i = 0; i < children.length; i++) {
+      for (let i = 0; i < children.length; i++) {
         if (!excludereg.test(children[i]) &&
           (includeDefault || branch.prefHasUserValue(children[i]))) {
           if (!out) out = "";

@@ -461,7 +461,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
           this.appendFolderItem(pref, i);
         } catch {
           moreloops = false; 
@@ -478,25 +478,25 @@ if ("undefined" == typeof(wdw_aecOptions)) {
 
         // move all following prefs to close the resulting gap
         let i = itemToRemoveKey;
-        let n = i+1;
+        let n = i + 1;
         let moreloops = true;
         do {
           var cpref = "";
           var npref = "";
-          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
           // console.log('AEC ' + i + ': ' + cpref);
           try {
-            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+n);
+            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
             // console.log('AEC ' + n + ': ' + npref);
           } catch {
             moreloops = false;
             // console.log('AEC no more npref');
-            AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+            AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
             // console.log('AEC clear last cpref without a following npref');
           }
           if (npref) {
-            AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i, npref);
-            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i));
+            AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i, npref);
+            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i));
           }
           i += 1;
           n += 1;
@@ -522,7 +522,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.'+i);
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
         } catch {
           moreloops = false; 
         }
@@ -536,7 +536,7 @@ if ("undefined" == typeof(wdw_aecOptions)) {
       n = i + 1;
 
       if (i < this.limitSuggestFolders) {
-        this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.'+n);
+        this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
       } else {
         //console.log("AEC: There are a maximum of " + this.limitSuggestFolders + " suggest folders allowed by an internal setting in var limitSuggestFolders.");
       }

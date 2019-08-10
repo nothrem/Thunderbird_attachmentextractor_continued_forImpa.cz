@@ -309,7 +309,7 @@ var aeMessenger = {
 
   prepareForAttachmentDelete: function(urlArray1) {
     var urlArray = new Array(urlArray1.length);
-    for (var i = 0; i < urlArray.length; i++) {
+    for (let i = 0; i < urlArray.length; i++) {
       urlArray[i] = urlArray1[i];
     }
     // this prepares the attachment list for use in deletion. In order to prepare, we

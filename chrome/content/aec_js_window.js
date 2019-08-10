@@ -583,7 +583,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   };
 
   this.storeSavedFiles = function() {
-    for (var i = 0; i < that.currentMessage.attachments_savedfile
+    for (let i = 0; i < that.currentMessage.attachments_savedfile
       .length; i++) {
       if (that.currentMessage.attachments_savedfile[i])
         savedFiles.push('"' + that.currentMessage.attachments_savedfile[i]
@@ -734,7 +734,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
     that.active = true;
     aewindow.progress_tracker.reset_tracker();
     that.currentMessage = new aewindow.AEMessage(message, 0, aewindow);
-    for (var i = 0; i < attachments.length; i++) {
+    for (let i = 0; i < attachments.length; i++) {
       var a = attachments[i];
       if (!a.uri) a.uri = a.messageUri; // tb2 doesn't use uri.
       if (!a.displayName) a.displayName = a
@@ -1159,7 +1159,7 @@ if (typeof AEMessage == "undefined") {
       var dn = /&filename=([^&]*)/.exec(p2);
       dn = decodeURIComponent(dn[1]);
       //aewindow.aedump(dn+"\n");
-      for (var i = 0; i < aewindow.currentMessage.attachments_display
+      for (let i = 0; i < aewindow.currentMessage.attachments_display
         .length; i++) {
         if (aewindow.currentMessage.attachments_display[i] == dn) {
           if (aewindow.currentMessage.attachments_savedfile[i]) return p1 +

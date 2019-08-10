@@ -156,7 +156,7 @@ if (typeof AttachmentFileMaker == "undefined") {
   AttachmentFileMaker.prototype.formatdatestring = function(format, date) {
     var out = "";
     var tmp;
-    for (var i = 0; i < format.length; i++) {
+    for (let i = 0; i < format.length; i++) {
       switch (format.charAt(i)) {
         //day
         case "d":
@@ -345,7 +345,7 @@ if (typeof AttachmentFileMaker == "undefined") {
         subject = subject.substring(1, subject.length - 1);
         morework = true;
       }
-      for (var i = 0; i < starts.length && !morework; i++) {
+      for (let i = 0; i < starts.length && !morework; i++) {
         if (subject.toLowerCase().indexOf(starts[i]) == 0) {
           subject = subject.substring(starts[i].length);
           morework = true;
@@ -403,7 +403,7 @@ if (typeof AttachmentFileMaker == "undefined") {
   AttachmentFileMaker.prototype.reconstructString = function(string, idxarr) {
     var rs = string;
     var offset = 0;
-    for (var i = 0; i < idxarr.length; i++) {
+    for (let i = 0; i < idxarr.length; i++) {
       var pos = offset + idxarr[i].idx;
       if (pos < rs.length) {
         rs = (pos > 0 ? rs.substring(0, pos) : "") + idxarr[i].replace + rs
@@ -449,7 +449,7 @@ if (typeof AttachmentFileMaker == "undefined") {
         var remainToDelete = charsToDelete;
         if (charsToDelete <= totlen) {
           var newfn = "";
-          for (var i = 0; i < splits.length; i++) {
+          for (let i = 0; i < splits.length; i++) {
             var arr = joinArrs(this.countOccurrences(splits[i], "%", count),
               this.countOccurrences(splits[i], "#extpart#", extpart));
 
