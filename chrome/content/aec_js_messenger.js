@@ -454,42 +454,11 @@ var aeMessenger = {
       "doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)", null,
       aewindow, 0);
     
-    // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
     // messageUri.spec = messageUri.spec + "?header=saveas";
-    
+    // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
+    // mutate doesn't work - so do just the simple next line which works
     messageUri = messageUri + "?header=saveas";
-    
-    /*
-    if (messageUri.spec){
-      messageUri = messageUri.mutate().setSpec(messageUri.spec + "?header=saveas").finalize();
-    } else {
-      messageUri = messageUri.mutate().setSpec("?header=saveas").finalize();
-    }
-    */
-    
-    //messageUri.spec = Services.io.newURI(messageUri.spec + "?header=saveas");
-    /*
-    aedump('//messageUri: ' + messageUri + '\n', 2);
-    messageUri = Services.io.newURI(messageUri + "?header=saveas");
-    aedump('//messageUri: ' + messageUri + '\n', 2);
-    */
-    /*
-    if (messageUri.spec) {
-      var aSpec = messageUri.spec + "?header=saveas";
-    } else {
-      var aSpec = "?header=saveas";
-    }
-    messageUri = 
-      Cc["@mozilla.org/network/standard-url-mutator;1"]
-      .createInstance(Ci.nsIURIMutator)
-      .setSpec(aSpec)
-      .finalize();
-    
-    aedump("MTS after mutate \n");
-    aedump("MTS messageUri: " + messageUri + "\n");
-    aedump("MTS messageUri.spec: " + messageUri.spec + "\n");
-    */
-    
+        
     saveListener.m_channel = Cc["@mozilla.org/network/input-stream-channel;1"]
       .createInstance(Ci.nsIInputStreamChannel);
     var url = {};
@@ -566,45 +535,49 @@ var aeMessenger = {
     return persist;
   },
 
-  createStartupUrl: function(uri) {
-    aedump('{function:aeMessenger.createStartupUrl}: ' + uri + '\n', 2);
-    startupUrl = Services.io.newURI(uri);
-    aedump('//startupUrl: ' + startupUrl + '\n');
-    return startupUrl;
-  },
 
-/*
-  createStartupUrl: function(uri) {
+  /******  This was the original createStartupUrl function  ********
+  // The following has to be changed:
+  // - classesByID was removed from
+  // - nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
+
+  createStartupUrl:function(uri) {
     aedump('{function:aeMessenger.createStartupUrl}: ' + uri + '\n', 2);
     var obj;
-    if (uri.startsWith("imap://")) {
-      obj = Components.classesByID["{21a89611-dc0d-11d2-806c-006008128c4e}"];
-    } else if (uri.startsWith("mailbox://")) {
-      obj = Cc["@mozilla.org/messenger/mailboxurl;1"];
-    } else if (uri.startsWith("news://")) {
-      obj = Cc["@mozilla.org/messenger/nntpurl;1"];
-    } else {
-      throw new Error("unusable type of uri: " + uri.substr(0, uri.indexOf(
-        ":")) + "\n");
+    if (uri.substr(0,4)=="imap") {
+      obj=Components.classesByID["{21a89611-dc0d-11d2-806c-006008128c4e}"];
     }
-    var startupUrl = obj.createInstance(Ci.nsIURI);
+    else if (uri.substr(0,7)=="mailbox") {
+      obj=this.Cc["@mozilla.org/messenger/mailboxurl;1"];
+    }
+    else if (uri.substr(0,4)=="news") {
+      obj=this.Cc["@mozilla.org/messenger/nntpurl;1"];
+    }
+    else {	
+      throw new Error("unusable type of uri: "+uri.substr(0,uri.indexOf(":"))+"\n");
+    }
+    var startupUrl=obj.createInstance(this.Ci.nsIURI);
+    startupUrl.spec=uri;
+    return startupUrl;
+  }
 
-    // nsIURI.spec is read-only, use url.mutate().setSpec(aSpec).finalize();
-    // startupUrl.spec = uri;
-    startupUrl = startupUrl.mutate().setSpec(uri).finalize();
-/*
+  *******************************************************************/
+
+  createStartupUrl: function(uri) {
+    aedump('{function:aeMessenger.createStartupUrl}: ' + uri + '\n', 2);
+
+    let startupUrl = uri;
     startupUrl = 
-    Cc["@mozilla.org/network/standard-url-mutator;1"]
-    .createInstance(Ci.nsIURIMutator)
-    .setSpec(uri)
-    .finalize();
+      Cc["@mozilla.org/network/standard-url-mutator;1"]
+        .createInstance(Ci.nsIURIMutator)
+        .setSpec(uri)
+        .finalize();
 
     aedump("startupUrl after mutate\n");
     aedump("startupUrl: " + startupUrl + "\n");
     aedump("startupUrl.spec: " + startupUrl.spec + "\n");
     return startupUrl;
   }
-*/
 };
 
 function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afterActionAttachmentindex,
