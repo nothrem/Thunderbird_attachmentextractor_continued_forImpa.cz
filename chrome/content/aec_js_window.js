@@ -114,7 +114,7 @@ aewindow.init = function() {
     .createInstance().QueryInterface(Ci.nsIMsgWindow);
   aewindow.mailSession = Cc["@mozilla.org/messenger/services/session;1"]
     .getService(Ci.nsIMsgMailSession);
-  aewindow._fileStatusHbox = document.getElementById("status_file_hbox")
+  aewindow._fileStatusHbox = document.getElementById("status_file_box")
   aewindow.promptService = Cc["@mozilla.org/embedcomp/prompt-service;1"]
     .getService(Ci.nsIPromptService);
 

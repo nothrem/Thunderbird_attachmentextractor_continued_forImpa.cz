@@ -1,6 +1,10 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 let fileProgressBar, fileProgressLabelString, fileProgressLabel;
 
-function updateCounts(m_index, m_count, a_index, a_count) {
+function updateCounts(m_index, m_count, a_index, a_count, show) {
   if (m_index !== -1) {
     let dmessage = aewindow.aeStringBundle
       .GetStringFromName("ProgressDialogProgressOf")
@@ -19,9 +23,15 @@ function updateCounts(m_index, m_count, a_index, a_count) {
     //document.getElementById("progress_attachment").setAttribute('mode','determined');
     document.getElementById("progress_attachment")
       .setAttribute('value', ((a_index + 1) / a_count) * 100);
+      if (show) {
+        document.getElementById("filenamehbox").removeAttribute('hidden');
+      }
   } else {
     document.getElementById("progress_attachment")
       .setAttribute('value', 0);
+      if (show) {
+        document.getElementById("filenamehbox").setAttribute('hidden', 'true');
+      }
   }
   //dump("amessage: "+amessage);
   document.getElementById("status3").setAttribute('value', amessage);
@@ -29,12 +39,12 @@ function updateCounts(m_index, m_count, a_index, a_count) {
 
 function updateSubject(subject) {
   document.getElementById("subjecttext")
-    .setAttribute('value', "(" + subject + ")");
+    .setAttribute('value', subject);
 }
 
 function updateFilename(filename) {
   document.getElementById("filenametext")
-    .setAttribute('value', "(" + filename + ")");
+    .setAttribute('value', filename);
 }
 
 function toggleText(show) {

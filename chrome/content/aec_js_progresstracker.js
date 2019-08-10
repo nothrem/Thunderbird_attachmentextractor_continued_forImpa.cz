@@ -68,10 +68,16 @@ var progress_tracker = {
       message_index + ")}\n");
     if (this.reportgen) this.reportgen.start_message(message_index, length);
     if (!this.pwindow) return;
-    this.pwindow.updateCounts(message_index, length, -1, -1);
+    this.pwindow.updateCounts(
+      message_index, 
+      length, 
+      -1, 
+      -1, 
+      aewindow.prefs.get("progressdialog.showtext")
+    );
     if (aewindow.prefs.get("progressdialog.showtext")) {
       this.pwindow.updateSubject(aewindow.currentTask.getMessageHeader()
-        .subject);
+        .mime2DecodedSubject);
     }
   },
   stopping_message: function(message_index) {
@@ -86,7 +92,13 @@ var progress_tracker = {
     this.debug("{function:progress_tracker.starting_attachment(" +
       attachment_index + ")}\n");
     if (this.pwindow) {
-      this.pwindow.updateCounts(-1, -1, attachment_index, length);
+      this.pwindow.updateCounts(
+        -1, 
+        -1, 
+        attachment_index, 
+        length, 
+        aewindow.prefs.get("progressdialog.showtext")
+      );
       if (aewindow.prefs.get("progressdialog.showtext")) {
         this.pwindow.updateFilename(aewindow.currentTask.currentMessage
           .getAttachment(attachment_index).displayName);
