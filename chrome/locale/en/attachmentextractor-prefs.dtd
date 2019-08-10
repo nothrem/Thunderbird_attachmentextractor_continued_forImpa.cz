@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continued Settings">
 <!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor Continued homepage and description of features:">
-
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
 <!ENTITY attachmentextractor.settings.normal.caption "-- NOT USED --">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Where should the attachments be saved?">
@@ -108,7 +107,6 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-false.accesskey "X">
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.label "Extract only these files where the filename contains:">
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
-
 <!ENTITY attachmentextractor.settings.filenametab.label "Filenames">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Filename Pattern Generation:">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Click To Add A Token">
@@ -130,7 +128,6 @@
 <!ENTITY attachmentextractor.settings.filenamepatterndate.homepage.label "Reference of formatting codes for #date#:">
 <!ENTITY attachmentextractor.settings.filenamepatterndate.editbutton.label "Edit Date Pattern">
 <!ENTITY attachmentextractor.settings.filenamepatterndate.dialogtitle "#Date# Pattern setting">
-
 <!ENTITY attachmentextractor.settings.autotab.label "Auto-Extract">
 <!ENTITY attachmentextractor.settings.autoextract.label "Automatically Extract Attachments on email reciept">
 <!ENTITY attachmentextractor.settings.autoextract.accesskey "A">
@@ -145,7 +142,6 @@
 <!ENTITY attachmentextractor.settings.autoextract.waitforall.accesskey "W">
 <!ENTITY attachmentextractor.settings.autoextract.onattachmentsonly.label "Only start Auto-Extract with messages that appear to have attachments">
 <!ENTITY attachmentextractor.settings.autoextract.onattachmentsonly.accesskey "O">
-
 <!ENTITY attachmentextractor.settings.abouttab.label "About">
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Requires a TB Restart to take effect.)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Skip identically sized files">

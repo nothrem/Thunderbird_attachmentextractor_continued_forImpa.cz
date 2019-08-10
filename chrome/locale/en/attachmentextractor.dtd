@@ -36,7 +36,6 @@
 <!ENTITY attachmentextractor.context.extractdeepfolder.accesskey "U">
 <!ENTITY attachmentextractor.context.extractalltosuggest.label "Extract All to Suggested File-Folder">
 <!ENTITY attachmentextractor.context.extractalltosuggest.accesskey "I">
-
 <!ENTITY attachmentextractor.attachment.extracttodefault.label "AE Extract All">
 <!ENTITY attachmentextractor.attachment.extracttodefault.accesskey "X">
 <!ENTITY attachmentextractor.attachment.extracttofolder.label "AE Extract All to…">
@@ -52,22 +51,17 @@
 <!ENTITY attachmentextractor.mrubrowsetext "Browse…">
 <!ENTITY attachmentextractor.mru.default.label "Default">
 <!ENTITY attachmentextractor.mru.default.accesskey "D">
-
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Filename Pattern input">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Modify the attachment filename pattern:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Set the pattern as default from now on">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Click To Add A Token">
-
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Suggested Folders:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Suggested Folders based on subject lines of selected message(s):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Use Selected Folder">
-
 <!ENTITY attachmentextractor.imagetoolbar.label "Toggle Select">
 <!ENTITY attachmentextractor.imagetoolbar.accesskey "T">
-
 <!ENTITY attachmentextractor.context.extracttodefault.label "-- NOT USED --">
 <!ENTITY attachmentextractor.context.extracttofolder.label "-- NOT USED --">
 <!ENTITY attachmentextractor.context.extracttodefault.accesskey "">
 <!ENTITY attachmentextractor.context.extracttofolder.accesskey "">
-
