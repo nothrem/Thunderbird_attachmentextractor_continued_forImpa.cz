@@ -49,9 +49,15 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   var m_state = m_state_enum.eStarting;
 
   // nsIRequestObserver // 
-  this.onStartRequest = function(aRequest, aContext) {}
+  // Thunderbird 60:
+  // this.onStartRequest = function(aRequest, aContext) {}
+  // Thunderbird 68:
+  this.onStartRequest = function(aRequest) {}
 
-  this.onStopRequest = function(aRequest, aContext, aStatusCode) {
+  // Thunderbird 60:
+  // this.onStopRequest = function(aRequest, aContext, aStatusCode) {
+  // Thunderbird 68:
+  this.onStopRequest = function(aRequest, aStatusCode) {
     aedump("{function:AEDelAttachListener.onStopRequest}\n", 2);
     // called when we have completed processing the StreamMessage request. 
     // This is called after OnStopRequest(). This means that we have now
@@ -81,9 +87,11 @@ function AEDelAttachListener(mMessenger, mMsgWindow, mAttachUrls, mMsgUri,
   }
 
   // nsIStreamListener //
-  this.onDataAvailable = function(aRequest, aSupport, aInStream, aSrcOffset,
-    aCount) {
-    aedump("{function:AEDelAttachListener.onDataAvailable}\n", 2);
+  // Thunderbird 60:
+  // this.onDataAvailable = function(aRequest, aSupport, aInStream, aSrcOffset, aCount) {
+  // Thunderbird 68:
+  this.onDataAvailable = function(aRequest, aInStream, aSrcOffset, aCount) {
+      aedump("{function:AEDelAttachListener.onDataAvailable}\n", 2);
     if (!mMsgFileStream) return undefined;
     return mMessageFolder.copyDataToOutputStreamForAppend(aInStream, aCount,
       mMsgFileStream);
@@ -710,7 +718,10 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
     }
   }
 
-  this.onStartRequest = function(request, aSupport) {
+  // Thunderbird 60:
+  // this.onStartRequest = function(request, aSupport) {
+  // Thunderbird 68:
+  this.onStartRequest = function(request) {
     aedump("{function:aeSaveMsgListener.OnStartRequest}\n", 2);
 
     if (!m_outputStream) {
@@ -727,7 +738,10 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
     }
   }
 
-  this.onStopRequest = function(request, aSupport, status) {
+  // Thunderbird 60:
+  // this.onStopRequest = function(request, aSupport, status) {
+  // Thunderbird 68:
+  this.onStopRequest = function(request, status) {
     aedump("{function:aeSaveMsgListener.OnStopRequest}\n", 2);
     try { // close down the file stream 
       if (m_outputStream) {
@@ -752,8 +766,11 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
   }
 
   this.onDataAvailable = 
-    function(request, aSupport, inStream, srcOffset, count) {
-    //aedump("{function:aeSaveMsgListener.OnDataAvailable}\n",4);
+    // Thunderbird 60:
+    // function(request, aSupport, inStream, srcOffset, count) {
+    // Thunderbird 68:
+    function(request, inStream, srcOffset, count) {
+        //aedump("{function:aeSaveMsgListener.OnDataAvailable}\n",4);
     if (mCanceled) request.cancel(2); // then go cancel our underlying channel too.  
                                       // NS_BINDING_ABORTED =2 apparently.
     if (!mInitialized) initializeDownload(request, count);
