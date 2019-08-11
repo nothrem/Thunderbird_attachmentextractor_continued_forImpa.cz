@@ -6,7 +6,7 @@
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
   "attachmentextractor.menu.label": {
-    "message": "AttachmentExtractor Continued"
+    "message": "AttachmentExtractor"
   },
   "attachmentextractor.menu.accesskey": {
     "message": "x"
@@ -180,7 +180,7 @@
     "message": "Fare clic per aggiungere un token"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "Cartelle suggerite di AttachmentExtractor Continued"
+    "message": "Cartelle suggerite di AttachmentExtractor"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Cartelle suggerite in base a parole chiave presenti nel campo Oggetto dei messaggi selezionati"
@@ -207,7 +207,7 @@
     "message": "G"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Impostazioni di AttachmentExtractor Continued"
+    "message": "Impostazioni di AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
@@ -417,7 +417,7 @@
     "message": "Generatore di resoconto HTML"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Genera un resoconto ogni volta che si avvia AttachmentExtractor Continued"
+    "message": "Genera un resoconto ogni volta che si avvia AttachmentExtractor"
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -459,7 +459,7 @@
     "message": "n"
   },
   "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Utilizza la procedura di AttachmentExtractor Continued per estrarre"
+    "message": "Utilizza la procedura di AttachmentExtractor per estrarre"
   },
   "attachmentextractor.settings.extract.aeextract2.accesskey": {
     "message": "z"
@@ -486,13 +486,13 @@
     "message": "Estrazioni in coda"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Avvia AttachmentExtractor Continued ogni volta che viene richiesta l&apos;estrazione"
+    "message": "Avvia AttachmentExtractor ogni volta che viene richiesta l&apos;estrazione"
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "x"
   },
   "attachmentextractor.settings.queuerequests.enabled.label": {
-    "message": "Attendi e metti in coda ogni richiesta di estrazione effettuata mentre AttachmentExtractor Continued è avviata"
+    "message": "Attendi e metti in coda ogni richiesta di estrazione effettuata mentre AttachmentExtractor è avviata"
   },
   "attachmentextractor.settings.queuerequests.enabled.accesskey": {
     "message": "A"
@@ -660,7 +660,7 @@
     "message": "d"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued in funzione"
+    "message": "AttachmentExtractor in funzione"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Estrazione in corso…"
@@ -753,25 +753,25 @@
     "message": "Attenzione!"
   },
   "GenericErrorMessage2": {
-    "message": "Si è verificato un errore di AttachmentExtractor Continued. Se ciò dovesse accadere regolarmente, contattare l'autore tramite il sito web dell'estensione per fornire tutti i dettagli dell'errore/problema"
+    "message": "Si è verificato un errore di AttachmentExtractor. Se ciò dovesse accadere regolarmente, contattare l'autore tramite il sito web dell'estensione per fornire tutti i dettagli dell'errore/problema"
   },
   "StatusTextStarting": {
-    "message": "Avvio dell'estrazione con AttachmentExtractor Continued degli allegati selezionati in corso…"
+    "message": "Avvio dell'estrazione con AttachmentExtractor degli allegati selezionati in corso…"
   },
   "StatusTextEnded": {
-    "message": "Estrazione con AttachmentExtractor Continued completata con successo"
+    "message": "Estrazione con AttachmentExtractor completata con successo"
   },
   "StatusTextAttachment": {
-    "message": "Estrazione con AttachmentExtractor Continued dell'allegato [%1$s] di [%2$s]"
+    "message": "Estrazione con AttachmentExtractor dell'allegato [%1$s] di [%2$s]"
   },
   "StatusTextTidying": {
-    "message": "Estrazione con AttachmentExtractor Continued dell'allegato %1$s in corso…"
+    "message": "Estrazione con AttachmentExtractor dell'allegato %1$s in corso…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "Eliminare il file estratto con AttachmentExtractor Continued?"
+    "message": "Eliminare il file estratto con AttachmentExtractor?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Sono stati estratti degli allegati da questo messaggio con AttachmentExtractor Continued. Eliminare tali allegati?"
+    "message": "Sono stati estratti degli allegati da questo messaggio con AttachmentExtractor. Eliminare tali allegati?"
   },
   "FolderPickerDialogTitle": {
     "message": "Selezionare la cartella da utilizzare"
@@ -783,7 +783,7 @@
     "message": "Suggerimento di sostituzione del nome"
   },
   "FileNamePatternFixMessage": {
-    "message": "Il nome di file/modello inserito non è valido e potrebbe influire sul corretto funzionamento di AttachmentExtractor Continued\nSostituirlo con la seguente variabile:\n %1$s?"
+    "message": "Il nome di file/modello inserito non è valido e potrebbe influire sul corretto funzionamento di AttachmentExtractor\nSostituirlo con la seguente variabile:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Estrazione avviata [Data/Ora: %S]"
@@ -792,10 +792,10 @@
     "message": "Estrazione terminata [Data/Ora: %S]"
   },
   "ReportTitle": {
-    "message": "Resoconto di AttachmentExtractor Continued"
+    "message": "Resoconto di AttachmentExtractor"
   },
   "Heading": {
-    "message": "Resoconto di AttachmentExtractor Continued"
+    "message": "Resoconto di AttachmentExtractor"
   },
   "Subject": {
     "message": "E-mail"

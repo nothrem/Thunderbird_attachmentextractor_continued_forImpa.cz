@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "Настройки AttachmentExtractor Continued"
+    "message": "Настройки AttachmentExtractor"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Нажмите, чтобы добавить знак"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - предложенные папки"
+    "message": "AttachmentExtractor - предложенные папки"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Предложенные папки основаны на полях темы выбранного сообщения(й):"
@@ -207,13 +207,13 @@
     "message": "*"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Настройки AttachmentExtractor Continued"
+    "message": "Настройки AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "50ть"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Домашняя страница AttachmentExtractor Continued и описание возможностей:"
+    "message": "Домашняя страница AttachmentExtractor и описание возможностей:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Общие"
@@ -387,7 +387,7 @@
     "message": "Подтверждение о получении"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное"
+    "message": "AttachmentExtractor может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Отсылать подтверждение о получении, если одно затребуется"
@@ -417,7 +417,7 @@
     "message": "HTML генератор отчетов"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Создавать отчет каждый раз, когда работает AttachmentExtractor Continued"
+    "message": "Создавать отчет каждый раз, когда работает AttachmentExtractor"
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -486,7 +486,7 @@
     "message": "Очередь извлечений"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Принудительно запускать AttachmentExtractor Continued каждый раз, когда затребовано извлечение."
+    "message": "Принудительно запускать AttachmentExtractor каждый раз, когда затребовано извлечение."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued в работе"
+    "message": "AttachmentExtractor в работе"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Извлечение"
@@ -753,7 +753,7 @@
     "message": "От блин!"
   },
   "GenericErrorMessage2": {
-    "message": "Что-то случилось плохое с AttachmentExtractor Continued. Если это происходит регулярно, пожалуйста оставьте запись на багтрекере на моем сайте(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) с деталями об ошибке, отображенными в консоли ошибок Thunderbird."
+    "message": "Что-то случилось плохое с AttachmentExtractor. Если это происходит регулярно, пожалуйста оставьте запись на багтрекере на моем сайте(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) с деталями об ошибке, отображенными в консоли ошибок Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Запуск AE извлечения с выбранным вложением(ми)."
@@ -768,10 +768,10 @@
     "message": "AE Extract: Завершение извлечения вложения %1$ть, все готово…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Удалить извлеченный Вами файл?"
+    "message": "AttachmentExtractor: Удалить извлеченный Вами файл?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Вы ранее использовали AttachmentExtractor Continued для извлечения вложения из этого сообщения. Вы хотите удалить их с Вашего компьютера, а?"
+    "message": "Вы ранее использовали AttachmentExtractor для извлечения вложения из этого сообщения. Вы хотите удалить их с Вашего компьютера, а?"
   },
   "FolderPickerDialogTitle": {
     "message": "Выберите папку"
@@ -783,7 +783,7 @@
     "message": "Предлагаемое исправление"
   },
   "FileNamePatternFixMessage": {
-    "message": "имя файла или шаблон счета введенный Вами неверный и может прервать AttachmentExtractor Continued.\nИзменить на:\n %1$ть?"
+    "message": "имя файла или шаблон счета введенный Вами неверный и может прервать AttachmentExtractor.\nИзменить на:\n %1$ть?"
   },
   "ExtractionStarted": {
     "message": "Извлечение начато [Дата/Время: %S]"
@@ -795,7 +795,7 @@
     "message": "AE ReportGen отчет"
   },
   "Heading": {
-    "message": "Отчет AttachmentExtractor Continued"
+    "message": "Отчет AttachmentExtractor"
   },
   "Subject": {
     "message": "Тема"

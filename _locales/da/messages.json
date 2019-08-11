@@ -180,7 +180,7 @@
     "message": "Klik for at tilføj et token"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - foreslåede foldere:"
+    "message": "AttachmentExtractor - foreslåede foldere:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Foreslåede folder baseret på emnet i de valgte beskeder:"
@@ -207,13 +207,13 @@
     "message": "I"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Indstillinger for AttachmentExtractor Continued"
+    "message": "Indstillinger for AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "60em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Website for AttachmentExtractor Continued"
+    "message": "Website for AttachmentExtractor"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Generelt"
@@ -387,7 +387,7 @@
     "message": "Kvitteringer"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued kan sende kvitteringer automatisk når en besked markeres som læst"
+    "message": "AttachmentExtractor kan sende kvitteringer automatisk når en besked markeres som læst"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Send kvitteringer hvis ønsket"
@@ -417,7 +417,7 @@
     "message": "Generation af HTML rapporter"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Generer en rapport hver gang AttachmentExtractor Continued arbejder."
+    "message": "Generer en rapport hver gang AttachmentExtractor arbejder."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -660,7 +660,7 @@
     "message": "I"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued arbejder"
+    "message": "AttachmentExtractor arbejder"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Gemmer…"
@@ -753,7 +753,7 @@
     "message": "Ups!"
   },
   "GenericErrorMessage2": {
-    "message": "Noget er gået galt med AttachmentExtractor Continued. Hvis dette sker regelmæssigt så send en fejlrapport på hjemmesiden https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues med de detaljer om fejlen der vises i fejlkonsolen i Thunderbird."
+    "message": "Noget er gået galt med AttachmentExtractor. Hvis dette sker regelmæssigt så send en fejlrapport på hjemmesiden https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues med de detaljer om fejlen der vises i fejlkonsolen i Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Starter AE for de(n) valgte fil(er)"
@@ -768,10 +768,10 @@
     "message": "AE: Fil %1$s er blevet gemt, færdiggør processen…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Vil du slette den tidligere gemte fil?"
+    "message": "AttachmentExtractor: Vil du slette den tidligere gemte fil?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Du har tidligere brugt AttachmentExtractor Continued til at gemme filer fra denne besked. Vil du også slette disse filer fra din computer?"
+    "message": "Du har tidligere brugt AttachmentExtractor til at gemme filer fra denne besked. Vil du også slette disse filer fra din computer?"
   },
   "FolderPickerDialogTitle": {
     "message": "Vælg folder"
@@ -783,7 +783,7 @@
     "message": "Foreslået løsning"
   },
   "FileNamePatternFixMessage": {
-    "message": "Det indtastede filnavn eller mønster er ugyldigt og kan medføre at AttachmentExtractor Continued holder op med at virker.\nSkift til:\n %1$s?"
+    "message": "Det indtastede filnavn eller mønster er ugyldigt og kan medføre at AttachmentExtractor holder op med at virker.\nSkift til:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Proces begyndt: %S"
@@ -795,7 +795,7 @@
     "message": "AE rapport fil"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued Rapport"
+    "message": "AttachmentExtractor Rapport"
   },
   "Subject": {
     "message": "E-mail"

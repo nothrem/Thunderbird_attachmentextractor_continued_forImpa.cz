@@ -1,4 +1,4 @@
-<!ENTITY attachmentextractor.menu.label "AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menu.label "AttachmentExtractor">
 <!ENTITY attachmentextractor.menu.accesskey "X">
 <!ENTITY attachmentextractor.extracttodefault.label "Abtrennen aus ausgewählten Nachrichten">
 <!ENTITY attachmentextractor.extracttodefault.accesskey "W">
@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "R">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Anhänge aller Nachrichten des Ordners löschen">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "O">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued - Einstellungen…">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor - Einstellungen…">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Alle Anhänge abtrennen">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "A">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dateinamenmuster als Standard festlegen">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Ordnervorschläge:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Ordnervorschläge:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Ausgewählten Ordner verwenden">
 <!ENTITY attachmentextractor.imagetoolbar.label "Auswahl umkehren">

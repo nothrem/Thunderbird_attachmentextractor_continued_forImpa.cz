@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "Paramètres d&apos;AttachmentExtractor Continued"
+    "message": "Paramètres d&apos;AttachmentExtractor"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "P"
@@ -180,7 +180,7 @@
     "message": "Cliquez pour ajouter un jeton"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Dossiers suggérés"
+    "message": "AttachmentExtractor - Dossiers suggérés"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Dossiers suggérés selon la ligne de sujet de(s) message(s) sélectionné(s) :"
@@ -225,13 +225,13 @@
     "message": "Progression"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Options de AttachmentExtractor Continued"
+    "message": "Options de AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "55em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Page web et description des fonctionnalités d&apos;AttachmentExtractor Continued"
+    "message": "Page web et description des fonctionnalités d&apos;AttachmentExtractor"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Général"
@@ -375,13 +375,13 @@
     "message": "N"
   },
   "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Supprimer avec les routines d&apos;AttachmentExtractor Continued (expérimental)."
+    "message": "Supprimer avec les routines d&apos;AttachmentExtractor (expérimental)."
   },
   "attachmentextractor.settings.after-detach.aedelete.accesskey": {
     "message": "L"
   },
   "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Détacher avec les routines d&apos;AttachmentExtractor Continued (expérimental)."
+    "message": "Détacher avec les routines d&apos;AttachmentExtractor (expérimental)."
   },
   "attachmentextractor.settings.after-detach.aedetach.accesskey": {
     "message": "T"
@@ -405,7 +405,7 @@
     "message": "Permet de d&apos;accepter les accusés de réception."
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued peut envoyer des accusés de réception automatiquement lorsqu&apos;un message est marqué comme Lu"
+    "message": "AttachmentExtractor peut envoyer des accusés de réception automatiquement lorsqu&apos;un message est marqué comme Lu"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Envoyer un accusé de réception si demandé"
@@ -435,7 +435,7 @@
     "message": "Générateur de rapport HTML"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Générer un rapport chaque fois qu&apos;AttachmentExtractor Continued est exécuté."
+    "message": "Générer un rapport chaque fois qu&apos;AttachmentExtractor est exécuté."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -477,7 +477,7 @@
     "message": "N"
   },
   "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Extraire les pièces jointes avec la routine interne d&apos;AttachmentExtractor Continued."
+    "message": "Extraire les pièces jointes avec la routine interne d&apos;AttachmentExtractor."
   },
   "attachmentextractor.settings.extract.aeextract2.accesskey": {
     "message": "A"
@@ -498,19 +498,19 @@
     "message": "octets."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Une valeur plus grande que 0 ralentira AttachmentExtractor Continued."
+    "message": "Une valeur plus grande que 0 ralentira AttachmentExtractor."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Queue des extractions"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Démarrer AttachmentExtractor Continued immédiatement à chaque demande d&apos;extraction"
+    "message": "Démarrer AttachmentExtractor immédiatement à chaque demande d&apos;extraction"
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "I"
   },
   "attachmentextractor.settings.queuerequests.enabled.label": {
-    "message": "Attendre et ajouter à la queue toute extraction demandée alors que AttachmentExtractor Continued est déjà en cours d&apos;exécution."
+    "message": "Attendre et ajouter à la queue toute extraction demandée alors que AttachmentExtractor est déjà en cours d&apos;exécution."
   },
   "attachmentextractor.settings.queuerequests.enabled.accesskey": {
     "message": "A"
@@ -753,7 +753,7 @@
     "message": "Oups !"
   },
   "GenericErrorMessage2": {
-    "message": "Une erreur s'est produite dans AttachmentExtractor Continued. Si cela se produit régulièrement, veuillez enregistrer ce bug dans le gestionnaire de bugs de mon site avec l'erreur détaillées qui vous est indiquée par la Console d'erreurs de Thunderbird."
+    "message": "Une erreur s'est produite dans AttachmentExtractor. Si cela se produit régulièrement, veuillez enregistrer ce bug dans le gestionnaire de bugs de mon site avec l'erreur détaillées qui vous est indiquée par la Console d'erreurs de Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Démarrage de l'extraction avec les pièce(s) jointe(s) sélectionnée(s)"
@@ -768,10 +768,10 @@
     "message": "Extraction : terminé pièce jointe %1$s, arrêt…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued : voulez-vous effacer le fichier extrait ?"
+    "message": "AttachmentExtractor : voulez-vous effacer le fichier extrait ?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Précédemment, vous avez utilisé AttachmentExtractor Continued afin d'extraire des pièces-jointes de ce message. Voulez-vous supprimer ceux de votre ordinateur ?"
+    "message": "Précédemment, vous avez utilisé AttachmentExtractor afin d'extraire des pièces-jointes de ce message. Voulez-vous supprimer ceux de votre ordinateur ?"
   },
   "FolderPickerDialogTitle": {
     "message": "Sélectionner le dossier à utiliser"
@@ -783,7 +783,7 @@
     "message": "Correction suggérée :"
   },
   "FileNamePatternFixMessage": {
-    "message": "Le nom de fichier ou modèle que vous avez entré est invalide et pourrait rendre AttachmentExtractor Continued inutilisable.\nChanger en :\n %1$s ?"
+    "message": "Le nom de fichier ou modèle que vous avez entré est invalide et pourrait rendre AttachmentExtractor inutilisable.\nChanger en :\n %1$s ?"
   },
   "ExtractionStarted": {
     "message": "Démarrage de l'application [date et heure : %S]"
@@ -792,10 +792,10 @@
     "message": "Fin de l'application [date/heure : %S]"
   },
   "ReportTitle": {
-    "message": "Rapport ReportGen d'AttachmentExtractor Continued"
+    "message": "Rapport ReportGen d'AttachmentExtractor"
   },
   "Heading": {
-    "message": "Rapport d'AttachmentExtractor Continued"
+    "message": "Rapport d'AttachmentExtractor"
   },
   "Subject": {
     "message": "Courriel"

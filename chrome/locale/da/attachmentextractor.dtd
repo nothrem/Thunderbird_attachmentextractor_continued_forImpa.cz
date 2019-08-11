@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Gør mønsteret til standard">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "G">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik for at tilføj et token">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - foreslåede foldere:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - foreslåede foldere:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Foreslåede folder baseret på emnet i de valgte beskeder:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Brug valgt folder">
 <!ENTITY attachmentextractor.imagetoolbar.label "Skift valg">

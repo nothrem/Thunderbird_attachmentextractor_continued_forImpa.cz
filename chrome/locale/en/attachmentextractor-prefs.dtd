@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continued Settings">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Settings">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor Continued homepage and description of features:">
+<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor homepage and description of features:">
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
 <!ENTITY attachmentextractor.settings.normal.caption "-- NOT USED --">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Where should the attachments be saved?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Return Receipts …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Return Receipts">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued can send return receipts automatically when a message is marked as Read">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor can send return receipts automatically when a message is marked as Read">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Send Return Receipts if one is requested">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Return Receipt requests:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "ReportGen">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML Report Generator">
-<!ENTITY attachmentextractor.settings.reportgen.label "Generate a report every time AttachmentExtractor Continued is run.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Generate a report every time AttachmentExtractor is run.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Use Image thumbnails where possible for attachments.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "I">
@@ -91,7 +91,7 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes.">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "-- NOT USED --">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Queued Extractions">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Start AttachmentExtractor Continued straight away every time extraction is requested.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Start AttachmentExtractor straight away every time extraction is requested.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Wait, and queue, any extraction requests made while AE is already running.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

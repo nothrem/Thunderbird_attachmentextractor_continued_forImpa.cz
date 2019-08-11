@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "폴더 내 모든 메시지에서 첨부 파일 삭제">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued 설정">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor 설정">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "모든 첨부 추출">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "지금부터 기본값으로 패턴 설정">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "토큰을 추가하려면 클릭">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - 제안된 폴더:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - 제안된 폴더:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "선택된 메세지의 제목 줄을 기반으로 제안된 폴더:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "선택된 폴더 사용">
 <!ENTITY attachmentextractor.imagetoolbar.label "선택 전환">

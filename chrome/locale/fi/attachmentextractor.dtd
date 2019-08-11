@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "N">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Ainoastaan poista liitteet kaikista viesteistä kansiossa">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "S">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continuedin asetukset">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractorin asetukset">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Poimi kaikki liitetiedostot">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "K">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Aseta malli oletukseksi tästä lähtien">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klikkaa lisätäksesi merkki">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Ehdotetut kansiot:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Ehdotetut kansiot:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Valittujen viestien otsikkoriveille perustuvat ehdotetut kansiot:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Käytä valittua kansiota">
 <!ENTITY attachmentextractor.imagetoolbar.label "Käännä valinta vastakkaiseen asentoon.">

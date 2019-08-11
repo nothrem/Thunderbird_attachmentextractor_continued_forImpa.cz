@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continued - Opciones">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Opciones">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "Página web de AttachmentExtractor Continued y descripción de las características:">
+<!ENTITY attachmentextractor.settings.homepage.label "Página web de AttachmentExtractor y descripción de las características:">
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
 <!ENTITY attachmentextractor.settings.normal.caption "Extraer adjuntos">
 <!ENTITY attachmentextractor.settings.savefolders.caption "¿Dónde deben guardarse los adjuntos?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Acuse de recibo …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Acuse de recibo">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued puede enviar automáticamente acuses de recibo cuando se marque un mensaje como leído">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor puede enviar automáticamente acuses de recibo cuando se marque un mensaje como leído">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Enviar el acuse de recibo si se pide">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Peticiones de acuse de recibo:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "I">
 <!ENTITY attachmentextractor.settings.reporttab.label "Informes">
 <!ENTITY attachmentextractor.settings.reportgen.caption "Generador de informe HTML">
-<!ENTITY attachmentextractor.settings.reportgen.label "Generar un informe cada vez que se ejecuta AttachmentExtractor Continued.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Generar un informe cada vez que se ejecuta AttachmentExtractor.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Usar miniaturas de las imágenes adjuntas cuando sea posible.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "m">
@@ -89,9 +89,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Comprobación del tamaño mínimo">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Guardar los adjuntos sólo si son mayores de:">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Si usa un valor mayor de 0 bytes AttachmentExtractor Continued se podrá ralentizar.">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Si usa un valor mayor de 0 bytes AttachmentExtractor se podrá ralentizar.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Extracciones en cola">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Iniciar AttachmentExtractor Continued directamente cada vez que se pida una extracción.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Iniciar AttachmentExtractor directamente cada vez que se pida una extracción.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Esperar y añadir a la cola las peticiones hechas cuando AE esté en ejecución.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

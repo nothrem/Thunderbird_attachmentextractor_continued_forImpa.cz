@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continuedin asetukset">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractorin asetukset">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor Continuedin kotisivu ja ominaisuuksien kuvaus:">
+<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractorin kotisivu ja ominaisuuksien kuvaus:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Yleiset">
 <!ENTITY attachmentextractor.settings.normal.caption "Liitetiedostojen poiminta">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Minne liitteet tulisi tallentaa?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "T">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Vastaanottokuittaukset …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Vastaanottokuittaukset">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Lähetä vastaanottokuittaukset jos sellaista pyydetään">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "L">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Vastaanottokuittausten pyynnöt:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "ReportGen">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML-raporttikehitin">
-<!ENTITY attachmentextractor.settings.reportgen.label "Kehitä raportti aina kun AttachmentExtractor Continued ajetaan.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Kehitä raportti aina kun AttachmentExtractor ajetaan.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "K">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Käytä liitetiedostojen pienoiskuvia, kun se on mahdollista.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "L">
@@ -89,9 +89,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimikokotarkistus">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Tallenna liitteet vain jos ne ovat suurempia kuin:">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Tavua.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractor Continuedia.">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractoria.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Odottavat poiminnat">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Käynnistä AttachmentExtractor Continued heti joka kerta kun poimintaa pyydetään.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Käynnistä AttachmentExtractor heti joka kerta kun poimintaa pyydetään.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "K">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Odota, ja aseta jonoon, kaikki poimintapyynnöt, jotka tehdään AE:n ollessa jo ajossa.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšíření AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšíření AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka rozšíření AttachmentExtractor Continued a popis možností:">
+<!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka rozšíření AttachmentExtractor a popis možností:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Základní">
 <!ENTITY attachmentextractor.settings.normal.caption "Ukládání přílohy">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Kam se mají přílohy uložit?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "T">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Potvrzení o přečtení…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Potvrzení o přečtení">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "Rozšíření AttachmentExtractor Continued umí odesílat automaticky potvrzení o přečtení, během označování zpráv jako přečtených.">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "Rozšíření AttachmentExtractor umí odesílat automaticky potvrzení o přečtení, během označování zpráv jako přečtených.">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Odeslatpotvrzení o přečtení, pokud je vyžadováno">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Odesílaní potvrzení o přečtení:">

@@ -1,4 +1,4 @@
-<!ENTITY attachmentextractor.menu.label "AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menu.label "AttachmentExtractor">
 <!ENTITY attachmentextractor.menu.accesskey "x">
 <!ENTITY attachmentextractor.extracttodefault.label "Estrai dai messaggi selezionati">
 <!ENTITY attachmentextractor.extracttodefault.accesskey "S">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Imposta il modello come predefinito d&apos;ora in poi">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "I">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Fare clic per aggiungere un token">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "Cartelle suggerite di AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "Cartelle suggerite di AttachmentExtractor">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Cartelle suggerite in base a parole chiave presenti nel campo Oggetto dei messaggi selezionati">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Utilizza cartella suggerita">
 <!ENTITY attachmentextractor.imagetoolbar.label "Attiva/disattiva">

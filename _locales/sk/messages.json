@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "Nastavenia AttachmentExtractor Continued"
+    "message": "Nastavenia AttachmentExtractor"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "N"
@@ -180,7 +180,7 @@
     "message": "Kliknúť na pridať znak"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Odporúčané priečinky"
+    "message": "AttachmentExtractor - Odporúčané priečinky"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Odporúčané priečinky založené na  črtoch predmetu vybratých správ:"
@@ -207,13 +207,13 @@
     "message": "V"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Možnosti rozšírenia AttachmentExtractor Continued"
+    "message": "Možnosti rozšírenia AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Domovská stránka AttachmentExtractor Continued a popis funkcií:"
+    "message": "Domovská stránka AttachmentExtractor a popis funkcií:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Všeobecné"
@@ -387,7 +387,7 @@
     "message": "Potvrdiť príjem"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued môže odoslať potvrdenie prijatia automaticky ak je správa označená ako prečítaná."
+    "message": "AttachmentExtractor môže odoslať potvrdenie prijatia automaticky ak je správa označená ako prečítaná."
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Odoslať potvrdenie prijatia ak je vyžadované"
@@ -417,7 +417,7 @@
     "message": "Generátor HTML správy"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Vytvoriť správu vždy, keď je AttachmentExtractor Continued spustený."
+    "message": "Vytvoriť správu vždy, keď je AttachmentExtractor spustený."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "s"
@@ -480,13 +480,13 @@
     "message": "Bytov"
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Nastavenie tohto na viac ako 0 bytov spomalí AttachmentExtractor Continued"
+    "message": "Nastavenie tohto na viac ako 0 bytov spomalí AttachmentExtractor"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Vyňatie v poradí"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Spustiť AttachmentExtractor Continued vždy ak je vyňatie vyžadované."
+    "message": "Spustiť AttachmentExtractor vždy ak je vyňatie vyžadované."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -753,7 +753,7 @@
     "message": "Hop!"
   },
   "GenericErrorMessage2": {
-    "message": "Vyskytla sa nejaká chyba s AttachmentExtractor Continued. Ak sa toto stáva pravidelne, kontaktujte ma cez moju webovú stránku a popíšte všetky detaily chyby/problému."
+    "message": "Vyskytla sa nejaká chyba s AttachmentExtractor. Ak sa toto stáva pravidelne, kontaktujte ma cez moju webovú stránku a popíšte všetky detaily chyby/problému."
   },
   "StatusTextStarting": {
     "message": "Zahájenie AE ukladanie s vybranou prílohou"
@@ -768,10 +768,10 @@
     "message": "AE ukladanie: ukladanie prílohy %1$ dokončené za…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Zmazať extrahovaný súbor?"
+    "message": "AttachmentExtractor: Zmazať extrahovaný súbor?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Predtým ste použili AttachmentExtractor Continued na extrahovanie príloh z tejto správy. Prajete si ich odstrániť z počítača?"
+    "message": "Predtým ste použili AttachmentExtractor na extrahovanie príloh z tejto správy. Prajete si ich odstrániť z počítača?"
   },
   "FolderPickerDialogTitle": {
     "message": "Vybrať priečinok pre použitie"
@@ -783,7 +783,7 @@
     "message": "Odporúčaná oprava"
   },
   "FileNamePatternFixMessage": {
-    "message": "Názov súboru alebo čislo vzoru, ktorý ste vložili je nesprávny a môže vypnúť AttachmentExtractor Continued.\nZmeniť na:\n %1$s?"
+    "message": "Názov súboru alebo čislo vzoru, ktorý ste vložili je nesprávny a môže vypnúť AttachmentExtractor.\nZmeniť na:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Vyňatie zahájené [Deň/Čas: %S]"
@@ -795,7 +795,7 @@
     "message": "AE ReportGen správa"
   },
   "Heading": {
-    "message": "Správa AttachmentExtractor Continued"
+    "message": "Správa AttachmentExtractor"
   },
   "Subject": {
     "message": "Pošta"

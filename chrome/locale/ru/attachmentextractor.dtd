@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Просто удалить вложения из всех сообщений в папке">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Настройки AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menusettingsdialog.label "Настройки AttachmentExtractor">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Извлечь все вложения">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Установить в качестве шаблона по умолчанию теперь">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Нажмите, чтобы добавить знак">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - предложенные папки">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - предложенные папки">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Предложенные папки основаны на полях темы выбранного сообщения(й):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Использовать выбранную папку">
 <!ENTITY attachmentextractor.imagetoolbar.label "Переключить выбор">

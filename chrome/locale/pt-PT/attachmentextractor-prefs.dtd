@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Recibos de leitura…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Recibos de leitura">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "O AttachmentExtractor Continued pode enviar recibos de leitura automaticamente quando uma mensagem é marcada como lida">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "O AttachmentExtractor pode enviar recibos de leitura automaticamente quando uma mensagem é marcada como lida">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Enviar recibos de leitura se pedidos">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "c">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Pedidos de recibos de leitura:">
@@ -89,9 +89,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Verificação do Tamanho Mínimo">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Guardar anexos apenas se forem maiores do que:">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor Continued .">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor .">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Extracções em Espera">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Iniciar o AttachmentExtractor Continued  rapidamente  assim que for pedida uma extração.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Iniciar o AttachmentExtractor  rapidamente  assim que for pedida uma extração.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "I">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Aguardar e esperar por qualquer extracção enquanto o AE está em execução.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

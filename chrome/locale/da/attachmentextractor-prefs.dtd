@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Indstillinger for AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Indstillinger for AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "60em">
-<!ENTITY attachmentextractor.settings.homepage.label "Website for AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.homepage.label "Website for AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.generaltab.label "Generelt">
 <!ENTITY attachmentextractor.settings.normal.caption "Gemning af vedhæftede filer">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Hvor skal de vedhæftede filer gemmes?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "G">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Kvitteringer…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Kvitteringer">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued kan sende kvitteringer automatisk når en besked markeres som læst">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor kan sende kvitteringer automatisk når en besked markeres som læst">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Send kvitteringer hvis ønsket">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Ønske om kvittering:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "Rapport Generator">
 <!ENTITY attachmentextractor.settings.reportgen.caption "Generation af HTML rapporter">
-<!ENTITY attachmentextractor.settings.reportgen.label "Generer en rapport hver gang AttachmentExtractor Continued arbejder.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Generer en rapport hver gang AttachmentExtractor arbejder.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Brug miniaturer når det er muligt.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "M">

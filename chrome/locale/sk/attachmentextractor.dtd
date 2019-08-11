@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "O">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Odstrániť prílohy zo všetkých správ v priečinku">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Nastavenia AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menusettingsdialog.label "Nastavenia AttachmentExtractor">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "N">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Uložiť všetky prílohy">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "U">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Nastaviť vzor ako predvolený odteraz">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "N">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Kliknúť na pridať znak">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Odporúčané priečinky">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Odporúčané priečinky">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Odporúčané priečinky založené na  črtoch predmetu vybratých správ:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Použiť vybratý priečinok">
 <!ENTITY attachmentextractor.imagetoolbar.label "Prepnúť výber">

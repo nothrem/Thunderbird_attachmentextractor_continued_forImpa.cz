@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "O">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Odstranit přílohy ze všech zpráv">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "V">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Nastavení rozšíření AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menusettingsdialog.label "Nastavení rozšíření AttachmentExtractor">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Uložit přílohy ze všech zpráv">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "U">

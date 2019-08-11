@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "j">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Bijlagen gewoon verwijderen uit alle berichten in de map">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued instellingen">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor instellingen">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Alle bijlagen uitpakken">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "P">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Patroon vanaf nu als standaard instellen">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik om een token toe te voegen">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Gesuggereerde mappen:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Gesuggereerde mappen:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Gesuggereerde mappen gebaseerd op onderwerpregel(s) van geselecteerd(e) bericht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Geselecteerde map gebruiken">
 <!ENTITY attachmentextractor.imagetoolbar.label "Selectie wisselen">

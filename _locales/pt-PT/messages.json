@@ -180,7 +180,7 @@
     "message": "Clique para adicionar um token"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Pastas sugeridas:"
+    "message": "AttachmentExtractor - Pastas sugeridas:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Pastas sugeridas baseado nas linhas de assunto das mensagens seleccionadas:"
@@ -387,7 +387,7 @@
     "message": "Recibos de leitura"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "O AttachmentExtractor Continued pode enviar recibos de leitura automaticamente quando uma mensagem é marcada como lida"
+    "message": "O AttachmentExtractor pode enviar recibos de leitura automaticamente quando uma mensagem é marcada como lida"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Enviar recibos de leitura se pedidos"
@@ -480,13 +480,13 @@
     "message": "Bytes."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor Continued ."
+    "message": "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor ."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Extracções em Espera"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Iniciar o AttachmentExtractor Continued  rapidamente  assim que for pedida uma extração."
+    "message": "Iniciar o AttachmentExtractor  rapidamente  assim que for pedida uma extração."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "I"
@@ -753,7 +753,7 @@
     "message": "Whoops!"
   },
   "GenericErrorMessage2": {
-    "message": "Alguma correu mal com o AttachmentExtractor Continued. se isto acontecer regularmente coloque um bug no meu bugtracker (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) com os detalhes do erro que aparecem na consola de erro do Thunderbird."
+    "message": "Alguma correu mal com o AttachmentExtractor. se isto acontecer regularmente coloque um bug no meu bugtracker (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) com os detalhes do erro que aparecem na consola de erro do Thunderbird."
   },
   "StatusTextStarting": {
     "message": "A iniciar a extracção AE como anexos seleccionados"
@@ -768,10 +768,10 @@
     "message": "Extracção AE: Extracção do Anexo %1$s efectuada, a terminar…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Eliminar o ficheiro que extraiu?"
+    "message": "AttachmentExtractor: Eliminar o ficheiro que extraiu?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Já usou o AttachmentExtractor Continued antes para extrair anexos desta mensagem. Deseja também eliminar os do seu computador?"
+    "message": "Já usou o AttachmentExtractor antes para extrair anexos desta mensagem. Deseja também eliminar os do seu computador?"
   },
   "FolderPickerDialogTitle": {
     "message": "Seleccione pasta a usar"
@@ -783,7 +783,7 @@
     "message": "Reparação sugerida"
   },
   "FileNamePatternFixMessage": {
-    "message": "O nome do ficheiro ou padrão de contagem que introduziu é inválido e poderá partir o AttachmentExtractor Continued.\nMudar para:\n %1$s?"
+    "message": "O nome do ficheiro ou padrão de contagem que introduziu é inválido e poderá partir o AttachmentExtractor.\nMudar para:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Extracção iniciada [à Data/Hora: %S]"

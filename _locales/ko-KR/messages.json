@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued 설정"
+    "message": "AttachmentExtractor 설정"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "토큰을 추가하려면 클릭"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - 제안된 폴더:"
+    "message": "AttachmentExtractor - 제안된 폴더:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "선택된 메세지의 제목 줄을 기반으로 제안된 폴더:"
@@ -207,13 +207,13 @@
     "message": "H"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued 설정"
+    "message": "AttachmentExtractor 설정"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor Continued 홈 페이지 및 기능 설명："
+    "message": "AttachmentExtractor 홈 페이지 및 기능 설명："
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "일반"
@@ -387,7 +387,7 @@
     "message": "수령증 발급"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued는 메세지가 읽음 처리가 되면 자동으로 수령증을 보낼 수 있습니다"
+    "message": "AttachmentExtractor는 메세지가 읽음 처리가 되면 자동으로 수령증을 보낼 수 있습니다"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "요청이 있을 경우 수령증 발급해 보냅니다"
@@ -417,7 +417,7 @@
     "message": "HTML 보고서 생성기"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "AttachmentExtractor Continued 실행시 언제나 보고서 생성"
+    "message": "AttachmentExtractor 실행시 언제나 보고서 생성"
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -480,13 +480,13 @@
     "message": "바이트"
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "0 바이트 이상으로 이것을 설정하면 AttachmentExtractor Continued의 처리 속도는 어느 정도 늦어집니다."
+    "message": "0 바이트 이상으로 이것을 설정하면 AttachmentExtractor의 처리 속도는 어느 정도 늦어집니다."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "대기중인 추출"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "AttachmentExtractor Continued를 시작할 때마다 곧바로 추출을 요청합니다."
+    "message": "AttachmentExtractor를 시작할 때마다 곧바로 추출을 요청합니다."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued 작동중"
+    "message": "AttachmentExtractor 작동중"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "추출중…"
@@ -753,7 +753,7 @@
     "message": "아이고!"
   },
   "GenericErrorMessage2": {
-    "message": "무언가 AttachmentExtractor Continued에 문제를 일으켰습니다. 만약 일정하게 발생하는 경우 제 웹사이트(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues)를 내 bugtracker에 버그를 Thunderbird의 오류 콘솔에 보여진 오류 상세와 함께 남겨주세요."
+    "message": "무언가 AttachmentExtractor에 문제를 일으켰습니다. 만약 일정하게 발생하는 경우 제 웹사이트(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues)를 내 bugtracker에 버그를 Thunderbird의 오류 콘솔에 보여진 오류 상세와 함께 남겨주세요."
   },
   "StatusTextStarting": {
     "message": "선택된 첨부 파일에 대해 AE 추출 시작"
@@ -768,10 +768,10 @@
     "message": "AE 추출: 첨부파일 %1$ 추출을 완료했습니다, 종료합니다…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: 추출된 파일을 삭제하시겠습니까?"
+    "message": "AttachmentExtractor: 추출된 파일을 삭제하시겠습니까?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "이전에 AttachmentExtractor Continued를 사용해 이 메시지에서 첨부 파일을 추출하였습니다. 당신의 컴퓨터에도 그것들을 삭제하시겠습니까?"
+    "message": "이전에 AttachmentExtractor를 사용해 이 메시지에서 첨부 파일을 추출하였습니다. 당신의 컴퓨터에도 그것들을 삭제하시겠습니까?"
   },
   "FolderPickerDialogTitle": {
     "message": "사용할 폴더 선택"
@@ -783,7 +783,7 @@
     "message": "정정 제안"
   },
   "FileNamePatternFixMessage": {
-    "message": "당신이 입력한 파일명 또는 계수된 패턴이 올바르지 않아서 AttachmentExtractor Continued가 멈출수 있습니다.\n다음으로 바꾸시겠습니까?:\n %1$s"
+    "message": "당신이 입력한 파일명 또는 계수된 패턴이 올바르지 않아서 AttachmentExtractor가 멈출수 있습니다.\n다음으로 바꾸시겠습니까?:\n %1$s"
   },
   "ExtractionStarted": {
     "message": "추출 시작[날짜/시간: %S]"
@@ -795,7 +795,7 @@
     "message": "AE ReportGen 보고서"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued 보고서"
+    "message": "AttachmentExtractor 보고서"
   },
   "Subject": {
     "message": "제목"

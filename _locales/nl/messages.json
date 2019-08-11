@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued instellingen"
+    "message": "AttachmentExtractor instellingen"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Klik om een token toe te voegen"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Gesuggereerde mappen:"
+    "message": "AttachmentExtractor - Gesuggereerde mappen:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Gesuggereerde mappen gebaseerd op onderwerpregel(s) van geselecteerd(e) bericht(en):"
@@ -207,13 +207,13 @@
     "message": "B"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued instellingen"
+    "message": "AttachmentExtractor instellingen"
   },
   "attachmentextractor.settings.width": {
     "message": "60em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor Continued homepage en beschrijving van mogelijkheden:"
+    "message": "AttachmentExtractor homepage en beschrijving van mogelijkheden:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Algemeen"
@@ -387,7 +387,7 @@
     "message": "Ontvangstbevestigingen"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued kan automatisch ontvangstbevestigingen versturen wanneer een bericht als gelezen wordt gemarkeerd"
+    "message": "AttachmentExtractor kan automatisch ontvangstbevestigingen versturen wanneer een bericht als gelezen wordt gemarkeerd"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Ontvangstbevestigingen versturen wanneer er om wordt gevraagd"
@@ -417,7 +417,7 @@
     "message": "HTML rapportgenerator"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Een rapport aanmaken na elke keer dat AttachmentExtractor Continued heeft gedraaid."
+    "message": "Een rapport aanmaken na elke keer dat AttachmentExtractor heeft gedraaid."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "A"
@@ -480,13 +480,13 @@
     "message": "bytes."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Indien dit wordt ingesteld op een waarde groter dan 0 zal AttachmentExtractor Continued langzamer worden."
+    "message": "Indien dit wordt ingesteld op een waarde groter dan 0 zal AttachmentExtractor langzamer worden."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Uitpakwachtrij"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "AttachmentExtractor Continued direct starten wanneer om uitpakken wordt gevraagd."
+    "message": "AttachmentExtractor direct starten wanneer om uitpakken wordt gevraagd."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued is aan de slag"
+    "message": "AttachmentExtractor is aan de slag"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Uitpakken…"
@@ -753,7 +753,7 @@
     "message": "Oeps!"
   },
   "GenericErrorMessage2": {
-    "message": "Er is iets misgegaan met AttachmentExtractor Continued. Als dit vaker gebeurt maak dan een foutmelding op de bugtracker op https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues met de foutdetails zoals weergegeven in de foutconsole van Thunderbird."
+    "message": "Er is iets misgegaan met AttachmentExtractor. Als dit vaker gebeurt maak dan een foutmelding op de bugtracker op https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues met de foutdetails zoals weergegeven in de foutconsole van Thunderbird."
   },
   "StatusTextStarting": {
     "message": "AE uitpakken wordt gestart voor geselecteerde bijlage(n)"
@@ -768,10 +768,10 @@
     "message": "AE uitpakken: Bijlage %1$s is uitgepakt, afronden…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Uitgepakt bestand verwijderen?"
+    "message": "AttachmentExtractor: Uitgepakt bestand verwijderen?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "U hebt al eens AttachmentExtractor Continued gebruikt om bijlagen uit dit bericht uit te pakken. Wilt u die bestanden ook van uw computer verwijderen?"
+    "message": "U hebt al eens AttachmentExtractor gebruikt om bijlagen uit dit bericht uit te pakken. Wilt u die bestanden ook van uw computer verwijderen?"
   },
   "FolderPickerDialogTitle": {
     "message": "Selecteer te gebruiken map"
@@ -783,7 +783,7 @@
     "message": "Voorgestelde oplossing"
   },
   "FileNamePatternFixMessage": {
-    "message": "De bestandsnaam of het telpatroon dat u hebt ingevoerd is ongeldig en kan AttachmentExtractor Continued laten struikelen.\nWijzigen in:\n %1$s?"
+    "message": "De bestandsnaam of het telpatroon dat u hebt ingevoerd is ongeldig en kan AttachmentExtractor laten struikelen.\nWijzigen in:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Uitpakken gestart [op datum/tijd: %S]"
@@ -795,7 +795,7 @@
     "message": "AE RapportGen rapport"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued rapport"
+    "message": "AttachmentExtractor rapport"
   },
   "Subject": {
     "message": "E-mail"

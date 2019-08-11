@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Options de AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Options de AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "55em">
-<!ENTITY attachmentextractor.settings.homepage.label "Page web et description des fonctionnalités d&apos;AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.homepage.label "Page web et description des fonctionnalités d&apos;AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.generaltab.label "Général">
 <!ENTITY attachmentextractor.settings.normal.caption "Extraction des pièces jointes">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Où sauver les pièces jointes ?">
@@ -48,9 +48,9 @@
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Supprimer avec le code normal de Thunderbird">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Supprimer avec les routines d&apos;AttachmentExtractor Continued (expérimental).">
+<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Supprimer avec les routines d&apos;AttachmentExtractor (expérimental).">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Détacher avec les routines d&apos;AttachmentExtractor Continued (expérimental).">
+<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Détacher avec les routines d&apos;AttachmentExtractor (expérimental).">
 <!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "M&apos;avertir quand toutes les pièces jointes ont été extraites.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "A">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Accepter l&apos;accusé de réception…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Permet de d&apos;accepter les accusés de réception.">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued peut envoyer des accusés de réception automatiquement lorsqu&apos;un message est marqué comme Lu">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor peut envoyer des accusés de réception automatiquement lorsqu&apos;un message est marqué comme Lu">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Envoyer un accusé de réception si demandé">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Demandes d&apos;accusés de réception :">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "Rapport">
 <!ENTITY attachmentextractor.settings.reportgen.caption "Générateur de rapport HTML">
-<!ENTITY attachmentextractor.settings.reportgen.label "Générer un rapport chaque fois qu&apos;AttachmentExtractor Continued est exécuté.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Générer un rapport chaque fois qu&apos;AttachmentExtractor est exécuté.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Utiliser une image miniature pour les pièces jointes lorsque c&apos;est possible.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "I">
@@ -82,18 +82,18 @@
 <!ENTITY attachmentextractor.settings.extract.caption "Sauvegarde des pièces jointes">
 <!ENTITY attachmentextractor.settings.extract.tbextract.label "Extraire les pièces jointes avec le code normal de Thunderbird">
 <!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Extraire les pièces jointes avec la routine interne d&apos;AttachmentExtractor Continued.">
+<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Extraire les pièces jointes avec la routine interne d&apos;AttachmentExtractor.">
 <!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
 <!ENTITY attachmentextractor.settings.noextract.label "Désactiver la sauvegarde des pièces jointes">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Vérification de taille minimale">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Sauvegarder les pièces jointes seulement si plus grandes que :">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "octets.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Une valeur plus grande que 0 ralentira AttachmentExtractor Continued.">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Une valeur plus grande que 0 ralentira AttachmentExtractor.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Queue des extractions">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Démarrer AttachmentExtractor Continued immédiatement à chaque demande d&apos;extraction">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Démarrer AttachmentExtractor immédiatement à chaque demande d&apos;extraction">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "I">
-<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Attendre et ajouter à la queue toute extraction demandée alors que AttachmentExtractor Continued est déjà en cours d&apos;exécution.">
+<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Attendre et ajouter à la queue toute extraction demandée alors que AttachmentExtractor est déjà en cours d&apos;exécution.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">
 <!ENTITY attachmentextractor.settings.setdatetoemail.label "Définir la date/heure de modification des fichiers joints comme la date/heure de réception du message.">
 <!ENTITY attachmentextractor.settings.setdatetoemail.accesskey "D">

@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšírenia AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšírenia AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka AttachmentExtractor Continued a popis funkcií:">
+<!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka AttachmentExtractor a popis funkcií:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Všeobecné">
 <!ENTITY attachmentextractor.settings.normal.caption "Vyňatie príloh">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Kde majú byť prílohy uložené?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "U">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Potvrdiť príjem…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Potvrdiť príjem">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued môže odoslať potvrdenie prijatia automaticky ak je správa označená ako prečítaná.">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor môže odoslať potvrdenie prijatia automaticky ak je správa označená ako prečítaná.">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Odoslať potvrdenie prijatia ak je vyžadované">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Požiadavky na potvrdenie prijatia:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "Generátor hlásení">
 <!ENTITY attachmentextractor.settings.reportgen.caption "Generátor HTML správy">
-<!ENTITY attachmentextractor.settings.reportgen.label "Vytvoriť správu vždy, keď je AttachmentExtractor Continued spustený.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Vytvoriť správu vždy, keď je AttachmentExtractor spustený.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "s">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Ak je to možné, použiť obrázky miniatúr pre prílohy.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "A">
@@ -89,9 +89,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimálna veľkosť kontroly">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Uložiť prílohy len ak sú väčšie ako:">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytov">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Nastavenie tohto na viac ako 0 bytov spomalí AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Nastavenie tohto na viac ako 0 bytov spomalí AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Vyňatie v poradí">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Spustiť AttachmentExtractor Continued vždy ak je vyňatie vyžadované.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Spustiť AttachmentExtractor vždy ak je vyňatie vyžadované.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Čakať a zaradiť do fronty všetky vyňatia pokiaľ je AE spustený.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "C">

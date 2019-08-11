@@ -84,7 +84,7 @@
     "message": "S"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continuedin asetukset"
+    "message": "AttachmentExtractorin asetukset"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Klikkaa lisätäksesi merkki"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Ehdotetut kansiot:"
+    "message": "AttachmentExtractor - Ehdotetut kansiot:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Valittujen viestien otsikkoriveille perustuvat ehdotetut kansiot:"
@@ -207,13 +207,13 @@
     "message": "H"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continuedin asetukset"
+    "message": "AttachmentExtractorin asetukset"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor Continuedin kotisivu ja ominaisuuksien kuvaus:"
+    "message": "AttachmentExtractorin kotisivu ja ominaisuuksien kuvaus:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Yleiset"
@@ -387,7 +387,7 @@
     "message": "Vastaanottokuittaukset"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi"
+    "message": "AttachmentExtractor voi lähettää vastaanottokuittaukset automaattisesti, kun viesti merkitään luetuksi"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Lähetä vastaanottokuittaukset jos sellaista pyydetään"
@@ -417,7 +417,7 @@
     "message": "HTML-raporttikehitin"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Kehitä raportti aina kun AttachmentExtractor Continued ajetaan."
+    "message": "Kehitä raportti aina kun AttachmentExtractor ajetaan."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "K"
@@ -480,13 +480,13 @@
     "message": "Tavua."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractor Continuedia."
+    "message": "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractoria."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Odottavat poiminnat"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Käynnistä AttachmentExtractor Continued heti joka kerta kun poimintaa pyydetään."
+    "message": "Käynnistä AttachmentExtractor heti joka kerta kun poimintaa pyydetään."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "K"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued työskentelee"
+    "message": "AttachmentExtractor työskentelee"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Poimitaan…"
@@ -753,7 +753,7 @@
     "message": "Hups!"
   },
   "GenericErrorMessage2": {
-    "message": "AttachmentExtractor Continuedissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
+    "message": "AttachmentExtractorissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
   },
   "StatusTextStarting": {
     "message": "Käynnistetään AE poiminta valituille liitteille"
@@ -768,10 +768,10 @@
     "message": "AE poiminta: poiminta valmis liite %1$s, lopetetaan…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Poista poimimasi tiedosto?"
+    "message": "AttachmentExtractor: Poista poimimasi tiedosto?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Käytit AttachmentExtractor Continuedia poimimaan liitteet tästä viestistä. Haluatko poistaa ne myös tietokoneeltasi?"
+    "message": "Käytit AttachmentExtractoria poimimaan liitteet tästä viestistä. Haluatko poistaa ne myös tietokoneeltasi?"
   },
   "FolderPickerDialogTitle": {
     "message": "Valitse käytettävä kansio"
@@ -783,7 +783,7 @@
     "message": "Ehdotettu korjaus"
   },
   "FileNamePatternFixMessage": {
-    "message": "Syöttämäsi malli on virheellinen, ja saattaa rikkoa AttachmentExtractor Continuedin.\nMuutetaanko muotoon:\n %1$s?"
+    "message": "Syöttämäsi malli on virheellinen, ja saattaa rikkoa AttachmentExtractorin.\nMuutetaanko muotoon:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Poiminta alkoi [%S]"
@@ -795,7 +795,7 @@
     "message": "AE ReportGen -raportti"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued -raportti"
+    "message": "AttachmentExtractor -raportti"
   },
   "Subject": {
     "message": "Sähköposti"

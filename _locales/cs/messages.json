@@ -84,7 +84,7 @@
     "message": "V"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "Nastavení rozšíření AttachmentExtractor Continued"
+    "message": "Nastavení rozšíření AttachmentExtractor"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -207,13 +207,13 @@
     "message": "P"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "Možnosti rozšíření AttachmentExtractor Continued"
+    "message": "Možnosti rozšíření AttachmentExtractor"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Domovská stránka rozšíření AttachmentExtractor Continued a popis možností:"
+    "message": "Domovská stránka rozšíření AttachmentExtractor a popis možností:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Základní"
@@ -387,7 +387,7 @@
     "message": "Potvrzení o přečtení"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "Rozšíření AttachmentExtractor Continued umí odesílat automaticky potvrzení o přečtení, během označování zpráv jako přečtených."
+    "message": "Rozšíření AttachmentExtractor umí odesílat automaticky potvrzení o přečtení, během označování zpráv jako přečtených."
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Odeslatpotvrzení o přečtení, pokud je vyžadováno"
@@ -753,7 +753,7 @@
     "message": "Chyba!"
   },
   "GenericErrorMessage2": {
-    "message": "Rozšíření AttachmentExtractor Continued způsobilo chybu programu. Pokud se to stává pravidelně, oznamte to prosím na stránkách https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues s výpisem chyb z chybové konzole aplikace Thunderbird."
+    "message": "Rozšíření AttachmentExtractor způsobilo chybu programu. Pokud se to stává pravidelně, oznamte to prosím na stránkách https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues s výpisem chyb z chybové konzole aplikace Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Příprava ukládání příloh"
@@ -768,10 +768,10 @@
     "message": "Ukládání příloh: Příloha %1$s byla uložena, uzavírám zpracování…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Odstranit uložený soubor?"
+    "message": "AttachmentExtractor: Odstranit uložený soubor?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Z této zprávy byli uloženy přílohy rozšířením AttachmentExtractor Continued. Přejete si je také odstranit?"
+    "message": "Z této zprávy byli uloženy přílohy rozšířením AttachmentExtractor. Přejete si je také odstranit?"
   },
   "FolderPickerDialogTitle": {
     "message": "Zvolte adresář"

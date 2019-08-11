@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Aplicar o tipo como pré-definição a partir de agora">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "g">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Clique para adicionar um token">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Pastas sugeridas:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Pastas sugeridas:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Pastas sugeridas baseado nas linhas de assunto das mensagens seleccionadas:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Usar a pasta seleccionada">
 <!ENTITY attachmentextractor.imagetoolbar.label "Trocar selecção">

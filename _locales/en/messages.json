@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued Settings"
+    "message": "AttachmentExtractor Settings"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Click To Add A Token"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Suggested Folders:"
+    "message": "AttachmentExtractor - Suggested Folders:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Suggested Folders based on subject lines of selected message(s):"
@@ -207,13 +207,13 @@
     "message": ""
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued Settings"
+    "message": "AttachmentExtractor Settings"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor Continued homepage and description of features:"
+    "message": "AttachmentExtractor homepage and description of features:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "General"
@@ -390,7 +390,7 @@
     "message": "Return Receipts"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued can send return receipts automatically when a message is marked as Read"
+    "message": "AttachmentExtractor can send return receipts automatically when a message is marked as Read"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Send Return Receipts if one is requested"
@@ -420,7 +420,7 @@
     "message": "HTML Report Generator"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Generate a report every time AttachmentExtractor Continued is run."
+    "message": "Generate a report every time AttachmentExtractor is run."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -489,7 +489,7 @@
     "message": "Queued Extractions"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Start AttachmentExtractor Continued straight away every time extraction is requested."
+    "message": "Start AttachmentExtractor straight away every time extraction is requested."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -663,7 +663,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued working"
+    "message": "AttachmentExtractor working"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Extracting…"
@@ -756,7 +756,7 @@
     "message": "Whoops!"
   },
   "GenericErrorMessage2": {
-    "message": "Something has gone wrong with AttachmentExtractor Continued.  If this happens regularly please log a bug on the bugtracker on https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues with the error details shown in Thunderbird's Error Console."
+    "message": "Something has gone wrong with AttachmentExtractor.  If this happens regularly please log a bug on the bugtracker on https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues with the error details shown in Thunderbird's Error Console."
   },
   "StatusTextStarting": {
     "message": "Starting AE Extract with selected attachment(s)"
@@ -771,10 +771,10 @@
     "message": "AE Extract: Done Extracting attachment %1$s, finishing off…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Delete the file you extracted?"
+    "message": "AttachmentExtractor: Delete the file you extracted?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "You previously used AttachmentExtractor Continued to extract attachments from this message.  Do you want to delete those off your computer as well?"
+    "message": "You previously used AttachmentExtractor to extract attachments from this message.  Do you want to delete those off your computer as well?"
   },
   "FolderPickerDialogTitle": {
     "message": "Select folder to use"
@@ -786,7 +786,7 @@
     "message": "Suggested Fix"
   },
   "FileNamePatternFixMessage": {
-    "message": "The filename or count pattern you've entered is invalid and may break AttachmentExtractor Continued.\nChange to:\n %1$s?"
+    "message": "The filename or count pattern you've entered is invalid and may break AttachmentExtractor.\nChange to:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Extraction started [at Date/Time: %S]"
@@ -798,7 +798,7 @@
     "message": "AE ReportGen Report"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued Report"
+    "message": "AttachmentExtractor Report"
   },
   "Subject": {
     "message": "Subject"

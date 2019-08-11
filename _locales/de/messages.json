@@ -6,7 +6,7 @@
     "message": "Trennt Dateianhänge aus gewählten Nachrichten teilautomatisiert ab und kann diese speichern, löschen und mehr"
   },
   "attachmentextractor.menu.label": {
-    "message": "AttachmentExtractor Continued"
+    "message": "AttachmentExtractor"
   },
   "attachmentextractor.menu.accesskey": {
     "message": "X"
@@ -84,7 +84,7 @@
     "message": "O"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued - Einstellungen…"
+    "message": "AttachmentExtractor - Einstellungen…"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Weiteres Dateinamenmerkmal hinzufügen"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Ordnervorschläge:"
+    "message": "AttachmentExtractor - Ordnervorschläge:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):"
@@ -207,13 +207,13 @@
     "message": "N"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued - Einstellungen"
+    "message": "AttachmentExtractor - Einstellungen"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Homepage von &quot;AttachmentExtractor Continued&quot; und Beschreibung der Funktionen:"
+    "message": "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Allgemein"
@@ -357,13 +357,13 @@
     "message": "T"
   },
   "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Löschen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine"
+    "message": "Löschen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine"
   },
   "attachmentextractor.settings.after-detach.aedelete.accesskey": {
     "message": "R"
   },
   "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Abtrennen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine"
+    "message": "Abtrennen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine"
   },
   "attachmentextractor.settings.after-detach.aedetach.accesskey": {
     "message": "e"
@@ -387,7 +387,7 @@
     "message": "Empfangsbestätigungen"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde."
+    "message": "AttachmentExtractor kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde."
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Empfangsbestätigung nach Aufforderung senden"
@@ -417,7 +417,7 @@
     "message": "HTML-Protokollgenerator"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Jede Ausführung von &quot;AttachmentExtractor Continued&quot; protokollieren"
+    "message": "Jede Ausführung von &quot;AttachmentExtractor&quot; protokollieren"
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "P"
@@ -459,7 +459,7 @@
     "message": "A"
   },
   "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Anhänge mit interner Routine von &quot;AttachmentExtractor Continued&quot; abtrennen"
+    "message": "Anhänge mit interner Routine von &quot;AttachmentExtractor&quot; abtrennen"
   },
   "attachmentextractor.settings.extract.aeextract2.accesskey": {
     "message": "N"
@@ -480,19 +480,19 @@
     "message": "Bytes"
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Bei Werten größer 0 wird der &quot;AttachmentExtractor Continued&quot; etwas verlangsamt."
+    "message": "Bei Werten größer 0 wird der &quot;AttachmentExtractor&quot; etwas verlangsamt."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Abtrennen mit Warteschlange"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "&quot;AttachmentExtractor Continued&quot; bei jedem Abtrennbefehl sofort ausführen"
+    "message": "&quot;AttachmentExtractor&quot; bei jedem Abtrennbefehl sofort ausführen"
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
   },
   "attachmentextractor.settings.queuerequests.enabled.label": {
-    "message": "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor Continued&quot; noch läuft"
+    "message": "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor&quot; noch läuft"
   },
   "attachmentextractor.settings.queuerequests.enabled.accesskey": {
     "message": "W"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued - Abtrennvorgang gestartet"
+    "message": "AttachmentExtractor - Abtrennvorgang gestartet"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Abtrennvorgang wird ausgeführt…"
@@ -753,7 +753,7 @@
     "message": "Hoppla!"
   },
   "GenericErrorMessage2": {
-    "message": "Bei der Ausführung von AttachmentExtractor Continued ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, erstellen Sie bitte ein Fehlerticket auf GitLab (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) und teilen Sie dem Autor alle Fehlermeldungen und Details mit, die in der Fehler-Konsole von Thunderbird angezeigt werden."
+    "message": "Bei der Ausführung von AttachmentExtractor ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, erstellen Sie bitte ein Fehlerticket auf GitLab (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) und teilen Sie dem Autor alle Fehlermeldungen und Details mit, die in der Fehler-Konsole von Thunderbird angezeigt werden."
   },
   "StatusTextStarting": {
     "message": "AE: Abtrennen der markierten Anhänge gestartet"
@@ -768,10 +768,10 @@
     "message": "AE Abtrennung: Abtrennung von %1$s Anhängen abgeschlossen…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: Abgetrennte Datei wirklich löschen?"
+    "message": "AttachmentExtractor: Abgetrennte Datei wirklich löschen?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Anhänge dieser Nachricht wurden schon mit AttachmentExtractor Continued abgetrennt. Sollen diese auch auf Ihrem Computer gelöscht werden?"
+    "message": "Anhänge dieser Nachricht wurden schon mit AttachmentExtractor abgetrennt. Sollen diese auch auf Ihrem Computer gelöscht werden?"
   },
   "FolderPickerDialogTitle": {
     "message": "Ordner auswählen der genutzt werden soll…"
@@ -783,7 +783,7 @@
     "message": "Korrekturvorschlag"
   },
   "FileNamePatternFixMessage": {
-    "message": "Eingegebener Dateiname oder Zählungsmuster ist ungültig und könnte zum Programmabbruch von AttachmentExtractor Continued führen.\nÄndern in:\n %1$s?"
+    "message": "Eingegebener Dateiname oder Zählungsmuster ist ungültig und könnte zum Programmabbruch von AttachmentExtractor führen.\nÄndern in:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Abtrennvorgang gestartet [Datum/Uhrzeit: %S]"
@@ -795,7 +795,7 @@
     "message": "AE-Protokoll"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued-Protokoll"
+    "message": "AttachmentExtractor-Protokoll"
   },
   "Subject": {
     "message": "Nachricht"

@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continued Настройки">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Настройки">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "Страницата на AttachmentExtractor Continued и описание на възможностите:">
+<!ENTITY attachmentextractor.settings.homepage.label "Страницата на AttachmentExtractor и описание на възможностите:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Общи">
 <!ENTITY attachmentextractor.settings.normal.caption "Извличане на прикачени файлове">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Къде да се записват прикачените?">
@@ -63,7 +63,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Обратни разписки…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Обратни разписки">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Изпращане на обратна разписка, ако се изисква">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Заявки за обратни разписки:">
@@ -73,7 +73,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "Доклади">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML Генератор на доклади">
-<!ENTITY attachmentextractor.settings.reportgen.label "Генериране на доклад при всяко използване на AttachmentExtractor Continued.">
+<!ENTITY attachmentextractor.settings.reportgen.label "Генериране на доклад при всяко използване на AttachmentExtractor.">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "С миниатюри за прикрепените файлове, където е възможно.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "I">
@@ -94,9 +94,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Ограничение за размер">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Запис само на прикачени файлове, ако са по-големи от:">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "байта.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "При настройка повече от 0 байта AttachmentExtractor Continued ще е по-бавен донякъде.">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "При настройка повече от 0 байта AttachmentExtractor ще е по-бавен донякъде.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Извличания на опашка">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Старт на AttachmentExtractor Continued моментално при заявка за извличане.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Старт на AttachmentExtractor моментално при заявка за извличане.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Изчакване с натрупване на заявките в случай, че AE вече обработва.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

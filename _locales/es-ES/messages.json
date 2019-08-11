@@ -84,7 +84,7 @@
     "message": "o"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued - Opciones"
+    "message": "AttachmentExtractor - Opciones"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "O"
@@ -180,7 +180,7 @@
     "message": "Pulse para añadir un elemento"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - Carpetas sugeridas:"
+    "message": "AttachmentExtractor - Carpetas sugeridas:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Carpetas sugeridas en base al asunto de los mensajes seleccionados:"
@@ -207,13 +207,13 @@
     "message": "S"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued - Opciones"
+    "message": "AttachmentExtractor - Opciones"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Página web de AttachmentExtractor Continued y descripción de las características:"
+    "message": "Página web de AttachmentExtractor y descripción de las características:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "General"
@@ -387,7 +387,7 @@
     "message": "Acuse de recibo"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued puede enviar automáticamente acuses de recibo cuando se marque un mensaje como leído"
+    "message": "AttachmentExtractor puede enviar automáticamente acuses de recibo cuando se marque un mensaje como leído"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Enviar el acuse de recibo si se pide"
@@ -417,7 +417,7 @@
     "message": "Generador de informe HTML"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Generar un informe cada vez que se ejecuta AttachmentExtractor Continued."
+    "message": "Generar un informe cada vez que se ejecuta AttachmentExtractor."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -480,13 +480,13 @@
     "message": "Bytes."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Si usa un valor mayor de 0 bytes AttachmentExtractor Continued se podrá ralentizar."
+    "message": "Si usa un valor mayor de 0 bytes AttachmentExtractor se podrá ralentizar."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Extracciones en cola"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Iniciar AttachmentExtractor Continued directamente cada vez que se pida una extracción."
+    "message": "Iniciar AttachmentExtractor directamente cada vez que se pida una extracción."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -660,7 +660,7 @@
     "message": "I"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued está trabajando"
+    "message": "AttachmentExtractor está trabajando"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Extrayendo…"
@@ -753,7 +753,7 @@
     "message": "Error"
   },
   "GenericErrorMessage2": {
-    "message": "Se ha producido un error en el uso de AttachmentExtractor Continued. Si esto ocurre con frecuencia, por favor, añada un bug en https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues con el detalle de error mostrado en la consola de errores de Thunderbird."
+    "message": "Se ha producido un error en el uso de AttachmentExtractor. Si esto ocurre con frecuencia, por favor, añada un bug en https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues con el detalle de error mostrado en la consola de errores de Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Iniciando la extracción de los adjuntos seleccionados"
@@ -768,10 +768,10 @@
     "message": "Extracción de AE: Procesando el adjunto %1$s, terminando…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: ¿Borrar el archivo que ha extraído?"
+    "message": "AttachmentExtractor: ¿Borrar el archivo que ha extraído?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "Ha usado AttachmentExtractor Continued para extraer los adjuntos de este mensaje. ¿Quiere borrarlos de su equipo?"
+    "message": "Ha usado AttachmentExtractor para extraer los adjuntos de este mensaje. ¿Quiere borrarlos de su equipo?"
   },
   "FolderPickerDialogTitle": {
     "message": "Seleccione la carpeta a usar"
@@ -783,7 +783,7 @@
     "message": "Corrección sugerida"
   },
   "FileNamePatternFixMessage": {
-    "message": "El nombre de archivo o patrón que ha introducido no es correcto y puede hacer fallar AttachmentExtractor Continued.\n¿Cambiar a :\n %1$s?"
+    "message": "El nombre de archivo o patrón que ha introducido no es correcto y puede hacer fallar AttachmentExtractor.\n¿Cambiar a :\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Inicio de la extracción [Fecha/Hora: %S]"
@@ -795,7 +795,7 @@
     "message": "Generación del informe de AE"
   },
   "Heading": {
-    "message": "Informe de AttachmentExtractor Continued"
+    "message": "Informe de AttachmentExtractor"
   },
   "Subject": {
     "message": "Correo"

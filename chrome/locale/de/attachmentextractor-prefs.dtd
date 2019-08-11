@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Continued - Einstellungen">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Einstellungen">
 <!ENTITY attachmentextractor.settings.width "50em">
-<!ENTITY attachmentextractor.settings.homepage.label "Homepage von &quot;AttachmentExtractor Continued&quot; und Beschreibung der Funktionen:">
+<!ENTITY attachmentextractor.settings.homepage.label "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Allgemein">
 <!ENTITY attachmentextractor.settings.normal.caption "Abtrennen von Anhängen">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Speicherort für Anhänge">
@@ -48,9 +48,9 @@
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "R">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Löschen mit normaler Thunderbird-Routine">
 <!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Löschen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine">
+<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Löschen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine">
 <!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "R">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Abtrennen mit &quot;AttachmentExtractor Continueds&quot; interner (Versuchs-)Routine">
+<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Abtrennen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine">
 <!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "e">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Empfangsbestätigungen…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Empfangsbestätigungen">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde.">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor kann automatisch eine Empfangsbestätigung senden, nachdem eine Nachricht als gelesen markiert wurde.">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Empfangsbestätigung nach Aufforderung senden">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "E">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Bei Aufforderung zum Senden einer Empfangsbestätigung:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "N">
 <!ENTITY attachmentextractor.settings.reporttab.label "Protokoll">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML-Protokollgenerator">
-<!ENTITY attachmentextractor.settings.reportgen.label "Jede Ausführung von &quot;AttachmentExtractor Continued&quot; protokollieren">
+<!ENTITY attachmentextractor.settings.reportgen.label "Jede Ausführung von &quot;AttachmentExtractor&quot; protokollieren">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "P">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Wenn möglich Bildminiaturen für Anhänge im Report integrieren">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "B">
@@ -82,18 +82,18 @@
 <!ENTITY attachmentextractor.settings.extract.caption "Speichern von Anhangdateien">
 <!ENTITY attachmentextractor.settings.extract.tbextract.label "Anhänge mit normaler Thunderbird-Routine abtrennen">
 <!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "A">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Anhänge mit interner Routine von &quot;AttachmentExtractor Continued&quot; abtrennen">
+<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Anhänge mit interner Routine von &quot;AttachmentExtractor&quot; abtrennen">
 <!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "N">
 <!ENTITY attachmentextractor.settings.noextract.label "Speichern von Anhängen deaktivieren">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "P">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Mindestgröße des Anhangs">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Nur Anhänge speichern, die größer sind als">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Bei Werten größer 0 wird der &quot;AttachmentExtractor Continued&quot; etwas verlangsamt.">
+<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Bei Werten größer 0 wird der &quot;AttachmentExtractor&quot; etwas verlangsamt.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Abtrennen mit Warteschlange">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "&quot;AttachmentExtractor Continued&quot; bei jedem Abtrennbefehl sofort ausführen">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "&quot;AttachmentExtractor&quot; bei jedem Abtrennbefehl sofort ausführen">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
-<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor Continued&quot; noch läuft">
+<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor&quot; noch läuft">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "W">
 <!ENTITY attachmentextractor.settings.setdatetoemail.label "Eingangsdatum und -uhrzeit der Nachricht für den Anhang verwenden">
 <!ENTITY attachmentextractor.settings.setdatetoemail.accesskey "E">

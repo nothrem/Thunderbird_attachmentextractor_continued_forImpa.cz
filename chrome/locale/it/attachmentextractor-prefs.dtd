@@ -1,4 +1,4 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Impostazioni di AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Impostazioni di AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Visita il sito web">
 <!ENTITY attachmentextractor.settings.generaltab.label "Generali">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "I">
 <!ENTITY attachmentextractor.settings.reporttab.label "Opzioni del generatore di resoconti">
 <!ENTITY attachmentextractor.settings.reportgen.caption "Generatore di resoconto HTML">
-<!ENTITY attachmentextractor.settings.reportgen.label "Genera un resoconto ogni volta che si avvia AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.reportgen.label "Genera un resoconto ogni volta che si avvia AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Quando possibile utilizza l&apos;anteprima di immagini per gli allegati">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "s">
@@ -82,7 +82,7 @@
 <!ENTITY attachmentextractor.settings.extract.caption "Salvataggio degli allegati">
 <!ENTITY attachmentextractor.settings.extract.tbextract.label "Utilizza la procedura nativa di Thunderbird per estrarre">
 <!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "n">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Utilizza la procedura di AttachmentExtractor Continued per estrarre">
+<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Utilizza la procedura di AttachmentExtractor per estrarre">
 <!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "z">
 <!ENTITY attachmentextractor.settings.noextract.label "Disattiva il salvataggio degli allegati">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
@@ -91,9 +91,9 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label " ">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Impostando un numero maggiore di 0 l&apos;estrazione verrà rallentata">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Estrazioni in coda">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Avvia AttachmentExtractor Continued ogni volta che viene richiesta l&apos;estrazione">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Avvia AttachmentExtractor ogni volta che viene richiesta l&apos;estrazione">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "x">
-<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Attendi e metti in coda ogni richiesta di estrazione effettuata mentre AttachmentExtractor Continued è avviata">
+<!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Attendi e metti in coda ogni richiesta di estrazione effettuata mentre AttachmentExtractor è avviata">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">
 <!ENTITY attachmentextractor.settings.setdatetoemail.label "Imposta data/ora della modifica dell&apos;allegato in base a data/ora del messaggio">
 <!ENTITY attachmentextractor.settings.setdatetoemail.accesskey "o">

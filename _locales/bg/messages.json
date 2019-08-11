@@ -84,7 +84,7 @@
     "message": "U"
   },
   "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Continued Настройки"
+    "message": "AttachmentExtractor Настройки"
   },
   "attachmentextractor.menusettingsdialog.accesskey": {
     "message": "S"
@@ -180,7 +180,7 @@
     "message": "Добавяне на признак"
   },
   "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor Continued - предложени папки:"
+    "message": "AttachmentExtractor - предложени папки:"
   },
   "attachmentextractor.suggestedFolderDialog.label": {
     "message": "Предложени папки, базирани на темата на избраните писма"
@@ -207,13 +207,13 @@
     "message": "H"
   },
   "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Continued Настройки"
+    "message": "AttachmentExtractor Настройки"
   },
   "attachmentextractor.settings.width": {
     "message": "50em"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Страницата на AttachmentExtractor Continued и описание на възможностите:"
+    "message": "Страницата на AttachmentExtractor и описание на възможностите:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Общи"
@@ -387,7 +387,7 @@
     "message": "Обратни разписки"
   },
   "attachmentextractor.settings.returnreceipts.label": {
-    "message": "AttachmentExtractor Continued може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено"
+    "message": "AttachmentExtractor може да изпрати автоматично обратни разписки при маркиране на писмо като прочетено"
   },
   "attachmentextractor.settings.returnreceipts.enabled.label": {
     "message": "Изпращане на обратна разписка, ако се изисква"
@@ -417,7 +417,7 @@
     "message": "HTML Генератор на доклади"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Генериране на доклад при всяко използване на AttachmentExtractor Continued."
+    "message": "Генериране на доклад при всяко използване на AttachmentExtractor."
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "G"
@@ -480,13 +480,13 @@
     "message": "байта."
   },
   "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "При настройка повече от 0 байта AttachmentExtractor Continued ще е по-бавен донякъде."
+    "message": "При настройка повече от 0 байта AttachmentExtractor ще е по-бавен донякъде."
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Извличания на опашка"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "Старт на AttachmentExtractor Continued моментално при заявка за извличане."
+    "message": "Старт на AttachmentExtractor моментално при заявка за извличане."
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
@@ -660,7 +660,7 @@
     "message": "S"
   },
   "attachmentextractor.progress.windowtitle": {
-    "message": "AttachmentExtractor Continued работи"
+    "message": "AttachmentExtractor работи"
   },
   "attachmentextractor.progress.status1.text": {
     "message": "Извличане…"
@@ -753,7 +753,7 @@
     "message": "Проблем!"
   },
   "GenericErrorMessage2": {
-    "message": "Нещо ненормално се случи с AttachmentExtractor Continued. Ако това се случва често, да се докладва неизправност на страницата (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) с подробностите за грешката от конзолата на Thunderbird."
+    "message": "Нещо ненормално се случи с AttachmentExtractor. Ако това се случва често, да се докладва неизправност на страницата (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) с подробностите за грешката от конзолата на Thunderbird."
   },
   "StatusTextStarting": {
     "message": "Старт на AE извличане с избраните прикачени файлове"
@@ -768,10 +768,10 @@
     "message": "AE извличане: завършен прикачен файл%1$s, приключване…"
   },
   "DeleteLinkedFileTitle": {
-    "message": "AttachmentExtractor Continued: да се изтриели извлеченият файл?"
+    "message": "AttachmentExtractor: да се изтриели извлеченият файл?"
   },
   "DeleteLinkedFileMessage": {
-    "message": "AttachmentExtractor Continued вече е използван за извличане на прикачени файлове от това писмо. Да се изтрият ли извлечените файлове и от компютъра?"
+    "message": "AttachmentExtractor вече е използван за извличане на прикачени файлове от това писмо. Да се изтрият ли извлечените файлове и от компютъра?"
   },
   "FolderPickerDialogTitle": {
     "message": "Избор на папка за използване"
@@ -783,7 +783,7 @@
     "message": "Предложена поправка"
   },
   "FileNamePatternFixMessage": {
-    "message": "Шаблонът за име на файла или брой, който е въведен, е грешен и може да прекрати AttachmentExtractor Continued.\nДа се промени ли на:\n %1$s?"
+    "message": "Шаблонът за име на файла или брой, който е въведен, е грешен и може да прекрати AttachmentExtractor.\nДа се промени ли на:\n %1$s?"
   },
   "ExtractionStarted": {
     "message": "Започнато извличане [на Дата/Час: %S]"
@@ -795,7 +795,7 @@
     "message": "AE Генериран Доклад"
   },
   "Heading": {
-    "message": "AttachmentExtractor Continued Доклад"
+    "message": "AttachmentExtractor Доклад"
   },
   "Subject": {
     "message": "Тема"

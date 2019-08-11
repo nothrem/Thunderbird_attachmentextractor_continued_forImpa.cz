@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Само изтриване на прикачени файлове от всички писма в папка">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued Настройки">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Настройки">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Извличане на всички прикачени файлове">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Шаблонът да е по подразбиране отсега нататък">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Добавяне на признак">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - предложени папки:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - предложени папки:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Предложени папки, базирани на темата на избраните писма">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Използване на избраната папка">
 <!ENTITY attachmentextractor.imagetoolbar.label "Вкл./изкл. на избрано">

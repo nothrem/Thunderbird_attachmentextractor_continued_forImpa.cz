@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Just Delete Attachments from All Messages in Folder">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued Settings">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Settings">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Extract All Attachments">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Set the pattern as default from now on">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Click To Add A Token">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Suggested Folders:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Suggested Folders:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Suggested Folders based on subject lines of selected message(s):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Use Selected Folder">
 <!ENTITY attachmentextractor.imagetoolbar.label "Toggle Select">

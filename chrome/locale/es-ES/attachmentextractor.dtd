@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "B">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Borrar los adjuntos de todos los mensajes de la carpeta">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "o">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor Continued - Opciones">
+<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor - Opciones">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "O">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Extraer todos los adjuntos">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Establecer este patrón por defecto">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "E">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Pulse para añadir un elemento">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Carpetas sugeridas:">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Carpetas sugeridas:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Carpetas sugeridas en base al asunto de los mensajes seleccionados:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Usar la carpeta seleccionada">
 <!ENTITY attachmentextractor.imagetoolbar.label "Cambiar selección">

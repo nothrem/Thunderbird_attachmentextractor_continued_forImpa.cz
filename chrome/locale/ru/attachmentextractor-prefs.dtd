@@ -1,6 +1,6 @@
-<!ENTITY attachmentextractor.settings.windowtitle "Настройки AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.windowtitle "Настройки AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.width "50ть">
-<!ENTITY attachmentextractor.settings.homepage.label "Домашняя страница AttachmentExtractor Continued и описание возможностей:">
+<!ENTITY attachmentextractor.settings.homepage.label "Домашняя страница AttachmentExtractor и описание возможностей:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Общие">
 <!ENTITY attachmentextractor.settings.normal.caption "-- НЕ ЗАДЕЙСТВОВАНО --">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Где должны быть сохранены вложения?">
@@ -58,7 +58,7 @@
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Подтверждение о получении…">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Подтверждение о получении">
-<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor Continued может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное">
+<!ENTITY attachmentextractor.settings.returnreceipts.label "AttachmentExtractor может возвращать подтверждение о получении когда сообщение отмечено как Прочитанное">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Отсылать подтверждение о получении, если одно затребуется">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Подтверждение о получении затребуются:">
@@ -68,7 +68,7 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "Генератор отчетов">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML генератор отчетов">
-<!ENTITY attachmentextractor.settings.reportgen.label "Создавать отчет каждый раз, когда работает AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.settings.reportgen.label "Создавать отчет каждый раз, когда работает AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.reportgen.accesskey "G">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.label "Использовать эскизы изображений, где это возможно для вложений.">
 <!ENTITY attachmentextractor.settings.reportgen.thumbnail.accesskey "I">
@@ -91,7 +91,7 @@
 <!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Байт.">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "--НЕ ЗАДЕЙСТВОВАНО--">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Очередь извлечений">
-<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Принудительно запускать AttachmentExtractor Continued каждый раз, когда затребовано извлечение.">
+<!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Принудительно запускать AttachmentExtractor каждый раз, когда затребовано извлечение.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.label "Ждать, в очередь, все сделанные запросы на извлечения, пока AE уже работает.">
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">

@@ -25,7 +25,7 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Supprimer uniquement les pièces jointes de tous les messages du dossier">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Paramètres d&apos;AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.menusettingsdialog.label "Paramètres d&apos;AttachmentExtractor">
 <!ENTITY attachmentextractor.menusettingsdialog.accesskey "P">
 <!ENTITY attachmentextractor.context.extractalldefault.label "Extraire toutes les pièces jointes">
 <!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
@@ -57,7 +57,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Définir comme modèle par défaut">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Cliquez pour ajouter un jeton">
-<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor Continued - Dossiers suggérés">
+<!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Dossiers suggérés">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Dossiers suggérés selon la ligne de sujet de(s) message(s) sélectionné(s) :">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Utiliser le dossier sélectionné">
 <!ENTITY attachmentextractor.imagetoolbar.label "Changer la sélection">
