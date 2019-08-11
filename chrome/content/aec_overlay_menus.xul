@@ -14,6 +14,8 @@
 <overlay id="aec_menusOverlay" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_listener_menus.js"/>
+
   <!-- Menu 'Message' -->
   <menupopup id="messageMenuPopup">
     <menuseparator id="aec-messageMenuPopup-separator" 

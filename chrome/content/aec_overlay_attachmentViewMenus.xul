@@ -98,6 +98,8 @@
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
       insertafter="aec-attachmentListContext-separator">
+      <observes element="attachmentSaveAllMultiple" 
+          attribute="disabled"/>
       <menupopup id="">
         <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
@@ -137,6 +139,8 @@
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
       insertafter="aec-attachmentItemContext-separator">
+      <observes element="attachmentSaveAllMultiple" 
+          attribute="disabled"/>
       <menupopup id="">
         <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
