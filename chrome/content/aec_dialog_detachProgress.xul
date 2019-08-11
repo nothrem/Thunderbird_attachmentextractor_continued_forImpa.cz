@@ -55,7 +55,7 @@
             style="width: 10em; text-align: right;" 
             value="&attachmentextractor.progress.status.message.text;"/>
           <html:progress max="100" 
-            style="width: 40em;" 
+            style="width: 30em;" 
             flex="1" 
             id="progress_message" 
             mode="undetermined" 
@@ -67,7 +67,7 @@
         <separator class="thin"/>
         <hbox id="subjecthbox">
           <description id="subjecttext" 
-            style="width: 60em; text-align: center;" 
+            style="width: 50em; text-align: center;" 
             value="" 
             crop="end"/>
         </hbox>
@@ -81,7 +81,7 @@
             style="width: 10em; text-align: right;" 
             value="&attachmentextractor.progress.status.attachment.text;"/>
           <html:progress max="100" 
-            style="width: 40em;" 
+            style="width: 30em;" 
             flex="1" 
             id="progress_attachment" 
             mode="determined" 
@@ -93,7 +93,7 @@
         <separator class="thin"/>
         <hbox id="filenamehbox">
           <description id="filenametext" 
-            style="width: 60em; text-align: center;" 
+            style="width: 50em; text-align: center;" 
             value="" 
             crop="end"/>
         </hbox>
@@ -109,7 +109,7 @@
               style="width: 10em; text-align: right;" 
               value="&attachmentextractor.progress.status.file.text;"/>
             <html:progress max="100" 
-              style="width: 40em;" 
+              style="width: 30em;" 
               flex="1" 
               id="progress_file" 
               mode="undetermined" 
@@ -121,7 +121,7 @@
           <separator class="thin"/>
           <hbox id="filetexthbox">
             <description id="status4" 
-              style="width: 60em; text-align: center;" 
+              style="width: 50em; text-align: center;" 
               value="" 
               crop="end"/>
           </hbox>
