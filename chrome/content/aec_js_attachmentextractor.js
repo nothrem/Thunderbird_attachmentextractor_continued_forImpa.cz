@@ -567,13 +567,13 @@ if (typeof AttachmentExtractor === "undefined") {
   }
 
   AttachmentExtractor.prototype.checkForAutoTag = function() {
-    var ae_tag = this.prefs.get("autoextract.triggertag");
+    var aec_tag = this.prefs.get("autoextract.triggertag");
     if (!this.prefs.prefService.getBranch("").getPrefType("mailnews.tags." +
-        ae_tag + ".tag")) {
+        aec_tag + ".tag")) {
       aedump("// AE's auto-tag not found so add it.\n", 0);
       var tagService = Cc["@mozilla.org/messenger/tagservice;1"].getService(Ci
         .nsIMsgTagService);
-      tagService.addTagForKey(ae_tag, 'AE AutoExtract', '', '');
+      tagService.addTagForKey(aec_tag, 'AE AutoExtract', '', '');
     }
   };
 
@@ -642,7 +642,7 @@ if (typeof AttachmentExtractor === "undefined") {
     for (let i = 0; i < children.length; i++) {
       if (!children[i]) continue;
 
-      if ((chattr = children[i].getAttribute("ae_image_menuitem"))) {
+      if ((chattr = children[i].getAttribute("aec_image_menuitem"))) {
         if ((onImage && chattr === "IMAGE") || (!onImage && chattr ===
             "NONIMAGE")) {
           /*children[i].hidden=false;*/
@@ -657,7 +657,7 @@ if (typeof AttachmentExtractor === "undefined") {
         }
       }
 
-      if ((chattr = children[i].getAttribute("ae_mru_menuitem"))) {
+      if ((chattr = children[i].getAttribute("aec_mru_menuitem"))) {
         if ((mru && chattr === "MRU") || (!mru && chattr === "NONMRU")) {
           children[i].removeAttribute('hidden');
           //aedump("// unhiding "+children[i].id+"\n");
@@ -684,7 +684,7 @@ if (typeof AttachmentExtractor === "undefined") {
       "paramAll") + ");"
 
     for (let i = children.length - 1; i >= 0; i--) {
-      if (children[i].getAttribute("ae_mru_menuitem") === "GENERATED") parent
+      if (children[i].getAttribute("aec_mru_menuitem") === "GENERATED") parent
         .removeChild(children[i]);
     }
     var count = ps.getIntPref("savepathmru.count");
@@ -693,7 +693,7 @@ if (typeof AttachmentExtractor === "undefined") {
       menuitem.setAttribute("crop", "center");
       if (i < 10) menuitem.setAttribute("accesskey", "" + i);
       menuitem.setAttribute("command", "");
-      menuitem.setAttribute("ae_mru_menuitem", "GENERATED");
+      menuitem.setAttribute("aec_mru_menuitem", "GENERATED");
       menuitem.setAttribute("oncommand", oncommand.replace(/#/, i));
       if (i === 0) menuitem.setAttribute("label", "(0) " + parent.getAttribute(
         "browseText"));

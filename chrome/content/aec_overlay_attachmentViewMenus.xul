@@ -14,33 +14,33 @@
 
   <!-- Button on the right in case of multiple attachment items -->
   <menupopup id="attachmentSaveAllMultipleMenu">
-    <menuseparator id="ae-attachmentSaveAllMultipleMenu-separator" 
+    <menuseparator id="aec-attachmentSaveAllMultipleMenu-separator" 
       insertafter="button-saveAllAttachments" />
-    <menu id="ae-attachmentSaveAllMultipleMenu-menu" 
+    <menu id="aec-attachmentSaveAllMultipleMenu-menu" 
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
-      insertafter="ae-attachmentSaveAllMultipleMenu-separator">
+      insertafter="aec-attachmentSaveAllMultipleMenu-separator">
       <menupopup id="">
-        <menuitem id="menu_ae_extractIndToSuggest_attachment" 
+        <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
           accesskey="&attachmentextractor.extracttosuggest.accesskey;" 
           command="cmd_aec_extractIndToSuggest" />
 
-        <menuitem id="menu_ae_extractToDefault_attachment" 
+        <menuitem id="menu_aec_extractToDefault_attachment" 
           label="&attachmentextractor.attachment.extracttodefault.label;" 
           accesskey="&attachmentextractor.attachment.extracttodefault.accesskey;" 
           command="cmd_aec_extractIndAllToDefault" />
-        <menuitem id="menu_ae_extractToFolder_attachment" 
+        <menuitem id="menu_aec_extractToFolder_attachment" 
           label="&attachmentextractor.attachment.extracttofolder.label;" 
           accesskey="&attachmentextractor.attachment.extracttofolder.accesskey;" 
-          ae_mru_menuitem="NONMRU" 
+          aec_mru_menuitem="NONMRU" 
           command="cmd_aec_extractIndAllToFolder" />
-        <menu id="menu_ae_extractToFolder_attachment_menu" 
+        <menu id="menu_aec_extractToFolder_attachment_menu" 
           label="&attachmentextractor.attachment.extracttofolder.label;" 
           accesskey="&attachmentextractor.attachment.extracttofolder.accesskey;" 
-          ae_mru_menuitem="MRU" 
+          aec_mru_menuitem="MRU" 
           command="cmd_aec_extractIndAllToFolder_menu">
-          <menupopup id="menu_ae_extractToFolder_attachment_menu-Popup" 
+          <menupopup id="menu_aec_extractToFolder_attachment_menu-Popup" 
             onpopupshowing="attachmentextractor.updateMRUList(this)" 
             browseText="&attachmentextractor.mrubrowsetext;" 
             paramAll="'all'" 
@@ -53,36 +53,36 @@
 
   <!-- Button on the right in case of 1 attachment item -->
   <menupopup id="attachmentSaveAllSingleMenu">
-    <menuseparator id="ae-attachmentSaveAllSingleMenu-separator" 
+    <menuseparator id="aec-attachmentSaveAllSingleMenu-separator" 
       insertafter="button-saveAttachment" />
-    <menu id="ae-attachmentSaveAllSingleMenu-menu" 
+    <menu id="aec-attachmentSaveAllSingleMenu-menu" 
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
-      insertafter="ae-attachmentSaveAllSingleMenu-separator">
+      insertafter="aec-attachmentSaveAllSingleMenu-separator">
       <menupopup id="">
-        <menuitem id="menu_ae_extractIndToSuggest_attachment" 
+        <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
           accesskey="&attachmentextractor.extracttosuggest.accesskey;" 
           command="cmd_aec_extractIndToSuggest" />
 
-        <menuitem id="menu_ae_extractIndToFolder_attachment" 
+        <menuitem id="menu_aec_extractIndToFolder_attachment" 
           label="&attachmentextractor.attachment.extractindtofolder.label;" 
           accesskey="&attachmentextractor.attachment.extractindtofolder.accesskey;" 
-          ae_mru_menuitem="NONMRU" 
+          aec_mru_menuitem="NONMRU" 
           command="cmd_aec_extractIndToFolder" />
-        <menu id="menu_ae_extractIndToFolder_attachment_menu" 
+        <menu id="menu_aec_extractIndToFolder_attachment_menu" 
           label="&attachmentextractor.attachment.extractindtofolder.label;" 
           accesskey="&attachmentextractor.attachment.extractindtofolder.accesskey;" 
-          ae_mru_menuitem="MRU" 
+          aec_mru_menuitem="MRU" 
           command="cmd_aec_extractIndToFolder_menu">
-          <menupopup id="menu_ae_extractIndToFolder_attachment_menu-Popup" 
+          <menupopup id="menu_aec_extractIndToFolder_attachment_menu-Popup" 
             onpopupshowing="attachmentextractor.updateMRUList(this)" 
             browseText="&attachmentextractor.mrubrowsetext;" 
             paramAll="'selected'" 
             paramPattern="false" 
             paramIndividual="true" />
         </menu>
-        <menuitem id="menu_ae_extractIndToDefault_attachment" 
+        <menuitem id="menu_aec_extractIndToDefault_attachment" 
           label="&attachmentextractor.attachment.extractindtodefault.label;" 
           accesskey="&attachmentextractor.attachment.extractindtodefault.accesskey;" 
           command="cmd_aec_extractIndToDefault" />
@@ -92,33 +92,33 @@
 
   <!-- Context menu by rightclick on the attachment bar in case of multiple attachments -->
   <menupopup id="attachmentListContext">
-    <menuseparator id="ae-attachmentListContext-separator" 
+    <menuseparator id="aec-attachmentListContext-separator" 
       insertafter="context-saveAllAttachments" />
-    <menu id="ae-attachmentListContext-menu" 
+    <menu id="aec-attachmentListContext-menu" 
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
-      insertafter="ae-attachmentListContext-separator">
+      insertafter="aec-attachmentListContext-separator">
       <menupopup id="">
-        <menuitem id="menu_ae_extractIndToSuggest_attachment" 
+        <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
           accesskey="&attachmentextractor.extracttosuggest.accesskey;" 
           command="cmd_aec_extractIndToSuggest" />
 
-        <menuitem id="menu_ae_extractToDefault_attachment" 
+        <menuitem id="menu_aec_extractToDefault_attachment" 
           label="&attachmentextractor.attachment.extracttodefault.label;" 
           accesskey="&attachmentextractor.attachment.extracttodefault.accesskey;" 
           command="cmd_aec_extractIndAllToDefault" />
-        <menuitem id="menu_ae_extractToFolder_attachment" 
+        <menuitem id="menu_aec_extractToFolder_attachment" 
           label="&attachmentextractor.attachment.extracttofolder.label;" 
           accesskey="&attachmentextractor.attachment.extracttofolder.accesskey;" 
-          ae_mru_menuitem="NONMRU" 
+          aec_mru_menuitem="NONMRU" 
           command="cmd_aec_extractIndAllToFolder" />
-        <menu id="menu_ae_extractToFolder_attachment_menu" 
+        <menu id="menu_aec_extractToFolder_attachment_menu" 
           label="&attachmentextractor.attachment.extracttofolder.label;" 
           accesskey="&attachmentextractor.attachment.extracttofolder.accesskey;" 
-          ae_mru_menuitem="MRU" 
+          aec_mru_menuitem="MRU" 
           command="cmd_aec_extractIndAllToFolder_menu">
-          <menupopup id="menu_ae_extractToFolder_attachment_menu-Popup" 
+          <menupopup id="menu_aec_extractToFolder_attachment_menu-Popup" 
             onpopupshowing="attachmentextractor.updateMRUList(this)" 
             browseText="&attachmentextractor.mrubrowsetext;" 
             paramAll="'all'" 
@@ -131,36 +131,36 @@
 
   <!-- Context menu by rightclick on an item in the attachment bar and in case of a single attachment by rightclick on the attachmentbar -->
   <menupopup id="attachmentItemContext">
-    <menuseparator id="ae-attachmentItemContext-separator" 
+    <menuseparator id="aec-attachmentItemContext-separator" 
       insertafter="context-saveAttachment" />
-    <menu id="ae-attachmentItemContext-menu" 
+    <menu id="aec-attachmentItemContext-menu" 
       label="&attachmentextractor.menu.label;" 
       accesskey="&attachmentextractor.menu.accesskey;" 
-      insertafter="ae-attachmentItemContext-separator">
+      insertafter="aec-attachmentItemContext-separator">
       <menupopup id="">
-        <menuitem id="menu_ae_extractIndToSuggest_attachment" 
+        <menuitem id="menu_aec_extractIndToSuggest_attachment" 
           label="&attachmentextractor.extracttosuggest.label;" 
           accesskey="&attachmentextractor.extracttosuggest.accesskey;" 
           command="cmd_aec_extractIndToSuggest" />
 
-        <menuitem id="menu_ae_extractIndToFolder_attachment" 
+        <menuitem id="menu_aec_extractIndToFolder_attachment" 
           label="&attachmentextractor.attachment.extractindtofolder.label;" 
           accesskey="&attachmentextractor.attachment.extractindtofolder.accesskey;" 
-          ae_mru_menuitem="NONMRU" 
+          aec_mru_menuitem="NONMRU" 
           command="cmd_aec_extractIndToFolder" />
-        <menu id="menu_ae_extractIndToFolder_attachment_menu" 
+        <menu id="menu_aec_extractIndToFolder_attachment_menu" 
           label="&attachmentextractor.attachment.extractindtofolder.label;" 
           accesskey="&attachmentextractor.attachment.extractindtofolder.accesskey;" 
-          ae_mru_menuitem="MRU" 
+          aec_mru_menuitem="MRU" 
           command="cmd_aec_extractIndToFolder_menu">
-          <menupopup id="menu_ae_extractIndToFolder_attachment_menu-Popup" 
+          <menupopup id="menu_aec_extractIndToFolder_attachment_menu-Popup" 
             onpopupshowing="attachmentextractor.updateMRUList(this)" 
             browseText="&attachmentextractor.mrubrowsetext;" 
             paramAll="'selected'" 
             paramPattern="false" 
             paramIndividual="true" />
         </menu>
-        <menuitem id="menu_ae_extractIndToDefault_attachment" 
+        <menuitem id="menu_aec_extractIndToDefault_attachment" 
           label="&attachmentextractor.attachment.extractindtodefault.label;" 
           accesskey="&attachmentextractor.attachment.extractindtodefault.accesskey;" 
           command="cmd_aec_extractIndToDefault" />

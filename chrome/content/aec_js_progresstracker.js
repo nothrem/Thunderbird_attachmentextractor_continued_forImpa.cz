@@ -39,7 +39,7 @@ var progress_tracker = {
     if (aewindow.prefs.get("reportgen") && aewindow.currentTask
       .isExtractEnabled) {
       try {
-        this.reportgen = new AE_Reportgen();
+        this.reportgen = new AEC_Reportgen();
       } catch (ee) {
         aedump(
           '// tried creating reportgen, but failed, aborting report\n');
@@ -177,7 +177,7 @@ var progress_tracker = {
   debug: aedump
 }
 
-function AE_Reportgen() {
+function AEC_Reportgen() {
   var prefs = aewindow.prefs;
 
   var aerg_document;
