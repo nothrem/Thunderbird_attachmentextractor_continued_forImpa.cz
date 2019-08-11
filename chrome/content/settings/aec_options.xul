@@ -747,7 +747,6 @@
                         <label value="&attachmentextractor.settings.reportgen.cssfile.caption;"></label>
                         <textbox id="reportgencssfile" 
                           flex="1"
-                          readonly="true" 
                           preference="extensions.attachmentextractor_cont.reportgen.cssfile" 
                           onsyncfrompreference="return wdw_aecOptions.getComplexPref('extensions.attachmentextractor_cont.reportgen.cssfile');"/>
                         <button type="button" 
