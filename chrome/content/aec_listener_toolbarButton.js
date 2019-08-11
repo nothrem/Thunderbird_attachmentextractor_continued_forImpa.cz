@@ -33,8 +33,10 @@ var aecButtonStatus = {
 
   setButtonStatus: function() {
     try {
-      if (gFolderDisplay.selectedCount < 1) {
-        // console.log("AEC gFolderDisplay.selectedCount < 1");
+      if ((gFolderDisplay.selectedCount < 1) || 
+          (gFolderDisplay.selectedMessageIsFeed) ||    // disable in case of rss feeds
+          (gFolderDisplay.selectedMessageIsNews)) {    // disable in case of newsgroups
+        // console.log("AEC selected Message is RSS or News or gFolderDisplay.selectedCount < 1");
         aecButtonStatus.disableButtons();
       } else {
         aecButtonStatus.enableButtons();
