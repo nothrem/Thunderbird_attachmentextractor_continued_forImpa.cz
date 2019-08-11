@@ -27,11 +27,6 @@
       command="cmd_aec_extractToDefault">
       <menupopup id="attachmentextractor-toolbarbutton_popup" 
         onpopupshowing="attachmentextractor.updateMRUVisability(event)">
-        <menuitem id="menu_aec_extractToDefault_toolbar" 
-          label="&attachmentextractor.extracttodefault.label;" 
-          accesskey="&attachmentextractor.extracttodefault.accesskey;" 
-          command="cmd_aec_extractToDefault" 
-          style="font-weight:bold"/>
         <menuitem id="menu_aec_extractToFolder_toolbar" 
           label="&attachmentextractor.extracttofolder.label;" 
           accesskey="&attachmentextractor.extracttofolder.accesskey;" 

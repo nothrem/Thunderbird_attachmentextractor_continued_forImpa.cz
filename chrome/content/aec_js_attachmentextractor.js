@@ -72,14 +72,7 @@ if (typeof AttachmentExtractor === "undefined") {
     } catch (e) {
       aedump(e);
     }
-    /**** is here QueryInterface(....) necessary or not?
-    this.prefs.aeBranch.QueryInterface(Ci.nsIPrefBranch).addObserver(
-      "savepathmru", this.prefObserver, false);
-    this.prefs.aeBranch.QueryInterface(Ci.nsIPrefBranch).addObserver(
-      "defaultsavepath", this.prefObserver, false);
-    this.prefs.aeBranch.QueryInterface(Ci.nsIPrefBranch).addObserver(
-      "autoextract.savepath", this.prefObserver, false);
-    */
+
     this.prefs.aeBranch.addObserver("savepathmru", this.prefObserver, false);
     this.prefs.aeBranch.addObserver("defaultsavepath", this.prefObserver, false);
     this.prefs.aeBranch.addObserver("autoextract.savepath", this.prefObserver, false);
