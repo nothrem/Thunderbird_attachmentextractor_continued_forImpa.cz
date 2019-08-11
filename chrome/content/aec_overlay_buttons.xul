@@ -16,6 +16,8 @@
 <overlay id="aec_buttonsOverlay" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_listener_toolbarButton.js"/>
+
   <toolbarpalette id="MailToolbarPalette">
     <toolbarbutton id="attachmentextractor-toolbarbutton" 
       class="toolbarbutton-1" 
@@ -88,8 +90,6 @@
       label="&attachmentextractor.headerbutton.label;" 
       tooltiptext="&attachmentextractor.headerbutton.tooltip;" 
       command="cmd_aec_extractToDefault">
-      <observes element="attachmentView" 
-        attribute="collapsed"/>
     </toolbarbutton>
   </toolbarpalette>
 
