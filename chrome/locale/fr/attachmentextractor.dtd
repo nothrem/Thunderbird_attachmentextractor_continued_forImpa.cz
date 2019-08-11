@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "M">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Extraire en utilisant un modèle personnalisé du nom de fichier vers…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "M">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Supprimer uniquement les pièces jointes des messages sélectionnés">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Supprimer uniquement les pièces jointes de tous les messages du dossier">

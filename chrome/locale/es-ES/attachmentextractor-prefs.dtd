@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "G">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Preguntar cada vez">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "P">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Opciones de carpetas sugeridas…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Carpetas sugeridas">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Puede sugerirse una carpeta para extraer en base a las palabras clave de los asuntos del mensaje seleccionado.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "¿Ignorar las palabras clave duplicadas al sugerir carpetas?">

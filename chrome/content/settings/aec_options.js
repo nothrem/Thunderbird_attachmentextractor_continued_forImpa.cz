@@ -24,8 +24,11 @@ if (typeof (wdw_aecOptions) === "undefined") {
 
   var wdw_aecOptions = {
 
-    mFolderListBox:  null,
-    limitSuggestFolders: 1000,
+    mSuggestFolderListBox:  null,
+    limitSuggestFolders: 100,
+
+    mFavoriteFolderListBox:  null,
+    limitFavoriteFolders: 10,
 
     init: function() {
       wdw_aecOptions.aeStringBundle = Services.strings.createBundle(
@@ -41,8 +44,11 @@ if (typeof (wdw_aecOptions) === "undefined") {
       wdw_aecOptions.enableField(document.getElementById(
         'savepathmru'), 'savepathmrucount');
 
-      wdw_aecOptions.mFolderListBox = document.getElementById("suggestfolderlist");
-      wdw_aecOptions.buildFolderList();
+      wdw_aecOptions.mSuggestFolderListBox = document.getElementById("suggestfolderlist");
+      wdw_aecOptions.buildSuggestFolderList();
+
+      wdw_aecOptions.mFavoriteFolderListBox = document.getElementById("favoritefolderlist");
+      wdw_aecOptions.buildFavoriteFolderList();
       
       // enableFields in filenamepattern pane
       wdw_aecOptions.enableField(document.getElementById(
@@ -435,45 +441,45 @@ if (typeof (wdw_aecOptions) === "undefined") {
             return;
           }
           wdw_aecOptions.setComplexPref(prefname, fp.file.path);
-          this.appendFolderItem(fp.file.path, i);
+          this.appendSuggestFolderItem(fp.file.path, i);
         });
       } catch (e) {
         aedump(e, 0);
       }
     },
 
-    appendFolderItem: function (aFolderName, aKey) {
-      let item = this.mFolderListBox.appendItem(aFolderName, aKey);
+    appendSuggestFolderItem: function (aFolderName, aKey) {
+      let item = this.mSuggestFolderListBox.appendItem(aFolderName, aKey);
 
       // focus on the new appended item
-      this.mFolderListBox.ensureIndexIsVisible(item);
-      this.mFolderListBox.selectItem(item);
-      this.mFolderListBox.focus();
+      this.mSuggestFolderListBox.ensureIndexIsVisible(item);
+      this.mSuggestFolderListBox.selectItem(item);
+      this.mSuggestFolderListBox.focus();
 
-      this.setButtonStatus();
+      this.setSuggestButtonStatus();
 
       return item;
     },
   
-    buildFolderList: function () {
+    buildSuggestFolderList: function () {
       let i = 0;
       let moreloops = true;
       do {
         i += 1;
         try {
           pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
-          this.appendFolderItem(pref, i);
+          this.appendSuggestFolderItem(pref, i);
         } catch {
           moreloops = false; 
         }
       } while (moreloops && i < this.limitSuggestFolders);
     },
   
-    removeFolder: function () {
-      let index = this.mFolderListBox.selectedIndex;
+    removeSuggestFolder: function () {
+      let index = this.mSuggestFolderListBox.selectedIndex;
 
       if (index >= 0) {
-        let itemToRemove = this.mFolderListBox.getItemAtIndex(index);
+        let itemToRemove = this.mSuggestFolderListBox.getItemAtIndex(index);
         let itemToRemoveKey = index+1;
 
         // move all following prefs to close the resulting gap
@@ -503,14 +509,14 @@ if (typeof (wdw_aecOptions) === "undefined") {
         } while (moreloops && i < this.limitSuggestFolders);
 
         itemToRemove.remove();
-        var numItemsInListBox = this.mFolderListBox.getRowCount();
-        this.mFolderListBox.selectedIndex = index < numItemsInListBox ? index : numItemsInListBox - 1;
+        var numItemsInListBox = this.mSuggestFolderListBox.getRowCount();
+        this.mSuggestFolderListBox.selectedIndex = index < numItemsInListBox ? index : numItemsInListBox - 1;
 
-        this.setButtonStatus();
+        this.setSuggestButtonStatus();
       }
     },
 
-    addFolder: function () {
+    addSuggestFolder: function () {
       /************************************************
        * This would loop through prefs to count existing 
        * suggest folders. As an advantage, in case of a 
@@ -532,7 +538,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
        * Using the simple richlistbox.count function to
        * get the existing suggest folders number.
        * **********************************************/
-      i = this.mFolderListBox.itemCount;
+      i = this.mSuggestFolderListBox.itemCount;
       n = i + 1;
 
       if (i < this.limitSuggestFolders) {
@@ -542,22 +548,161 @@ if (typeof (wdw_aecOptions) === "undefined") {
       }
     },
   
-    setButtonStatus: function () {
+    setSuggestButtonStatus: function () {
       let btnRemove = document.getElementById("removeSuggestfolderButton");
       let btnAdd = document.getElementById("addSuggestfolderButton");
   
-      if (this.mFolderListBox.selectedCount > 0)
+      if (this.mSuggestFolderListBox.selectedCount > 0)
         btnRemove.removeAttribute("disabled");
       else
         btnRemove.setAttribute("disabled", "true");
 
-      if (this.mFolderListBox.itemCount < this.limitSuggestFolders) {
+      if (this.mSuggestFolderListBox.itemCount < this.limitSuggestFolders) {
         btnAdd.removeAttribute("disabled");
       }
       else {
         btnAdd.setAttribute("disabled", "true");
       }
-      },
+    },
+
+    /************** favoritefolder functions *********************/
+    browseForFavoritefolder(prefname,i) {
+      let nsIFilePicker = Ci.nsIFilePicker;
+      let fp = Cc["@mozilla.org/filepicker;1"]
+      .createInstance(nsIFilePicker);
+      let windowTitle =
+        this.aeStringBundle.GetStringFromName(
+          "FolderPickerDialogTitle");
+      try {
+        fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
+        fp.open(r => {
+          if (r !== Ci.nsIFilePicker.returnOK || !fp.file) {
+            return;
+          }
+          wdw_aecOptions.setComplexPref(prefname, fp.file.path);
+          this.appendFavoriteFolderItem(fp.file.path, i);
+        });
+      } catch (e) {
+        aedump(e, 0);
+      }
+    },
+
+    appendFavoriteFolderItem: function (aFolderName, aKey) {
+      let item = this.mFavoriteFolderListBox.appendItem(aFolderName, aKey);
+
+      // focus on the new appended item
+      this.mFavoriteFolderListBox.ensureIndexIsVisible(item);
+      this.mFavoriteFolderListBox.selectItem(item);
+      this.mFavoriteFolderListBox.focus();
+
+      this.setFavoriteButtonStatus();
+
+      return item;
+    },
+  
+    buildFavoriteFolderList: function () {
+      let i = 0;
+      let moreloops = true;
+      do {
+        i += 1;
+        try {
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+          this.appendFavoriteFolderItem(pref, i);
+        } catch {
+          moreloops = false; 
+        }
+      } while (moreloops && i < this.limitFavoriteFolders);
+    },
+  
+    removeFavoriteFolder: function () {
+      let index = this.mFavoriteFolderListBox.selectedIndex;
+
+      if (index >= 0) {
+        let itemToRemove = this.mFavoriteFolderListBox.getItemAtIndex(index);
+        let itemToRemoveKey = index+1;
+
+        // move all following prefs to close the resulting gap
+        let i = itemToRemoveKey;
+        let n = i + 1;
+        let moreloops = true;
+        do {
+          var cpref = "";
+          var npref = "";
+          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+          // console.log('AEC ' + i + ': ' + cpref);
+          try {
+            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + n);
+            // console.log('AEC ' + n + ': ' + npref);
+          } catch {
+            moreloops = false;
+            // console.log('AEC no more npref');
+            AECprefs.clearUserPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+            // console.log('AEC clear last cpref without a following npref');
+          }
+          if (npref) {
+            AECprefs.setStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i, npref);
+            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i));
+          }
+          i += 1;
+          n += 1;
+        } while (moreloops && i < this.limitFavoriteFolders);
+
+        itemToRemove.remove();
+        var numItemsInListBox = this.mFavoriteFolderListBox.getRowCount();
+        this.mFavoriteFolderListBox.selectedIndex = index < numItemsInListBox ? index : numItemsInListBox - 1;
+
+        this.setFavoriteButtonStatus();
+      }
+    },
+
+    addFavoriteFolder: function () {
+      /************************************************
+       * This would loop through prefs to count existing 
+       * favorite folders. As an advantage, in case of a 
+       * (theoretically nonexistent) gap in the 
+       * favorite folders prefs numbers, the gap would 
+       * be filled.
+      let i = 0;
+      let moreloops = true;
+      do {
+        i += 1;
+        try {
+          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+        } catch {
+          moreloops = false; 
+        }
+      } while (moreloops && i < this.limitFavoriteFolders);
+      *************************************************/
+      /************************************************
+       * Using the simple richlistbox.count function to
+       * get the existing favorite folders number.
+       * **********************************************/
+      i = this.mFavoriteFolderListBox.itemCount;
+      n = i + 1;
+
+      if (i < this.limitFavoriteFolders) {
+        this.browseForFavoritefolder('extensions.attachmentextractor_cont.favoritefolder.' + n);
+      } else {
+        //console.log("AEC: There are a maximum of " + this.limitFavoriteFolders + " favorite folders allowed by an internal setting in var limitFavoriteFolders.");
+      }
+    },
+  
+    setFavoriteButtonStatus: function () {
+      let btnRemove = document.getElementById("removeFavoritefolderButton");
+      let btnAdd = document.getElementById("addFavoritefolderButton");
+  
+      if (this.mFavoriteFolderListBox.selectedCount > 0)
+        btnRemove.removeAttribute("disabled");
+      else
+        btnRemove.setAttribute("disabled", "true");
+
+      if (this.mFavoriteFolderListBox.itemCount < this.limitFavoriteFolders) {
+        btnAdd.removeAttribute("disabled");
+      }
+      else {
+        btnAdd.setAttribute("disabled", "true");
+      }
+    },
 
   };
 }

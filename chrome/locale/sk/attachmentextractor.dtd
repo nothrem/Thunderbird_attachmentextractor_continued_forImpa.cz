@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "U">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Uložiť ako používateľský vzor do…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "U">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Odstrániť prílohy z vybratých správ">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "O">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Odstrániť prílohy zo všetkých správ v priečinku">

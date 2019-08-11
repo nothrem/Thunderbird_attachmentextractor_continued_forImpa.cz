@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "X">
 <!ENTITY attachmentextractor.extractpatternfolder.label "다음 사용자지정 파일명 양식으로 추출…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "X">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "선택된 메시지에서 첨부파일 삭제">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "폴더 내 모든 메시지에서 첨부 파일 삭제">

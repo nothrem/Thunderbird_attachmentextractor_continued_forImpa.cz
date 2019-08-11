@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "r">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Extrair com um tipo personalizado de Ficheiro para…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "i">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Eliminar Apenas Anexos das Mensagens Seleccionadas">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "E">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Eliminar Anexos de Todas as Mensagens na Pasta">

@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "m">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Estrai con un nome di modello personalizzato in">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "o">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Elimina allegati dai messaggi selezionati">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "E">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Elimina allegati da tutti i messaggi nella cartella">

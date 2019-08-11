@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "P">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Extraer con un patrón de nombres de archivos personalizado en…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "X">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Borrar los adjuntos de los mensajes seleccionados">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "B">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Borrar los adjuntos de todos los mensajes de la carpeta">

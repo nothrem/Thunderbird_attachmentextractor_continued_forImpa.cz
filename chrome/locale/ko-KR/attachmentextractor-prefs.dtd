@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "매번 묻기">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "A">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "제안된 폴더 설정…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "제안된 폴더">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "폴더는 선택한 메세지의 제목 줄의 키워드를 기반으로 제안받을 수 있습니다.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "제안된 폴더의 순위를 매길때 중복된 키워드는 무시합니까?">

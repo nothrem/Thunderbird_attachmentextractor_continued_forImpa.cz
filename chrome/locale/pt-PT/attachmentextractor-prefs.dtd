@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "z">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Perguntar-me de cada vez">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "P">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Definições de pasta sugeridas…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Pastas sugeridas">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Uma pasta pode ser sugerida para extracção nas palavras chave das linhas de assunto das mensagens que selecciona.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorar palavras chave duplicadas ao pontuar as pastas sugeridas?">

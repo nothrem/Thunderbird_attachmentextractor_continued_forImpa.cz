@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "D">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Abtrennen mit eigenem Dateinamenmuster nach…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "E">
+<!ENTITY attachmentextractor.favoritefolder.label "Favoritenordner">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Anhänge ausgewählter Nachrichten löschen">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "R">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Anhänge aller Nachrichten des Ordners löschen">

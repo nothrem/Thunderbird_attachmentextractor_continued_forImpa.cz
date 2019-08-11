@@ -251,8 +251,23 @@
   "attachmentextractor.settings.overwrite-ask.accesskey": {
     "message": "F"
   },
-  "attachmentextractor.settings.suggestfolder.button.label": {
-    "message": "Ordnervorschläge…"
+  "attachmentextractor.favoritefolder.label": {
+    "message": "Favoritenordner"
+  },
+  "attachmentextractor.settings.favoritefolder.dialogtitle": {
+    "message": "Favoritenordner"
+  },
+  "attachmentextractor.settings.favoritefolder.description": {
+    "message": "Die Favoritenordner ermöglichen eine vorgegebene, schnellere Auswahl."
+  },
+  "attachmentextractor.settings.favoritefolder.parents.label": {
+    "message": "Folgende Ordner werden als Favoriten angezeigt:"
+  },
+  "attachmentextractor.settings.favoritefolder.addbutton.label": {
+    "message": "Hinzufügen…"
+  },
+  "attachmentextractor.settings.favoritefolder.clearbutton.label": {
+    "message": "Entfernen"
   },
   "attachmentextractor.settings.suggestfolder.dialogtitle": {
     "message": "Ordnervorschläge"

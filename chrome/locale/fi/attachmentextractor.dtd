@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "M">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Poimi tiedostonimimallilla kohteeseen…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "K">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Ainoastaan poista liitteet valituista viesteistä">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "N">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Ainoastaan poista liitteet kaikista viesteistä kansiossa">

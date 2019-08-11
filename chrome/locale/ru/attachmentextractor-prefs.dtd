@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Спрашивать меня каждый раз">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "A">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Настройки предложенной папки…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Предложенные папки">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Может быть предложена папка, основываясь на ключевых словах в полях тема, Выбранных вами сообщений.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Игнорировать одинаковые ключевые файлы, расставляя предложенные папки?">

@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "A">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Gem med alternativt mønster til filnavn i…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "I">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Slet de vedhæftede filer fra de valgte beskeder">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "S">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Slet de vedhæftede filer fra alle beskeder i den aktuelle folder">

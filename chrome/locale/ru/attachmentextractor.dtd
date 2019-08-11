@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "C">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Извлечь с особым шаблоном имени файла в…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Просто удалить вложения из выбранных сообщений">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Просто удалить вложения из всех сообщений в папке">

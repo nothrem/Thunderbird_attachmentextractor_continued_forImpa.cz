@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "i">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Uitpakken met een aangepast bestandsnaampatroon naar…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Bijlagen gewoon verwijderen uit geselecteerde berichten">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "j">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Bijlagen gewoon verwijderen uit alle berichten in de map">

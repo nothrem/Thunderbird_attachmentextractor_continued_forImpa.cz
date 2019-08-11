@@ -13,15 +13,19 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "N">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Jedes Mal fragen">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "F">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Ordnervorschläge…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favoritenordner">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "Die Favoritenordner ermöglichen eine vorgegebene, schnellere Auswahl.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "Folgende Ordner werden als Favoriten angezeigt:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Hinzufügen…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Entfernen">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Ordnervorschläge">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Ordnervorschläge basieren auf Schlüsselwörtern der Betreffzeilen der ausgewählten Nachrichten.">
+<!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Folgende Ordner können inklusive ihrer Unterordner vorgeschlagen werden:">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Hinzufügen…">
+<!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Entfernen">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Doppelte Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
-<!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Ordner, welche Unterordner für abzutrennende Dateien enthalten können:">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Auszuschließende Schlüsselwörter (durch Komma getrennt):">
-<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Hinzufügen…">
-<!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Löschen">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Zuletzt verwendete Ordner">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Liste der zuletzt verwendeten Ordner verwenden">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Die letzten">

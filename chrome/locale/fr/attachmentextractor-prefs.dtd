@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "R">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Demander à chaque fois">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "D">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Paramètres des dossiers suggérés…">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Dossiers suggérés">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Un dossier peut être suggéré pour extraire en fonction des mot-clés dans les lignes de sujet des messages sélectionnés.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorer les mot-clés dupliqués lors du classement des dossiers suggérés ?">

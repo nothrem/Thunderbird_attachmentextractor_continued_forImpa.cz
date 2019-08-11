@@ -117,9 +117,37 @@
                 <separator class="thin"/>
 
                 <groupbox>
+                  <label><html:h2>&attachmentextractor.settings.favoritefolder.dialogtitle;</html:h2></label> 
+                  <label flex="1">&attachmentextractor.settings.favoritefolder.description;</label>
+                  <separator class="thin"/>
+                  <groupbox>
+                    <label flex="1">&attachmentextractor.settings.favoritefolder.parents.label;</label>
+                    <hbox>
+                      <richlistbox id="favoritefolderlist" 
+                        style="height: 11em;"
+                        flex="1"
+                        onselect="wdw_aecOptions.setFavoriteButtonStatus();">
+                      </richlistbox>
+                      <vbox>
+                        <button id="addFavoritefolderButton" 
+                          oncommand="wdw_aecOptions.addFavoriteFolder();" 
+                          label="&addButton.label;"
+                          accesskey="&addButton.accesskey;"/>
+                        <button id="removeFavoritefolderButton" 
+                          disabled="true" 
+                          oncommand="wdw_aecOptions.removeFavoriteFolder();" 
+                          label="&removeButton.label;"
+                          accesskey="&removeButton.accesskey;"/>
+                      </vbox>
+                    </hbox>
+                  </groupbox>
+                </groupbox>
+
+                <separator class="thin"/>
+
+                <groupbox>
                   <label><html:h2>&attachmentextractor.settings.suggestfolder.dialogtitle;</html:h2></label> 
                   <label flex="1">&attachmentextractor.settings.suggestfolder.description;</label>
-                  <separator class="thin"/>
                   <separator class="thin"/>
                   <groupbox>
                     <label flex="1">&attachmentextractor.settings.suggestfolder.parents.label;</label>
@@ -127,17 +155,16 @@
                       <richlistbox id="suggestfolderlist" 
                         style="height: 11em;"
                         flex="1"
-                        onselect="wdw_aecOptions.setButtonStatus();">
+                        onselect="wdw_aecOptions.setSuggestButtonStatus();">
                       </richlistbox>
                       <vbox>
                         <button id="addSuggestfolderButton" 
-                          disabled="true" 
-                          oncommand="wdw_aecOptions.addFolder();" 
+                          oncommand="wdw_aecOptions.addSuggestFolder();" 
                           label="&addButton.label;"
                           accesskey="&addButton.accesskey;"/>
                         <button id="removeSuggestfolderButton" 
                           disabled="true" 
-                          oncommand="wdw_aecOptions.removeFolder();" 
+                          oncommand="wdw_aecOptions.removeSuggestFolder();" 
                           label="&removeButton.label;"
                           accesskey="&removeButton.accesskey;"/>
                       </vbox>

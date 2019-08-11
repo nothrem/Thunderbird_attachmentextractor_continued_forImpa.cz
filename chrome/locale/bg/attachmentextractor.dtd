@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "C">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Извличане по шаблон за име на файл в…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Само изтриване на прикачени файлове от избрани писма">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Само изтриване на прикачени файлове от всички писма в папка">

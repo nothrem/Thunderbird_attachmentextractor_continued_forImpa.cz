@@ -20,6 +20,7 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "C">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Extract with a Custom Filename Pattern to…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
+<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Just Delete Attachments from Selected Messages">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Just Delete Attachments from All Messages in Folder">

@@ -13,7 +13,11 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Kysy joka kerta">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "A">
-<!ENTITY attachmentextractor.settings.suggestfolder.button.label "Ehdotettujen kansioiden asetukset …">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Ehdotetut kansiot">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Kansiota voidaan ehdottaa poiminnan kohteeksi valitsemiesi viestien otsikkorivien avainsanojen pohjalta.">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Hylkää avainsanojen duplikaatit, kun ehdotettuja kansioita arvotetaan?">

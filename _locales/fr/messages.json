@@ -269,8 +269,23 @@
   "attachmentextractor.settings.overwrite-ask.accesskey": {
     "message": "D"
   },
-  "attachmentextractor.settings.suggestfolder.button.label": {
-    "message": "Paramètres des dossiers suggérés…"
+  "attachmentextractor.favoritefolder.label": {
+    "message": "Favorite Folders"
+  },
+  "attachmentextractor.settings.favoritefolder.dialogtitle": {
+    "message": "Favorite Folders"
+  },
+  "attachmentextractor.settings.favoritefolder.description": {
+    "message": "The Favorite Folders allow for a given, faster selection."
+  },
+  "attachmentextractor.settings.favoritefolder.parents.label": {
+    "message": "The following folders are displayed as favorites:"
+  },
+  "attachmentextractor.settings.favoritefolder.addbutton.label": {
+    "message": "Add…"
+  },
+  "attachmentextractor.settings.favoritefolder.clearbutton.label": {
+    "message": "Delete"
   },
   "attachmentextractor.settings.suggestfolder.dialogtitle": {
     "message": "Dossiers suggérés"
