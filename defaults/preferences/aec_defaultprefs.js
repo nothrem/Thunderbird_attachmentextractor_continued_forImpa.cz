@@ -66,7 +66,7 @@ pref("extensions.attachmentextractor_cont.filenamepattern.savemessage.countpatte
 
 /* Advanced pane */
 pref("extensions.attachmentextractor_cont.includeenabled",0);
-pref("extensions.attachmentextractor_cont.includepatterns4","*.jpeg;*.jpg");
+pref("extensions.attachmentextractor_cont.includepatterns4","*.jpeg;*.jpg;*.png");
 pref("extensions.attachmentextractor_cont.excludepatterns4","*.bat;*.exe;*.eml");
 
 pref("extensions.attachmentextractor_cont.extract.mode",0);
