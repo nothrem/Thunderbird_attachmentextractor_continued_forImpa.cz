@@ -70,7 +70,7 @@ var aecMenuItemStatus = {
     if (aecMenuSeparator)
       aecMenuSeparator.setAttribute("disabled", true);
 
-      let aecMenuItem = document.getElementById("aec-messageMenuPopup-menu");
+    let aecMenuItem = document.getElementById("aec-messageMenuPopup-menu");
     if (aecMenuItem)
       aecMenuItem.setAttribute("disabled", true);
     },
