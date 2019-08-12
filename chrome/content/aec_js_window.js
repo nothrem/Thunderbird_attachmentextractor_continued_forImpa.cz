@@ -1052,7 +1052,9 @@ if (typeof AEMessage === "undefined") {
                 this.detachTempFile = aeMessenger.detachAttachments(
                   aewindow.messenger, aewindow.msgWindow, acl,
                   aewindow.arraycompact(this.attachments_url),
-                  aewindow.arraycompact(this.attachments_display),
+                  // use .map(encodeURIComponent) to display nonASCII correct
+                  // if there is an confirmation dialog
+                  aewindow.arraycompact(this.attachments_display.map(encodeURIComponent)),
                   aewindow.arraycompact(this.attachments_uri),
                   savedfiles);
                 } else {
@@ -1060,7 +1062,9 @@ if (typeof AEMessage === "undefined") {
                 aewindow.aedump('>>>> thistask.detachMode === 0 \n', 2);
                 aewindow.messenger.detachAllAttachments(acl.length, acl,
                   aewindow.arraycompact(this.attachments_url),
-                  aewindow.arraycompact(this.attachments_display),
+                  // use .map(encodeURIComponent) to display nonASCII correct
+                  // if there is an confirmation dialog
+                  aewindow.arraycompact(this.attachments_display.map(encodeURIComponent)),
                   aewindow.arraycompact(this.attachments_uri),
                   false,  // false = do not save(?) or ask for destination folder (?)
                   thistask.detachWithoutConfirmation  // if true = delete without warning
