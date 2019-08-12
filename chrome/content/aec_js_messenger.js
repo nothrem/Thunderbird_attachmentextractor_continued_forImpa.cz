@@ -392,27 +392,45 @@ var aeMessenger = {
           .replace('&', '?');
       }
       url = url.replace("/;section", "?section");
-  
-      var saveListener = new aeSaveMsgListener(
-        file, aewindow.messenger, contentType,
-        "saveAtt_cleanUp", attachmentindex,
-        aewindow, aewindow.prefs.get("extract.minimumsize"));
+
+      aedump(">>>>>>>> ------ url: " + url + "\n");
 
       var messageService = aewindow.messenger.messageServiceFromURI(
         messageUri);
+
       var fetchService = messageService.QueryInterface(
         Ci.nsIMsgMessageFetchPartService);
       // if the message service has a fetch part service then we know we can fetch mime parts...
       if (fetchService) { 
         aedump("// message has a fetch service.\n", 3);
-        // ?section versus ?part in the next line - which one is correct?
-        // ?section is used in the original C++ function in Thunderbirds own code
-        // messageUri += url.substring(url.indexOf("?section"), url.length);
-        messageUri += url.substring(url.indexOf("?section"), url.length);
+
+        // "?section" versus "?part" versus only "?" in the next line - which one is correct?
+        // only "?" is used in the original C++ function in Thunderbirds own code:
+        // https://dxr.mozilla.org/comm-central/source/comm/mailnews/base/src/nsMessenger.cpp#717
+        /****** C++ function for reference **************
+        // {
+        //   int32_t partPos = urlString.FindChar('?');
+        //   if (partPos == kNotFound)
+        //     return NS_ERROR_FAILURE;
+        //   fullMessageUri.Append(Substring(urlString, partPos));
+        // }
+        ******* end of C++ function *********************/
+
+        // var fullMessageUri = messageUri + url.substring(url.indexOf("?section"), url.length);
+        // var fullMessageUri = messageUri + url.substring(url.indexOf("?part"), url.length);
+        var fullMessageUri = messageUri + url.substring(url.indexOf("?"), url.length);
+        aedump(">>>>>>>> ------ fullMessageUri: " + fullMessageUri + "\n");
       }
+
+
+      var saveListener = new aeSaveMsgListener(
+        file, aewindow.messenger, contentType,
+        "saveAtt_cleanUp", attachmentindex,
+        aewindow, aewindow.prefs.get("extract.minimumsize"));
 
       var convertedListener = saveListener.QueryInterface(
         Ci.nsIStreamListener);
+
       if (navigator.appVersion.indexOf("Macintosh") === -1) {
         // if the content type is binhex we are going to do a hokey hack and make sure we decode the binhex when saving an attachment
         if (contentType === "application/mac-binhex40") {
@@ -427,15 +445,23 @@ var aeMessenger = {
             .QueryInterface(Ci.nsISupports));
         }
       }
+
       var openAttArgs = new Array(contentType, file.leafName, url,
-        messageUri, convertedListener, aewindow.msgWindow,
+        fullMessageUri, convertedListener, aewindow.msgWindow,
         saveListener /*null*/ );
-      var fetchServArgs = new Array(this.createStartupUrl(url), messageUri,
+
+// url = Services.io.newURI(url, null, null);
+
+// this block uses startupUrl and fails  
+//      var fetchServArgs = new Array(this.createStartupUrl(url), fullMessageUri,
+      var fetchServArgs = new Array(url, fullMessageUri,
         convertedListener, aewindow.msgWindow, null);
 
-      if (fetchService) fetchService.fetchMimePart.apply(null,
-        fetchServArgs);
-      else messageService.openAttachment.apply(null, openAttArgs);
+      if (fetchService)
+        fetchService.fetchMimePart.apply(null, fetchServArgs);
+      else 
+        messageService.openAttachment.apply(null, openAttArgs);
+
     } catch (e) {
       aedump(e.message + " @ line " + e.lineNumber + " in " + e.fileName +
         "\n");
@@ -443,6 +469,7 @@ var aeMessenger = {
         "saveAttachmentFailed"));
       return false;
     }
+// end of failing block because of startupUrl
     return true;
   },
 
@@ -566,16 +593,9 @@ var aeMessenger = {
   createStartupUrl: function(uri) {
     aedump('{function:aeMessenger.createStartupUrl}: ' + uri + '\n', 2);
 
-    let startupUrl = uri;
-    startupUrl = 
-      Cc["@mozilla.org/network/standard-url-mutator;1"]
-        .createInstance(Ci.nsIURIMutator)
-        .setSpec(uri)
-        .finalize();
+    // not yet working:
+    var startupUrl = Services.io.newURI(uri, null, null);
 
-    aedump("startupUrl after mutate\n");
-    aedump("startupUrl: " + startupUrl + "\n");
-    aedump("startupUrl.spec: " + startupUrl.spec + "\n");
     return startupUrl;
   }
 };
