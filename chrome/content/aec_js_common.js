@@ -12,6 +12,9 @@ var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
+const versionChecker = Services.vc;
+const currentVersion = Services.appinfo.platformVersion;
+
 var aedebug = false;
 var aedebugFile = null;
 try {

@@ -682,7 +682,13 @@ if (typeof AttachmentExtractor === "undefined") {
     }
     var count = ps.getIntPref("savepathmru.count");
     for (let i = 0; i <= count; i++) {
-      var menuitem = document.createElement("menuitem");
+      if (versionChecker.compare(currentVersion, "69") >= 0) {
+        // use document.createXULElement for Thunderbird 69+
+        var menuitem = document.createXULElement("menuitem");
+      } else {
+        // use document.createElement for Thunderbird 60 and 68
+        var menuitem = document.createElement("menuitem");
+      }
       menuitem.setAttribute("crop", "center");
       if (i < 10) menuitem.setAttribute("accesskey", "" + i);
       menuitem.setAttribute("command", "");
