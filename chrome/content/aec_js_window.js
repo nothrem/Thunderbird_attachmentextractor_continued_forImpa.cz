@@ -907,6 +907,7 @@ if (typeof AEMessage === "undefined") {
       } else {
         try {
           if (this.prefs.get("extract.mode") !== 0) {
+            // AEC experimental save routines
             file = aeMessenger.saveAttachmentToFolder(
               attachment.contentType,
               attachment.url,
@@ -915,6 +916,7 @@ if (typeof AEMessage === "undefined") {
               file.parent,
               attachmentindex);
           } else {
+            // Thunderbirds own save routines
             var listener = {
               OnStartRunningUrl: function(url) {},
               OnStopRunningUrl: function(url, exitcode) {
@@ -1041,6 +1043,7 @@ if (typeof AEMessage === "undefined") {
             var acl = aewindow.arraycompact(this.attachments_ct);
             if (acl.length > 0) {
               if (thistask.detachMode !== 0) {
+                // AEC experimental detach routines
                 aewindow.aedump('>>>> thistask.detachMode !== 0 \n', 2);
                 var deleteAtt = (thistask.detachMode === 1) || !thistask
                   .isExtractEnabled;
@@ -1053,6 +1056,7 @@ if (typeof AEMessage === "undefined") {
                   aewindow.arraycompact(this.attachments_uri),
                   savedfiles);
                 } else {
+                // Thunderbirds own detach routines
                 aewindow.aedump('>>>> thistask.detachMode === 0 \n', 2);
                 aewindow.messenger.detachAllAttachments(acl.length, acl,
                   aewindow.arraycompact(this.attachments_url),
