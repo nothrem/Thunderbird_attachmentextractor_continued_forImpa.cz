@@ -1,3 +1,9 @@
+try {
+  if (typeof Cc === "undefined") var Cc = Components.classes;
+  if (typeof Ci === "undefined") var Ci = Components.interfaces;
+  if (typeof Cr === "undefined") var Cr = Components.results;
+} catch (e) {}
+
 var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
@@ -14,7 +20,7 @@ var aecMenuItemStatus = {
   startup: function() {
     this.observerService = Components.classes[
         "@mozilla.org/observer-service;1"]
-      .getService(Components.interfaces.nsIObserverService);
+      .getService(Ci.nsIObserverService);
     this.observerService.addObserver(this, "mail:updateToolbarItems",
     false);
   },
