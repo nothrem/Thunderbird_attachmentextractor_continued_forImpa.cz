@@ -22,7 +22,8 @@
     <toolbarbutton id="attachmentextractor-toolbarbutton" 
       class="toolbarbutton-1" 
       label="&attachmentextractor.toolbarbutton.label;" 
-      type="menu-button" 
+      type="menu-button"
+      is="toolbarbutton-menu-button"
       tooltiptext="&attachmentextractor.toolbarbutton.tooltip2;" 
       command="cmd_aec_extractToDefault">
       <menupopup id="attachmentextractor-toolbarbutton_popup" 
