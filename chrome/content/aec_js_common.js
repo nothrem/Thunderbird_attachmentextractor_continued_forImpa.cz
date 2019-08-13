@@ -12,8 +12,10 @@ var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-var aec_versionChecker = Services.vc;
-var aec_currentVersion = Services.appinfo.platformVersion;
+try {
+  if (typeof aec_versionChecker === "undefined") var aec_versionChecker = Services.vc;
+  if (typeof aec_currentVersion === "undefined") var aec_currentVersion = Services.appinfo.platformVersion;  
+} catch (e) {}
 
 var aedebug = false;
 var aedebugFile = null;
