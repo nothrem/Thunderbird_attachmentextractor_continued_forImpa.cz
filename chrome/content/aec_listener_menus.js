@@ -21,8 +21,7 @@ var aecMenuItemStatus = {
     this.observerService = Components.classes[
         "@mozilla.org/observer-service;1"]
       .getService(Ci.nsIObserverService);
-    this.observerService.addObserver(this, "mail:updateToolbarItems",
-    false);
+    this.observerService.addObserver(this, "mail:updateToolbarItems", false);
   },
 
   shutdown: function() {
