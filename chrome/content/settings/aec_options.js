@@ -476,33 +476,33 @@ if (typeof (wdw_aecOptions) === "undefined") {
     },
   
     removeSuggestFolder: function () {
-      let index = this.mSuggestFolderListBox.selectedIndex;
+      var index = this.mSuggestFolderListBox.selectedIndex;
 
       if (index >= 0) {
-        let itemToRemove = this.mSuggestFolderListBox.getItemAtIndex(index);
-        let itemToRemoveKey = index+1;
+        var itemToRemove = this.mSuggestFolderListBox.getItemAtIndex(index);
+        var itemToRemoveKey = index+1;
 
         // move all following prefs to close the resulting gap
-        let i = itemToRemoveKey;
-        let n = i + 1;
-        let moreloops = true;
+        var i = itemToRemoveKey;
+        var n = i + 1;
+        var moreloops = true;
         do {
-          var cpref = "";
-          var npref = "";
+          var cpref = " ";
+          var npref = " ";
           cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
-          // console.log('AEC ' + i + ': ' + cpref);
+          // aedump('AEC ' + i + ': ' + cpref + '\n');
           try {
             npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
-            // console.log('AEC ' + n + ': ' + npref);
+            // aedump('AEC ' + n + ': ' + npref + '\n');
+            if (npref) {
+              AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i, npref);
+              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i) + '\n');
+            }
           } catch {
             moreloops = false;
-            // console.log('AEC no more npref');
+            // aedump('AEC no more npref' + '\n');
             AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
-            // console.log('AEC clear last cpref without a following npref');
-          }
-          if (npref) {
-            AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i, npref);
-            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i));
+            // aedump('AEC clear last cpref without a following npref' + '\n');
           }
           i += 1;
           n += 1;
@@ -544,7 +544,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       if (i < this.limitSuggestFolders) {
         this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
       } else {
-        //console.log("AEC: There are a maximum of " + this.limitSuggestFolders + " suggest folders allowed by an internal setting in var limitSuggestFolders.");
+        //aedump("AEC: There are a maximum of " + this.limitSuggestFolders + " suggest folders allowed by an internal setting in var limitSuggestFolders." + "\n");
       }
     },
   
@@ -615,33 +615,33 @@ if (typeof (wdw_aecOptions) === "undefined") {
     },
   
     removeFavoriteFolder: function () {
-      let index = this.mFavoriteFolderListBox.selectedIndex;
+      var index = this.mFavoriteFolderListBox.selectedIndex;
 
       if (index >= 0) {
-        let itemToRemove = this.mFavoriteFolderListBox.getItemAtIndex(index);
-        let itemToRemoveKey = index+1;
+        var itemToRemove = this.mFavoriteFolderListBox.getItemAtIndex(index);
+        var itemToRemoveKey = index+1;
 
         // move all following prefs to close the resulting gap
-        let i = itemToRemoveKey;
-        let n = i + 1;
-        let moreloops = true;
+        var i = itemToRemoveKey;
+        var n = i + 1;
+        var moreloops = true;
         do {
-          var cpref = "";
-          var npref = "";
+          var cpref = " ";
+          var npref = " ";
           cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
-          // console.log('AEC ' + i + ': ' + cpref);
+          // aedump('AEC ' + i + ': ' + cpref + '\n');
           try {
             npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + n);
-            // console.log('AEC ' + n + ': ' + npref);
+            // aedump('AEC ' + n + ': ' + npref + '\n');
+            if (npref) {
+              AECprefs.setStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i, npref);
+              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i) + '\n');
+            }
           } catch {
             moreloops = false;
-            // console.log('AEC no more npref');
+            // aedump('AEC no more npref' + '\n');
             AECprefs.clearUserPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
-            // console.log('AEC clear last cpref without a following npref');
-          }
-          if (npref) {
-            AECprefs.setStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i, npref);
-            // console.log("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i));
+            // aedump('AEC clear last cpref without a following npref' + '\n');
           }
           i += 1;
           n += 1;
@@ -683,7 +683,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       if (i < this.limitFavoriteFolders) {
         this.browseForFavoritefolder('extensions.attachmentextractor_cont.favoritefolder.' + n);
       } else {
-        //console.log("AEC: There are a maximum of " + this.limitFavoriteFolders + " favorite folders allowed by an internal setting in var limitFavoriteFolders.");
+        // aedump("AEC: There are a maximum of " + this.limitFavoriteFolders + " favorite folders allowed by an internal setting in var limitFavoriteFolders.");
       }
     },
   
