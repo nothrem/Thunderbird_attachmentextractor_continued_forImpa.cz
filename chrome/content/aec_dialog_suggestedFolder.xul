@@ -15,7 +15,7 @@
   title="&attachmentextractor.suggestedFolderDialog.title;" 
   persist="screenX screenY" 
   buttons="accept,cancel,extra1" 
-  buttonlabelextra1="&attachmentextractor.mrubrowsetext;" 
+  buttonlabelextra1="&attachmentextractor.browse.label;" 
   buttonlabelaccept="&attachmentextractor.suggestedFolderDialog.acceptbutton;" 
   windowtype="attachmentextractor:suggestedFolderDialog">
 

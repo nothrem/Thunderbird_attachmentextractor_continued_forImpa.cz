@@ -4,8 +4,8 @@
 <!ENTITY attachmentextractor.extracttodefault.accesskey "S">
 <!ENTITY attachmentextractor.extracttofolder.label "Extraer del mensaje seleccionado en …">
 <!ENTITY attachmentextractor.extracttofolder.accesskey "A">
-<!ENTITY attachmentextractor.extracttosuggest.label "Extraer a la carpeta sugerida">
-<!ENTITY attachmentextractor.extracttosuggest.accesskey "G">
+<!ENTITY attachmentextractor.extractToSuggest.label "Extraer a la carpeta sugerida">
+<!ENTITY attachmentextractor.extractToSuggest.accesskey "G">
 <!ENTITY attachmentextractor.extractalldefault.label "Extraer de todos los mensajes de la carpeta">
 <!ENTITY attachmentextractor.extractalldefault.accesskey "T">
 <!ENTITY attachmentextractor.extractallfolder.label "Extraer de todos los mensajes de la carpeta en …">
@@ -20,7 +20,28 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "P">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Extraer con un patrón de nombres de archivos personalizado en…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "X">
-<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
+
+<!ENTITY attachmentextractor.extractTo.label "Detach Attachments (by AEC) to">
+<!ENTITY attachmentextractor.extractTo.accesskey "(">
+<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.extractToDefault.accesskey "D">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
+<!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
+<!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
+
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Borrar los adjuntos de los mensajes seleccionados">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "B">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Borrar los adjuntos de todos los mensajes de la carpeta">
@@ -49,9 +70,10 @@
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Extraer adjuntos de los mensajes seleccionados">
 <!ENTITY attachmentextractor.headerbutton.label "AE Extraer">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Extraer adjuntos de los mensajes seleccionados">
-<!ENTITY attachmentextractor.mrubrowsetext "Seleccionar…">
-<!ENTITY attachmentextractor.mru.default.label "Por defecto">
-<!ENTITY attachmentextractor.mru.default.accesskey "d">
+<!ENTITY attachmentextractor.browse.label "Seleccionar…">
+<!ENTITY attachmentextractor.browse.accesskey "S">
+<!ENTITY attachmentextractor.default.label "Por defecto">
+<!ENTITY attachmentextractor.default.accesskey "P">
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Entrada de patrones de nombres de archivos">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Modificar el patrón de nombre de archivo para el adjunto:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Establecer este patrón por defecto">

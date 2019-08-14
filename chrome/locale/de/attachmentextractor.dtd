@@ -4,8 +4,8 @@
 <!ENTITY attachmentextractor.extracttodefault.accesskey "W">
 <!ENTITY attachmentextractor.extracttofolder.label "Abtrennen aus ausgewählten Nachrichten nach…">
 <!ENTITY attachmentextractor.extracttofolder.accesskey "N">
-<!ENTITY attachmentextractor.extracttosuggest.label "Abtrennen in den vorgeschlagenen Datenordner">
-<!ENTITY attachmentextractor.extracttosuggest.accesskey "v">
+<!ENTITY attachmentextractor.extractToSuggest.label "Abtrennen in den vorgeschlagenen Datenordner">
+<!ENTITY attachmentextractor.extractToSuggest.accesskey "v">
 <!ENTITY attachmentextractor.extractalldefault.label "Abtrennen aus allen Nachrichten des Ordners">
 <!ENTITY attachmentextractor.extractalldefault.accesskey "A">
 <!ENTITY attachmentextractor.extractallfolder.label "Abtrennen aus allen Nachrichten des Ordners nach…">
@@ -20,7 +20,28 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "D">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Abtrennen mit eigenem Dateinamenmuster nach…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "E">
-<!ENTITY attachmentextractor.favoritefolder.label "Favoritenordner">
+
+<!ENTITY attachmentextractor.extractTo.label "Anhänge abtrennen (mit AEC) nach">
+<!ENTITY attachmentextractor.extractTo.accesskey "(">
+<!ENTITY attachmentextractor.extractToDefault.label "Standardordner">
+<!ENTITY attachmentextractor.extractToDefault.accesskey "S">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "Standardordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "t">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favoritenordner">
+<!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favoritenordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "Zuletzt verwendete Ordner">
+<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "Z">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Zuletzt verwendete Ordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "u">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "Vorgeschlagene Ordner…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "V">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Vorgeschlagene Ordner (inkl. Unterordner)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "o">
+<!ENTITY attachmentextractor.extractWithCustomPattern.label "Mit eigenem Dateinamenmuster">
+<!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "M">
+
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Anhänge ausgewählter Nachrichten löschen">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "R">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Anhänge aller Nachrichten des Ordners löschen">
@@ -49,9 +70,10 @@
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Anhänge von ausgewählten Nachrichten abtrennen">
 <!ENTITY attachmentextractor.headerbutton.label "Anhänge abtrennen">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Anhänge von dieser Nachricht abtrennen">
-<!ENTITY attachmentextractor.mrubrowsetext "Durchsuchen…">
-<!ENTITY attachmentextractor.mru.default.label "Standard">
-<!ENTITY attachmentextractor.mru.default.accesskey "D">
+<!ENTITY attachmentextractor.browse.label "Durchsuchen…">
+<!ENTITY attachmentextractor.browse.accesskey "D">
+<!ENTITY attachmentextractor.default.label "Standard">
+<!ENTITY attachmentextractor.default.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Dateinamenmuster eingegeben">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Dateinamenmuster der angehängten Datei bearbeiten:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dateinamenmuster als Standard festlegen">

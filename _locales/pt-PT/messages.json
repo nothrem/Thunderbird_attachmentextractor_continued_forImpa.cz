@@ -23,10 +23,10 @@
   "attachmentextractor.extracttofolder.accesskey": {
     "message": "t"
   },
-  "attachmentextractor.extracttosuggest.label": {
+  "attachmentextractor.extractToSuggest.label": {
     "message": "Extrair para a pasta sugerida"
   },
-  "attachmentextractor.extracttosuggest.accesskey": {
+  "attachmentextractor.extractToSuggest.accesskey": {
     "message": "x"
   },
   "attachmentextractor.extractalldefault.label": {
@@ -155,13 +155,16 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "Extrair Anexos das Mensagens Seleccionadas"
   },
-  "attachmentextractor.mrubrowsetext": {
+  "attachmentextractor.browse.label": {
     "message": "Explorar…"
   },
-  "attachmentextractor.mru.default.label": {
+  "attachmentextractor.browse.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.default.label": {
     "message": "Pré-definição"
   },
-  "attachmentextractor.mru.default.accesskey": {
+  "attachmentextractor.default.accesskey": {
     "message": "P"
   },
   "attachmentextractor.filenamepatterndialog.title": {
@@ -251,8 +254,65 @@
   "attachmentextractor.settings.overwrite-ask.accesskey": {
     "message": "P"
   },
-  "attachmentextractor.favoritefolder.label": {
+  "attachmentextractor.extractTo.label": {
+    "message": "Detach Attachments (by AEC) to"
+  },
+  "attachmentextractor.extractTo.accesskey": {
+    "message": "("
+  },
+  "attachmentextractor.extractToDefault.label": {
+    "message": "Default Folder"
+  },
+  "attachmentextractor.extractToDefault.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.extractWithSubToDefault.label": {
+    "message": "Default Folder (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToDefault.accesskey": {
+    "message": "e"
+  },
+  "attachmentextractor.extractToFavoritefolders.label": {
     "message": "Favorite Folders"
+  },
+  "attachmentextractor.extractToFavoritefolders.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.extractWithSubToFavoritefolders.label": {
+    "message": "Favorite Folders (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToFavoritefolders.accesskey": {
+    "message": "a"
+  },
+  "attachmentextractor.extractToMRUfolders.label": {
+    "message": "Most Recently Used Folders"
+  },
+  "attachmentextractor.extractToMRUfolders.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.extractWithSubToMRUfolders.label": {
+    "message": "Most Recently Used Folders (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToMRUfolders.accesskey": {
+    "message": "o"
+  },
+  "attachmentextractor.extractToSuggestfolders.label": {
+    "message": "Suggested Folder…"
+  },
+  "attachmentextractor.extractToSuggestfolders.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.extractWithSubToSuggestfolders.label": {
+    "message": "Suggested Folder… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToSuggestfolders.accesskey": {
+    "message": "u"
+  },
+  "attachmentextractor.extractWithCustomPattern.label": {
+    "message": "With a Custom Filename Pattern"
+  },
+  "attachmentextractor.extractWithCustomPattern.accesskey": {
+    "message": "W"
   },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"

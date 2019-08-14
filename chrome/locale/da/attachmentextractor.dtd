@@ -4,8 +4,8 @@
 <!ENTITY attachmentextractor.extracttodefault.accesskey "V">
 <!ENTITY attachmentextractor.extracttofolder.label "Gem vedhæftede filer fra de valgte beskeder i…">
 <!ENTITY attachmentextractor.extracttofolder.accesskey "I">
-<!ENTITY attachmentextractor.extracttosuggest.label "Gem vedhæftede filer i den foreslåede folder">
-<!ENTITY attachmentextractor.extracttosuggest.accesskey "F">
+<!ENTITY attachmentextractor.extractToSuggest.label "Gem vedhæftede filer i den foreslåede folder">
+<!ENTITY attachmentextractor.extractToSuggest.accesskey "F">
 <!ENTITY attachmentextractor.extractalldefault.label "Gem vedhæftede filer fra alle beskeder i den valgte folder">
 <!ENTITY attachmentextractor.extractalldefault.accesskey "A">
 <!ENTITY attachmentextractor.extractallfolder.label "Gem vedhæftede filer fra alle beskeder i den valgte folder i…">
@@ -20,7 +20,28 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "A">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Gem med alternativt mønster til filnavn i…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "I">
-<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
+
+<!ENTITY attachmentextractor.extractTo.label "Detach Attachments (by AEC) to">
+<!ENTITY attachmentextractor.extractTo.accesskey "(">
+<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.extractToDefault.accesskey "D">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
+<!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
+<!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
+
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Slet de vedhæftede filer fra de valgte beskeder">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "S">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Slet de vedhæftede filer fra alle beskeder i den aktuelle folder">
@@ -49,9 +70,10 @@
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Gem vedhæftede filer fra de valgte beskeder">
 <!ENTITY attachmentextractor.headerbutton.label "Gem filer">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Gem vedhæftede filer fra de valgte beskeder">
-<!ENTITY attachmentextractor.mrubrowsetext "Gennemse…">
-<!ENTITY attachmentextractor.mru.default.label "Standard">
-<!ENTITY attachmentextractor.mru.default.accesskey "S">
+<!ENTITY attachmentextractor.browse.label "Gennemse…">
+<!ENTITY attachmentextractor.browse.accesskey "G">
+<!ENTITY attachmentextractor.default.label "Standard">
+<!ENTITY attachmentextractor.default.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Indtast mønster til filnavn">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Rediger mønsteret til navnet på den vedhæftede fil:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Gør mønsteret til standard">

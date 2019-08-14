@@ -4,8 +4,8 @@
 <!ENTITY attachmentextractor.extracttodefault.accesskey "P">
 <!ENTITY attachmentextractor.extracttofolder.label "Uit geselecteerde berichten uitpakken naar…">
 <!ENTITY attachmentextractor.extracttofolder.accesskey "T">
-<!ENTITY attachmentextractor.extracttosuggest.label "Uitpakken naar gesuggereerde bestandsmap">
-<!ENTITY attachmentextractor.extracttosuggest.accesskey "G">
+<!ENTITY attachmentextractor.extractToSuggest.label "Uitpakken naar gesuggereerde bestandsmap">
+<!ENTITY attachmentextractor.extractToSuggest.accesskey "G">
 <!ENTITY attachmentextractor.extractalldefault.label "Uit alle berichten in map uitpakken">
 <!ENTITY attachmentextractor.extractalldefault.accesskey "M">
 <!ENTITY attachmentextractor.extractallfolder.label "Uit alle berichten in map uitpakken naar…">
@@ -20,7 +20,28 @@
 <!ENTITY attachmentextractor.extractpattern.accesskey "i">
 <!ENTITY attachmentextractor.extractpatternfolder.label "Uitpakken met een aangepast bestandsnaampatroon naar…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
-<!ENTITY attachmentextractor.favoritefolder.label "Favorite Folders">
+
+<!ENTITY attachmentextractor.extractTo.label "Detach Attachments (by AEC) to">
+<!ENTITY attachmentextractor.extractTo.accesskey "(">
+<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.extractToDefault.accesskey "D">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
+<!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
+<!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
+
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Bijlagen gewoon verwijderen uit geselecteerde berichten">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "j">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Bijlagen gewoon verwijderen uit alle berichten in de map">
@@ -49,9 +70,10 @@
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Bijlagen uit geselecteerde berichten uitpakken">
 <!ENTITY attachmentextractor.headerbutton.label "AE uitpakken">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Bijlagen uit geselecteerde berichten uitpakken">
-<!ENTITY attachmentextractor.mrubrowsetext "Bladeren…">
-<!ENTITY attachmentextractor.mru.default.label "Standaard">
-<!ENTITY attachmentextractor.mru.default.accesskey "d">
+<!ENTITY attachmentextractor.browse.label "Bladeren…">
+<!ENTITY attachmentextractor.browse.accesskey "B">
+<!ENTITY attachmentextractor.default.label "Standaard">
+<!ENTITY attachmentextractor.default.accesskey "S">
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Bestandsnaampatroon-ingave">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Pas het bestandsnaampatroon van de bijlage aan:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Patroon vanaf nu als standaard instellen">
