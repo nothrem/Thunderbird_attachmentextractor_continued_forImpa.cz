@@ -84,15 +84,15 @@ if (typeof AttachmentExtractor === "undefined") {
   /* access functions */
 
   AttachmentExtractor.prototype.doPatternAttachmentextraction = function(event,
-    savelocation, all) {
+    savelocation, all, index) {
     if (!all && !this.getSelectedMessages()) return;
     var fnp = this.getFilenamePattern();
     if (!fnp) return;
-    this.doAttachmentextraction(event, savelocation, all, fnp);
+    this.doAttachmentextraction(event, savelocation, all, fnp, index);
   };
 
   AttachmentExtractor.prototype.doAttachmentextraction = function(event,
-    savelocation, all, fnp) {
+    savelocation, all, fnp, index) {
     var folder = null;
     savelocation = savelocation + "";
     var messages = (all) ? this.collectMessagesFromFolder((all === 2)) : this
@@ -109,19 +109,22 @@ if (typeof AttachmentExtractor === "undefined") {
       case "deleteAtt":
         this.startAttachmentextraction(null, messages, null, false, true);
         break;
-      case "0":
+      case "browse":
         folder = this.getSaveFolder("messenger.save.dir", true);
         if (folder) this.addToMRUList(folder);
         break;
-      default:
-        folder = this.useMRU(savelocation);
+      case "favorite":
+        folder = this.useFavoritefolder(index);
+        break;
+      case "mru":
+        folder = this.useMRU(index);
     }
     if (folder) this.startAttachmentextraction(folder, messages, fnp, false,
       false);
   };
 
   AttachmentExtractor.prototype.doIndividualAttachmentextraction = function(
-    savelocation, mode, fnp) {
+    savelocation, mode, fnp, index) {
     var attachments;
     switch (mode) {
       case "selected":
@@ -146,13 +149,16 @@ if (typeof AttachmentExtractor === "undefined") {
       case "suggest":
         folder = this.getSuggestedSaveFolder(this.getSelectedMessages());
         break;
-      case "0":
+      case "browse":
         folder = this.getSaveFolder("messenger.save.dir", true);
         if (folder) this.addToMRUList(folder);
         break;
-      default:
-        folder = this.useMRU(savelocation);
-    }
+      case "favorite":
+        folder = this.useFavoritefolder(index);
+        break;
+      case "mru":
+        folder = this.useMRU(index);
+      }
     //aedump("folder: "+folder);
     if (folder) aewindow.createAEIndTask(folder, this.getSelectedMessages()[
       0], attachments, fnp);
@@ -619,8 +625,72 @@ if (typeof AttachmentExtractor === "undefined") {
       'disabled', 'true');
   };
 
+  AttachmentExtractor.prototype.buildFavoritefolderMenu = function(parent) {
+    aedump('{function:AttachmentExtractor.buildFavoritefolderMenu}\n',2);
+
+    var prefs = Services.prefs.getBranch(
+      "extensions.attachmentextractor_cont.");
+
+    var children = parent.childNodes;
+    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
+      "paramPattern") === "true") ? "Pattern" : "");
+    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
+      "IndividualAttachmentextraction('favorite', " + parent.getAttribute(
+      "paramAll") + ", '#');"
+    else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
+      "paramAll") + ", '#');"
+
+    for (let i = children.length - 1; i >= 0; i--) {
+      // aedump("remove Favorite-child-number: " + i + "\n", 2);
+      if (children[i].getAttribute("aec_favoritefolder_menuitem") === 
+        "GENERATED") parent.removeChild(children[i]);
+    }
+
+    var obj = {};
+    prefs.getChildList("favoritefolder.", obj);
+    var count = obj.value;
+    // aedump("favoritefolder obj.value = count: " + count + "\n", 2);
+
+    for (let i = 1; i <= count; i++) {
+      var accesskey = i-1;
+      var folderpath ="";
+      var folderlabel= "";
+      if (aec_versionChecker.compare(aec_currentVersion, "69") >= 0) {
+        // use document.createXULElement for Thunderbird 69+
+        var menuitem = document.createXULElement("menuitem");
+      } else {
+        // use document.createElement for Thunderbird 60 and 68
+        var menuitem = document.createElement("menuitem");
+      }
+      menuitem.setAttribute("crop", "center");
+      if (i <= 10) menuitem.setAttribute("accesskey", "" + accesskey);
+      menuitem.setAttribute("command", "");
+      menuitem.setAttribute("aec_favoritefolder_menuitem", "GENERATED");
+      menuitem.setAttribute("oncommand", oncommand.replace(/#/, i));
+      var folderpath = (prefs.prefHasUserValue("favoritefolder." + i)) ? 
+        prefs.getStringPref("favoritefolder." + i) : null;
+      if (i <= 10)
+        folderlabel = "(" + accesskey + ") " + folderpath;
+      else
+        folderlabel = "    " + folderpath;
+      menuitem.setAttribute('label', folderlabel);
+      menuitem.setAttribute('tooltiptext', folderpath);
+      parent.appendChild(menuitem);
+    }
+    // aedump('{end of function:AttachmentExtractor.buildFavoritefolderMenu}\n',2);
+  };
+
+  AttachmentExtractor.prototype.useFavoritefolder = function(index) {
+    aedump('{function:AttachmentExtractor.useFavoritefolder(' + index + ')}\n', 2);
+    var path = this.prefs.hasUserValue("favoritefolder." + index) ? this.prefs
+      .getFile("favoritefolder." + index) : null;
+      // aedump('path = ' + path + ')}\n', 2);
+      if (!path) return null;
+      return path;
+  }
+
   AttachmentExtractor.prototype.updateMRUVisability = function(event) {
-    //aedump('{function:AttachmentExtractor.updateMRUVisability}\n',2);
+    aedump('{function:AttachmentExtractor.updateMRUVisability}\n',2);
     var mru = attachmentextractor.prefs.get("savepathmru");
     var onImage = false;
     try {
@@ -628,7 +698,7 @@ if (typeof AttachmentExtractor === "undefined") {
     } catch (e) {
       aedump(e);
     }
-    //aedump("// onImage "+onImage+"\n");
+    // aedump("// onImage "+onImage+"\n");
 
     var children = event.target.childNodes;
     var chattr;
@@ -638,14 +708,12 @@ if (typeof AttachmentExtractor === "undefined") {
       if ((chattr = children[i].getAttribute("aec_image_menuitem"))) {
         if ((onImage && chattr === "IMAGE") || (!onImage && chattr ===
             "NONIMAGE")) {
-          /*children[i].hidden=false;*/
           children[i].removeAttribute('hidden');
-          //aedump("// unhiding "+children[i].id+"\n");
+          // aedump("// unhiding aec_image_menuitem "+children[i].id+"\n");
         } else if ((onImage && chattr === "NONIMAGE") || (!onImage && chattr ===
             "IMAGE")) {
-          /*children[i].hidden=true;*/
           children[i].setAttribute('hidden', true);
-          //aedump("// hiding "+children[i].id+"\n");
+          // aedump("// hiding aec_image_menuitem"+children[i].id+"\n");
           continue;
         }
       }
@@ -653,16 +721,18 @@ if (typeof AttachmentExtractor === "undefined") {
       if ((chattr = children[i].getAttribute("aec_mru_menuitem"))) {
         if ((mru && chattr === "MRU") || (!mru && chattr === "NONMRU")) {
           children[i].removeAttribute('hidden');
-          //aedump("// unhiding "+children[i].id+"\n");
+          // aedump("// unhiding aec_mru_menuitem "+children[i].id+"\n");
         } else if ((mru && chattr === "NONMRU") || (!mru && chattr === "MRU")) {
           children[i].setAttribute('hidden', true);
-          //aedump("// hiding "+children[i].id+"\n");
+          // aedump("// hiding aec_mru_menuitem "+children[i].id+"\n");
         }
       }
     }
+    // aedump('{end of function:AttachmentExtractor.updateMRUVisability}\n',2);
   };
 
   AttachmentExtractor.prototype.updateMRUList = function(parent) {
+    aedump('{function:AttachmentExtractor.updateMRUList}\n',2);
     var ps = attachmentextractor.prefs.prefService.getBranch(
       "extensions.attachmentextractor_cont.");
     if (!ps.getBoolPref("savepathmru")) return;
@@ -671,18 +741,22 @@ if (typeof AttachmentExtractor === "undefined") {
     var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
       "paramPattern") === "true") ? "Pattern" : "");
     if (parent.getAttribute("paramIndividual") === "true") oncommand +=
-      "IndividualAttachmentextraction('#'," + parent.getAttribute(
-      "paramAll") + ");"
-    else oncommand += "Attachmentextraction(event,'#'," + parent.getAttribute(
-      "paramAll") + ");"
+      "IndividualAttachmentextraction('mru'," + parent.getAttribute(
+      "paramAll") + ", '#');"
+    else oncommand += "Attachmentextraction(event,'mru'," + parent.getAttribute(
+      "paramAll") + ", '#');"
 
     for (let i = children.length - 1; i >= 0; i--) {
+      // aedump("remove MRU-child-number: " + i + "\n", 2);
       if (children[i].getAttribute("aec_mru_menuitem") === "GENERATED") parent
         .removeChild(children[i]);
     }
     var count = ps.getIntPref("savepathmru.count");
-    for (let i = 0; i <= count; i++) {
-      if (versionChecker.compare(currentVersion, "69") >= 0) {
+    for (let i = 1; i <= count; i++) {
+      var accesskey = i-1;
+      var folderpath ="";
+      var folderlabel= "";
+      if (aec_versionChecker.compare(aec_currentVersion, "69") >= 0) {
         // use document.createXULElement for Thunderbird 69+
         var menuitem = document.createXULElement("menuitem");
       } else {
@@ -690,25 +764,26 @@ if (typeof AttachmentExtractor === "undefined") {
         var menuitem = document.createElement("menuitem");
       }
       menuitem.setAttribute("crop", "center");
-      if (i < 10) menuitem.setAttribute("accesskey", "" + i);
+      if (i <= 10) menuitem.setAttribute("accesskey", "" + accesskey);
       menuitem.setAttribute("command", "");
       menuitem.setAttribute("aec_mru_menuitem", "GENERATED");
       menuitem.setAttribute("oncommand", oncommand.replace(/#/, i));
-      if (i === 0) menuitem.setAttribute("label", "(0) " + parent.getAttribute(
-        "browseText"));
-      else {
-        var pv = (ps.prefHasUserValue("savepathmru." + i)) ? ps.getStringPref(
-          "savepathmru." + i) : null;
-        if (!pv || pv === "") pv = "< ... >";
-        if (i < 10) pv = "(" + i + ") " + pv;
-        menuitem.setAttribute('label', pv);
-      }
+      var folderpath = (ps.prefHasUserValue("savepathmru." + i)) ? 
+        ps.getStringPref("savepathmru." + i) : null;
+      if (!folderpath || folderpath === "") folderpath = "< ... >";
+      if (i <= 10)
+        folderlabel = "(" + accesskey + ") " + folderpath;
+      else
+        folderlabel = "    " + folderpath;
+      menuitem.setAttribute('label', folderlabel);
+      menuitem.setAttribute('tooltiptext', folderpath);
       parent.appendChild(menuitem);
     }
+    // aedump('{end of function:AttachmentExtractor.updateMRUList}\n',2);
   };
 
   AttachmentExtractor.prototype.onShowAttachmentContextMenu = function(event) {
-    //aedump('{function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
+    aedump('{function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
     var attachmentList = document.getElementById('attachmentList');
 
     var canOpen = false;
@@ -727,35 +802,37 @@ if (typeof AttachmentExtractor === "undefined") {
       'disabled', "true");
 
     attachmentextractor.updateMRUVisability(event);
+    // aedump('{end of function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
   };
 
-  AttachmentExtractor.prototype.addToMRUList = function(added) {
+  AttachmentExtractor.prototype.addToMRUList = function(path) {
+    aedump('{function:AttachmentExtractor.addToMRUList(' + path + ')}\n', 2);
     var ps = this.prefs.aeBranch;
-    if (!ps.getBoolPref("savepathmru") || !added) return added;
+    if (!ps.getBoolPref("savepathmru") || !path) return path;
     var count = ps.getIntPref("savepathmru.count");
     var old = (ps.prefHasUserValue("savepathmru.1")) ? ps.getStringPref(
       "savepathmru.1") : null;
-    if (old && (added === old)) return added;
-    ps.setStringPref("savepathmru.1", added);
-    if (!old) return added;
+    if (old && (path === old)) return path;
+    ps.setStringPref("savepathmru.1", path);
+    if (!old) return path;
     var prev = old;
     var i = 2;
     for (; i <= count; i++) {
       old = (ps.prefHasUserValue("savepathmru." + i)) ? ps.getStringPref(
         "savepathmru." + i) : null;
       ps.setStringPref("savepathmru." + i, prev);
-      if (!old || (added === old)) break;
+      if (!old || (path === old)) break;
       prev = old;
     }
-    return added;
+    return path;
   };
 
   AttachmentExtractor.prototype.useMRU = function(index) {
     aedump('{function:AttachmentExtractor.useMRU(' + index + ')}\n', 2);
-    var p = this.prefs.hasUserValue("savepathmru." + index) ? this.prefs
+    var path = this.prefs.hasUserValue("savepathmru." + index) ? this.prefs
       .getFile("savepathmru." + index) : null;
-    if (!p) return null;
-    return this.addToMRUList(p);
+    if (!path) return null;
+    return this.addToMRUList(path);
   }
 
   AttachmentExtractor.prototype.clearMRU = function(max, min) {

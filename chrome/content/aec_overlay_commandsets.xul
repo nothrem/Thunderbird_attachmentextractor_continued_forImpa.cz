@@ -34,7 +34,7 @@
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',false);" 
           observes="aec_commandset_msg"/>
         <command id="cmd_aec_extractToFolder" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'0',false);" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',false);" 
           observes="aec_commandset_msg" />
         <command id="cmd_aec_extractToFolder_menu" 
           oncommand="event.stopPropagation();" 
@@ -43,7 +43,7 @@
           oncommand="attachmentextractor.doPatternAttachmentextraction(event,'default',false);" 
           observes="aec_commandset_msg"/>
         <command id="cmd_aec_extractPatternFolder" 
-          oncommand="attachmentextractor.doPatternAttachmentextraction(event,'0',false);" 
+          oncommand="attachmentextractor.doPatternAttachmentextraction(event,'browse',false);" 
           observes="aec_commandset_msg"/>
         <command id="cmd_aec_extractPatternFolder_menu" 
           oncommand="event.stopPropagation();" 
@@ -60,7 +60,7 @@
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',1);" 
           observes="aec_commandset_folder"/>
         <command id="cmd_aec_extractAllToFolder" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'0',1);" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',1);" 
           observes="aec_commandset_folder"/>
         <command id="cmd_aec_extractAllToFolder_menu" 
           oncommand="event.stopPropagation();" 
@@ -69,7 +69,7 @@
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',2);" 
           observes="aec_commandset_folder"/>
         <command id="cmd_aec_extractDeepToFolder" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'0',2);" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',2);" 
           observes="aec_commandset_folder"/>
         <command id="cmd_aec_extractDeepToFolder_menu" 
           oncommand="event.stopPropagation();" 
@@ -86,7 +86,7 @@
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','selected');" 
           observes="aec_commandset_ind"/>
         <command id="cmd_aec_extractIndToFolder" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('0','selected');" 
+          oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','selected');" 
           observes="aec_commandset_ind"/>
         <command id="cmd_aec_extractIndToFolder_menu" 
           oncommand="event.stopPropagation();" 
@@ -97,7 +97,7 @@
         <command id="cmd_aec_extractIndAllToDefault" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','all');"/>
         <command id="cmd_aec_extractIndAllToFolder" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('0','all');"/>
+          oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','all');"/>
         <command id="cmd_aec_extractIndAllToFolder_menu" 
           oncommand="event.stopPropagation();"/>
         <command id="cmd_aec_extractIndAllToSuggest" 
@@ -106,7 +106,7 @@
         <command id="cmd_aec_extractContextToDefault" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','context');" />
         <command id="cmd_aec_extractContextToFolder" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('0','context');" />
+          oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','context');" />
         <command id="cmd_aec_extractContextToFolder_menu" 
           oncommand="event.stopPropagation();"/>
         <command id="cmd_aec_extractContextToSuggest" 
