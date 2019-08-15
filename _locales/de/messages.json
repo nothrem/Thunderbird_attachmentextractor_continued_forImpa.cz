@@ -254,8 +254,32 @@
   "attachmentextractor.settings.overwrite-ask.accesskey": {
     "message": "F"
   },
+  "attachmentextractor.extractSingleAttTo.label": {
+    "message": "(AEC) Anhang abtrennen nach"
+  },
+  "attachmentextractor.extractSingleAttTo.tooltip": {
+    "message": "Gewählten Anhang abtrennen"
+  },
+  "attachmentextractor.extractMultipleAttTo.label": {
+    "message": "(AEC) Alle Anhänge abtrennen nach"
+  },
+  "attachmentextractor.extractMultipleAttTo.tooltip": {
+    "message": "Alle Anhänge abtrennen"
+  },
+  "attachmentextractor.extractMessagesTo.label": {
+    "message": "(AEC) Anhänge der Nachrichten abtrennen nach"
+  },
+  "attachmentextractor.extractMessagesTo.tooltip": {
+    "message": "Anhänge der gewählten Nachrichten abtrennen"
+  },
+  "attachmentextractor.extractFoldersTo.label": {
+    "message": "(AEC) Anhänge aus Ordnern abtrennen nach"
+  },
+  "attachmentextractor.extractFoldersTo.tooltip": {
+    "message": "Anhänge aus allen gewählten Ordnern abtrennen"
+  },
   "attachmentextractor.extractTo.label": {
-    "message": "Anhänge abtrennen (mit AEC) nach"
+    "message": "(AEC) Anhänge abtrennen nach"
   },
   "attachmentextractor.extractTo.accesskey": {
     "message": "("

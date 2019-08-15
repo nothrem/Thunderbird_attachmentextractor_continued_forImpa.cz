@@ -254,8 +254,32 @@
   "attachmentextractor.settings.overwrite-ask.accesskey": {
     "message": "O"
   },
+  "attachmentextractor.extractSingleAttTo.label": {
+    "message": "(AEC) Extract Attachment to"
+  },
+  "attachmentextractor.extractSingleAttTo.tooltip": {
+    "message": "Extract selected Attachment"
+  },
+  "attachmentextractor.extractMultipleAttTo.label": {
+    "message": "(AEC) Extract all Attachments to"
+  },
+  "attachmentextractor.extractMultipleAttTo.tooltip": {
+    "message": "Extract all Attachments"
+  },
+  "attachmentextractor.extractMessagesTo.label": {
+    "message": "(AEC) Extract Attachments from Messages to"
+  },
+  "attachmentextractor.extractMessagesTo.tooltip": {
+    "message": "Extract Attachments from selected Messages"
+  },
+  "attachmentextractor.extractFoldersTo.label": {
+    "message": "(AEC) Extract Attachments from Messages in Folder to"
+  },
+  "attachmentextractor.extractFoldersTo.tooltip": {
+    "message": "Extract Attachments from Messages in selected Folders"
+  },
   "attachmentextractor.extractTo.label": {
-    "message": "Detach Attachments (by AEC) to"
+    "message": "(AEC) Extract Attachments to"
   },
   "attachmentextractor.extractTo.accesskey": {
     "message": "("

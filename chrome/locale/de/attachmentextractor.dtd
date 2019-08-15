@@ -21,7 +21,15 @@
 <!ENTITY attachmentextractor.extractpatternfolder.label "Abtrennen mit eigenem Dateinamenmuster nach…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "E">
 
-<!ENTITY attachmentextractor.extractTo.label "Anhänge abtrennen (mit AEC) nach">
+<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Anhang abtrennen nach">
+<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Gewählten Anhang abtrennen">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Alle Anhänge abtrennen nach">
+<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Alle Anhänge abtrennen">
+<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Anhänge der Nachrichten abtrennen nach">
+<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Anhänge der gewählten Nachrichten abtrennen">
+<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Anhänge aus Ordnern abtrennen nach">
+<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Anhänge aus allen gewählten Ordnern abtrennen">
+<!ENTITY attachmentextractor.extractTo.label "(AEC) Anhänge abtrennen nach">
 <!ENTITY attachmentextractor.extractTo.accesskey "(">
 <!ENTITY attachmentextractor.extractToDefault.label "Standardordner">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "S">

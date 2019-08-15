@@ -21,7 +21,15 @@
 <!ENTITY attachmentextractor.extractpatternfolder.label "다음 사용자지정 파일명 양식으로 추출…">
 <!ENTITY attachmentextractor.extractpatternfolder.accesskey "X">
 
-<!ENTITY attachmentextractor.extractTo.label "Detach Attachments (by AEC) to">
+<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Extract Attachment to">
+<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Extract selected Attachment">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Extract all Attachments to">
+<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Extract all Attachments">
+<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Extract Attachments from Messages to">
+<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Extract Attachments from selected Messages">
+<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Extract Attachments from Messages in Folder to">
+<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Extract Attachments from Messages in selected Folders">
+<!ENTITY attachmentextractor.extractTo.label "(AEC) Extract Attachments to">
 <!ENTITY attachmentextractor.extractTo.accesskey "(">
 <!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "D">
