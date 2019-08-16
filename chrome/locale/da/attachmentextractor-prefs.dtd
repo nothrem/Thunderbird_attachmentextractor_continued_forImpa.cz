@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Indstillinger for AttachmentExtractor">
-<!ENTITY attachmentextractor.settings.width "60em">
 <!ENTITY attachmentextractor.settings.homepage.label "Website for AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.generaltab.label "Generelt">
 <!ENTITY attachmentextractor.settings.normal.caption "Gemning af vedhæftede filer">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Foreslåede foldere">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "En folder at gemme til kan blive foreslået baseret på nøgleord i emne linien på de beskeder du vælger.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorer dobbelt forekomster af nøgleord når foreslåede foldere rangeres?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Folder der kan indeholde underfoldere skal gemme til:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Nøgleord der skal ses bort fra: (adskilt med komma)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Tilføje…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Ryd">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorer dobbelt forekomster af nøgleord når foreslåede foldere rangeres?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Nøgleord der skal ses bort fra: (adskilt med komma)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Oftest brugte foldere">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Gem liste over brugte foldere.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Gem den seneste">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Søg…">
 <!ENTITY attachmentextractor.settings.posttab.label "Efter processering">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Efter de vedhæftede filer er gemt skal:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Handlinger for Thunderbird">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Handlinger for eksterne programmer">
 <!ENTITY attachmentextractor.settings.after-delete.label "Beskeden slettes">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "S">
 <!ENTITY attachmentextractor.settings.after-read.label "Beskeden markeres som læst">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "G">
 <!ENTITY attachmentextractor.settings.filenametab.label "Filnavne">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Generering af filnavn">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Tilføj et element">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Mønster til at generere filnavne:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Mønster for tæller ved eksisterende filnavn (#count#):">

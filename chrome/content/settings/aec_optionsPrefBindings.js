@@ -190,10 +190,6 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.suggestfolder.parent",
-  type: "string"
-},
-{
   id: "extensions.attachmentextractor_cont.suggestfolder.excludekeywords",
   type: "string"
 },

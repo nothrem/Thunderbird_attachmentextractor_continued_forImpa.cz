@@ -1,51 +1,37 @@
-<!ENTITY attachmentextractor.menu.label "Extraire les pièces jointes">
-<!ENTITY attachmentextractor.menu.accesskey "E">
-<!ENTITY attachmentextractor.extracttodefault.label "Extraire des messages sélectionnés">
-<!ENTITY attachmentextractor.extracttodefault.accesskey "S">
-<!ENTITY attachmentextractor.extracttofolder.label "Extraire des messages sélectionnés vers…">
-<!ENTITY attachmentextractor.extracttofolder.accesskey "V">
-<!ENTITY attachmentextractor.extractToSuggest.label "Extraire dans le dossier suggéré">
-<!ENTITY attachmentextractor.extractToSuggest.accesskey "G">
-<!ENTITY attachmentextractor.extractalldefault.label "Extraire de tous les messages du dossier">
-<!ENTITY attachmentextractor.extractalldefault.accesskey "t">
-<!ENTITY attachmentextractor.extractallfolder.label "Extraire de tous les messages du dossier vers…">
-<!ENTITY attachmentextractor.extractallfolder.accesskey "v">
-<!ENTITY attachmentextractor.extractdeepdefault.label "Extraire de tous les messages dans les dossiers et sous-dossiers">
-<!ENTITY attachmentextractor.extractdeepdefault.accesskey "m">
-<!ENTITY attachmentextractor.extractdeepfolder.label "Extraire de tous les messages dans les dossiers et sous-dossiers vers…">
-<!ENTITY attachmentextractor.extractdeepfolder.accesskey "o">
-<!ENTITY attachmentextractor.extractalltosuggest.label "Extraire de tous les messages dans le dossier suggéré">
-<!ENTITY attachmentextractor.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.extractpattern.label "Extraire en utilisant un modèle personnalisé du nom de fichier">
-<!ENTITY attachmentextractor.extractpattern.accesskey "M">
-<!ENTITY attachmentextractor.extractpatternfolder.label "Extraire en utilisant un modèle personnalisé du nom de fichier vers…">
-<!ENTITY attachmentextractor.extractpatternfolder.accesskey "M">
+<!ENTITY attachmentextractor.toolbarbutton.label "Extraire">
+<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Extraire les pièces jointes des messages sélectionnés">
+<!ENTITY attachmentextractor.headerbutton.label "Extraire">
+<!ENTITY attachmentextractor.headerbutton.tooltip "Extraire les pièces jointes des messages sélectionnés">
 
-<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Extract Attachment to">
-<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Extract selected Attachment">
-<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Extract all Attachments to">
-<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Extract all Attachments">
-<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Extract Attachments from Messages to">
-<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Extract Attachments from selected Messages">
-<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Extract Attachments from Messages in Folder to">
-<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Extract Attachments from Messages in selected Folders">
-<!ENTITY attachmentextractor.extractTo.label "(AEC) Extract Attachments to">
-<!ENTITY attachmentextractor.extractTo.accesskey "(">
-<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.browse.label "Parcourir…">
+<!ENTITY attachmentextractor.browse.accesskey "P">
+
+<!ENTITY attachmentextractor.extractSingleAttTo.label "AE Extract">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Extract all">
+<!ENTITY attachmentextractor.extractMessagesTo.label "AE Extract from Messages">
+<!ENTITY attachmentextractor.extractFoldersTo.label "AE Extract from Messages in Folders">
+<!ENTITY attachmentextractor.extractTo.label "AE Extract Attachments">
+<!ENTITY attachmentextractor.extractTo.accesskey "x">
+
+<!ENTITY attachmentextractor.extractToBrowse.label "Browse…">
+<!ENTITY attachmentextractor.extractToBrowse.accesskey "B">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.label "Browse… (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.accesskey "r">
+<!ENTITY attachmentextractor.extractToDefault.label "To Default Folder">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "D">
-<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "To Default Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
-<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "To Favorite Folder">
 <!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
-<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "To Favorite Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
-<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "To Most Recently Used Folder">
 <!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
-<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
-<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "To Suggested Folder…">
 <!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
-<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "To Suggested Folder (inc. Subfolders)…">
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
@@ -54,45 +40,15 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Supprimer uniquement les pièces jointes de tous les messages du dossier">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Paramètres d&apos;AttachmentExtractor">
-<!ENTITY attachmentextractor.menusettingsdialog.accesskey "P">
-<!ENTITY attachmentextractor.context.extractalldefault.label "Extraire toutes les pièces jointes">
-<!ENTITY attachmentextractor.context.extractalldefault.accesskey "X">
-<!ENTITY attachmentextractor.context.extractallfolder.label "Extraire toutes les pièces jointes vers…">
-<!ENTITY attachmentextractor.context.extractallfolder.accesskey "V">
-<!ENTITY attachmentextractor.context.extractdeepdefault.label "Extraire tous les sous-dossiers inclus">
-<!ENTITY attachmentextractor.context.extractdeepdefault.accesskey "t">
-<!ENTITY attachmentextractor.context.extractdeepfolder.label "Extraire tous les sous-dossiers inclus vers…">
-<!ENTITY attachmentextractor.context.extractdeepfolder.accesskey "i">
-<!ENTITY attachmentextractor.context.extractalltosuggest.label "Tout extraire dans le dossier suggéré">
-<!ENTITY attachmentextractor.context.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.attachment.extracttodefault.label "Tout extraire">
-<!ENTITY attachmentextractor.attachment.extracttodefault.accesskey "X">
-<!ENTITY attachmentextractor.attachment.extracttofolder.label "Tout extraire vers…">
-<!ENTITY attachmentextractor.attachment.extracttofolder.accesskey "T">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.label "Extraire">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.accesskey "E">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.label "Extraire vers…">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.accesskey "V">
-<!ENTITY attachmentextractor.toolbarbutton.label "Extraire">
-<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Extraire les pièces jointes des messages sélectionnés">
-<!ENTITY attachmentextractor.headerbutton.label "Extraire">
-<!ENTITY attachmentextractor.headerbutton.tooltip "Extraire les pièces jointes des messages sélectionnés">
-<!ENTITY attachmentextractor.browse.label "Parcourir…">
-<!ENTITY attachmentextractor.browse.accesskey "P">
-<!ENTITY attachmentextractor.default.label "Par défaut">
-<!ENTITY attachmentextractor.default.accesskey "d">
+
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Modèle d&apos;entrée de nom de fichier">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Modifier le modèle de nom de fichier joint :">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Définir comme modèle par défaut">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Cliquez pour ajouter un jeton">
+
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Dossiers suggérés">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Dossiers suggérés selon la ligne de sujet de(s) message(s) sélectionné(s) :">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Utiliser le dossier sélectionné">
-<!ENTITY attachmentextractor.imagetoolbar.label "Changer la sélection">
-<!ENTITY attachmentextractor.imagetoolbar.accesskey "T">
-<!ENTITY attachmentextractor.context.extracttodefault.label "Extraire les pièces jointes sélectionnées">
-<!ENTITY attachmentextractor.context.extracttofolder.label "Extraire les pièces jointes sélectionnées vers…">
-<!ENTITY attachmentextractor.context.extracttodefault.accesskey "E">
-<!ENTITY attachmentextractor.context.extracttofolder.accesskey "V">

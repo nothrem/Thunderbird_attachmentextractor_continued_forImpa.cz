@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
-  "attachmentextractor.menu.label": {
-    "message": "Extract Attachments"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "Extract from Selected Messages"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "Extract from Selected Messages to…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "Extract to Suggested File-Folder"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "G"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "Extract from All Messages in Folder"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "F"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "Extract from All Messages in Folder to…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "Extract from All Messages in Folder and Subfolders"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "Extract from All Messages in Folder and Subfolders to…"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "Extract from All Messages to Suggested File-Folder"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "Extract with a Custom Filename Pattern"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "C"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "Extract with a Custom Filename Pattern to…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "Just Delete Attachments from Selected Messages"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "J"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "Just Delete Attachments from All Messages in Folder"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor Settings"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "Extract All Attachments"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "Extract All Attachments to…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "H"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "Extract All inc. Subfolders"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "Extract All inc. Subfolders to…"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "Extract All to Suggested File-Folder"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "AE Extract All"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "AE Extract All to…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "AE Extract"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "AE Extract to…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "E"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "AE Extract"
   },
@@ -155,134 +18,44 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "Extract Attachments from this Message"
   },
+
   "attachmentextractor.browse.label": {
     "message": "Browse…"
   },
   "attachmentextractor.browse.accesskey": {
     "message": "B"
   },
-  "attachmentextractor.default.label": {
-    "message": "Default"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "D"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "Filename Pattern input"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "Modify the attachment filename pattern:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Set the pattern as default from now on"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Click To Add A Token"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - Suggested Folders:"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "Suggested Folders based on subject lines of selected message(s):"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "Use Selected Folder"
-  },
-  "attachmentextractor.imagetoolbar.label": {
-    "message": "Toggle Select"
-  },
-  "attachmentextractor.imagetoolbar.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.context.extracttodefault.label": {
-    "message": "-- NOT USED --"
-  },
-  "attachmentextractor.context.extracttofolder.label": {
-    "message": "-- NOT USED --"
-  },
-  "attachmentextractor.context.extracttodefault.accesskey": {
-    "message": ""
-  },
-  "attachmentextractor.context.extracttofolder.accesskey": {
-    "message": ""
-  },
-  "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor Settings"
-  },
-  "attachmentextractor.settings.width": {
-    "message": "50em"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor homepage and description of features:"
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "General"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "-- NOT USED --"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "Where should the attachments be saved?"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "What should happen when we find a file already exists with the same name as the attachment?"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "Always replace existing file with the new attachment"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "R"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "Always keep existing file, don&apos;t extract the attachment"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "K"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "Make a new name for the attachment, so we can keep both"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "M"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "Ask me each time"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "A"
-  },
+  
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AEC) Extract Attachment to"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Extract selected Attachment"
+    "message": "AE Extract"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AEC) Extract all Attachments to"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Extract all Attachments"
+    "message": "AE Extract all"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AEC) Extract Attachments from Messages to"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Extract Attachments from selected Messages"
+    "message": "AE Extract from Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AEC) Extract Attachments from Messages in Folder to"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Extract Attachments from Messages in selected Folders"
+    "message": "AE Extract from Messages in Folder"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AEC) Extract Attachments to"
+    "message": "AE Extract Attachments"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Default Folder"
@@ -338,6 +111,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "W"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Just Delete Attachments from Selected Messages"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Just Delete Attachments from All Messages in Folder"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Filename Pattern input"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Modify the attachment filename pattern:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Set the pattern as default from now on"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Click To Add A Token"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Suggested Folders:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Suggested Folders based on subject lines of selected message(s):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Use Selected Folder"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor Settings"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "AttachmentExtractor homepage and description of features:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "General"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Where should the attachments be saved?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "What should happen when we find a file already exists with the same name as the attachment?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Always replace existing file with the new attachment"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Always keep existing file, don&apos;t extract the attachment"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Make a new name for the attachment, so we can keep both"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Ask me each time"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"
   },
@@ -375,7 +233,7 @@
     "message": "Add…"
   },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
-    "message": "Clear"
+    "message": "Delete"
   },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Most Recently Used Folders"
@@ -406,12 +264,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "After extracting the attachments should we:"
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "-- NOT USED --"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "-- NOT USED --"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Delete the message"
@@ -638,6 +490,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Filename Pattern Generation:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Pattern used to generate filenames:"
   },
@@ -812,6 +670,9 @@
   "FileNamePatternDialogQuestion": {
     "message": "Set the pattern as default from now on"
   },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirm Detaching"
   },
@@ -863,6 +724,12 @@
   "FolderPickerDialogTitle": {
     "message": "Select folder to use"
   },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
   "EmptyLineText": {
     "message": "-- empty --"
   },
@@ -872,6 +739,7 @@
   "FileNamePatternFixMessage": {
     "message": "The filename or count pattern you've entered is invalid and may break AttachmentExtractor.\nChange to:\n %1$s?"
   },
+
   "ExtractionStarted": {
     "message": "Extraction started [at Date/Time: %S]"
   },

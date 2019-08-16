@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Opciones">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Página web de AttachmentExtractor y descripción de las características:">
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
 <!ENTITY attachmentextractor.settings.normal.caption "Extraer adjuntos">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Carpetas sugeridas">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Puede sugerirse una carpeta para extraer en base a las palabras clave de los asuntos del mensaje seleccionado.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "¿Ignorar las palabras clave duplicadas al sugerir carpetas?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Carpetas conteniendo subcarpetas potenciales a extraer en:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palabras clave a excluir: (separadas por comas)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Añadir…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Limpiar">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "¿Ignorar las palabras clave duplicadas al sugerir carpetas?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palabras clave a excluir: (separadas por comas)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Carpetas usadas más recientemente">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Habilitar la lista de carpetas usadas más recientemente">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Guardar las últimas">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Buscar…">
 <!ENTITY attachmentextractor.settings.posttab.label "Después de la extracción">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Después de extraer los adjuntos:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Acciones de Thunderbird">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Acciones externas">
 <!ENTITY attachmentextractor.settings.after-delete.label "Borrar el mensaje">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-read.label "Marcar el mensaje como leído">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "s">
 <!ENTITY attachmentextractor.settings.filenametab.label "Archivos">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Patrón de generación de nombres de archivos">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Pulse para añadir un elemento">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Patrón usado para generar los nombres de archivos:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Patrón usado cuando haya un nombre de archivo duplicado (#count#):">

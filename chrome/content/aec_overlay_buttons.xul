@@ -16,66 +16,63 @@
 <overlay id="aec_buttonsOverlay" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script type="application/x-javascript" src="chrome://attachmentextractor_cont/content/aec_listener_toolbarButton.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_listener_toolbarButton.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_common.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_js_attachmentextractor.js"/>
+  <script type="application/x-javascript" 
+    src="chrome://attachmentextractor_cont/content/aec_listener_menus.js"/>
 
   <toolbarpalette id="MailToolbarPalette">
-    <toolbarbutton id="attachmentextractor-toolbarbutton" 
+
+    <toolbarbutton id="aec-toolbarButton" 
       class="toolbarbutton-1" 
+      type="menu-button" 
+      is="toolbarbutton-menu-button" 
       label="&attachmentextractor.toolbarbutton.label;" 
-      type="menu-button"
-      is="toolbarbutton-menu-button"
       tooltiptext="&attachmentextractor.toolbarbutton.tooltip2;" 
       command="cmd_aec_extractToDefault">
-      <menupopup id="attachmentextractor-toolbarbutton_popup" 
-        onpopupshowing="attachmentextractor.updateMRUVisability(event)">
-        <menuitem id="menu_aec_extractToFolder_toolbar" 
-          label="&attachmentextractor.extracttofolder.label;" 
-          accesskey="&attachmentextractor.extracttofolder.accesskey;" 
-          aec_mru_menuitem="NONMRU" 
-          command="cmd_aec_extractToFolder" />
-        <menu id="menu_aec_extractToFolder_toolbar_menu" 
-          label="&attachmentextractor.extracttofolder.label;" 
-          accesskey="&attachmentextractor.extracttofolder.accesskey;" 
-          aec_mru_menuitem="MRU" 
-          command="cmd_aec_extractToFolder_menu">
-          <menupopup id="menu_aec_extractToFolder_toolbar_menu-Popup" 
-            onpopupshowing="attachmentextractor.updateMRUList(this)" 
-            browseText="&attachmentextractor.mrubrowsetext;" 
+
+      <menupopup id="aec-toolbarButtonPopup"
+        onpopupshowing="attachmentextractor.updatePopupMenus()" >
+
+        <menuitem id="menu_aec_extractToBrowse_toolbar" 
+          label="&attachmentextractor.browse.label;" 
+          accesskey="&attachmentextractor.browse.accesskey;" 
+          command="cmd_aec_extractToBrowse" />
+
+        <menu id="menu_aec_extractToFavorite_toolbar" 
+          label="&attachmentextractor.extractToFavoritefolders.label;" 
+          accesskey="&attachmentextractor.extractToFavoritefolders.accesskey;">
+          <menupopup id="menu_aec_extractFavoritefolder_toolbar-Popup" 
+            onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
             paramAll="false" 
-            paramPattern="false"/>
+            paramPattern="false" />
         </menu>
+
+        <menu id="menu_aec_extractToMRU_toolbar" 
+          label="&attachmentextractor.extractToMRUfolders.label;" 
+          accesskey="&attachmentextractor.extractToMRUfolders.accesskey;">
+          <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
+            onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
+            paramAll="false" 
+            paramPattern="false" />
+        </menu>
+
         <menuitem id="menu_aec_extractToSuggest_toolbar" 
-          label="&attachmentextractor.extracttosuggest.label;" 
-          accesskey="&attachmentextractor.extracttosuggest.accesskey;" 
+          label="&attachmentextractor.extractToSuggestfolders.label;" 
+          accesskey="&attachmentextractor.extractToSuggestfolders.accesskey;" 
           command="cmd_aec_extractToSuggest" />
-        <menuitem id="menu_aec_extractPatternDefault_toolbar" 
-          label="&attachmentextractor.extractpattern.label;" 
-          accesskey="&attachmentextractor.extractpattern.accesskey;" 
-          aec_mru_menuitem="NONMRU" 
-          command="cmd_aec_extractPatternDefault" />
-        <menuitem id="menu_aec_extractPatternFolder_toolbar" 
-          label="&attachmentextractor.extractpatternfolder.label;" 
-          accesskey="&attachmentextractor.extractpatternfolder.accesskey;" 
-          aec_mru_menuitem="NONMRU" 
-          command="cmd_aec_extractPatternFolder" />
-        <menu id="menu_aec_extractPatternFolder_toolbar_menu" 
-          label="&attachmentextractor.extractpatternfolder.label;" 
-          accesskey="&attachmentextractor.extractpatternfolder.accesskey;" 
-          aec_mru_menuitem="MRU" 
-          command="cmd_aec_extractPatternFolder_menu">
-          <menupopup id="menu_aec_extractPatternFolder_toolbar_menu-Popup" 
-            onpopupshowing="attachmentextractor.updateMRUList(this)" 
-            browseText="&attachmentextractor.mrubrowsetext;" 
-            paramAll="false" 
-            paramPattern="true">
-            <menuitem id="menu_aec_extractPatternDefault_toolbar" 
-              label="&attachmentextractor.mru.default.label;" 
-              accesskey="&attachmentextractor.mru.default.accesskey;" 
-              aec_mru_menuitem="MRU" 
-              command="cmd_aec_extractPatternDefault" />
-            <menuseparator aec_mru_menuitem="MRU"/>
-          </menupopup>
-        </menu>
+
+        <menuseparator/>
+
+        <menuitem id="menu_aec_justDeleteAttachments_toolbar" 
+          label="&attachmentextractor.justDeleteAttachments.label;" 
+          accesskey="&attachmentextractor.justDeleteAttachments.accesskey;" 
+          command="cmd_aec_justDeleteAttachments" />
+
       </menupopup>
     </toolbarbutton>
   </toolbarpalette>

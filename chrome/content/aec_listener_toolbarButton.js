@@ -57,10 +57,7 @@ var aecButtonStatus = {
     // console.log("aec ----------------");
     // console.log("aec enableButtons");
 
-    // we MUST use removeAttribute("disabled")
-    // setAttribute to false leads to problems in tabbar-toolbar
-
-    let aecToolbarButton = document.getElementById("attachmentextractor-toolbarbutton");
+    let aecToolbarButton = document.getElementById("aec-toolbarButton");
     if (aecToolbarButton)
       aecToolbarButton.removeAttribute("disabled");
   },
@@ -69,7 +66,7 @@ var aecButtonStatus = {
     // console.log("aec ----------------");
     // console.log("aec disableButtons");
 
-    let aecToolbarButton = document.getElementById("attachmentextractor-toolbarbutton");
+    let aecToolbarButton = document.getElementById("aec-toolbarButton");
     if (aecToolbarButton)
       aecToolbarButton.setAttribute("disabled", true);
   },

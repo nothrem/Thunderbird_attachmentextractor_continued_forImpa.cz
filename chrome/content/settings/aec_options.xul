@@ -131,13 +131,11 @@
                       <vbox>
                         <button id="addFavoritefolderButton" 
                           oncommand="wdw_aecOptions.addFavoriteFolder();" 
-                          label="&addButton.label;"
-                          accesskey="&addButton.accesskey;"/>
+                          label="&attachmentextractor.settings.favoritefolder.addbutton.label;"/>
                         <button id="removeFavoritefolderButton" 
                           disabled="true" 
                           oncommand="wdw_aecOptions.removeFavoriteFolder();" 
-                          label="&removeButton.label;"
-                          accesskey="&removeButton.accesskey;"/>
+                          label="&attachmentextractor.settings.favoritefolder.clearbutton.label;"/>
                       </vbox>
                     </hbox>
                   </groupbox>
@@ -160,13 +158,11 @@
                       <vbox>
                         <button id="addSuggestfolderButton" 
                           oncommand="wdw_aecOptions.addSuggestFolder();" 
-                          label="&addButton.label;"
-                          accesskey="&addButton.accesskey;"/>
+                          label="&attachmentextractor.settings.suggestfolder.addbutton.label;"/>
                         <button id="removeSuggestfolderButton" 
                           disabled="true" 
                           oncommand="wdw_aecOptions.removeSuggestFolder();" 
-                          label="&removeButton.label;"
-                          accesskey="&removeButton.accesskey;"/>
+                          label="&attachmentextractor.settings.suggestfolder.clearbutton.label;"/>
                       </vbox>
                     </hbox>
                   </groupbox>

@@ -12,6 +12,8 @@ var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
+var FileUtils = Cu.import("resource://gre/modules/FileUtils.jsm").FileUtils;
+
 if (typeof AttachmentExtractor === "undefined") {
   function AttachmentExtractor() {
     /* constants */
@@ -93,6 +95,14 @@ if (typeof AttachmentExtractor === "undefined") {
 
   AttachmentExtractor.prototype.doAttachmentextraction = function(event,
     savelocation, all, fnp, index) {
+
+    aedump('{function:AttachmentExtractor.doAttachmentextraction}\n',2);
+    aedump("event: " + event + "\n");
+    aedump("savelocation: " + savelocation + "\n");
+    aedump("all: " + all + "\n");
+    aedump("fnp: " + fnp + "\n");
+    aedump("index: " + index + "\n");
+
     var folder = null;
     savelocation = savelocation + "";
     var messages = (all) ? this.collectMessagesFromFolder((all === 2)) : this
@@ -100,24 +110,28 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("messages: " + messages + "\n");
     //aedump("//ae: saveselect: "+saveselect+" all: "+all+"\n");
     switch (savelocation) {
-      case "default":
-        folder = this.getDefaultSaveFolder();
-        break;
-      case "suggest":
-        folder = this.getSuggestedSaveFolder(messages);
-        break;
       case "deleteAtt":
         this.startAttachmentextraction(null, messages, null, false, true);
         break;
       case "browse":
-        folder = this.getSaveFolder("messenger.save.dir", true);
+        folder = this.getSaveFolder("messenger.save.dir", true, "");
+        if (folder) this.addToMRUList(folder);
+        break;
+      case "default":
+        folder = this.getDefaultSaveFolder();
         if (folder) this.addToMRUList(folder);
         break;
       case "favorite":
         folder = this.useFavoritefolder(index);
+        if (folder) this.addToMRUList(folder);
         break;
       case "mru":
         folder = this.useMRU(index);
+        break;
+      case "suggest":
+        folder = this.getSuggestedSaveFolder(messages);
+        if (folder) this.addToMRUList(folder);
+        break;
     }
     if (folder) this.startAttachmentextraction(folder, messages, fnp, false,
       false);
@@ -125,6 +139,13 @@ if (typeof AttachmentExtractor === "undefined") {
 
   AttachmentExtractor.prototype.doIndividualAttachmentextraction = function(
     savelocation, mode, fnp, index) {
+    
+    aedump('{function:AttachmentExtractor.doIndividualAttachmentextraction}\n',2);
+    aedump("savelocation: " + savelocation + "\n");
+    aedump("mode: " + mode + "\n");
+    aedump("fnp: " + fnp + "\n");
+    aedump("index: " + index + "\n");
+
     var attachments;
     switch (mode) {
       case "selected":
@@ -133,9 +154,6 @@ if (typeof AttachmentExtractor === "undefined") {
       case "all":
         attachments = currentAttachments;
         break;
-      case "context":
-        attachments = this.getContextAttachment();
-        break;
       default:
     }
     //if (!attachments) return;
@@ -143,21 +161,25 @@ if (typeof AttachmentExtractor === "undefined") {
     savelocation = savelocation + "";
     aedump("//ae: attachments: " + attachments + " \n");
     switch (savelocation) {
+      case "browse":
+        folder = this.getSaveFolder("messenger.save.dir", true, "");
+        if (folder) this.addToMRUList(folder);
+        break;
       case "default":
         folder = this.getDefaultSaveFolder();
-        break;
-      case "suggest":
-        folder = this.getSuggestedSaveFolder(this.getSelectedMessages());
-        break;
-      case "browse":
-        folder = this.getSaveFolder("messenger.save.dir", true);
         if (folder) this.addToMRUList(folder);
         break;
       case "favorite":
         folder = this.useFavoritefolder(index);
+        if (folder) this.addToMRUList(folder);
         break;
       case "mru":
         folder = this.useMRU(index);
+        break;
+      case "suggest":
+        folder = this.getSuggestedSaveFolder(messages);
+        if (folder) this.addToMRUList(folder);
+        break;
       }
     //aedump("folder: "+folder);
     if (folder) aewindow.createAEIndTask(folder, this.getSelectedMessages()[
@@ -324,38 +346,25 @@ if (typeof AttachmentExtractor === "undefined") {
     /*else return gDBView.getMsgHdrsForSelection();*/
   }
 
-  AttachmentExtractor.prototype.getContextAttachment = function() {
-    function compareURL(urlA, urlB) {
-      if (urlA === urlB) return true;
-      //aedump("AE: Comparing1: "+urlA+" and "+urlB+"\n",3);
-      var partsA = urlA.split('&').filter(function(p) {
-        return (p.indexOf("mailbox") === 0) || (p.indexOf("part") === 0);
-      });
-      partsA.sort();
-      var partsB = urlB.split('&').filter(function(p) {
-        return (p.indexOf("mailbox") === 0) || (p.indexOf("part") === 0);
-      });
-      partsB.sort();
-      if (partsA.length === 0 || partsB.length === 0) return false;
-      //aedump("AE: Comparing2: "+decodeURIComponent(partsA.join('&'))+" and "+decodeURIComponent(partsB.join('&'))+"\n",3);
-      return (decodeURIComponent(partsA.join('&')) === decodeURIComponent(
-        partsB.join('&')));
-    }
-    for (let i = 0; i < currentAttachments.length; i++) {
-      //aedump("AE: Comparing0: "+gContextMenu.imageURL+" and "+currentAttachments[i].resource+"\n",3);
-      if (gContextMenu.imageURL.indexOf("resource") === 0 &&
-        currentAttachments[i].resource && (gContextMenu.imageURL ===
-          currentAttachments[i].resource)) return [currentAttachments[i]];
-      if (compareURL(gContextMenu.imageURL, currentAttachments[i].url))
-      return [currentAttachments[i]];
-    }
-    return [];
-  }
-
-  AttachmentExtractor.prototype.getSaveFolder = function(pref, updatepref) {
+  AttachmentExtractor.prototype.getSaveFolder = function(pref, updatepref, branch) {
     var fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
-    var windowTitle = this.aeStringBundle.GetStringFromName(
-      "FolderPickerDialogTitle");
+
+    switch (pref) {
+      case "defaultsavepath":
+        var branch = "extensions.attachmentextractor_cont.";
+        windowTitle = this.aeStringBundle.GetStringFromName(
+          "FolderPickerDialogTitleDefaultSavePath");
+        break;
+      case "autoextract.savepath":
+        var branch = "extensions.attachmentextractor_cont.";
+        windowTitle = this.aeStringBundle.GetStringFromName(
+          "FolderPickerDialogTitleDefaultAutoextractPath");
+        break;
+      default:
+        windowTitle = this.aeStringBundle.GetStringFromName(
+          "FolderPickerDialogTitle");
+      }
+
     try {
       fp.init(window, windowTitle, Ci.nsIFilePicker.modeGetFolder);
       aedump("getSaveFolder pref: " + pref + "\n");
@@ -380,7 +389,7 @@ if (typeof AttachmentExtractor === "undefined") {
         thread.processNextEvent(true);
       }
       dir = fp.file.path;
-      if (updatepref) this.prefs.setFile(pref, dir, "");
+      if (updatepref) this.prefs.setFile(pref, dir, branch);
       return dir;
       //
       // end of the lazy file picker method
@@ -390,18 +399,20 @@ if (typeof AttachmentExtractor === "undefined") {
   };
 
   AttachmentExtractor.prototype.getDefaultSaveFolder = function() {
+    aedump('{function:AttachmentExtractor.getDefaultSaveFolder}\n',2);
     if (this.prefs.hasUserValue("defaultsavepath")) {
-      return this.prefs.getFile("defaultsavepath");
-    } else if (this.prefs.get("browser.download.useDownloadDir", "") &&
-      this.prefs.hasUserValue("browser.download.defaultFolder", "")) {
-      return this.prefs.get("browser.download.defaultFolder", "");
-    } else return this.prefs.get("messenger.save.dir");
+      return this.prefs.get("defaultsavepath");
+    } else {
+      return this.getSaveFolder("defaultsavepath", true);
+    }
   };
 
   AttachmentExtractor.prototype.getAutoSaveFolder = function() {
     if (this.prefs.hasUserValue("autoextract.savepath")) {
       return this.prefs.getFile("autoextract.savepath");
-    } else return this.getDefaultSaveFolder();
+    } else {
+      return this.getSaveFolder("autoextract.savepath", true);
+    }
   };
 
   AttachmentExtractor.prototype.getSuggestedSaveFolder = function(messages) {
@@ -438,13 +449,6 @@ if (typeof AttachmentExtractor === "undefined") {
       return numMatches;
     }
 
-    if (!this.prefs.hasUserValue("suggestfolder.parent.1")) {
-      var ww = Cc["@mozilla.org/embedcomp/window-watcher;1"].getService(Ci
-        .nsIWindowWatcher);
-      ww.openWindow(null,
-        'chrome://attachmentextractor_cont/content/settings/aec_prefs_general_suggest.xul',
-        "", 'chrome,resizable,toolbar,modal', null);
-    }
     if (!this.prefs.hasUserValue("suggestfolder.parent.1")) return false;
 
     var nodupes = this.prefs.get("suggestfolder.disregardduplicates");
@@ -466,9 +470,6 @@ if (typeof AttachmentExtractor === "undefined") {
       try {
         var folder = ps.getStringPref("suggestfolder.parent." + pfc);
 
-        // since Tb 52 (or prior?) this 'folder' must be tweakt with FileUtils
-        let FileUtils = Cu.import("resource://gre/modules/FileUtils.jsm")
-          .FileUtils;
         folder = new FileUtils.File(folder);
 
         aedump("Match folders and keywords: folder:          " + folder +
@@ -527,8 +528,8 @@ if (typeof AttachmentExtractor === "undefined") {
       "",
       "chrome, dialog, modal", matchedFolders, out);
     if (out.browse) {
-      return this.addToMRUList(this.getSaveFolder("messenger.save.dir",
-      true));
+      return this.addToMRUList(
+        this.getSaveFolder("messenger.save.dir", true, ""));
     }
     if (out.selectedIndex !== -1) {
       return matchedFolders[out.selectedIndex].f;
@@ -547,7 +548,7 @@ if (typeof AttachmentExtractor === "undefined") {
     var out = {
       value: false
     };
-    // 		
+    // 
     window.openDialog(
       "chrome://attachmentextractor_cont/content/aec_dialog_filenamePattern.xul",
       "",
@@ -586,22 +587,19 @@ if (typeof AttachmentExtractor === "undefined") {
         attachmentextractor.prefs.get("savepathmru.count") + 1
         ); //clear any extra mru slots.
 
-      var t;
-      if ((t = document.getElementById('folderPaneContext'))) t
-        .addEventListener('popupshowing', attachmentextractor
-          .updateMRUVisability, false);
-      if ((t = document.getElementById('threadPaneContext'))) t
-        .addEventListener('popupshowing', attachmentextractor
-          .updateMRUVisability, false); //tb2 + tb3b1
-      if ((t = document.getElementById('mailContext'))) t.addEventListener(
-        'popupshowing', attachmentextractor.updateMRUVisability, false
-        ); //tb3>=b2
-
-      if ((t = document.getElementById('messageMenuPopup'))) t
-        .addEventListener('popupshowing', attachmentextractor
-          .updateMRUVisability, false);
-
-      document.getElementById('folderTree').addEventListener('select',
+        var t;
+        if ((t = document.getElementById('folderPaneContext'))) t
+          .addEventListener('popupshowing', attachmentextractor
+            .updateMRUVisability, false);
+        if ((t = document.getElementById('mailContext'))) t.addEventListener(
+          'popupshowing', attachmentextractor.updateMRUVisability, false
+          );
+  
+        if ((t = document.getElementById('messageMenuPopup'))) t
+          .addEventListener('popupshowing', attachmentextractor
+            .updateMRUVisability, false);
+  
+        document.getElementById('folderTree').addEventListener('select',
         attachmentextractor.updateAECommands, false);
       document.getElementById('threadTree').addEventListener('select',
         attachmentextractor.updateAECommands, false);
@@ -612,7 +610,7 @@ if (typeof AttachmentExtractor === "undefined") {
   };
 
   AttachmentExtractor.prototype.updateAECommands = function() {
-    //aedump('{function:AttachmentExtractor.updateAECommands}\n',2);
+    aedump('{function:AttachmentExtractor.updateAECommands}\n',2);
     var view = gDBView;
 
     if (view) document.getElementById('aec_commandset_folder')
@@ -625,31 +623,33 @@ if (typeof AttachmentExtractor === "undefined") {
       'disabled', 'true');
   };
 
-  AttachmentExtractor.prototype.buildFavoritefolderMenu = function(parent) {
-    aedump('{function:AttachmentExtractor.buildFavoritefolderMenu}\n',2);
+  AttachmentExtractor.prototype.updateFavoriteMenuItems = function(parent) {
+    aedump('{function:AttachmentExtractor.updateFavoriteMenuItems}\n',2);
 
     var prefs = Services.prefs.getBranch(
       "extensions.attachmentextractor_cont.");
 
+    // clear the old menuitems
     var children = parent.childNodes;
-    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
-      "paramPattern") === "true") ? "Pattern" : "");
-    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
-      "IndividualAttachmentextraction('favorite', " + parent.getAttribute(
-      "paramAll") + ", '#');"
-    else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
-      "paramAll") + ", '#');"
-
     for (let i = children.length - 1; i >= 0; i--) {
       // aedump("remove Favorite-child-number: " + i + "\n", 2);
       if (children[i].getAttribute("aec_favoritefolder_menuitem") === 
         "GENERATED") parent.removeChild(children[i]);
     }
 
+    // we proceed here and build the new menuitems
+    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
+      "paramPattern") === "true") ? "Pattern" : "");
+    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
+      "IndividualAttachmentextraction('favorite', " + parent.getAttribute(
+      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+    else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
+      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+    
     var obj = {};
     prefs.getChildList("favoritefolder.", obj);
     var count = obj.value;
-    // aedump("favoritefolder obj.value = count: " + count + "\n", 2);
+    // aedump("favoritefolder count = favoriteObj.value: " + count + "\n", 2);
 
     for (let i = 1; i <= count; i++) {
       var accesskey = i-1;
@@ -672,12 +672,12 @@ if (typeof AttachmentExtractor === "undefined") {
       if (i <= 10)
         folderlabel = "(" + accesskey + ") " + folderpath;
       else
-        folderlabel = "    " + folderpath;
+        folderlabel = "      " + folderpath; // 6 spaces to be in line
       menuitem.setAttribute('label', folderlabel);
       menuitem.setAttribute('tooltiptext', folderpath);
       parent.appendChild(menuitem);
     }
-    // aedump('{end of function:AttachmentExtractor.buildFavoritefolderMenu}\n',2);
+    // aedump('{end of function:AttachmentExtractor.updateFavoriteMenuItems}\n',2);
   };
 
   AttachmentExtractor.prototype.useFavoritefolder = function(index) {
@@ -689,68 +689,151 @@ if (typeof AttachmentExtractor === "undefined") {
       return path;
   }
 
-  AttachmentExtractor.prototype.updateMRUVisability = function(event) {
-    aedump('{function:AttachmentExtractor.updateMRUVisability}\n',2);
-    var mru = attachmentextractor.prefs.get("savepathmru");
-    var onImage = false;
-    try {
-      onImage = ((new nsContextMenu(event.target)).onImage);
-    } catch (e) {
-      aedump(e);
+  AttachmentExtractor.prototype.updatePopupMenus = function(event) {
+    aedump('{function:AttachmentExtractor.updatePopupMenus}\n',2);
+
+    var prefs = Services.prefs.getBranch(
+      "extensions.attachmentextractor_cont.");
+
+    // -----  En-/Disable favorite folder submenu -----
+    var favoriteObj = {};
+    prefs.getChildList("favoritefolder.", favoriteObj);
+    var favoriteCount = favoriteObj.value;
+    aedump("favoritefolder count = favoriteObj.value: " + favoriteCount + "\n", 2);
+
+    var favoriteItems = [
+      "menu_aec_extractToFavorite_toolbar",
+      "menu_aec_extractToFavorite_messageMenu",
+      "menu_aec_extractToFavorite_mailContext",
+      "menu_aec_extractAllToFavorite_fileMenu",
+      "menu_aec_extractDeepToFavorite_fileMenu",
+      "menu_aec_extractAllToFavorite_folderPaneContext",
+      "menu_aec_extractDeepToFavorite_folderPaneContext",
+      "menu_aec_extractToFavorite_attachmentSaveAllMultiple",
+      "menu_aec_extractToFavorite_attachmentSaveAllSingle",
+      "menu_aec_extractToFavorite_attachmentListContext",
+      "menu_aec_extractToFavorite_attachmentItemContext"
+    ];
+
+    for (let i = 0; i < favoriteItems.length; i++) { 
+      try {
+        if (favoriteCount === 0)
+          document.getElementById(favoriteItems[i]).setAttribute("disabled", "true");
+        else
+          document.getElementById(favoriteItems[i]).removeAttribute("disabled");
+      } catch {}
     }
-    // aedump("// onImage "+onImage+"\n");
 
-    var children = event.target.childNodes;
-    var chattr;
-    for (let i = 0; i < children.length; i++) {
-      if (!children[i]) continue;
+    // -----  En-/Disable mru folder submenu -----
+    var mruObj = {};
+    prefs.getChildList("savepathmrufolder.", mruObj);
+    var mruCount = mruObj.value;
+    aedump("mrufolder count = mruObj.value: " + mruCount + "\n", 2);
+    var mruEnabled = Services.prefs.getBoolPref(
+      "extensions.attachmentextractor_cont.savepathmru");
 
-      if ((chattr = children[i].getAttribute("aec_image_menuitem"))) {
-        if ((onImage && chattr === "IMAGE") || (!onImage && chattr ===
-            "NONIMAGE")) {
-          children[i].removeAttribute('hidden');
-          // aedump("// unhiding aec_image_menuitem "+children[i].id+"\n");
-        } else if ((onImage && chattr === "NONIMAGE") || (!onImage && chattr ===
-            "IMAGE")) {
-          children[i].setAttribute('hidden', true);
-          // aedump("// hiding aec_image_menuitem"+children[i].id+"\n");
-          continue;
-        }
-      }
+    var mruItems = [
+      "menu_aec_extractToMRU_toolbar",
+      "menu_aec_extractToMRU_messageMenu",
+      "menu_aec_extractToMRU_mailContext",
+      "menu_aec_extractAllToMRU_fileMenu",
+      "menu_aec_extractDeepToMRU_fileMenu",
+      "menu_aec_extractAllToMRU_folderPaneContext",
+      "menu_aec_extractDeepToMRU_folderPaneContext",
+      "menu_aec_extractToMRU_attachmentSaveAllMultiple",
+      "menu_aec_extractToMRU_attachmentSaveAllSingle",
+      "menu_aec_extractToMRU_attachmentListContext",
+      "menu_aec_extractToMRU_attachmentItemContext"
+    ];
 
-      if ((chattr = children[i].getAttribute("aec_mru_menuitem"))) {
-        if ((mru && chattr === "MRU") || (!mru && chattr === "NONMRU")) {
-          children[i].removeAttribute('hidden');
-          // aedump("// unhiding aec_mru_menuitem "+children[i].id+"\n");
-        } else if ((mru && chattr === "NONMRU") || (!mru && chattr === "MRU")) {
-          children[i].setAttribute('hidden', true);
-          // aedump("// hiding aec_mru_menuitem "+children[i].id+"\n");
-        }
-      }
+    for (let i = 0; i < mruItems.length; i++) { 
+      try {
+        if ((mruCount === 0) || (!mruEnabled))
+          document.getElementById(mruItems[i]).setAttribute("disabled", "true");
+        else
+          document.getElementById(mruItems[i]).removeAttribute("disabled");
+      } catch {}
     }
-    // aedump('{end of function:AttachmentExtractor.updateMRUVisability}\n',2);
+
+    // -----  En-/Disable suggest folder menuitem -----
+    var suggestObj = {};
+    prefs.getChildList("suggestfolder.parent.", suggestObj);
+    var suggestCount = suggestObj.value;
+    aedump("suggestfolder count = suggestObj.value: " + suggestCount + "\n", 2);
+
+    var suggestItems = [
+      "menu_aec_extractToSuggest_toolbar",
+      "menu_aec_extractToSuggest_messageMenu",
+      "menu_aec_extractToSuggest_mailContext",
+      "menu_aec_extractAllToSuggest_fileMenu",
+      "menu_aec_extractDeepToSuggest_fileMenu",
+      "menu_aec_extractAllToSuggest_folderPaneContext",
+      "menu_aec_extractDeepToSuggest_folderPaneContext",
+      "menu_aec_extractToSuggest_attachmentSaveAllMultiple",
+      "menu_aec_extractToSuggest_attachmentSaveAllSingle",
+      "menu_aec_extractToSuggest_attachmentListContext",
+      "menu_aec_extractToSuggest_attachmentItemContext"
+    ];
+
+    for (let i = 0; i < suggestItems.length; i++) { 
+      try {
+        if (suggestCount === 0)
+          document.getElementById(suggestItems[i]).setAttribute("disabled", "true");
+        else
+          document.getElementById(suggestItems[i]).removeAttribute("disabled");
+      } catch {}
+    }
+
   };
 
-  AttachmentExtractor.prototype.updateMRUList = function(parent) {
-    aedump('{function:AttachmentExtractor.updateMRUList}\n',2);
+  AttachmentExtractor.prototype.onShowAttachmentContextMenu = function(event) {
+    aedump('{function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
+    var attachmentList = document.getElementById('attachmentList');
+
+    var canOpen = false;
+    if (document.getElementById('context-saveAttachment').getAttribute(
+        'disabled') !== "true") {
+      for (let i = 0; i < attachmentList.selectedItems.length && !
+        canOpen; i++) {
+        canOpen = !attachmentList.selectedItems[i].attachment
+          .isExternalAttachment;
+        aedump(" * "+attachmentList.selectedItems[i].attachment.isExternalAttachment);
+      } aedump(" post: "+canOpen+" | "+attachmentList.selectedItems.length+"\n");
+    } 
+    aedump("//canOpen: "+canOpen+"\n");  
+    if (canOpen) document.getElementById('aec_commandset_ind')
+      .removeAttribute('disabled');
+    else document.getElementById('aec_commandset_ind').setAttribute(
+      'disabled', "true");
+
+    aedump('{end of function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
+  };
+
+  AttachmentExtractor.prototype.updateMRUMenuItems = function(parent) {
+    aedump('{function:AttachmentExtractor.updateMRUMenuItems}\n',2);
     var ps = attachmentextractor.prefs.prefService.getBranch(
       "extensions.attachmentextractor_cont.");
-    if (!ps.getBoolPref("savepathmru")) return;
-
+    
+    // clear the old menuitems
     var children = parent.childNodes;
-    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
-      "paramPattern") === "true") ? "Pattern" : "");
-    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
-      "IndividualAttachmentextraction('mru'," + parent.getAttribute(
-      "paramAll") + ", '#');"
-    else oncommand += "Attachmentextraction(event,'mru'," + parent.getAttribute(
-      "paramAll") + ", '#');"
-
     for (let i = children.length - 1; i >= 0; i--) {
       // aedump("remove MRU-child-number: " + i + "\n", 2);
       if (children[i].getAttribute("aec_mru_menuitem") === "GENERATED") parent
         .removeChild(children[i]);
     }
+
+    // if savepathmru is disabled do not build the new menuitems
+    if (!ps.getBoolPref("savepathmru")) return;
+
+    // if savepathmru is enabled we proceed here and build the new menuitems
+    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
+      "paramPattern") === "true") ? "Pattern" : "");
+    if (parent.getAttribute("paramIndividual") === "true") oncommand +=
+      "IndividualAttachmentextraction('mru'," + parent.getAttribute(
+      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+    else oncommand += "Attachmentextraction(event,'mru'," + parent.getAttribute(
+      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+
     var count = ps.getIntPref("savepathmru.count");
     for (let i = 1; i <= count; i++) {
       var accesskey = i-1;
@@ -768,41 +851,18 @@ if (typeof AttachmentExtractor === "undefined") {
       menuitem.setAttribute("command", "");
       menuitem.setAttribute("aec_mru_menuitem", "GENERATED");
       menuitem.setAttribute("oncommand", oncommand.replace(/#/, i));
-      var folderpath = (ps.prefHasUserValue("savepathmru." + i)) ? 
-        ps.getStringPref("savepathmru." + i) : null;
+      var folderpath = (ps.prefHasUserValue("savepathmrufolder." + i)) ? 
+        ps.getStringPref("savepathmrufolder." + i) : null;
       if (!folderpath || folderpath === "") folderpath = "< ... >";
       if (i <= 10)
         folderlabel = "(" + accesskey + ") " + folderpath;
       else
-        folderlabel = "    " + folderpath;
+        folderlabel = "      " + folderpath; // 6 spaces to be in line
       menuitem.setAttribute('label', folderlabel);
       menuitem.setAttribute('tooltiptext', folderpath);
       parent.appendChild(menuitem);
     }
-    // aedump('{end of function:AttachmentExtractor.updateMRUList}\n',2);
-  };
-
-  AttachmentExtractor.prototype.onShowAttachmentContextMenu = function(event) {
-    aedump('{function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
-    var attachmentList = document.getElementById('attachmentList');
-
-    var canOpen = false;
-    if (document.getElementById('context-saveAttachment').getAttribute(
-        'disabled') !== "true") {
-      for (let i = 0; i < attachmentList.selectedItems.length && !
-        canOpen; i++) {
-        canOpen = !attachmentList.selectedItems[i].attachment
-          .isExternalAttachment;
-        //aedump(" * "+attachmentList.selectedItems[i].attachment.isExternalAttachment);
-      } //aedump(" post: "+canOpen+" | "+attachmentList.selectedItems.length+"\n");
-    } //aedump("//canOpen: "+canOpen+"\n");  
-    if (canOpen) document.getElementById('aec_commandset_ind')
-      .removeAttribute('disabled');
-    else document.getElementById('aec_commandset_ind').setAttribute(
-      'disabled', "true");
-
-    attachmentextractor.updateMRUVisability(event);
-    // aedump('{end of function:AttachmentExtractor.onShowAttachmentContextMenu}\n',2);
+    // aedump('{end of function:AttachmentExtractor.updateMRUMenuItems}\n',2);
   };
 
   AttachmentExtractor.prototype.addToMRUList = function(path) {
@@ -810,17 +870,17 @@ if (typeof AttachmentExtractor === "undefined") {
     var ps = this.prefs.aeBranch;
     if (!ps.getBoolPref("savepathmru") || !path) return path;
     var count = ps.getIntPref("savepathmru.count");
-    var old = (ps.prefHasUserValue("savepathmru.1")) ? ps.getStringPref(
-      "savepathmru.1") : null;
+    var old = (ps.prefHasUserValue("savepathmrufolder.1")) ? ps.getStringPref(
+      "savepathmrufolder.1") : null;
     if (old && (path === old)) return path;
-    ps.setStringPref("savepathmru.1", path);
+    ps.setStringPref("savepathmrufolder.1", path);
     if (!old) return path;
     var prev = old;
     var i = 2;
     for (; i <= count; i++) {
-      old = (ps.prefHasUserValue("savepathmru." + i)) ? ps.getStringPref(
-        "savepathmru." + i) : null;
-      ps.setStringPref("savepathmru." + i, prev);
+      old = (ps.prefHasUserValue("savepathmrufolder." + i)) ? ps.getStringPref(
+        "savepathmrufolder." + i) : null;
+      ps.setStringPref("savepathmrufolder." + i, prev);
       if (!old || (path === old)) break;
       prev = old;
     }
@@ -829,8 +889,8 @@ if (typeof AttachmentExtractor === "undefined") {
 
   AttachmentExtractor.prototype.useMRU = function(index) {
     aedump('{function:AttachmentExtractor.useMRU(' + index + ')}\n', 2);
-    var path = this.prefs.hasUserValue("savepathmru." + index) ? this.prefs
-      .getFile("savepathmru." + index) : null;
+    var path = this.prefs.hasUserValue("savepathmrufolder." + index) ? this.prefs
+      .getFile("savepathmrufolder." + index) : null;
     if (!path) return null;
     return this.addToMRUList(path);
   }
@@ -842,8 +902,8 @@ if (typeof AttachmentExtractor === "undefined") {
     var ps = this.prefs.prefService.getBranch(
       "extensions.attachmentextractor_cont.");
     for (let i = min; i <= max; i++) {
-      if (ps.prefHasUserValue("savepathmru." + i)) ps.clearUserPref(
-        "savepathmru." + i);
+      if (ps.prefHasUserValue("savepathmrufolder." + i)) ps.clearUserPref(
+        "savepathmrufolder." + i);
     }
   };
 
@@ -898,36 +958,36 @@ if (typeof AttachmentExtractor === "undefined") {
   AttachmentExtractor.prototype.createaefolderListener = function() {
     return {
       /*OnItemAdded: function(parentItem, item) {
-		aedump("{function:aefolderlistener.OnItemAdded}\n",3);
-		if (!attachmentextractor.prefs.get("autoextract")) return;
-							   
-		var mail;
-		try{
-			mail=item.QueryInterface(Ci.nsIMsgDBHdr);}
-		catch (e) {return;}
-		var folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
-		if (!(!mail.isRead && (mail.flags & 0x10000))) {
-			//aedump("// not a new mail so don't extract\n",3);
-			return; 
-		}
-		aedump("{function:aefolderlistener.onItemAdded("+folder.prettyName+","+mail.subject+")}\n",2);
-		if (!folder.getMsgDatabase(null).HasAttachments(mail.messageKey)) {
-			aedump("// message has no attachments so ignoring.\n",3);
-			return;
-		}
-		var tagsArray= mail.getStringProperty("keywords").split(" ");
-		var triggerTag=attachmentextractor.prefs.get("autoextract.triggertag");
-		//aedump("[tags array: "+mail.getStringProperty("keywords")+"]\n",0);
-		//aedump("[trigger tag: "+attachmentextractor.prefs.get("autoextract.triggertag")+"]\n",0);
-		if (attachmentextractor.prefs.get("autoextract.ontriggeronly") && (tagsArray.indexOf(triggerTag)===-1) ) {
-			aedump("// only tagged emails and tag doesn't match\n",3);
-			return;
-		}
-		if (attachmentextractor.prefs.get("autoextract.waitforall")) {
-			attachmentextractor.autoUris.push(mail.folder.getUriForMsg(mail));
-		}
-		else attachmentextractor.doSingleBackgroundAttachmentextraction(mail.folder.getUriForMsg(mail));
-	  },*/
+        aedump("{function:aefolderlistener.OnItemAdded}\n",3);
+        if (!attachmentextractor.prefs.get("autoextract")) return;
+                      
+        var mail;
+        try{
+          mail=item.QueryInterface(Ci.nsIMsgDBHdr);}
+        catch (e) {return;}
+        var folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
+        if (!(!mail.isRead && (mail.flags & 0x10000))) {
+          //aedump("// not a new mail so don't extract\n",3);
+          return; 
+        }
+        aedump("{function:aefolderlistener.onItemAdded("+folder.prettyName+","+mail.subject+")}\n",2);
+        if (!folder.getMsgDatabase(null).HasAttachments(mail.messageKey)) {
+          aedump("// message has no attachments so ignoring.\n",3);
+          return;
+        }
+        var tagsArray= mail.getStringProperty("keywords").split(" ");
+        var triggerTag=attachmentextractor.prefs.get("autoextract.triggertag");
+        //aedump("[tags array: "+mail.getStringProperty("keywords")+"]\n",0);
+        //aedump("[trigger tag: "+attachmentextractor.prefs.get("autoextract.triggertag")+"]\n",0);
+        if (attachmentextractor.prefs.get("autoextract.ontriggeronly") && (tagsArray.indexOf(triggerTag)===-1) ) {
+          aedump("// only tagged emails and tag doesn't match\n",3);
+          return;
+        }
+        if (attachmentextractor.prefs.get("autoextract.waitforall")) {
+          attachmentextractor.autoUris.push(mail.folder.getUriForMsg(mail));
+        }
+        else attachmentextractor.doSingleBackgroundAttachmentextraction(mail.folder.getUriForMsg(mail));
+      },*/
 
       OnItemPropertyChanged: function(item, property, oldValue, newValue) {
         //aedump("{function:aefolderlistener.onItemPropertyChanged}\n",3);
@@ -948,17 +1008,17 @@ if (typeof AttachmentExtractor === "undefined") {
       },
 
       /*OnItemRemoved: function(parentItem, item) {
-		if (!attachmentextractor.prefs.get("linkedfiles")) return;  
-		
-		var mail,folder;
-		try{
-			mail=item.QueryInterface(Ci.nsIMsgDBHdr);
-			folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
-		}catch (e) {return;}
-		if (!folder.getFlag( 0x0100) ) return;
-		aedump("{function:OnItemRemoved("+folder.prettyName+","+mail.subject+","+mail.folder.prettyName+")}\n",4);
-		//if (mail.getStringProperty("AEMetaData.savedfiles")!=="") attachmentextractor.deleteLinkedFile(mail);
-	  },*/
+      if (!attachmentextractor.prefs.get("linkedfiles")) return;  
+
+      var mail,folder;
+      try{
+        mail=item.QueryInterface(Ci.nsIMsgDBHdr);
+        folder=parentItem.QueryInterface(Ci.nsIMsgFolder); 
+      }catch (e) {return;}
+      if (!folder.getFlag( 0x0100) ) return;
+      aedump("{function:OnItemRemoved("+folder.prettyName+","+mail.subject+","+mail.folder.prettyName+")}\n",4);
+      //if (mail.getStringProperty("AEMetaData.savedfiles")!=="") attachmentextractor.deleteLinkedFile(mail);
+      },*/
 
       /*
       OnItemIntPropertyChanged: function(item, property, oldValue, newValue) {aedump("{function:OnItemIntPropertyChanged("+argexpand(arguments)+")}\n",4);},

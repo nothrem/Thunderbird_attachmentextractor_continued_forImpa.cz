@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Definições do Extractor de Anexos">
-<!ENTITY attachmentextractor.settings.width "55em">
 <!ENTITY attachmentextractor.settings.homepage.label "Página inicial do Extractor de Anexos com a descrição e características:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Geral">
 <!ENTITY attachmentextractor.settings.normal.caption "-- SEM USO --">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Pastas sugeridas">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Uma pasta pode ser sugerida para extracção nas palavras chave das linhas de assunto das mensagens que selecciona.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorar palavras chave duplicadas ao pontuar as pastas sugeridas?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Pastas que contêm sub-pastas potencias para onde extrair:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palavras chave a excluir:(separadas por vírgulas)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Adicionar…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Limpar">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorar palavras chave duplicadas ao pontuar as pastas sugeridas?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Palavras chave a excluir:(separadas por vírgulas)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Pastas usadas Recentemente">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Activar lista da Pastas usadas Recentemente">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Guarda a última">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Navegar…">
 <!ENTITY attachmentextractor.settings.posttab.label "Após extracção">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Após extrair os anexos deveremos:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "-- SEM USO --">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Acções Externas">
 <!ENTITY attachmentextractor.settings.after-delete.label "Apagar esta mensagem?">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "A">
 <!ENTITY attachmentextractor.settings.after-read.label "Marcar a mensagem como Lida?">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "r">
 <!ENTITY attachmentextractor.settings.filenametab.label "Nomes dos Ficheiros">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Criar padrão do nome do ficheiro:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Clique para adicionar um Token">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Padrão usado para criar nomes de ficheiros">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Padrão usado para duplicar nomes de ficheiros (#conta#):">

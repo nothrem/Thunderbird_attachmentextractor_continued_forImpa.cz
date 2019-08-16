@@ -410,7 +410,7 @@ var aeMessenger = {
         /****** C++ function for reference **************
         // {
         //   int32_t partPos = urlString.FindChar('?');
-        //   if (partPos == kNotFound)
+        //   if (partPos === kNotFound)
         //     return NS_ERROR_FAILURE;
         //   fullMessageUri.Append(Substring(urlString, partPos));
         // }

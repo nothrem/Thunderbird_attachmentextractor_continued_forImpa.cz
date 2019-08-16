@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Trennt Dateianhänge aus gewählten Nachrichten teilautomatisiert ab und kann diese speichern, löschen und mehr"
   },
-  "attachmentextractor.menu.label": {
-    "message": "AttachmentExtractor"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "Abtrennen aus ausgewählten Nachrichten"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "W"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "Abtrennen aus ausgewählten Nachrichten nach…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "Abtrennen in den vorgeschlagenen Datenordner"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "v"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "Abtrennen aus allen Nachrichten des Ordners"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "Abtrennen aus allen Nachrichten des Ordners nach…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "Abtrennen aus allen Nachrichten in Ordner und Unterordner"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "u"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "Abtrennen aus allen Nachrichten in Ordner und Unterordner nach…"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "n"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "Abtrennen aus allen Nachrichten in den vorgeschlagenen Datenordner"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "l"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "Abtrennen mit eigenem Dateinamenmuster"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "D"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "Abtrennen mit eigenem Dateinamenmuster nach…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "E"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "Anhänge ausgewählter Nachrichten löschen"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "R"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "Anhänge aller Nachrichten des Ordners löschen"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor - Einstellungen…"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "Alle Anhänge abtrennen"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "Alle Anhänge abtrennen nach…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "Alle Anhänge abtrennen einschl. Unterordner"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "u"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "Alle Anhänge abtrennen einschl. Unterordner nach…"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "n"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "Alle abtrennen in den vorgeschlagenen Datenordner"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "d"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "Alle abtrennen"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "Alle abtrennen nach…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "Abtrennen"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "E"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "Abtrennen nach…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "B"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "Anhänge abtrennen"
   },
@@ -155,134 +18,44 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "Anhänge von dieser Nachricht abtrennen"
   },
+
   "attachmentextractor.browse.label": {
     "message": "Durchsuchen…"
   },
   "attachmentextractor.browse.accesskey": {
     "message": "D"
   },
-  "attachmentextractor.default.label": {
-    "message": "Standard"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "Dateinamenmuster eingegeben"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "Dateinamenmuster der angehängten Datei bearbeiten:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Dateinamenmuster als Standard festlegen"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Weiteres Dateinamenmerkmal hinzufügen"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - Ordnervorschläge:"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "Ausgewählten Ordner verwenden"
-  },
-  "attachmentextractor.imagetoolbar.label": {
-    "message": "Auswahl umkehren"
-  },
-  "attachmentextractor.imagetoolbar.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.context.extracttodefault.label": {
-    "message": "Ausgewählte Anhänge abtrennen"
-  },
-  "attachmentextractor.context.extracttofolder.label": {
-    "message": "Ausgewählte Anhänge abtrennen nach…"
-  },
-  "attachmentextractor.context.extracttodefault.accesskey": {
-    "message": "W"
-  },
-  "attachmentextractor.context.extracttofolder.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor - Einstellungen"
-  },
-  "attachmentextractor.settings.width": {
-    "message": "50em"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:"
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "Allgemein"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "Abtrennen von Anhängen"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "Speicherort für Anhänge"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "Vorgabe für den Fall, dass bereits eine Datei gleichen Namens besteht:"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "Die bestehende Datei immer mit dem neuen Anhang überschreiben"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "D"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "Die bestehende Datei immer erhalten, Anhang nicht abtrennen"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "Neuen Namen für den Anhang vergeben, um beide Dateien zu behalten"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "Jedes Mal fragen"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "F"
-  },
+
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AEC) Anhang abtrennen nach"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Gewählten Anhang abtrennen"
+    "message": "AE Abtrennen"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AEC) Alle Anhänge abtrennen nach"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Alle Anhänge abtrennen"
+    "message": "AE Alle abtrennen"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AEC) Anhänge der Nachrichten abtrennen nach"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Anhänge der gewählten Nachrichten abtrennen"
+    "message": "AE Abtrennen aus gewählten Nachrichten"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AEC) Anhänge aus Ordnern abtrennen nach"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Anhänge aus allen gewählten Ordnern abtrennen"
+    "message": "AE Abtrennen aus gewählten Ordnern"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AEC) Anhänge abtrennen nach"
+    "message": "AE Anhänge abtrennen"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "r"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Durchsuchen…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Durchsuchen… (inkl. Unterordner)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "h"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Standardordner"
@@ -338,6 +111,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "M"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Anhänge ausgewählter Nachrichten löschen"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Anhänge aller Nachrichten des Ordners löschen"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "O"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Dateinamenmuster eingegeben"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Dateinamenmuster der angehängten Datei bearbeiten:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Dateinamenmuster als Standard festlegen"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Dialog für Dateinamenmuster immer anzeigen"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Weiteres Dateinamenmerkmal hinzufügen"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Ordnervorschläge:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Ausgewählten Ordner verwenden"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor - Einstellungen"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Allgemein"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Speicherort für Anhänge"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Vorgabe für den Fall, dass bereits eine Datei gleichen Namens besteht:"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Die bestehende Datei immer mit dem neuen Anhang überschreiben"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Die bestehende Datei immer erhalten, Anhang nicht abtrennen"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Neuen Namen für den Anhang vergeben, um beide Dateien zu behalten"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Jedes Mal fragen"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "F"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favoritenordner"
   },
@@ -371,8 +229,11 @@
   "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
     "message": "Auszuschließende Schlüsselwörter (durch Komma getrennt):"
   },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Hinzufügen…"
+  },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
-    "message": "Löschen"
+    "message": "Entfernen"
   },
   "attachmentextractor.settings.savepathmru.caption": {
     "message": "Zuletzt verwendete Ordner"
@@ -403,12 +264,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "Vorgänge nach dem Abtrennen:"
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "Thunderbird-Aktion"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "Externe Aktion"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Nachricht löschen"
@@ -635,6 +490,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Dateinamenmuster:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Dialog für Dateinamenmuster immer anzeigen"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "D"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Verwendetes Muster zum Erzeugen von Dateinamen:"
   },
@@ -768,7 +629,7 @@
     "message": "Abtrennvorgang abgeschlossen!"
   },
   "DoneExtractingDialogNotifyAgain": {
-    "message": "Erneut benachrichtigen."
+    "message": "Erneut benachrichtigen"
   },
   "OverwriteDialogTitle": {
     "message": "Datei ist bereits vorhanden!"
@@ -807,7 +668,10 @@
     "message": "Ändern des Dateinamenmusters des Anhangs:"
   },
   "FileNamePatternDialogQuestion": {
-    "message": "Dieses Dateinamenmuster als Standard verwenden."
+    "message": "Dieses Dateinamenmuster als Standard verwenden"
+  },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Dialog für Dateinamenmuster immer anzeigen"
   },
   "ConfirmDetachDialogTitle": {
     "message": "Abtrennen bestätigen"
@@ -858,7 +722,13 @@
     "message": "Anhänge dieser Nachricht wurden schon mit AttachmentExtractor abgetrennt. Sollen diese auch auf Ihrem Computer gelöscht werden?"
   },
   "FolderPickerDialogTitle": {
-    "message": "Ordner auswählen der genutzt werden soll…"
+    "message": "Ordner auswählen, der genutzt werden soll…"
+  },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Standard-Speicherpfad nicht festgelegt - Ordner auswählen, der ab jetzt genutzt werden soll…"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Speicherpfad für Abtrennautomatik nicht festgelegt - Ordner auswählen, der ab jetzt genutzt werden soll…"
   },
   "EmptyLineText": {
     "message": "-- leer --"
@@ -869,6 +739,7 @@
   "FileNamePatternFixMessage": {
     "message": "Eingegebener Dateiname oder Zählungsmuster ist ungültig und könnte zum Programmabbruch von AttachmentExtractor führen.\nÄndern in:\n %1$s?"
   },
+
   "ExtractionStarted": {
     "message": "Abtrennvorgang gestartet [Datum/Uhrzeit: %S]"
   },

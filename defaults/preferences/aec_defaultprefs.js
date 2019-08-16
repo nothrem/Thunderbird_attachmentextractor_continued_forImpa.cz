@@ -13,7 +13,6 @@ pref("extensions.attachmentextractor_cont.savepathmru",true);
 pref("extensions.attachmentextractor_cont.savepathmru.count",5);
 
 pref("extensions.attachmentextractor_cont.suggestfolder",false);
-pref("extensions.attachmentextractor_cont.suggestfolder.parent",true);
 pref("extensions.attachmentextractor_cont.suggestfolder.disregardduplicates",true);
 pref("extensions.attachmentextractor_cont.suggestfolder.excludekeywords",""); 
 pref("extensions.attachmentextractor_cont.suggestfolder.maxmatches",10);

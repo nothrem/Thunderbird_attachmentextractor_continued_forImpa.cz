@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor instellingen">
-<!ENTITY attachmentextractor.settings.width "60em">
 <!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor homepage en beschrijving van mogelijkheden:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Algemeen">
 <!ENTITY attachmentextractor.settings.normal.caption "Bijlage uitpakken">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Gesuggereerde mappen">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Een map waarnaar kan worden uitgepakt kan worden gesuggereerd op basis van de onderwerpregels in de door u geselecteerde berichten.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Dubbele sleutelwoorden negeren bij ordenen gesuggereerde mappen?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "N">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Mappen met mogelijke submappen om naar uit te pakken:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Uit te sluiten sleutelwoorden: (gescheiden door komma’s)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Toevoegen…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Wissen">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Dubbele sleutelwoorden negeren bij ordenen gesuggereerde mappen?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "N">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Uit te sluiten sleutelwoorden: (gescheiden door komma’s)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Meest recent gebruikte mappen">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Lijst met meest recent gebruikte mappen inschakelen.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Laatste">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Bladeren…">
 <!ENTITY attachmentextractor.settings.posttab.label "Na uitpakken">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Moet na het uitpakken van de bijlagen:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Thunderbird acties">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Externe acties">
 <!ENTITY attachmentextractor.settings.after-delete.label "Het bericht worden verwijderd?">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "d">
 <!ENTITY attachmentextractor.settings.after-read.label "Het bericht als gelezen worden gemarkeerd?">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "W">
 <!ENTITY attachmentextractor.settings.filenametab.label "Bestandsnamen">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Bestandsnaampatroon generatie:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik om een token toe te voegen">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Gebruikt patroon voor het aanmaken van bestandsnamen:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Patroon gebruikt voor dubbele bestandsnamen (#count#):">

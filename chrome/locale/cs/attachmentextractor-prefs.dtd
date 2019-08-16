@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšíření AttachmentExtractor">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka rozšíření AttachmentExtractor a popis možností:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Základní">
 <!ENTITY attachmentextractor.settings.normal.caption "Ukládání přílohy">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Doporučené adresáře">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Adresář může být doporučen k uložení příloh na základě klíčových slov obsažených v předmětu zprávy.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorovat zdvojená klíčová slova při hodnocení váhy doporučeného adresáře?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Adresáře obsahující potencionální podadresáře:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ignorovat klíčová slova: (oddělená čárkou)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Přidat…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Smazat">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorovat zdvojená klíčová slova při hodnocení váhy doporučeného adresáře?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ignorovat klíčová slova: (oddělená čárkou)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Poslední cesty ukládání">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Pamatovat si poslední cesty ukládání.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Pamatovat si posledních">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Procházet…">
 <!ENTITY attachmentextractor.settings.posttab.label "Po Uložení">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Po dokončení ukládání:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Thunderbird">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Externí aplikace">
 <!ENTITY attachmentextractor.settings.after-delete.label "Smazat zprávy">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "S">
 <!ENTITY attachmentextractor.settings.after-read.label "Označit zprávy jako přečtené">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "P">
 <!ENTITY attachmentextractor.settings.filenametab.label "Jména souborů">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Šablona jmen souborů:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Přidat příznak">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Šablona pro generování jmen souborů:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Šablona pro generování jmen souborů v případě duplicicty (#count#):">

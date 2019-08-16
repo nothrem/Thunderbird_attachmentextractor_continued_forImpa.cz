@@ -38,7 +38,7 @@ var aecMenuItemStatus = {
 
   setMenuItemStatus: function() {
     try {
-      if ((gFolderDisplay.selectedCount < 1) || 
+      if ((gFolderDisplay.selectedCount < 1) ||        // disable if no message is selected
           (gFolderDisplay.selectedMessageIsFeed) ||    // disable in case of rss feeds
           (gFolderDisplay.selectedMessageIsNews)) {    // disable in case of newsgroups
         // console.log("AEC selected Message is RSS or News or gFolderDisplay.selectedCount < 1");
@@ -58,6 +58,7 @@ var aecMenuItemStatus = {
 
     // we MUST use removeAttribute("disabled")
 
+    // ------ Menu 'Message' ------
     let aecMenuSeparator = document.getElementById("aec-messageMenuPopup-separator");
     if (aecMenuSeparator)
       aecMenuSeparator.removeAttribute("disabled");
@@ -65,12 +66,13 @@ var aecMenuItemStatus = {
     let aecMenuItem = document.getElementById("aec-messageMenuPopup-menu");
     if (aecMenuItem)
       aecMenuItem.removeAttribute("disabled");
-    },
+  },
 
   disableMenuItems: function() {
     // console.log("aec ----------------");
     // console.log("aec disableMenuItems");
 
+    // ------ Menu 'Message' ------
     let aecMenuSeparator = document.getElementById("aec-messageMenuPopup-separator");
     if (aecMenuSeparator)
       aecMenuSeparator.setAttribute("disabled", true);
@@ -78,6 +80,6 @@ var aecMenuItemStatus = {
     let aecMenuItem = document.getElementById("aec-messageMenuPopup-menu");
     if (aecMenuItem)
       aecMenuItem.setAttribute("disabled", true);
-    },
+  },
 
 }

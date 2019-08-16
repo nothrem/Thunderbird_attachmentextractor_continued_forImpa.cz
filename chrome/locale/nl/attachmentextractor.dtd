@@ -1,51 +1,37 @@
-<!ENTITY attachmentextractor.menu.label "Bijlagen uitpakken">
-<!ENTITY attachmentextractor.menu.accesskey "P">
-<!ENTITY attachmentextractor.extracttodefault.label "Uit geselecteerde berichten uitpakken">
-<!ENTITY attachmentextractor.extracttodefault.accesskey "P">
-<!ENTITY attachmentextractor.extracttofolder.label "Uit geselecteerde berichten uitpakken naar…">
-<!ENTITY attachmentextractor.extracttofolder.accesskey "T">
-<!ENTITY attachmentextractor.extractToSuggest.label "Uitpakken naar gesuggereerde bestandsmap">
-<!ENTITY attachmentextractor.extractToSuggest.accesskey "G">
-<!ENTITY attachmentextractor.extractalldefault.label "Uit alle berichten in map uitpakken">
-<!ENTITY attachmentextractor.extractalldefault.accesskey "M">
-<!ENTITY attachmentextractor.extractallfolder.label "Uit alle berichten in map uitpakken naar…">
-<!ENTITY attachmentextractor.extractallfolder.accesskey "A">
-<!ENTITY attachmentextractor.extractdeepdefault.label "Uit alle berichten in map en submappen uitpakken">
-<!ENTITY attachmentextractor.extractdeepdefault.accesskey "S">
-<!ENTITY attachmentextractor.extractdeepfolder.label "Uit alle berichten in map en submappen uitpakken naar…">
-<!ENTITY attachmentextractor.extractdeepfolder.accesskey "U">
-<!ENTITY attachmentextractor.extractalltosuggest.label "Uit alle berichten uitpakken naar gesuggereerde bestandsmap">
-<!ENTITY attachmentextractor.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.extractpattern.label "Uitpakken met een aangepast bestandsnaampatroon">
-<!ENTITY attachmentextractor.extractpattern.accesskey "i">
-<!ENTITY attachmentextractor.extractpatternfolder.label "Uitpakken met een aangepast bestandsnaampatroon naar…">
-<!ENTITY attachmentextractor.extractpatternfolder.accesskey "P">
+<!ENTITY attachmentextractor.toolbarbutton.label "AE uitpakken">
+<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Bijlagen uit geselecteerde berichten uitpakken">
+<!ENTITY attachmentextractor.headerbutton.label "AE uitpakken">
+<!ENTITY attachmentextractor.headerbutton.tooltip "Bijlagen uit geselecteerde berichten uitpakken">
 
-<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Extract Attachment to">
-<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Extract selected Attachment">
-<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Extract all Attachments to">
-<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Extract all Attachments">
-<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Extract Attachments from Messages to">
-<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Extract Attachments from selected Messages">
-<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Extract Attachments from Messages in Folder to">
-<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Extract Attachments from Messages in selected Folders">
-<!ENTITY attachmentextractor.extractTo.label "(AEC) Extract Attachments to">
-<!ENTITY attachmentextractor.extractTo.accesskey "(">
-<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.browse.label "Bladeren…">
+<!ENTITY attachmentextractor.browse.accesskey "B">
+
+<!ENTITY attachmentextractor.extractSingleAttTo.label "AE Extract">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Extract all">
+<!ENTITY attachmentextractor.extractMessagesTo.label "AE Extract from Messages">
+<!ENTITY attachmentextractor.extractFoldersTo.label "AE Extract from Messages in Folders">
+<!ENTITY attachmentextractor.extractTo.label "AE Extract Attachments">
+<!ENTITY attachmentextractor.extractTo.accesskey "x">
+
+<!ENTITY attachmentextractor.extractToBrowse.label "Browse…">
+<!ENTITY attachmentextractor.extractToBrowse.accesskey "B">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.label "Browse… (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.accesskey "r">
+<!ENTITY attachmentextractor.extractToDefault.label "To Default Folder">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "D">
-<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "To Default Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
-<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "To Favorite Folder">
 <!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
-<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "To Favorite Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
-<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "To Most Recently Used Folder">
 <!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
-<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
-<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "To Suggested Folder…">
 <!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
-<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "To Suggested Folder (inc. Subfolders)…">
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
@@ -54,45 +40,15 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "j">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Bijlagen gewoon verwijderen uit alle berichten in de map">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor instellingen">
-<!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
-<!ENTITY attachmentextractor.context.extractalldefault.label "Alle bijlagen uitpakken">
-<!ENTITY attachmentextractor.context.extractalldefault.accesskey "P">
-<!ENTITY attachmentextractor.context.extractallfolder.label "Alle bijlagen uitpakken naar…">
-<!ENTITY attachmentextractor.context.extractallfolder.accesskey "B">
-<!ENTITY attachmentextractor.context.extractdeepdefault.label "Alles uitpakken incl. submappen">
-<!ENTITY attachmentextractor.context.extractdeepdefault.accesskey "S">
-<!ENTITY attachmentextractor.context.extractdeepfolder.label "Alles uitpakken incl. submappen naar…">
-<!ENTITY attachmentextractor.context.extractdeepfolder.accesskey "P">
-<!ENTITY attachmentextractor.context.extractalltosuggest.label "Alles naar gesuggereerde bestandsmap uitpakken">
-<!ENTITY attachmentextractor.context.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.attachment.extracttodefault.label "AE Alles uitpakken">
-<!ENTITY attachmentextractor.attachment.extracttodefault.accesskey "U">
-<!ENTITY attachmentextractor.attachment.extracttofolder.label "AE Alles uitpakken naar…">
-<!ENTITY attachmentextractor.attachment.extracttofolder.accesskey "t">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.label "AE Uitpakken">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.accesskey "A">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.label "AE Uitpakken naar…">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.accesskey "E">
-<!ENTITY attachmentextractor.toolbarbutton.label "AE uitpakken">
-<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Bijlagen uit geselecteerde berichten uitpakken">
-<!ENTITY attachmentextractor.headerbutton.label "AE uitpakken">
-<!ENTITY attachmentextractor.headerbutton.tooltip "Bijlagen uit geselecteerde berichten uitpakken">
-<!ENTITY attachmentextractor.browse.label "Bladeren…">
-<!ENTITY attachmentextractor.browse.accesskey "B">
-<!ENTITY attachmentextractor.default.label "Standaard">
-<!ENTITY attachmentextractor.default.accesskey "S">
+
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Bestandsnaampatroon-ingave">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Pas het bestandsnaampatroon van de bijlage aan:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Patroon vanaf nu als standaard instellen">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik om een token toe te voegen">
+
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Gesuggereerde mappen:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Gesuggereerde mappen gebaseerd op onderwerpregel(s) van geselecteerd(e) bericht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Geselecteerde map gebruiken">
-<!ENTITY attachmentextractor.imagetoolbar.label "Selectie wisselen">
-<!ENTITY attachmentextractor.imagetoolbar.accesskey "W">
-<!ENTITY attachmentextractor.context.extracttodefault.label "Geselecteerde bijlagen uitpakken">
-<!ENTITY attachmentextractor.context.extracttofolder.label "Geselecteerde bijlagen uitpakken naar…">
-<!ENTITY attachmentextractor.context.extracttodefault.accesskey "P">
-<!ENTITY attachmentextractor.context.extracttofolder.accesskey "B">

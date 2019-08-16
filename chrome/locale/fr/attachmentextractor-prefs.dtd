@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Options de AttachmentExtractor">
-<!ENTITY attachmentextractor.settings.width "55em">
 <!ENTITY attachmentextractor.settings.homepage.label "Page web et description des fonctionnalités d&apos;AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.generaltab.label "Général">
 <!ENTITY attachmentextractor.settings.normal.caption "Extraction des pièces jointes">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Dossiers suggérés">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Un dossier peut être suggéré pour extraire en fonction des mot-clés dans les lignes de sujet des messages sélectionnés.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorer les mot-clés dupliqués lors du classement des dossiers suggérés ?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Dossiers contenant des sous-dossiers pour l&apos;extraction :">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Mot-clés à exclure (séparés par des virgules) :">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Ajouter…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Effacer">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorer les mot-clés dupliqués lors du classement des dossiers suggérés ?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Mot-clés à exclure (séparés par des virgules) :">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Dossiers récemment utilisés">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Activer une liste des dossiers récemment utilisés">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Garder les">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Parcourir…">
 <!ENTITY attachmentextractor.settings.posttab.label "Après l&apos;extraction">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Après l&apos;extraction des pièces jointes :">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Actions Thunderbird">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Actions externes">
 <!ENTITY attachmentextractor.settings.after-delete.label "Supprimer le message">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "S">
 <!ENTITY attachmentextractor.settings.after-read.label "Marquer le message comme lu">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "U">
 <!ENTITY attachmentextractor.settings.filenametab.label "Noms de fichiers">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Modèle de création de noms de fichier :">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Cliquer pour ajouter un jeton">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Modèle utilisé pour générer les noms de fichiers :">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Modèle utilisé lorsqu&apos;un nom de fichier est dupliqué (#count#) :">

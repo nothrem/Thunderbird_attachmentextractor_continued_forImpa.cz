@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Настройки">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Страницата на AttachmentExtractor и описание на възможностите:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Общи">
 <!ENTITY attachmentextractor.settings.normal.caption "Извличане на прикачени файлове">
@@ -18,19 +17,14 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
-<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
-<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
-<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
-<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
-<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Предложени папки">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Може да бъде предложена папка за извличане на основата на ключови думи в темите на избраните писма.">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Да се пренебрегват ли дублирани ключови думи при определяне на предложени папки?">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Папки с възможни подпапки за извличане:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ключови думи за изключване: (разделител «,»)">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Добави…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Изчистване">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Да се пренебрегват ли дублирани ключови думи при определяне на предложени папки?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Ключови думи за изключване: (разделител «,»)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Последно използвани папки">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Със списък последно използвани папки.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Помнене на последните">
@@ -41,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Преглед…">
 <!ENTITY attachmentextractor.settings.posttab.label "След извличане">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "След извличане на прикачените файлове да се:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Thunderbird действия">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Външни действия">
 <!ENTITY attachmentextractor.settings.after-delete.label "Изтрие ли писмото?">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-read.label "Маркира ли писмото като прочетено?">
@@ -118,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
 <!ENTITY attachmentextractor.settings.filenametab.label "Файлове">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Създаване на шаблон за име:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Избор на признак">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Използван шаблон за създаване на имена:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Шаблон за дублирани имена (#count#):">

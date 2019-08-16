@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#attachmentextractor-toolbarbutton .toolbarbutton-icon,
+#aec-toolbarButton .toolbarbutton-icon,
 .hdrAEButton .toolbarbutton-icon {
   width: 18px;
   height: 18px;
@@ -10,11 +10,11 @@
   min-height: unset;
 }
 
-#attachmentextractor-toolbarbutton[disabled="true"] .toolbarbutton-icon {
+#aec-toolbarButton[disabled="true"] .toolbarbutton-icon {
   opacity: .4;
 }
 
-#attachmentextractor-toolbarbutton,
+#aec-toolbarButton,
 .hdrAEButton {
   list-style-image: url("chrome://attachmentextractor_cont/skin/aec_icon_contextfill.svg");
 }

@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Настройки AttachmentExtractor">
-<!ENTITY attachmentextractor.settings.width "50ть">
 <!ENTITY attachmentextractor.settings.homepage.label "Домашняя страница AttachmentExtractor и описание возможностей:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Общие">
 <!ENTITY attachmentextractor.settings.normal.caption "-- НЕ ЗАДЕЙСТВОВАНО --">
@@ -23,9 +22,9 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Игнорировать одинаковые ключевые файлы, расставляя предложенные папки?">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Папки, содержащие потенциальные подпапки, извлекать в:">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Исключающие ключевые слова(разделять запятой):">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "добавлять…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Очистить">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Исключающие ключевые слова(разделять запятой):">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Наиболее часто используемые папки">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Активировать список наиболее часто используемых папок">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Хранить последние">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Обзор…">
 <!ENTITY attachmentextractor.settings.posttab.label "После извлечения">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "После извлечения вложений необходимо:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "--НЕ ИСПОЛЬЗОВАНО--">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "--НЕ ИСПОЛЬЗОВАНО--">
 <!ENTITY attachmentextractor.settings.after-delete.label "Удалить сообщение?">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-read.label "Пометить сообщение как Прочитанное?">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
 <!ENTITY attachmentextractor.settings.filenametab.label "Имена файлов">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Шаблон создания имен файлов:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Нажмите, чтобы добавить Лексему">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Шаблон используемый для создания имен файлов:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Шаблон использованный для повторяемых имен файлов (#count#):">

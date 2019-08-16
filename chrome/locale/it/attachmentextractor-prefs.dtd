@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Impostazioni di AttachmentExtractor">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Visita il sito web">
 <!ENTITY attachmentextractor.settings.generaltab.label "Generali">
 <!ENTITY attachmentextractor.settings.normal.caption "Estrazione degli allegati">
@@ -20,12 +19,12 @@
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Opzioni delle cartelle suggerite">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "È possibile suggerire una cartella nella quale estrarre gli allegati in base a parole chiave presenti nel campo Oggetto dei messaggi selezionati">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignora le parole chiave duplicate quando si ordinano le cartelle suggerite">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Cartelle e sottocartelle nelle quali estrarre gli allegati">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Parole chiave da escludere (separate da virgola):">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Inserisci…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Elimina">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignora le parole chiave duplicate quando si ordinano le cartelle suggerite">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Parole chiave da escludere (separate da virgola):">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Cartelle più recentemente utilizzate">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Attiva una lista di cartelle più recentemente utilizzate">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Ultime cartelle da conservare:">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Sfoglia…">
 <!ENTITY attachmentextractor.settings.posttab.label "Dopo l&apos;estrazione">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Opzioni possibili dopo l&apos;estrazione degli allegati">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Generali">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Avanzate">
 <!ENTITY attachmentextractor.settings.after-delete.label "Elimina il messaggio">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-read.label "Marca il messaggio come letto">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "t">
 <!ENTITY attachmentextractor.settings.filenametab.label "Modelli">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Generazione del modello">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Fare clic per aggiungere un token">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Modello utilizzato per generare nomi di file:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Modello utilizzato per il conteggio dei file duplicati (#count#):">

@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Einstellungen">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Allgemein">
 <!ENTITY attachmentextractor.settings.normal.caption "Abtrennen von Anhängen">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Durchsuchen…">
 <!ENTITY attachmentextractor.settings.posttab.label "Nach Abtrennung">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Vorgänge nach dem Abtrennen:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Thunderbird-Aktion">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Externe Aktion">
 <!ENTITY attachmentextractor.settings.after-delete.label "Nachricht löschen">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "H">
 <!ENTITY attachmentextractor.settings.after-read.label "Nachricht als gelesen markieren">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "N">
 <!ENTITY attachmentextractor.settings.filenametab.label "Dateinamen">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Dateinamenmuster:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Dialog für Dateinamenmuster immer anzeigen">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "D">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Verwendetes Muster zum Erzeugen von Dateinamen:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Muster für doppelte Dateinamen (#count#):">

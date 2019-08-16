@@ -1,5 +1,4 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractorin asetukset">
-<!ENTITY attachmentextractor.settings.width "50em">
 <!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractorin kotisivu ja ominaisuuksien kuvaus:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Yleiset">
 <!ENTITY attachmentextractor.settings.normal.caption "Liitetiedostojen poiminta">
@@ -36,8 +35,6 @@
 <!ENTITY attachmentextractor.settings.savefolder.browsebutton "Selaa…">
 <!ENTITY attachmentextractor.settings.posttab.label "Poiminnan jälkeen">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Mitä tehdään liitetiedostojen poiminnan jälkeen:">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.internaltab.label "Thunderbird-toimenpiteet">
-<!ENTITY attachmentextractor.settings.afterextractpolicy.externaltab.label "Ulkoiset toimenpiteet">
 <!ENTITY attachmentextractor.settings.after-delete.label "Poista viesti">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "P">
 <!ENTITY attachmentextractor.settings.after-read.label "Merkitse viesti luetuksi">
@@ -113,6 +110,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
 <!ENTITY attachmentextractor.settings.filenametab.label "Tiedostonimet">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Tiedostonimimallin luominen:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klikkaa lisätäksesi merkki">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Malli, jolla luodaan tiedostonimet:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Tiedostonimiduplikaateille käytettävä malli (#count#):">

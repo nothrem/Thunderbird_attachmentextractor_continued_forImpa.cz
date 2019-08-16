@@ -191,29 +191,9 @@
   "attachmentextractor.suggestedFolderDialog.acceptbutton": {
     "message": "Brug valgt folder"
   },
-  "attachmentextractor.imagetoolbar.label": {
-    "message": "Skift valg"
-  },
-  "attachmentextractor.imagetoolbar.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extracttodefault.label": {
-    "message": "Gem vedhæftede filer fra de valgte beskeder"
-  },
-  "attachmentextractor.context.extracttofolder.label": {
-    "message": "Gem vedhæftede filer fra de valgte beskeder i…"
-  },
-  "attachmentextractor.context.extracttodefault.accesskey": {
-    "message": "G"
-  },
-  "attachmentextractor.context.extracttofolder.accesskey": {
-    "message": "I"
-  },
+
   "attachmentextractor.settings.windowtitle": {
     "message": "Indstillinger for AttachmentExtractor"
-  },
-  "attachmentextractor.settings.width": {
-    "message": "60em"
   },
   "attachmentextractor.settings.homepage.label": {
     "message": "Website for AttachmentExtractor"
@@ -255,31 +235,31 @@
     "message": "S"
   },
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AEC) Extract Attachment to"
+    "message": "(AE) Extract Attachment to"
   },
   "attachmentextractor.extractSingleAttTo.tooltip": {
     "message": "Extract selected Attachment"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AEC) Extract all Attachments to"
+    "message": "(AE) Extract all Attachments to"
   },
   "attachmentextractor.extractMultipleAttTo.tooltip": {
     "message": "Extract all Attachments"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AEC) Extract Attachments from Messages to"
+    "message": "(AE) Extract Attachments from Messages to"
   },
   "attachmentextractor.extractMessagesTo.tooltip": {
     "message": "Extract Attachments from selected Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AEC) Extract Attachments from Messages in Folder to"
+    "message": "(AE) Extract Attachments from Messages in Folder to"
   },
   "attachmentextractor.extractFoldersTo.tooltip": {
     "message": "Extract Attachments from Messages in selected Folders"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AEC) Extract Attachments to"
+    "message": "(AE) Extract Attachments to"
   },
   "attachmentextractor.extractTo.accesskey": {
     "message": "("

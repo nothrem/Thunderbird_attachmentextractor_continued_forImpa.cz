@@ -1,51 +1,36 @@
-<!ENTITY attachmentextractor.menu.label "Uložiť prílohy">
-<!ENTITY attachmentextractor.menu.accesskey "U">
-<!ENTITY attachmentextractor.extracttodefault.label "Uložiť z vybraných správ">
-<!ENTITY attachmentextractor.extracttodefault.accesskey "U">
-<!ENTITY attachmentextractor.extracttofolder.label "Uložiť z vybraných správ do…">
-<!ENTITY attachmentextractor.extracttofolder.accesskey "V">
-<!ENTITY attachmentextractor.extractToSuggest.label "Uložiť do odporúčaného priečinka">
-<!ENTITY attachmentextractor.extractToSuggest.accesskey "G">
-<!ENTITY attachmentextractor.extractalldefault.label "Uložiť zo všetkých správ v priečinku">
-<!ENTITY attachmentextractor.extractalldefault.accesskey "S">
-<!ENTITY attachmentextractor.extractallfolder.label "Uložiť zo všetkých správ v priečinku do…">
-<!ENTITY attachmentextractor.extractallfolder.accesskey "U">
-<!ENTITY attachmentextractor.extractdeepdefault.label "Uložiť zo všetkých správ v priečinku  v podpriečinkoch">
-<!ENTITY attachmentextractor.extractdeepdefault.accesskey "U">
-<!ENTITY attachmentextractor.extractdeepfolder.label "Uložiť zo všetkých správ v priečinku  v podpriečinkoch do…">
-<!ENTITY attachmentextractor.extractdeepfolder.accesskey "U">
-<!ENTITY attachmentextractor.extractalltosuggest.label "Uložiť zo všetkých správ do odporúčaného priečinka">
-<!ENTITY attachmentextractor.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.extractpattern.label "Uložiť ako používateľský vzor">
-<!ENTITY attachmentextractor.extractpattern.accesskey "U">
-<!ENTITY attachmentextractor.extractpatternfolder.label "Uložiť ako používateľský vzor do…">
-<!ENTITY attachmentextractor.extractpatternfolder.accesskey "U">
+<!ENTITY attachmentextractor.toolbarbutton.label "Uložiť AE">
+<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Uložiť prílohy z vybraných správ">
+<!ENTITY attachmentextractor.headerbutton.label "Uložiť AE">
+<!ENTITY attachmentextractor.headerbutton.tooltip "Uložiť prílohy z vybraných správ">
+<!ENTITY attachmentextractor.browse.label "Hľadať…">
+<!ENTITY attachmentextractor.browse.accesskey "H">
 
-<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Extract Attachment to">
-<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Extract selected Attachment">
-<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Extract all Attachments to">
-<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Extract all Attachments">
-<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Extract Attachments from Messages to">
-<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Extract Attachments from selected Messages">
-<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Extract Attachments from Messages in Folder to">
-<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Extract Attachments from Messages in selected Folders">
-<!ENTITY attachmentextractor.extractTo.label "(AEC) Extract Attachments to">
-<!ENTITY attachmentextractor.extractTo.accesskey "(">
-<!ENTITY attachmentextractor.extractToDefault.label "Default Folder">
+<!ENTITY attachmentextractor.extractSingleAttTo.label "AE Extract">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Extract all">
+<!ENTITY attachmentextractor.extractMessagesTo.label "AE Extract from Messages">
+<!ENTITY attachmentextractor.extractFoldersTo.label "AE Extract from Messages in Folders">
+<!ENTITY attachmentextractor.extractTo.label "AE Extract Attachments">
+<!ENTITY attachmentextractor.extractTo.accesskey "x">
+
+<!ENTITY attachmentextractor.extractToBrowse.label "Browse…">
+<!ENTITY attachmentextractor.extractToBrowse.accesskey "B">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.label "Browse… (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.accesskey "r">
+<!ENTITY attachmentextractor.extractToDefault.label "To Default Folder">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "D">
-<!ENTITY attachmentextractor.extractWithSubToDefault.label "Default Folder (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "To Default Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "e">
-<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favorite Folders">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "To Favorite Folder">
 <!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
-<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favorite Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "To Favorite Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
-<!ENTITY attachmentextractor.extractToMRUfolders.label "Most Recently Used Folders">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "To Most Recently Used Folder">
 <!ENTITY attachmentextractor.extractToMRUfolders.accesskey "M">
-<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folders (inc. Subfolders)">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Most Recently Used Folder (inc. Subfolders)">
 <!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "o">
-<!ENTITY attachmentextractor.extractToSuggestfolders.label "Suggested Folder…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "To Suggested Folder…">
 <!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "S">
-<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Suggested Folder (inc. Subfolders)…">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "To Suggested Folder (inc. Subfolders)…">
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
@@ -54,45 +39,15 @@
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "O">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Odstrániť prílohy zo všetkých správ v priečinku">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-<!ENTITY attachmentextractor.menusettingsdialog.label "Nastavenia AttachmentExtractor">
-<!ENTITY attachmentextractor.menusettingsdialog.accesskey "N">
-<!ENTITY attachmentextractor.context.extractalldefault.label "Uložiť všetky prílohy">
-<!ENTITY attachmentextractor.context.extractalldefault.accesskey "U">
-<!ENTITY attachmentextractor.context.extractallfolder.label "Uložiť všetky prílohy do…">
-<!ENTITY attachmentextractor.context.extractallfolder.accesskey "P">
-<!ENTITY attachmentextractor.context.extractdeepdefault.label "Uložiť všetky vrátane podpriečinkov">
-<!ENTITY attachmentextractor.context.extractdeepdefault.accesskey "U">
-<!ENTITY attachmentextractor.context.extractdeepfolder.label "Uložiť všetky vrátane podpriečinkov do…">
-<!ENTITY attachmentextractor.context.extractdeepfolder.accesskey "U">
-<!ENTITY attachmentextractor.context.extractalltosuggest.label "Uložiť všetko do odporúčaného priečinka">
-<!ENTITY attachmentextractor.context.extractalltosuggest.accesskey "I">
-<!ENTITY attachmentextractor.attachment.extracttodefault.label "AE Oddeliť všetky">
-<!ENTITY attachmentextractor.attachment.extracttodefault.accesskey "X">
-<!ENTITY attachmentextractor.attachment.extracttofolder.label "AE Oddeliť všetky do…">
-<!ENTITY attachmentextractor.attachment.extracttofolder.accesskey "T">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.label "AE Oddeliť">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.accesskey "A">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.label "AE Oddeliť do…">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.accesskey "E">
-<!ENTITY attachmentextractor.toolbarbutton.label "Uložiť AE">
-<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Uložiť prílohy z vybraných správ">
-<!ENTITY attachmentextractor.headerbutton.label "Uložiť AE">
-<!ENTITY attachmentextractor.headerbutton.tooltip "Uložiť prílohy z vybraných správ">
-<!ENTITY attachmentextractor.browse.label "Hľadať…">
-<!ENTITY attachmentextractor.browse.accesskey "H">
-<!ENTITY attachmentextractor.default.label "Pôvodné">
-<!ENTITY attachmentextractor.default.accesskey "P">
+
 <!ENTITY attachmentextractor.filenamepatterndialog.title "Názov vzoru vstupu">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Upraviť názov vzoru prílohy:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Nastaviť vzor ako predvolený odteraz">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "N">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Kliknúť na pridať znak">
+
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Odporúčané priečinky">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Odporúčané priečinky založené na  črtoch predmetu vybratých správ:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Použiť vybratý priečinok">
-<!ENTITY attachmentextractor.imagetoolbar.label "Prepnúť výber">
-<!ENTITY attachmentextractor.imagetoolbar.accesskey "P">
-<!ENTITY attachmentextractor.context.extracttodefault.label "Uložiť vybrané prílohy">
-<!ENTITY attachmentextractor.context.extracttofolder.label "Uložiť vybrané prílohy do…">
-<!ENTITY attachmentextractor.context.extracttodefault.accesskey "U">
-<!ENTITY attachmentextractor.context.extracttofolder.accesskey "V">

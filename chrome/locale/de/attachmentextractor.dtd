@@ -1,98 +1,54 @@
-<!ENTITY attachmentextractor.menu.label "AttachmentExtractor">
-<!ENTITY attachmentextractor.menu.accesskey "X">
-<!ENTITY attachmentextractor.extracttodefault.label "Abtrennen aus ausgewählten Nachrichten">
-<!ENTITY attachmentextractor.extracttodefault.accesskey "W">
-<!ENTITY attachmentextractor.extracttofolder.label "Abtrennen aus ausgewählten Nachrichten nach…">
-<!ENTITY attachmentextractor.extracttofolder.accesskey "N">
-<!ENTITY attachmentextractor.extractToSuggest.label "Abtrennen in den vorgeschlagenen Datenordner">
-<!ENTITY attachmentextractor.extractToSuggest.accesskey "v">
-<!ENTITY attachmentextractor.extractalldefault.label "Abtrennen aus allen Nachrichten des Ordners">
-<!ENTITY attachmentextractor.extractalldefault.accesskey "A">
-<!ENTITY attachmentextractor.extractallfolder.label "Abtrennen aus allen Nachrichten des Ordners nach…">
-<!ENTITY attachmentextractor.extractallfolder.accesskey "U">
-<!ENTITY attachmentextractor.extractdeepdefault.label "Abtrennen aus allen Nachrichten in Ordner und Unterordner">
-<!ENTITY attachmentextractor.extractdeepdefault.accesskey "u">
-<!ENTITY attachmentextractor.extractdeepfolder.label "Abtrennen aus allen Nachrichten in Ordner und Unterordner nach…">
-<!ENTITY attachmentextractor.extractdeepfolder.accesskey "n">
-<!ENTITY attachmentextractor.extractalltosuggest.label "Abtrennen aus allen Nachrichten in den vorgeschlagenen Datenordner">
-<!ENTITY attachmentextractor.extractalltosuggest.accesskey "l">
-<!ENTITY attachmentextractor.extractpattern.label "Abtrennen mit eigenem Dateinamenmuster">
-<!ENTITY attachmentextractor.extractpattern.accesskey "D">
-<!ENTITY attachmentextractor.extractpatternfolder.label "Abtrennen mit eigenem Dateinamenmuster nach…">
-<!ENTITY attachmentextractor.extractpatternfolder.accesskey "E">
+<!ENTITY attachmentextractor.toolbarbutton.label "Anhänge abtrennen">
+<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Anhänge von ausgewählten Nachrichten abtrennen">
+<!ENTITY attachmentextractor.headerbutton.label "Anhänge abtrennen">
+<!ENTITY attachmentextractor.headerbutton.tooltip "Anhänge von dieser Nachricht abtrennen">
 
-<!ENTITY attachmentextractor.extractSingleAttTo.label "(AEC) Anhang abtrennen nach">
-<!ENTITY attachmentextractor.extractSingleAttTo.tooltip "Gewählten Anhang abtrennen">
-<!ENTITY attachmentextractor.extractMultipleAttTo.label "(AEC) Alle Anhänge abtrennen nach">
-<!ENTITY attachmentextractor.extractMultipleAttTo.tooltip "Alle Anhänge abtrennen">
-<!ENTITY attachmentextractor.extractMessagesTo.label "(AEC) Anhänge der Nachrichten abtrennen nach">
-<!ENTITY attachmentextractor.extractMessagesTo.tooltip "Anhänge der gewählten Nachrichten abtrennen">
-<!ENTITY attachmentextractor.extractFoldersTo.label "(AEC) Anhänge aus Ordnern abtrennen nach">
-<!ENTITY attachmentextractor.extractFoldersTo.tooltip "Anhänge aus allen gewählten Ordnern abtrennen">
-<!ENTITY attachmentextractor.extractTo.label "(AEC) Anhänge abtrennen nach">
-<!ENTITY attachmentextractor.extractTo.accesskey "(">
-<!ENTITY attachmentextractor.extractToDefault.label "Standardordner">
+<!ENTITY attachmentextractor.browse.label "Durchsuchen…">
+<!ENTITY attachmentextractor.browse.accesskey "D">
+
+<!ENTITY attachmentextractor.extractSingleAttTo.label "AE Abtrennen">
+<!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Alle abtrennen">
+<!ENTITY attachmentextractor.extractMessagesTo.label "AE Abtrennen aus gewählten Nachrichten">
+<!ENTITY attachmentextractor.extractFoldersTo.label "AE Abtrennen aus gewählten Ordnern">
+<!ENTITY attachmentextractor.extractTo.label "AE Anhänge abtrennen">
+<!ENTITY attachmentextractor.extractTo.accesskey "r">
+
+<!ENTITY attachmentextractor.extractToBrowse.label "Durchsuchen…">
+<!ENTITY attachmentextractor.extractToBrowse.accesskey "D">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.label "Durchsuchen… (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToBrowse.accesskey "h">
+<!ENTITY attachmentextractor.extractToDefault.label "In Standardordner">
 <!ENTITY attachmentextractor.extractToDefault.accesskey "S">
-<!ENTITY attachmentextractor.extractWithSubToDefault.label "Standardordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToDefault.label "In Standardordner (inkl. Unterordner)">
 <!ENTITY attachmentextractor.extractWithSubToDefault.accesskey "t">
-<!ENTITY attachmentextractor.extractToFavoritefolders.label "Favoritenordner">
+<!ENTITY attachmentextractor.extractToFavoritefolders.label "In Favoritenordner">
 <!ENTITY attachmentextractor.extractToFavoritefolders.accesskey "F">
-<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "Favoritenordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractWithSubToFavoritefolders.label "In Favoritenordner (inkl. Unterordner)">
 <!ENTITY attachmentextractor.extractWithSubToFavoritefolders.accesskey "a">
-<!ENTITY attachmentextractor.extractToMRUfolders.label "Zuletzt verwendete Ordner">
-<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "Z">
-<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "Zuletzt verwendete Ordner (inkl. Unterordner)">
+<!ENTITY attachmentextractor.extractToMRUfolders.label "In zuletzt verwendeten Ordner">
+<!ENTITY attachmentextractor.extractToMRUfolders.accesskey "z">
+<!ENTITY attachmentextractor.extractWithSubToMRUfolders.label "In zuletzt verwendeten Ordner (inkl. Unterordner)">
 <!ENTITY attachmentextractor.extractWithSubToMRUfolders.accesskey "u">
-<!ENTITY attachmentextractor.extractToSuggestfolders.label "Vorgeschlagene Ordner…">
-<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "V">
-<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "Vorgeschlagene Ordner (inkl. Unterordner)…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.label "In vorgeschlagenen Ordner…">
+<!ENTITY attachmentextractor.extractToSuggestfolders.accesskey "v">
+<!ENTITY attachmentextractor.extractWithSubToSuggestfolders.label "In vorgeschlagenen Ordner… (inkl. Unterordner)">
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "o">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "Mit eigenem Dateinamenmuster">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "M">
 
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Anhänge ausgewählter Nachrichten löschen">
-<!ENTITY attachmentextractor.justDeleteAttachments.accesskey "R">
+<!ENTITY attachmentextractor.justDeleteAttachments.accesskey "ö">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Anhänge aller Nachrichten des Ordners löschen">
-<!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "O">
-<!ENTITY attachmentextractor.menusettingsdialog.label "AttachmentExtractor - Einstellungen…">
-<!ENTITY attachmentextractor.menusettingsdialog.accesskey "S">
-<!ENTITY attachmentextractor.context.extractalldefault.label "Alle Anhänge abtrennen">
-<!ENTITY attachmentextractor.context.extractalldefault.accesskey "A">
-<!ENTITY attachmentextractor.context.extractallfolder.label "Alle Anhänge abtrennen nach…">
-<!ENTITY attachmentextractor.context.extractallfolder.accesskey "T">
-<!ENTITY attachmentextractor.context.extractdeepdefault.label "Alle Anhänge abtrennen einschl. Unterordner">
-<!ENTITY attachmentextractor.context.extractdeepdefault.accesskey "u">
-<!ENTITY attachmentextractor.context.extractdeepfolder.label "Alle Anhänge abtrennen einschl. Unterordner nach…">
-<!ENTITY attachmentextractor.context.extractdeepfolder.accesskey "n">
-<!ENTITY attachmentextractor.context.extractalltosuggest.label "Alle abtrennen in den vorgeschlagenen Datenordner">
-<!ENTITY attachmentextractor.context.extractalltosuggest.accesskey "d">
-<!ENTITY attachmentextractor.attachment.extracttodefault.label "Alle abtrennen">
-<!ENTITY attachmentextractor.attachment.extracttodefault.accesskey "T">
-<!ENTITY attachmentextractor.attachment.extracttofolder.label "Alle abtrennen nach…">
-<!ENTITY attachmentextractor.attachment.extracttofolder.accesskey "N">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.label "Abtrennen">
-<!ENTITY attachmentextractor.attachment.extractindtodefault.accesskey "E">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.label "Abtrennen nach…">
-<!ENTITY attachmentextractor.attachment.extractindtofolder.accesskey "B">
-<!ENTITY attachmentextractor.toolbarbutton.label "Anhänge abtrennen">
-<!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Anhänge von ausgewählten Nachrichten abtrennen">
-<!ENTITY attachmentextractor.headerbutton.label "Anhänge abtrennen">
-<!ENTITY attachmentextractor.headerbutton.tooltip "Anhänge von dieser Nachricht abtrennen">
-<!ENTITY attachmentextractor.browse.label "Durchsuchen…">
-<!ENTITY attachmentextractor.browse.accesskey "D">
-<!ENTITY attachmentextractor.default.label "Standard">
-<!ENTITY attachmentextractor.default.accesskey "S">
-<!ENTITY attachmentextractor.filenamepatterndialog.title "Dateinamenmuster eingegeben">
+<!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "ö">
+
+<!ENTITY attachmentextractor.filenamepatterndialog.title "AttachmentExtractor - Dateinamenmuster">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Dateinamenmuster der angehängten Datei bearbeiten:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dateinamenmuster als Standard festlegen">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Dialog für Dateinamenmuster immer anzeigen">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "D">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
+
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Ordnervorschläge:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Ausgewählten Ordner verwenden">
-<!ENTITY attachmentextractor.imagetoolbar.label "Auswahl umkehren">
-<!ENTITY attachmentextractor.imagetoolbar.accesskey "A">
-<!ENTITY attachmentextractor.context.extracttodefault.label "Ausgewählte Anhänge abtrennen">
-<!ENTITY attachmentextractor.context.extracttofolder.label "Ausgewählte Anhänge abtrennen nach…">
-<!ENTITY attachmentextractor.context.extracttodefault.accesskey "W">
-<!ENTITY attachmentextractor.context.extracttofolder.accesskey "N">

@@ -29,89 +29,68 @@
 
   <commandset id="mailCommands">
     <commandset id="aec_commandset">
+
       <commandset id="aec_commandset_msg">
         <command id="cmd_aec_extractToDefault" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',false);" 
           observes="aec_commandset_msg"/>
-        <command id="cmd_aec_extractToFolder" 
+        <command id="cmd_aec_extractToBrowse" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'browse',false);" 
           observes="aec_commandset_msg" />
-        <command id="cmd_aec_extractToFolder_menu" 
-          oncommand="event.stopPropagation();" 
-          observes="aec_commandset_msg"/>
-        <command id="cmd_aec_extractPatternDefault" 
-          oncommand="attachmentextractor.doPatternAttachmentextraction(event,'default',false);" 
-          observes="aec_commandset_msg"/>
-        <command id="cmd_aec_extractPatternFolder" 
-          oncommand="attachmentextractor.doPatternAttachmentextraction(event,'browse',false);" 
-          observes="aec_commandset_msg"/>
-        <command id="cmd_aec_extractPatternFolder_menu" 
-          oncommand="event.stopPropagation();" 
-          observes="aec_commandset_msg" />
-        <command id="cmd_aec_justDeleteAttachments" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'deleteAtt',false);" 
-          observes="aec_commandset_msg"/>
         <command id="cmd_aec_extractToSuggest" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'suggest',false);" 
           observes="aec_commandset_msg"/>
+        <command id="cmd_aec_justDeleteAttachments" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'deleteAtt',false);" 
+          observes="aec_commandset_msg"/>
       </commandset>
+
       <commandset id="aec_commandset_folder">
         <command id="cmd_aec_extractAllToDefault" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',1);" 
           observes="aec_commandset_folder"/>
-        <command id="cmd_aec_extractAllToFolder" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',1);" 
-          observes="aec_commandset_folder"/>
-        <command id="cmd_aec_extractAllToFolder_menu" 
-          oncommand="event.stopPropagation();" 
-          observes="aec_commandset_folder" />
         <command id="cmd_aec_extractDeepToDefault" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'default',2);" 
           observes="aec_commandset_folder"/>
-        <command id="cmd_aec_extractDeepToFolder" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',2);" 
+        <command id="cmd_aec_extractAllToBrowse" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',1);" 
           observes="aec_commandset_folder"/>
-        <command id="cmd_aec_extractDeepToFolder_menu" 
-          oncommand="event.stopPropagation();" 
-          observes="aec_commandset_folder" />
-        <command id="cmd_aec_justDeleteAllAttachments" 
-          oncommand="attachmentextractor.doAttachmentextraction(event,'deleteAtt',1);" 
+        <command id="cmd_aec_extractDeepToBrowse" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'browse',2);" 
           observes="aec_commandset_folder"/>
         <command id="cmd_aec_extractAllToSuggest" 
           oncommand="attachmentextractor.doAttachmentextraction(event,'suggest',1);" 
           observes="aec_commandset_folder"/>
+        <command id="cmd_aec_extractDeepToSuggest" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'suggest',2);" 
+          observes="aec_commandset_folder"/>
+
+        <command id="cmd_aec_justDeleteAllAttachments" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'deleteAtt',1);" 
+          observes="aec_commandset_folder"/>
+        <command id="cmd_aec_justDeleteDeepAttachments" 
+          oncommand="attachmentextractor.doAttachmentextraction(event,'deleteAtt',2);" 
+          observes="aec_commandset_folder"/>
       </commandset>
+
       <commandset id="aec_commandset_ind">
         <command id="cmd_aec_extractIndToDefault" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','selected');" 
           observes="aec_commandset_ind"/>
-        <command id="cmd_aec_extractIndToFolder" 
+        <command id="cmd_aec_extractIndToBrowse" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','selected');" 
-          observes="aec_commandset_ind"/>
-        <command id="cmd_aec_extractIndToFolder_menu" 
-          oncommand="event.stopPropagation();" 
           observes="aec_commandset_ind"/>
         <command id="cmd_aec_extractIndToSuggest" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','selected');" />
 
         <command id="cmd_aec_extractIndAllToDefault" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','all');"/>
-        <command id="cmd_aec_extractIndAllToFolder" 
+        <command id="cmd_aec_extractIndAllToBrowse" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','all');"/>
-        <command id="cmd_aec_extractIndAllToFolder_menu" 
-          oncommand="event.stopPropagation();"/>
         <command id="cmd_aec_extractIndAllToSuggest" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','all');" />
-
-        <command id="cmd_aec_extractContextToDefault" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('default','context');" />
-        <command id="cmd_aec_extractContextToFolder" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','context');" />
-        <command id="cmd_aec_extractContextToFolder_menu" 
-          oncommand="event.stopPropagation();"/>
-        <command id="cmd_aec_extractContextToSuggest" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','context');" />
       </commandset>
+
     </commandset>
   </commandset>
 
