@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
-  "attachmentextractor.menu.label": {
-    "message": "첨부 추출"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "선택된 메세지로부터 추출"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "선택된 메시지에서 다음으로 추출…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "제안된 파일-폴더로 추출"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "G"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "폴더 내 모든 메세지로부터 추출"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "F"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "다음으로 폴더내 모든 메세지로부터 추출…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "폴더 및 하위 폴더 안의 모든 메시지로부터 추출"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "다음으로 폴더 및 하위 폴더 안의 모든 메시지로부터 추출"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "모든 메세지로부터 제안된 파일-폴더로 추출"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "사용자 지정 파일명 양식으로 추출"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "다음 사용자지정 파일명 양식으로 추출…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "선택된 메시지에서 첨부파일 삭제"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "J"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "폴더 내 모든 메시지에서 첨부 파일 삭제"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor 설정"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "모든 첨부 추출"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "모든 첨부 다음으로 추출…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "H"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "모든 하위 폴더를 포함해 추출"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "다음으로 모든 하위 폴더를 포함해 추출"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "제안된 파일-폴더로 모두 추출"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "AE 모두 추출"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "다음으로 AE 모두 추출…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "AE 추출"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "AE 다음으로 추출…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "E"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "AE 추출"
   },
@@ -155,114 +18,44 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "선택된 메세지로 부터 첨부 추출"
   },
+
   "attachmentextractor.browse.label": {
     "message": "찾아보기…"
   },
   "attachmentextractor.browse.accesskey": {
     "message": "S"
   },
-  "attachmentextractor.default.label": {
-    "message": "기본"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "D"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "파일명 패턴 입력"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "첨부 파일명 패턴 수정:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "지금부터 기본값으로 패턴 설정"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "토큰을 추가하려면 클릭"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - 제안된 폴더:"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "선택된 메세지의 제목 줄을 기반으로 제안된 폴더:"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "선택된 폴더 사용"
-  },
-
-  "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor 설정"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor 홈 페이지 및 기능 설명："
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "일반"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "첨부 추출"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "어디에 첨부파일을 저장할까요?"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "첨부파일과 동일한 이름의 파일이 이미 존재하는 것을 발견시 어떻게 합니까?"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "언제나 새 첨부로 존재하는 파일을 대체"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "R"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "언제나 존재하는 파일 유지, 첨부 추출하지 않음"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "K"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "새 첨부 이름 만들기, 양쪽 모두 보존"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "M"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "매번 묻기"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "A"
-  },
+  
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AE) Extract Attachment to"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Extract selected Attachment"
+    "message": "AE Extract"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AE) Extract all Attachments to"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Extract all Attachments"
+    "message": "AE Extract all"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AE) Extract Attachments from Messages to"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Extract Attachments from selected Messages"
+    "message": "AE Extract from Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AE) Extract Attachments from Messages in Folder to"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Extract Attachments from Messages in selected Folders"
+    "message": "AE Extract from Messages in Folder"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AE) Extract Attachments to"
+    "message": "AE Extract Attachments"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Default Folder"
@@ -318,6 +111,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "W"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "선택된 메시지에서 첨부파일 삭제"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "폴더 내 모든 메시지에서 첨부 파일 삭제"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "파일명 패턴 입력"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "첨부 파일명 패턴 수정:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "지금부터 기본값으로 패턴 설정"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "토큰을 추가하려면 클릭"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - 제안된 폴더:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "선택된 메세지의 제목 줄을 기반으로 제안된 폴더:"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "선택된 폴더 사용"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor 설정"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "AttachmentExtractor 홈 페이지 및 기능 설명："
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "일반"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "어디에 첨부파일을 저장할까요?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "첨부파일과 동일한 이름의 파일이 이미 존재하는 것을 발견시 어떻게 합니까?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "언제나 새 첨부로 존재하는 파일을 대체"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "언제나 존재하는 파일 유지, 첨부 추출하지 않음"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "새 첨부 이름 만들기, 양쪽 모두 보존"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "매번 묻기"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"
   },
@@ -351,6 +229,9 @@
   "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
     "message": "제외할 키워드:(쉼표로 구분)"
   },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Add…"
+  },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "청소"
   },
@@ -383,12 +264,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "추출 후 첨부 파일 처리："
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "Thunderbird 동작"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "외부파일 동작"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "메세지를 삭제합니까?"
@@ -615,6 +490,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "파일명 양식 산출:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "파일명에 사용하는 형식："
   },
@@ -789,6 +670,9 @@
   "FileNamePatternDialogQuestion": {
     "message": "이후 기본 형식으로 지정"
   },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
   "ConfirmDetachDialogTitle": {
     "message": "첨부 파일 분리의 확인"
   },
@@ -840,6 +724,12 @@
   "FolderPickerDialogTitle": {
     "message": "사용할 폴더 선택"
   },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
   "EmptyLineText": {
     "message": "-- 빈줄 --"
   },
@@ -849,6 +739,7 @@
   "FileNamePatternFixMessage": {
     "message": "당신이 입력한 파일명 또는 계수된 패턴이 올바르지 않아서 AttachmentExtractor가 멈출수 있습니다.\n다음으로 바꾸시겠습니까?:\n %1$s"
   },
+
   "ExtractionStarted": {
     "message": "추출 시작[날짜/시간: %S]"
   },

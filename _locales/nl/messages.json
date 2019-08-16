@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
-  "attachmentextractor.menu.label": {
-    "message": "Bijlagen uitpakken"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "Uit geselecteerde berichten uitpakken"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "Uit geselecteerde berichten uitpakken naar…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "Uitpakken naar gesuggereerde bestandsmap"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "G"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "Uit alle berichten in map uitpakken"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "M"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "Uit alle berichten in map uitpakken naar…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "Uit alle berichten in map en submappen uitpakken"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "Uit alle berichten in map en submappen uitpakken naar…"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "Uit alle berichten uitpakken naar gesuggereerde bestandsmap"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "Uitpakken met een aangepast bestandsnaampatroon"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "i"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "Uitpakken met een aangepast bestandsnaampatroon naar…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "Bijlagen gewoon verwijderen uit geselecteerde berichten"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "j"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "Bijlagen gewoon verwijderen uit alle berichten in de map"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "AttachmentExtractor instellingen"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "Alle bijlagen uitpakken"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "Alle bijlagen uitpakken naar…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "B"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "Alles uitpakken incl. submappen"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "Alles uitpakken incl. submappen naar…"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "Alles naar gesuggereerde bestandsmap uitpakken"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "AE Alles uitpakken"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "AE Alles uitpakken naar…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "t"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "AE Uitpakken"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "AE Uitpakken naar…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "E"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "AE uitpakken"
   },
@@ -155,114 +18,44 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "Bijlagen uit geselecteerde berichten uitpakken"
   },
+
   "attachmentextractor.browse.label": {
     "message": "Bladeren…"
   },
   "attachmentextractor.browse.accesskey": {
     "message": "B"
   },
-  "attachmentextractor.default.label": {
-    "message": "Standaard"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "Bestandsnaampatroon-ingave"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "Pas het bestandsnaampatroon van de bijlage aan:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Patroon vanaf nu als standaard instellen"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Klik om een token toe te voegen"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - Gesuggereerde mappen:"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "Gesuggereerde mappen gebaseerd op onderwerpregel(s) van geselecteerd(e) bericht(en):"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "Geselecteerde map gebruiken"
-  },
-
-  "attachmentextractor.settings.windowtitle": {
-    "message": "AttachmentExtractor instellingen"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "AttachmentExtractor homepage en beschrijving van mogelijkheden:"
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "Algemeen"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "Bijlage uitpakken"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "Waar dienen de bijlagen te worden opgeslagen?"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "Wat moet er gebeuren als een bestand wordt aangetroffen dat dezelfde naam heeft als de bijlage?"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "Bestaand bestand altijd overschrijven door nieuwe bijlage"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "R"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "Bestaand bestand altijd behouden, bijlage niet uitpakken"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "H"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "Een nieuwe naam voor de bijlage maken, zodat beide bestanden behouden blijven"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "Elke keer vragen"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "V"
-  },
+  
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AE) Extract Attachment to"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Extract selected Attachment"
+    "message": "AE Extract"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AE) Extract all Attachments to"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Extract all Attachments"
+    "message": "AE Extract all"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AE) Extract Attachments from Messages to"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Extract Attachments from selected Messages"
+    "message": "AE Extract from Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AE) Extract Attachments from Messages in Folder to"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Extract Attachments from Messages in selected Folders"
+    "message": "AE Extract from Messages in Folder"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AE) Extract Attachments to"
+    "message": "AE Extract Attachments"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Default Folder"
@@ -318,6 +111,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "W"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Bijlagen gewoon verwijderen uit geselecteerde berichten"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "j"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Bijlagen gewoon verwijderen uit alle berichten in de map"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Bestandsnaampatroon-ingave"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Pas het bestandsnaampatroon van de bijlage aan:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Patroon vanaf nu als standaard instellen"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Klik om een token toe te voegen"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Gesuggereerde mappen:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Gesuggereerde mappen gebaseerd op onderwerpregel(s) van geselecteerd(e) bericht(en):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Geselecteerde map gebruiken"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor instellingen"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "AttachmentExtractor homepage en beschrijving van mogelijkheden:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Algemeen"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Waar dienen de bijlagen te worden opgeslagen?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Wat moet er gebeuren als een bestand wordt aangetroffen dat dezelfde naam heeft als de bijlage?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Bestaand bestand altijd overschrijven door nieuwe bijlage"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Bestaand bestand altijd behouden, bijlage niet uitpakken"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Een nieuwe naam voor de bijlage maken, zodat beide bestanden behouden blijven"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Elke keer vragen"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "V"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"
   },
@@ -351,6 +229,9 @@
   "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
     "message": "Uit te sluiten sleutelwoorden: (gescheiden door komma’s)"
   },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Add…"
+  },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Wissen"
   },
@@ -383,12 +264,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "Moet na het uitpakken van de bijlagen:"
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "Thunderbird acties"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "Externe acties"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Het bericht worden verwijderd?"
@@ -615,6 +490,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Bestandsnaampatroon generatie:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Gebruikt patroon voor het aanmaken van bestandsnamen:"
   },
@@ -789,6 +670,9 @@
   "FileNamePatternDialogQuestion": {
     "message": "Dit patroon als standaard instellen vanaf nu"
   },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
   "ConfirmDetachDialogTitle": {
     "message": "Ontkoppelen bevestigen"
   },
@@ -840,6 +724,12 @@
   "FolderPickerDialogTitle": {
     "message": "Selecteer te gebruiken map"
   },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
   "EmptyLineText": {
     "message": "-- leeg --"
   },
@@ -849,6 +739,7 @@
   "FileNamePatternFixMessage": {
     "message": "De bestandsnaam of het telpatroon dat u hebt ingevoerd is ongeldig en kan AttachmentExtractor laten struikelen.\nWijzigen in:\n %1$s?"
   },
+
   "ExtractionStarted": {
     "message": "Uitpakken gestart [op datum/tijd: %S]"
   },

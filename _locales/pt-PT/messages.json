@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
-  "attachmentextractor.menu.label": {
-    "message": "Extrair Anexos"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "x"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "Extrair das Mensagens Seleccionadas"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "x"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "Extrair das Mensagens Seleccionadas para…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "t"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "Extrair para a pasta sugerida"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "x"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "Extrair de Todas as Mensagens na Pasta"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "E"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "Extrair de Todas as Mensagens na Pasta para…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "t"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "Extrair de todas as mensagens em Pastas e Sub-pastas"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "Extrair de todas as mensagens em Pastas e Sub-pastas para…"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "u"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "Extrair de todas as mensagens para a pasta sugerida"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "a"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "Extrair com um tipo personalizado de Ficheiro"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "r"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "Extrair com um tipo personalizado de Ficheiro para…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "i"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "Eliminar Apenas Anexos das Mensagens Seleccionadas"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "E"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "Eliminar Anexos de Todas as Mensagens na Pasta"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "l"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "Definições do Extractor de Anexos"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "E"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "Extrair Todos os Anexos"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "x"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "Extrair Todos os Anexos para…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "a"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "Extrair Tudo incluindo sub-pastas"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "s"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "Extrair Tudo incluindo sub-pastas para…"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "u"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "Extrair tudo para a pasta sugerida"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "u"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "AE Extrair Tudo"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "AE Extrair Tudo para…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "AE Extrair"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "AE Extrair para…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "E"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "AE Extrair"
   },
@@ -161,108 +24,37 @@
   "attachmentextractor.browse.accesskey": {
     "message": "E"
   },
-  "attachmentextractor.default.label": {
-    "message": "Pré-definição"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "Introdução do tipo de nome do ficheiro"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "Modificar o tipo de nome de ficheiro do anexo:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Aplicar o tipo como pré-definição a partir de agora"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "g"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Clique para adicionar um token"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - Pastas sugeridas:"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "Pastas sugeridas baseado nas linhas de assunto das mensagens seleccionadas:"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "Usar a pasta seleccionada"
-  },
 
-  "attachmentextractor.settings.windowtitle": {
-    "message": "Definições do Extractor de Anexos"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "Página inicial do Extractor de Anexos com a descrição e características:"
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "Geral"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "-- SEM USO --"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "Onde é que o anexo deve ser guardado?"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "O que fazer quando existir um ficheiro com o mesmo nome do anexo?"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "Substituir sempre o ficheiro existente pelo novo anexo"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "Manter sempre o ficheiro existente, não extrair o anexo"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "M"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "Fazer um novo nome para o anexo, de maneira a manter ambos"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "z"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "Perguntar-me de cada vez"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "P"
-  },
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AE) Extract Attachment to"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Extract selected Attachment"
+    "message": "AE Extract"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AE) Extract all Attachments to"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Extract all Attachments"
+    "message": "AE Extract all"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AE) Extract Attachments from Messages to"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Extract Attachments from selected Messages"
+    "message": "AE Extract from Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AE) Extract Attachments from Messages in Folder to"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Extract Attachments from Messages in selected Folders"
+    "message": "AE Extract from Messages in Folder"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AE) Extract Attachments to"
+    "message": "AE Extract Attachments"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Default Folder"
@@ -318,6 +110,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "W"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Eliminar Apenas Anexos das Mensagens Seleccionadas"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Eliminar Anexos de Todas as Mensagens na Pasta"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "l"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Introdução do tipo de nome do ficheiro"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Modificar o tipo de nome de ficheiro do anexo:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Aplicar o tipo como pré-definição a partir de agora"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "g"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Clique para adicionar um token"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Pastas sugeridas:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Pastas sugeridas baseado nas linhas de assunto das mensagens seleccionadas:"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Usar a pasta seleccionada"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "Definições do Extractor de Anexos"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Página inicial do Extractor de Anexos com a descrição e características:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Geral"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Onde é que o anexo deve ser guardado?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "O que fazer quando existir um ficheiro com o mesmo nome do anexo?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Substituir sempre o ficheiro existente pelo novo anexo"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Manter sempre o ficheiro existente, não extrair o anexo"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Fazer um novo nome para o anexo, de maneira a manter ambos"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "z"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Perguntar-me de cada vez"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "P"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"
   },
@@ -351,6 +228,9 @@
   "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
     "message": "Palavras chave a excluir:(separadas por vírgulas)"
   },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Add…"
+  },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Limpar"
   },
@@ -383,12 +263,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "Após extrair os anexos deveremos:"
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "-- SEM USO --"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "Acções Externas"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Apagar esta mensagem?"
@@ -615,6 +489,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Criar padrão do nome do ficheiro:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Padrão usado para criar nomes de ficheiros"
   },
@@ -789,6 +669,9 @@
   "FileNamePatternDialogQuestion": {
     "message": "Aplicar o padrão como pré-definido a partir de agora"
   },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
   "ConfirmDetachDialogTitle": {
     "message": "Confirmar Separação"
   },
@@ -840,6 +723,12 @@
   "FolderPickerDialogTitle": {
     "message": "Seleccione pasta a usar"
   },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
   "EmptyLineText": {
     "message": "-- vazio --"
   },
@@ -849,6 +738,7 @@
   "FileNamePatternFixMessage": {
     "message": "O nome do ficheiro ou padrão de contagem que introduziu é inválido e poderá partir o AttachmentExtractor.\nMudar para:\n %1$s?"
   },
+
   "ExtractionStarted": {
     "message": "Extracção iniciada [à Data/Hora: %S]"
   },

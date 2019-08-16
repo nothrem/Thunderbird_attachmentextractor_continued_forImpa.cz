@@ -5,144 +5,7 @@
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
   },
-  "attachmentextractor.menu.label": {
-    "message": "Uložiť prílohy"
-  },
-  "attachmentextractor.menu.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extracttodefault.label": {
-    "message": "Uložiť z vybraných správ"
-  },
-  "attachmentextractor.extracttodefault.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extracttofolder.label": {
-    "message": "Uložiť z vybraných správ do…"
-  },
-  "attachmentextractor.extracttofolder.accesskey": {
-    "message": "V"
-  },
-  "attachmentextractor.extractToSuggest.label": {
-    "message": "Uložiť do odporúčaného priečinka"
-  },
-  "attachmentextractor.extractToSuggest.accesskey": {
-    "message": "G"
-  },
-  "attachmentextractor.extractalldefault.label": {
-    "message": "Uložiť zo všetkých správ v priečinku"
-  },
-  "attachmentextractor.extractalldefault.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.extractallfolder.label": {
-    "message": "Uložiť zo všetkých správ v priečinku do…"
-  },
-  "attachmentextractor.extractallfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractdeepdefault.label": {
-    "message": "Uložiť zo všetkých správ v priečinku  v podpriečinkoch"
-  },
-  "attachmentextractor.extractdeepdefault.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractdeepfolder.label": {
-    "message": "Uložiť zo všetkých správ v priečinku  v podpriečinkoch do…"
-  },
-  "attachmentextractor.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractalltosuggest.label": {
-    "message": "Uložiť zo všetkých správ do odporúčaného priečinka"
-  },
-  "attachmentextractor.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.extractpattern.label": {
-    "message": "Uložiť ako používateľský vzor"
-  },
-  "attachmentextractor.extractpattern.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.extractpatternfolder.label": {
-    "message": "Uložiť ako používateľský vzor do…"
-  },
-  "attachmentextractor.extractpatternfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.justDeleteAttachments.label": {
-    "message": "Odstrániť prílohy z vybratých správ"
-  },
-  "attachmentextractor.justDeleteAttachments.accesskey": {
-    "message": "O"
-  },
-  "attachmentextractor.justDeleteAllAttachments.label": {
-    "message": "Odstrániť prílohy zo všetkých správ v priečinku"
-  },
-  "attachmentextractor.justDeleteAllAttachments.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.menusettingsdialog.label": {
-    "message": "Nastavenia AttachmentExtractor"
-  },
-  "attachmentextractor.menusettingsdialog.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.context.extractalldefault.label": {
-    "message": "Uložiť všetky prílohy"
-  },
-  "attachmentextractor.context.extractalldefault.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.context.extractallfolder.label": {
-    "message": "Uložiť všetky prílohy do…"
-  },
-  "attachmentextractor.context.extractallfolder.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.context.extractdeepdefault.label": {
-    "message": "Uložiť všetky vrátane podpriečinkov"
-  },
-  "attachmentextractor.context.extractdeepdefault.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.context.extractdeepfolder.label": {
-    "message": "Uložiť všetky vrátane podpriečinkov do…"
-  },
-  "attachmentextractor.context.extractdeepfolder.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.context.extractalltosuggest.label": {
-    "message": "Uložiť všetko do odporúčaného priečinka"
-  },
-  "attachmentextractor.context.extractalltosuggest.accesskey": {
-    "message": "I"
-  },
-  "attachmentextractor.attachment.extracttodefault.label": {
-    "message": "AE Oddeliť všetky"
-  },
-  "attachmentextractor.attachment.extracttodefault.accesskey": {
-    "message": "X"
-  },
-  "attachmentextractor.attachment.extracttofolder.label": {
-    "message": "AE Oddeliť všetky do…"
-  },
-  "attachmentextractor.attachment.extracttofolder.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.attachment.extractindtodefault.label": {
-    "message": "AE Oddeliť"
-  },
-  "attachmentextractor.attachment.extractindtodefault.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.attachment.extractindtofolder.label": {
-    "message": "AE Oddeliť do…"
-  },
-  "attachmentextractor.attachment.extractindtofolder.accesskey": {
-    "message": "E"
-  },
+
   "attachmentextractor.toolbarbutton.label": {
     "message": "Uložiť AE"
   },
@@ -155,114 +18,44 @@
   "attachmentextractor.headerbutton.tooltip": {
     "message": "Uložiť prílohy z vybraných správ"
   },
+
   "attachmentextractor.browse.label": {
     "message": "Hľadať…"
   },
   "attachmentextractor.browse.accesskey": {
     "message": "H"
   },
-  "attachmentextractor.default.label": {
-    "message": "Pôvodné"
-  },
-  "attachmentextractor.default.accesskey": {
-    "message": "P"
-  },
-  "attachmentextractor.filenamepatterndialog.title": {
-    "message": "Názov vzoru vstupu"
-  },
-  "attachmentextractor.filenamepatterndialog.input.label": {
-    "message": "Upraviť názov vzoru prílohy:"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Nastaviť vzor ako predvolený odteraz"
-  },
-  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
-    "message": "Kliknúť na pridať znak"
-  },
-  "attachmentextractor.suggestedFolderDialog.title": {
-    "message": "AttachmentExtractor - Odporúčané priečinky"
-  },
-  "attachmentextractor.suggestedFolderDialog.label": {
-    "message": "Odporúčané priečinky založené na  črtoch predmetu vybratých správ:"
-  },
-  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
-    "message": "Použiť vybratý priečinok"
-  },
-
-  "attachmentextractor.settings.windowtitle": {
-    "message": "Možnosti rozšírenia AttachmentExtractor"
-  },
-  "attachmentextractor.settings.homepage.label": {
-    "message": "Domovská stránka AttachmentExtractor a popis funkcií:"
-  },
-  "attachmentextractor.settings.generaltab.label": {
-    "message": "Všeobecné"
-  },
-  "attachmentextractor.settings.normal.caption": {
-    "message": "Vyňatie príloh"
-  },
-  "attachmentextractor.settings.savefolders.caption": {
-    "message": "Kde majú byť prílohy uložené?"
-  },
-  "attachmentextractor.settings.overwritepolicy.label": {
-    "message": "Čo robiť v prípade, že existuje súbor s rovnakým názvom ako ukladaná príloha?"
-  },
-  "attachmentextractor.settings.overwrite-replace.label": {
-    "message": "Vždy nahradiť pôvodný súbor"
-  },
-  "attachmentextractor.settings.overwrite-replace.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.overwrite-ignore.label": {
-    "message": "Vždy zachovať pôvodný súbor a neukladať prílohu"
-  },
-  "attachmentextractor.settings.overwrite-ignore.accesskey": {
-    "message": "Z"
-  },
-  "attachmentextractor.settings.overwrite-rename.label": {
-    "message": "Uložiť prílohu pod novým názvom, a tak zachovať obidve"
-  },
-  "attachmentextractor.settings.overwrite-rename.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.settings.overwrite-ask.label": {
-    "message": "Opýtať sa"
-  },
-  "attachmentextractor.settings.overwrite-ask.accesskey": {
-    "message": "O"
-  },
+  
   "attachmentextractor.extractSingleAttTo.label": {
-    "message": "(AE) Extract Attachment to"
-  },
-  "attachmentextractor.extractSingleAttTo.tooltip": {
-    "message": "Extract selected Attachment"
+    "message": "AE Extract"
   },
   "attachmentextractor.extractMultipleAttTo.label": {
-    "message": "(AE) Extract all Attachments to"
-  },
-  "attachmentextractor.extractMultipleAttTo.tooltip": {
-    "message": "Extract all Attachments"
+    "message": "AE Extract all"
   },
   "attachmentextractor.extractMessagesTo.label": {
-    "message": "(AE) Extract Attachments from Messages to"
-  },
-  "attachmentextractor.extractMessagesTo.tooltip": {
-    "message": "Extract Attachments from selected Messages"
+    "message": "AE Extract from Messages"
   },
   "attachmentextractor.extractFoldersTo.label": {
-    "message": "(AE) Extract Attachments from Messages in Folder to"
-  },
-  "attachmentextractor.extractFoldersTo.tooltip": {
-    "message": "Extract Attachments from Messages in selected Folders"
+    "message": "AE Extract from Messages in Folder"
   },
   "attachmentextractor.extractTo.label": {
-    "message": "(AE) Extract Attachments to"
+    "message": "AE Extract Attachments"
   },
   "attachmentextractor.extractTo.accesskey": {
-    "message": "("
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
   },
   "attachmentextractor.extractToDefault.label": {
     "message": "Default Folder"
@@ -318,6 +111,91 @@
   "attachmentextractor.extractWithCustomPattern.accesskey": {
     "message": "W"
   },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Odstrániť prílohy z vybratých správ"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Odstrániť prílohy zo všetkých správ v priečinku"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Názov vzoru vstupu"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Upraviť názov vzoru prílohy:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Nastaviť vzor ako predvolený odteraz"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Kliknúť na pridať znak"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Odporúčané priečinky"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Odporúčané priečinky založené na  črtoch predmetu vybratých správ:"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Použiť vybratý priečinok"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "Možnosti rozšírenia AttachmentExtractor"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "Domovská stránka AttachmentExtractor a popis funkcií:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "Všeobecné"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Kde majú byť prílohy uložené?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "Čo robiť v prípade, že existuje súbor s rovnakým názvom ako ukladaná príloha?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Vždy nahradiť pôvodný súbor"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "N"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Vždy zachovať pôvodný súbor a neukladať prílohu"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "Z"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Uložiť prílohu pod novým názvom, a tak zachovať obidve"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Opýtať sa"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "O"
+  },
   "attachmentextractor.settings.favoritefolder.dialogtitle": {
     "message": "Favorite Folders"
   },
@@ -351,6 +229,9 @@
   "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
     "message": "Vylúčiť kľúčové slová: (oddelené čiarkou)"
   },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Add…"
+  },
   "attachmentextractor.settings.suggestfolder.clearbutton.label": {
     "message": "Vyčistiť"
   },
@@ -383,12 +264,6 @@
   },
   "attachmentextractor.settings.afterextractpolicy.label": {
     "message": "Po dokončení ukladania:"
-  },
-  "attachmentextractor.settings.afterextractpolicy.internaltab.label": {
-    "message": "Úloha Thunderbirdu"
-  },
-  "attachmentextractor.settings.afterextractpolicy.externaltab.label": {
-    "message": "Externá úloha"
   },
   "attachmentextractor.settings.after-delete.label": {
     "message": "Zmazať správy?"
@@ -615,6 +490,12 @@
   "attachmentextractor.settings.filenamepatterngroup.label": {
     "message": "Vzor vytvárania názvu súboru:"
   },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
   "attachmentextractor.settings.filenamepattern.label": {
     "message": "Vzor použitý na generovanie názvu súborov:"
   },
@@ -789,6 +670,9 @@
   "FileNamePatternDialogQuestion": {
     "message": "Nastaviť vzor naďalej ako pôvodný"
   },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
   "ConfirmDetachDialogTitle": {
     "message": "Potvrdiť oddelenie"
   },
@@ -840,6 +724,12 @@
   "FolderPickerDialogTitle": {
     "message": "Vybrať priečinok pre použitie"
   },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
   "EmptyLineText": {
     "message": "--prázdny--"
   },
@@ -849,6 +739,7 @@
   "FileNamePatternFixMessage": {
     "message": "Názov súboru alebo čislo vzoru, ktorý ste vložili je nesprávny a môže vypnúť AttachmentExtractor.\nZmeniť na:\n %1$s?"
   },
+
   "ExtractionStarted": {
     "message": "Vyňatie zahájené [Deň/Čas: %S]"
   },
