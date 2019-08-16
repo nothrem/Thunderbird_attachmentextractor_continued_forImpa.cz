@@ -68,6 +68,10 @@ Preferences.addAll([{
   type: "bool"
 },
 {
+  id: "extensions.attachmentextractor_cont.filenamepattern.askalwaysfnp",
+  type: "bool"
+},
+{
   id: "extensions.attachmentextractor_cont.filenamepattern.savemessage",
   type: "unichar"
 },

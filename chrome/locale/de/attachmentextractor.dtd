@@ -43,9 +43,9 @@
 
 <!ENTITY attachmentextractor.filenamepatterndialog.title "AttachmentExtractor - Dateinamenmuster">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Dateinamenmuster der angehängten Datei bearbeiten:">
-<!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dateinamenmuster als Standard festlegen">
+<!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dieses Dateinamenmuster als Standard festlegen">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.accesskey "S">
-<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Dialog für Dateinamenmuster immer anzeigen">
+<!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Dialog für Dateinamenmuster jedes Mal anzeigen">
 <!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "D">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
 

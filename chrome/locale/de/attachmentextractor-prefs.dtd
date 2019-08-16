@@ -110,7 +110,7 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "N">
 <!ENTITY attachmentextractor.settings.filenametab.label "Dateinamen">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Dateinamenmuster:">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Dialog für Dateinamenmuster immer anzeigen">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Dialog für Dateinamenmuster jedes Mal anzeigen">
 <!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "D">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Verwendetes Muster zum Erzeugen von Dateinamen:">

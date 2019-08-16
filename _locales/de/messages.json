@@ -132,13 +132,13 @@
     "message": "Dateinamenmuster der angehängten Datei bearbeiten:"
   },
   "attachmentextractor.filenamepatterndialog.checkbox.label": {
-    "message": "Dateinamenmuster als Standard festlegen"
+    "message": "Dieses Dateinamenmuster als Standard festlegen"
   },
   "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
     "message": "S"
   },
   "attachmentextractor.filenamepatterndialog.askalways.label": {
-    "message": "Dialog für Dateinamenmuster immer anzeigen"
+    "message": "Dialog für Dateinamenmuster jedes Mal anzeigen"
   },
   "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
     "message": "D"
@@ -491,7 +491,7 @@
     "message": "Dateinamenmuster:"
   },
   "attachmentextractor.settings.filenamepattern.askalways.label": {
-    "message": "Dialog für Dateinamenmuster immer anzeigen"
+    "message": "Dialog für Dateinamenmuster jedes Mal anzeigen"
   },
   "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
     "message": "D"
@@ -671,7 +671,7 @@
     "message": "Dieses Dateinamenmuster als Standard verwenden"
   },
   "FileNamePatternDialogAskAlways": {
-    "message": "Dialog für Dateinamenmuster immer anzeigen"
+    "message": "Dialog für Dateinamenmuster jedes Mal anzeigen"
   },
   "ConfirmDetachDialogTitle": {
     "message": "Abtrennen bestätigen"

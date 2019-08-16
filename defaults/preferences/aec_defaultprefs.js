@@ -55,6 +55,7 @@ pref("extensions.attachmentextractor_cont.autoextract.savemessage",false);
 pref("extensions.attachmentextractor_cont.autoextract.filenamepattern","");
 
 /* Filename pattern pane */
+pref("extensions.attachmentextractor_cont.filenamepattern.askalwaysfnp",true);
 pref("extensions.attachmentextractor_cont.filenamepattern","#namepart##count##extpart#");
 pref("extensions.attachmentextractor_cont.filenamepattern.countpattern","-%");
 pref("extensions.attachmentextractor_cont.filenamepattern.datepattern","D M d Y");

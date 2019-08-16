@@ -58,10 +58,20 @@
         </menupopup>
       </button>
     </hbox>
-    <textbox id="filenamepattern" 
-      preftype="char"/>
-    <checkbox id="savecheck" 
-      label="&attachmentextractor.filenamepatterndialog.checkbox.label;" 
-      accesskey="&attachmentextractor.filenamepatterndialog.checkbox.accesskey;" />
+    <vbox align="left">
+      <separator class="thin"/>
+      <separator class="thin"/>
+      <textbox id="filenamepattern" preftype="char" style="width: 45em;" />
+      <separator class="thin"/>
+      <separator class="thin"/>
+      <checkbox id="savecheck" 
+        label="&attachmentextractor.filenamepatterndialog.checkbox.label;" 
+        accesskey="&attachmentextractor.filenamepatterndialog.checkbox.accesskey;" />
+      <separator class="thin"/>
+      <checkbox id="askalwaysfnp" 
+        label="&attachmentextractor.filenamepatterndialog.askalways.label;" 
+        accesskey="&attachmentextractor.filenamepatterndialog.askalways.accesskey;" />
+      <separator class="thin"/>
+    </vbox>
   </vbox>
 </dialog>

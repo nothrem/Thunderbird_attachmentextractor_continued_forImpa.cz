@@ -103,6 +103,11 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("fnp: " + fnp + "\n");
     aedump("index: " + index + "\n");
 
+    // If pref is true, show the fnp edit dialog before extracting
+    if (this.prefs.get("filenamepattern.askalwaysfnp"))
+      fnp = this.getFilenamePattern();
+    aedump("fnp after extra fnp dialog: " + fnp + "\n");
+
     var folder = null;
     savelocation = savelocation + "";
     var messages = (all) ? this.collectMessagesFromFolder((all === 2)) : this
@@ -145,6 +150,11 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("mode: " + mode + "\n");
     aedump("fnp: " + fnp + "\n");
     aedump("index: " + index + "\n");
+
+    // If pref is true, show the fnp edit dialog before extracting
+    if (this.prefs.get("filenamepattern.askalwaysfnp"))
+      fnp = this.getFilenamePattern();
+    aedump("fnp after extra fnp dialog: " + fnp + "\n");
 
     var attachments;
     switch (mode) {
@@ -545,6 +555,9 @@ if (typeof AttachmentExtractor === "undefined") {
     var check = {
       value: false
     };
+    var askalwaysfnp = {
+      value: true
+    };
     var out = {
       value: false
     };
@@ -552,7 +565,7 @@ if (typeof AttachmentExtractor === "undefined") {
     window.openDialog(
       "chrome://attachmentextractor_cont/content/aec_dialog_filenamePattern.xul",
       "",
-      "chrome, dialog, modal", input, check, out);
+      "chrome, dialog, modal", input, check, askalwaysfnp, out);
     if (!out.value) return null;
     try {
       var fm = new AttachmentFileMaker(null, null, null);
@@ -560,9 +573,11 @@ if (typeof AttachmentExtractor === "undefined") {
     } catch (e) {
       aedump(e);
     }
-    aedump("// " + check.value + "\n");
+    //aedump("// check.value: " + check.value + "\n");
+    //aedump("// askalways.value: " + askalways.value + "\n");
     if (check.value && input.value) this.prefs.set("filenamepattern", input
       .value);
+    this.prefs.set("filenamepattern.askalwaysfnp", askalwaysfnp.value);
     return input.value;
   }
 

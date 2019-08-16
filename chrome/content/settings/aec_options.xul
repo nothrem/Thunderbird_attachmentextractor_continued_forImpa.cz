@@ -258,6 +258,12 @@
                 <hbox>
                   <html:h1 class="subcategory">&attachmentextractor.settings.filenametab.label;</html:h1>
                 </hbox>
+
+                <checkbox id="filenamepatternaskalwaysfnp" 
+                  label="&attachmentextractor.settings.filenamepattern.askalways.label;" 
+                  accesskey="&attachmentextractor.settings.filenamepattern.askalways.accesskey;" 
+                  preference="extensions.attachmentextractor_cont.filenamepattern.askalwaysfnp" />
+
                 <groupbox>
                   <label><html:h2>&attachmentextractor.settings.filenamepatterngroup.label;</html:h2></label>
                   <hbox align="center">
