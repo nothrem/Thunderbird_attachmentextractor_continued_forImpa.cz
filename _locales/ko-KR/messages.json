@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "최소 크기 검사"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "다음보다 큰 경우에만 첨부 저장:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "바이트"
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "0 바이트 이상으로 이것을 설정하면 AttachmentExtractor의 처리 속도는 어느 정도 늦어집니다."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "대기중인 추출"

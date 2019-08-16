@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Без запис на прикачени файлове.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Ограничение за размер">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Запис само на прикачени файлове, ако са по-големи от:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "байта.">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Запис само на прикачени файлове, ако са по-големи от:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "При настройка повече от 0 байта AttachmentExtractor ще е по-бавен донякъде.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Извличания на опашка">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Старт на AttachmentExtractor моментално при заявка за извличане.">

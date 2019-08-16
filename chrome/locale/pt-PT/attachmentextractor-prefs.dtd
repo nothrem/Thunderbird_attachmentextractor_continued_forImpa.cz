@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Desactivar a guarda dos anexos.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Verificação do Tamanho Mínimo">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Guardar anexos apenas se forem maiores do que:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes.">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Guardar anexos apenas se forem maiores do que:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor .">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Extracções em Espera">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Iniciar o AttachmentExtractor  rapidamente  assim que for pedida uma extração.">

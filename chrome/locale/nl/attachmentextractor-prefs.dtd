@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Opslaan van bijlagen uitschakelen">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Controle minimumgrootte">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Bijlagen alleen opslaan als ze groter zijn dan:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "bytes.">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Bijlagen alleen opslaan als ze groter zijn dan:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Indien dit wordt ingesteld op een waarde groter dan 0 zal AttachmentExtractor langzamer worden.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Uitpakwachtrij">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "AttachmentExtractor direct starten wanneer om uitpakken wordt gevraagd.">

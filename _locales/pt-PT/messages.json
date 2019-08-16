@@ -411,14 +411,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Verificação do Tamanho Mínimo"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Guardar anexos apenas se forem maiores do que:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "Bytes."
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Se o valor for maior do que 0 bytes irá reduzir a velocidade do AttachmentExtractor ."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Extracções em Espera"

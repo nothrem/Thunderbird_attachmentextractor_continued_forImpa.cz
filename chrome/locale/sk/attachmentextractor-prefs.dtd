@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Vypnúť ukladanie príloh">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "V">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimálna veľkosť kontroly">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Uložiť prílohy len ak sú väčšie ako:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytov">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Uložiť prílohy len ak sú väčšie ako:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Nastavenie tohto na viac ako 0 bytov spomalí AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Vyňatie v poradí">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Spustiť AttachmentExtractor vždy ak je vyňatie vyžadované.">

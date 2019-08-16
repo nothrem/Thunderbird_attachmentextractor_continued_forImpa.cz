@@ -85,8 +85,8 @@
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "최소 크기 검사">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "0 바이트 이상으로 이것을 설정하면 AttachmentExtractor의 처리 속도는 어느 정도 늦어집니다.">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "다음보다 큰 경우에만 첨부 저장:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "바이트">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "다음보다 큰 경우에만 첨부 저장:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "대기중인 추출">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "AttachmentExtractor를 시작할 때마다 곧바로 추출을 요청합니다.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">

@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Deaktiver gemning af vedhæftede filer">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Check af filstørrelse">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Gem kun filer større end:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "bytes.">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Gem kun filer større end:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Indtastning af denne værdi til større end 0 bytes vil nedsætte hastigheden på AE.">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Kø indstillinger">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Start AE med det samme hver gang den aktiveres">

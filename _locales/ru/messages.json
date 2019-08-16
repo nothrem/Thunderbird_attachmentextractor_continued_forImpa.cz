@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Проверка минимального размера"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Сохранять вложения только, если они больше чем:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "Байт."
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "--НЕ ЗАДЕЙСТВОВАНО--"
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Очередь извлечений"

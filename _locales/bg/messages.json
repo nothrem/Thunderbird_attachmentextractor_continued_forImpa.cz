@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Ограничение за размер"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Запис само на прикачени файлове, ако са по-големи от:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "байта."
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "При настройка повече от 0 байта AttachmentExtractor ще е по-бавен донякъде."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Извличания на опашка"

@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Dimensione minima degli allegati"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
-    "message": "Salva gli allegati solo se maggiori dei seguenti byte:"
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+    "message": "Salva gli allegati solo se maggiori dei seguenti kB:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
     "message": " "
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Impostando un numero maggiore di 0 l&apos;estrazione verrà rallentata"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Estrazioni in coda"

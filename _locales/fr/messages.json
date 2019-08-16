@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Vérification de taille minimale"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Sauvegarder les pièces jointes seulement si plus grandes que :"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "octets."
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Une valeur plus grande que 0 ralentira AttachmentExtractor."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Queue des extractions"

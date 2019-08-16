@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Mindestgröße des Anhangs"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Nur Anhänge speichern, die größer sind als"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "Bytes"
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Bei Werten größer 0 wird der &quot;AttachmentExtractor&quot; etwas verlangsamt."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Abtrennen mit Warteschlange"

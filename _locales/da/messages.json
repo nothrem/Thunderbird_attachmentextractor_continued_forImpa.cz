@@ -412,14 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Check af filstørrelse"
   },
-  "attachmentextractor.settings.extract.minimumsize-start.label": {
+  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
     "message": "Gem kun filer større end:"
   },
-  "attachmentextractor.settings.extract.minimumsize-end.label": {
-    "message": "bytes."
-  },
-  "attachmentextractor.settings.extract.minimumsize-explaination.label": {
-    "message": "Indtastning af denne værdi til større end 0 bytes vil nedsætte hastigheden på AE."
+  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+    "message": "kB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Kø indstillinger"

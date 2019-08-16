@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Disable the saving of the attachments.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimum Size Check">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Only save attachments if they are larger than:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label "Bytes.">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Only save attachments if they are larger than:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "-- NOT USED --">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Queued Extractions">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Start AttachmentExtractor straight away every time extraction is requested.">

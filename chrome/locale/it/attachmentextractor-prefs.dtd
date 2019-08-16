@@ -84,8 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Disattiva il salvataggio degli allegati">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Dimensione minima degli allegati">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-start.label "Salva gli allegati solo se maggiori dei seguenti byte:">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-end.label " ">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Salva gli allegati solo se maggiori dei seguenti kB:">
+<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label " ">
 <!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Impostando un numero maggiore di 0 l&apos;estrazione verrà rallentata">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Estrazioni in coda">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Avvia AttachmentExtractor ogni volta che viene richiesta l&apos;estrazione">
