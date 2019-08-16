@@ -881,9 +881,61 @@ if (typeof AEMessage === "undefined") {
     }
   };
 
+  AEMessage.prototype.getAttSize = async function(_url, isExternalAttachment, isLinkAttachment = false) {
+    let url = _url;
+    let size = 0;
+    let options = { method: "HEAD" };
+
+   // NOTE: For internal mailbox, imap, news urls the response body must get
+   // the content length with getReader().read() but we don't need to do this
+   // here as libmime streams it already in addAttachmentField(). For imap or
+   // news urls with credentials (username, userPass), we must remove them
+   // as Request fails such urls with a MSG_URL_HAS_CREDENTIALS error.
+    if (url.startsWith("imap://") || url.startsWith("news://")) {
+      let uri = Services.io.newURI(url);
+      if (uri.username)
+        url = url.replace(uri.username + "@", "");
+      if (uri.userPass)
+        url = url.replace(uri.userPass + "@", "");
+    }
+
+    let request = new Request(url, options);
+
+    await fetch(request)
+      .then((response) => {
+        if (!response.ok) {
+          return null;
+        }
+
+        if (isLinkAttachment) {
+          if (response.status < 200 || response.status > 304) {
+            return null;
+          }
+        }
+
+        return response;
+      })
+      .then(async (response) => {
+        if (isExternalAttachment) {
+          size = response ? response.headers.get("content-length") : 0;
+        } else {
+          let data = await response.body.getReader().read();
+          size = data.value.length;
+        }
+      })
+      .catch((error) => {
+        console.warn("getAttSize: error - " + error.message);
+      });
+
+    return size;
+  };
+
   AEMessage.prototype.saveAtt = function(attachmentindex) {
-    aewindow.aedump('{function:AEMessage.saveAtt(' + attachmentindex + ')}\n',
-      2);
+    aewindow.aedump(
+      '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
+    
+    // console.log(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds);
+
     aewindow.progress_tracker.starting_attachment(attachmentindex, this
       .attachments_ct.length);
 
@@ -895,6 +947,9 @@ if (typeof AEMessage === "undefined") {
     //aewindow.aedump(attachment.uri+"\n"+attachment.url+"\n"+attachment);
 
     if (file) {
+
+      // this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { console.log("Size: " + size); });
+
       if (attachment.isExternalAttachment) {
         try {
           this.browserPersistObject = aeMessenger.saveExternalAttachment(
