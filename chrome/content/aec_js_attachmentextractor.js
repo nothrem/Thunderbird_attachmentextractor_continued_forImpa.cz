@@ -85,28 +85,21 @@ if (typeof AttachmentExtractor === "undefined") {
 
   /* access functions */
 
-  AttachmentExtractor.prototype.doPatternAttachmentextraction = function(event,
-    savelocation, all, index) {
-    if (!all && !this.getSelectedMessages()) return;
-    var fnp = this.getFilenamePattern();
-    if (!fnp) return;
-    this.doAttachmentextraction(event, savelocation, all, fnp, index);
-  };
-
   AttachmentExtractor.prototype.doAttachmentextraction = function(event,
-    savelocation, all, fnp, index) {
+    savelocation, all, index) {
 
     aedump('{function:AttachmentExtractor.doAttachmentextraction}\n',2);
     aedump("event: " + event + "\n");
     aedump("savelocation: " + savelocation + "\n");
     aedump("all: " + all + "\n");
-    aedump("fnp: " + fnp + "\n");
     aedump("index: " + index + "\n");
 
     // If pref is true, show the fnp edit dialog before extracting
-    if (this.prefs.get("filenamepattern.askalwaysfnp"))
+    var fnp = false;
+    if (this.prefs.get("filenamepattern.askalwaysfnp")) {
       fnp = this.getFilenamePattern();
-    aedump("fnp after extra fnp dialog: " + fnp + "\n");
+      aedump("fnp after extra fnp dialog: " + fnp + "\n");
+    }
 
     var folder = null;
     savelocation = savelocation + "";
@@ -143,18 +136,19 @@ if (typeof AttachmentExtractor === "undefined") {
   };
 
   AttachmentExtractor.prototype.doIndividualAttachmentextraction = function(
-    savelocation, mode, fnp, index) {
+    savelocation, mode, index) {
     
     aedump('{function:AttachmentExtractor.doIndividualAttachmentextraction}\n',2);
     aedump("savelocation: " + savelocation + "\n");
     aedump("mode: " + mode + "\n");
-    aedump("fnp: " + fnp + "\n");
     aedump("index: " + index + "\n");
 
     // If pref is true, show the fnp edit dialog before extracting
-    if (this.prefs.get("filenamepattern.askalwaysfnp"))
+    var fnp = false;
+    if (this.prefs.get("filenamepattern.askalwaysfnp")) {
       fnp = this.getFilenamePattern();
-    aedump("fnp after extra fnp dialog: " + fnp + "\n");
+      aedump("fnp after extra fnp dialog: " + fnp + "\n");
+    }
 
     var attachments;
     switch (mode) {
@@ -653,13 +647,12 @@ if (typeof AttachmentExtractor === "undefined") {
     }
 
     // we proceed here and build the new menuitems
-    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
-      "paramPattern") === "true") ? "Pattern" : "");
+    var oncommand = "attachmentextractor.do";
     if (parent.getAttribute("paramIndividual") === "true") oncommand +=
       "IndividualAttachmentextraction('favorite', " + parent.getAttribute(
-      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+      "paramAll") + ", '#');"
     else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
-      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+      "paramAll") + ", '#');"
     
     var obj = {};
     prefs.getChildList("favoritefolder.", obj);
@@ -841,13 +834,12 @@ if (typeof AttachmentExtractor === "undefined") {
     if (!ps.getBoolPref("savepathmru")) return;
 
     // if savepathmru is enabled we proceed here and build the new menuitems
-    var oncommand = "attachmentextractor.do" + ((parent.getAttribute(
-      "paramPattern") === "true") ? "Pattern" : "");
+    var oncommand = "attachmentextractor.do";
     if (parent.getAttribute("paramIndividual") === "true") oncommand +=
-      "IndividualAttachmentextraction('mru'," + parent.getAttribute(
-      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
-    else oncommand += "Attachmentextraction(event,'mru'," + parent.getAttribute(
-      "paramAll") + ", " + parent.getAttribute("paramPattern") + ", '#');"
+      "IndividualAttachmentextraction('mru', " + parent.getAttribute(
+      "paramAll") + ", '#');"
+    else oncommand += "Attachmentextraction(event,'mru', " + parent.getAttribute(
+      "paramAll") + ", '#');"
 
     var count = ps.getIntPref("savepathmru.count");
     for (let i = 1; i <= count; i++) {

@@ -81,14 +81,14 @@
           oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','selected');" 
           observes="aec_commandset_ind"/>
         <command id="cmd_aec_extractIndToSuggest" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','selected');" />
+          oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','selected');"/>
 
         <command id="cmd_aec_extractIndAllToDefault" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('default','all');"/>
         <command id="cmd_aec_extractIndAllToBrowse" 
           oncommand="attachmentextractor.doIndividualAttachmentextraction('browse','all');"/>
         <command id="cmd_aec_extractIndAllToSuggest" 
-          oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','all');" />
+          oncommand="attachmentextractor.doIndividualAttachmentextraction('suggest','all');"/>
       </commandset>
 
     </commandset>

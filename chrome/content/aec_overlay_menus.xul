@@ -50,8 +50,7 @@
           accesskey="&attachmentextractor.extractToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractFavoritefolder_messageMenu-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="false" 
-            paramPattern="false" />
+            paramAll="false" />
         </menu>
 
         <menu id="menu_aec_extractToMRU_messageMenu" 
@@ -59,8 +58,7 @@
           accesskey="&attachmentextractor.extractToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="false" 
-            paramPattern="false" />
+            paramAll="false" />
         </menu>
 
         <menuitem id="menu_aec_extractToSuggest_messageMenu" 
@@ -116,8 +114,7 @@
           accesskey="&attachmentextractor.extractToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractFavoritefolder_mailContext-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="false" 
-            paramPattern="false" />
+            paramAll="false" />
         </menu>
 
         <menu id="menu_aec_extractToMRU_mailContext" 
@@ -125,8 +122,7 @@
           accesskey="&attachmentextractor.extractToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="false" 
-            paramPattern="false" />
+            paramAll="false" />
         </menu>
 
         <menuitem id="menu_aec_extractToSuggest_mailContext" 
@@ -183,16 +179,14 @@
           accesskey="&attachmentextractor.extractToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractAllFavoritefolder_fileMenu-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="true" 
-            paramPattern="false" />
+            paramAll="true" />
         </menu>
         <menu id="menu_aec_extractDeepToFavorite_fileMenu" 
           label="&attachmentextractor.extractWithSubToFavoritefolders.label;" 
           accesskey="&attachmentextractor.extractWithSubToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractDeepFavoritefolder_fileMenu-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="2" 
-            paramPattern="false" />
+            paramAll="2" />
         </menu>
 
         <menu id="menu_aec_extractAllToMRU_fileMenu" 
@@ -200,16 +194,14 @@
           accesskey="&attachmentextractor.extractToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractAllMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="true" 
-            paramPattern="false" />
+            paramAll="true" />
         </menu>
         <menu id="menu_aec_extractDeepToMRU_fileMenu" 
           label="&attachmentextractor.extractWithSubToMRUfolders.label;" 
           accesskey="&attachmentextractor.extractWithSubToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractDeepMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="2" 
-            paramPattern="false" />
+            paramAll="2" />
         </menu>
 
         <menuitem id="menu_aec_extractAllToSuggest_fileMenu" 
@@ -263,16 +255,14 @@
           accesskey="&attachmentextractor.extractToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractAllFavoritefolder_folderPaneContext-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="true" 
-            paramPattern="false" />
+            paramAll="true" />
         </menu>
         <menu id="menu_aec_extractDeepToFavorite_folderPaneContext" 
           label="&attachmentextractor.extractWithSubToFavoritefolders.label;" 
           accesskey="&attachmentextractor.extractWithSubToFavoritefolders.accesskey;">
           <menupopup id="menu_aec_extractDeepFavoritefolder_folderPaneContext-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
-            paramAll="2" 
-            paramPattern="false" />
+            paramAll="2" />
         </menu>
 
         <menu id="menu_aec_extractAllToMRU_folderPaneContext" 
@@ -280,16 +270,14 @@
           accesskey="&attachmentextractor.extractToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractAllMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="true" 
-            paramPattern="false" />
+            paramAll="true" />
         </menu>
         <menu id="menu_aec_extractDeepToMRU_folderPaneContext" 
           label="&attachmentextractor.extractWithSubToMRUfolders.label;" 
           accesskey="&attachmentextractor.extractWithSubToMRUfolders.accesskey;">
           <menupopup id="menu_aec_extractDeepMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
-            paramAll="2" 
-            paramPattern="false" />
+            paramAll="2" />
         </menu>
 
         <menuitem id="menu_aec_extractAllToSuggest_folderPaneContext" 

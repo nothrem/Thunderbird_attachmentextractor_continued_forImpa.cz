@@ -51,7 +51,6 @@
           <menupopup id="menu_aec_extractFavoritefolder_attachmentSaveAllMultiple-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
             paramAll="'all'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -61,7 +60,6 @@
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
             paramAll="'all'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -107,7 +105,6 @@
           <menupopup id="menu_aec_extractFavoritefolder_attachmentSaveAllSingle-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
             paramAll="'selected'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -117,7 +114,6 @@
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
             paramAll="'selected'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -165,7 +161,6 @@
           <menupopup id="menu_aec_extractFavoritefolder_attachmentListContext-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
             paramAll="'all'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -175,7 +170,6 @@
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
             paramAll="'all'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -223,7 +217,6 @@
           <menupopup id="menu_aec_extractFavoritefolder_attachmentItemContext-Popup" 
             onpopupshowing="attachmentextractor.updateFavoriteMenuItems(this)" 
             paramAll="'selected'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
@@ -233,7 +226,6 @@
           <menupopup id="menu_aec_extractMRU_toolbar-Popup" 
             onpopupshowing="attachmentextractor.updateMRUMenuItems(this)" 
             paramAll="'selected'" 
-            paramPattern="false" 
             paramIndividual="true" />
         </menu>
 
