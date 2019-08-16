@@ -567,8 +567,6 @@ if (typeof AttachmentExtractor === "undefined") {
     } catch (e) {
       aedump(e);
     }
-    //aedump("// check.value: " + check.value + "\n");
-    //aedump("// askalways.value: " + askalways.value + "\n");
     if (check.value && input.value) this.prefs.set("filenamepattern", input
       .value);
     this.prefs.set("filenamepattern.askalwaysfnp", askalwaysfnp.value);
