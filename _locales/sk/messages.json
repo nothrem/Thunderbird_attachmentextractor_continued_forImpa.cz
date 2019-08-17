@@ -412,11 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Minimálna veľkosť kontroly"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
     "message": "Uložiť prílohy len ak sú väčšie ako:"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
-    "message": "kB"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Vyňatie v poradí"
@@ -656,7 +656,7 @@
     "message": "[%1$s] z [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$sKB z %2$sKB"
+    "message": "%1$s KiB z %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Ukladá prílohy z vybraných správ."

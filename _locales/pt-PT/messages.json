@@ -411,11 +411,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Verificação do Tamanho Mínimo"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
     "message": "Guardar anexos apenas se forem maiores do que:"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
-    "message": "kB"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Extracções em Espera"
@@ -655,7 +655,7 @@
     "message": "[%1$s] de [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$sKB de %2$sKB"
+    "message": "%1$s KiB de %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Introdução do nome do ficheiro"

@@ -412,11 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Проверка минимального размера"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
     "message": "Сохранять вложения только, если они больше чем:"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
-    "message": "kB"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Очередь извлечений"
@@ -656,7 +656,7 @@
     "message": "[%1$s] из [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$s Кб из %2$s Кб"
+    "message": "%1$s KiB из %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Ввод шаблона имени файла"

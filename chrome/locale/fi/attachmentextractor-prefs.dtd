@@ -84,9 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Poista käytöstä liitetiedostojen tallennus.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "P">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimikokotarkistus">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Tallenna liitteet vain jos ne ovat suurempia kuin:">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Tämän asettaminen suuremmaksi kuin 0 tavua hidastaa AttachmentExtractoria.">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label "Tallenna liitteet vain jos ne ovat suurempia kuin:">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label "KiB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Odottavat poiminnat">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Käynnistä AttachmentExtractor heti joka kerta kun poimintaa pyydetään.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "K">

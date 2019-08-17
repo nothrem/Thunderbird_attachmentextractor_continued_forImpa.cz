@@ -84,9 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Speichern von Anhängen deaktivieren">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "P">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Mindestgröße des Anhangs">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Nur Anhänge speichern, die größer sind als">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Bei Werten größer 0 wird der &quot;AttachmentExtractor&quot; etwas verlangsamt.">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label "Nur Anhänge speichern, die größer sind als">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label "KiB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Abtrennen mit Warteschlange">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "&quot;AttachmentExtractor&quot; bei jedem Abtrennbefehl sofort ausführen">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">

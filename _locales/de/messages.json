@@ -412,11 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Mindestgröße des Anhangs"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
     "message": "Nur Anhänge speichern, die größer sind als"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
-    "message": "kB"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "Abtrennen mit Warteschlange"
@@ -656,7 +656,7 @@
     "message": "[%1$s] von [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$sKB von  %2$sKB"
+    "message": "%1$s KiB von  %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Eingabe des Dateinamenmusters"

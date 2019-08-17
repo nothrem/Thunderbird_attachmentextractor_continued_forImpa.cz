@@ -412,10 +412,10 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "Dimensione minima degli allegati"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
-    "message": "Salva gli allegati solo se maggiori dei seguenti kB:"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
+    "message": "Salva gli allegati solo se maggiori dei seguenti KiB:"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
     "message": " "
   },
   "attachmentextractor.settings.queuerequests.caption": {
@@ -656,7 +656,7 @@
     "message": "[%1$s] di [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$s kB di %2$s kB"
+    "message": "%1$s KiB di %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Nome del modello"

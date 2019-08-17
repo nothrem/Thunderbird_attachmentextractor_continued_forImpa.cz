@@ -412,11 +412,11 @@
   "attachmentextractor.settings.extract.minimumsize.caption": {
     "message": "최소 크기 검사"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-start.label": {
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
     "message": "다음보다 큰 경우에만 첨부 저장:"
   },
-  "attachmentextractor.settings.extract.minimumsizekilobyte-end.label": {
-    "message": "kB"
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
   },
   "attachmentextractor.settings.queuerequests.caption": {
     "message": "대기중인 추출"
@@ -656,7 +656,7 @@
     "message": "[%2$] 중 [%1$]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%2$sKB 중 %1$sKB"
+    "message": "%2$s KiB 중 %1$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "파일명 양식 입력"

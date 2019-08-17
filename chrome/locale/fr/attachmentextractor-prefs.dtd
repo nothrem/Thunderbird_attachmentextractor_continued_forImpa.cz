@@ -84,9 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Désactiver la sauvegarde des pièces jointes">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Vérification de taille minimale">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Sauvegarder les pièces jointes seulement si plus grandes que :">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Une valeur plus grande que 0 ralentira AttachmentExtractor.">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label "Sauvegarder les pièces jointes seulement si plus grandes que :">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label "KiB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Queue des extractions">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Démarrer AttachmentExtractor immédiatement à chaque demande d&apos;extraction">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "I">

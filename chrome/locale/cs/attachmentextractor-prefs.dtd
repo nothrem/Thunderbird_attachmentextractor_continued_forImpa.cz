@@ -84,9 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Zakázat ukládání příloh.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimální velikost">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Ukládat pouze přílohy větší než:">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "Nastevení této moožnosti na číslo větší než 0 zpomalí práci s přílohami.">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label "Ukládat pouze přílohy větší než:">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label "KiB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Fronta">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Spustit operaci ihned při požadavku">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "I">

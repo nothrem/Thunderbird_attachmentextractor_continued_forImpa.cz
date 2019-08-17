@@ -84,9 +84,8 @@
 <!ENTITY attachmentextractor.settings.noextract.label "Отключить сохранение вложений.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Проверка минимального размера">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-start.label "Сохранять вложения только, если они больше чем:">
-<!ENTITY attachmentextractor.settings.extract.minimumsizekilobyte-end.label "kB">
-<!ENTITY attachmentextractor.settings.extract.minimumsize-explaination.label "--НЕ ЗАДЕЙСТВОВАНО--">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label "Сохранять вложения только, если они больше чем:">
+<!ENTITY attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label "KiB">
 <!ENTITY attachmentextractor.settings.queuerequests.caption "Очередь извлечений">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.label "Принудительно запускать AttachmentExtractor каждый раз, когда затребовано извлечение.">
 <!ENTITY attachmentextractor.settings.queuerequests.disabled.accesskey "S">

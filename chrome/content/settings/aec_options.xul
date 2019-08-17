@@ -659,12 +659,12 @@
                         prefstring="extensions.attachextract_cont.skipidentical" />
                       </vbox>
                       <box align="center" class="indent">
-                        <label value="&attachmentextractor.settings.extract.minimumsizekilobyte-start.label;"/>
+                        <label value="&attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label;"/>
                         <textbox preftype="int" 
                           preference="extensions.attachextract_cont.extract.minimumsize" 
                           style="width: 10em;" 
                           id="minimumsize"/>
-                        <label value="&attachmentextractor.settings.extract.minimumsizekilobyte-end.label;"/>
+                        <label value="&attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label;"/>
                       </box>
                     </radiogroup>
                   </groupbox>
