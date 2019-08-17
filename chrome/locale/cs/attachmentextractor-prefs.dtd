@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Rozšířené">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Rozšířené">
 <!ENTITY attachmentextractor.settings.extract.caption "Ukládání přílohy">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Ukládat přílohy standardní funkcí aplikace Thunderbird.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "S">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Používat vnitřní proceduru odstraňování příloh.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "P">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Zakázat ukládání příloh.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimální velikost">

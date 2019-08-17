@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Расширенные">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Больше">
 <!ENTITY attachmentextractor.settings.extract.caption "Сохранение файла вложения">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Извлекать вложения обычным кодом Thunderbird.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Извлекать вложения внутренним кодом AE">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Отключить сохранение вложений.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Проверка минимального размера">

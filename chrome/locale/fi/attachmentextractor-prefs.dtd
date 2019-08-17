@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Lisäasetukset">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Lisää">
 <!ENTITY attachmentextractor.settings.extract.caption "Liitetiedostojen tallennus">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Poimi liitetiedostot tavallisella Thunderbird-koodilla.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "T">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Poimi liitteet AE:n sisäisellä rutiinilla.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Poista käytöstä liitetiedostojen tallennus.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "P">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimikokotarkistus">

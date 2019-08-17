@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avancé">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Plus">
 <!ENTITY attachmentextractor.settings.extract.caption "Sauvegarde des pièces jointes">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Extraire les pièces jointes avec le code normal de Thunderbird">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Extraire les pièces jointes avec la routine interne d&apos;AttachmentExtractor.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Désactiver la sauvegarde des pièces jointes">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Vérification de taille minimale">

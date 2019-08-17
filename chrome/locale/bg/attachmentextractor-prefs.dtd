@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Разширени">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Още">
 <!ENTITY attachmentextractor.settings.extract.caption "Запис на прикачени файлове">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Извличане на прикрепени файлове по нормалния метод на Thunderbird.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Извличане на прикачени файлове по вътрешния метод на AE.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Без запис на прикачени файлове.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Ограничение за размер">

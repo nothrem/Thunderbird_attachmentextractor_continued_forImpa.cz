@@ -161,7 +161,7 @@
     "message": "AttachmentExtractor - Einstellungen"
   },
   "attachmentextractor.settings.homepage.label": {
-    "message": "Homepage von &quot;AttachmentExtractor&quot; und Beschreibung der Funktionen:"
+    "message": "Homepage von AttachmentExtractor und Beschreibung der Funktionen:"
   },
   "attachmentextractor.settings.generaltab.label": {
     "message": "Allgemein"
@@ -296,13 +296,13 @@
     "message": "T"
   },
   "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Löschen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine"
+    "message": "Löschen mit AttachmentExtractors interner (Versuchs-)Routine"
   },
   "attachmentextractor.settings.after-detach.aedelete.accesskey": {
     "message": "R"
   },
   "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Abtrennen mit &quot;AttachmentExtractors&quot; interner (Versuchs-)Routine"
+    "message": "Abtrennen mit AttachmentExtractors interner (Versuchs-)Routine"
   },
   "attachmentextractor.settings.after-detach.aedetach.accesskey": {
     "message": "e"
@@ -356,7 +356,7 @@
     "message": "HTML-Protokollgenerator"
   },
   "attachmentextractor.settings.reportgen.label": {
-    "message": "Jede Ausführung von &quot;AttachmentExtractor&quot; protokollieren"
+    "message": "Jede Ausführung von AttachmentExtractor protokollieren"
   },
   "attachmentextractor.settings.reportgen.accesskey": {
     "message": "P"
@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Speichern von Anhangdateien"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Anhänge mit normaler Thunderbird-Routine abtrennen"
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Anhänge speichern"
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Anhänge mit interner Routine von &quot;AttachmentExtractor&quot; abtrennen"
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "N"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "c"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Speichern von Anhängen deaktivieren"
@@ -422,13 +416,13 @@
     "message": "Abtrennen mit Warteschlange"
   },
   "attachmentextractor.settings.queuerequests.disabled.label": {
-    "message": "&quot;AttachmentExtractor&quot; bei jedem Abtrennbefehl sofort ausführen"
+    "message": "AttachmentExtractor bei jedem Abtrennbefehl sofort ausführen"
   },
   "attachmentextractor.settings.queuerequests.disabled.accesskey": {
     "message": "S"
   },
   "attachmentextractor.settings.queuerequests.enabled.label": {
-    "message": "Abtrennbefehle in Warteschlange sammeln, solange &quot;AttachmentExtractor&quot; noch läuft"
+    "message": "Abtrennbefehle in Warteschlange sammeln, solange AttachmentExtractor noch läuft"
   },
   "attachmentextractor.settings.queuerequests.enabled.accesskey": {
     "message": "W"

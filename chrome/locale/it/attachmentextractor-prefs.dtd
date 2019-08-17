@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avanzate">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Avanzate II">
 <!ENTITY attachmentextractor.settings.extract.caption "Salvataggio degli allegati">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Utilizza la procedura nativa di Thunderbird per estrarre">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "n">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Utilizza la procedura di AttachmentExtractor per estrarre">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "z">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Disattiva il salvataggio degli allegati">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Dimensione minima degli allegati">

@@ -390,17 +390,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Guardar Ficheiro anexo"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Extrair Anexos com o código normal do Thunderbird."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Extrair Anexos com a rotina interna AE&apos;s"
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "A"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Desactivar a guarda dos anexos."

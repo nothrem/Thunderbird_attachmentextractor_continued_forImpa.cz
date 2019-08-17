@@ -174,8 +174,8 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachextract_cont.extract.mode",
-  type: "int"
+  id: "extensions.attachextract_cont.extract.enabled",
+  type: "bool"
 },
 {
   id: "extensions.attachextract_cont.extract.minimumsize",

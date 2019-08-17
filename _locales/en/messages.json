@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Attachment File Saving"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Extract Attachments with normal Thunderbird code."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Extract Attachments with AE&apos;s internal routine."
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "A"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Disable the saving of the attachments."

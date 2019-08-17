@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Ukládání přílohy"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Ukládat přílohy standardní funkcí aplikace Thunderbird."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Používat vnitřní proceduru odstraňování příloh."
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "P"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Zakázat ukládání příloh."

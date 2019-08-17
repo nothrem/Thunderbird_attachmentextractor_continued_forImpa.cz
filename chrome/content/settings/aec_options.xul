@@ -600,30 +600,28 @@
                   <groupbox>
                     <label><html:h2>&attachmentextractor.settings.extract.caption;</html:h2></label>
                     <radiogroup id="extractmode" 
-                      preference="extensions.attachextract_cont.extract.mode">
-                      <radio value="-1" 
+                      preference="extensions.attachextract_cont.extract.enabled">
+                      <radio value="false" 
                         label="&attachmentextractor.settings.noextract.label;" 
                         accesskey="&attachmentextractor.settings.noextract.accesskey;" 
                         oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
-                      <radio value="0" 
-                        label="&attachmentextractor.settings.extract.tbextract.label;" 
-                        accesskey="&attachmentextractor.settings.extract.tbextract.accesskey;" 
-                        oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
-                      <radio value="1" 
+                      <radio value="true" 
                         id="extractmode1" 
-                        label="&attachmentextractor.settings.extract.aeextract2.label;" 
-                        accesskey="&attachmentextractor.settings.extract.aeextract2.accesskey;" 
+                        label="&attachmentextractor.settings.doextract.label;" 
+                        accesskey="&attachmentextractor.settings.doextract.accesskey;" 
                         oncommand="wdw_aecOptions.enableField(document.getElementById('extractmode1'),['setdatetoemail','minimumsize']);"/>
                       <vbox  class="indent">
-                      <checkbox id="setdatetoemail" 
-                        label="&attachmentextractor.settings.setdatetoemail.label;" 
-                        accesskey="&attachmentextractor.settings.setdatetoemail.accesskey;" 
-                        preference="extensions.attachextract_cont.setdatetoemail"/>
-                      <checkbox id="identicalpolicy" 
-                        style="display:none" 
-                        label="&attachmentextractor.settings.skipidentical.label;" 
-                        accesskey="&attachmentextractor.settings.skipidentical.accesskey;" 
-                        prefstring="extensions.attachextract_cont.skipidentical" />
+                        <checkbox id="setdatetoemail" 
+                          label="&attachmentextractor.settings.setdatetoemail.label;" 
+                          accesskey="&attachmentextractor.settings.setdatetoemail.accesskey;" 
+                          preference="extensions.attachextract_cont.setdatetoemail"/>
+                      <!--
+                        <checkbox id="identicalpolicy" 
+                          style="display:none" 
+                          label="&attachmentextractor.settings.skipidentical.label;" 
+                          accesskey="&attachmentextractor.settings.skipidentical.accesskey;" 
+                          prefstring="extensions.attachextract_cont.skipidentical" />
+                      -->
                       </vbox>
                       <box align="center" class="indent">
                         <label value="&attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label;"/>

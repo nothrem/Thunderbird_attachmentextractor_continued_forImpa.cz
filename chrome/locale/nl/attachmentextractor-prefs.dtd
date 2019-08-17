@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Geavanceerd">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Meer">
 <!ENTITY attachmentextractor.settings.extract.caption "Bestand opslaan">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Bijlagen met normale Thunderbirdcode uitpakken.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Bijlagen uitpakken met de interne routine van AE.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Opslaan van bijlagen uitschakelen">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Controle minimumgrootte">

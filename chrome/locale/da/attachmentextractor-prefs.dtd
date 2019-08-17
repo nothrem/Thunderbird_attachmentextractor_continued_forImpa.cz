@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avanceret">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Mere">
 <!ENTITY attachmentextractor.settings.extract.caption "Gemning af filer">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Gem vedhæftede filer med Thunderbirds metode">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "T">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Gem de vedhæftede filer med AEs interne metode">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Deaktiver gemning af vedhæftede filer">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Check af filstørrelse">

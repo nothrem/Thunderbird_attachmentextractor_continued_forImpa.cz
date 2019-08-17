@@ -65,7 +65,7 @@ pref("extensions.attachextract_cont.includeenabled",0);
 pref("extensions.attachextract_cont.includepatterns","*.jpeg;*.jpg;*.png");
 pref("extensions.attachextract_cont.excludepatterns","*.bat;*.exe;*.eml");
 
-pref("extensions.attachextract_cont.extract.mode",0);
+pref("extensions.attachextract_cont.extract.enabled",true);
 pref("extensions.attachextract_cont.setdatetoemail",false);
 pref("extensions.attachextract_cont.extract.minimumsize",0);
 
@@ -87,8 +87,10 @@ pref("extensions.attachextract_cont.reportgen.append", true);
 pref("extensions.attachextract_cont.debug",false);
 pref("extensions.attachextract_cont.debugonstart",false);
 
-/* hidden (?) prefs */
+/* hidden prefs */
 pref("extensions.attachextract_cont.nextattachmentdelay",5);
 pref("extensions.attachextract_cont.nextmessagedelay",50);
 pref("extensions.attachextract_cont.dontloadimages",true);
+
+/* hidden pref for hidden and unused option */
 pref("extensions.attachextract_cont.skipidentical",false);

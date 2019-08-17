@@ -392,17 +392,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Guardar adjuntos"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Extraer los adjuntos usando el código normal de Thunderbird."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "l"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Extraer los adjuntos con la rutina interna de AE."
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "d"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Deshabilitar la opción para guardar los adjuntos."

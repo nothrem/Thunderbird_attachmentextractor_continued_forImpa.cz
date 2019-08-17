@@ -194,8 +194,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.listeningforMessageId = "";
 
   // Extract means: Save Attachment to Disc
-  this.isExtractEnabled = (!justDeleteAttachments && (isBackground || (prefs
-    .get("extract.mode") !== -1)));
+  this.isExtractEnabled = (!justDeleteAttachments && (isBackground || 
+    prefs.get("extract.enabled")));
   // Detach means: Delete Attachment from Mail
   this.isDetachEnabled = (justDeleteAttachments || prefs.get(isBackground ?
     "autoextract.detach" : "actionafterextract.detach"));
@@ -706,7 +706,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isMarkreadEnabled = false;
   this.isNotifywhendoneEnabled = false;
   this.isSaveMessageEnabled = false;
-  this.isExtractEnabled = (prefs.get("extract.mode") !== -1);
+  this.isExtractEnabled = prefs.get("extract.enabled");
   this.isDetachEnabled = prefs.get("actionafterextract.detach");
   this.overwritePolicy = prefs.get("overwritepolicy");
   this.detachWithoutConfirm = prefs.get("actionafterextract.detach.withoutconfirm");

@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "고급">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "더..">
 <!ENTITY attachmentextractor.settings.extract.caption "추출 파일 저장">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "일반 Thunderbird 코드로 첨부 추출.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "AE의 내부 루틴을 통해 첨부 파일을 추출합니다.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "첨부 저장하지 않음.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "최소 크기 검사">

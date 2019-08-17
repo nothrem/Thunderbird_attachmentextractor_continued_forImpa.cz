@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avançado">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Mais">
 <!ENTITY attachmentextractor.settings.extract.caption "Guardar Ficheiro anexo">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Extrair Anexos com o código normal do Thunderbird.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "A">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Extrair Anexos com a rotina interna AE&apos;s">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Desactivar a guarda dos anexos.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Verificação do Tamanho Mínimo">

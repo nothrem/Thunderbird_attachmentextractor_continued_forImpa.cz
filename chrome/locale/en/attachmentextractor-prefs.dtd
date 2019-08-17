@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Advanced">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "More">
 <!ENTITY attachmentextractor.settings.extract.caption "Attachment File Saving">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Extract Attachments with normal Thunderbird code.">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Extract Attachments with AE&apos;s internal routine.">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "A">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Disable the saving of the attachments.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimum Size Check">

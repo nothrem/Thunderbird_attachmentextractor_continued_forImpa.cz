@@ -77,10 +77,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Pokročilé">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Viac">
 <!ENTITY attachmentextractor.settings.extract.caption "Uloženie príloh">
-<!ENTITY attachmentextractor.settings.extract.tbextract.label "Vyňať prílohu s normálnym kódom Thunderbirdu">
-<!ENTITY attachmentextractor.settings.extract.tbextract.accesskey "N">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.label "Vyňať prílohy s AE&apos;s vnútornou rutinou">
-<!ENTITY attachmentextractor.settings.extract.aeextract2.accesskey "V">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Vypnúť ukladanie príloh">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "V">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimálna veľkosť kontroly">

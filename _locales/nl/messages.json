@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Bestand opslaan"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Bijlagen met normale Thunderbirdcode uitpakken."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Bijlagen uitpakken met de interne routine van AE."
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "A"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Opslaan van bijlagen uitschakelen"

@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Salvataggio degli allegati"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Utilizza la procedura nativa di Thunderbird per estrarre"
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "n"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Utilizza la procedura di AttachmentExtractor per estrarre"
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "z"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Disattiva il salvataggio degli allegati"

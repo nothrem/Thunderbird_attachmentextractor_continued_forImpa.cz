@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "Сохранение файла вложения"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "Извлекать вложения обычным кодом Thunderbird."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "Извлекать вложения внутренним кодом AE"
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "A"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "Отключить сохранение вложений."

@@ -391,17 +391,11 @@
   "attachmentextractor.settings.extract.caption": {
     "message": "추출 파일 저장"
   },
-  "attachmentextractor.settings.extract.tbextract.label": {
-    "message": "일반 Thunderbird 코드로 첨부 추출."
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
   },
-  "attachmentextractor.settings.extract.tbextract.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.extract.aeextract2.label": {
-    "message": "AE의 내부 루틴을 통해 첨부 파일을 추출합니다."
-  },
-  "attachmentextractor.settings.extract.aeextract2.accesskey": {
-    "message": "A"
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
   },
   "attachmentextractor.settings.noextract.label": {
     "message": "첨부 저장하지 않음."
