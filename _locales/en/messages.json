@@ -668,16 +668,16 @@
     "message": "Confirm Detaching"
   },
   "ConfirmDetachDialogMessage": {
-    "message": "You have chosen to detach attachments using the experimental internal detaching routine.  There will be no further confirmation messages after this and every attachment will be deleted from the selected emails.  Once deleted this cannot be undone.  Still Proceed?"
+    "message": "You have chosen to detach attachments with AttachmentExtractor. There will be no further confirmation messages after this and every attachment will be deleted from the selected emails.  Once deleted this cannot be undone.  Still Proceed?"
   },
   "ConfirmDetachSettingDialogTitle": {
     "message": "Warning!"
   },
   "ConfirmDetachSettingDialogMessage": {
-    "message": "Please be aware that this method is still experimental and may not work properly in all cases.  \nIf there is an error it may result in either losing the attachment or the email contents, or both.  If this happens there is no easy way of recovering whats been lost so it is inadvisable to use it with important emails.  \nUse at your own risk."
+    "message": "Please be aware that this method may not work properly in all cases.  \nIf there is an error it may result in either losing the attachments or the email contents, or both.  If this happens there is no easy way of recovering what's been lost so it is inadvisable to use it with important emails. Create Backups before using this feature.  \n\nUse at your own risk."
   },
   "ConfirmAutoDetachSettingDialogMessage": {
-    "message": "Enabling detach/delete attachments will remove attachments from all incoming emails that fit the criteria you specified, (potentially all emails), without ANY confirmation.   \nIf there is an error it may result in either losing the attachment or the email contents, or both.\nDo not enable this if you can't risk losing attachments of your incoming emails."
+    "message": "Enabling detach/delete attachments will remove attachments from all incoming emails that fit the criteria you specified, (potentially all emails), without ANY confirmation.   \nIf there is an error it may result in either losing the attachment or the email contents, or both.\n\nDo not enable this if you can't risk losing attachments and your incoming emails.  \n\nUse at your own risk."
   },
   "CSSFileFilterDescription": {
     "message": "CSS Stylesheets"

@@ -208,8 +208,10 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : 
       "actionafterextract.detach.withoutconfirm"));
   // A Warning to confirm Messages and/or Attachments could be lost entirely
-  this.confirmDetach = (!isBackground && this.isDetachEnabled && 
-      prefs.get("actionafterextract.detach.warning"));
+  this.confirmDetach = (!isBackground && 
+    (justDeleteAttachments || (prefs.get(isBackground ? "autoextract.detach" : 
+    "actionafterextract.detach") && this.detachWithoutConfirmation)) && 
+    prefs.get("actionafterextract.detach.warning"));
   // A pref, what should be done, when a filename is existing
   this.overwritePolicy = (prefs.get(isBackground ?
     "autoextract.overwritepolicy" : "overwritepolicy"));
