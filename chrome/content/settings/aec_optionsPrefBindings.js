@@ -56,10 +56,6 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachextract_cont.actionafterextract.detach.mode",
-  type: "int"
-},
-{
   id: "extensions.attachextract_cont.notifywhendone",
   type: "bool"
 },
@@ -131,10 +127,6 @@ Preferences.addAll([{
 {
   id: "extensions.attachextract_cont.autoextract.detach.withoutconfirm",
   type: "bool"
-},
-{
-  id: "extensions.attachextract_cont.autoextract.detach.mode",
-  type: "int"
 },
 {
   id: "extensions.attachextract_cont.autoextract.overwritepolicy",

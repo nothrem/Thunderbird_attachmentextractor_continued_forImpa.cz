@@ -47,6 +47,7 @@ var aewindow = {
 
   /* useful get functions */
   get tb3() {
+    aedump("----------tb3-----\n");
     return this.messenger.saveAttachmentToFile !== null;
   },
   get taskWaiting() {
@@ -209,14 +210,11 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     prefs.get("notifywhendone")));
   this.overwritePolicy = (prefs.get(isBackground ?
     "autoextract.overwritepolicy" : "overwritepolicy"));
-  //override detach mode until it is fixed / working again
-  //this.detachMode = (justDeleteAttachments ? 1 : prefs.get(isBackground ?
-  //  "autoextract.detach.mode" : "actionafterextract.detach.mode"));
-  this.detachMode = 0;
   this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
-    prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : "actionafterextract.detach.withoutconfirm"));
-  this.confirmDetach = (!isBackground && this.isDetachEnabled && (this
-    .detachMode !== 0) && prefs.get("actionafterextract.detach.warning"));
+    prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : 
+      "actionafterextract.detach.withoutconfirm"));
+  this.confirmDetach = (!isBackground && this.isDetachEnabled && 
+      prefs.get("actionafterextract.detach.warning"));
 
   //private vars
   /* var membername=value */
@@ -702,12 +700,9 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isExtractEnabled = (prefs.get("extract.mode") !== -1);
   this.isDetachEnabled = prefs.get("actionafterextract.detach");
   this.overwritePolicy = prefs.get("overwritepolicy");
-  //override detach mode until it is fixed / working again
-  //this.detachMode = prefs.get("actionafterextract.detach.mode");
-  this.detachMode = 0;
   this.detachWithoutConfirm = prefs.get("actionafterextract.detach.withoutconfirm");
 
-  this.confirmDetach = (this.isDetachEnabled && (this.detachMode !== 0) &&
+  this.confirmDetach = (this.isDetachEnabled &&
     prefs.get("actionafterextract.detach.warning"));
 
   //private vars
@@ -835,8 +830,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
       ", attachments: " + attachments.map(function(c) {
         return c.url;
       }) +
-      ", filenamepattern: " + filenamepattern +
-      ", detachMode: " + this.detachMode;
+      ", filenamepattern: " + filenamepattern;
   };
   this.toString = toString;
 }
@@ -961,31 +955,19 @@ if (typeof AEMessage === "undefined") {
         }
       } else {
         try {
-          if (this.prefs.get("extract.mode") !== 0) {
-            // AEC experimental save routines
-            file = aeMessenger.saveAttachmentToFolder(
-              attachment.contentType,
-              attachment.url,
-              file.leafName,
-              attachment.uri,
-              file.parent,
-              attachmentindex);
-          } else {
-            // Thunderbirds own save routines
-            var listener = {
-              OnStartRunningUrl: function(url) {},
-              OnStopRunningUrl: function(url, exitcode) {
-                aewindow.currentMessage.saveAtt_cleanUp(attachmentindex,
-                  (exitcode !== 0));
-              }
-            };
-            aewindow.messenger.saveAttachmentToFile(
-              file,
-              attachment.url,
-              attachment.uri,
-              attachment.contentType,
-              listener);
-          }
+          var listener = {
+            OnStartRunningUrl: function(url) {},
+            OnStopRunningUrl: function(url, exitcode) {
+              aewindow.currentMessage.saveAtt_cleanUp(attachmentindex,
+                (exitcode !== 0));
+            }
+          };
+          aewindow.messenger.saveAttachmentToFile(
+            file,
+            attachment.url,
+            attachment.uri,
+            attachment.contentType,
+            listener);
         } catch (e) {
           aewindow.aedump(e + "\n");
           file = null;
@@ -1097,34 +1079,15 @@ if (typeof AEMessage === "undefined") {
               .messageId;
             var acl = aewindow.arraycompact(this.attachments_ct);
             if (acl.length > 0) {
-              if (thistask.detachMode !== 0) {
-                // AEC experimental detach routines
-                aewindow.aedump('>>>> thistask.detachMode !== 0 \n', 2);
-                var deleteAtt = (thistask.detachMode === 1) || !thistask
-                  .isExtractEnabled;
-                var savedfiles = (deleteAtt) ? null : aewindow
-                  .arraycompact(this.attachments_savedfile);
-                this.detachTempFile = aeMessenger.detachAttachments(
-                  aewindow.messenger, aewindow.msgWindow, acl,
-                  aewindow.arraycompact(this.attachments_url),
-                  // use .map(encodeURIComponent) to display nonASCII correct
-                  // if there is an confirmation dialog
-                  aewindow.arraycompact(this.attachments_display.map(encodeURIComponent)),
-                  aewindow.arraycompact(this.attachments_uri),
-                  savedfiles);
-                } else {
-                // Thunderbirds own detach routines
-                aewindow.aedump('>>>> thistask.detachMode === 0 \n', 2);
-                aewindow.messenger.detachAllAttachments(acl.length, acl,
-                  aewindow.arraycompact(this.attachments_url),
-                  // use .map(encodeURIComponent) to display nonASCII correct
-                  // if there is an confirmation dialog
-                  aewindow.arraycompact(this.attachments_display.map(encodeURIComponent)),
-                  aewindow.arraycompact(this.attachments_uri),
-                  false,  // false = do not save(?) or ask for destination folder (?)
-                  thistask.detachWithoutConfirmation  // if true = delete without warning
-                ); 
-              }
+              aewindow.messenger.detachAllAttachments(acl.length, acl,
+                aewindow.arraycompact(this.attachments_url),
+                // use .map(encodeURIComponent) to display nonASCII correct
+                // if there is an confirmation dialog
+                aewindow.arraycompact(this.attachments_display.map(encodeURIComponent)),
+                aewindow.arraycompact(this.attachments_uri),
+                false,  // false = do not save(?) or ask for destination folder (?)
+                thistask.detachWithoutConfirmation  // if true = delete without warning
+              ); 
               // console.log("setTimeout");
               // seems to be working okay
               thistask.detachCancellationTimeout = setTimeout(function() {

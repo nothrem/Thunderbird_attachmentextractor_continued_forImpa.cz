@@ -196,31 +196,12 @@
                     accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
                     preference="extensions.attachextract_cont.actionafterextract.detach" 
                     oncommand="wdw_aecOptions.enableField(this,'afterextractpolicydetachconfirm')"/>
-<!--
-                    oncommand="wdw_aecOptions.enableField(this,'afterextractpolicydetachmode')"/>
--->
                   <box class="indent">
                     <checkbox id="afterextractpolicydetachconfirm" 
                       label="&attachmentextractor.settings.after-detach.confirm.label;" 
                       accesskey="&attachmentextractor.settings.after-detach.confirm.accesskey;" 
                       oncommand="wdw_aecOptions.showDetachWarning(this)" 
                       preference="extensions.attachextract_cont.actionafterextract.detach.withoutconfirm" />
-<!--
-                    <radiogroup id="afterextractpolicydetachmode" 
-                      preference="extensions.attachextract_cont.actionafterextract.detach.mode">
-                      <radio value="0" 
-                        label="&attachmentextractor.settings.after-detach.tbdelete.label;" 
-                        accesskey="&attachmentextractor.settings.after-detach.tbdelete.accesskey;"/>
-                      <radio value="1" 
-                        label="&attachmentextractor.settings.after-detach.aedelete.label;" 
-                        accesskey="&attachmentextractor.settings.after-detach.aedelete.accesskey;" 
-                        oncommand="wdw_aecOptions.showDetachWarning(this)"/>
-                      <radio value="2" 
-                        label="&attachmentextractor.settings.after-detach.aedetach.label;" 
-                        accesskey="&attachmentextractor.settings.after-detach.aedetach.accesskey;" 
-                        oncommand="wdw_aecOptions.showDetachWarning(this)"/>
-                    </radiogroup>
--->
                   </box>
                   <checkbox id="notifywhendonepolicy" 
                     label="&attachmentextractor.settings.notifywhendone.label;" 
@@ -533,26 +514,12 @@
                         accesskey="&attachmentextractor.settings.after-detach.accesskey;" 
                         preference="extensions.attachextract_cont.autoextract.detach" 
                         oncommand="wdw_aecOptions.enableField(this,'autoextractpolicydetachconfirm');"/>
-<!--
-                        oncommand="wdw_aecOptions.enableField(this,'autodetachmode');wdw_aecOptions.showAutoDetachWarning(this);"/>
--->
                       <box class="indent">
                         <checkbox id="autoextractpolicydetachconfirm" 
                           label="&attachmentextractor.settings.after-detach.confirm.label;" 
                           accesskey="&attachmentextractor.settings.after-detach.confirm.accesskey;" 
                           oncommand="wdw_aecOptions.showAutoDetachWarning(this);" 
                           preference="extensions.attachextract_cont.autoextract.detach.withoutconfirm" />
-<!--
-                        <radiogroup id="autodetachmode" 
-                          preference="extensions.attachextract_cont.autoextract.detach.mode">
-                          <radio value="1" 
-                            label="&attachmentextractor.settings.after-detach.aedelete.label;" 
-                            accesskey="&attachmentextractor.settings.after-detach.aedelete.accesskey;"/>
-                          <radio value="2" 
-                            label="&attachmentextractor.settings.after-detach.aedetach.label;" 
-                            accesskey="&attachmentextractor.settings.after-detach.aedetach.accesskey;"/>
-                        </radiogroup>
--->
                       </box>
                       <checkbox id="autocleartag" 
                         label="&attachmentextractor.settings.autoextract.cleartriggertag.label;" 

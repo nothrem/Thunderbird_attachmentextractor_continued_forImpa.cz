@@ -11,9 +11,6 @@ var filenamepatternbox = document.getElementById('filenamepattern');
 
 if (typeof (wdw_aecOptions) === "undefined") {
   var {
-    MailServices
-  } = ChromeUtils.import("resource:///modules/MailServices.jsm");
-  var {
     Services
   } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
@@ -39,8 +36,6 @@ if (typeof (wdw_aecOptions) === "undefined") {
       // enableFields in general pane
       wdw_aecOptions.enableField(document.getElementById(
         'afterextractpolicydetach'), 'afterextractpolicydetachconfirm');
-      wdw_aecOptions.enableField(document.getElementById(
-        'afterextractpolicydetach'), 'afterextractpolicydetachmode');
       wdw_aecOptions.enableField(document.getElementById(
         'savepathmru'), 'savepathmrucount');
 
@@ -103,8 +98,6 @@ if (typeof (wdw_aecOptions) === "undefined") {
           'autotriggeronly'), 'autotriggertag');
         wdw_aecOptions.enableField(document.getElementById(
           'autodetach'), 'autoextractpolicydetachconfirm');
-        wdw_aecOptions.enableField(document.getElementById(
-          'autodetach'), 'autodetachmode');
         wdw_aecOptions.enableField(document.getElementById(
           'autosavemessage'), ['autofnpsavemessage',
           'autofnpsavemessagecountpattern'

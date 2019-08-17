@@ -21,8 +21,6 @@ pref("extensions.attachextract_cont.actionafterextract.markread",false);
 pref("extensions.attachextract_cont.actionafterextract.deletemessage",false);
 pref("extensions.attachextract_cont.actionafterextract.detach",false);
 pref("extensions.attachextract_cont.actionafterextract.detach.withoutconfirm",false);
-// .detach.mode is replaced and obsolet at the moment
-pref("extensions.attachextract_cont.actionafterextract.detach.mode",0);
 pref("extensions.attachextract_cont.actionafterextract.detach.warning",true);
 pref("extensions.attachextract_cont.actionafterextract.savemessage",false);
 pref("extensions.attachextract_cont.notifywhendone",true);
@@ -46,8 +44,6 @@ pref("extensions.attachextract_cont.autoextract.markread",false);
 pref("extensions.attachextract_cont.autoextract.deletemessage",false);
 pref("extensions.attachextract_cont.autoextract.detach",false);
 pref("extensions.attachextract_cont.autoextract.detach.withoutconfirm",false);
-// .detach.mode is replaced and obsolet at the moment
-pref("extensions.attachextract_cont.autoextract.detach.mode",1);
 
 pref("extensions.attachextract_cont.autoextract.cleartag",false);
 
