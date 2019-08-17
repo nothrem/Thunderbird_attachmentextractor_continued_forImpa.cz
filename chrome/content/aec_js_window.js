@@ -943,6 +943,26 @@ if (typeof AEMessage === "undefined") {
       .attachments_ct.length);
 
     var attachment = this.getAttachment(attachmentindex);
+
+    // ********************************************************
+    // Get Minimum Size and Attachments size
+    mimimumSizeKiB = this.prefs.get("extract.minimumsize");
+    if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
+      aedump("mimimumSizeKiB: " + mimimumSizeKiB + " KiB \n");
+
+      this.getAttSize(attachment.url, 
+        attachment.isExternalAttachment).then(function(size) { 
+
+        var sizeKiB = (size/1024);
+        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+      });
+    }
+    // if (sizeKiB > mimimumSizeKiB) { ..only then extract the Attachment..
+    // this should be implemented
+    // What should be done, when not saving the Attachment?
+    // Do/Should we proceed with deleting (and other actions)? Not yet sure
+    // **********************************************************
+
     var file = aewindow.currentTask.filemaker.make(attachment.displayName,
       this.headerDataCache);
     if (file && file.parent && !file.parent.exists()) file.parent.create(file
@@ -950,8 +970,6 @@ if (typeof AEMessage === "undefined") {
     //aewindow.aedump(attachment.uri+"\n"+attachment.url+"\n"+attachment);
 
     if (file) {
-
-      this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { aedump("Size: " + size + "bytes \n"); });
 
       if (attachment.isExternalAttachment) {
         try {
