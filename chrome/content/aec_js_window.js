@@ -934,7 +934,7 @@ if (typeof AEMessage === "undefined") {
     aewindow.aedump(
       '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
     
-    // console.log(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds);
+    console.log(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds + "\n");
 
     aewindow.progress_tracker.starting_attachment(attachmentindex, this
       .attachments_ct.length);
@@ -948,7 +948,7 @@ if (typeof AEMessage === "undefined") {
 
     if (file) {
 
-      // this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { console.log("Size: " + size); });
+      this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { console.log("Size: " + size + "bytes \n"); });
 
       if (attachment.isExternalAttachment) {
         try {

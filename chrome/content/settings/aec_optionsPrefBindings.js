@@ -3,214 +3,214 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 Preferences.addAll([{
-  id: "extensions.attachmentextractor_cont.defaultsavepath",
+  id: "extensions.attachextract_cont.defaultsavepath",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.overwritepolicy",
+  id: "extensions.attachextract_cont.overwritepolicy",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.savepathmru",
+  id: "extensions.attachextract_cont.savepathmru",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.savepathmru.count",
+  id: "extensions.attachextract_cont.savepathmru.count",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern",
+  id: "extensions.attachextract_cont.filenamepattern",
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.countpattern",
+  id: "extensions.attachextract_cont.filenamepattern.countpattern",
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.datepattern",
+  id: "extensions.attachextract_cont.filenamepattern.datepattern",
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.cleansubject",
+  id: "extensions.attachextract_cont.filenamepattern.cleansubject",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.cleansubject.strings",
+  id: "extensions.attachextract_cont.filenamepattern.cleansubject.strings",
   type: "string"
 },
 
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.markread",
+  id: "extensions.attachextract_cont.actionafterextract.markread",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.deletemessage",
+  id: "extensions.attachextract_cont.actionafterextract.deletemessage",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.detach",
+  id: "extensions.attachextract_cont.actionafterextract.detach",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.detach.withoutconfirm",
+  id: "extensions.attachextract_cont.actionafterextract.detach.withoutconfirm",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.detach.mode",
+  id: "extensions.attachextract_cont.actionafterextract.detach.mode",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.notifywhendone",
+  id: "extensions.attachextract_cont.notifywhendone",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.actionafterextract.savemessage",
+  id: "extensions.attachextract_cont.actionafterextract.savemessage",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.askalwaysfnp",
+  id: "extensions.attachextract_cont.filenamepattern.askalwaysfnp",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.savemessage",
+  id: "extensions.attachextract_cont.filenamepattern.savemessage",
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.filenamepattern.savemessage.countpattern",
+  id: "extensions.attachextract_cont.filenamepattern.savemessage.countpattern",
   type: "unichar"
 },
 {
-  id: "extensions.attachmentextractor_cont.returnreceipts",
+  id: "extensions.attachextract_cont.returnreceipts",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.returnreceipts.override",
+  id: "extensions.attachextract_cont.returnreceipts.override",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.reportgen",
+  id: "extensions.attachextract_cont.reportgen",
   type: "bool"
 },
 
 {
-  id: "extensions.attachmentextractor_cont.autoextract.savepath",
+  id: "extensions.attachextract_cont.autoextract.savepath",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract",
+  id: "extensions.attachextract_cont.autoextract",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.ontriggeronly",
+  id: "extensions.attachextract_cont.autoextract.ontriggeronly",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.triggertag",
+  id: "extensions.attachextract_cont.autoextract.triggertag",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.cleartag",
+  id: "extensions.attachextract_cont.autoextract.cleartag",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.waitforall",
+  id: "extensions.attachextract_cont.autoextract.waitforall",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.markread",
+  id: "extensions.attachextract_cont.autoextract.markread",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.deletemessage",
+  id: "extensions.attachextract_cont.autoextract.deletemessage",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.detach",
+  id: "extensions.attachextract_cont.autoextract.detach",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.detach.withoutconfirm",
+  id: "extensions.attachextract_cont.autoextract.detach.withoutconfirm",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.detach.mode",
+  id: "extensions.attachextract_cont.autoextract.detach.mode",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.overwritepolicy",
+  id: "extensions.attachextract_cont.autoextract.overwritepolicy",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.savemessage",
+  id: "extensions.attachextract_cont.autoextract.savemessage",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.autoextract.onattachmentsonly",
+  id: "extensions.attachextract_cont.autoextract.onattachmentsonly",
   type: "bool"
 },
 
 {
-  id: "extensions.attachmentextractor_cont.includeenabled",
+  id: "extensions.attachextract_cont.includeenabled",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.excludepatterns4",
+  id: "extensions.attachextract_cont.excludepatterns4",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.includepatterns4",
+  id: "extensions.attachextract_cont.includepatterns4",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.extractinlinetoo",
+  id: "extensions.attachextract_cont.extractinlinetoo",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.progressdialog.showtext",
+  id: "extensions.attachextract_cont.progressdialog.showtext",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.setdatetoemail",
+  id: "extensions.attachextract_cont.setdatetoemail",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.queuerequests",
+  id: "extensions.attachextract_cont.queuerequests",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.debugonstart",
+  id: "extensions.attachextract_cont.debugonstart",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.extract.mode",
+  id: "extensions.attachextract_cont.extract.mode",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.extract.minimumsize",
+  id: "extensions.attachextract_cont.extract.minimumsize",
   type: "int"
 },
 {
-  id: "extensions.attachmentextractor_cont.suggestfolder.disregardduplicates",
+  id: "extensions.attachextract_cont.suggestfolder.disregardduplicates",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.suggestfolder.excludekeywords",
+  id: "extensions.attachextract_cont.suggestfolder.excludekeywords",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.reportgen.thumbnail",
+  id: "extensions.attachextract_cont.reportgen.thumbnail",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.reportgen.embedcss",
+  id: "extensions.attachextract_cont.reportgen.embedcss",
   type: "bool"
 },
 {
-  id: "extensions.attachmentextractor_cont.reportgen.reportname",
+  id: "extensions.attachextract_cont.reportgen.reportname",
   type: "string"
 },
 {
-  id: "extensions.attachmentextractor_cont.reportgen.cssfile",
+  id: "extensions.attachextract_cont.reportgen.cssfile",
   type: "string"
 },
 ]);

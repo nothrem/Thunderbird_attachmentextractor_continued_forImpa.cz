@@ -355,12 +355,12 @@ if (typeof AttachmentExtractor === "undefined") {
 
     switch (pref) {
       case "defaultsavepath":
-        var branch = "extensions.attachmentextractor_cont.";
+        var branch = "extensions.attachextract_cont.";
         windowTitle = this.aeStringBundle.GetStringFromName(
           "FolderPickerDialogTitleDefaultSavePath");
         break;
       case "autoextract.savepath":
-        var branch = "extensions.attachmentextractor_cont.";
+        var branch = "extensions.attachextract_cont.";
         windowTitle = this.aeStringBundle.GetStringFromName(
           "FolderPickerDialogTitleDefaultAutoextractPath");
         break;
@@ -634,7 +634,7 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump('{function:AttachmentExtractor.updateFavoriteMenuItems}\n',2);
 
     var prefs = Services.prefs.getBranch(
-      "extensions.attachmentextractor_cont.");
+      "extensions.attachextract_cont.");
 
     // clear the old menuitems
     var children = parent.childNodes;
@@ -699,7 +699,7 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump('{function:AttachmentExtractor.updatePopupMenus}\n',2);
 
     var prefs = Services.prefs.getBranch(
-      "extensions.attachmentextractor_cont.");
+      "extensions.attachextract_cont.");
 
     // -----  En-/Disable favorite folder submenu -----
     var favoriteObj = {};
@@ -736,7 +736,7 @@ if (typeof AttachmentExtractor === "undefined") {
     var mruCount = mruObj.value;
     aedump("mrufolder count = mruObj.value: " + mruCount + "\n", 2);
     var mruEnabled = Services.prefs.getBoolPref(
-      "extensions.attachmentextractor_cont.savepathmru");
+      "extensions.attachextract_cont.savepathmru");
 
     var mruItems = [
       "menu_aec_extractToMRU_toolbar",
@@ -818,7 +818,7 @@ if (typeof AttachmentExtractor === "undefined") {
   AttachmentExtractor.prototype.updateMRUMenuItems = function(parent) {
     aedump('{function:AttachmentExtractor.updateMRUMenuItems}\n',2);
     var ps = attachmentextractor.prefs.prefService.getBranch(
-      "extensions.attachmentextractor_cont.");
+      "extensions.attachextract_cont.");
     
     // clear the old menuitems
     var children = parent.childNodes;
@@ -905,7 +905,7 @@ if (typeof AttachmentExtractor === "undefined") {
     if (!min || min < 1) min = 1;
     if (!max || max > this.MRUMAXCOUNT) max = this.MRUMAXCOUNT;
     var ps = this.prefs.prefService.getBranch(
-      "extensions.attachmentextractor_cont.");
+      "extensions.attachextract_cont.");
     for (let i = min; i <= max; i++) {
       if (ps.prefHasUserValue("savepathmrufolder." + i)) ps.clearUserPref(
         "savepathmrufolder." + i);

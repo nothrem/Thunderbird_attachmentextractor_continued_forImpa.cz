@@ -22,7 +22,7 @@ var aedebugFile = null;
 try {
   aedebug = Cc["@mozilla.org/preferences-service;1"].
   getService(Ci.nsIPrefBranch).getBoolPref(
-    "extensions.attachmentextractor_cont.debug");
+    "extensions.attachextract_cont.debug");
   if (aedebug) {
     aedebug = Cc['@mozilla.org/network/file-output-stream;1'].
     createInstance(Ci.nsIFileOutputStream);
@@ -64,7 +64,7 @@ var aedump = (aedebug) ? function() {
 function AEPrefs() {
   this.aeBranch = Cc["@mozilla.org/preferences-service;1"].
   getService(Ci.nsIPrefService).getBranch(
-    "extensions.attachmentextractor_cont.");
+    "extensions.attachextract_cont.");
   this.prefService = Cc["@mozilla.org/preferences-service;1"]
     .getService(Ci.nsIPrefService);
   this.get = function get(pref, branch) {

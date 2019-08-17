@@ -375,7 +375,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       let exname = document.getElementById('filenamepattern_examplename')
         .value;
       let cleansubjectstrings = AECprefs.getStringPref(
-          "extensions.attachmentextractor_cont.filenamepattern.cleansubject.strings"
+          "extensions.attachextract_cont.filenamepattern.cleansubject.strings"
           )
         .toLowerCase().split(',');
 
@@ -467,7 +467,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
+          pref = AECprefs.getStringPref('extensions.attachextract_cont.suggestfolder.parent.' + i);
           this.appendSuggestFolderItem(pref, i);
         } catch {
           moreloops = false; 
@@ -489,19 +489,19 @@ if (typeof (wdw_aecOptions) === "undefined") {
         do {
           var cpref = " ";
           var npref = " ";
-          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
+          cpref = AECprefs.getStringPref('extensions.attachextract_cont.suggestfolder.parent.' + i);
           // aedump('AEC ' + i + ': ' + cpref + '\n');
           try {
-            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
+            npref = AECprefs.getStringPref('extensions.attachextract_cont.suggestfolder.parent.' + n);
             // aedump('AEC ' + n + ': ' + npref + '\n');
             if (npref) {
-              AECprefs.setStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i, npref);
-              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i) + '\n');
+              AECprefs.setStringPref('extensions.attachextract_cont.suggestfolder.parent.' + i, npref);
+              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachextract_cont.suggestfolder.parent.' + i) + '\n');
             }
           } catch {
             moreloops = false;
             // aedump('AEC no more npref' + '\n');
-            AECprefs.clearUserPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
+            AECprefs.clearUserPref('extensions.attachextract_cont.suggestfolder.parent.' + i);
             // aedump('AEC clear last cpref without a following npref' + '\n');
           }
           i += 1;
@@ -528,7 +528,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.suggestfolder.parent.' + i);
+          pref = AECprefs.getStringPref('extensions.attachextract_cont.suggestfolder.parent.' + i);
         } catch {
           moreloops = false; 
         }
@@ -542,7 +542,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       n = i + 1;
 
       if (i < this.limitSuggestFolders) {
-        this.browseForSuggestfolder('extensions.attachmentextractor_cont.suggestfolder.parent.' + n);
+        this.browseForSuggestfolder('extensions.attachextract_cont.suggestfolder.parent.' + n);
       } else {
         //aedump("AEC: There are a maximum of " + this.limitSuggestFolders + " suggest folders allowed by an internal setting in var limitSuggestFolders." + "\n");
       }
@@ -606,7 +606,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+          pref = AECprefs.getStringPref('extensions.attachextract_cont.favoritefolder.' + i);
           this.appendFavoriteFolderItem(pref, i);
         } catch {
           moreloops = false; 
@@ -628,19 +628,19 @@ if (typeof (wdw_aecOptions) === "undefined") {
         do {
           var cpref = " ";
           var npref = " ";
-          cpref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+          cpref = AECprefs.getStringPref('extensions.attachextract_cont.favoritefolder.' + i);
           // aedump('AEC ' + i + ': ' + cpref + '\n');
           try {
-            npref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + n);
+            npref = AECprefs.getStringPref('extensions.attachextract_cont.favoritefolder.' + n);
             // aedump('AEC ' + n + ': ' + npref + '\n');
             if (npref) {
-              AECprefs.setStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i, npref);
-              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i) + '\n');
+              AECprefs.setStringPref('extensions.attachextract_cont.favoritefolder.' + i, npref);
+              // aedump("AEC " + i + " neu: " + AECprefs.getStringPref('extensions.attachextract_cont.favoritefolder.' + i) + '\n');
             }
           } catch {
             moreloops = false;
             // aedump('AEC no more npref' + '\n');
-            AECprefs.clearUserPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+            AECprefs.clearUserPref('extensions.attachextract_cont.favoritefolder.' + i);
             // aedump('AEC clear last cpref without a following npref' + '\n');
           }
           i += 1;
@@ -667,7 +667,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       do {
         i += 1;
         try {
-          pref = AECprefs.getStringPref('extensions.attachmentextractor_cont.favoritefolder.' + i);
+          pref = AECprefs.getStringPref('extensions.attachextract_cont.favoritefolder.' + i);
         } catch {
           moreloops = false; 
         }
@@ -681,7 +681,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
       n = i + 1;
 
       if (i < this.limitFavoriteFolders) {
-        this.browseForFavoritefolder('extensions.attachmentextractor_cont.favoritefolder.' + n);
+        this.browseForFavoritefolder('extensions.attachextract_cont.favoritefolder.' + n);
       } else {
         // aedump("AEC: There are a maximum of " + this.limitFavoriteFolders + " favorite folders allowed by an internal setting in var limitFavoriteFolders.");
       }

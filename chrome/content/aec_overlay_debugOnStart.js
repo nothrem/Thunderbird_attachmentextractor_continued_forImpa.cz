@@ -10,6 +10,6 @@ try {
 
 try {
   var aepfs=Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
-  aepfs.setBoolPref("extensions.attachmentextractor_cont.debug",aepfs.getBoolPref("extensions.attachmentextractor_cont.debugonstart"));
+  aepfs.setBoolPref("extensions.attachextract_cont.debug",aepfs.getBoolPref("extensions.attachextract_cont.debugonstart"));
   aepfs=null;
 } catch (e) {}
