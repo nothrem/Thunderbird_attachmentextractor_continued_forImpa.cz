@@ -94,11 +94,14 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("all: " + all + "\n");
     aedump("index: " + index + "\n");
 
-    // If pref is true, show the fnp edit dialog before extracting
     var fnp = false;
-    if (this.prefs.get("filenamepattern.askalwaysfnp")) {
-      fnp = this.getFilenamePattern();
-      aedump("fnp after extra fnp dialog: " + fnp + "\n");
+    // Only show fnp dialog, if attachments would be saved
+    if ((savelocation !== "deleteAtt") && (this.prefs.get("extract.enabled"))) {
+      // If pref is true, show the fnp edit dialog before extracting
+      if (this.prefs.get("filenamepattern.askalwaysfnp")) {
+        fnp = this.getFilenamePattern();
+        aedump("fnp after extra fnp dialog: " + fnp + "\n");
+      }
     }
 
     var folder = null;
@@ -143,11 +146,14 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("mode: " + mode + "\n");
     aedump("index: " + index + "\n");
 
-    // If pref is true, show the fnp edit dialog before extracting
     var fnp = false;
-    if (this.prefs.get("filenamepattern.askalwaysfnp")) {
-      fnp = this.getFilenamePattern();
-      aedump("fnp after extra fnp dialog: " + fnp + "\n");
+    // Only show fnp dialog, if attachments would be saved
+    if (this.prefs.get("extract.enabled")) {
+      // If pref is true, show the fnp edit dialog before extracting
+      if (this.prefs.get("filenamepattern.askalwaysfnp")) {
+        fnp = this.getFilenamePattern();
+        aedump("fnp after extra fnp dialog: " + fnp + "\n");
+      }
     }
 
     var attachments;
