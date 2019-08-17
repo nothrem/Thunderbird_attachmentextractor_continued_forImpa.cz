@@ -298,27 +298,33 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
 
     if (!m_file || !m_file.exists()) return;
 
-    aedump('// m_file.lastModifiedTime Time before = '+m_file.lastModifiedTime+'\n');
-
+    // Set file last-modified-datetimestamp to email datetimestamp
+    // this feature works only for the saved message HTML file
     if (aewindow.prefs.get("setdatetoemail")) {
+      aedump('// m_file.lastModifiedTime Time before modification = ' + 
+        m_file.lastModifiedTime + '\n');
       try {
-        m_file.lastModifiedTime = aewindow.currentTask.getMessageHeader()
-          .dateInSeconds * 1000;
+        m_file.lastModifiedTime = 
+          aewindow.currentTask.getMessageHeader().dateInSeconds * 1000;
       } catch (e) {
         aedump("//setting lastModifiedTime failed on current attachment\n",
         0);
       }
-      aewindow.aedump('// m_file.lastModifiedTime Time after modification = '+m_file.lastModifiedTime+'\n');
+      aedump('// m_file.lastModifiedTime Time after modification = ' + 
+        m_file.lastModifiedTime + '\n');
     }
 
+    // ******    m_file.fileSize has a none correct size ?!    ********
+    // at the moment doesn't work at all
     aedump("m_file.fileSize: " + m_file.fileSize + "\n");
-    this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { aedump("getAttSize: " + size + "\n"); });
-
+    aedump("minFileSize: " + minFileSize + "\n");
     if (m_file.fileSize < minFileSize) {
       aedump("// file size (" + m_file.fileSize + ") is below min (" +
         minFileSize + ") so abort save.\n", 3);
       m_file.remove(false);
     } else { // rename temp file to actual filename.
+    // this last part is necessary to rename the saved message HTML file
+    // from tmp file to actual filename
       try {
         m_file.moveTo(null, realFileName);
         m_file = null;
