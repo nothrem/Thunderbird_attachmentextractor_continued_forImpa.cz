@@ -620,7 +620,7 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     filename = filename.replace(/'/g, "\'");
     if (includeexcludearray === null) {
       includeexcludearray = prefs.get((prefs.get("includeenabled") === 1) ?
-        "includepatterns4" : "excludepatterns4").split(';');
+        "includepatterns" : "excludepatterns").split(';');
       includeexcludearray = includeexcludearray.map(strToReg);
       aewindow.aedump("//includeexcludearray: " + includeexcludearray + "\n",
         3);
@@ -815,7 +815,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
     filename = filename.replace(/'/g, "\'");
     if (includeexcludearray === null) {
       includeexcludearray = prefs.get((prefs.get("includeenabled") === 1) ?
-        "includepatterns4" : "excludepatterns4").split(';');
+        "includepatterns" : "excludepatterns").split(';');
       includeexcludearray = includeexcludearray.map(strToReg);
       aewindow.aedump("//includeexcludearray: " + includeexcludearray + "\n",
         3);

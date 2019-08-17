@@ -62,8 +62,8 @@ pref("extensions.attachextract_cont.filenamepattern.savemessage.countpattern","-
 
 /* Advanced pane */
 pref("extensions.attachextract_cont.includeenabled",0);
-pref("extensions.attachextract_cont.includepatterns4","*.jpeg;*.jpg;*.png");
-pref("extensions.attachextract_cont.excludepatterns4","*.bat;*.exe;*.eml");
+pref("extensions.attachextract_cont.includepatterns","*.jpeg;*.jpg;*.png");
+pref("extensions.attachextract_cont.excludepatterns","*.bat;*.exe;*.eml");
 
 pref("extensions.attachextract_cont.extract.mode",0);
 pref("extensions.attachextract_cont.setdatetoemail",false);

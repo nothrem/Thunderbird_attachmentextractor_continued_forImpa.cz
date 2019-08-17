@@ -578,7 +578,7 @@
                           oncommand="wdw_aecOptions.enableField(document.getElementById('iep0false'),'excludepatterns');wdw_aecOptions.enableField(document.getElementById('iep1true'),'includepatterns');"/>
                         <textbox id="excludepatterns" 
                           flex="1"
-                          preference="extensions.attachextract_cont.excludepatterns4"/>
+                          preference="extensions.attachextract_cont.excludepatterns"/>
                         </row>
                         <row>
                         <radio id="iep1true" 
@@ -588,7 +588,7 @@
                           oncommand="wdw_aecOptions.enableField(document.getElementById('iep1true'),'includepatterns');wdw_aecOptions.enableField(document.getElementById('iep0false'),'excludepatterns');"/>
                         <textbox id="includepatterns" 
                           flex="1"
-                          preference="extensions.attachextract_cont.includepatterns4"/>
+                          preference="extensions.attachextract_cont.includepatterns"/>
                         </row>
                       </rows>
                       </grid>

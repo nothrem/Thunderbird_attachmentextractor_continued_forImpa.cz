@@ -146,11 +146,11 @@ Preferences.addAll([{
   type: "int"
 },
 {
-  id: "extensions.attachextract_cont.excludepatterns4",
+  id: "extensions.attachextract_cont.excludepatterns",
   type: "string"
 },
 {
-  id: "extensions.attachextract_cont.includepatterns4",
+  id: "extensions.attachextract_cont.includepatterns",
   type: "string"
 },
 {
