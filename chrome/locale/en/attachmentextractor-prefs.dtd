@@ -51,7 +51,7 @@
 <!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notify me when all the attachments have been extracted.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-savemessage.label "Save message txt to file. (note: same pattern for normal and auto-extract)">
+<!ENTITY attachmentextractor.settings.after-savemessage.label "Save message txt to file (Note: same pattern for normal and auto-extract)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Return Receipts …">
 <!ENTITY attachmentextractor.settings.returnreceipts.dialogtitle "Return Receipts">
@@ -140,7 +140,7 @@
 <!ENTITY attachmentextractor.settings.autoextract.triggertag.label "Extract messages if its tag matches:">
 <!ENTITY attachmentextractor.settings.autoextract.cleartriggertag.label "Clear tag from messages">
 <!ENTITY attachmentextractor.settings.autoextract.cleartriggertag.accesskey "C">
-<!ENTITY attachmentextractor.settings.autoextract.waitforall.label "Wait until all messages have downloaded before starting Auto-Extract.">
+<!ENTITY attachmentextractor.settings.autoextract.waitforall.label "Wait until all messages have been downloaded before starting Auto-Extract.">
 <!ENTITY attachmentextractor.settings.autoextract.waitforall.accesskey "W">
 <!ENTITY attachmentextractor.settings.autoextract.onattachmentsonly.label "Only start Auto-Extract with messages that appear to have attachments">
 <!ENTITY attachmentextractor.settings.autoextract.onattachmentsonly.accesskey "O">

@@ -314,7 +314,7 @@
     "message": "O"
   },
   "attachmentextractor.settings.after-savemessage.label": {
-    "message": "Save message txt to file. (note: same pattern for normal and auto-extract)"
+    "message": "Save message txt to file (Note: same pattern for normal and auto-extract)"
   },
   "attachmentextractor.settings.after-savemessage.accesskey": {
     "message": "S"
@@ -578,7 +578,7 @@
     "message": "C"
   },
   "attachmentextractor.settings.autoextract.waitforall.label": {
-    "message": "Wait until all messages have downloaded before starting Auto-Extract."
+    "message": "Wait until all messages have been downloaded before starting Auto-Extract."
   },
   "attachmentextractor.settings.autoextract.waitforall.accesskey": {
     "message": "W"
