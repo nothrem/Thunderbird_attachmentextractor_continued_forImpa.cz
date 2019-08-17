@@ -640,7 +640,7 @@
 
                   <groupbox>
                     <label flex="1"><html:h2>&attachmentextractor.settings.returnreceipts.dialogtitle;</html:h2></label>
-                    <label flex="1" value="&attachmentextractor.settings.returnreceipts.label;" />
+                    <label flex="1">&attachmentextractor.settings.returnreceipts.label;</label>
                     <checkbox id="sentreturnreceipt" 
                       label="&attachmentextractor.settings.returnreceipts.enabled.label;" 
                       accesskey="&attachmentextractor.settings.returnreceipts.enabled.accesskey;" 
