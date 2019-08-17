@@ -12,10 +12,6 @@ var {
   Services
 } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-///////////////////////////////////////////////////////////////////////////////
-// Detach/Delete Attachments 
-///////////////////////////////////////////////////////////////////////////////
-
 var aeMessenger = {
 
   /* **************** message text saving *********************** */
@@ -298,10 +294,13 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
   }
 
   this.finish = function() {
+    aedump("{function:aeSaveMsgListener.finish}\n", 2);
+
     if (!m_file || !m_file.exists()) return;
 
+    aedump('// m_file.lastModifiedTime Time before = '+m_file.lastModifiedTime+'\n');
+
     if (aewindow.prefs.get("setdatetoemail")) {
-      //aewindow.aedump('// m_file.lastModifiedTime = '+m_file.lastModifiedTime+'\n');
       try {
         m_file.lastModifiedTime = aewindow.currentTask.getMessageHeader()
           .dateInSeconds * 1000;
@@ -309,8 +308,12 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         aedump("//setting lastModifiedTime failed on current attachment\n",
         0);
       }
-      //aewindow.aedump('// m_file.lastModifiedTime = '+m_file.lastModifiedTime+'\n');
+      aewindow.aedump('// m_file.lastModifiedTime Time after modification = '+m_file.lastModifiedTime+'\n');
     }
+
+    aedump("m_file.fileSize: " + m_file.fileSize + "\n");
+    this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { aedump("getAttSize: " + size + "\n"); });
+
     if (m_file.fileSize < minFileSize) {
       aedump("// file size (" + m_file.fileSize + ") is below min (" +
         minFileSize + ") so abort save.\n", 3);
@@ -324,8 +327,9 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
           realFileName + "; " + e + "\n");
       }
     }
+
     if (afterAction) {
-      aedump("AEC afterAction: " + afterAction + "\n");
+      aedump("{function:aeSaveMsgListener.finish -- afterAction}\n", 2);
 
       switch (afterAction) {
         case "doAfterActions(aewindow.progress_tracker.message_states.CLEARTAG)":

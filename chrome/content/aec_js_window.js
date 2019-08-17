@@ -193,28 +193,37 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.detachCancellationTimeout = null;
   this.listeningforMessageId = "";
 
+  // Extract means: Save Attachment to Disc
   this.isExtractEnabled = (!justDeleteAttachments && (isBackground || (prefs
     .get("extract.mode") !== -1)));
+  // Detach means: Delete Attachment from Mail
+  this.isDetachEnabled = (justDeleteAttachments || prefs.get(isBackground ?
+    "autoextract.detach" : "actionafterextract.detach"));
+  // Delete means: Delete entire Message
   this.isDeleteEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
     "autoextract.deletemessage" : "actionafterextract.deletemessage"));
-  this.isMarkreadEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
-    "autoextract.markread" : "actionafterextract.markread"));
+
+  // Ask (not) for every single Message when Attachments should be deleted
+  this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
+    prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : 
+      "actionafterextract.detach.withoutconfirm"));
+  // A Warning to confirm Messages and/or Attachments could be lost entirely
+  this.confirmDetach = (!isBackground && this.isDetachEnabled && 
+      prefs.get("actionafterextract.detach.warning"));
+  // A pref, what should be done, when a filename is existing
+  this.overwritePolicy = (prefs.get(isBackground ?
+    "autoextract.overwritepolicy" : "overwritepolicy"));
+  
+  // Save Message text to a HTML file on disc
   this.isSaveMessageEnabled = (!justDeleteAttachments && prefs.get(
     isBackground ? "autoextract.savemessage" :
     "actionafterextract.savemessage"));
-  this.isDetachEnabled = (justDeleteAttachments || prefs.get(isBackground ?
-    "autoextract.detach" : "actionafterextract.detach"));
+  this.isMarkreadEnabled = (!justDeleteAttachments && prefs.get(isBackground ?
+    "autoextract.markread" : "actionafterextract.markread"));
   this.isCleartagEnabled = (isBackground && (prefs.get(
     "autoextract.ontriggeronly") && prefs.get("autoextract.cleartag")));
   this.isNotifywhendoneEnabled = (!isBackground && (selectedMsgs.length > 1 &&
     prefs.get("notifywhendone")));
-  this.overwritePolicy = (prefs.get(isBackground ?
-    "autoextract.overwritepolicy" : "overwritepolicy"));
-  this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
-    prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : 
-      "actionafterextract.detach.withoutconfirm"));
-  this.confirmDetach = (!isBackground && this.isDetachEnabled && 
-      prefs.get("actionafterextract.detach.warning"));
 
   //private vars
   /* var membername=value */
@@ -928,7 +937,7 @@ if (typeof AEMessage === "undefined") {
     aewindow.aedump(
       '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
     
-    console.log(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds + "\n");
+    aedump(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds + "\n");
 
     aewindow.progress_tracker.starting_attachment(attachmentindex, this
       .attachments_ct.length);
@@ -942,7 +951,7 @@ if (typeof AEMessage === "undefined") {
 
     if (file) {
 
-      this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { console.log("Size: " + size + "bytes \n"); });
+      this.getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { aedump("Size: " + size + "bytes \n"); });
 
       if (attachment.isExternalAttachment) {
         try {
