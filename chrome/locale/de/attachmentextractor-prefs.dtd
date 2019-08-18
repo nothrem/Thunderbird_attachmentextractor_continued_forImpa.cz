@@ -22,7 +22,7 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Folgende Ordner können inklusive ihrer Unterordner vorgeschlagen werden:">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Hinzufügen…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Entfernen">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Häufigkeit der Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Häufigkeit der Schlüsselwörter beim Anzeigen der Ordnervorschläge ignorieren">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "H">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Auszuschließende Schlüsselwörter (durch Komma getrennt):">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Zuletzt verwendete Ordner">

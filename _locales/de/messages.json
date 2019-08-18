@@ -218,7 +218,7 @@
     "message": "Ordnervorschläge basieren auf Schlüsselwörtern der Betreffzeilen der ausgewählten Nachrichten."
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
-    "message": "Häufigkeit der Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren"
+    "message": "Häufigkeit der Schlüsselwörter beim Anzeigen der Ordnervorschläge ignorieren"
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
     "message": "H"
