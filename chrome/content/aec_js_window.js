@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-try {
+ try {
   if (typeof Cc === "undefined") var Cc = Components.classes;
   if (typeof Ci === "undefined") var Ci = Components.interfaces;
   if (typeof Cr === "undefined") var Cr = Components.results;
@@ -878,8 +878,12 @@ if (typeof AEMessage === "undefined") {
   AEMessage.prototype.attachmentextraction = function() {
     this.started = true;
     if (aewindow.currentTask.isExtractEnabled && this.attachments_ct.length >
-      0) this.saveAtt(0);
-    else {
+      0) {
+      // saveAtt() is async now and this call might need more work, as the code
+      // called after attachmentextraction() is now executed immediately and
+      // not after saveAtt(0) has finished ...
+      this.saveAtt(0);
+    } else {
       aewindow.aedump("// no attachments to extract in this message\n", 3);
       aewindow.progress_tracker.starting_markread();
       this.doAfterActions(-1);
@@ -935,7 +939,7 @@ if (typeof AEMessage === "undefined") {
     return size;
   };
 
-  AEMessage.prototype.saveAtt = function(attachmentindex) {
+  AEMessage.prototype.saveAtt = async function(attachmentindex) {
     aewindow.aedump(
       '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
     
@@ -948,19 +952,23 @@ if (typeof AEMessage === "undefined") {
 
     // ********************************************************
     // Get Minimum Size and Attachments size
-    mimimumSizeKiB = this.prefs.get("extract.minimumsize");
+    let mimimumSizeKiB = this.prefs.get("extract.minimumsize");
+    let sizeToSmall = false;
     if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
       aedump("mimimumSizeKiB: " + mimimumSizeKiB + " KiB \n");
 
-      this.getAttSize(attachment.url, 
-        attachment.isExternalAttachment).then(function(size) { 
-
-        var sizeKiB = (size/1024);
-        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
-      });
+      let sizeKiB = await this.getAttSize(attachment.url, 
+        attachment.isExternalAttachment)/1024;
+      
+      sizeToSmall = (sizeKiB <= mimimumSizeKiB);
+      aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
     }
     // if (sizeKiB > mimimumSizeKiB) { ..only then extract the Attachment..
-    // this should be implemented
+    if (sizeToSmall) {
+      aedump("sizeToSmall\n");
+      return aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
+    }
+    
     // What should be done, when not saving the Attachment?
     // Do/Should we proceed with deleting (and other actions)? Not yet sure
     // **********************************************************
@@ -1051,6 +1059,8 @@ if (typeof AEMessage === "undefined") {
     } else {
       // console.log("setTimeout");
       // seems to be working okay
+      // saveAtt() is async now, but since it is called via a timeout, that
+      // does not change the execution flow
       setTimeout(function() {
         aewindow.currentMessage.saveAtt(attachmentindex)
       }, this.prefs.get("nextattachmentdelay"));
