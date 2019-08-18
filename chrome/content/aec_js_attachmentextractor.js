@@ -94,16 +94,6 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump("all: " + all + "\n");
     aedump("index: " + index + "\n");
 
-    var fnp = false;
-    // Only show fnp dialog, if attachments would be saved
-    if ((savelocation !== "deleteAtt") && (this.prefs.get("extract.enabled"))) {
-      // If pref is true, show the fnp edit dialog before extracting
-      if (this.prefs.get("filenamepattern.askalwaysfnp")) {
-        fnp = this.getFilenamePattern();
-        aedump("fnp after extra fnp dialog: " + fnp + "\n");
-      }
-    }
-
     var folder = null;
     savelocation = savelocation + "";
     var messages = (all) ? this.collectMessagesFromFolder((all === 2)) : this
@@ -134,6 +124,18 @@ if (typeof AttachmentExtractor === "undefined") {
         if (folder) this.addToMRUList(folder);
         break;
     }
+
+    var fnp = false;
+    // Only show fnp dialog, if attachments would be saved
+    if ((savelocation !== "deleteAtt") && (this.prefs.get("extract.enabled"))) {
+      // If pref is true, show the fnp edit dialog before extracting
+      if (this.prefs.get("filenamepattern.askalwaysfnp")) {
+        fnp = this.getFilenamePattern();
+        aedump("fnp after extra fnp dialog: " + fnp + "\n");
+      }
+    }
+
+    //aedump("folder: "+folder);
     if (folder) this.startAttachmentextraction(folder, messages, fnp, false,
       false);
   };
@@ -191,6 +193,17 @@ if (typeof AttachmentExtractor === "undefined") {
         if (folder) this.addToMRUList(folder);
         break;
       }
+
+      var fnp = false;
+      // Only show fnp dialog, if attachments would be saved
+      if (this.prefs.get("extract.enabled")) {
+        // If pref is true, show the fnp edit dialog before extracting
+        if (this.prefs.get("filenamepattern.askalwaysfnp")) {
+          fnp = this.getFilenamePattern();
+          aedump("fnp after extra fnp dialog: " + fnp + "\n");
+        }
+      }
+  
     //aedump("folder: "+folder);
     if (folder) aewindow.createAEIndTask(folder, this.getSelectedMessages()[
       0], attachments, fnp);
@@ -536,7 +549,7 @@ if (typeof AttachmentExtractor === "undefined") {
     window.openDialog(
       "chrome://attachmentextractor_cont/content/aec_dialog_suggestedFolder.xul",
       "",
-      "chrome, dialog, modal", matchedFolders, out);
+      "chrome, dialog, modal, resizable", matchedFolders, out);
     if (out.browse) {
       return this.addToMRUList(
         this.getSaveFolder("messenger.save.dir", true, ""));
@@ -658,10 +671,19 @@ if (typeof AttachmentExtractor === "undefined") {
     else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
       "paramAll") + ", '#');"
     
+    /***********************
+    // not more working in Thunderbird 69+ 
     var obj = {};
     prefs.getChildList("favoritefolder.", obj);
     var count = obj.value;
-    // aedump("favoritefolder count = favoriteObj.value: " + count + "\n", 2);
+    // aedump("favoritefolder count = obj.value: " + count + "\n", 2);
+    *************************/
+
+    // Thunderbird 69+
+    var obj = {};
+    obj = prefs.getChildList("favoritefolder.", obj);
+    var count = obj.length;
+    // aedump("favoritefolder count = obj.length: " + count + "\n", 2);
 
     for (let i = 1; i <= count; i++) {
       var accesskey = i-1;
@@ -708,10 +730,20 @@ if (typeof AttachmentExtractor === "undefined") {
       "extensions.attachextract_cont.");
 
     // -----  En-/Disable favorite folder submenu -----
+
+    /***********************
+    // not more working in Thunderbird 69+ 
     var favoriteObj = {};
     prefs.getChildList("favoritefolder.", favoriteObj);
-    var favoriteCount = favoriteObj.value;
-    aedump("favoritefolder count = favoriteObj.value: " + favoriteCount + "\n", 2);
+    var count = favoriteObj.value;
+    // aedump("favoritefolder count = favoriteObj.value: " + count + "\n", 2);
+    *************************/
+
+    // Thunderbird 69+: 
+    var favoriteObj = {};
+    favoriteObj = prefs.getChildList("favoritefolder.", favoriteObj);
+    var favoriteCount = favoriteObj.length;
+    //aedump("favoritefolder count = favoriteObj.length: " + favoriteCount + "\n", 2);
 
     var favoriteItems = [
       "menu_aec_extractToFavorite_toolbar",
@@ -737,10 +769,21 @@ if (typeof AttachmentExtractor === "undefined") {
     }
 
     // -----  En-/Disable mru folder submenu -----
+
+    /***********************
+    // not more working in Thunderbird 69+ 
     var mruObj = {};
-    prefs.getChildList("savepathmrufolder.", mruObj);
-    var mruCount = mruObj.value;
-    aedump("mrufolder count = mruObj.value: " + mruCount + "\n", 2);
+    prefs.getChildList("favoritefolder.", mruObj);
+    var count = mruObj.value;
+    // aedump("favoritefolder count = mruObj.value: " + count + "\n", 2);
+    *************************/
+
+    // Thunderbird 69+: 
+    var mruObj = {};
+    mruObj = prefs.getChildList("savepathmrufolder.", mruObj);
+    var mruCount = mruObj.length;
+    //aedump("mrufolder count = mruObj.length: " + mruCount + "\n", 2);
+
     var mruEnabled = Services.prefs.getBoolPref(
       "extensions.attachextract_cont.savepathmru");
 
@@ -768,10 +811,20 @@ if (typeof AttachmentExtractor === "undefined") {
     }
 
     // -----  En-/Disable suggest folder menuitem -----
+
+    /***********************
+    // not more working in Thunderbird 69+ 
     var suggestObj = {};
-    prefs.getChildList("suggestfolder.parent.", suggestObj);
-    var suggestCount = suggestObj.value;
-    aedump("suggestfolder count = suggestObj.value: " + suggestCount + "\n", 2);
+    prefs.getChildList("favoritefolder.", suggestObj);
+    var count = suggestObj.value;
+    // aedump("favoritefolder count = suggestObj.value: " + count + "\n", 2);
+    *************************/
+
+    // Thunderbird 69+: 
+    var suggestObj = {};
+    suggestObj = prefs.getChildList("suggestfolder.parent.", suggestObj);
+    var suggestCount = suggestObj.length;
+    //aedump("suggestfolder count = suggestObj.length: " + suggestCount + "\n", 2);
 
     var suggestItems = [
       "menu_aec_extractToSuggest_toolbar",

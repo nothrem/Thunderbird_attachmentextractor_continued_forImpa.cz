@@ -22,12 +22,11 @@
   <script type="application/x-javascript" 
     src="chrome://attachmentextractor_cont/content/aec_dialog_suggestedFolder.js"></script>
 
-  <vbox align="center" 
-    flex="1">
+  <vbox flex="1">
 
     <label value="&attachmentextractor.suggestedFolderDialog.label;"/>
     <richlistbox id="folderlist" 
-      style="height: 11em; min-width: 40em;"
+      style="min-height: 11em; min-width: 40em;"
       flex="1">
     </richlistbox>
 
