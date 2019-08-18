@@ -218,10 +218,10 @@
     "message": "Ordnervorschläge basieren auf Schlüsselwörtern der Betreffzeilen der ausgewählten Nachrichten."
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
-    "message": "Doppelte Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren"
+    "message": "Häufigkeit der Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren"
   },
   "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
-    "message": "I"
+    "message": "H"
   },
   "attachmentextractor.settings.suggestfolder.parents.label": {
     "message": "Ordner, welche Unterordner für abzutrennende Dateien enthalten können:"
@@ -288,24 +288,6 @@
   },
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "R"
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Löschen mit normaler Thunderbird-Routine"
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Löschen mit AttachmentExtractors interner (Versuchs-)Routine"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "R"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Abtrennen mit AttachmentExtractors interner (Versuchs-)Routine"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "e"
   },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden"

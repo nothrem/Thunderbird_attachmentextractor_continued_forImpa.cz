@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Utilizza la procedura incorporata in Thunderbird per eliminare"
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "U"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Utilizza la procedura sperimentale dell&apos;estensione per eliminare"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "t"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Utilizza la procedura sperimentale dell&apos;estensione per separare"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "z"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Notifica quando l&apos;estrazione degli allegati viene completata"
   },

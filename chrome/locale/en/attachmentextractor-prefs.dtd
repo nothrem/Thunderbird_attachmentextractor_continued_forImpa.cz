@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Delete with normal Thunderbird code.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Delete with AE&apos;s internal (experimental) routine.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Detach with AE&apos;s internal (experimental) routine.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notify me when all the attachments have been extracted.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Save message txt to file (Note: same pattern for normal and auto-extract)">

@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Mazat přílohy standardní funkcí aplikace Thunderbird."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "S"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Mazat přílohy zabudovanou experimentální metodou."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "M"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Vyčlenit přílohy zabudovanou experimentální metodou."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "V"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Zobrazovat oznámení o dokončení ukládaní"
   },

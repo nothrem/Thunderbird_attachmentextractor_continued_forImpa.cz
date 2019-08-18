@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "일반 Thunderbird 코드로 삭제.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "AE의 내부(시험중)루틴으로 삭제.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "AE 내부(시험적) 루틴으로 분리.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "모든 첨부파일을 추출하면 알림">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "메세지 글을 파일로 저장.(주의:일반 및 자동추출을 위한 동일 패턴)">

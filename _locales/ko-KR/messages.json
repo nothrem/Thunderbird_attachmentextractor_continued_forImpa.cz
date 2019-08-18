@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "일반 Thunderbird 코드로 삭제."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "AE의 내부(시험중)루틴으로 삭제."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "L"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "AE 내부(시험적) 루틴으로 분리."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "T"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "모든 첨부파일을 추출하면 알림"
   },

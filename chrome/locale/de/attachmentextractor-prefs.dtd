@@ -22,8 +22,8 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Folgende Ordner können inklusive ihrer Unterordner vorgeschlagen werden:">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Hinzufügen…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Entfernen">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Doppelte Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Häufigkeit der Schlüsselwörter beim Zuordnen der Ordnervorschläge ignorieren">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "H">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Auszuschließende Schlüsselwörter (durch Komma getrennt):">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Zuletzt verwendete Ordner">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Liste der zuletzt verwendeten Ordner verwenden">
@@ -36,19 +36,13 @@
 <!ENTITY attachmentextractor.settings.posttab.label "Nach Abtrennung">
 <!ENTITY attachmentextractor.settings.afterextractpolicy.label "Vorgänge nach dem Abtrennen:">
 <!ENTITY attachmentextractor.settings.after-delete.label "Nachricht löschen">
-<!ENTITY attachmentextractor.settings.after-delete.accesskey "H">
+<!ENTITY attachmentextractor.settings.after-delete.accesskey "ö">
 <!ENTITY attachmentextractor.settings.after-read.label "Nachricht als gelesen markieren">
 <!ENTITY attachmentextractor.settings.after-read.accesskey "K">
 <!ENTITY attachmentextractor.settings.after-detach.label "Anhänge aus der Nachricht löschen">
-<!ENTITY attachmentextractor.settings.after-detach.accesskey "U">
+<!ENTITY attachmentextractor.settings.after-detach.accesskey "ä">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Ohne Rückfrage löschen">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "R">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Löschen mit normaler Thunderbird-Routine">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Löschen mit AttachmentExtractors interner (Versuchs-)Routine">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "R">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Abtrennen mit AttachmentExtractors interner (Versuchs-)Routine">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "e">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)">

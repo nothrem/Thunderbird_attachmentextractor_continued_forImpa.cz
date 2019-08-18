@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Изтрие по нормалния начин на Thunderbird.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Изтрие по метода на AE (експериментално).">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Откачи по метода на AE (експериментално).">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "С известие след извличане на всички прикачени файлове.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Запис на текста в писмо във файл. (забележка: еднакъв шаблон за нормално и авто-извличане)">

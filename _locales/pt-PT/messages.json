@@ -288,24 +288,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Apagar com o código normal do Thunderbird."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "p"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Apagar com a rotina AE interna (experimental)"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "c"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Desanexar com a rotina AE interna (experimental)"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "n"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Notificar-me quando todos os anexos forem extraídos."
   },

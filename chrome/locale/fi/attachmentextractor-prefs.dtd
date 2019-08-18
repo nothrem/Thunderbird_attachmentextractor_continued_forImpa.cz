@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Poista tavallisella Thunderbird-koodilla.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Poista AE:n sisäisellä (kokeellisella) rutiinilla.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "K">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Irrota AE:n sisäisellä (kokeellisella) rutiinilla.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "R">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Ilmoita, kun kaikki liitetiedostot on poimittu">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "I">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Tallenna viestiteksti tiedostoon. (huomaa: sama malli normaalille ja automaattiselle poiminnalle)">

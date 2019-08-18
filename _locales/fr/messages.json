@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Supprimer avec le code normal de Thunderbird"
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Supprimer avec les routines d&apos;AttachmentExtractor (expérimental)."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "L"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Détacher avec les routines d&apos;AttachmentExtractor (expérimental)."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "T"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "M&apos;avertir quand toutes les pièces jointes ont été extraites."
   },

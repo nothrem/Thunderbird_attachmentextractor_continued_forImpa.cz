@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "n">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Utilizza la procedura incorporata in Thunderbird per eliminare">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "U">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Utilizza la procedura sperimentale dell&apos;estensione per eliminare">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "t">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Utilizza la procedura sperimentale dell&apos;estensione per separare">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "z">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notifica quando l&apos;estrazione degli allegati viene completata">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "o">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Salva il messaggio di testo in un file (nota: stesso modello per estrazione normale ed autoestrazione)">

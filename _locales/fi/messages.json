@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Poista tavallisella Thunderbird-koodilla."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Poista AE:n sisäisellä (kokeellisella) rutiinilla."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "K"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Irrota AE:n sisäisellä (kokeellisella) rutiinilla."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "R"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Ilmoita, kun kaikki liitetiedostot on poimittu"
   },

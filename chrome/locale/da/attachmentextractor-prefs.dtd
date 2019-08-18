@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Slet med Thunderbirds egen metode.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "T">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Slet med AEs (eksperimentelle) metode.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "A">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Fjern med AEs (eksperimentelle) metode.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "F">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Underret mig når alle de vedhæftede filer er blevet gemt.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "U">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Gem beskedens tekst. (Samme mønster bruges til normal kørsel og automatisk processering)">

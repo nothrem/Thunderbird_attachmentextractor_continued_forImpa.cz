@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Zmazať s normálnym Thunderbird kódom."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "Z"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Zmazať s vnútornou AE (experimentálnou) rutinou."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "L"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Oddeliť s vnútornou AE (experimentálnou) rutinou."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "O"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Zobrazovať oznámenie o dokončení ukladania."
   },

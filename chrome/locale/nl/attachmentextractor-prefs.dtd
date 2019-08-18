@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "W">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Verwijderen met normale Thunderbird code.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Verwijderen met de interne (experimentele) routine van AE.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Ontkoppelen met de interne (experimentele) routine van AE.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Bericht geven wanneer alle bijlagen zijn uitgepakt">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Berichttekst in bestand opslaan (opmerking: identiek patroon voor normaal en automatisch uitpakken).">

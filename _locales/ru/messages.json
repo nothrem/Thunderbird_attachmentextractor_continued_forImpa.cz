@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Удалять с обычным Thunderbird кодом"
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Удалять с внутренним (экспериментальным) кодом AE"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "L"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Отделять с внутренним (экспериментальным) кодом AE"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "T"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Сообщать мне когда все вложения будут извлечены"
   },

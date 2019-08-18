@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Zmazať s normálnym Thunderbird kódom.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "Z">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Zmazať s vnútornou AE (experimentálnou) rutinou.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Oddeliť s vnútornou AE (experimentálnou) rutinou.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "O">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Zobrazovať oznámenie o dokončení ukladania.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložiť textovú správu do súboru. (pozn.: rovnaký vzor pre normálne a auto-uloženie)">

@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Slet med Thunderbirds egen metode."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "T"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Slet med AEs (eksperimentelle) metode."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "A"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Fjern med AEs (eksperimentelle) metode."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "F"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "Underret mig når alle de vedhæftede filer er blevet gemt."
   },

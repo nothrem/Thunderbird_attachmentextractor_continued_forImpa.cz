@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Mazat přílohy standardní funkcí aplikace Thunderbird.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "S">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Mazat přílohy zabudovanou experimentální metodou.">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "M">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Vyčlenit přílohy zabudovanou experimentální metodou.">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "V">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Zobrazovat oznámení o dokončení ukládaní">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložit zprávu do souboru TXT. (stejná syntaxe pro ruční i pro automatické ukládání)">

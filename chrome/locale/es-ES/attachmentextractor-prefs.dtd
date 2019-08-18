@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Borrar usando el código normal de Thunderbird.">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "B">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Borrar usando la rutina interna de AE (en desarrollo).">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "l">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Guardar usando la rutina interna de AE (en desarrollo).">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "G">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notificarme cuando todos los adjuntos se hayan extraído.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Guardar el texto del mensaje a un archivo. (nota: mismo patrón para la extracción normal y automática)">

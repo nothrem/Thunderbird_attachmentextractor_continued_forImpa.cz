@@ -289,24 +289,6 @@
   "attachmentextractor.settings.after-detach.confirm.accesskey": {
     "message": "w"
   },
-  "attachmentextractor.settings.after-detach.tbdelete.label": {
-    "message": "Изтрие по нормалния начин на Thunderbird."
-  },
-  "attachmentextractor.settings.after-detach.tbdelete.accesskey": {
-    "message": "N"
-  },
-  "attachmentextractor.settings.after-detach.aedelete.label": {
-    "message": "Изтрие по метода на AE (експериментално)."
-  },
-  "attachmentextractor.settings.after-detach.aedelete.accesskey": {
-    "message": "L"
-  },
-  "attachmentextractor.settings.after-detach.aedetach.label": {
-    "message": "Откачи по метода на AE (експериментално)."
-  },
-  "attachmentextractor.settings.after-detach.aedetach.accesskey": {
-    "message": "T"
-  },
   "attachmentextractor.settings.notifywhendone.label": {
     "message": "С известие след извличане на всички прикачени файлове."
   },

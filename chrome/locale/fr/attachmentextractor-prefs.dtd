@@ -43,12 +43,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "P">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.label "Supprimer avec le code normal de Thunderbird">
-<!ENTITY attachmentextractor.settings.after-detach.tbdelete.accesskey "N">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.label "Supprimer avec les routines d&apos;AttachmentExtractor (expérimental).">
-<!ENTITY attachmentextractor.settings.after-detach.aedelete.accesskey "L">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.label "Détacher avec les routines d&apos;AttachmentExtractor (expérimental).">
-<!ENTITY attachmentextractor.settings.after-detach.aedetach.accesskey "T">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "M&apos;avertir quand toutes les pièces jointes ont été extraites.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "A">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Sauver le texte du message dans un fichier. (note : même modèle pour normal et extraction automatique)">
