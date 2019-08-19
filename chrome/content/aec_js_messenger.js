@@ -103,6 +103,7 @@ var aeMessenger = {
 
 };
 
+// Now only (?) used for function saveMessageToDisk() (message content to a HTML file)
 function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afterActionAttachmentindex,
   aewindow, minFileSize) {
   var aedump = aewindow.aedump;
@@ -314,15 +315,7 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         m_file.lastModifiedTime + '\n');
     }
 
-    // ******    m_file.fileSize has a none correct size ?!    ********
-    // at the moment doesn't work at all
-    aedump("m_file.fileSize: " + m_file.fileSize + "\n");
-    aedump("minFileSize: " + minFileSize + "\n");
-    if (m_file.fileSize < minFileSize) {
-      aedump("// file size (" + m_file.fileSize + ") is below min (" +
-        minFileSize + ") so abort save.\n", 3);
-      m_file.remove(false);
-    } else { // rename temp file to actual filename.
+    // rename temp file to actual filename.
     // this last part is necessary to rename the saved message HTML file
     // from tmp file to actual filename
       try {
@@ -332,7 +325,6 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         aedump("m_file: " + m_file.leafName + ";realFileName: " +
           realFileName + "; " + e + "\n");
       }
-    }
 
     if (afterAction) {
       aedump("{function:aeSaveMsgListener.finish -- afterAction}\n", 2);
