@@ -467,8 +467,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   };
 
   /* to implement nsIMsgHeaderSink */
-  this.handleAttachment = function(contentType, url, displayName, uri,
-    isExternalAttachment) {
+    this.handleAttachment = function(contentType, url, displayName, uri,
+      isExternalAttachment) {
     if (aewindow.progress_tracker.attachment_busy || aewindow
       .progress_tracker.is_detaching) return;
     aewindow.aedump('{function:AETask.handleAttachment}\n', 2);
@@ -485,8 +485,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
         " failed include/exclude filename check\n", 1);
       return;
     }
-    that.currentMessage.addAttachment(contentType, url, displayName.replace(
-      / +/g, " "), uri, isExternalAttachment);
+    that.currentMessage.addAttachment(contentType, url, 
+      displayName.replace(/ +/g, " "), uri, isExternalAttachment);
   };
 
   this.onEndAllAttachments = function() {
@@ -736,15 +736,12 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
     prefs.set(aewindow.DOWNLOADMANAGER_SHOWWINDOW_PREFNAME,
       false /*30000*/ , "");
     prefs.set("mail.prompt_purge_threshhold", false, "");
-    //
+    
     that.active = true;
     aewindow.progress_tracker.reset_tracker();
     that.currentMessage = new aewindow.AEMessage(message, 0, aewindow);
     for (let i = 0; i < attachments.length; i++) {
       var a = attachments[i];
-      if (!a.uri) a.uri = a.messageUri; // tb2 doesn't use uri.
-      if (!a.displayName) a.displayName = a
-      .name; // tb7 doesn't use displayName.
       /*if (!a.isExternalAttachment)*/
       that.handleAttachment(a.contentType, a.url, a.displayName, a.uri, a
         .isExternalAttachment);
@@ -890,7 +887,8 @@ if (typeof AEMessage === "undefined") {
     }
   };
 
-  AEMessage.prototype.getAttSize = async function(_url, isExternalAttachment, isLinkAttachment = false) {
+  AEMessage.prototype.getAttSize = 
+    async function(_url, isExternalAttachment, isLinkAttachment = false) {
     let url = _url;
     let size = 0;
     let options = { method: "HEAD" };
@@ -943,8 +941,6 @@ if (typeof AEMessage === "undefined") {
     aewindow.aedump(
       '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
     
-    aedump(aewindow.currentTask.getMessageHeader().subject + " : " + aewindow.currentTask.getMessageHeader().dateInSeconds + "\n");
-
     aewindow.progress_tracker.starting_attachment(attachmentindex, this
       .attachments_ct.length);
 
@@ -963,21 +959,19 @@ if (typeof AEMessage === "undefined") {
       sizeToSmall = (sizeKiB <= mimimumSizeKiB);
       aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
     }
-    // if (sizeKiB > mimimumSizeKiB) { ..only then extract the Attachment..
     if (sizeToSmall) {
       aedump("sizeToSmall\n");
       return aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
     }
-    
-    // What should be done, when not saving the Attachment?
-    // Do/Should we proceed with deleting (and other actions)? Not yet sure
     // **********************************************************
 
     var file = aewindow.currentTask.filemaker.make(attachment.displayName,
       this.headerDataCache);
     if (file && file.parent && !file.parent.exists()) file.parent.create(file
       .DIRECTORY_TYPE, 0600);
-    //aewindow.aedump(attachment.uri+"\n"+attachment.url+"\n"+attachment);
+
+    // aewindow.aedump(attachment.uri+"\n"+attachment.url+"\n"+attachment+"\n");
+    // aewindow.aedump(file+"\n");
 
     if (file) {
 
@@ -1011,7 +1005,29 @@ if (typeof AEMessage === "undefined") {
         }
       }
     }
+
+    // Try to get messge timestamp to use for attachment timestamp
+    aedump(aewindow.currentTask.getMessageHeader().subject + " : " + 
+      aewindow.currentTask.getMessageHeader().dateInSeconds + "\n");
+  
     if (file) {
+
+    /**********************************************************************
+     * Maybe it's possible to get the real file on disc here 
+     * and modify its timestamp ?
+
+      aedump(aewindow.currentTask.getMessageHeader()
+        .dateInSeconds * 1000 +"\n",0);
+      try {
+        file.lastModifiedTime = 
+          aewindow.currentTask.getMessageHeader().dateInSeconds * 1000;
+      } catch (e) {
+        aedump("//setting lastModifiedTime failed on current attachment\n",
+        0);
+      }
+     *
+     **********************************************************************/
+
       this.attachments_savedfile[attachmentindex] = file;
       this.attachments_appendage[attachmentindex] = aewindow.currentTask
         .filemaker.lastMadeAppendage;
@@ -1045,7 +1061,7 @@ if (typeof AEMessage === "undefined") {
       this.attachments_uri[attachmentindex] = undefined;
       this.attachments_savedfile[attachmentindex] = undefined;
       this.attachments_appendage[attachmentindex] = undefined;
-      this.attachments_external[attachmentindex] = undefined;
+      this.attachments_external[attachmentindex] = undefined;  
     }
     aewindow.progress_tracker.stopping_attachment(attachmentindex);
     attachmentindex++;
