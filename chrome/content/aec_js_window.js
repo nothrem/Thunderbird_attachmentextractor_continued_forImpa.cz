@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
- try {
+try {
   if (typeof Cc === "undefined") var Cc = Components.classes;
   if (typeof Ci === "undefined") var Ci = Components.interfaces;
   if (typeof Cr === "undefined") var Cr = Components.results;
@@ -467,12 +467,27 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   };
 
   /* to implement nsIMsgHeaderSink */
-    this.handleAttachment = function(contentType, url, displayName, uri,
-      isExternalAttachment) {
+  this.handleAttachment = function(contentType, url, displayName, uri,
+    isExternalAttachment) {
     if (aewindow.progress_tracker.attachment_busy || aewindow
       .progress_tracker.is_detaching) return;
     aewindow.aedump('{function:AETask.handleAttachment}\n', 2);
-    /*if (isExternalAttachment) {
+
+    // Test call to getAttSize() to check if we have access to all required
+    // information to get the size and decide if to small
+    // the check itself is outside the normal execution flow and its result
+    // cannot be used in the follow up commands - we need to go async first 
+    let mimimumSizeKiB = prefs.get("extract.minimumsize");
+    console.log("minimumsize: " + mimimumSizeKiB + " KiB\n");      
+    if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
+      getAttSize(url, isExternalAttachment).then(function(size) { 
+        var sizeKiB = (size/1024);
+        console.log("handleAttachment: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+      });
+    }
+
+      /*if (isExternalAttachment) {
     	aewindow.aedump(displayName+" is external attachment so ignore\n",1);
     	return;
     }*/
@@ -736,7 +751,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
     prefs.set(aewindow.DOWNLOADMANAGER_SHOWWINDOW_PREFNAME,
       false /*30000*/ , "");
     prefs.set("mail.prompt_purge_threshhold", false, "");
-    
+    //
     that.active = true;
     aewindow.progress_tracker.reset_tracker();
     that.currentMessage = new aewindow.AEMessage(message, 0, aewindow);
@@ -875,69 +890,16 @@ if (typeof AEMessage === "undefined") {
   AEMessage.prototype.attachmentextraction = function() {
     this.started = true;
     if (aewindow.currentTask.isExtractEnabled && this.attachments_ct.length >
-      0) {
-      // saveAtt() is async now and this call might need more work, as the code
-      // called after attachmentextraction() is now executed immediately and
-      // not after saveAtt(0) has finished ...
-      this.saveAtt(0);
-    } else {
+      0) this.saveAtt(0);
+    else {
       aewindow.aedump("// no attachments to extract in this message\n", 3);
       aewindow.progress_tracker.starting_markread();
       this.doAfterActions(-1);
     }
   };
 
-  AEMessage.prototype.getAttSize = 
-    async function(_url, isExternalAttachment, isLinkAttachment = false) {
-    let url = _url;
-    let size = 0;
-    let options = { method: "HEAD" };
-
-   // NOTE: For internal mailbox, imap, news urls the response body must get
-   // the content length with getReader().read() but we don't need to do this
-   // here as libmime streams it already in addAttachmentField(). For imap or
-   // news urls with credentials (username, userPass), we must remove them
-   // as Request fails such urls with a MSG_URL_HAS_CREDENTIALS error.
-    if (url.startsWith("imap://") || url.startsWith("news://")) {
-      let uri = Services.io.newURI(url);
-      if (uri.username)
-        url = url.replace(uri.username + "@", "");
-      if (uri.userPass)
-        url = url.replace(uri.userPass + "@", "");
-    }
-
-    let request = new Request(url, options);
-
-    await fetch(request)
-      .then((response) => {
-        if (!response.ok) {
-          return null;
-        }
-
-        if (isLinkAttachment) {
-          if (response.status < 200 || response.status > 304) {
-            return null;
-          }
-        }
-
-        return response;
-      })
-      .then(async (response) => {
-        if (isExternalAttachment) {
-          size = response ? response.headers.get("content-length") : 0;
-        } else {
-          let data = await response.body.getReader().read();
-          size = data.value.length;
-        }
-      })
-      .catch((error) => {
-        console.warn("getAttSize: error - " + error.message);
-      });
-
-    return size;
-  };
-
-  AEMessage.prototype.saveAtt = async function(attachmentindex) {
+  
+  AEMessage.prototype.saveAtt = function(attachmentindex) {
     aewindow.aedump(
       '{function:AEMessage.saveAtt(' + attachmentindex + ')}\n', 2);
     
@@ -947,22 +909,22 @@ if (typeof AEMessage === "undefined") {
     var attachment = this.getAttachment(attachmentindex);
 
     // ********************************************************
-    // Get Minimum Size and Attachments size
+    // Old test call to getAttSize() to be able to compare returned size values
+    // here and in handleAttachment
+    // the check itself is outside the normal execution flow and its result
+    // cannot be used in the follow up commands - we would need to go async first 
     let mimimumSizeKiB = this.prefs.get("extract.minimumsize");
-    let sizeToSmall = false;
     if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
-      aedump("mimimumSizeKiB: " + mimimumSizeKiB + " KiB \n");
-
-      let sizeKiB = await this.getAttSize(attachment.url, 
-        attachment.isExternalAttachment)/1024;
-      
-      sizeToSmall = (sizeKiB <= mimimumSizeKiB);
-      aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+      getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { 
+        var sizeKiB = (size/1024);
+        console.log("saveAtt: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+      });
     }
-    if (sizeToSmall) {
-      aedump("sizeToSmall\n");
-      return aewindow.currentMessage.saveAtt_cleanUp(attachmentindex, true);
-    }
+    // if (sizeKiB > mimimumSizeKiB) { ..only then extract the Attachment..
+    // this should be implemented
+    // What should be done, when not saving the Attachment?
+    // Do/Should we proceed with deleting (and other actions)? Not yet sure
     // **********************************************************
 
     var file = aewindow.currentTask.filemaker.make(attachment.displayName,
@@ -1061,7 +1023,7 @@ if (typeof AEMessage === "undefined") {
       this.attachments_uri[attachmentindex] = undefined;
       this.attachments_savedfile[attachmentindex] = undefined;
       this.attachments_appendage[attachmentindex] = undefined;
-      this.attachments_external[attachmentindex] = undefined;  
+      this.attachments_external[attachmentindex] = undefined;
     }
     aewindow.progress_tracker.stopping_attachment(attachmentindex);
     attachmentindex++;
@@ -1075,8 +1037,6 @@ if (typeof AEMessage === "undefined") {
     } else {
       // console.log("setTimeout");
       // seems to be working okay
-      // saveAtt() is async now, but since it is called via a timeout, that
-      // does not change the execution flow
       setTimeout(function() {
         aewindow.currentMessage.saveAtt(attachmentindex)
       }, this.prefs.get("nextattachmentdelay"));
@@ -1382,6 +1342,56 @@ aewindow.AEMsgDBViewCommandUpdater.prototype = {
     throw Cr.NS_NOINTERFACE;
   }
 }
+
+async function getAttSize(_url, isExternalAttachment, isLinkAttachment = false) {
+  let url = _url;
+  let size = 0;
+  let options = { method: "HEAD" };
+
+ // NOTE: For internal mailbox, imap, news urls the response body must get
+ // the content length with getReader().read() but we don't need to do this
+ // here as libmime streams it already in addAttachmentField(). For imap or
+ // news urls with credentials (username, userPass), we must remove them
+ // as Request fails such urls with a MSG_URL_HAS_CREDENTIALS error.
+  if (url.startsWith("imap://") || url.startsWith("news://")) {
+    let uri = Services.io.newURI(url);
+    if (uri.username)
+      url = url.replace(uri.username + "@", "");
+    if (uri.userPass)
+      url = url.replace(uri.userPass + "@", "");
+  }
+
+  let request = new Request(url, options);
+
+  await fetch(request)
+    .then((response) => {
+      if (!response.ok) {
+        return null;
+      }
+
+      if (isLinkAttachment) {
+        if (response.status < 200 || response.status > 304) {
+          return null;
+        }
+      }
+
+      return response;
+    })
+    .then(async (response) => {
+      if (isExternalAttachment) {
+        size = response ? response.headers.get("content-length") : 0;
+      } else {
+        let data = await response.body.getReader().read();
+        size = data.value.length;
+      }
+    })
+    .catch((error) => {
+      console.warn("getAttSize: error - " + error.message);
+    });
+
+  return size;
+};
+
 
 function AEMsgWindowCommands(task) {
   this.SelectFolder = function(folderUri) {
