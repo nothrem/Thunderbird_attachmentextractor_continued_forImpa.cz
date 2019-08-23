@@ -757,6 +757,8 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
     that.currentMessage = new aewindow.AEMessage(message, 0, aewindow);
     for (let i = 0; i < attachments.length; i++) {
       var a = attachments[i];
+      if (!a.displayName) a.displayName = a
+      .name; // Thunderbird 7+ doesn't use displayName.
       /*if (!a.isExternalAttachment)*/
       that.handleAttachment(a.contentType, a.url, a.displayName, a.uri, a
         .isExternalAttachment);
