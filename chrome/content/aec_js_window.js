@@ -478,12 +478,11 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     // the check itself is outside the normal execution flow and its result
     // cannot be used in the follow up commands - we need to go async first 
     let mimimumSizeKiB = prefs.get("extract.minimumsize");
-    console.log("minimumsize: " + mimimumSizeKiB + " KiB\n");      
     if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
       getAttSize(url, isExternalAttachment).then(function(size) { 
         var sizeKiB = (size/1024);
-        console.log("handleAttachment: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
-        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+        aedump(displayName + " " + "minimumsize: " + mimimumSizeKiB + " KiB\n");      
+        aedump(displayName + " " + "handleAttachment: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
       });
     }
 
@@ -760,6 +759,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
       if (!a.displayName) a.displayName = a
       .name; // Thunderbird 7+ doesn't use displayName.
       /*if (!a.isExternalAttachment)*/
+      aedump("{function:AETask.start} that.handleAttachment: " + a.displayName + "\n");
       that.handleAttachment(a.contentType, a.url, a.displayName, a.uri, a
         .isExternalAttachment);
     }
@@ -919,8 +919,7 @@ if (typeof AEMessage === "undefined") {
     if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
       getAttSize(attachment.url, attachment.isExternalAttachment).then(function(size) { 
         var sizeKiB = (size/1024);
-        console.log("saveAtt: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
-        aedump("getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+        aedump("saveAtt: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
       });
     }
     // if (sizeKiB > mimimumSizeKiB) { ..only then extract the Attachment..
