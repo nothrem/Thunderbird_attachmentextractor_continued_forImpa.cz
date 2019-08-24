@@ -174,14 +174,14 @@ if (typeof (wdw_aecOptions) === "undefined") {
     showDetachWarning: function(checkbox) {
       if (!checkbox.checked) return;
       let amessage = this.aeStringBundle.GetStringFromName(
-        "ConfirmDetachSettingDialogMessage");
+        "ConfirmDetachSettingDialogMessage2");
       alert(amessage);
     },
 
     showAutoDetachWarning: function(checkbox) {
       if (!checkbox.checked) return;
       let amessage = this.aeStringBundle.GetStringFromName(
-        "ConfirmAutoDetachSettingDialogMessage");
+        "ConfirmAutoDetachSettingDialogMessage2");
       alert(amessage);
     },
 

@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Oups !"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Une erreur s'est produite dans AttachmentExtractor. Si cela se produit régulièrement, veuillez enregistrer ce bug dans le gestionnaire de bugs de mon site avec l'erreur détaillées qui vous est indiquée par la Console d'erreurs de Thunderbird."
   },
   "StatusTextStarting": {

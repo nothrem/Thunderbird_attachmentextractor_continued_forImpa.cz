@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Проблем!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Нещо ненормално се случи с AttachmentExtractor. Ако това се случва често, да се докладва неизправност на страницата (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) с подробностите за грешката от конзолата на Thunderbird."
   },
   "StatusTextStarting": {

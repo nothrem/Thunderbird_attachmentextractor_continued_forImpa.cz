@@ -1,3 +1,6 @@
+<!ENTITY attachmentextractor.extensionName "AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.extensionDescription "Trennt Dateianhänge aus gewählten Nachrichten teilautomatisiert ab und kann diese speichern, löschen und mehr">
+
 <!ENTITY attachmentextractor.toolbarbutton.label "Anhänge abtrennen">
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Anhänge von ausgewählten Nachrichten abtrennen">
 <!ENTITY attachmentextractor.headerbutton.label "Anhänge abtrennen">

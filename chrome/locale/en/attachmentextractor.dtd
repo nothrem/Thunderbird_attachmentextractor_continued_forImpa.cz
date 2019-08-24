@@ -1,3 +1,6 @@
+<!ENTITY attachmentextractor.extensionName "AttachmentExtractor Continued">
+<!ENTITY attachmentextractor.extensionDescription "Extracts all attachments from selected messages and then can delete, detach and more">
+
 <!ENTITY attachmentextractor.toolbarbutton.label "AE Extract">
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Extract Attachments from Selected Messages">
 <!ENTITY attachmentextractor.headerbutton.label "AE Extract">

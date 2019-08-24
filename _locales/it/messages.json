@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Attenzione!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Si è verificato un errore di AttachmentExtractor. Se ciò dovesse accadere regolarmente, contattare l'autore tramite il sito web dell'estensione per fornire tutti i dettagli dell'errore/problema"
   },
   "StatusTextStarting": {

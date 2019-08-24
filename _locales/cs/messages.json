@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Chyba!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Rozšíření AttachmentExtractor způsobilo chybu programu. Pokud se to stává pravidelně, oznamte to prosím na stránkách https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues s výpisem chyb z chybové konzole aplikace Thunderbird."
   },
   "StatusTextStarting": {

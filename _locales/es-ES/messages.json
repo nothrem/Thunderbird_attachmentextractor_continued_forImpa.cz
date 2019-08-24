@@ -674,7 +674,7 @@
   "GenericErrorDialog": {
     "message": "Error"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Se ha producido un error en el uso de AttachmentExtractor. Si esto ocurre con frecuencia, por favor, añada un bug en https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues con el detalle de error mostrado en la consola de errores de Thunderbird."
   },
   "StatusTextStarting": {

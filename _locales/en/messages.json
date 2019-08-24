@@ -646,20 +646,20 @@
   "FileNamePatternDialogAskAlways": {
     "message": "Ask always for filename pattern"
   },
-  "ConfirmDetachDialogTitle": {
+  "ConfirmDetachDialogTitle2": {
     "message": "Confirm Detaching"
   },
-  "ConfirmDetachDialogMessage": {
-    "message": "You have chosen to detach attachments with AttachmentExtractor. There will be no further confirmation messages after this and every attachment will be deleted from the selected emails.  Once deleted this cannot be undone.  Still Proceed?"
+  "ConfirmDetachDialogMessage2": {
+    "message": "You have chosen to detach attachments with AttachmentExtractor. There will be no further confirmation messages after this and every attachment will be deleted from the selected emails. Once deleted this cannot be undone. \n\nStill Proceed?"
   },
-  "ConfirmDetachSettingDialogTitle": {
+  "ConfirmDetachSettingDialogTitle2": {
     "message": "Warning!"
   },
-  "ConfirmDetachSettingDialogMessage": {
-    "message": "Please be aware that this method may not work properly in all cases.  \nIf there is an error it may result in either losing the attachments or the email contents, or both.  If this happens there is no easy way of recovering what's been lost so it is inadvisable to use it with important emails. Create Backups before using this feature.  \n\nUse at your own risk."
+  "ConfirmDetachSettingDialogMessage2": {
+    "message": "Please be aware that this method may not work properly in all cases. \n\nIf there is an error it may result in either losing the attachments or the email contents, or both.  If this happens there is no easy way of recovering what's been lost so it is inadvisable to use it with important emails. Create Backups before using this feature. \n\nUse at your own risk."
   },
-  "ConfirmAutoDetachSettingDialogMessage": {
-    "message": "Enabling detach/delete attachments will remove attachments from all incoming emails that fit the criteria you specified, (potentially all emails), without ANY confirmation.   \nIf there is an error it may result in either losing the attachment or the email contents, or both.\n\nDo not enable this if you can't risk losing attachments and your incoming emails.  \n\nUse at your own risk."
+  "ConfirmAutoDetachSettingDialogMessage2": {
+    "message": "Enabling detach/delete attachments will remove attachments from all incoming emails that fit the criteria you specified (potentially all emails), based on selected options maybe without further confirmation. \n\nIf there is an error it may result in either losing the attachment or the email contents, or both. \n\nDo not enable this if you can't risk losing attachments and your incoming emails. \n\nUse at your own risk."
   },
   "CSSFileFilterDescription": {
     "message": "CSS Stylesheets"
@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Whoops!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Something has gone wrong with AttachmentExtractor.  If this happens regularly please log a bug on the bugtracker on https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues with the error details shown in Thunderbird's Error Console."
   },
   "StatusTextStarting": {
@@ -703,9 +703,25 @@
   "FolderPickerDialogTitleDefaultAutoextractPath": {
     "message": "Auto-Extract Save Path not defined - Select folder to use"
   },
-  "EmptyLineText": {
-    "message": "-- empty --"
+  "SeparatedByComma": {
+    "message": "(Comma separated)"
   },
+  "SeparatedBySemicolon": {
+    "message": "(Semicolon separated)"
+  },
+  "WarningTitle": {
+    "message": "Warning"
+  },
+  "WarningDoNotShowAgain": {
+    "message": "Do not show this warning again."
+  },
+  "WarningJustDelete": {
+    "message": "This will delete the file attachments from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nThe file attachments will not be saved! \n\nDo you really want this?"
+  },
+  "WarningSaveThenDelete": {
+    "message": "File attachments will be saved and then deleted from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nDo you really want this?"
+  },
+
   "FileNamePatternFixTitle": {
     "message": "Suggested Fix"
   },

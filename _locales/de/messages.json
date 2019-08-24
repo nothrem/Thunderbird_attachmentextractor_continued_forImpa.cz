@@ -646,20 +646,20 @@
   "FileNamePatternDialogAskAlways": {
     "message": "Dialog für Dateinamenmuster jedes Mal anzeigen"
   },
-  "ConfirmDetachDialogTitle": {
+  "ConfirmDetachDialogTitle2": {
     "message": "Abtrennen bestätigen"
   },
-  "ConfirmDetachDialogMessage": {
+  "ConfirmDetachDialogMessage2": {
     "message": "Sie möchten Anhänge mit Hilfe des AttachmentExtractors löschen oder abtrennen. Es wird anschließend keine weitere Bestätigungsmeldung ausgegeben, und jeder Anhang wird aus den ausgewählten Nachrichten gelöscht. Der Löschvorgang kann nicht rückgängig gemacht werden. Vorgang dennoch ausführen?"
   },
-  "ConfirmDetachSettingDialogTitle": {
+  "ConfirmDetachSettingDialogTitle2": {
     "message": "Achtung!"
   },
-  "ConfirmDetachSettingDialogMessage": {
-    "message": "Bitte bedenken Sie, dass diese Methode möglicherweise nicht in allen Fällen ordnungsgemäß funktioniert. \nEventuell können die Anhänge oder die Nachrichten-Inhalte oder beides verloren gehen. Dies kann meist nicht rückgängig gemacht werden, so dass wir bei wichtigen Nachrichten von der Verwendung abraten. Erstellen Sie zuvor Backups! \n\nDie Verwendung erfolgt auf eigene Gefahr."
+  "ConfirmDetachSettingDialogMessage2": {
+    "message": "Bitte bedenken Sie, dass diese Methode möglicherweise nicht in allen Fällen ordnungsgemäß funktioniert. \n\nEventuell können die Anhänge oder die Nachrichten-Inhalte oder beides verloren gehen. Dies kann meist nicht rückgängig gemacht werden, so dass wir bei wichtigen Nachrichten von der Verwendung abraten. Erstellen Sie zuvor Backups! \n\nDie Verwendung erfolgt auf eigene Gefahr."
   },
-  "ConfirmAutoDetachSettingDialogMessage": {
-    "message": "Das Abtrennen bzw. Löschen von Anhängen entfernt die Anhänge aller eingehenden Nachrichten, die den von Ihnen angegebenen Kriterien entsprechen (möglicherweise bei allen Nachrichten), eventuell auch ohne dass eine Bestätigungsmeldung erscheint. \nEventuell können die Anhänge oder die Nachrichten-Inhalte oder beides verloren gehen. \nAktivieren Sie diese Funktion nicht, wenn Sie das Risiko, Anhänge oder Ihre eingehenden Nachrichten zu verlieren, nicht eingehen möchten. \n\nDie Verwendung erfolgt auf eigene Gefahr."
+  "ConfirmAutoDetachSettingDialogMessage2": {
+    "message": "Das Abtrennen bzw. Löschen von Anhängen entfernt die Anhänge aller eingehenden Nachrichten, die den von Ihnen angegebenen Kriterien entsprechen (möglicherweise bei allen Nachrichten), je nach Einstellung auch ohne weitere Rückfrage. \n\nEventuell können die Anhänge oder die Nachrichten-Inhalte oder beides verloren gehen. \n\nAktivieren Sie diese Funktion nicht, wenn Sie das Risiko, Anhänge oder Ihre eingehenden Nachrichten zu verlieren, nicht eingehen möchten. \n\nDie Verwendung erfolgt auf eigene Gefahr."
   },
   "CSSFileFilterDescription": {
     "message": "CSS Stylesheets"
@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Hoppla!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "Bei der Ausführung von AttachmentExtractor ist ein Fehler aufgetreten. Wenn dies regelmäßig passiert, erstellen Sie bitte ein Fehlerticket auf GitLab (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) und teilen Sie dem Autor alle Fehlermeldungen und Details mit, die in der Fehler-Konsole von Thunderbird angezeigt werden."
   },
   "StatusTextStarting": {
@@ -703,9 +703,25 @@
   "FolderPickerDialogTitleDefaultAutoextractPath": {
     "message": "Speicherpfad für Abtrennautomatik nicht festgelegt - Ordner auswählen, der ab jetzt genutzt werden soll…"
   },
-  "EmptyLineText": {
-    "message": "-- leer --"
+  "SeparatedByComma": {
+    "message": "(Komma getrennt)"
   },
+  "SeparatedBySemicolon": {
+    "message": "(Semikolon getrennt)"
+  },
+  "WarningTitle": {
+    "message": "Warnung"
+  },
+  "WarningDoNotShowAgain": {
+    "message": "Diese Warnung nicht mehr anzeigen."
+  },
+  "WarningJustDelete": {
+    "message": "Dies wird die Dateianhänge der gewählten Nachrichten ohne weitere Rückfrage von den Nachrichten löschen. Dies lässt sich nicht rückgängig machen! \n\nDie Dateianhänge werden nicht gespeichert! \n\nMöchten Sie dies wirklich?"
+  },
+  "WarningSaveThenDelete": {
+    "message": "Die Dateianhänge der gewählten Nachrichten werden gespeichert und anschließend ohne weitere Rückfrage von den Nachrichten gelöscht. Dies lässt sich nicht rückgängig machen! \n\nMöchten Sie dies wirklich?"
+  },
+
   "FileNamePatternFixTitle": {
     "message": "Korrekturvorschlag"
   },

@@ -140,3 +140,5 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Erfordert Neustart von TB.)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Dateien gleicher Größe überspringen?">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Komma getrennt)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semikolon getrennt)">

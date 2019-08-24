@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "아이고!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "무언가 AttachmentExtractor에 문제를 일으켰습니다. 만약 일정하게 발생하는 경우 제 웹사이트(https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues)를 내 bugtracker에 버그를 Thunderbird의 오류 콘솔에 보여진 오류 상세와 함께 남겨주세요."
   },
   "StatusTextStarting": {

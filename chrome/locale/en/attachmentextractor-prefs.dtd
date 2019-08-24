@@ -140,3 +140,5 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Requires a TB Restart to take effect.)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Skip identically sized files">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">

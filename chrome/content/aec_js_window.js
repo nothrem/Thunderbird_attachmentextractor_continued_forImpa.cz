@@ -150,7 +150,7 @@ aewindow.errorCatcher = function(message, url, number) {
       .getWindowByType("mail:3pane") : window;
     aewindow.promptService.alert(pwindow,
       aewindow.aeStringBundle.GetStringFromName("GenericErrorDialog"),
-      aewindow.aeStringBundle.GetStringFromName("GenericErrorMessage2") +
+      aewindow.aeStringBundle.GetStringFromName("GenericErrorMessage3") +
       "\n\n" + message);
   } catch (e) {
     aewindow.aedump("// Catch 22: Error in the error catcher! : " + e + "\n",
@@ -262,9 +262,9 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     }
     if (this.confirmDetach && !aewindow.promptService.confirm(
         aewindow.progress_tracker.getWindowByType("mail:3pane"),
-        aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle"),
+        aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle2"),
         aewindow.aeStringBundle.GetStringFromName(
-          "ConfirmDetachDialogMessage"))) {
+          "ConfirmDetachDialogMessage2"))) {
       aewindow.aedump("// ae aborted detach confirmation cancelled.\n", 1);
       return false;
     }
@@ -477,12 +477,16 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     // information to get the size and decide if to small
     // the check itself is outside the normal execution flow and its result
     // cannot be used in the follow up commands - we need to go async first 
-    let mimimumSizeKiB = prefs.get("extract.minimumsize");
-    if (mimimumSizeKiB && (mimimumSizeKiB > 0)) {
+    let minimumSizeKiB = prefs.get("extract.minimumsize");
+    if (minimumSizeKiB && (minimumSizeKiB > 0)) {
       getAttSize(url, isExternalAttachment).then(function(size) { 
         var sizeKiB = (size/1024);
-        aedump(displayName + " " + "minimumsize: " + mimimumSizeKiB + " KiB\n");      
+        aedump(displayName + " " + "minimumsize: " + minimumSizeKiB + " KiB\n");
         aedump(displayName + " " + "handleAttachment: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
+        if (minimumSizeKiB > sizeKiB) {
+          aedump(displayName + " sizeToSmall\n");
+          return;
+        }
       });
     }
 
@@ -693,8 +697,8 @@ aewindow.createAEIndTask = function(savefolder, message, attachments,
   .statusFeedback;
   if (aewindow.currentTask.confirmDetach && !aewindow.promptService.confirm(
       null,
-      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle"),
-      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogMessage")
+      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle2"),
+      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogMessage2")
       )) {
     aewindow.aedump("// ae aborted detach confirmation cancelled.\n", 1);
     return;

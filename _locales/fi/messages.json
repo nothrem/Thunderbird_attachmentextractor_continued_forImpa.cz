@@ -673,7 +673,7 @@
   "GenericErrorDialog": {
     "message": "Hups!"
   },
-  "GenericErrorMessage2": {
+  "GenericErrorMessage3": {
     "message": "AttachmentExtractorissa tapahtui virhe. Jos tämä virhe tapahtuu usein, tee ilmoitus virheestä WWW-sivujeni bugtracker-toiminnon kautta (https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues) ja lähetä virheen yksityiskohtainen kuvaus Thunderbirdin virhekonsolista (Error Console)."
   },
   "StatusTextStarting": {
