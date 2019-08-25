@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Možnosti rozšírenia AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.homepage.label "Domovská stránka AttachmentExtractor a popis funkcií:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Všeobecné">
-<!ENTITY attachmentextractor.settings.normal.caption "Vyňatie príloh">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Kde majú byť prílohy uložené?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "Čo robiť v prípade, že existuje súbor s rovnakým názvom ako ukladaná príloha?">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Vždy nahradiť pôvodný súbor">
@@ -12,15 +11,12 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "U">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Opýtať sa">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "O">
-<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
-<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
-<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
-<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
-<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Pridať…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Vyčistiť">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Odporúčané priečinky">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Priečinok môže byť navrhnutý na oddelenie na základe kľúčových slov v predmete správy, ktorú ste vybrali.">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Priečinky obsahujúce potenciálne podpriečinky pre oddelenie do:">
-<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "pridať…">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Pridať…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Vyčistiť">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Ignorovať duplicitné kľúčové slová pri klasifikácii odporúčaných priečinkov?">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "I">
@@ -41,8 +37,6 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "K">
 <!ENTITY attachmentextractor.settings.after-detach.label "Vyčleniť prílohy zo správ?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Zobrazovať oznámenie o dokončení ukladania.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "D">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložiť textovú správu do súboru. (pozn.: rovnaký vzor pre normálne a auto-uloženie)">
@@ -71,8 +65,6 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Pokročilé">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Viac">
 <!ENTITY attachmentextractor.settings.extract.caption "Uloženie príloh">
-<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
-<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Vypnúť ukladanie príloh">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "V">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimálna veľkosť kontroly">
@@ -101,8 +93,6 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "U">
 <!ENTITY attachmentextractor.settings.filenametab.label "Názvy súborov">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Vzor vytvárania názvu súboru:">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Kliknúť na Pridať znak">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Vzor použitý na generovanie názvu súborov:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Vzor použitý pre duplicitný názov súboru (#count#):">

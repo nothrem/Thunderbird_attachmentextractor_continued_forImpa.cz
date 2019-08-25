@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "Indstillinger for AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.homepage.label "Website for AttachmentExtractor">
 <!ENTITY attachmentextractor.settings.generaltab.label "Generelt">
-<!ENTITY attachmentextractor.settings.normal.caption "Gemning af vedhæftede filer">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Hvor skal de vedhæftede filer gemmes?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "Hvad skal der ske hvis filnavnet allerede eksisterer?">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Overskriv altid den eksisterende fil med den vedhæftede">
@@ -12,11 +11,8 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "G">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Spørg mig hver gang">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "S">
-<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
-<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
-<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
-<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
-<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Tilføje…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Ryd">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Foreslåede foldere">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "En folder at gemme til kan blive foreslået baseret på nøgleord i emne linien på de beskeder du vælger.">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Folder der kan indeholde underfoldere skal gemme til:">
@@ -41,8 +37,6 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "L">
 <!ENTITY attachmentextractor.settings.after-detach.label "Den vedhæftede fil fjernes fra beskeden">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Underret mig når alle de vedhæftede filer er blevet gemt.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "U">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Gem beskedens tekst. (Samme mønster bruges til normal kørsel og automatisk processering)">
@@ -71,8 +65,6 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avanceret">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Mere">
 <!ENTITY attachmentextractor.settings.extract.caption "Gemning af filer">
-<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
-<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Deaktiver gemning af vedhæftede filer">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Check af filstørrelse">
@@ -101,8 +93,6 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "G">
 <!ENTITY attachmentextractor.settings.filenametab.label "Filnavne">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Generering af filnavn">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Tilføj et element">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Mønster til at generere filnavne:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Mønster for tæller ved eksisterende filnavn (#count#):">

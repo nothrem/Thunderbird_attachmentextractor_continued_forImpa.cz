@@ -1,21 +1,17 @@
 <!ENTITY attachmentextractor.extensionName "AttachmentExtractor Continued">
 <!ENTITY attachmentextractor.extensionDescription "Extracts all attachments from selected messages and then can delete, detach and more">
-
 <!ENTITY attachmentextractor.toolbarbutton.label "AE Extract">
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Extract Attachments from Selected Messages">
 <!ENTITY attachmentextractor.headerbutton.label "AE Extract">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Extract Attachments from this Message">
-
 <!ENTITY attachmentextractor.browse.label "Browse…">
 <!ENTITY attachmentextractor.browse.accesskey "B">
-
 <!ENTITY attachmentextractor.extractSingleAttTo.label "AE Extract">
 <!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Extract all">
 <!ENTITY attachmentextractor.extractMessagesTo.label "AE Extract from Messages">
 <!ENTITY attachmentextractor.extractFoldersTo.label "AE Extract from Messages in Folders">
 <!ENTITY attachmentextractor.extractTo.label "AE Extract Attachments">
 <!ENTITY attachmentextractor.extractTo.accesskey "x">
-
 <!ENTITY attachmentextractor.extractToBrowse.label "Browse…">
 <!ENTITY attachmentextractor.extractToBrowse.accesskey "B">
 <!ENTITY attachmentextractor.extractWithSubToBrowse.label "Browse… (inc. Subfolders)">
@@ -38,12 +34,10 @@
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "u">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "With a Custom Filename Pattern">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "W">
-
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Just Delete Attachments from Selected Messages">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "J">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Just Delete Attachments from All Messages in Folder">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "U">
-
 <!ENTITY attachmentextractor.filenamepatterndialog.title "AttachmentExtractor - Filename Pattern">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Modify the attachment filename pattern:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Set the pattern as default from now on">
@@ -51,7 +45,6 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Ask always for filename pattern">
 <!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Click To Add A Token">
-
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Suggested Folders:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Suggested Folders based on subject lines of selected message(s):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Use Selected Folder">

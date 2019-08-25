@@ -1,12 +1,11 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor Settings">
 <!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor homepage and description of features:">
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
-<!ENTITY attachmentextractor.settings.normal.caption "-- NOT USED --">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Where should the attachments be saved?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "What should happen when we find a file already exists with the same name as the attachment?">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Always replace existing file with the new attachment">
 <!ENTITY attachmentextractor.settings.overwrite-replace.accesskey "R">
-<!ENTITY attachmentextractor.settings.overwrite-ignore.label "Always keep existing file, don&apos;t extract the attachment">
+<!ENTITY attachmentextractor.settings.overwrite-ignore.label "Always keep existing file, don't extract the attachment">
 <!ENTITY attachmentextractor.settings.overwrite-ignore.accesskey "K">
 <!ENTITY attachmentextractor.settings.overwrite-rename.label "Make a new name for the attachment, so we can keep both">
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
@@ -53,9 +52,9 @@
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.label "Send Return Receipts if one is requested">
 <!ENTITY attachmentextractor.settings.returnreceipts.enabled.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.caption "Return Receipt requests:">
-<!ENTITY attachmentextractor.settings.returnreceipts.override.disabled.label "Follow Thunderbird&apos;s Return Receipt preferences">
+<!ENTITY attachmentextractor.settings.returnreceipts.override.disabled.label "Follow Thunderbird's Return Receipt preferences">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.disabled.accesskey "T">
-<!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.label "Override &apos;ask me&apos; setting and send Return Receipts with prompting">
+<!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.label "Override 'ask me' setting and send Return Receipts with prompting">
 <!ENTITY attachmentextractor.settings.returnreceipts.override.enabled.accesskey "O">
 <!ENTITY attachmentextractor.settings.reporttab.label "ReportGen">
 <!ENTITY attachmentextractor.settings.reportgen.caption "HTML Report Generator">
@@ -85,10 +84,10 @@
 <!ENTITY attachmentextractor.settings.queuerequests.enabled.accesskey "A">
 <!ENTITY attachmentextractor.settings.setdatetoemail.label "Set file modification date/time of attachment to message recieved date/time.">
 <!ENTITY attachmentextractor.settings.setdatetoemail.accesskey "S">
-<!ENTITY attachmentextractor.settings.inlinepolicy.label "Also extract embedded (&apos;inline&apos;) images too">
+<!ENTITY attachmentextractor.settings.inlinepolicy.label "Also extract embedded ('inline') images too">
 <!ENTITY attachmentextractor.settings.inlinepolicy.accesskey "I">
 <!ENTITY attachmentextractor.settings.debug.caption "Debugging">
-<!ENTITY attachmentextractor.settings.debug.label "Enable Debug Mode on restart.  Messages are logged to the Console and written to &apos;aec_debug.txt&apos; in your profile folder.">
+<!ENTITY attachmentextractor.settings.debug.label "Enable Debug Mode on restart.  Messages are logged to the Console and written to 'aec_debug.txt' in your profile folder.">
 <!ENTITY attachmentextractor.settings.debug.accesskey "D">
 <!ENTITY attachmentextractor.settings.showprogressdialog.label "Show a progress dialog during extraction.">
 <!ENTITY attachmentextractor.settings.showprogressdialog.accesskey "H">
@@ -110,7 +109,7 @@
 <!ENTITY attachmentextractor.settings.filenamepatterncleansubjectq.accesskey "U">
 <!ENTITY attachmentextractor.settings.filenamepattern.explanation.caption "Based on an email being received with the following properties:">
 <!ENTITY attachmentextractor.settings.filenamepattern.explanation.withsubject "An email subject (#subject#) of:">
-<!ENTITY attachmentextractor.settings.filenamepattern.explanation.withcleansubject "Subject after removal of &apos;re:&apos;,etc :">
+<!ENTITY attachmentextractor.settings.filenamepattern.explanation.withcleansubject "Subject after removal of 're:', etc:">
 <!ENTITY attachmentextractor.settings.filenamepattern.explanation.recieveddate "Received on (#date#):">
 <!ENTITY attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted "Date/Time after pattern applied:">
 <!ENTITY attachmentextractor.settings.filenamepattern.explanation.fromauthor2 "From the author (#from# &lt;#fromemail#&gt;):">

@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor instellingen">
 <!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor homepage en beschrijving van mogelijkheden:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Algemeen">
-<!ENTITY attachmentextractor.settings.normal.caption "Bijlage uitpakken">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Waar dienen de bijlagen te worden opgeslagen?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "Wat moet er gebeuren als een bestand wordt aangetroffen dat dezelfde naam heeft als de bijlage?">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Bestaand bestand altijd overschrijven door nieuwe bijlage">
@@ -12,11 +11,8 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "N">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Elke keer vragen">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "V">
-<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
-<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
-<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
-<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
-<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Toevoegen…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Wissen">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Gesuggereerde mappen">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Een map waarnaar kan worden uitgepakt kan worden gesuggereerd op basis van de onderwerpregels in de door u geselecteerde berichten.">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Mappen met mogelijke submappen om naar uit te pakken:">
@@ -38,11 +34,9 @@
 <!ENTITY attachmentextractor.settings.after-delete.label "Het bericht worden verwijderd?">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "d">
 <!ENTITY attachmentextractor.settings.after-read.label "Het bericht als gelezen worden gemarkeerd?">
-<!ENTITY attachmentextractor.settings.after-read.accesskey "Z">
+<!ENTITY attachmentextractor.settings.after-read.accesskey "z">
 <!ENTITY attachmentextractor.settings.after-detach.label "De bijlage uit het bericht worden verwijderd?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "W">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Bericht geven wanneer alle bijlagen zijn uitgepakt">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Berichttekst in bestand opslaan (opmerking: identiek patroon voor normaal en automatisch uitpakken).">
@@ -71,8 +65,6 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Geavanceerd">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Meer">
 <!ENTITY attachmentextractor.settings.extract.caption "Bestand opslaan">
-<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
-<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Opslaan van bijlagen uitschakelen">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Controle minimumgrootte">
@@ -101,8 +93,6 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "W">
 <!ENTITY attachmentextractor.settings.filenametab.label "Bestandsnamen">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Bestandsnaampatroon generatie:">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik om een token toe te voegen">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Gebruikt patroon voor het aanmaken van bestandsnamen:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Patroon gebruikt voor dubbele bestandsnamen (#count#):">

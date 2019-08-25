@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Einstellungen">
 <!ENTITY attachmentextractor.settings.homepage.label "Homepage von AttachmentExtractor und Beschreibung der Funktionen:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Allgemein">
-<!ENTITY attachmentextractor.settings.normal.caption "Abtrennen von Anhängen">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Speicherort für Anhänge">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "Vorgabe für den Fall, dass bereits eine Datei gleichen Namens besteht:">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Die bestehende Datei immer mit dem neuen Anhang überschreiben">

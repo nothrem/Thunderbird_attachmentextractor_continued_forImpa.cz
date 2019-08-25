@@ -1,7 +1,6 @@
 <!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor - Opciones">
 <!ENTITY attachmentextractor.settings.homepage.label "Página web de AttachmentExtractor y descripción de las características:">
 <!ENTITY attachmentextractor.settings.generaltab.label "General">
-<!ENTITY attachmentextractor.settings.normal.caption "Extraer adjuntos">
 <!ENTITY attachmentextractor.settings.savefolders.caption "¿Dónde deben guardarse los adjuntos?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "¿Que hacer si ya existe un archivo con el mismo nombre?">
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Reemplazar siempre el archivo existente">
@@ -12,11 +11,8 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "G">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Preguntar cada vez">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "P">
-<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
-<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
-<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
-<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Add…">
-<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Delete">
+<!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Añadir…">
+<!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Limpiar">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Carpetas sugeridas">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Puede sugerirse una carpeta para extraer en base a las palabras clave de los asuntos del mensaje seleccionado.">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Carpetas conteniendo subcarpetas potenciales a extraer en:">
@@ -41,8 +37,6 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "A">
 <!ENTITY attachmentextractor.settings.after-detach.label "Borrar los adjuntos del mensaje">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
-<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notificarme cuando todos los adjuntos se hayan extraído.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "N">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Guardar el texto del mensaje a un archivo. (nota: mismo patrón para la extracción normal y automática)">
@@ -71,8 +65,6 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avanzadas">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Más">
 <!ENTITY attachmentextractor.settings.extract.caption "Guardar adjuntos">
-<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
-<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Deshabilitar la opción para guardar los adjuntos.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Comprobación del tamaño mínimo">
@@ -101,8 +93,6 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "s">
 <!ENTITY attachmentextractor.settings.filenametab.label "Archivos">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Patrón de generación de nombres de archivos">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
-<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Pulse para añadir un elemento">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Patrón usado para generar los nombres de archivos:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Patrón usado cuando haya un nombre de archivo duplicado (#count#):">

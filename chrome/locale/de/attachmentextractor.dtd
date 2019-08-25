@@ -1,21 +1,17 @@
 <!ENTITY attachmentextractor.extensionName "AttachmentExtractor Continued">
 <!ENTITY attachmentextractor.extensionDescription "Trennt Dateianhänge aus gewählten Nachrichten teilautomatisiert ab und kann diese speichern, löschen und mehr">
-
 <!ENTITY attachmentextractor.toolbarbutton.label "Anhänge abtrennen">
 <!ENTITY attachmentextractor.toolbarbutton.tooltip2 "Anhänge von ausgewählten Nachrichten abtrennen">
 <!ENTITY attachmentextractor.headerbutton.label "Anhänge abtrennen">
 <!ENTITY attachmentextractor.headerbutton.tooltip "Anhänge von dieser Nachricht abtrennen">
-
 <!ENTITY attachmentextractor.browse.label "Durchsuchen…">
 <!ENTITY attachmentextractor.browse.accesskey "D">
-
 <!ENTITY attachmentextractor.extractSingleAttTo.label "AE Abtrennen">
 <!ENTITY attachmentextractor.extractMultipleAttTo.label "AE Alle abtrennen">
 <!ENTITY attachmentextractor.extractMessagesTo.label "AE Abtrennen aus gewählten Nachrichten">
 <!ENTITY attachmentextractor.extractFoldersTo.label "AE Abtrennen aus gewählten Ordnern">
 <!ENTITY attachmentextractor.extractTo.label "AE Anhänge abtrennen">
 <!ENTITY attachmentextractor.extractTo.accesskey "r">
-
 <!ENTITY attachmentextractor.extractToBrowse.label "Durchsuchen…">
 <!ENTITY attachmentextractor.extractToBrowse.accesskey "D">
 <!ENTITY attachmentextractor.extractWithSubToBrowse.label "Durchsuchen… (inkl. Unterordner)">
@@ -38,12 +34,10 @@
 <!ENTITY attachmentextractor.extractWithSubToSuggestfolders.accesskey "o">
 <!ENTITY attachmentextractor.extractWithCustomPattern.label "Mit eigenem Dateinamenmuster">
 <!ENTITY attachmentextractor.extractWithCustomPattern.accesskey "M">
-
 <!ENTITY attachmentextractor.justDeleteAttachments.label "Anhänge ausgewählter Nachrichten löschen">
 <!ENTITY attachmentextractor.justDeleteAttachments.accesskey "ö">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.label "Anhänge aller Nachrichten des Ordners löschen">
 <!ENTITY attachmentextractor.justDeleteAllAttachments.accesskey "ö">
-
 <!ENTITY attachmentextractor.filenamepatterndialog.title "AttachmentExtractor - Dateinamenmuster">
 <!ENTITY attachmentextractor.filenamepatterndialog.input.label "Dateinamenmuster der angehängten Datei bearbeiten:">
 <!ENTITY attachmentextractor.filenamepatterndialog.checkbox.label "Dieses Dateinamenmuster als Standard festlegen">
@@ -51,7 +45,7 @@
 <!ENTITY attachmentextractor.filenamepatterndialog.askalways.label "Dialog für Dateinamenmuster jedes Mal anzeigen">
 <!ENTITY attachmentextractor.filenamepatterndialog.askalways.accesskey "D">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Weiteres Dateinamenmerkmal hinzufügen">
-
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Ordnervorschläge:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Ausgewählten Ordner verwenden">
+<!ENTITY attachmentextractor.context.extracttofolder.accesskey "N">
