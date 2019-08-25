@@ -483,21 +483,21 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
     // cannot be used in the follow up commands - we need to go async first 
     let minimumSizeKiB = prefs.get("extract.minimumsize");
     if (minimumSizeKiB && (minimumSizeKiB > 0)) {
+      aedump(displayName + " " + "minimumsize: " + minimumSizeKiB + " KiB\n");
       getAttSize(url, isExternalAttachment).then(function(size) { 
         var sizeKiB = (size/1024);
-        aedump(displayName + " " + "minimumsize: " + minimumSizeKiB + " KiB\n");
         aedump(displayName + " " + "handleAttachment: getAttSize - sizeKiB: " + sizeKiB + " KiB\n");
-        if (minimumSizeKiB > sizeKiB) {
-          aedump(displayName + " sizeToSmall\n");
-          return;
-        }
       });
+      aedump(displayName + " ... es geht schon weiter ... \n");
     }
 
-      /*if (isExternalAttachment) {
-    	aewindow.aedump(displayName+" is external attachment so ignore\n",1);
-    	return;
-    }*/
+    /*
+    if (isExternalAttachment) {
+      aewindow.aedump(displayName+" is external attachment so ignore\n",1);
+      return;
+    }
+    */
+
     if (contentType === "text/x-moz-deleted") {
       aewindow.aedump(displayName + " failed contentType check\n", 1);
       return;
@@ -767,7 +767,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
       if (!a.displayName) a.displayName = a
       .name; // Thunderbird 7+ doesn't use displayName.
       /*if (!a.isExternalAttachment)*/
-      aedump("{function:AETask.start} that.handleAttachment: " + a.displayName + "\n");
+      aedump("{function:AEIndTask.start} call that.handleAttachment: " + a.displayName + "\n");
       that.handleAttachment(a.contentType, a.url, a.displayName, a.uri, a
         .isExternalAttachment);
     }
@@ -800,7 +800,7 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
 
   this.handleAttachment = function(contentType, url, displayName, uri,
     isExternalAttachment) {
-    aewindow.aedump('{function:AETask.handleAttachment}\n', 2);
+    aewindow.aedump('{function:AEIndTask.handleAttachment}\n', 2);
     if (aewindow.progress_tracker.attachment_busy) return;
     if (!include_exclude_check2(displayName)) {
       aewindow.aedump(displayName +
