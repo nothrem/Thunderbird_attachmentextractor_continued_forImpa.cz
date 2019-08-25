@@ -16,7 +16,13 @@ var aewindow = {
   /* task variables */
   _tasks: new Array(),
   get currentTask() {
-    /*aedump("[l:"+this._tasks.length+","+arguments.callee.caller.name+"]");*/
+    // following dump (if not commented out) leads to following error message:
+    // 
+    // "TypeError: 'caller', 'callee', and 'arguments' properties may not be 
+    //  accessed on strict mode functions or the arguments objects for calls 
+    //  to them"
+    // 
+    // aedump("[l:"+this._tasks.length+","+arguments.callee.caller.name+"]");
     return this._tasks.length === 0 ? null : this._tasks[0];
   },
   get remainingTasks() {
@@ -47,7 +53,6 @@ var aewindow = {
 
   /* useful get functions */
   get tb3() {
-    aedump("----------tb3-----\n");
     return this.messenger.saveAttachmentToFile !== null;
   },
   get taskWaiting() {
@@ -165,7 +170,6 @@ aewindow.consumeAETask = function() {
   aewindow.aedump('current task: ' + aewindow.currentTask + "\n", 2);
   if (!aewindow.currentTask) {
     aewindow.aedump("// AEDialog close.\n", 2);
-    console.log("AEC: window.close - if this is working/called again, then remove the window.close command in line 440");
     window.close();
     //aewindow.aedump("// timespent: "+(((new Date).getTime())-aewindow.startTime)+" \n");
     return null;
