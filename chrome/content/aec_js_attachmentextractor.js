@@ -667,9 +667,9 @@ if (typeof AttachmentExtractor === "undefined") {
     var oncommand = "attachmentextractor.do";
     if (parent.getAttribute("paramIndividual") === "true") oncommand +=
       "IndividualAttachmentextraction('favorite', " + parent.getAttribute(
-      "paramAll") + ", '#');"
+      "paramAll") + ", '#'); event.stopPropagation();"
     else oncommand += "Attachmentextraction(event,'favorite', " + parent.getAttribute(
-      "paramAll") + ", '#');"
+      "paramAll") + ", '#'); event.stopPropagation();"
     
     /***********************
     // not more working in Thunderbird 69+ 
@@ -894,9 +894,9 @@ if (typeof AttachmentExtractor === "undefined") {
     var oncommand = "attachmentextractor.do";
     if (parent.getAttribute("paramIndividual") === "true") oncommand +=
       "IndividualAttachmentextraction('mru', " + parent.getAttribute(
-      "paramAll") + ", '#');"
+      "paramAll") + ", '#'); event.stopPropagation();"
     else oncommand += "Attachmentextraction(event,'mru', " + parent.getAttribute(
-      "paramAll") + ", '#');"
+      "paramAll") + ", '#'); event.stopPropagation();"
 
     var count = ps.getIntPref("savepathmru.count");
     for (let i = 1; i <= count; i++) {
