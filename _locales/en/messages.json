@@ -716,7 +716,7 @@
     "message": "Do not show this warning again."
   },
   "WarningJustDelete": {
-    "message": "This will delete the file attachments from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nThe file attachments will not be saved! \n\nDo you really want this?"
+    "message": "This will delete the file attachments from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nThe file attachments will NOT be saved! \n\nDo you really want this?"
   },
   "WarningSaveThenDelete": {
     "message": "File attachments will be saved and then deleted from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nDo you really want this?"

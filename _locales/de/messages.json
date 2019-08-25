@@ -632,7 +632,7 @@
     "message": "[%1$s] von [%2$s]"
   },
   "ProgressDialogProgressTextFile": {
-    "message": "%1$s KiB von  %2$s KiB"
+    "message": "%1$s KiB von %2$s KiB"
   },
   "FileNamePatternDialogTitle": {
     "message": "Eingabe des Dateinamenmusters"
@@ -716,7 +716,7 @@
     "message": "Diese Warnung nicht mehr anzeigen."
   },
   "WarningJustDelete": {
-    "message": "Dies wird die Dateianhänge der gewählten Nachrichten ohne weitere Rückfrage von den Nachrichten löschen. Dies lässt sich nicht rückgängig machen! \n\nDie Dateianhänge werden nicht gespeichert! \n\nMöchten Sie dies wirklich?"
+    "message": "Dies wird die Dateianhänge der gewählten Nachrichten ohne weitere Rückfrage von den Nachrichten löschen. Dies lässt sich nicht rückgängig machen! \n\nDie Dateianhänge werden NICHT gespeichert! \n\nMöchten Sie dies wirklich?"
   },
   "WarningSaveThenDelete": {
     "message": "Die Dateianhänge der gewählten Nachrichten werden gespeichert und anschließend ohne weitere Rückfrage von den Nachrichten gelöscht. Dies lässt sich nicht rückgängig machen! \n\nMöchten Sie dies wirklich?"
