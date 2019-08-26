@@ -91,8 +91,8 @@ if (typeof AttachmentExtractor === "undefined") {
     aedump('{function:AttachmentExtractor.doAttachmentextraction}\n',2);
     aedump("event: " + event + "\n");
     aedump("savelocation: " + savelocation + "\n");
+    aedump("index (in case of mru or favorite): " + index + "\n");
     aedump("all: " + all + "\n");
-    aedump("index: " + index + "\n");
 
     var folder = null;
     savelocation = savelocation + "";
@@ -145,20 +145,11 @@ if (typeof AttachmentExtractor === "undefined") {
     
     aedump('{function:AttachmentExtractor.doIndividualAttachmentextraction}\n',2);
     aedump("savelocation: " + savelocation + "\n");
+    aedump("index (in case of mru or favorite): " + index + "\n");
     aedump("mode: " + mode + "\n");
-    aedump("index: " + index + "\n");
 
-    var fnp = false;
-    // Only show fnp dialog, if attachments would be saved
-    if (this.prefs.get("extract.enabled")) {
-      // If pref is true, show the fnp edit dialog before extracting
-      if (this.prefs.get("filenamepattern.askalwaysfnp")) {
-        fnp = this.getFilenamePattern();
-        aedump("fnp after extra fnp dialog: " + fnp + "\n");
-      }
-    }
+    var attachments = null;
 
-    var attachments;
     switch (mode) {
       case "selected":
         attachments = this.getSelectedAttachments();
@@ -205,6 +196,7 @@ if (typeof AttachmentExtractor === "undefined") {
       }
   
     //aedump("folder: "+folder);
+    //aedump("getSelectedMessages()[0]: " + this.getSelectedMessages()[0] + "\n");
     if (folder) aewindow.createAEIndTask(folder, this.getSelectedMessages()[
       0], attachments, fnp);
   };

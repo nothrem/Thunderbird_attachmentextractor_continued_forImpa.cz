@@ -211,11 +211,21 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   this.detachWithoutConfirmation = (justDeleteAttachments ? true : 
     prefs.get(isBackground ? "autoextract.detach.withoutconfirm" : 
       "actionafterextract.detach.withoutconfirm"));
+
   // A Warning to confirm Messages and/or Attachments could be lost entirely
-  this.confirmDetach = (!isBackground && 
-    (justDeleteAttachments || (prefs.get(isBackground ? "autoextract.detach" : 
-    "actionafterextract.detach") && this.detachWithoutConfirmation)) && 
-    prefs.get("actionafterextract.detach.warning"));
+  // in case of direct Attachments delete
+  this.confirmWarningDirectDelete = (justDeleteAttachments || (
+    !this.isExtractEnabled && 
+    !isBackground && prefs.get("actionafterextract.detach.warning") && 
+    prefs.get("actionafterextract.detach") && this.detachWithoutConfirmation));
+
+  // A Warning to confirm Messages and/or Attachments could be lost entirely
+  // in case of save Attachments and then delete
+  this.confirmWarningSaveThenDelete = (!justDeleteAttachments && (
+    this.isExtractEnabled && 
+    !isBackground && prefs.get("actionafterextract.detach.warning") && 
+    prefs.get("actionafterextract.detach") && this.detachWithoutConfirmation));
+  
   // A pref, what should be done, when a filename is existing
   this.overwritePolicy = (prefs.get(isBackground ?
     "autoextract.overwritepolicy" : "overwritepolicy"));
@@ -264,15 +274,26 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
         0);
       return false;
     }
-    if (this.confirmDetach && !aewindow.promptService.confirm(
+    if (this.confirmWarningDirectDelete) {
+      if (!aewindow.promptService.confirm(
         aewindow.progress_tracker.getWindowByType("mail:3pane"),
-        aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle2"),
+        aewindow.aeStringBundle.GetStringFromName("WarningTitle"),
         aewindow.aeStringBundle.GetStringFromName(
-          "ConfirmDetachDialogMessage2"))) {
-      aewindow.aedump("// ae aborted detach confirmation cancelled.\n", 1);
-      return false;
+          "WarningJustDelete"))) {
+        aewindow.aedump("// ae aborted delete confirmation cancelled.\n", 1);
+        return false;
+      }
+    } else if (this.confirmWarningSaveThenDelete) {
+      if (!aewindow.promptService.confirm(
+        aewindow.progress_tracker.getWindowByType("mail:3pane"),
+        aewindow.aeStringBundle.GetStringFromName("WarningTitle"),
+        aewindow.aeStringBundle.GetStringFromName(
+          "WarningSaveThenDelete"))) {
+        aewindow.aedump("// ae aborted extract+delete confirmation cancelled.\n", 1);
+        return false;
+      }
     }
-    currentviewpref = prefs.get("mailnews.display.html_as", "");
+  currentviewpref = prefs.get("mailnews.display.html_as", "");
     downloadwindowpref = prefs.get(aewindow
       .DOWNLOADMANAGER_RETENTION_PREFNAME, "");
     downloadwindowdelay = prefs.get(aewindow
@@ -663,7 +684,8 @@ aewindow.AETask = function(savefolder, selectedMsgs, filenamepattern, aewindow,
   };
 
   function toString() {
-    return "savefolder: " + (savefolder ? savefolder.path : null) +
+    // return "savefolder: " + (savefolder ? savefolder.path : null) +
+    return "savefolder: " + savefolder +
       ", selectedMsgs: " + selectedMsgs +
       ", filenamepattern: " + filenamepattern +
       ", isBackground: " + isBackground +
@@ -699,14 +721,27 @@ aewindow.createAEIndTask = function(savefolder, message, attachments,
     filenamepattern, aewindow));
   aewindow.progress_tracker.statusFeedback = aewindow.msgWindow
   .statusFeedback;
-  if (aewindow.currentTask.confirmDetach && !aewindow.promptService.confirm(
+
+  if (aewindow.currentTask.confirmWarningDirectDelete) {
+    if (!aewindow.promptService.confirm(
       null,
-      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogTitle2"),
-      aewindow.aeStringBundle.GetStringFromName("ConfirmDetachDialogMessage2")
-      )) {
-    aewindow.aedump("// ae aborted detach confirmation cancelled.\n", 1);
-    return;
+      aewindow.aeStringBundle.GetStringFromName("WarningTitle"),
+      aewindow.aeStringBundle.GetStringFromName(
+        "WarningJustDelete"))) {
+      aewindow.aedump("// ae aborted delete confirmation cancelled.\n", 1);
+      return;
+    }
+  } else if (aewindow.currentTask.confirmWarningSaveThenDelete) {
+    if (!aewindow.promptService.confirm(
+      null,
+      aewindow.aeStringBundle.GetStringFromName("WarningTitle"),
+      aewindow.aeStringBundle.GetStringFromName(
+        "WarningSaveThenDelete"))) {
+      aewindow.aedump("// ae aborted extract+delete confirmation cancelled.\n", 1);
+      return;
+    }
   }
+
   aewindow.aedump(aewindow.currentTask + "\n", 2);
   aewindow.currentTask.start();
 };
@@ -733,10 +768,22 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   this.isExtractEnabled = prefs.get("extract.enabled");
   this.isDetachEnabled = prefs.get("actionafterextract.detach");
   this.overwritePolicy = prefs.get("overwritepolicy");
-  this.detachWithoutConfirm = prefs.get("actionafterextract.detach.withoutconfirm");
+  this.detachWithoutConfirmation = prefs.get("actionafterextract.detach.withoutconfirm");
 
   this.confirmDetach = (this.isDetachEnabled &&
     prefs.get("actionafterextract.detach.warning"));
+
+  // A Warning to confirm Messages and/or Attachments could be lost entirely
+  // in case of direct Attachments delete
+  this.confirmWarningDirectDelete = (!this.isExtractEnabled && 
+    prefs.get("actionafterextract.detach.warning") && 
+    prefs.get("actionafterextract.detach") && this.detachWithoutConfirmation);
+
+  // A Warning to confirm Messages and/or Attachments could be lost entirely
+  // in case of save Attachments and then delete
+  this.confirmWarningSaveThenDelete = (this.isExtractEnabled && 
+    prefs.get("actionafterextract.detach.warning") && 
+    prefs.get("actionafterextract.detach") && this.detachWithoutConfirmation);
 
   //private vars
   /* var membername=value */
@@ -858,7 +905,8 @@ aewindow.AEIndTask = function(savefolder, message, attachments, filenamepattern,
   };
 
   function toString() {
-    return "savefolder: " + (savefolder ? savefolder.path : null) +
+    // return "savefolder: " + (savefolder ? savefolder.path : null) +
+    return "savefolder: " + savefolder +
       ", message: " + message +
       ", attachments: " + attachments.map(function(c) {
         return c.url;
@@ -898,6 +946,8 @@ if (typeof AEMessage === "undefined") {
   };
 
   AEMessage.prototype.attachmentextraction = function() {
+    aewindow.aedump(
+      '{function:AEMessage.prototype.attachmentextraction}\n', 2);
     this.started = true;
     if (aewindow.currentTask.isExtractEnabled && this.attachments_ct.length >
       0) this.saveAtt(0);
