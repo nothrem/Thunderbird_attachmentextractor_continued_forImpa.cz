@@ -180,7 +180,7 @@ if (typeof AttachmentExtractor === "undefined") {
         folder = this.useMRU(index);
         break;
       case "suggest":
-        folder = this.getSuggestedSaveFolder(messages);
+        folder = this.getSuggestedSaveFolder(this.getSelectedMessages());
         if (folder) this.addToMRUList(folder);
         break;
       }
