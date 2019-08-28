@@ -1,5 +1,5 @@
-<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor instellingen">
-<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor homepage en beschrijving van mogelijkheden:">
+<!ENTITY attachmentextractor.settings.windowtitle "AttachmentExtractor-instellingen">
+<!ENTITY attachmentextractor.settings.homepage.label "AttachmentExtractor-startpagina en beschrijving van mogelijkheden:">
 <!ENTITY attachmentextractor.settings.generaltab.label "Algemeen">
 <!ENTITY attachmentextractor.settings.savefolders.caption "Waar dienen de bijlagen te worden opgeslagen?">
 <!ENTITY attachmentextractor.settings.overwritepolicy.label "Wat moet er gebeuren als een bestand wordt aangetroffen dat dezelfde naam heeft als de bijlage?">
@@ -11,6 +11,9 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "N">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Elke keer vragen">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "V">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favoriete mappen">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "Met de Favoriete mappen kunt u een snellere selectie instellen.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "De volgende mappen worden weergegeven als favorieten:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Toevoegen…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Wissen">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Gesuggereerde mappen">
@@ -18,9 +21,9 @@
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Mappen met mogelijke submappen om naar uit te pakken:">
 <!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Toevoegen…">
 <!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Wissen">
-<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Dubbele sleutelwoorden negeren bij ordenen gesuggereerde mappen?">
+<!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Dubbele trefwoorden negeren bij ordenen gesuggereerde mappen?">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "N">
-<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Uit te sluiten sleutelwoorden: (gescheiden door komma’s)">
+<!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Uit te sluiten trefwoorden: (gescheiden door komma’s)">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Meest recent gebruikte mappen">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Lijst met meest recent gebruikte mappen inschakelen.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Laatste">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "z">
 <!ENTITY attachmentextractor.settings.after-detach.label "De bijlage uit het bericht worden verwijderd?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "W">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Verwijderen zonder bevestiging">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "z">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Bericht geven wanneer alle bijlagen zijn uitgepakt">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "B">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Berichttekst in bestand opslaan (opmerking: identiek patroon voor normaal en automatisch uitpakken).">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Geavanceerd">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Meer">
 <!ENTITY attachmentextractor.settings.extract.caption "Bestand opslaan">
+<!ENTITY attachmentextractor.settings.doextract.label "De bijlagen uitpakken.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "j">
 <!ENTITY attachmentextractor.settings.noextract.label "Opslaan van bijlagen uitschakelen">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Controle minimumgrootte">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "W">
 <!ENTITY attachmentextractor.settings.filenametab.label "Bestandsnamen">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Bestandsnaampatroon generatie:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Altijd om een bestandsnaampatroon vragen">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klik om een token toe te voegen">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Gebruikt patroon voor het aanmaken van bestandsnamen:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Patroon gebruikt voor dubbele bestandsnamen (#count#):">
@@ -130,3 +139,5 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(TB dient herstart te worden om de wijzigingen door te voeren)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Bestanden van identieke omvang overslaan">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(kommagescheiden)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(puntkommagescheiden)">
