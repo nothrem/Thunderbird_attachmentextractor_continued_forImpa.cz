@@ -141,3 +141,5 @@
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
 <!ENTITY attachmentextractor.settings.SeparatedByComma "(kommagescheiden)">
 <!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(puntkommagescheiden)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Mappen">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">
