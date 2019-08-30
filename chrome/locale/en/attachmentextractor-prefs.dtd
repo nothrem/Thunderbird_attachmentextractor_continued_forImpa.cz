@@ -142,4 +142,4 @@
 <!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
 <!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
 <!ENTITY attachmentextractor.settings.folderstab.label "Folders">
-<!ENTITY attachmentextractor.settings.protocolltab.label "Protocolls">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">
