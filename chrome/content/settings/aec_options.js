@@ -365,7 +365,8 @@ if (typeof (wdw_aecOptions) === "undefined") {
       }
     },
 
-    updateexamplefilename: function(fnpbox) {
+    updateexamplefilename: function() {
+      let fnpbox = document.getElementById('filenamepatternbox');
       let pattern = fnpbox.value;
       let countpattern = document.getElementById('filenamepatterncount')
         .value;

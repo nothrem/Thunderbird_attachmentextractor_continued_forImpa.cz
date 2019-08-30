@@ -267,31 +267,31 @@
                       <menupopup >
                         <menuitem label="#namepart#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();"/>
                         <menuitem label="#extpart#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();"/>
                         <menuitem label="#count#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="%" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="#date#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="#subject#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="#from#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="#fromemail#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                         <menuitem label="#folder#" 
                           class="tokens" 
-                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename(filenamepatternbox);" />
+                          oncommand="wdw_aecOptions.add_to_pattern(this);wdw_aecOptions.updateexamplefilename();" />
                       </menupopup>
                     </button>
                   </hbox>

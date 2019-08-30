@@ -61,7 +61,7 @@
     <vbox align="left">
       <separator class="thin"/>
       <separator class="thin"/>
-      <textbox id="filenamepattern" preftype="char" style="width: 45em;" />
+      <textbox id="filenamepatternbox" preftype="char" style="width: 45em;" />
       <separator class="thin"/>
       <separator class="thin"/>
       <checkbox id="savecheck" 
