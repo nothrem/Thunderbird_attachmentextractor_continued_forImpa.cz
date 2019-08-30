@@ -75,7 +75,7 @@ if (typeof AttachmentExtractor === "undefined") {
       aedump(e);
     }
 
-    this.prefs.aeBranch.addObserver("savepathmru", this.prefObserver, false);
+    this.prefs.aeBranch.addObserver("savepathmru.enabled", this.prefObserver, false);
     this.prefs.aeBranch.addObserver("defaultsavepath", this.prefObserver, false);
     this.prefs.aeBranch.addObserver("autoextract.savepath", this.prefObserver, false);
   
@@ -777,7 +777,7 @@ if (typeof AttachmentExtractor === "undefined") {
     //aedump("mrufolder count = mruObj.length: " + mruCount + "\n", 2);
 
     var mruEnabled = Services.prefs.getBoolPref(
-      "extensions.attachextract_cont.savepathmru");
+      "extensions.attachextract_cont.savepathmru.enabled");
 
     var mruItems = [
       "menu_aec_extractToMRU_toolbar",
@@ -880,7 +880,7 @@ if (typeof AttachmentExtractor === "undefined") {
     }
 
     // if savepathmru is disabled do not build the new menuitems
-    if (!ps.getBoolPref("savepathmru")) return;
+    if (!ps.getBoolPref("savepathmru.enabled")) return;
 
     // if savepathmru is enabled we proceed here and build the new menuitems
     var oncommand = "attachmentextractor.do";
@@ -924,7 +924,7 @@ if (typeof AttachmentExtractor === "undefined") {
   AttachmentExtractor.prototype.addToMRUList = function(path) {
     aedump('{function:AttachmentExtractor.addToMRUList(' + path + ')}\n', 2);
     var ps = this.prefs.aeBranch;
-    if (!ps.getBoolPref("savepathmru") || !path) return path;
+    if (!ps.getBoolPref("savepathmru.enabled") || !path) return path;
     var count = ps.getIntPref("savepathmru.count");
     var old = (ps.prefHasUserValue("savepathmrufolder.1")) ? ps.getStringPref(
       "savepathmrufolder.1") : null;
@@ -1015,7 +1015,7 @@ if (typeof AttachmentExtractor === "undefined") {
     return {
       /*OnItemAdded: function(parentItem, item) {
         aedump("{function:aefolderlistener.OnItemAdded}\n",3);
-        if (!attachmentextractor.prefs.get("autoextract")) return;
+        if (!attachmentextractor.prefs.get("autoextract.enabled")) return;
                       
         var mail;
         try{
@@ -1100,7 +1100,7 @@ if (typeof AttachmentExtractor === "undefined") {
       msgAdded: function(mail) {
         //aedump("{function:aefolderlistener.msgAdded}\n",3);
         var prefs = attachmentextractor.prefs;
-        if (!prefs.get("autoextract")) return;
+        if (!prefs.get("autoextract.enabled")) return;
 
         if (!(!mail.isRead && (mail.flags & 0x10000))) {
           aedump("// not a new mail so don't extract\n", 4);
@@ -1160,8 +1160,8 @@ if (typeof AttachmentExtractor === "undefined") {
     observe: function(subject, topic, data) {
       //aedump("// "+topic+","+data+"\n");
       if (topic !== "nsPref:changed") return;
-      if (data === "savepathmru" || data === "savepathmru.count") {
-        if (attachmentextractor.prefs.get("savepathmru")) {
+      if (data === "savepathmru.enabled" || data === "savepathmru.count") {
+        if (attachmentextractor.prefs.get("savepathmru.enabled")) {
           attachmentextractor.clearMRU(attachmentextractor.MRUMAXCOUNT,
             attachmentextractor.prefs.get("savepathmru.count") + 1
             ); //clear any extra mru slots.

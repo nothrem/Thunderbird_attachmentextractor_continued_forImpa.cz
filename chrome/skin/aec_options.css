@@ -42,15 +42,18 @@
 radio[pane=aec-generalPane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/general.svg");
 }
+radio[pane=aec-foldersPane] > .radio-check {
+  list-style-image: url("chrome://attachmentextractor_cont/skin/folder.svg");
+}
 radio[pane=aec-filenamePane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/compose.svg");
-}
-radio[pane=aec-postPane] > .radio-check {
-  list-style-image: url("chrome://attachmentextractor_cont/skin/goforward.svg");
 }
 radio[pane=aec-autoPane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/filter.svg");
 }
 radio[pane=aec-advancedPane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/advanced.svg");
+}
+radio[pane=aec-protocollPane] > .radio-check {
+  list-style-image: url("chrome://attachmentextractor_cont/skin/file-item.svg");
 }

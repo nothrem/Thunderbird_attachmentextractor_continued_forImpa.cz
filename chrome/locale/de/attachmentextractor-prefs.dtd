@@ -141,3 +141,5 @@
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
 <!ENTITY attachmentextractor.settings.SeparatedByComma "(Komma getrennt)">
 <!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semikolon getrennt)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Ordner">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Protokolle">

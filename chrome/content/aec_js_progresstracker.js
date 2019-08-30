@@ -36,7 +36,7 @@ var progress_tracker = {
   /* access functions */
   starting_extraction: function() {
     this.debug("{function:progress_tracker.starting_extraction}\n");
-    if (aewindow.prefs.get("reportgen") && aewindow.currentTask
+    if (aewindow.prefs.get("reportgen.enabled") && aewindow.currentTask
       .isExtractEnabled) {
       try {
         this.reportgen = new AEC_Reportgen();

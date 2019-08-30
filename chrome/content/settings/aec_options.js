@@ -36,8 +36,14 @@ if (typeof (wdw_aecOptions) === "undefined") {
       // enableFields in general pane
       wdw_aecOptions.enableField(document.getElementById(
         'afterextractpolicydetach'), 'afterextractpolicydetachconfirm');
+      
       wdw_aecOptions.enableField(document.getElementById(
-        'savepathmru'), 'savepathmrucount');
+        'afterextractsavemessage'), ['fnpsavemessage',
+        'fnpsavemessagecountpattern']);
+
+      // enableFields in folders pane
+      wdw_aecOptions.enableField(document.getElementById(
+        'savepathmruenabled'), 'savepathmrucount');
 
       wdw_aecOptions.mSuggestFolderListBox = document.getElementById("suggestfolderlist");
       wdw_aecOptions.buildSuggestFolderList();
@@ -45,29 +51,26 @@ if (typeof (wdw_aecOptions) === "undefined") {
       wdw_aecOptions.mFavoriteFolderListBox = document.getElementById("favoritefolderlist");
       wdw_aecOptions.buildFavoriteFolderList();
       
-      // enableFields in filenamepattern pane
-      wdw_aecOptions.enableField(document.getElementById(
-        'afterextractsavemessage'), ['fnpsavemessage',
-        'fnpsavemessagecountpattern'
-      ]);
-
       // enableFields in auto pane
       // the different elements have to be en-/disabled in the following function
       wdw_aecOptions.enableAutoPaneFields();
 
       // enableFields in advanced pane
       wdw_aecOptions.enableField(document.getElementById('iep0false'),
-        'excludepatterns');
+        'excludepatternstextbox');
       wdw_aecOptions.enableField(document.getElementById('iep1true'),
-        'includepatterns');
+        'includepatternstextbox');
+
       wdw_aecOptions.enableField(document.getElementById(
-        'extractmode1'), ['setdatetoemail', 'minimumsize']);
+        'extractmode1'), ['setdatetoemailbox', 'minimumsize']);
       wdw_aecOptions.enableField(document.getElementById(
-        'sentreturnreceipt'), ['override']);
-      wdw_aecOptions.enableField(document.getElementById('reportgen'),
+        'returnreceiptsenabled'), ['override']);
+
+      // enableFields in protocoll pane
+      wdw_aecOptions.enableField(document.getElementById('reportgenenabled'),
         ['reportname', 'reportgenthumbnail', 'reportgencssfile',
-          'reportgencssfilebutton', 'reportgenembedcss'
-        ]);
+          'reportgencssfilebutton', 'reportgenembedcss']);
+
 
       document.getElementById('filenamepattern_exampledate').value =
         exampleDate.toLocaleString();
@@ -77,7 +80,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
     },
 
     enableAutoPaneFields: function() {
-      let autoextract = document.getElementById('autoextract');
+      let autoextract = document.getElementById('autoextractenabled');
       // enable or disable simply all elements in groupbox 'autoextractoptions'
       let autoextractoptions = document.getElementById(
       'autoextractoptions');
@@ -88,7 +91,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
           // we can only en-/disable node elements with an ID
           if (nodeList[i].id) {
             wdw_aecOptions.enableField(document.getElementById(
-              'autoextract'), nodeList[i].id);
+              'autoextractenabled'), nodeList[i].id);
           }
         }
       }
@@ -115,11 +118,17 @@ if (typeof (wdw_aecOptions) === "undefined") {
 
       if ((aCheckbox.localName === "radio" && aCheckbox.selected) ||
         (aCheckbox.localName === "checkbox" && aCheckbox.checked)) {
-        if (field.localName === "radiogroup") field.disabled = false;
-        field.removeAttribute("disabled");
+        if (field.localName === "radiogroup") {
+          field.disabled = false;
+        } else {
+          field.removeAttribute("disabled");
+        }
       } else {
-        if (field.localName === "radiogroup") field.disabled = true;
-        field.setAttribute("disabled", "true");
+        if (field.localName === "radiogroup") {
+          field.disabled = true;
+        } else {
+          field.setAttribute("disabled", "true");
+        }
       }
       if (fieldID instanceof Array) wdw_aecOptions.enableField(
         aCheckbox, fieldID);
@@ -411,7 +420,8 @@ if (typeof (wdw_aecOptions) === "undefined") {
         st2;
     },
 
-    add_to_pattern: function(button, fnpbox) {
+    add_to_pattern: function(button) {
+      let fnpbox = document.getElementById('filenamepatternbox');
       let postindex = fnpbox.selectionStart + button.label.length;
       fnpbox.value = fnpbox.value.substring(0, fnpbox.selectionStart) +
         button

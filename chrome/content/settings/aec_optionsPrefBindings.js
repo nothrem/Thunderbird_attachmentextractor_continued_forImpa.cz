@@ -11,7 +11,7 @@ Preferences.addAll([{
   type: "int"
 },
 {
-  id: "extensions.attachextract_cont.savepathmru",
+  id: "extensions.attachextract_cont.savepathmru.enabled",
   type: "bool"
 },
 {
@@ -76,7 +76,7 @@ Preferences.addAll([{
   type: "unichar"
 },
 {
-  id: "extensions.attachextract_cont.returnreceipts",
+  id: "extensions.attachextract_cont.returnreceipts.enabled",
   type: "bool"
 },
 {
@@ -84,7 +84,7 @@ Preferences.addAll([{
   type: "bool"
 },
 {
-  id: "extensions.attachextract_cont.reportgen",
+  id: "extensions.attachextract_cont.reportgen.enabled",
   type: "bool"
 },
 
@@ -93,7 +93,7 @@ Preferences.addAll([{
   type: "string"
 },
 {
-  id: "extensions.attachextract_cont.autoextract",
+  id: "extensions.attachextract_cont.autoextract.enabled",
   type: "bool"
 },
 {

@@ -9,24 +9,35 @@ pref("extensions.attachextract_cont.defaultsavepath.relative.key","");
 
 pref("extensions.attachextract_cont.overwritepolicy",0);
 
-pref("extensions.attachextract_cont.savepathmru",true);
-pref("extensions.attachextract_cont.savepathmru.count",5);
-
-pref("extensions.attachextract_cont.suggestfolder",false);
-pref("extensions.attachextract_cont.suggestfolder.disregardduplicates",true);
-pref("extensions.attachextract_cont.suggestfolder.excludekeywords",""); 
-pref("extensions.attachextract_cont.suggestfolder.maxmatches",10);
-
 pref("extensions.attachextract_cont.actionafterextract.markread",false);
 pref("extensions.attachextract_cont.actionafterextract.deletemessage",false);
 pref("extensions.attachextract_cont.actionafterextract.detach",false);
 pref("extensions.attachextract_cont.actionafterextract.detach.withoutconfirm",false);
 pref("extensions.attachextract_cont.actionafterextract.detach.warning",true);
-pref("extensions.attachextract_cont.actionafterextract.savemessage",false);
 pref("extensions.attachextract_cont.notifywhendone",true);
 
+pref("extensions.attachextract_cont.actionafterextract.savemessage",false);
+
+/* Folder pane */
+pref("extensions.attachextract_cont.savepathmru.enabled",true);
+pref("extensions.attachextract_cont.savepathmru.count",5);
+
+pref("extensions.attachextract_cont.suggestfolder.disregardduplicates",true);
+pref("extensions.attachextract_cont.suggestfolder.excludekeywords",""); 
+pref("extensions.attachextract_cont.suggestfolder.maxmatches",10);
+
+/* Filename pattern pane */
+pref("extensions.attachextract_cont.filenamepattern.askalwaysfnp",true);
+pref("extensions.attachextract_cont.filenamepattern","#namepart##count##extpart#");
+pref("extensions.attachextract_cont.filenamepattern.countpattern","-%");
+pref("extensions.attachextract_cont.filenamepattern.datepattern","D M d Y");
+pref("extensions.attachextract_cont.filenamepattern.cleansubject",false);
+pref("extensions.attachextract_cont.filenamepattern.cleansubject.strings","aw: ,re: ,fw: ,fwd: ");
+pref("extensions.attachextract_cont.filenamepattern.savemessage","#subject##count#.html");
+pref("extensions.attachextract_cont.filenamepattern.savemessage.countpattern","-%");
+
 /* Auto pane */
-pref("extensions.attachextract_cont.autoextract",false);
+pref("extensions.attachextract_cont.autoextract.enabled",false);
 
 pref("extensions.attachextract_cont.autoextract.onattachmentsonly",true);
 pref("extensions.attachextract_cont.autoextract.waitforall",false);
@@ -50,16 +61,6 @@ pref("extensions.attachextract_cont.autoextract.cleartag",false);
 pref("extensions.attachextract_cont.autoextract.savemessage",false);
 pref("extensions.attachextract_cont.autoextract.filenamepattern","");
 
-/* Filename pattern pane */
-pref("extensions.attachextract_cont.filenamepattern.askalwaysfnp",true);
-pref("extensions.attachextract_cont.filenamepattern","#namepart##count##extpart#");
-pref("extensions.attachextract_cont.filenamepattern.countpattern","-%");
-pref("extensions.attachextract_cont.filenamepattern.datepattern","D M d Y");
-pref("extensions.attachextract_cont.filenamepattern.cleansubject",false);
-pref("extensions.attachextract_cont.filenamepattern.cleansubject.strings","aw: ,re: ,fw: ,fwd: ");
-pref("extensions.attachextract_cont.filenamepattern.savemessage","#subject##count#.html");
-pref("extensions.attachextract_cont.filenamepattern.savemessage.countpattern","-%");
-
 /* Advanced pane */
 pref("extensions.attachextract_cont.includeenabled",0);
 pref("extensions.attachextract_cont.includepatterns","*.jpeg;*.jpg;*.png");
@@ -69,7 +70,7 @@ pref("extensions.attachextract_cont.extract.enabled",true);
 pref("extensions.attachextract_cont.setdatetoemail",false);
 pref("extensions.attachextract_cont.extract.minimumsize",0);
 
-pref("extensions.attachextract_cont.returnreceipts",false);
+pref("extensions.attachextract_cont.returnreceipts.enabled",false);
 pref("extensions.attachextract_cont.returnreceipts.override",false);
 
 pref("extensions.attachextract_cont.queuerequests",true);
@@ -77,7 +78,7 @@ pref("extensions.attachextract_cont.queuerequests",true);
 pref("extensions.attachextract_cont.progressdialog.showtext",true);
 pref("extensions.attachextract_cont.extractinlinetoo",false);
 
-pref("extensions.attachextract_cont.reportgen",false);
+pref("extensions.attachextract_cont.reportgen.enabled",false);
 pref("extensions.attachextract_cont.reportgen.cssfile", "");
 pref("extensions.attachextract_cont.reportgen.embedcss", false);
 pref("extensions.attachextract_cont.reportgen.thumbnail", true);

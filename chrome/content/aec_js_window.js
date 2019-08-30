@@ -1113,7 +1113,7 @@ if (typeof AEMessage === "undefined") {
         if (thistask.isMarkreadEnabled) {
           aewindow.aedump('{function:AEMessage.doMarkread}\n', 2);
           aewindow.gDBView.doCommand(0); /* 0 = markMessagesRead */
-          if (this.prefs.get("returnreceipts")) this.handleMDNResponse();
+          if (this.prefs.get("returnreceipts.enabled")) this.handleMDNResponse();
           //aedump(">> "+getMessageHeader().getStringProperty("AEMetaData.savepath")+"\n");
           //aedump(">> "+getMessageHeader().getStringProperty("AEMetaData.savedfiles")+"\n");
         }
