@@ -235,7 +235,15 @@ if (typeof AttachmentExtractor === "undefined") {
     observe: function(subject, topic, d) {
       var windowtype;
       try {
-        var win = subject.QueryInterface(Ci.nsIDOMWindow);
+        var win = subject;
+        // With TB70, window objects don't need to be and cannot be QI'ed 
+        // to nsIDOMChromeWindow
+        // So give it a try to be compatible from 60 over 68 to 70+
+        try {
+          win = win.QueryInterface(Ci.nsIDOMWindow);
+        }
+        catch(e) {}
+
         windowtype = win.document.documentElement.getAttribute(
         'windowtype');
       } catch (e) {}
