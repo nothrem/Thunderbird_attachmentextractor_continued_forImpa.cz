@@ -49,7 +49,7 @@ radio[pane=aec-filenamePane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/compose.svg");
 }
 radio[pane=aec-autoPane] > .radio-check {
-  list-style-image: url("chrome://attachmentextractor_cont/skin/filter.svg");
+  list-style-image: url("chrome://attachmentextractor_cont/skin/getmsg.svg");
 }
 radio[pane=aec-advancedPane] > .radio-check {
   list-style-image: url("chrome://attachmentextractor_cont/skin/advanced.svg");
