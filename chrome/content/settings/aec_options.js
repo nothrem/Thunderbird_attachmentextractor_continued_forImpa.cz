@@ -6,9 +6,6 @@
 var AECprefs = Cc["@mozilla.org/preferences-service;1"]
   .getService(Ci.nsIPrefBranch);
 
-// global var filenamepatternbox to be frequently used in aec_options.xul
-var filenamepatternbox = document.getElementById('filenamepattern');
-
 if (typeof (wdw_aecOptions) === "undefined") {
   var {
     Services
@@ -74,7 +71,7 @@ if (typeof (wdw_aecOptions) === "undefined") {
 
       document.getElementById('filenamepattern_exampledate').value =
         exampleDate.toLocaleString();
-      wdw_aecOptions.updateexamplefilename(filenamepatternbox);
+      wdw_aecOptions.updateexamplefilename();
 
       wdw_aecOptions.showTab();
     },

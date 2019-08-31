@@ -235,7 +235,8 @@
                     preference="extensions.attachextract_cont.suggestfolder.disregardduplicates" />
                   <hbox align="center">
                     <label value="&attachmentextractor.settings.suggestfolder.excludedkeywords.label;"/>
-                    <textbox preference="extensions.attachextract_cont.suggestfolder.excludekeywords" 
+                    <textbox id="suggestfolderexcludekeywordstextbox"
+		      preference="extensions.attachextract_cont.suggestfolder.excludekeywords" 
                       flex="1"/>
                   </hbox>
                 </groupbox>
@@ -306,8 +307,8 @@
                       preftype="char" 
                       flex="1" 
                       preference="extensions.attachextract_cont.filenamepattern.countpattern" 
-                      oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
-                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
+                      oninput="wdw_aecOptions.updateexamplefilename()" 
+                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename();"/>
                   </hbox>
                   <hbox align="center">
                     <label value="&attachmentextractor.settings.filenamepatterndate.label;"/>
@@ -315,8 +316,8 @@
                       preftype="char" 
                       preference="extensions.attachextract_cont.filenamepattern.datepattern" 
                       flex="1" 
-                      oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
-                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename(filenamepatternbox);"/>
+                      oninput="wdw_aecOptions.updateexamplefilename()" 
+                      onchange="wdw_aecOptions.check_filenamepattern(this,true);wdw_aecOptions.updateexamplefilename();"/>
                   </hbox>
 
                   <separator class="thin"/>
@@ -358,7 +359,7 @@
                             <label value="&attachmentextractor.settings.filenamepattern.explanation.withsubject;"/>
                             <textbox id="filenamepattern_examplesubject" 
                               flex="1" 
-                              oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                              oninput="wdw_aecOptions.updateexamplefilename()" 
                               value="[Fwd: Re: Important Mail]"/>
                           </row>
                           <row align="center">
@@ -369,7 +370,7 @@
                             <checkbox id="filenamepatterncleansubject" 
                               label="&attachmentextractor.settings.filenamepatterncleansubjectq.label;" 
                               accesskey="&attachmentextractor.settings.filenamepatterncleansubjectq.accesskey;" 
-                              oncommand="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                              oncommand="wdw_aecOptions.updateexamplefilename()" 
                               preference="extensions.attachextract_cont.filenamepattern.cleansubject" />
                           </row>
                         </rows>
@@ -406,7 +407,7 @@
                       <label value="&attachmentextractor.settings.filenamepattern.explanation.fromauthor2;"/>
                       <textbox id="filenamepattern_exampleauthor" 
                         flex="1" 
-                        oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                        oninput="wdw_aecOptions.updateexamplefilename()" 
                         value="John Smith &lt;john.smith@example.org&gt;"/>
                     </hbox>
                     <hbox align="center">
@@ -420,7 +421,7 @@
                       <label value="&attachmentextractor.settings.filenamepattern.explanation.mailfolder;"/>
                       <textbox id="filenamepattern_examplefolder" 
                         flex="1" 
-                        oninput="wdw_aecOptions.updateexamplefilename(filenamepatternbox)" 
+                        oninput="wdw_aecOptions.updateexamplefilename()" 
                         value="Inbox"/>
                     </hbox>
                   </groupbox>
