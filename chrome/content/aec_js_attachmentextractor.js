@@ -1148,11 +1148,11 @@ if (typeof AttachmentExtractor === "undefined") {
         
         var mail,folder;
         try{
-        	try{folder=item.QueryInterface(Ci.nsIMsgFolder); }catch (ee){}
-        	if (!folder) {
-        		mail=item.QueryInterface(Ci.nsIMsgDBHdr);
-        		folder=mail.folder; 
-        	}
+          try{folder=item.QueryInterface(Ci.nsIMsgFolder); }catch (ee){}
+          if (!folder) {
+            mail=item.QueryInterface(Ci.nsIMsgDBHdr);
+            folder=mail.folder; 
+          }
         }catch (e) {aedump(e);aedump(item);return;}
         aedump("{function:itemDeleted("+folder.prettyName+")}\n",4);
         alert("test");*/

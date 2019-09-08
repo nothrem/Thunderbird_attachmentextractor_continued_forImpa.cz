@@ -250,12 +250,12 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         m_outputStream.close();
       }
       /*
-	  if (mTransfer) {
-    	mTransfer.onProgressChange(null, null, mContentLength, mContentLength, mContentLength, mContentLength);
-    	mTransfer.onStateChange(null, null, nsIWebProgressListener.STATE_STOP, 0);
-    	mTransfer = null; // break any circular dependencies between the progress dialog and use
+    if (mTransfer) {
+      mTransfer.onProgressChange(null, null, mContentLength, mContentLength, mContentLength, mContentLength);
+      mTransfer.onStateChange(null, null, nsIWebProgressListener.STATE_STOP, 0);
+      mTransfer = null; // break any circular dependencies between the progress dialog and use
       }
-	  */
+    */
     } catch (e) {
       aedump(e);
     }
@@ -286,7 +286,7 @@ function aeSaveMsgListener(m_file, m_messenger, m_contentType, afterAction, afte
         /*if (aewindow.progress_tracker) aewindow.progress_tracker.set_file_progress(mProgress,mContentLength);*/
         /*
       if (mTransfer) mTransfer.OnProgressChange(null, request, mProgress, mContentLength, mProgress, mContentLength);
-		*/
+    */
       }
     } catch (e) {
       aedump(e);
