@@ -129,6 +129,23 @@ if (typeof (wdw_aecOptions) === "undefined") {
       }
       if (fieldID instanceof Array) wdw_aecOptions.enableField(
         aCheckbox, fieldID);
+
+      // start of disabling not working objects in options dialog for now
+      var notWorkingFeatures = [
+        "reportgencssfile",
+        "reportgencssfilebutton",
+        "reportgenembedcss",
+        "setdatetoemailbox",
+        "minimumsize",
+        "suggestfolderexcludekeywordstextbox"
+      ];
+      for (let i = 0; i < notWorkingFeatures.length; i++) {
+        let object = document.getElementById(notWorkingFeatures[i]);
+        if (object)
+          object.setAttribute("disabled", "true");
+      }
+      // end of disabling not working objects in options dialog for now
+
     },
 
     showPane: function(paneID) {
