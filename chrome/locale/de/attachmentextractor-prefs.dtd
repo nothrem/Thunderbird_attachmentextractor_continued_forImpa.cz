@@ -6,7 +6,7 @@
 <!ENTITY attachmentextractor.settings.overwrite-replace.label "Die bestehende Datei immer mit dem neuen Anhang überschreiben">
 <!ENTITY attachmentextractor.settings.overwrite-replace.accesskey "D">
 <!ENTITY attachmentextractor.settings.overwrite-ignore.label "Die bestehende Datei immer erhalten, Anhang nicht abtrennen">
-<!ENTITY attachmentextractor.settings.overwrite-ignore.accesskey "S">
+<!ENTITY attachmentextractor.settings.overwrite-ignore.accesskey "b">
 <!ENTITY attachmentextractor.settings.overwrite-rename.label "Neuen Namen für den Anhang vergeben, um beide Dateien zu behalten">
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "N">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Jedes Mal fragen">
@@ -37,13 +37,15 @@
 <!ENTITY attachmentextractor.settings.after-delete.label "Nachricht löschen">
 <!ENTITY attachmentextractor.settings.after-delete.accesskey "ö">
 <!ENTITY attachmentextractor.settings.after-read.label "Nachricht als gelesen markieren">
-<!ENTITY attachmentextractor.settings.after-read.accesskey "K">
+<!ENTITY attachmentextractor.settings.after-read.accesskey "m">
 <!ENTITY attachmentextractor.settings.after-detach.label "Anhänge aus der Nachricht löschen">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "ä">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.label "Ohne Rückfrage löschen">
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "R">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Meldung ausgeben, nachdem alle Anhänge abgetrennt wurden">
-<!ENTITY attachmentextractor.settings.notifywhendone.accesskey "M">
+<!ENTITY attachmentextractor.settings.notifywhendone.accesskey "a">
+<!ENTITY attachmentextractor.settings.after-compact.label "Ordner komprimieren (gibt Speicherplatz auf Datenträger frei)">
+<!ENTITY attachmentextractor.settings.after-compact.accesskey "k">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Nachrichtentext in eine Datei speichern. (Muster gilt für Allgemein- und Automatikmodus)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Empfangsbestätigungen…">
