@@ -25,12 +25,12 @@ locale attachmentextractor_cont bg    chrome/locale/bg/
 locale attachmentextractor_cont cs    chrome/locale/cs/
 locale attachmentextractor_cont da    chrome/locale/da/
 locale attachmentextractor_cont de    chrome/locale/de/
-locale attachmentextractor_cont es-ES chrome/locale/es-ES/
+locale attachmentextractor_cont es    chrome/locale/es/
 locale attachmentextractor_cont fi    chrome/locale/fi/
 locale attachmentextractor_cont fr    chrome/locale/fr/
 locale attachmentextractor_cont it    chrome/locale/it/
-locale attachmentextractor_cont ko-KR chrome/locale/ko-KR/
+locale attachmentextractor_cont ko    chrome/locale/ko/
 locale attachmentextractor_cont nl    chrome/locale/nl/
-locale attachmentextractor_cont pt-PT chrome/locale/pt-PT/
+locale attachmentextractor_cont pt    chrome/locale/pt/
 locale attachmentextractor_cont ru    chrome/locale/ru/
 locale attachmentextractor_cont sk    chrome/locale/sk/

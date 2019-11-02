@@ -11,6 +11,9 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "R">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Chiedi ogni volta">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "v">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Inserisci…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Elimina">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Opzioni delle cartelle suggerite">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "l">
 <!ENTITY attachmentextractor.settings.after-detach.label "Elimina l&apos;allegato dal messaggio">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "n">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notifica quando l&apos;estrazione degli allegati viene completata">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "o">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Salva il messaggio di testo in un file (nota: stesso modello per estrazione normale ed autoestrazione)">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avanzate">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Avanzate II">
 <!ENTITY attachmentextractor.settings.extract.caption "Salvataggio degli allegati">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Disattiva il salvataggio degli allegati">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Dimensione minima degli allegati">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "t">
 <!ENTITY attachmentextractor.settings.filenametab.label "Modelli">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Generazione del modello">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Fare clic per aggiungere un token">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Modello utilizzato per generare nomi di file:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Modello utilizzato per il conteggio dei file duplicati (#count#):">
@@ -130,3 +139,7 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Riavviare Thunderbird per rendere effettive le modifiche)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Escludi i file di dimensioni identiche">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "d">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Folders">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">

@@ -11,6 +11,9 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "U">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Dotázat se">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "D">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Přidat…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Smazat">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Doporučené adresáře">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "P">
 <!ENTITY attachmentextractor.settings.after-detach.label "Vyčlenit přílohy ze zpráv">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "V">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Zobrazovat oznámení o dokončení ukládaní">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Uložit zprávu do souboru TXT. (stejná syntaxe pro ruční i pro automatické ukládání)">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Rozšířené">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Rozšířené">
 <!ENTITY attachmentextractor.settings.extract.caption "Ukládání přílohy">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Zakázat ukládání příloh.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "U">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimální velikost">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "P">
 <!ENTITY attachmentextractor.settings.filenametab.label "Jména souborů">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Šablona jmen souborů:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Přidat příznak">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Šablona pro generování jmen souborů:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Šablona pro generování jmen souborů v případě duplicicty (#count#):">
@@ -130,3 +139,7 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Vyžaduje restart aplikace Thunderbird)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Přeskakovat stejně velké soubory">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "P">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Folders">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">

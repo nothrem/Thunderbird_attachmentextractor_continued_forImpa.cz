@@ -48,4 +48,3 @@
 <!ENTITY attachmentextractor.suggestedFolderDialog.title "AttachmentExtractor - Ordnervorschläge:">
 <!ENTITY attachmentextractor.suggestedFolderDialog.label "Ordnervorschläge basieren auf der Betreffzeile der ausgewählten Nachricht(en):">
 <!ENTITY attachmentextractor.suggestedFolderDialog.acceptbutton "Ausgewählten Ordner verwenden">
-<!ENTITY attachmentextractor.context.extracttofolder.accesskey "N">

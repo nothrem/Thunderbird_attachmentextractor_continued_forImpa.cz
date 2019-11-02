@@ -11,16 +11,19 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Kysy joka kerta">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "A">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Lisätä…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Tyhjennä">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Ehdotetut kansiot">
 <!ENTITY attachmentextractor.settings.suggestfolder.description "Kansiota voidaan ehdottaa poiminnan kohteeksi valitsemiesi viestien otsikkorivien avainsanojen pohjalta.">
 <!ENTITY attachmentextractor.settings.suggestfolder.parents.label "Kansiot, jotka sisältävät mahdollisia purkamisen alikansioita:">
+<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Lisätä…">
+<!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Tyhjennä">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.label "Hylkää avainsanojen duplikaatit, kun ehdotettuja kansioita arvotetaan?">
 <!ENTITY attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey "H">
 <!ENTITY attachmentextractor.settings.suggestfolder.excludedkeywords.label "Poissuljettavat avainsanat: (pilkulla erotettuina)">
-<!ENTITY attachmentextractor.settings.suggestfolder.addbutton.label "Lisätä…">
-<!ENTITY attachmentextractor.settings.suggestfolder.clearbutton.label "Tyhjennä">
 <!ENTITY attachmentextractor.settings.savepathmru.caption "Viimeksi käytetyt kansiot">
 <!ENTITY attachmentextractor.settings.savepathmru.label "Ota käyttöön viimeksi käytettyjen kansioiden lista.">
 <!ENTITY attachmentextractor.settings.savepathmru.count.label1 "Tallenna viimeiset">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "Poista liitetiedosto viestistä">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "O">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Ilmoita, kun kaikki liitetiedostot on poimittu">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "I">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Tallenna viestiteksti tiedostoon. (huomaa: sama malli normaalille ja automaattiselle poiminnalle)">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Lisäasetukset">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Lisää">
 <!ENTITY attachmentextractor.settings.extract.caption "Liitetiedostojen tallennus">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Poista käytöstä liitetiedostojen tallennus.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "P">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Minimikokotarkistus">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
 <!ENTITY attachmentextractor.settings.filenametab.label "Tiedostonimet">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Tiedostonimimallin luominen:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Klikkaa lisätäksesi merkki">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Malli, jolla luodaan tiedostonimet:">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Tiedostonimiduplikaateille käytettävä malli (#count#):">
@@ -130,3 +139,7 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Vaatii Thunderbirdin uudelleenkäynnistyksen.)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Ohita samankokoiset tiedostot">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Folders">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">

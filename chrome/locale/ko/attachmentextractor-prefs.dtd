@@ -11,6 +11,9 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "M">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "매번 묻기">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "A">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "더하다…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "청소">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "제안된 폴더">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "E">
 <!ENTITY attachmentextractor.settings.after-detach.label "메세지로 부터 첨부를 삭제합니까?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "F">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "모든 첨부파일을 추출하면 알림">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "메세지 글을 파일로 저장.(주의:일반 및 자동추출을 위한 동일 패턴)">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "고급">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "더..">
 <!ENTITY attachmentextractor.settings.extract.caption "추출 파일 저장">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "첨부 저장하지 않음.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "최소 크기 검사">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "O">
 <!ENTITY attachmentextractor.settings.filenametab.label "파일명">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "파일명 양식 산출:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "토큰을 추가하려면 클릭">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "파일명에 사용하는 형식：">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "중복된 파일명에 사용하는 형식 (#count#):">
@@ -130,3 +139,7 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(효과를 가지려면 TB 재시작이 필수입니다.)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "일치하는 크기의 파일 무시">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Folders">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">

@@ -11,6 +11,9 @@
 <!ENTITY attachmentextractor.settings.overwrite-rename.accesskey "z">
 <!ENTITY attachmentextractor.settings.overwrite-ask.label "Perguntar-me de cada vez">
 <!ENTITY attachmentextractor.settings.overwrite-ask.accesskey "P">
+<!ENTITY attachmentextractor.settings.favoritefolder.dialogtitle "Favorite Folders">
+<!ENTITY attachmentextractor.settings.favoritefolder.description "The Favorite Folders allow for a given, faster selection.">
+<!ENTITY attachmentextractor.settings.favoritefolder.parents.label "The following folders are displayed as favorites:">
 <!ENTITY attachmentextractor.settings.favoritefolder.addbutton.label "Adicionar…">
 <!ENTITY attachmentextractor.settings.favoritefolder.clearbutton.label "Limpar">
 <!ENTITY attachmentextractor.settings.suggestfolder.dialogtitle "Pastas sugeridas">
@@ -37,6 +40,8 @@
 <!ENTITY attachmentextractor.settings.after-read.accesskey "M">
 <!ENTITY attachmentextractor.settings.after-detach.label "Apagar o anexo da mensagem?">
 <!ENTITY attachmentextractor.settings.after-detach.accesskey "g">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.label "Delete without confirmation">
+<!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notificar-me quando todos os anexos forem extraídos.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "o">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Guardar mensagem txt para ficheiro. (nota:Mesmo padrão para normal e auo-extracção)">
@@ -65,6 +70,8 @@
 <!ENTITY attachmentextractor.settings.advancedtab.label "Avançado">
 <!ENTITY attachmentextractor.settings.advancedmoretab.label "Mais">
 <!ENTITY attachmentextractor.settings.extract.caption "Guardar Ficheiro anexo">
+<!ENTITY attachmentextractor.settings.doextract.label "Extract the Attachments.">
+<!ENTITY attachmentextractor.settings.doextract.accesskey "x">
 <!ENTITY attachmentextractor.settings.noextract.label "Desactivar a guarda dos anexos.">
 <!ENTITY attachmentextractor.settings.noextract.accesskey "D">
 <!ENTITY attachmentextractor.settings.extract.minimumsize.caption "Verificação do Tamanho Mínimo">
@@ -93,6 +100,8 @@
 <!ENTITY attachmentextractor.settings.includeexcludepolicy2-true.accesskey "r">
 <!ENTITY attachmentextractor.settings.filenametab.label "Nomes dos Ficheiros">
 <!ENTITY attachmentextractor.settings.filenamepatterngroup.label "Criar padrão do nome do ficheiro:">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.label "Ask always for filename pattern">
+<!ENTITY attachmentextractor.settings.filenamepattern.askalways.accesskey "A">
 <!ENTITY attachmentextractor.filenamepatterndialog.tokenbutton.label "Clique para adicionar um Token">
 <!ENTITY attachmentextractor.settings.filenamepattern.label "Padrão usado para criar nomes de ficheiros">
 <!ENTITY attachmentextractor.settings.filenamepatterncount.label "Padrão usado para duplicar nomes de ficheiros (#conta#):">
@@ -130,3 +139,7 @@
 <!ENTITY attachmentextractor.settings.requiresrestart.label "(Necessita um Reinício do TB para ter efeito)">
 <!ENTITY attachmentextractor.settings.skipidentical.label "Saltar ficheiros com tamanhos idênticos">
 <!ENTITY attachmentextractor.settings.skipidentical.accesskey "S">
+<!ENTITY attachmentextractor.settings.SeparatedByComma "(Comma separated)">
+<!ENTITY attachmentextractor.settings.SeparatedBySemicolon "(Semicolon separated)">
+<!ENTITY attachmentextractor.settings.folderstab.label "Folders">
+<!ENTITY attachmentextractor.settings.protocolltab.label "Logs">
