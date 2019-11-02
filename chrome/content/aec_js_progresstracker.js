@@ -144,9 +144,18 @@ var progress_tracker = {
   set_status_text: function(entry, param) {
     try {
       if (this.statusFeedback && entry && entry !== "") {
-        var txt = (param) ? aewindow.aeStringBundle.formatStringFromName(
+
+        if (aec_versionChecker.compare(aec_currentVersion, "69") >= 0) {
+          // The 3rd parameter in formatStringFromName has been droped 
+          // for Thunderbird 69+
+          var txt = (param) ? aewindow.aeStringBundle.formatStringFromName(
+            entry, param) :
+          aewindow.aeStringBundle.GetStringFromName(entry);
+        } else {
+          var txt = (param) ? aewindow.aeStringBundle.formatStringFromName(
             entry, param, param.length) :
           aewindow.aeStringBundle.GetStringFromName(entry);
+        }
         this.statusFeedback.showStatusString(txt);
       }
     } catch (e) {
@@ -160,19 +169,19 @@ var progress_tracker = {
   },
 
   /*
-	toOpenWindowByType : function (type, uri) {
-    	var topWindow = this.getWindowByType(type);
-		if (topWindow) topWindow.focus();
-		else return window.open(uri, "_blank", "chrome,extrachrome,menubar,resizable,scrollbars,status,toolbar");
-		return topWindow;
-	},
+  toOpenWindowByType : function (type, uri) {
+      var topWindow = this.getWindowByType(type);
+    if (topWindow) topWindow.focus();
+    else return window.open(uri, "_blank", "chrome,extrachrome,menubar,resizable,scrollbars,status,toolbar");
+    return topWindow;
+  },
 
-	toCloseWindowByType : function(type) {
-		var topWindow=this.getWindowByType(type);
-		if ( topWindow ) topWindow.close();
-		//else aedump ('"'+type+'" not found');
-	},
-	*/
+  toCloseWindowByType : function(type) {
+    var topWindow=this.getWindowByType(type);
+    if ( topWindow ) topWindow.close();
+    //else aedump ('"'+type+'" not found');
+  },
+  */
 
   debug: aedump
 }
@@ -217,8 +226,16 @@ function AEC_Reportgen() {
     var bodyElem = get_bodyElem();
     var hrdiv_elem = aerg_document.createElement("div");
     var h6 = aerg_document.createElement("h6");
-    h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
-      "ExtractionStarted", [new Date()], 1)));
+
+    if (aec_versionChecker.compare(aec_currentVersion, "69") >= 0) {
+      // The 3rd parameter in formatStringFromName has been droped 
+      // for Thunderbird 69+
+      h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
+        "ExtractionStarted", [new Date()])));
+    } else {
+      h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
+        "ExtractionStarted", [new Date()], 1)));
+    }
     hrdiv_elem.appendChild(h6);
     //hrdiv_elem.appendChild(aerg_document.createElement("hr"));
     bodyElem.appendChild(hrdiv_elem);
@@ -320,8 +337,16 @@ function AEC_Reportgen() {
     hr.setAttribute("style", "visibility:hidden");
     hrdiv_elem.appendChild(hr);
     var h6 = aerg_document.createElement("h6");
-    h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
-      "ExtractionEnded", [new Date()], 1)));
+
+    if (aec_versionChecker.compare(aec_currentVersion, "69") >= 0) {
+      // The 3rd parameter in formatStringFromName has been droped 
+      // for Thunderbird 69+
+      h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
+        "ExtractionEnded", [new Date()])));
+    } else {
+      h6.appendChild(aerg_document.createTextNode(strBundle.formatStringFromName(
+        "ExtractionEnded", [new Date()], 1)));
+    }
     hrdiv_elem.appendChild(h6);
     hrdiv_elem.appendChild(aerg_document.createElement("hr"));
     hrdiv_elem.setAttribute("style", "clear:both");
