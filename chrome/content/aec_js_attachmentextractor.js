@@ -235,7 +235,15 @@ if (typeof AttachmentExtractor === "undefined") {
     observe: function(subject, topic, d) {
       var windowtype;
       try {
-        var win = subject.QueryInterface(Ci.nsIDOMWindow);
+        var win = subject;
+        // With TB70, window objects don't need to be and cannot be QI'ed 
+        // to nsIDOMChromeWindow
+        // So give it a try to be compatible from 60 over 68 to 70+
+        try {
+          win = win.QueryInterface(Ci.nsIDOMWindow);
+        }
+        catch(e) {}
+
         windowtype = win.document.documentElement.getAttribute(
         'windowtype');
       } catch (e) {}
@@ -1140,11 +1148,11 @@ if (typeof AttachmentExtractor === "undefined") {
         
         var mail,folder;
         try{
-        	try{folder=item.QueryInterface(Ci.nsIMsgFolder); }catch (ee){}
-        	if (!folder) {
-        		mail=item.QueryInterface(Ci.nsIMsgDBHdr);
-        		folder=mail.folder; 
-        	}
+          try{folder=item.QueryInterface(Ci.nsIMsgFolder); }catch (ee){}
+          if (!folder) {
+            mail=item.QueryInterface(Ci.nsIMsgDBHdr);
+            folder=mail.folder; 
+          }
         }catch (e) {aedump(e);aedump(item);return;}
         aedump("{function:itemDeleted("+folder.prettyName+")}\n",4);
         alert("test");*/
