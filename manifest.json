@@ -18,6 +18,7 @@
     "64": "chrome/skin/aec_icon_64.png"
   },
   "legacy": {
+    "type": "xul",
     "options": {
       "open_in_tab": true,
       "page": "chrome://attachmentextractor_cont/content/settings/aec_options.xul"
