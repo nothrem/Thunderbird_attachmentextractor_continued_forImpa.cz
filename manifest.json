@@ -2,14 +2,14 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.1b1",
+  "version": "3.0a1",
   "author": "Alexander Ihrig (Original by Andrew Williamson)",
   "homepage_url": "https://www.thunderbird-mail.de/lexicon/entry/230-attachmentextractor-continued-add-on-to-semi-automatically-remove-attachments-fr/",
   "applications": {
     "gecko": {
       "id": "attachmentextractor_cont@thunderbird-mail.de",
-      "strict_min_version": "68.0",
-      "strict_max_version": "68.*"
+      "strict_min_version": "70.0",
+      "strict_max_version": "74.0"
     }
   },
   "default_locale": "en",
@@ -18,7 +18,6 @@
     "64": "chrome/skin/aec_icon_64.png"
   },
   "legacy": {
-    "type": "xul",
     "options": {
       "open_in_tab": true,
       "page": "chrome://attachmentextractor_cont/content/settings/aec_options.xul"

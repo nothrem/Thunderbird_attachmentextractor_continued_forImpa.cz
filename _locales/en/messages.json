@@ -4,5 +4,753 @@
   },
   "extensionDescription": {
     "message": "Extracts all attachments from selected messages and then can delete, detach and more"
+  },
+
+  "attachmentextractor.toolbarbutton.label": {
+    "message": "AE Extract"
+  },
+  "attachmentextractor.toolbarbutton.tooltip2": {
+    "message": "Extract Attachments from Selected Messages"
+  },
+  "attachmentextractor.headerbutton.label": {
+    "message": "AE Extract"
+  },
+  "attachmentextractor.headerbutton.tooltip": {
+    "message": "Extract Attachments from this Message"
+  },
+
+  "attachmentextractor.browse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.browse.accesskey": {
+    "message": "B"
+  },
+  
+  "attachmentextractor.extractSingleAttTo.label": {
+    "message": "AE Extract"
+  },
+  "attachmentextractor.extractMultipleAttTo.label": {
+    "message": "AE Extract all"
+  },
+  "attachmentextractor.extractMessagesTo.label": {
+    "message": "AE Extract from Messages"
+  },
+  "attachmentextractor.extractFoldersTo.label": {
+    "message": "AE Extract from Messages in Folder"
+  },
+  "attachmentextractor.extractTo.label": {
+    "message": "AE Extract Attachments"
+  },
+  "attachmentextractor.extractTo.accesskey": {
+    "message": "x"
+  },
+
+  "attachmentextractor.extractToBrowse.label": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.extractToBrowse.accesskey": {
+    "message": "B"
+  },
+  "attachmentextractor.extractWithSubToBrowse.label": {
+    "message": "Browse… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToBrowse.accesskey": {
+    "message": "r"
+  },
+  "attachmentextractor.extractToDefault.label": {
+    "message": "Default Folder"
+  },
+  "attachmentextractor.extractToDefault.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.extractWithSubToDefault.label": {
+    "message": "Default Folder (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToDefault.accesskey": {
+    "message": "e"
+  },
+  "attachmentextractor.extractToFavoritefolders.label": {
+    "message": "Favorite Folders"
+  },
+  "attachmentextractor.extractToFavoritefolders.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.extractWithSubToFavoritefolders.label": {
+    "message": "Favorite Folders (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToFavoritefolders.accesskey": {
+    "message": "a"
+  },
+  "attachmentextractor.extractToMRUfolders.label": {
+    "message": "Most Recently Used Folders"
+  },
+  "attachmentextractor.extractToMRUfolders.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.extractWithSubToMRUfolders.label": {
+    "message": "Most Recently Used Folders (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToMRUfolders.accesskey": {
+    "message": "o"
+  },
+  "attachmentextractor.extractToSuggestfolders.label": {
+    "message": "Suggested Folder…"
+  },
+  "attachmentextractor.extractToSuggestfolders.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.extractWithSubToSuggestfolders.label": {
+    "message": "Suggested Folder… (inc. Subfolders)"
+  },
+  "attachmentextractor.extractWithSubToSuggestfolders.accesskey": {
+    "message": "u"
+  },
+  "attachmentextractor.extractWithCustomPattern.label": {
+    "message": "With a Custom Filename Pattern"
+  },
+  "attachmentextractor.extractWithCustomPattern.accesskey": {
+    "message": "W"
+  },
+
+  "attachmentextractor.justDeleteAttachments.label": {
+    "message": "Just Delete Attachments from Selected Messages"
+  },
+  "attachmentextractor.justDeleteAttachments.accesskey": {
+    "message": "J"
+  },
+  "attachmentextractor.justDeleteAllAttachments.label": {
+    "message": "Just Delete Attachments from All Messages in Folder"
+  },
+  "attachmentextractor.justDeleteAllAttachments.accesskey": {
+    "message": "U"
+  },
+
+  "attachmentextractor.filenamepatterndialog.title": {
+    "message": "Filename Pattern input"
+  },
+  "attachmentextractor.filenamepatterndialog.input.label": {
+    "message": "Modify the attachment filename pattern:"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.label": {
+    "message": "Set the pattern as default from now on"
+  },
+  "attachmentextractor.filenamepatterndialog.checkbox.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.filenamepatterndialog.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.filenamepatterndialog.tokenbutton.label": {
+    "message": "Click To Add A Token"
+  },
+
+  "attachmentextractor.suggestedFolderDialog.title": {
+    "message": "AttachmentExtractor - Suggested Folders:"
+  },
+  "attachmentextractor.suggestedFolderDialog.label": {
+    "message": "Suggested Folders based on subject lines of selected message(s):"
+  },
+  "attachmentextractor.suggestedFolderDialog.acceptbutton": {
+    "message": "Use Selected Folder"
+  },
+
+  "attachmentextractor.settings.windowtitle": {
+    "message": "AttachmentExtractor Settings"
+  },
+  "attachmentextractor.settings.homepage.label": {
+    "message": "AttachmentExtractor homepage and description of features:"
+  },
+  "attachmentextractor.settings.generaltab.label": {
+    "message": "General"
+  },
+  "attachmentextractor.settings.savefolders.caption": {
+    "message": "Where should the attachments be saved?"
+  },
+  "attachmentextractor.settings.overwritepolicy.label": {
+    "message": "What should happen when we find a file already exists with the same name as the attachment?"
+  },
+  "attachmentextractor.settings.overwrite-replace.label": {
+    "message": "Always replace existing file with the new attachment"
+  },
+  "attachmentextractor.settings.overwrite-replace.accesskey": {
+    "message": "R"
+  },
+  "attachmentextractor.settings.overwrite-ignore.label": {
+    "message": "Always keep existing file, don&apos;t extract the attachment"
+  },
+  "attachmentextractor.settings.overwrite-ignore.accesskey": {
+    "message": "K"
+  },
+  "attachmentextractor.settings.overwrite-rename.label": {
+    "message": "Make a new name for the attachment, so we can keep both"
+  },
+  "attachmentextractor.settings.overwrite-rename.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.overwrite-ask.label": {
+    "message": "Ask me each time"
+  },
+  "attachmentextractor.settings.overwrite-ask.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.favoritefolder.dialogtitle": {
+    "message": "Favorite Folders"
+  },
+  "attachmentextractor.settings.favoritefolder.description": {
+    "message": "The Favorite Folders allow for a given, faster selection."
+  },
+  "attachmentextractor.settings.favoritefolder.parents.label": {
+    "message": "The following folders are displayed as favorites:"
+  },
+  "attachmentextractor.settings.favoritefolder.addbutton.label": {
+    "message": "Add…"
+  },
+  "attachmentextractor.settings.favoritefolder.clearbutton.label": {
+    "message": "Delete"
+  },
+  "attachmentextractor.settings.suggestfolder.dialogtitle": {
+    "message": "Suggested Folders"
+  },
+  "attachmentextractor.settings.suggestfolder.description": {
+    "message": "A folder can be suggested to extract to based on the keywords in the subject lines of the messages you select."
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.label": {
+    "message": "Ignore duplicated keywords when ranking suggested folders?"
+  },
+  "attachmentextractor.settings.suggestfolder.disregardduplicates.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.suggestfolder.parents.label": {
+    "message": "Folders containing potential subfolders to extract to:"
+  },
+  "attachmentextractor.settings.suggestfolder.excludedkeywords.label": {
+    "message": "Keywords to exclude: (comma-seperated)"
+  },
+  "attachmentextractor.settings.suggestfolder.addbutton.label": {
+    "message": "Add…"
+  },
+  "attachmentextractor.settings.suggestfolder.clearbutton.label": {
+    "message": "Delete"
+  },
+  "attachmentextractor.settings.savepathmru.caption": {
+    "message": "Most Recently Used Folders"
+  },
+  "attachmentextractor.settings.savepathmru.label": {
+    "message": "Enable a Most Recently Used Folders list."
+  },
+  "attachmentextractor.settings.savepathmru.count.label1": {
+    "message": "Store the last"
+  },
+  "attachmentextractor.settings.savepathmru.count.label2": {
+    "message": "folders."
+  },
+  "attachmentextractor.settings.savepathmru.accesskey": {
+    "message": "M"
+  },
+  "attachmentextractor.settings.savepathmru.clearbutton.label": {
+    "message": "Clear Now"
+  },
+  "attachmentextractor.settings.savefolder.label": {
+    "message": "Default Save Path:"
+  },
+  "attachmentextractor.settings.savefolder.browsebutton": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.settings.posttab.label": {
+    "message": "After Extraction"
+  },
+  "attachmentextractor.settings.afterextractpolicy.label": {
+    "message": "After extracting the attachments should we:"
+  },
+  "attachmentextractor.settings.after-delete.label": {
+    "message": "Delete the message"
+  },
+  "attachmentextractor.settings.after-delete.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.after-read.label": {
+    "message": "Mark the message as Read"
+  },
+  "attachmentextractor.settings.after-read.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.after-detach.label": {
+    "message": "Delete attachments from the message"
+  },
+  "attachmentextractor.settings.after-detach.accesskey": {
+    "message": "F"
+  },
+  "attachmentextractor.settings.after-detach.confirm.label": {
+    "message": "Delete without confirmation"
+  },
+  "attachmentextractor.settings.after-detach.confirm.accesskey": {
+    "message": "w"
+  },
+  "attachmentextractor.settings.notifywhendone.label": {
+    "message": "Notify me when all the attachments have been extracted."
+  },
+  "attachmentextractor.settings.notifywhendone.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.after-savemessage.label": {
+    "message": "Save message txt to file (Note: same pattern for normal and auto-extract)"
+  },
+  "attachmentextractor.settings.after-savemessage.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.button.label": {
+    "message": "Return Receipts …"
+  },
+  "attachmentextractor.settings.returnreceipts.dialogtitle": {
+    "message": "Return Receipts"
+  },
+  "attachmentextractor.settings.returnreceipts.label": {
+    "message": "AttachmentExtractor can send return receipts automatically when a message is marked as Read"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.label": {
+    "message": "Send Return Receipts if one is requested"
+  },
+  "attachmentextractor.settings.returnreceipts.enabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.returnreceipts.override.caption": {
+    "message": "Return Receipt requests:"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.label": {
+    "message": "Follow Thunderbird&apos;s Return Receipt preferences"
+  },
+  "attachmentextractor.settings.returnreceipts.override.disabled.accesskey": {
+    "message": "T"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.label": {
+    "message": "Override &apos;ask me&apos; setting and send Return Receipts with prompting"
+  },
+  "attachmentextractor.settings.returnreceipts.override.enabled.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.reporttab.label": {
+    "message": "ReportGen"
+  },
+  "attachmentextractor.settings.reportgen.caption": {
+    "message": "HTML Report Generator"
+  },
+  "attachmentextractor.settings.reportgen.label": {
+    "message": "Generate a report every time AttachmentExtractor is run."
+  },
+  "attachmentextractor.settings.reportgen.accesskey": {
+    "message": "G"
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.label": {
+    "message": "Use Image thumbnails where possible for attachments."
+  },
+  "attachmentextractor.settings.reportgen.thumbnail.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.reportgen.embedcss.label": {
+    "message": "Embed the style information in the report, rather than linking to the stylesheet."
+  },
+  "attachmentextractor.settings.reportgen.embedcss.accesskey": {
+    "message": "E"
+  },
+  "attachmentextractor.settings.reportgen.cssfile.caption": {
+    "message": "Stylesheet to use for report:"
+  },
+  "attachmentextractor.settings.reportgen.reportname2.label": {
+    "message": "Filename (or absolute path) of the report:"
+  },
+  "attachmentextractor.settings.reportgen.button.label": {
+    "message": "Report Generator Settings …"
+  },
+  "attachmentextractor.settings.advancedtab.label": {
+    "message": "Advanced"
+  },
+  "attachmentextractor.settings.advancedmoretab.label": {
+    "message": "More"
+  },
+  "attachmentextractor.settings.extract.caption": {
+    "message": "Attachment File Saving"
+  },
+  "attachmentextractor.settings.doextract.label": {
+    "message": "Extract the Attachments."
+  },
+  "attachmentextractor.settings.doextract.accesskey": {
+    "message": "x"
+  },
+  "attachmentextractor.settings.noextract.label": {
+    "message": "Disable the saving of the attachments."
+  },
+  "attachmentextractor.settings.noextract.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.extract.minimumsize.caption": {
+    "message": "Minimum Size Check"
+  },
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-start.label": {
+    "message": "Only save attachments if they are larger than:"
+  },
+  "attachmentextractor.settings.extract.minsize_1024_bytes_SI-Unit_KiB-end.label": {
+    "message": "KiB"
+  },
+  "attachmentextractor.settings.queuerequests.caption": {
+    "message": "Queued Extractions"
+  },
+  "attachmentextractor.settings.queuerequests.disabled.label": {
+    "message": "Start AttachmentExtractor straight away every time extraction is requested."
+  },
+  "attachmentextractor.settings.queuerequests.disabled.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.queuerequests.enabled.label": {
+    "message": "Wait, and queue, any extraction requests made while AE is already running."
+  },
+  "attachmentextractor.settings.queuerequests.enabled.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.setdatetoemail.label": {
+    "message": "Set file modification date/time of attachment to message recieved date/time."
+  },
+  "attachmentextractor.settings.setdatetoemail.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.settings.inlinepolicy.label": {
+    "message": "Also extract embedded (&apos;inline&apos;) images too"
+  },
+  "attachmentextractor.settings.inlinepolicy.accesskey": {
+    "message": "I"
+  },
+  "attachmentextractor.settings.debug.caption": {
+    "message": "Debugging"
+  },
+  "attachmentextractor.settings.debug.label": {
+    "message": "Enable Debug Mode on restart.  Messages are logged to the Console and written to &apos;aec_debug.txt&apos; in your profile folder."
+  },
+  "attachmentextractor.settings.debug.accesskey": {
+    "message": "D"
+  },
+  "attachmentextractor.settings.showprogressdialog.label": {
+    "message": "Show a progress dialog during extraction."
+  },
+  "attachmentextractor.settings.showprogressdialog.accesskey": {
+    "message": "H"
+  },
+  "attachmentextractor.settings.progressdialogtext.label": {
+    "message": "Show message subjects and attachment names on the progress dialog."
+  },
+  "attachmentextractor.settings.progressdialogtext.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2.label": {
+    "message": "Filename filtering policy:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.label": {
+    "message": "Extract all files except where the filename contains:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-false.accesskey": {
+    "message": "X"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.label": {
+    "message": "Extract only these files where the filename contains:"
+  },
+  "attachmentextractor.settings.includeexcludepolicy2-true.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.filenametab.label": {
+    "message": "Filenames"
+  },
+  "attachmentextractor.settings.filenamepatterngroup.label": {
+    "message": "Filename Pattern Generation:"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.label": {
+    "message": "Ask always for filename pattern"
+  },
+  "attachmentextractor.settings.filenamepattern.askalways.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.filenamepattern.label": {
+    "message": "Pattern used to generate filenames:"
+  },
+  "attachmentextractor.settings.filenamepatterncount.label": {
+    "message": "Pattern used for a duplicated filename (#count#):"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.label": {
+    "message": "Use?"
+  },
+  "attachmentextractor.settings.filenamepatterncleansubjectq.accesskey": {
+    "message": "U"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.caption": {
+    "message": "Based on an email being received with the following properties:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withsubject": {
+    "message": "An email subject (#subject#) of:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.withcleansubject": {
+    "message": "Subject after removal of &apos;re:&apos;,etc :"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddate": {
+    "message": "Received on (#date#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.recieveddateformatted": {
+    "message": "Date/Time after pattern applied:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.fromauthor2": {
+    "message": "From the author (#from# &lt;#fromemail#&gt;):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.attachment": {
+    "message": "An attachment named (#namepart##extpart#):"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgenerate": {
+    "message": "Would generate first:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.wouldgeneratethen": {
+    "message": "Followed by:"
+  },
+  "attachmentextractor.settings.filenamepattern.explanation.mailfolder": {
+    "message": "In mail folder (#folder#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.label": {
+    "message": "Pattern used for dates (#date#):"
+  },
+  "attachmentextractor.settings.filenamepatterndate.homepage.label": {
+    "message": "Reference of formatting codes for #date#:"
+  },
+  "attachmentextractor.settings.filenamepatterndate.editbutton.label": {
+    "message": "Edit Date Pattern"
+  },
+  "attachmentextractor.settings.filenamepatterndate.dialogtitle": {
+    "message": "#Date# Pattern setting"
+  },
+  "attachmentextractor.settings.autotab.label": {
+    "message": "Auto-Extract"
+  },
+  "attachmentextractor.settings.autoextract.label": {
+    "message": "Automatically Extract Attachments on email reciept"
+  },
+  "attachmentextractor.settings.autoextract.accesskey": {
+    "message": "A"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.label": {
+    "message": "Save Path for Attachments:"
+  },
+  "attachmentextractor.settings.autoextract.savefolder.browsebutton": {
+    "message": "Browse…"
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.label": {
+    "message": "Only Auto-Extract when new message has been tagged with a matching tag."
+  },
+  "attachmentextractor.settings.autoextract.ontriggeronly.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.autoextract.triggertag.label": {
+    "message": "Extract messages if its tag matches:"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.label": {
+    "message": "Clear tag from messages?"
+  },
+  "attachmentextractor.settings.autoextract.cleartriggertag.accesskey": {
+    "message": "C"
+  },
+  "attachmentextractor.settings.autoextract.waitforall.label": {
+    "message": "Wait until all messages have been downloaded before starting Auto-Extract."
+  },
+  "attachmentextractor.settings.autoextract.waitforall.accesskey": {
+    "message": "W"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.label": {
+    "message": "Only start Auto-Extract with messages that appear to have attachments"
+  },
+  "attachmentextractor.settings.autoextract.onattachmentsonly.accesskey": {
+    "message": "O"
+  },
+  "attachmentextractor.settings.abouttab.label": {
+    "message": "About"
+  },
+  "attachmentextractor.settings.requiresrestart.label": {
+    "message": "(Requires a TB Restart to take effect.)"
+  },
+  "attachmentextractor.settings.skipidentical.label": {
+    "message": "Skip identically sized files"
+  },
+  "attachmentextractor.settings.skipidentical.accesskey": {
+    "message": "S"
+  },
+  "attachmentextractor.progress.windowtitle": {
+    "message": "AttachmentExtractor working"
+  },
+  "attachmentextractor.progress.status1.text": {
+    "message": "Extracting…"
+  },
+  "attachmentextractor.progress.status2.text": {
+    "message": "Please Wait."
+  },
+  "attachmentextractor.progress.status.message.text": {
+    "message": "Messages"
+  },
+  "attachmentextractor.progress.status.attachment.text": {
+    "message": "Attachments"
+  },
+  "attachmentextractor.progress.status.file.text": {
+    "message": "Progress"
+  },
+  "DoneExtractingDialogTitle": {
+    "message": "Done"
+  },
+  "DoneExtractingDialogMessage": {
+    "message": "Finished Extracting!"
+  },
+  "DoneExtractingDialogNotifyAgain": {
+    "message": "Keep notifying me. "
+  },
+  "OverwriteDialogTitle": {
+    "message": "File already Exists!"
+  },
+  "OverwriteDialogMessage": {
+    "message": "% already exists.  Do you want to:"
+  },
+  "OverwriteDialogIgnore": {
+    "message": "Skip this attachment"
+  },
+  "OverwriteDialogReplace": {
+    "message": "Overwrite existing file"
+  },
+  "OverwriteDialogRename": {
+    "message": "Generate a new filename"
+  },
+  "OverwriteDialogDontAskAgain": {
+    "message": "Dont ask me again, always do this."
+  },
+  "ProgressDialogProgressText": {
+    "message": "Message [%1$s] of [%2$s]"
+  },
+  "ProgressDialogProgressText2": {
+    "message": "Attachment [%1$s] of [%2$s]"
+  },
+  "ProgressDialogProgressOf": {
+    "message": "[%1$s] of [%2$s]"
+  },
+  "ProgressDialogProgressTextFile": {
+    "message": "%1$s KiB of %2$s KiB"
+  },
+  "FileNamePatternDialogTitle": {
+    "message": "Filename Pattern input"
+  },
+  "FileNamePatternDialogMessage": {
+    "message": "Modify the attachment filename pattern:"
+  },
+  "FileNamePatternDialogQuestion": {
+    "message": "Set the pattern as default from now on"
+  },
+  "FileNamePatternDialogAskAlways": {
+    "message": "Ask always for filename pattern"
+  },
+  "ConfirmDetachDialogTitle2": {
+    "message": "Confirm Detaching"
+  },
+  "ConfirmDetachDialogMessage2": {
+    "message": "You have chosen to detach attachments with AttachmentExtractor. There will be no further confirmation messages after this and every attachment will be deleted from the selected emails. Once deleted this cannot be undone. \n\nStill Proceed?"
+  },
+  "ConfirmDetachSettingDialogTitle2": {
+    "message": "Warning!"
+  },
+  "ConfirmDetachSettingDialogMessage2": {
+    "message": "Please be aware that this method may not work properly in all cases. \n\nIf there is an error it may result in either losing the attachments or the email contents, or both.  If this happens there is no easy way of recovering what's been lost so it is inadvisable to use it with important emails. Create Backups before using this feature. \n\nUse at your own risk."
+  },
+  "ConfirmAutoDetachSettingDialogMessage2": {
+    "message": "Enabling detach/delete attachments will remove attachments from all incoming emails that fit the criteria you specified (potentially all emails), based on selected options maybe without further confirmation. \n\nIf there is an error it may result in either losing the attachment or the email contents, or both. \n\nDo not enable this if you can't risk losing attachments and your incoming emails. \n\nUse at your own risk."
+  },
+  "CSSFileFilterDescription": {
+    "message": "CSS Stylesheets"
+  },
+  "CSSFilePickerDialogTitle": {
+    "message": "Pick StyleSheet to use"
+  },
+  "ExecutableFilePickerDialogTitle": {
+    "message": "Choose Application to use"
+  },
+  "GenericErrorDialog": {
+    "message": "Whoops!"
+  },
+  "GenericErrorMessage3": {
+    "message": "Something has gone wrong with AttachmentExtractor.  If this happens regularly please log a bug on the bugtracker on https://gitlab.com/ThunderbirdMailDE/attachment-extractor-continued/issues with the error details shown in Thunderbird's Error Console."
+  },
+  "StatusTextStarting": {
+    "message": "Starting AE Extract with selected attachment(s)"
+  },
+  "StatusTextEnded": {
+    "message": "AE Extract Done"
+  },
+  "StatusTextAttachment": {
+    "message": "AE Extract: Extracting attachment [%1$s] of [%2$s]"
+  },
+  "StatusTextTidying": {
+    "message": "AE Extract: Done Extracting attachment %1$s, finishing off…"
+  },
+  "DeleteLinkedFileTitle": {
+    "message": "AttachmentExtractor: Delete the file you extracted?"
+  },
+  "DeleteLinkedFileMessage": {
+    "message": "You previously used AttachmentExtractor to extract attachments from this message.  Do you want to delete those off your computer as well?"
+  },
+  "FolderPickerDialogTitle": {
+    "message": "Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultSavePath": {
+    "message": "Default Save Path not defined - Select folder to use"
+  },
+  "FolderPickerDialogTitleDefaultAutoextractPath": {
+    "message": "Auto-Extract Save Path not defined - Select folder to use"
+  },
+  "SeparatedByComma": {
+    "message": "(Comma separated)"
+  },
+  "SeparatedBySemicolon": {
+    "message": "(Semicolon separated)"
+  },
+  "WarningTitle": {
+    "message": "Warning"
+  },
+  "WarningDoNotShowAgain": {
+    "message": "Do not show this warning again."
+  },
+  "WarningJustDelete": {
+    "message": "This will delete the file attachments from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nThe file attachments will NOT be saved! \n\nDo you really want this?"
+  },
+  "WarningSaveThenDelete": {
+    "message": "File attachments will be saved and then deleted from the selected messages without further confirmation. Once deleted this cannot be undone. \n\nDo you really want this?"
+  },
+
+  "FileNamePatternFixTitle": {
+    "message": "Suggested Fix"
+  },
+  "FileNamePatternFixMessage": {
+    "message": "The filename or count pattern you've entered is invalid and may break AttachmentExtractor.\nChange to:\n %1$s?"
+  },
+
+  "ExtractionStarted": {
+    "message": "Extraction started [at Date/Time: %S]"
+  },
+  "ExtractionEnded": {
+    "message": "Extraction ended [at Date/Time: %S]"
+  },
+  "ReportTitle": {
+    "message": "AE ReportGen Report"
+  },
+  "Heading": {
+    "message": "AttachmentExtractor Report"
+  },
+  "Subject": {
+    "message": "Subject"
+  },
+  "From": {
+    "message": "From"
+  },
+  "To": {
+    "message": "To"
+  },
+  "DateTime": {
+    "message": "Date/Time"
   }
 }
