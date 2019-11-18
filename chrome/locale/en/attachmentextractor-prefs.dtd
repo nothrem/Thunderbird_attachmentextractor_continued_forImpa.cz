@@ -44,8 +44,6 @@
 <!ENTITY attachmentextractor.settings.after-detach.confirm.accesskey "w">
 <!ENTITY attachmentextractor.settings.notifywhendone.label "Notify me when all the attachments have been extracted.">
 <!ENTITY attachmentextractor.settings.notifywhendone.accesskey "O">
-<!ENTITY attachmentextractor.settings.after-compact.label "Compact folder (free up storage space on disc)">
-<!ENTITY attachmentextractor.settings.after-compact.accesskey "C">
 <!ENTITY attachmentextractor.settings.after-savemessage.label "Save message txt to file (Note: same pattern for normal and auto-extract)">
 <!ENTITY attachmentextractor.settings.after-savemessage.accesskey "S">
 <!ENTITY attachmentextractor.settings.returnreceipts.button.label "Return Receipts …">
