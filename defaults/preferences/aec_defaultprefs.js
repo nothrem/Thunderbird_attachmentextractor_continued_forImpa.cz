@@ -30,7 +30,7 @@ pref("extensions.attachextract_cont.suggestfolder.maxmatches",10);
 pref("extensions.attachextract_cont.filenamepattern.askalwaysfnp",true);
 pref("extensions.attachextract_cont.filenamepattern","#date#.#namepart##count##extpart#");
 pref("extensions.attachextract_cont.filenamepattern.countpattern","-%");
-pref("extensions.attachextract_cont.filenamepattern.datepattern","Y-m-d_H:i:s");
+pref("extensions.attachextract_cont.filenamepattern.datepattern","Y-m-d_H-i-s");
 pref("extensions.attachextract_cont.filenamepattern.cleansubject",false);
 pref("extensions.attachextract_cont.filenamepattern.cleansubject.strings","aw: ,re: ,fw: ,fwd: ");
 pref("extensions.attachextract_cont.filenamepattern.savemessage","#subject##count#.html");
