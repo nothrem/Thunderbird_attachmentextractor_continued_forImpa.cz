@@ -23,14 +23,14 @@ pref("extensions.attachextract_cont.savepathmru.enabled",true);
 pref("extensions.attachextract_cont.savepathmru.count",5);
 
 pref("extensions.attachextract_cont.suggestfolder.disregardduplicates",true);
-pref("extensions.attachextract_cont.suggestfolder.excludekeywords",""); 
+pref("extensions.attachextract_cont.suggestfolder.excludekeywords","");
 pref("extensions.attachextract_cont.suggestfolder.maxmatches",10);
 
 /* Filename pattern pane */
 pref("extensions.attachextract_cont.filenamepattern.askalwaysfnp",true);
-pref("extensions.attachextract_cont.filenamepattern","#namepart##count##extpart#");
+pref("extensions.attachextract_cont.filenamepattern","#date#.#namepart##count##extpart#");
 pref("extensions.attachextract_cont.filenamepattern.countpattern","-%");
-pref("extensions.attachextract_cont.filenamepattern.datepattern","D M d Y");
+pref("extensions.attachextract_cont.filenamepattern.datepattern","Y-m-d_H:i:s");
 pref("extensions.attachextract_cont.filenamepattern.cleansubject",false);
 pref("extensions.attachextract_cont.filenamepattern.cleansubject.strings","aw: ,re: ,fw: ,fwd: ");
 pref("extensions.attachextract_cont.filenamepattern.savemessage","#subject##count#.html");
